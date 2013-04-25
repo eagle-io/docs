@@ -96,31 +96,30 @@ pygments_style = 'sphinx'
 # a list of builtin themes.
 #html_theme = 'default'
 html_theme = 'bootstrap'
-html_theme_path = [ '_themes/sphinx_bootstrap_theme' ]
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
-#html_theme_options = {}
+html_theme_options = { 'bootswatch_theme': "default", 'source_link_position': "hide", 'navbar_class': "navbar navbar-inverse" }
 
 # Add any paths that contain custom themes here, relative to this directory.
-#html_theme_path = []
+html_theme_path = [ '_themes/sphinx_bootstrap_theme' ]
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
-#html_title = None
+html_title = project
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #html_short_title = None
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
-#html_logo = None
+html_logo = "_static/eagle.io-icon-square-32x32.png"
 
 # The name of an image file (within the static path) to use as favicon of the
 # docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
 # pixels large.
-#html_favicon = None
+html_favicon = "favicon.ico"
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -189,7 +188,7 @@ latex_elements = {
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
   ('index', 'eagleio.tex', u'eagle.io Documentation',
-   u'Jarrah Watson, Nick Hitchins, Jesse Mitchell', 'manual'),
+   u'Argos.io Pty Ltd', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -219,7 +218,7 @@ latex_documents = [
 # (source start file, name, description, authors, manual section).
 man_pages = [
     ('index', 'eagleio', u'eagle.io Documentation',
-     [u'Jarrah Watson, Nick Hitchins, Jesse Mitchell'], 1)
+     [u'Argos.io Pty Ltd'], 1)
 ]
 
 # If true, show URL addresses after external links.
@@ -233,7 +232,7 @@ man_pages = [
 #  dir menu entry, description, category)
 texinfo_documents = [
   ('index', 'eagleio', u'eagle.io Documentation',
-   u'Jarrah Watson, Nick Hitchins, Jesse Mitchell', 'eagleio', 'One line description of project.',
+   u'Argos.io Pty Ltd', 'eagleio', 'One line description of project.',
    'Miscellaneous'),
 ]
 
