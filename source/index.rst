@@ -1,22 +1,17 @@
-.. eagle.io documentation master file, created by
-   sphinx-quickstart on Wed Dec  4 12:53:03 2013.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
-Welcome to eagle.io's documentation!
-====================================
-
-Contents:
+eagle.io documentation
+==================================
 
 .. toctree::
    :maxdepth: 2
 
-   overview
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-
+   overview/index
+   tutorial/index
+   nodes/index
+   alarms_and_notifications/index
+   sharing_and_security/index
+   user_profile/index
+   account_management/index
+   supported_devices/index
+   scout_configuration/index
+   troubleshooting/index
+   glossary/index

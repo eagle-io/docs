@@ -1,0 +1,4 @@
+Scout Configuration
+===================
+
+content here
