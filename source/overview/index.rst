@@ -7,9 +7,9 @@ intro description about eagle.io
 Cloud-based communications
 --------------------------
 
-.. figure:: network.png
+.. figure:: network.jpg
 
-diagram of eagle.io components showing end-point communications. ie. dropbox, ftp, email, logger over public ip, scout / callback comms, vpn connectivity, cameras, sms in both directions, etc.
+	diagram of eagle.io components showing end-point communications. ie. dropbox, ftp, email, :term:`data logger` over public ip, scout / callback comms, vpn connectivity, cameras, sms in both directions, etc.
 
 
 Real-time monitoring and control
@@ -24,4 +24,4 @@ Collaborative by design
 
 info about collaborative features, including workspace sharing, privilleges and user role assigment, etc.
 
-- dot points
+	- dot points

@@ -1,5 +1,7 @@
 eagle.io documentation
-==================================
+======================
+
+.. image:: /_static/logo-documentation.png
 
 .. toctree::
    :maxdepth: 2
