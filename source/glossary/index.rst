@@ -1,6 +1,8 @@
 Glossary
 ========
 
+.. image:: /_static/coming-soon.png
+
 .. glossary::
 	:sorted:
 

@@ -1,4 +1,4 @@
 Scout Configuration
 ===================
 
-content here
+.. image:: /_static/coming-soon.png

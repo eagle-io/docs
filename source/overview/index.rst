@@ -1,7 +1,7 @@
 Overview
 ========
 
-intro description about eagle.io
+.. image:: /_static/coming-soon.png
 
 
 Cloud-based communications

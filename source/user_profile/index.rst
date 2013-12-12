@@ -1,4 +1,4 @@
 User Profile
 ============
 
-content here
+.. image:: /_static/coming-soon.png

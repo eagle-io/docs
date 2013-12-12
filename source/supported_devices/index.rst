@@ -1,4 +1,4 @@
 Supported Devices
 =================
 
-content here
+.. image:: /_static/coming-soon.png
