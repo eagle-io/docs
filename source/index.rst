@@ -1,8 +1,11 @@
 eagle.io documentation
 ======================
 
-We are currently finalising our documentation. We expect to have it ready before end of December 2013.
-If you need any assistance in the mean time, please email support@eagle.io
+.. image:: /_static/coming-soon.png
+
+.. note:: 
+   We are currently finalising our documentation. We expect to have it ready before end of December 2013.
+   If you need any assistance in the mean time, please email support@eagle.io
 
 .. toctree::
    :maxdepth: 3
