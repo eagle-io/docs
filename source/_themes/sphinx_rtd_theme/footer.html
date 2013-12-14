@@ -20,9 +20,8 @@
       {% trans copyright=copyright|e %}&copy; Copyright {{ copyright }}.{% endtrans %}
     {%- endif %}
   {%- endif %}
-
   {%- if last_updated %}
-    {% trans last_updated=last_updated|e %}Last updated on {{ last_updated }}.{% endtrans %}
+    {% trans last_updated=last_updated|e %}&nbsp; Last updated on {{ last_updated }}.{% endtrans %}
   {%- endif %}
   </p>
 

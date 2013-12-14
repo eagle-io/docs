@@ -1,7 +1,8 @@
-Advanced Topics
-================
+Advanced
+========
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
-   timezones_and_dates/index
+   time/index
+   historic/index

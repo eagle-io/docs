@@ -1,24 +1,11 @@
-Timezones and Timestamps
-========================
-
-When working with :term:`time series` data from multiple geographic locations its important to understand how timezones and date formatting affects the display of the data.
-
-
-Timezones
----------
-
-Timezones allow for data to be collected from various geographical locations and stored on the server in :term:`UTC`.
-Refer to the Source configuration docs for information on assigning a timezone.
-
-Users can assign a timezone to their User profile. All data displayed to the user including current, historic, notifications and events will be displayed in the selected timezone.
-
-
 Timestamps
-----------
+==========
 
-:term:`Timestamp`\'s are used to display the time/date of an event in a highly customisable, easy to read format.
+:term:`Timestamp`\'s are used to display the time/date of an event in a highly customisable, easy to read format. Time format is specified using time format tokens as shown below.
 
-Time format is specified using time format tokens as shown below.
+Example::
+	
+	YYYY-MM-DD HH:mm:ss
 
 Users can assign a preset or custom Time format to their User profile. All timestamps displayed to the user will be in their preferred format (where applicable).
 
@@ -26,7 +13,7 @@ Time format may also need to be configured for some Sources. Refer to the Source
 
 
 Time format tokens
-~~~~~~~~~~~~~~~~~~
+------------------
 
 +--------------------------+-----------+----------------------------------------+
 |        Time Unit         |   Token   |                 Output                 |
@@ -126,4 +113,3 @@ Time format tokens
 
 .. rubric:: Footnotes
 .. [#f1] Tokens not available for Delimited Text Source.
-

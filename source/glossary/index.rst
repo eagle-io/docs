@@ -15,3 +15,5 @@ Glossary
 
 	Timestamp
 		A timestamp is a sequence of characters or encoded information identifying when a certain event occurred, usually giving date and time of day.
+
+		
