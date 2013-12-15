@@ -1,18 +1,41 @@
-/* Custom overrides for indentation */
+/* menu overrides */
+.wy-menu-vertical li > a {
+	
+}
+
+.wy-menu-vertical li.current > a {
+	background-color: #e3e3e3;
+	border-top: none;
+	border-bottom: none;
+	border-right: solid 1px #c9c9c9;
+}
+
+.wy-menu-vertical li.current > a:hover {
+	background-color: #d6d6d6;
+}
+
+.wy-menu-vertical li.current > a.current {
+	background-color: #fcfcfc;
+	box-sizing: border-box;
+	border-bottom: solid 1px #c9c9c9;
+	border-top: solid 1px #c9c9c9;
+	border-right: none;
+	height: 30px;
+}
+
+
+
 .wy-menu-vertical li .toctree-l2 a {
 	padding: 0.4045em 2.427em;
 }
 .wy-menu-vertical li .toctree-l3 a {
 	padding: 0.4045em 3.427em;
 }
-.wy-menu-vertical li .toctree-l3 a {
+.wy-menu-vertical li .toctree-l4 a {
 	padding: 0.4045em 4.427em;
 }
 
-.nav-icon {
-	font-size: 16px;
-}
-
+/* download links at bottom of menu */
 .rst-versions .rst-current-version {
 	cursor: auto;
 	text-align: left;
@@ -20,4 +43,9 @@
 .rst-versions a {
 	color: #ffffff !important;
 	margin-left: 10px;
+}
+
+/* general styles */
+.nav-icon {
+	font-size: 16px;
 }

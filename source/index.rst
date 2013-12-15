@@ -8,8 +8,7 @@ eagle.io documentation
    If you need any assistance in the mean time, please email support@eagle.io
 
 .. toctree::
-   :maxdepth: 2
-   :hidden:
+   :maxdepth: 1
 
    overview/index
    tutorial/index

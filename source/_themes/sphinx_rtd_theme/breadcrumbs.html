@@ -1,3 +1,4 @@
+{% if title != "eagle.io documentation" %}
 <ul class="wy-breadcrumbs">
   <li><a href="{{ pathto(master_doc) }}">Docs</a> &raquo;</li>
   {% for parent in parents %}
@@ -6,4 +7,4 @@
   <li><a href="">{{ title }}</a></li>
 </ul>
 <hr/>
-
+{% endif %}
