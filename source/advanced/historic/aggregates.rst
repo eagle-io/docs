@@ -38,7 +38,7 @@ The following aggregates are available depending on the Display Type setting of 
 
 RAW
 ---
-No Aggregate calculation is applied. Raw data (as collected by Source) is returned.
+No Aggregate calculation is applied. Raw data (as collected by the Source) is returned.
 
 
 INTERPOLATED
@@ -46,7 +46,7 @@ INTERPOLATED
 The Interpolated algorithm calculates a value that is:
 
 	- Equal to or higher than the last raw historic value before the start of the sample. For the purposes of this section, we will refer to the last raw historic value before the start of the sample as the ‘last pre-sample’ historic value. 
-	- Equal to or lower than the next raw historic value after the ‘last pre-sample’ historic value. The ‘next’ value may be in the sample or could be after the sample. If there is no ‘next’ raw historic value, the interpolated value will be exactly the same as the ‘last pre-sample’ value
+	- Equal to or lower than the next raw historic value after the ‘last pre-sample’ historic value. The ‘next’ value may be in the sample or could be after the sample. If there is no ‘next’ raw historic value, the interpolated value will be exactly the same as the ‘last pre-sample’ value.
 
 
 AVERAGE
@@ -81,15 +81,15 @@ The start aggregate retrieves the first raw value within the interval.
 
 END
 ---
-The end aggregate retrieves the last raw value within the interval
+The end aggregate retrieves the last raw value within the interval.
 
 COUNT
 -----
-This aggregate retrieves a count of all the raw values within an interval. If one or more raw values are non-good, they are not included in the count
+This aggregate retrieves a count of all the raw values within an interval. If one or more raw values are non-good, they are not included in the count.
 
 DELTA
 -----
-The delta aggregate retrieves the difference between the earliest and latest good raw values in an interval. If the last value is less than the first value, the result will be negative. If the last value is the same as the first value, or if the last value is also the first value at the same timestamp, the result will be zero. If the last value is greater than the first value, the result will be positive.e
+The delta aggregate retrieves the difference between the earliest and latest good raw values in an interval. If the last value is less than the first value, the result will be negative. If the last value is the same as the first value, or if the last value is also the first value at the same timestamp, the result will be zero. If the last value is greater than the first value, the result will be positive.
 
 
 
