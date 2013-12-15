@@ -44,7 +44,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'eagle.io'
-copyright = u'2014, Argos.io Pty Ltd'
+copyright = u'2013, Argos.io Pty Ltd'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the

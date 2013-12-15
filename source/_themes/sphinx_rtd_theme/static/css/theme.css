@@ -10,3 +10,16 @@
 .wy-menu-vertical li .toctree-l3 a {
 	padding: 0.4045em 4.427em;
 }
+
+.nav-icon {
+	font-size: 16px;
+}
+
+.rst-versions .rst-current-version {
+	cursor: auto;
+	text-align: left;
+}
+.rst-versions a {
+	color: #ffffff !important;
+	margin-left: 10px;
+}
