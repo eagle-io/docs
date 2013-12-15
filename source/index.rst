@@ -9,6 +9,7 @@ eagle.io documentation
 
 .. toctree::
    :maxdepth: 2
+   :hidden:
 
    overview/index
    tutorial/index
