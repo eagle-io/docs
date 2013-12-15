@@ -53,6 +53,9 @@
     <script type="text/javascript" src="_static/js/theme.js"></script>
   {% endif %}
 
+  {# add custom overrides to local/rtd #}
+  <link rel="stylesheet" href="{{ pathto('_static/css/custom.css', 1) }}" type="text/css" />
+
   {% for cssfile in css_files %}
     <link rel="stylesheet" href="{{ pathto(cssfile, 1) }}" type="text/css" />
   {% endfor %}
