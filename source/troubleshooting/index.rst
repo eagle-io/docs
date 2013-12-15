@@ -10,12 +10,24 @@ native 140dpi 50%
 .. image:: /_static/native.png
 	:scale: 50 %
 	:target: #
+	:class: testy
 
 
 voila 72dpi 50%
 
 .. image:: /_static/voila.png
 	:scale: 50 %
+
+voila2 72dpi 50%
+
+.. image:: /_static/login.png
+	:scale: 50 %
+
+| 
+
+1. Login button 
+#. Google / Yahoo login
+#. Forgot password
 
 
 clarify 72dpi 50%
@@ -35,7 +47,6 @@ photshop 72dpi 100%
 
 
 :guilabel:`Main Menu`
-
 :menuselection:`Start Menu --> Programs --> GeoServer`
 
 
