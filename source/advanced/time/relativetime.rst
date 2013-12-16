@@ -1,24 +1,23 @@
 Relative Time
 =============
 
-OPC Relative Time is used to represent date/time in an easy to ready format that allows users to navigate or select a period of time without explicitly specifying a date. An example use is NOW-5M which simply translates to the current time minus 5 minutes. All times are relative to the user profile timezone.
+OPC Relative Time is used to represent date/time in an easy to ready format that allows users to navigate or select a period of time without explicitly specifying a date. An example use is NOW-5M which simply translates to the current time minus 5 minutes. All times are relative to the user profile timezone. A duration is specified with both a base time and interval.
 
-OPC Relative Time Syntax::
+OPC Relative Time syntax::
 
 	<basetime> [ ( + ¦ - ) <interval> ]
 
-where:
 
-**<basetime>** is a base time that is relative to ‘now’, the present time.
-You can enter a base time in either short or long format.
+:Base Time: a time that is relative to ‘now’, the present time. You can enter a base time in either short or long format.
 
-	| Example: ``H``
-	| The short OPC Relative Time Format for the start of the present hour.
+:Interval: an optional further offset that you can either add or subtract from the base time. You specify this offset in the OPC Time Format.
 
-**<interval>** is an optional further offset that you can either add or subtract from the base time. You specify this offset in the OPC Time Format.
 
-	| Example: ``30M``
-	| Half an hour.
+Example usage::
+
+	H (start of the current hour)
+	D+9H  (9am current day)
+	NOW-7D+7D  (duration covers last 7 days)
 
 
 OPC Base Time and Interval Keywords
