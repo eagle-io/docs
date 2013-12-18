@@ -8,17 +8,10 @@ eagle.io documentation
    If you need any assistance in the mean time, please email support@eagle.io
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
-   overview/index
-   tutorial/index
-   nodes/index
-   alarms_and_notifications/index
-   sharing_and_security/index
-   user_profile/index
-   account_management/index
-   advanced/index
-   supported_devices/index
-   scout_configuration/index
-   troubleshooting/index
+   intro/index
+   topics/index
+   reference/index
+   faq/index
    glossary/index

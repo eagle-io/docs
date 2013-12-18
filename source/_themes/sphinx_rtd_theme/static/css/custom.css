@@ -21,7 +21,6 @@
 	border-top: solid 1px #c9c9c9;
 	border-right: none;
 	padding-top: 0.3545em;
-	height: 30px;
 }
 
 
@@ -34,6 +33,14 @@
 }
 .wy-menu-vertical li .toctree-l4 a {
 	padding: 0.4045em 4.427em;
+}
+
+/* only display immediate children of the selected menu item */
+.wy-menu-vertical li .toctree-l3, .wy-menu-vertical li .toctree-l4 {
+	display: none;
+}
+.wy-menu-vertical li .current, .wy-menu-vertical .current > ul > li {
+    display: block;
 }
 
 /* download links at bottom of menu */
