@@ -107,10 +107,17 @@ Nodes overview
 
 list of node icons and basic descriptions
 
-.. role:: icondownload
-	:class: icondownload
+.. raw:: html
+	
+	<i class='icon icon-download'></i>
 
-The is a :icondownload:`test`
+image
 
+.. image:: workspace1.png
+	:scale: 50 %
+
+svg
+
+.. image:: workspace2.svg
 
 	

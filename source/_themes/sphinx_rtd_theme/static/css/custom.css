@@ -53,6 +53,11 @@
 	margin-left: 10px;
 }
 
+/* dont force images to 100% on small screens */
+.rst-content img {
+	width: auto;
+}
+
 /* general styles */
 .nav-icon {
 	font-size: 16px;
