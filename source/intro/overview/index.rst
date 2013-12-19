@@ -107,17 +107,13 @@ Nodes overview
 
 list of node icons and basic descriptions
 
-.. raw:: html
-	
-	<i class='icon icon-download'></i>
 
-image
+svg or pdf
 
-.. image:: workspace1.png
+.. image:: workspace.*
 	:scale: 50 %
 
-svg
 
-.. image:: workspace2.svg
+
 
 	
