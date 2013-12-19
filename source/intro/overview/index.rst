@@ -110,9 +110,7 @@ list of node icons and basic descriptions
 
 svg or pdf |icon-workspace|
 
-another example |icon-alarm|
-
-smaller 36px |icon-attachment|
+and another |icon-attachment|
 
 
 
