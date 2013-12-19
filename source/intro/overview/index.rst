@@ -105,13 +105,18 @@ Users, Administrators and Account Owners
 Nodes overview
 --------------
 
+
 list of node icons and basic descriptions
 
+svg or pdf |icon-workspace|
 
-svg or pdf
+another example |icon-alarm|
 
-.. image:: workspace.*
-	:scale: 50 %
+smaller 36px |icon-attachment|
+
+
+
+
 
 
 
