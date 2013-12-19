@@ -1,7 +1,7 @@
 /* menu overrides */
-.wy-menu-vertical li > a {
-	
-}
+/*.wy-side-nav-search {
+	margin-bottom: 0;
+}*/
 
 .wy-menu-vertical li.current > a {
 	background-color: #e3e3e3;
