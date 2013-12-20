@@ -1,3 +1,138 @@
-.. |icon-workspace| image:: /_static/icons/workspace-open.*
+
+.. |icon-alarm-cancel| image:: /_static/icons/alarm-cancel.*
+
+.. |icon-alarm-check| image:: /_static/icons/alarm-check.*
+
+.. |icon-alarm-comment| image:: /_static/icons/alarm-comment.*
+
+.. |icon-alarm| image:: /_static/icons/alarm.*
 
 .. |icon-attachment| image:: /_static/icons/attachment.*
+
+.. |icon-attachmentsource| image:: /_static/icons/attachmentsource-closed.*
+
+.. |icon-backend| image:: /_static/icons/backend.*
+
+.. |icon-billing| image:: /_static/icons/billing.*
+
+.. |icon-calendar| image:: /_static/icons/calendar.*
+
+.. |icon-chart| image:: /_static/icons/chart.*
+
+.. |icon-control| image:: /_static/icons/control.*
+
+.. |icon-copy| image:: /_static/icons/copy.*
+
+.. |icon-create| image:: /_static/icons/create.*
+
+.. |icon-customise| image:: /_static/icons/customise.*
+
+.. |icon-dash| image:: /_static/icons/dash.*
+
+.. |icon-datasource-acquire| image:: /_static/icons/datasource-acquire.*
+
+.. |icon-datasource| image:: /_static/icons/datasource-closed.*
+
+.. |icon-debug| image:: /_static/icons/debug.*
+
+.. |icon-download| image:: /_static/icons/download.*
+
+.. |icon-error| image:: /_static/icons/error.*
+
+.. |icon-events| image:: /_static/icons/events.*
+
+.. |icon-export| image:: /_static/icons/export.*
+
+.. |icon-file| image:: /_static/icons/file.*
+
+.. |icon-filter-active| image:: /_static/icons/filter-active.*
+
+.. |icon-filter| image:: /_static/icons/filter.*
+
+.. |icon-frontend| image:: /_static/icons/frontend.*
+
+.. |icon-group| image:: /_static/icons/group-closed.*
+
+.. |icon-help| image:: /_static/icons/help.*
+
+.. |icon-history| image:: /_static/icons/history.*
+
+.. |icon-image| image:: /_static/icons/image.*
+
+.. |icon-info| image:: /_static/icons/info.*
+
+.. |icon-link| image:: /_static/icons/link.*
+
+.. |icon-list| image:: /_static/icons/list.*
+
+.. |icon-location-add| image:: /_static/icons/location-add.*
+
+.. |icon-location| image:: /_static/icons/location-closed.*
+
+.. |icon-lock| image:: /_static/icons/lock.*
+
+.. |icon-map| image:: /_static/icons/map.*
+
+.. |icon-navigate| image:: /_static/icons/navigate.*
+
+.. |icon-notification| image:: /_static/icons/notification.*
+
+.. |icon-operate| image:: /_static/icons/operate.*
+
+.. |icon-paste| image:: /_static/icons/paste.*
+
+.. |icon-pencil| image:: /_static/icons/pencil.*
+
+.. |icon-point-number-discrete-control| image:: /_static/icons/point-number-discrete-control.*
+
+.. |icon-point-number-discrete| image:: /_static/icons/point-number-discrete.*
+
+.. |icon-point-number-range-control| image:: /_static/icons/point-number-range-control.*
+
+.. |icon-point-number-range| image:: /_static/icons/point-number-range.*
+
+.. |icon-point-text-control| image:: /_static/icons/point-text-control.*
+
+.. |icon-point-text| image:: /_static/icons/point-text.*
+
+.. |icon-point-time-control| image:: /_static/icons/point-time-control.*
+
+.. |icon-point-time| image:: /_static/icons/point-time.*
+
+.. |icon-properties| image:: /_static/icons/properties.*
+
+.. |icon-remove| image:: /_static/icons/remove.*
+
+.. |icon-rename| image:: /_static/icons/rename.*
+
+.. |icon-roles| image:: /_static/icons/roles.*
+
+.. |icon-screen| image:: /_static/icons/screen.*
+
+.. |icon-search| image:: /_static/icons/search.*
+
+.. |icon-security| image:: /_static/icons/security.*
+
+.. |icon-select-all| image:: /_static/icons/select-all.*
+
+.. |icon-separator| image:: /_static/icons/separator.*
+
+.. |icon-state| image:: /_static/icons/state.*
+
+.. |icon-storage| image:: /_static/icons/storage.*
+
+.. |icon-subscribe| image:: /_static/icons/subscribe.*
+
+.. |icon-table| image:: /_static/icons/table.*
+
+.. |icon-unlocked| image:: /_static/icons/unlocked.*
+
+.. |icon-upload| image:: /_static/icons/upload.*
+
+.. |icon-user| image:: /_static/icons/user.*
+
+.. |icon-warning| image:: /_static/icons/warning.*
+
+.. |icon-workspace| image:: /_static/icons/workspace-open.*
+
+.. |icon-workspace-closed| image:: /_static/icons/workspace-closed.*

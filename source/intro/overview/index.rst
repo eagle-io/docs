@@ -88,7 +88,7 @@ The layout of these sections will vary depending on the screen size of your devi
 Inline help
 -----------
 
-Help is available throughout the interface - wherever you see the help icon as shown below.
+|icon-help| Help is available throughout the interface - wherever you see the help icon as shown below.
 You can hover, click or touch the help icon to show the help popup - many of which have quick links back to the relevant section in this documentation.
 
 *Inline help example*
@@ -99,22 +99,50 @@ You can hover, click or touch the help icon to show the help popup - many of whi
 | 
 
 
-Users, Administrators and Account Owners
-----------------------------------------
+
 
 Nodes overview
 --------------
 
+Nodes are the selectable elements in the Workspace menu. The most common nodes are:
 
-list of node icons and basic descriptions
+|icon-workspace| Workspace
+	Base container for nodes allowing them to be shared easily between users.
 
-svg or pdf |icon-workspace|
+|icon-group| Group
 
-and another |icon-attachment|
+|icon-location| Location
+
+|icon-attachmentsource| Attachment Source
+
+|icon-attachment| Attachment
+	File or document stored in eagle.io. New attachments can be uploaded manually by a user or acquired via an Attachment Source.
+	Image attachments can be previewed from the Attachment List.
+
+|icon-datasource| Data Source
+
+|icon-point-number-range| Parameter
+
+
+
+Alarms (temp)
+--------------
+
+
+|icon-alarm| Alarm
+
+|icon-alarm-cancel| Alarm
+
+|icon-alarm-check| Alarm
+
+|icon-alarm-comment| Alarm
 
 
 
 
+
+Users, Administrators and Account Owners
+----------------------------------------
 
 
 
