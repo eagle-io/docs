@@ -6,3 +6,5 @@ Device Configuration
 
 Setting up the Scout
 --------------------
+
+

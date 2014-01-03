@@ -1,0 +1,28 @@
+Workspace
+=========
+|icon-workspace| Workspaces are special container Nodes that can be shared with other users. All other Nodes are created within the Workspace. Workspaces can only be created by the Account Owner or Administrators.
+
+
+Properties
+----------
+.. include:: properties.rstx
+
+
+Sharing
+~~~~~~~
+The Sharing section allows you to share your Workspaces with other users.
+Enter the email address of the new user and select *Add*. Assign a :ref:`User Role <user-roles>` to the user for this Workspace and *Save*.
+
+.. image:: workspace_sharing.png
+	:scale: 50 %
+
+| 	
+
+An email notification will be sent to users when they are added or removed from the Workspace or when their security role is changed.
+New users will need to follow the instructions in the email to finalise their profile and log in for the first time.
+Existing users who are currently logged in and viewing the interface will notice the new settings take affect immediately.
+
+.. note:: 
+	Administrators automatically receive unrestricted access to all Workspaces in the account.
+	
+| 

@@ -1,6 +1,9 @@
 Working with Historic Data
 ==========================
 
+.. image:: /_static/coming-soon.png
+
+
 Display an adhoc chart
 ----------------------
 

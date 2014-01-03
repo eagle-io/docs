@@ -9,8 +9,10 @@ Example::
 
 Users can assign a preset or custom Time format to their User profile. All timestamps displayed to the user will be in their preferred format (where applicable).
 
-Time format may also need to be configured for some Sources. Refer to the Source configuration docs for information on specifying a time format for Delimited Text Sources.
+Time format may also need to be configured for some Sources. Refer to the Source configuration docs for information on specifying a time format for Delimited Text Data Sources.
 
+
+.. _time-format-tokens:
 
 Time format tokens
 ------------------

@@ -50,8 +50,8 @@ clean:
 	rm -rf $(BUILDDIR)/*
 
 html:
-	@echo "Removing old build content"
-	rm -rf $(BUILDDIR)/*
+	#@echo "Removing old build content"
+	#rm -rf $(BUILDDIR)/*
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."

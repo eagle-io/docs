@@ -1,6 +1,8 @@
 Setup an Alarm and receive a notification
 =========================================
 
+.. image:: /_static/coming-soon.png
+
 Configuring an outdated alarm
 -----------------------------
 
