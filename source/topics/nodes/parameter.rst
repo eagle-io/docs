@@ -1,3 +1,5 @@
+.. _node-configuration-parameter:
+
 Parameter
 ==========
 
