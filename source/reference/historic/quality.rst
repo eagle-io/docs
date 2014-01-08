@@ -1,4 +1,4 @@
 Quality
 =======
 
-quality code junk..
+.. image:: /_static/coming-soon.png
