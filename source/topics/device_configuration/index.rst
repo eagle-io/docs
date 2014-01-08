@@ -1,10 +1,7 @@
 Device Configuration
 ====================
 
-.. image:: /_static/coming-soon.png
+.. toctree::
+   :maxdepth: 2
 
-
-Setting up the Scout
---------------------
-
-
+   scout/index

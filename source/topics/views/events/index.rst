@@ -1,3 +1,5 @@
+.. _view-events:
+
 Events
 ========
 
@@ -73,4 +75,7 @@ By default events will be displayed for the Selected Node and all Nodes it conta
 |icon-point-number-range| Parameter
 
 |icon-attachment| Attachment
+
+
+Review the full list of :ref:`Node types <node-types>`.
 

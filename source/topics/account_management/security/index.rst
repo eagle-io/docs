@@ -2,6 +2,7 @@ Security
 ========
 |icon-security| Security allows you to configure Administrators of the account and User roles.
 
+.. _management-security-administrators:
 
 Administrators
 ---------------
@@ -20,7 +21,7 @@ If you would like a User to have restricted access to Workspaces, then DO NOT ad
 	You can not remove the Account Owner or your own profile. 
 
 
-.. _user-roles:
+.. _management-security-userroles:
 
 User roles
 ----------

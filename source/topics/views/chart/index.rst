@@ -33,8 +33,10 @@ Custom
 Custom Subview displays the customised Chart Nodes. This feature is currently not available.
 
 
-Working with the charts
------------------------
+.. _working-with-charts:
+
+Working with charts
+-------------------
 
 Parameter Values
 ~~~~~~~~~~~~~~~~

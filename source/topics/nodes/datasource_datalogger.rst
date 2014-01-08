@@ -1,3 +1,5 @@
+.. _node-configuration-datasource-datalogger:
+
 Data Source (data logger)
 =========================
 

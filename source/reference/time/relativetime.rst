@@ -1,3 +1,5 @@
+.. _relative-time:
+
 Relative Time
 =============
 

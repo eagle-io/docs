@@ -1,3 +1,5 @@
+.. _historic-aggregates:
+
 Aggregates
 ==========
 

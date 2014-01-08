@@ -125,7 +125,7 @@ Toolbar controls should be used in combination with the row checkboxes to perfor
 
 Notifications
 ~~~~~~~~~~~~~
-|icon-subscribe| Subscribe or Unsubscribe from receiving notifications for the checked Nodes including all contained Nodes.
+|icon-notification| Subscribe or Unsubscribe from receiving notifications for the checked Nodes including all contained Nodes.
 
 Alarms
 ~~~~~~

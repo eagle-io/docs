@@ -10,7 +10,7 @@ Cloud-based, collaborative, real-time monitoring
 .. figure:: network.jpg
 
 	Eagle.io is a secure, reliable, easy to use cloud-based data monitoring service.
-	Whether your working with simple data files or managing a fleet of :term:`data logger`\s, eagle.io has you covered.
+	Whether your working with simple data files or managing a fleet of :term:`data loggers <data logger>`, eagle.io has you covered.
 
 	With real-time communications, collaboration and instant updates baked into the core you'll wonder what you ever did before.
 	The lightning fast interface has been designed to work across all modern phones and computing devices with no software to install and no page reloads.

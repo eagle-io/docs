@@ -41,7 +41,7 @@ Node Types
 | 
 
 |icon-point-number-discrete| Number Parameter (State variation)
-	Number Parameters can also be set to display the current or historic state(s).
+	Number Parameters can also be set to display the current or historic state rather than value. This is useful for Boolean or Discrete state data.
 
 | 
 
