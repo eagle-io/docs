@@ -1,3 +1,5 @@
+.. _nodes-and-configuration:
+
 Nodes and Configuration
 =======================
 

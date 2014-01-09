@@ -3,4 +3,6 @@
 Parameter
 ==========
 
-|icon-point-number-range| parameters..
+|icon-point-number-range| parameters...
+
+.. image:: /_static/coming-soon.png

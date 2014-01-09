@@ -24,16 +24,16 @@ General
 | 
 
 Status updates
-	Frequency of status updates when the Data Source schedule is *Enabled* and schedule type is *Server*). This includes GPS and signal strength updates. When the Data Source schedule is *Disabled* or set to *Remote* then the status updates will only occur when the device connects in.
+	Frequency of status updates - including GPS coordinates and signal strength. This option is only available when the Data Source schedule is *Enabled* and Schedule type set to *Server*. When the Data Source schedule is *Disabled* or set to *Remote* the status updates will only occur when the device performs a Callback.
 Phone number
 	Phone number of the SIM Card in the device. Follow the standard `international format`_ starting with '+' and including country and area code.
 	When the Data Source schedule is *Disabled* or set to *Remote* the phone number is used to send an SMS to the device to initiate a callback.
 SIM pin
-	PIN of the SIM Card, or leave blank for no pin.
+	PIN of the SIM Card or leave blank for no pin.
 GPS enabled
-	Disable the GPS when not needed to reduce power consumption.
+	Disable the GPS if not needed to reduce power consumption.
 Network configuration
-	Uncheck *Automatic network configuration* only when the automatic mode does not work with your telecommunications provider. You will need to specify the Access point name and username/password as specified by your provider.
+	Uncheck *Automatic network configuration* only when the automatic mode does not work with your SIM. You will need to specify the Access point name and username/password as specified by your provider.
 
 .. _international format: http://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers
 

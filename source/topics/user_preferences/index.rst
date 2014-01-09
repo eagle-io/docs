@@ -1,3 +1,5 @@
+.. _user-preferences:
+
 User Preferences
 ================
 
@@ -31,6 +33,8 @@ Resetting your password
 The User profile has a *Change Password* section for immediate password changes.
 If you have forgotten your password you can use the *Forgot Password* link on the public site to send a reset link to your User profile email address.
 
+
+.. _user-notification-preferences:
 
 Notification preferences
 ------------------------

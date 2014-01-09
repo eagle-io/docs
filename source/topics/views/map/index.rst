@@ -56,7 +56,7 @@ Use filters to quickly show locations of interest.
 
 | 
 
-The show/hide filtered locations button found in the toolbar can be used to toggle the display of filtered locations. When active you will notice any filters locations are displayed with just a gray marker and no label. You can still hover or click these filtered locations to display their parameters list.
+The show/hide filtered locations button found in the toolbar can be used to toggle the display of filtered locations. When active you will notice any filters locations are displayed with just a *GRAY* marker and no label. You can still hover or click these filtered locations to display the parameters list.
 
 .. image:: map_controls_filter.png
 	:scale: 50 %
@@ -68,9 +68,37 @@ The show/hide filtered locations button found in the toolbar can be used to togg
 .. image:: map_filtered.png
 	:scale: 50 %
 
+| 
+
 When parameter filters are applied, the corresponding parameters for each applicable Location are automatically displayed. Hover or Click the locations to display all parameters. 
 
-Locations containing alarms will have their marker displayed in red. If all alarms within a location have been acknowledged the marker will be displayed in orange.
+Locations containing alarms will have their marker displayed in *RED* If all alarms within a location have been acknowledged the marker will be displayed in *ORANGE*.
+
+
+Reserved marker colors
+-----------------------
+These reserved marker colors temporarily overwrite the normal marker color.
+
+*Active Alarm*
+
+.. image:: map_marker_alarm.png
+	:scale: 50 %
+
+| 
+
+*Acknowledged Alarm*
+
+.. image:: map_marker_acknowledged.png
+	:scale: 50 %
+
+| 
+
+*Filtered*
+
+.. image:: map_marker_filtered.png
+	:scale: 50 %
+
+| 
 
 
 Adding a new location marker

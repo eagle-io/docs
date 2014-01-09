@@ -1,8 +1,11 @@
+.. _management-notifications:
+
 Notifications
 ==============
 
 |icon-notification| Notifications section is used to configure the Notification Limits and Categories for the currently selected account.
 
+.. _management-notifications-limits:
 
 Notification Limits
 -------------------
@@ -16,6 +19,8 @@ SMS notifications incur charges on the Owners Account. You can restrict the tota
 The account owner will receive an Email from the system when the total number of SMS sent within the current billing period gets close to the selected limit. Another Email will be sent when the limit is reached and no further notification SMS's will be sent until the next billing period.
 
 | 
+
+.. _management-notifications-categories:
 
 Notification Categories
 -----------------------
