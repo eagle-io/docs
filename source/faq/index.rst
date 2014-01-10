@@ -1,4 +1,4 @@
-Frequently Aksed Questions
+Frequently Asked Questions
 ==========================
 
 .. toctree::

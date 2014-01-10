@@ -2,14 +2,13 @@
 
 Events
 ========
-
 |icon-events| Every interaction (user and system generated) is recorded in the Events log. Use the Events View to quickly audit the system, a user or history of alarms.
 
 .. note::
 	The view displays content based on the Selected Node in the Workspaces Menu. Use filters to quickly target specific parameters or review alarms.
  
 
-The events list is live updating and always displayed in chronological order. New events are automatically added to the top of the list. Scroll down the list to view older events.
+The events list is live updating and always displayed in reverse chronological order. New events are automatically added to the top of the list. Scroll down the list to view older events.
 
 .. image:: events_overview.png
 	:scale: 50 %
@@ -30,7 +29,7 @@ Use the Jump to date control to jump to a specific date. After scrolling down, y
 
 Detail Level
 ~~~~~~~~~~~~
-Select the Detail level of the events shown using this drop down. Debug is the lowest level and will show all events, select a higher detail level to filter out the less important events. For example Info includes Warning and Error events (but not Debug events). The available detail levels include:
+Select the Detail level of the event log. Debug is the lowest level and will show all events, select a higher detail level to filter out the less important events. For example Info includes Warning and Error events (but not Debug events). The available detail levels include:
 
 |icon-debug| Debug
 
@@ -78,4 +77,3 @@ By default events will be displayed for the Selected Node and all Nodes it conta
 
 
 Review the full list of :ref:`Node types <node-types>`.
-

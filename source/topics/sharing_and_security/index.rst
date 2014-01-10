@@ -1,3 +1,5 @@
+.. _sharing-and-security:
+
 Sharing and Security
 ====================
 

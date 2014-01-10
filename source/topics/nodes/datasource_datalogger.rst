@@ -2,7 +2,6 @@
 
 Data Source (data logger)
 =========================
-
 |icon-datasource| Data Sources automatically acquire or receive timeseries data using a variety of different transport options. Connect to a :term:`data logger` or collect data from files. Data Sources can be created inside Locations only.
 
 The type of Data Source (data logger or file) is selected at time of creation and cannot be changed. This section is specific to data logger Data Sources.
@@ -15,7 +14,6 @@ Properties
 
 General
 ~~~~~~~
-
 Source Enabled
 	Uncheck the Source Enabled checkbox to stop collection and prevent alarms and notifications from triggering.
 
@@ -25,13 +23,13 @@ Data logger type
 Campbell Scientific [PakBus]
 ````````````````````````````
 Model
-	Select the model of the data logger (use CR1000 if your model is not shown)
+	Select the model of the data logger (use CR1000 if your model is not shown).
 
 PakBus address
-	Default value is 1
+	Default value is 1.
 
 Security code
-	Leave blank if the device has no security code
+	Leave blank if the device has no security code.
 
 
 .. image:: datasource_datalogger_general.png
@@ -42,6 +40,11 @@ Security code
 
 Connection
 ~~~~~~~~~~
+Retry attempts
+	Select how many retry attempts are made during an acquisition or scheduled collection before the communications is considered failed.
+
+Retry delay
+	Select the delay between retry attempts. The retry attempts multiplied by the retry delay should not exceed the collection interval.
 
 Transport type
 	Select the transport used to acquire files.
@@ -49,13 +52,13 @@ Transport type
 
 TCP Client
 ```````````
-TCP Client is used to establish an IP connection to a data logger connected to the internet
+TCP Client is used to establish an IP connection to a data logger connected to the internet.
 
 Internet address
-	IP address or Domain name where the device can be contacted
+	IP address or Domain name where the device can be contacted.
 
 TCP Port
-	TCP Port of the connected device
+	TCP Port of the connected device.
 
 .. image:: datasource_datalogger_connection_tcpclient.png
 	:scale: 50 %
@@ -78,17 +81,17 @@ Device Id
 
 Scout
 ``````
-Scout should be used with a 'Scout' modem to enable all the devices smart features.
+Scout should be used with a *Scout modem* to enable all the device smart features.
 
 Device Id
-	The unique 15 digit IMEI number assigned to the Scout modem. (usually found on back of device)
+	The unique 15 digit IMEI number assigned to the *Scout modem*. Printed on the back of device.
 
 .. image:: datasource_datalogger_connection_scout.png
 	:scale: 50 %
 
 | 
 
-.. note:: You need to save the Data Source before you can change the Device settings.
+.. note:: You need to *Save* the Source before you can change the Device settings.
 
 
 
@@ -110,19 +113,13 @@ Scheduled
 Schedule type
 	*Server* is the recommended option for always connected devices and allows easy schedule configuration.
 
-	*Remote* enables a Scout device to maintain its own schedule allowing for low power mode and customised configuration.
+	*Remote* enables a *Scout modem* to maintain its own schedule allowing for low power mode and customised configuration.
 
 Collection interval
 	Select the frequency of the collection.
 
 Interval offset
 	Offset the collection interval to prevent collection occuring on the interval. eg. 1 hour collection interval will occur at 9am, 10am, etc. Set an interval offset of 5 minutes and the collection times will be 9:05am, 10:05am, etc.
-
-Retry attempts
-	Select how many retry attempts are made during this scheduled collection before the communications is considered failed.
-
-Retry delay
-	Select the delay between retry attempts. The retry attempts multiplied by the retry delay should not exceed the collection interval.
 
 .. image:: datasource_datalogger_collection.png
 	:scale: 50 %

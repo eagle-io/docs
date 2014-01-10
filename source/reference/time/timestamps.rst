@@ -1,7 +1,7 @@
 Timestamps
 ==========
 
-:term:`Timestamp`\'s are used to display the time/date of an event in a highly customisable, easy to read format. Time format is specified using time format tokens as shown below.
+:term:`Timestamps <timestamp>` are used to display the date and time of an event in a highly customisable, easy to read format. Time format is specified using time format tokens as shown below.
 
 Example::
 	

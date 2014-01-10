@@ -1,6 +1,5 @@
 Map
 ==========
-
 |icon-map| Map provides a fully featured interactive interface for displaying location based data.
 
 .. note::
@@ -12,10 +11,9 @@ Map
 
 | 
 
-Layers and Display mode
-------------------------
-
-Change the appearance of the map using the Display mode dropdown, or select one of the available Layers to show additional information such as cloud imagery or regional weather data provided by Google.
+Layers and Map Type
+--------------------
+Change the appearance of the map using the Map Type drop down, or select one of the available Layers to show additional information such as cloud imagery or regional weather data provided by Google.
 
 .. image:: map_controls_layers.png
 	:scale: 50 %
@@ -24,18 +22,12 @@ Change the appearance of the map using the Display mode dropdown, or select one 
 
 Zoom and Pan
 -------------
-
-Use the standard google map controls to Zoom/Pan or enter Street View. You can also use your mouse wheel or pinch gestures to zoom.
-
-.. image:: map_controls_zoompan.png
-	:scale: 50 %
-
-| 
+Use the standard Google Map controls to Zoom/Pan or enter Street View. You can also use your mouse wheel or pinch gestures to zoom.
+The appearance and layout of the map controls will vary depending on the type of device you are using.
 
 
 Click and Hover
 ----------------
-
 Hover over a Location icon with a mouse to quickly show its parameters. Click or Touch the Location to pin the parameters list open or closed. 
 
 .. image:: map_location_parameters.png
@@ -49,7 +41,7 @@ Use filters to quickly show locations of interest.
 
 **Alarms Filter** will show only the Locations within the Selected Node that are currently in alarm or acknowledged state (including any contained Nodes).
 
-**Parameter Filters** will show only the Locations within the Selected Node that contain parameters of the same name. Both Alarms and Parameter Filters can be combined.
+**Parameter Filters** will show only the Locations within the Selected Node that contain parameters matching the filter name(s). Both Alarms and Parameter Filters can be combined.
 
 .. image:: map_filters.png
 	:scale: 50 %
@@ -77,7 +69,7 @@ Locations containing alarms will have their marker displayed in *RED* If all ala
 
 Reserved marker colors
 -----------------------
-These reserved marker colors temporarily overwrite the normal marker color.
+These reserved marker colors temporarily overwrite the normal marker color:
 
 *Active Alarm*
 
@@ -101,7 +93,7 @@ These reserved marker colors temporarily overwrite the normal marker color.
 | 
 
 
-Adding a new location marker
+Adding a new Location marker
 -----------------------------
 |icon-location-add| Use the *Add Location* button in the toolbar or from the map context menu with a right-click or long-press on the map. The Add Location dialog will be displayed showing all locations within the Selected Node that have not been assigned coordinates.
 
@@ -128,7 +120,7 @@ Adding a new location marker
 
 Reposition marker
 -----------------
-|icon-move| Select *Reposition marker* from the map marker context menu to enter reposition mode. The marker will show with a bouncing effect while in reposition mode. Drag and drop the marker and pan/zoom the map until the marker is in the correct position. click or touch on the map background to apply the new coordinates. 
+|icon-move| Select *Reposition marker* from the map marker context menu to enter reposition mode. The marker will be shown with a bouncing effect while in reposition mode. Drag and drop the marker and pan/zoom the map until the marker is in the correct position. click or touch on the map background to apply the new coordinates. 
 
 .. image:: map_location_reposition.png
 	:scale: 50 %
@@ -138,9 +130,9 @@ Reposition marker
 Remove marker
 -------------
 |icon-remove| Select *Remove marker* from the map marker context menu to remove the marker from the map.
-This operation resets the location coordinates only. It does not delete the Location Node or any historic data.
+This operation resets the location coordinates only. It will not delete the Location Node or any historic data.
 
 
 .. note::
-	The location must use Fixed Coordinates and you must have configure permission for the Workspace to Add, Reposition or Remove the marker. Locations with Dynamic Coordinates will automatically be added, repositioned and removed as the coordinate Source receives updates.
+	The Location must use Fixed Coordinates and you must have *configure* permission for the Workspace to Add, Reposition or Remove the marker. Locations with Dynamic Coordinates will automatically be added, repositioned and removed as the Source receives updates.
 

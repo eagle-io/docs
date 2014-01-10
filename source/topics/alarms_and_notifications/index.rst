@@ -6,7 +6,7 @@ Alarms and Notifications
 
 Types of Alarms
 ---------------
-There are different types of alarms which apply to specific Nodes. Notifications can optionally be configured for the Alarm or Event type but require a Category to be selected. The notification drop down is used to specify when notifications should be sent and generally allow the notification to be sent when the alarm is raised and/or cleared. Learn more about :ref:`configuring nodes <nodes-and-configuration>`.
+There are different types of alarms which apply to specific Nodes. Notifications can optionally be configured for Alarms and require a Category to be selected. The notification drop down is used to specify when notifications should be sent - when the alarm is raised and/or cleared. Learn more about :ref:`configuring nodes <nodes-and-configuration>`.
 
 Communications Alarm
 ~~~~~~~~~~~~~~~~~~~~
@@ -49,11 +49,11 @@ Each defined State can have Alarms and Notifications configured independently.
 
 Alarm Indicators
 -----------------
-Alarms are always shown in *RED*. When an alarm has been Acknowledged it will be shown in *ORANGE*. When the Alarm is Cleared (when the condition or problem has returned to normal, or when the user has manually cleared the alarm) the Node or Content is displayed with its normal colour. See below for an example of alarm content.
+Alarms are always shown in *RED*. When an alarm has been Acknowledged it will be shown in *ORANGE*. When the Alarm is Cleared (when the condition or problem has returned to normal, or when the user has manually cleared the alarm) the Node or Content is displayed with its normal color. See below for an example of alarm content.
 
 Workspaces Menu
 ~~~~~~~~~~~~~~~
-Alarms are shown in the Workspaces Menu as numbers that indicate the total count of unacknowledged alarms on or within the Nodes they are beside. Expanding the Nodes will show the individual alarm counts next to each contained Node.
+Alarms are shown in the Workspaces Menu as numbers indicating the total count of unacknowledged alarms on or within the Node. Expanding the Nodes will show the individual alarm counts next to each contained Node.
 
 .. image:: workspaces_menu_alarm_1.png
 	:scale: 50 %
@@ -68,7 +68,7 @@ Alarms are shown in the Workspaces Menu as numbers that indicate the total count
 List View
 ~~~~~~~~~
 List View has an Alarm Icon which can be clicked or touched to reveal the Alarm Panel.
-The Alarm Panel displays a quick list of the currently active or acknowledged alarms for the selected Node.
+The Alarm Panel displays a quick list of the currently active or acknowledged alarms for the corresponding Node.
 
 *Active Alarm*
 
@@ -98,7 +98,7 @@ The Alarm Panel displays a quick list of the currently active or acknowledged al
 
 Map View
 ~~~~~~~~
-Map View applies the alarm color variations to the Location markers, temporarily overwriting the default marker colour. 
+Map View applies the alarm color variations to the Location markers, temporarily overwriting the default marker color. 
 
 *Active Alarm*
 
@@ -155,7 +155,7 @@ There are 3 steps to configuring notifications:
 
 1. :ref:`Configure the Node <nodes-and-configuration>` and set the Notification option and Category for an Alarm type or State.
 2. Configure your user profile :ref:`notification preferences <user-notification-preferences>`.
-3. :ref:`Subscribe to the Nodes <subscribe-nodes>` you would like to receive notifications from.
+3. :ref:`Subscribe to the Nodes <subscribe-nodes>` you would like to receive notifications for.
 
 Account administrators can also define custom notification categories and set limits on certain types of notifications. See :ref:`managing notifications <management-notifications>` for full details.
 
@@ -168,7 +168,7 @@ Subscribe to Nodes
 
 When changing subscription options from the toolbar or context menu the checked or chosen Nodes including all contained Nodes will have the new subscription options applied.
 
-Click or touch the subscribe icon in the List View to toggle your subscription to the corresponding Node(s). If the chosen Nodes contains other Nodes, the Subscription Panel will be displayed to allow you to select which types of Nodes you would like to subscribe to or unsubscribe from. A partially colored subscription icon indicates that not all contained Nodes have been subscribed to.
+Click or touch the subscribe icon in the List View to toggle your subscription to the corresponding Node(s). If the Node contains other Nodes (ie. Location Node contains Source Node), the Subscription Panel will be displayed to allow you to select which types of Nodes you would like to subscribe to or unsubscribe from. A partially colored subscription icon indicates that not all contained Nodes have been subscribed to.
 
 *Subscription Panel accessible from List View*
 
@@ -178,7 +178,7 @@ Click or touch the subscribe icon in the List View to toggle your subscription t
 | 
 
 .. note::
-	Users require *subscribe notifications* permission to subscribe to Nodes. See :ref:`User roles <management-security-userroles>` for full details about configuring Workspace User roles and assigned permissions.
+	Users require *subscribe notifications* permission to subscribe to Nodes. See :ref:`User roles <management-security-userroles>` for full details about configuring Workspace User roles and assigning permissions.
 
 
 

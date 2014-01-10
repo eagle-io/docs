@@ -7,20 +7,20 @@ Eagle.io at a glance
 Cloud-based, collaborative, real-time monitoring
 ------------------------------------------------
 
-.. figure:: network.jpg
+.. image:: network.jpg
 
-	Eagle.io is a secure, reliable, easy to use cloud-based data monitoring service.
-	Whether your working with simple data files or managing a fleet of :term:`data loggers <data logger>`, eagle.io has you covered.
+Eagle.io is a secure, reliable, easy to use cloud-based data monitoring service.
+Whether your working with simple data files or managing a fleet of :term:`data loggers <data logger>`, Eagle.io has you covered.
 
-	With real-time communications, collaboration and instant updates baked into the core you'll wonder what you ever did before.
-	The lightning fast interface has been designed to work across all modern phones and computing devices with no software to install and no page reloads.
+With real-time communications, collaboration and instant updates built into the core Eagle.io has everything you've always wanted and more.
+The lightning fast interface has been designed to work across all modern phones and computing devices with no software to install and no page reloads.
 
 | 
 
 Log in to eagle.io
 ------------------
 
-You will need a user profile to log in. This requires you to `Sign up <https://eagle.io/signup>`_ for an account or receive a Workspace Sharing invitation (or be added as an account administrator) by a registered user.
+You will need a user profile to log in. This requires you to `Sign up <https://eagle.io/signup>`_ for an account or receive a :ref:`Workspace Sharing <sharing-and-security>` invitation from a registered user.
 
 *Login form*
 
@@ -81,14 +81,14 @@ Most Nodes are hierarchical and may also contain Nodes themselves. The *Workspac
 
 | 
 
-Change the Selected Node by clicking or touching on another Node. You will notice that container nodes (with the exception of the Base Node) will automatically expand and collapse to show and hide their contained Nodes on selection.
+Change the Selected Node by clicking or touching on another Node. You will notice that container Nodes (with the exception of the Base Node) will automatically expand and collapse to show and hide their contained Nodes on selection.
 
 Selecting a Node focuses your View. Only the selected Node and the Nodes it contains will be available in the Content Area.
 
 You can easily show all content by selecting the Base Node.
 
 .. note::
-	The workspaces menu will be hidden by default when displayed on small screens. You can see the Selected Node displayed in the Status Bar. Double-click or Double-tap the status bar to quickly reveal the Workspace menu. Alternatively you can use the Workspaces menu show/hide button.
+	The Workspaces Menu will be hidden by default when displayed on small screens. You can see the Selected Node displayed in the Status Bar. Double-click or Double-tap the status bar to quickly reveal the Workspaces Menu. Alternatively you can use the Workspaces Menu show/hide button.
 
 *Most common types of Nodes:*
 
@@ -96,18 +96,18 @@ You can easily show all content by selecting the Base Node.
 	Workspaces are special container Nodes that can be shared with other users. All other Nodes are created within the Workspace. Workspaces can only be created by the Account Owner or Administrators.
 
 |icon-group| Group
-	Groups are simple nodes that provide structure to your Workspaces. You may choose to group content by geography or related purpose. Groups can be created inside Workspaces, Locations and other Groups.
+	Groups are simple Nodes that provide structure to your Workspaces. You may choose to group content by geography or related purpose. Groups can be created inside Workspaces, Locations and other Groups.
 
 |icon-location| Location
 	Locations are special containers used to associate data with a geographical location.
 	Locations can be created inside Workspaces and Groups.
 
 |icon-datasource| Data Source
-	Data Sources automatically acquire or receive timeseries data using a variety of different transport options. Connect to a :term:`data logger` or get collect data from a file. Data Sources can be created inside Locations only.
+	Data Sources automatically acquire or receive timeseries data using a variety of different transport options. Connect to a :term:`data logger` or collect data from files. Data Sources can be created inside Locations only.
 
 |icon-point-number-range| Parameter
-	Parameters are managed by (and contained within) Data Sources. Parameters store the individual timeseries acquired by its Data Source. There are many different types of parameters and can be used for both Monitoring and Controlling.
-
+	Parameters are managed by and contained within Data Sources. Parameters store the individual timeseries acquired by its Data Source. 
+	There are a few different types of parameters but essentially they support Monitoring or Controlling of values.
 
 Review the full list of :ref:`Node types <node-types>`.
 
@@ -127,7 +127,7 @@ Use the View Selector to change the View. You will notice the Content Area and T
 	Intuitive categorised lists provide quick access to the data for your most important Nodes: Locations, Sources, Parameters, Attachments.
 
 |icon-chart| Chart
-	Use the Chart View for reviewing your timeseries data in highly interactive charts. Choose to group data onto charts by Location or by Parameter type.
+	Use the Chart View for reviewing your timeseries data in highly interactive charts. Choose to group data on charts by Location or Parameter type.
 
 |icon-events| Events
 	Every interaction (user and system generated) is recorded in the Events log. 
@@ -180,7 +180,7 @@ Right-click, Long-press
 Inline help
 -----------
 
-|icon-help| Help is available throughout the interface - wherever you see the help icon as shown below.
+|icon-help| Help is available throughout the interface - wherever you see the help icon.
 You can hover, click or touch the help icon to show the help popup - many of which have quick links back to the relevant section in this documentation.
 
 *Inline help example*

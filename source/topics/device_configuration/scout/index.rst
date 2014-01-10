@@ -1,6 +1,6 @@
 Scout
 ======
-The Scout modem is the easiest way to connect your data logger to Eagle.io via the cellular network without the need for fixed ip addresses.
+The *Scout modem* is the easiest way to connect your data logger to Eagle.io. The *Scout* takes any standard internet ready SIM Card without the need for fixed IP addresses and has a range of smart features including inbuilt GPS, signal strength monitoring, event based reporting and low power mode.
 
 Source Configuration
 --------------------
@@ -14,7 +14,7 @@ You need to configure your Data Source to use the Scout transport. You can then 
 
 Device settings
 ---------------
-The device settings dialog allows you to review and configure the settings for your Scout. The status message at the bottom of the dialog will indicate if the remote device is up to date or out of date. Configuration updates will automatically be applied on the next successful connection.
+The device settings dialog allows you to review and configure the settings for your Scout. The status message at the bottom of the dialog will indicate if the remote device is *up to date* or *out of date*. Configuration updates will automatically be applied on the next successful connection.
 
 General
 ~~~~~~~
@@ -33,7 +33,7 @@ SIM pin
 GPS enabled
 	Disable the GPS if not needed to reduce power consumption.
 Network configuration
-	Uncheck *Automatic network configuration* only when the automatic mode does not work with your SIM. You will need to specify the Access point name and username/password as specified by your provider.
+	Uncheck *Automatic network configuration* only when the automatic mode does not work with your SIM. You will need to configure the Access point name and username/password as specified by your provider.
 
 .. _international format: http://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers
 
@@ -53,7 +53,7 @@ The communications section allows you to change the UART Port settings to correc
 
 Operations
 ~~~~~~~~~~
-The operations sections can be used to remotely reset or reboot the Scout device.
+The operations section can be used to remotely reset or reboot the *Scout modem*.
 
 .. image:: device_scout_operations.png
 	:scale: 50 %

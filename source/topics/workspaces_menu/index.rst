@@ -30,7 +30,7 @@ The Context Menu has a Create submenu which offers the same options as the Creat
 
 Rename
 ------
-|icon-rename| Rename a Node using the Context Menu or press the *F2* key after selecting a Node. 
+|icon-rename| Rename a Node from the context menu or press the *F2* key after selecting a Node. 
 
 .. image:: workspaces_menu_rename.png
 	:scale: 50 %
@@ -38,11 +38,11 @@ Rename
 The Node will be selected and you can type in a new name and press enter/return or click anywhere outside the Node to apply.
 
 .. note:: 
-	Nodes must be uniquely named within the current container Node. Restricted characters include forward slash '/' and underscore '_'
+	Nodes must be uniquely named within the current container Node. Restricted characters include forward slash '/' and underscore '_'.
 
 Delete
 ------
-|icon-remove| Permanently delete a Node using the Context Menu or press the *delete* key after selecting a Node. A confirmation message will be displayed.
+|icon-remove| Permanently delete a Node using the Context menu or press the *delete* key after selecting the Node. A confirmation message will be displayed.
 
 .. image:: workspaces_menu_delete.png
 	:scale: 50 %
@@ -55,7 +55,7 @@ Delete
 
 Copy and Paste
 --------------
-Copy and Paste (*Ctrl + C* / *Ctrl + V*) is the quickest and easiest way to duplicate a Node including all Nodes it contains. You must have configuration permission for the Node you intend to copy and the destination Node where you intend to paste.
+Copy *(Ctrl+C)* and Paste *(Ctrl+V)* is the quickest and easiest way to duplicate a Node including all Nodes it contains. You must have configuration permission for the Node you intend to copy and the destination Node where you intend to paste.
 
 |icon-copy| Copy a Node 
 
@@ -67,9 +67,9 @@ Copy and Paste (*Ctrl + C* / *Ctrl + V*) is the quickest and easiest way to dupl
 
 Move
 ----
-Move a Node (including all Nodes it contains) within a Workspace or even between Workspaces.
+Move a Node (including all Nodes it contains) within a Workspace or between Workspaces.
 
-*Click and Drag* a Node in the Workspaces Menu. Drag the Selected Node to the destination Node and release the mouse button when you see the destination node highlighted. Nodes will automatically expand when hovered over.
+*Click and Drag* a Node in the Workspaces Menu. Drag the Selected Node to the destination Node and release the mouse button when you see the destination node highlighted. Nodes will automatically expand when hovered.
 
 .. image:: workspaces_menu_move.png
 	:scale: 50 %
@@ -77,4 +77,4 @@ Move a Node (including all Nodes it contains) within a Workspace or even between
 | 
 
 .. note:: 
-	Moving Nodes in the Workspaces Menu is currently NOT supported on Touch devices (an alternate method is coming soon).
+	Moving Nodes in the Workspaces Menu is currently not supported on Touch devices.

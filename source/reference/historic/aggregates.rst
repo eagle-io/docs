@@ -9,7 +9,7 @@ Advantages of aggregation:
 	- Reduces the size of the dataset. Charts and tabular data can be loaded faster
 	- Easy generation of advanced statistical reports and charts. eg. Daily totals.
 
-The following aggregates are available depending on the Display Type setting of the parameter.
+The following aggregates are available depending on the Display Type setting of the Parameter:
 
 +--------------+-------+-------+
 |  Aggregate   | VALUE | STATE |
@@ -95,4 +95,4 @@ The delta aggregate retrieves the difference between the earliest and latest goo
 
 
 
-.. note:: Aggregates follow the OPC UA Historical Access 1.0 specification
+.. note:: Aggregates implement the OPC-UA Historical Access v1.0 Specification

@@ -11,7 +11,6 @@ Properties
 
 General
 ~~~~~~~
-
 Source Enabled
 	Uncheck the Source Enabled checkbox to stop collection and prevent alarms and notifications from triggering.
 
@@ -29,6 +28,11 @@ File type
 
 Connection
 ~~~~~~~~~~
+Retry attempts
+	Select how many retry attempts are made during an acquisition or scheduled collection before the communications is considered failed.
+
+Retry delay
+	Select the delay between retry attempts. The retry attempts multiplied by the retry delay should not exceed the collection interval.
 
 Transport type
 	Select the transport used to acquire files.
@@ -62,7 +66,6 @@ Communications Alarm
 
 Collection
 ~~~~~~~~~~
-
 Scheduled
 	Enable the schedule for automatic data collection.
 
@@ -72,11 +75,6 @@ Collection interval
 Interval offset
 	Offset the collection interval to prevent collection occuring on the interval. eg. 1 hour collection interval will occur at 9am, 10am, etc. Set an interval offset of 5 minutes and the collection times will be 9:05am, 10:05am, etc.
 
-Retry attempts
-	Select how many retry attempts are made during this scheduled collection before the communications is considered failed.
-
-Retry delay
-	Select the delay between retry attempts. The retry attempts multiplied by the retry delay should not exceed the collection interval.
 
 .. image:: datasource_file_collection.png
 	:scale: 50 %

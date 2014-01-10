@@ -19,8 +19,8 @@ Node Types
 | 
 
 |icon-attachment| Attachment
-	File or document stored in eagle.io. New attachments can be uploaded manually by a user or acquired via an Attachment Source.
-	Attachments can be created inside Workspaces, Locations, Groups and Attachment Sources.
+	Attachments include images, documents and other files stored in Eagle.io. New attachments can be uploaded manually by a user or acquired via an Attachment Source.
+	Attachments can be added inside Workspaces, Locations, Groups and Attachment Sources.
 
 | 
 
@@ -30,7 +30,7 @@ Node Types
 | 
 
 |icon-datasource| Data Source
-	Data Sources automatically acquire or receive timeseries data using a variety of different transport options. Connect to a :term:`data logger` or get collect data from a file. Data Sources can be created inside Locations only.
+	Data Sources automatically acquire or receive timeseries data using a variety of different transport options. Connect to a :term:`data logger` or collect data from files. Data Sources can be created inside Locations only.
 
 | 
 
@@ -46,7 +46,7 @@ Node Types
 | 
 
 |icon-point-number-range-control| Number Control Parameter
-	Number Control Parameters are similar to Number Parameters however the value can be controlled by the user. Historic data represents the user control operations, not the associated Data Source value.
+	Number Control Parameters are similar to Number Parameters however the value can be controlled by the user. Historic data represents the user control operations.
 
 | 
 
@@ -61,16 +61,16 @@ Node Types
 | 
 
 |icon-point-text-control| Text Control Parameter
-	Text Control Parameters are similar to Text Parameters however the value can be controlled by the user. Historic data represents the user control operations, not the associated Data Source value.
+	Text Control Parameters are similar to Text Parameters however the value can be controlled by the user. Historic data represents the user control operations.
 
 | 
 
 |icon-point-time| Time Parameter
-	Time Parameters store historic time series data in time format. 
+	Time Parameters store historic time series data as timestamps. 
 
 | 
 
 |icon-point-time-control| Time Control Parameter
-	Time Control Parameters are similar to Time Parameters however the value can be controlled by the user. Historic data represents the user control operations, not the associated Data Source value.
+	Time Control Parameters are similar to Time Parameters however the value can be controlled by the user. Historic data represents the user control operations.
 
 | 

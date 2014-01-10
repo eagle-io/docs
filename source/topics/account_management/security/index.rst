@@ -51,7 +51,7 @@ Acknowledge alarms
 	Acknowledge alarms with or without comment.
 
 Edit states & alarms
-	Configure Node States and assign Alarms.
+	Configure Node states and alarms, or Clear alarms.
 
 Operate
 	User can Acquire and Control Datasources and Parameters.
