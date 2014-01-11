@@ -11,8 +11,8 @@ Introductions to all the key parts of eagle.io you’ll need to know:
    nodes/index
    user_preferences/index
    alarms_and_notifications/index
-   historic_data/index
    operate_and_control/index
+   historic_data/index
    sharing_and_security/index
    account_management/index
    device_configuration/index
