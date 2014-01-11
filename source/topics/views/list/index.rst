@@ -107,7 +107,7 @@ Properties
 	Show the Node properties dialog.
 
 
-|icon-control| Control parameters can be controlled inline in the parameters list. Click the control icon and set the new value or cancel. Requires *operate* permission for the Workspace.
+|icon-control| Control parameters can be controlled inline in the parameters list. Click the control icon and set the new value or cancel. Requires *operate* permission for the Workspace. See :ref:`Operate and Control <operate-and-control>` for full details. 
 
 
 Attachments

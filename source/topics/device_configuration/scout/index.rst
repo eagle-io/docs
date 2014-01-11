@@ -1,3 +1,5 @@
+.. _device-scout:
+
 Scout
 ======
 The *Scout modem* is the easiest way to connect your data logger to Eagle.io. The *Scout* takes any standard internet ready SIM Card without the need for fixed IP addresses and has a range of smart features including inbuilt GPS, signal strength monitoring, event based reporting and low power mode.
