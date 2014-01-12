@@ -1,3 +1,5 @@
+.. _node-configuration-attachmentsource:
+
 Attachment Source
 =================
 |icon-attachmentsource| Attachment Sources have the ability to automatically acquire or receive Attachments. Attachment Sources can be created inside Locations only.

@@ -17,9 +17,7 @@ We support the latest versions of all major browsers: Chrome, Firefox, Internet 
 
 What languages do you support?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-English is currently the only supported language. We plan on adding full Internationalisation and Localisation (i18n) support in the near future.
-
-
+English is currently the only supported language. Support for other languages is coming soon. You can however set your timezone and display preferences.
 
 Data Loggers
 ------------
@@ -27,12 +25,13 @@ Data Loggers
 What types of data loggers, PLCs and RTUs are supported?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 We support Campbell Scientific data loggers that use the PakBus protocol. 
-This includes the CR200X, CR800 and CR1000 series.
+This includes the CR200, CR800 and CR1000 series.
 
 .. image:: datalogger_campbell_pakbus.jpg
 	:scale: 50 %
 
-| 
+Support for a wide range of data loggers and devices is coming soon. `Contact Us <https://eagle.io/contact/>`_ to find out how to get support for your device.
+
 
 What connection options are supported?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -52,7 +51,7 @@ Files
 
 What types of time series data files do you support?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-We support most types of delimited text files such as csv, loggernet and other flat formats. See Data Source parameter configuration for futher details.
+We support most types of delimited text files such as csv, loggernet and other standard formats. See :ref:`Data Source <node-configuration-datasource-datalogger>` configuration for full details.
 
 What file transports do you support for automatic collection?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -66,21 +65,20 @@ Support is coming for `Google Drive <http://drive.google.com>`_, FTP and Email.
 
 Can I upload other types of files?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Eagle.io supports uploading files of any type. You can manually upload files through the interface or support an Attachment Source for automated uploads. Please note that we charge a small fee for attachment storage.
-
+Eagle.io supports uploading files of any type. You can manually upload files through the interface or use an :ref:`Attachment Source <node-configuration-attachmentsource>` for automated uploads. Please note that attachment storage incurs a fee on the owners account.
 All content and files uploaded must comply with our `Acceptable Use Policy <https://eagle.io/policies/acceptableuse>`_.
 
 
 Cameras
 -------
 
-Can my camera send images or video files to Eagle.io?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Yes, you can create an Attachment Source which accepts files of any type (including images and video). The files are stored as attachments and you can even set your Locations to display the latest image to be uploaded. Images and video can be reviewed in the built-in media gallery or downloaded for offline viewing.
+Do you support cameras sending images or video files to Eagle.io?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Yes, you can create an :ref:`Attachment Source <node-configuration-attachmentsource>` which accepts files of any type. The files are stored as Attachments and you can set your Locations to display the most recent images uploaded. Images and video can be reviewed in the media gallery or downloaded for offline viewing.
 
 We currently support email as the Attachment Source transport. Support for FTP is coming soon.
-Your camera must support email - you are assigned a unique message Subject to use.
+Your camera must have in-built support for emailing images/files with custom subject text.
 
 Do you support live streaming video?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-No. Support for live streaming and PTZ Control (Pan, Tilt, Zoom) is coming Q3 2014.
+Support for live streaming video with optional PTZ control (Pan, Tilt, Zoom) is coming soon.
