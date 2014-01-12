@@ -1,3 +1,5 @@
+.. _alarms-and-notifications:
+
 Alarms and Notifications
 ========================
 |icon-alarm| An alarm is an indication of an abnormal condition or problem detected by the system. Alarms are always associated with Nodes and are visually indicated throughout the interface using specific color coding. When an alarm is raised, you should typically acknowledge it so that other users do not attempt to investigate the same alarm condition. 

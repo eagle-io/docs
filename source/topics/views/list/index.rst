@@ -144,23 +144,23 @@ Properties
 Toolbar Controls
 ----------------
 
-Toolbar controls should be used in combination with the row selection checkboxes to perform the selected operation on multiple Nodes at once. The same options are also available from the individual row context menus.
+Toolbar controls should be used in combination with the row selection checkboxes to perform the selected operation on multiple Nodes at once. The same options are also available via the context menu for each row item.
 
 Notifications
 ~~~~~~~~~~~~~
-|icon-notification| Subscribe or Unsubscribe from receiving notifications for the checked Nodes including all contained Nodes.
+|icon-notification| Subscribe or Unsubscribe from receiving notifications for the checked Nodes including all contained Nodes. See :ref:`Alarms and Notifications <alarms-and-notifications>` for full details.
 
 Alarms
 ~~~~~~
-|icon-alarm| Acknowledge alarms with or without a comment, or Clear the alarms for the checked Nodes.
+|icon-alarm| Acknowledge alarms with or without a comment, or Clear the alarms for the checked Nodes. See :ref:`Alarms and Notifications <alarms-and-notifications>` for full details.
 
 Operate
 ~~~~~~~
-|icon-operate| Acquire or Control the checked nodes.
+|icon-operate| Acquire or Control the checked nodes. See :ref:`Operate and Control <operate-and-control>` for full details.
 
 Historic Data
 ~~~~~~~~~~~~~
-|icon-history| View data as a Table of values or graphically on a Chart. You can also export the historic data for the checked Nodes.
+|icon-history| View data as a Table of values or graphically on a Chart. You can also export the historic data for the checked Nodes. See :ref:`Historic Data <historic-data>` for full details.
 
 Upload Attachments
 ~~~~~~~~~~~~~~~~~~

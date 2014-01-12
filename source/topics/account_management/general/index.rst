@@ -14,9 +14,11 @@ Click or touch the *Change* button to Change or Cancel the account. Follow the o
 
 .. _management-general-qualitycodes:
 
-Quality codes
+Quality Codes
 -------------
-The Quality Codes section displays a list of the currently configured data Quality Codes for this Account. Refer to the :ref:`Quality reference <historic-quality>` for full details about system quality codes.
+The Quality Codes section displays a list of the historic :ref:`Qualities <historic-quality>` for this Account. Quality Code settings apply to all Workspaces in the account. Use the *Add* button to create custom quality codes.
+
+Source and Quality Codes must be whole numbers between 0 - 65535.
 
 .. image:: account_quality.png
 	:scale: 50 %
@@ -24,10 +26,12 @@ The Quality Codes section displays a list of the currently configured data Quali
 | 
 
 Source Quality
-	Quality Code for data acquired with a Datasource
+	Quality Code(s) to match on acquired data. Seperate multiple quality codes with a comma.
 
 Quality Code
-	Output quality code for exports, etc.
+	Quality Code to apply to the data for display and export. You can use the same Code as the Source or specify a custom code. Must be numeric.
+
+Refer to the :ref:`Quality reference <historic-quality>` for further details.
 
 .. note::
 	System qualities can not be removed, but can be updated with new Quality Codes.

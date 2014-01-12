@@ -66,6 +66,12 @@ Communications Alarm
 
 Collection
 ~~~~~~~~~~
+
+.. image:: datasource_file_collection.png
+	:scale: 50 %
+
+| 
+
 Scheduled
 	Enable the schedule for automatic data collection.
 
@@ -75,19 +81,15 @@ Collection interval
 Interval offset
 	Offset the collection interval to prevent collection occuring on the interval. eg. 1 hour collection interval will occur at 9am, 10am, etc. Set an interval offset of 5 minutes and the collection times will be 9:05am, 10:05am, etc.
 
-
-.. image:: datasource_file_collection.png
-	:scale: 50 %
-
 | 
-
-
-Outdated Alarm
-	See Alarms and Notifications section..... or INCLUDE the content here
 
 .. image:: source_collection_alarm.png
 	:scale: 50 %
 
 | 
+
+Outdated Alarm
+	See Alarms and Notifications section..... or INCLUDE the content here
+
 
 
