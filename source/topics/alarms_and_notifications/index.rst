@@ -10,6 +10,8 @@ Types of Alarms
 ---------------
 There are different types of alarms which apply to specific Nodes. Notifications can optionally be configured for Alarms and require a Category to be selected. The notification drop down is used to specify when notifications should be sent - when the alarm is raised and/or cleared. Learn more about :ref:`configuring nodes <nodes-and-configuration>`.
 
+.. _communications-alarm:
+
 Communications Alarm
 ~~~~~~~~~~~~~~~~~~~~
 Communications Alarms are specific to Sources and are triggered (if enabled) when communications to the Source has failed. 
@@ -20,6 +22,8 @@ If the communications attempt is not successful during a user acquisition or sch
 
 | 
 
+.. _outdated-alarm:
+
 Outdated Alarm
 ~~~~~~~~~~~~~~
 Outdated Alarms are specific to Sources and are triggered (if enabled) when no new data has been received by the Source after the specified *Maximum timeout*. Outdated alarms usually indicate a problem with the device or data being logged.
@@ -29,6 +33,8 @@ Outdated Alarms are specific to Sources and are triggered (if enabled) when no n
 
 | 
 
+.. _control-alarm:
+
 Control Alarm
 ~~~~~~~~~~~~~
 Control Alarms are specific to Control Parameters and are triggered (if enabled) when a control operation has failed for any reason other than a communications failure.
@@ -37,6 +43,8 @@ Control Alarms are specific to Control Parameters and are triggered (if enabled)
 	:scale: 50 %
 
 | 
+
+.. _state-arlam:
 
 State Alarm
 ~~~~~~~~~~~

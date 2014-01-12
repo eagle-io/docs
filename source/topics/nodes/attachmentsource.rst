@@ -27,6 +27,12 @@ Remove after
 
 Connection
 ~~~~~~~~~~
+
+.. image:: attachmentsource_connection.png
+	:scale: 50 %
+
+| 
+
 Transport type
 	Select the transport used to acquire attachments. This is currently restricted to email only.
 	Email attachments to upload@eagle.io.
@@ -34,22 +40,18 @@ Transport type
 Subject text
 	The subject of the email must appear exactly as shown. Click *change* to generate a new subject.
 
-.. image:: attachmentsource_connection.png
-	:scale: 50 %
-
-| 
-
 Communications Alarm
-	See Alarms and Notifications section..... or INCLUDE the content here
-
-.. image:: source_connection_alarm.png
-	:scale: 50 %
-
-| 
+	See :ref:`Alarms and Notifications <communications-alarm>`.
 
 
 Collection
 ~~~~~~~~~~
+
+.. image:: attachmentsource_collection.png
+	:scale: 50 %
+
+| 
+
 Sender address filter
 	For added security you can filter attachments by sender email address. Restrict to a specific email address or use \* to match multiple addresses from the same domain. Example: \*@company.com
 
@@ -63,17 +65,5 @@ Process email body
 
 	**HTML** will store the HTML content of the email in addition to any attachments.
 
-
-.. image:: attachmentsource_collection.png
-	:scale: 50 %
-
-| 
-
 Outdated Alarm
-	See Alarms and Notifications section..... or INCLUDE the content here
-
-.. image:: source_collection_alarm.png
-	:scale: 50 %
-
-| 
-
+	See :ref:`Alarms and Notifications <outdated-alarm>`.

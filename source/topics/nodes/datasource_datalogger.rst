@@ -49,6 +49,9 @@ Retry delay
 Transport type
 	Select the transport used to acquire files.
 
+Communications Alarm
+	See :ref:`Alarms and Notifications <communications-alarm>`.
+
 
 TCP Client
 ```````````
@@ -94,16 +97,6 @@ Device Id
 .. note:: You need to *Save* the Source before you can change the Device settings.
 
 
-
-Communications Alarm
-	See Alarms and Notifications section..... or INCLUDE the content here
-
-.. image:: source_connection_alarm.png
-	:scale: 50 %
-
-| 
-
-
 Collection
 ~~~~~~~~~~
 
@@ -126,11 +119,6 @@ Collection interval
 Interval offset
 	Offset the collection interval to prevent collection occuring on the interval. eg. 1 hour collection interval will occur at 9am, 10am, etc. Set an interval offset of 5 minutes and the collection times will be 9:05am, 10:05am, etc.
 
-.. image:: source_collection_alarm.png
-	:scale: 50 %
-
-| 
-
 Outdated Alarm
-	See Alarms and Notifications section..... or INCLUDE the content here
+	See :ref:`Alarms and Notifications <outdated-alarm>`.
 
