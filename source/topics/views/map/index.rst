@@ -51,7 +51,7 @@ Hover over a Location icon with a mouse to quickly show its parameters. Click or
 
 	.. image:: map_location_parameters.png
 		:scale: 35 %
-		
+
 | 
 
 Filters
@@ -98,6 +98,7 @@ The show/hide filtered locations button found in the toolbar can be used to togg
 .. only:: latex
 
 	.. image:: map_filtered.png
+		:scale: 80 %
 
 | 
 

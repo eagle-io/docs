@@ -12,8 +12,15 @@ You should only add trusted users as Administrators to keep your account secure.
 Administrators automatically receive unrestricted access to all Workspaces and configuration settings for the account. There is no need to explicitly Share a Workspace with any Administrators of the same account.
 If you would like a User to have restricted access to Workspaces, then DO NOT add them as Administrators. Instead use Workspace Sharing to add them as a User of a Workspace with an assigned role.
 
-.. image:: account_administrators.png
-	:scale: 50 %
+.. only:: not latex
+
+	.. image:: account_administrators.png
+		:scale: 50 %
+
+.. only:: latex
+
+	.. image:: account_administrators.png
+		:scale: 80 %
 
 | 
 
@@ -31,8 +38,15 @@ Roles have permissions associated with them which define the allowed features an
 
 *Default User Roles*
 
-.. image:: account_user_roles.png
-	:scale: 50 %
+.. only:: not latex
+
+	.. image:: account_user_roles.png
+		:scale: 50 %
+
+.. only:: latex
+	
+	.. image:: account_user_roles.png
+		:scale: 80 %
 
 | 
 

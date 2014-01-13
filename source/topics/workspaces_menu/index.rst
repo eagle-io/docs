@@ -62,7 +62,7 @@ Delete
 .. only:: latex
 
 	.. image:: workspaces_menu_delete.png
-		:scale: 60 %
+		:scale: 70 %
 
 | 
 

@@ -4,8 +4,15 @@ Workspaces
 |icon-workspace| The Workspaces section displays a list of all Workspaces belonging to the currently selected Account.
 The Usage Overview shows a current snapshot of the Nodes being used for each Workspace. It also displays a count of Users (not including Administrators and Owners) that have access to each Workspace.
 
-.. image:: account_workspaces.png
-	:scale: 50 %
+.. only:: not latex
+
+	.. image:: account_workspaces.png
+		:scale: 50 %
+
+.. only:: latex
+
+	.. image:: account_workspaces.png
+		:scale: 80 %
 
 | 
 
@@ -13,4 +20,3 @@ You can add a new Workspace, rename or remove existing Workspaces or configure S
 
 .. note:: 
 	Workspaces can be created, renamed or modified directly from the Workspaces Menu.
-

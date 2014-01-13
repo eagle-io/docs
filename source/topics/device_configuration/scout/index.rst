@@ -8,8 +8,15 @@ Source Configuration
 --------------------
 You need to configure your Data Source to use the Scout transport. You can then use the *Device settings* button to display the device settings dialog. See :ref:`configuring a Data Source <node-configuration-datasource-datalogger>` for full details.
 
-.. image:: datasource_device.png
-	:scale: 50 %
+.. only:: not latex
+
+	.. image:: datasource_device.png
+		:scale: 50 %
+
+.. only:: latex
+
+	.. image:: datasource_device.png
+		:scale: 80 %
 
 | 
 
@@ -20,8 +27,16 @@ The device settings dialog allows you to review and configure the settings for y
 
 General
 ~~~~~~~
-.. image:: device_scout_general.png
-	:scale: 50 %
+
+.. only:: not latex
+
+	.. image:: device_scout_general.png
+		:scale: 50 %
+
+.. only:: latex
+
+	.. image:: device_scout_general.png
+		:scale: 80 %
 
 | 
 
@@ -44,8 +59,15 @@ Communications
 ~~~~~~~~~~~~~~
 The communications section allows you to change the UART Port settings to correctly pass data between Eagle.io and your data logger.
 
-.. image:: device_scout_communications.png
-	:scale: 50 %
+.. only:: not latex
+
+	.. image:: device_scout_communications.png
+		:scale: 50 %
+
+.. only:: latex
+
+	.. image:: device_scout_communications.png
+		:scale: 50 %
 
 |
 
@@ -57,7 +79,14 @@ Operations
 ~~~~~~~~~~
 The operations section can be used to remotely reset or reboot the *Scout modem*.
 
-.. image:: device_scout_operations.png
-	:scale: 50 %
+.. only:: not latex
+
+	.. image:: device_scout_operations.png
+		:scale: 50 %
+
+.. only:: latex
+
+	.. image:: device_scout_operations.png
+		:scale: 80 %
 
 | 

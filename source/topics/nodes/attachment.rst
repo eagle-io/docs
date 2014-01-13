@@ -13,7 +13,13 @@ General
 ~~~~~~~
 The General section allows you to enter a *description* for the attachment which is displayed in List View.
 
-.. image:: attachment_description.png
-	:scale: 50 %
+.. only:: not latex
+
+	.. image:: attachment_description.png
+		:scale: 50 %
+
+.. only:: latex
+
+	.. image:: attachment_description.png
 
 | 

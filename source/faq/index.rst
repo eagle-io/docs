@@ -58,8 +58,15 @@ What file transports do you support for automatic collection?
 We currently support automatic collection from any `Dropbox <http://www.dropbox.com>`_ account.
 Support is coming for `Google Drive <http://drive.google.com>`_, FTP and Email.
 
-.. image:: transports-file.png
-	:scale: 50 %
+.. only:: not latex
+
+	.. image:: transports-file.png
+		:scale: 50 %
+
+.. only:: latex
+
+	.. image:: transports-file.png
+		:scale: 30 %
 
 | 
 

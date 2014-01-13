@@ -10,8 +10,14 @@ Events
 
 The events list is live updating and always displayed in reverse chronological order. New events are automatically added to the top of the list. Scroll down the list to view older events.
 
-.. image:: events_overview.png
-	:scale: 50 %
+.. only:: not latex
+
+	.. image:: events_overview.png
+		:scale: 50 %
+
+.. only:: latex
+
+	.. image:: events_overview.png
 
 | 
 
@@ -22,8 +28,15 @@ Jump to Date
 ~~~~~~~~~~~~
 Use the Jump to date control to jump to a specific date. After scrolling down, you can scroll back up to show more recent events.
 
-.. image:: events_date.png
-	:scale: 50 %
+.. only:: not latex
+
+	.. image:: events_date.png
+		:scale: 50 %
+
+.. only:: latex
+
+	.. image:: events_date.png
+		:scale: 35 %
 
 | 
 

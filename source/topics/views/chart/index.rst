@@ -13,8 +13,14 @@ Locations
 ~~~~~~~~~
 Locations Subview displays a chart per Location. Any Parameters contained within the Location will be displayed on the same chart. If a Location does not contain any Parameters (or the Parameters have been filtered), no chart will be displayed.
 
-.. image:: chart_locations.png
-	:scale: 50 %
+.. only:: not latex
+
+	.. image:: chart_locations.png
+		:scale: 50 %
+
+.. only:: latex
+
+	.. image:: chart_locations.png
 
 | 
 
@@ -22,8 +28,14 @@ Parameters
 ~~~~~~~~~~
 Parameters Subview displays a chart per Parameter (based on Parameter name). Useful for comparing Parameters of the same type across multiple Locations. Filters can be applied to reduce the number of charts and/or Parameters being displayed.
 
-.. image:: chart_parameters.png
-	:scale: 50 %
+.. only:: not latex
+
+	.. image:: chart_parameters.png
+		:scale: 50 %
+
+.. only:: latex
+	
+	.. image:: chart_parameters.png
 
 | 
 
@@ -60,17 +72,31 @@ Click and Drag (or pinch on touch devices) over the main chart area to zoom. As 
 
 Use the navigator located directly under the main chart area to pan the chart or zoom in/out.
 
-*Chart area selected for zoom*
+.. only:: not latex
 
-.. image:: chart_zoom.png
-	:scale: 50 %
+	*Chart area selected for zoom*
 
-| 
+	.. image:: chart_zoom.png
+		:scale: 50 %
 
-*Chart after zoom*
+	| 
 
-.. image:: chart_zoomed.png
-	:scale: 50 %
+	*Chart after zoom*
+
+	.. image:: chart_zoomed.png
+		:scale: 50 %
+
+.. only:: latex
+
+	*Chart area selected for zoom*
+
+	.. image:: chart_zoom.png
+
+	| 
+
+	*Chart after zoom*
+
+	.. image:: chart_zoomed.png
 
 | 
 
@@ -78,8 +104,14 @@ Toggle Parameter display
 ~~~~~~~~~~~~~~~~~~~~~~~~
 Click or touch the parameters in the legend above the main chart area to temporarily show/hide the corresponding trends. The chart y-axis automatically scales based on the visible parameters.
 
-.. image:: chart_toggle_parameters.png
-	:scale: 50 %
+.. only:: not latex
+
+	.. image:: chart_toggle_parameters.png
+		:scale: 50 %
+
+.. only:: latex
+
+	.. image:: chart_toggle_parameters.png
 
 | 
 
@@ -93,7 +125,14 @@ Toolbar Controls
 
 |icon-calendar| Date range selector is used to quickly adjust the date range being shown on all charts. You can always zoom in on individual charts, but you cannot zoom out past the range set by this selector. Use Custom Range to select precise start/end dates.
 
-.. image:: chart_rangeselector.png
-	:scale: 50 %
+.. only:: not latex
+
+	.. image:: chart_rangeselector.png
+		:scale: 50 %
+
+.. only:: latex
+
+	.. image:: chart_rangeselector.png
+		:scale: 30 %
 
 | 

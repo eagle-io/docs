@@ -20,16 +20,30 @@ Max attachments
 Remove after
 	Enable this setting to specify the maximum number of days that attachments will be stored within this Source. The expired attachments will only be removed when new attachments arrive.
 
-.. image:: attachmentsource_general.png
-	:scale: 50 %
+.. only:: not latex
+
+	.. image:: attachmentsource_general.png
+		:scale: 50 %
+
+.. only:: latex
+
+	.. image:: attachmentsource_general.png
+		:scale: 80 %
 
 | 
 
 Connection
 ~~~~~~~~~~
 
-.. image:: attachmentsource_connection.png
-	:scale: 50 %
+.. only:: not latex
+
+	.. image:: attachmentsource_connection.png
+		:scale: 50 %
+
+.. only:: latex
+
+	.. image:: attachmentsource_connection.png
+		:scale: 80 %
 
 | 
 
@@ -47,8 +61,15 @@ Communications Alarm
 Collection
 ~~~~~~~~~~
 
-.. image:: attachmentsource_collection.png
-	:scale: 50 %
+.. only:: not latex
+
+	.. image:: attachmentsource_collection.png
+		:scale: 50 %
+
+.. only:: latex
+
+	.. image:: attachmentsource_collection.png
+		:scale: 80 %
 
 | 
 

@@ -24,8 +24,15 @@ You will need a user profile to log in. This requires you to `Sign up <https://e
 
 *Login form*
 
-.. image:: public_login.png
-	:scale: 50 %
+.. only:: not latex
+
+	.. image:: public_login.png
+		:scale: 50 %
+
+.. only:: latex
+
+	.. image:: public_login.png
+		:scale: 70 %
 
 | 
 

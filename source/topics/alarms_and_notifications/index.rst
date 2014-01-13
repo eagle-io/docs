@@ -17,8 +17,15 @@ Communications Alarm
 Communications Alarms are specific to Sources and are triggered (if enabled) when communications to the Source has failed. 
 If the communications attempt is not successful during a user acquisition or scheduled collection it will start retrying the communications at the frequency and duration set in the Source *Retry attempts* and *Retry delay* connection properties. Once failed, communications will not be attempted until the next user acquisition or scheduled *Collection interval*.
 
-.. image:: communications_alarm.png
-	:scale: 50 %
+.. only:: not latex
+
+	.. image:: communications_alarm.png
+		:scale: 50 %
+
+.. only:: latex
+
+	.. image:: communications_alarm.png
+		:scale: 80 %
 
 | 
 
@@ -28,8 +35,15 @@ Outdated Alarm
 ~~~~~~~~~~~~~~
 Outdated Alarms are specific to Sources and are triggered (if enabled) when no new data has been received by the Source after the specified *Maximum timeout*. Outdated alarms usually indicate a problem with the device or data being logged.
 
-.. image:: outdated_alarm.png
-	:scale: 50 %
+.. only:: not latex
+
+	.. image:: outdated_alarm.png
+		:scale: 50 %
+
+.. only:: not latex
+
+	.. image:: outdated_alarm.png
+		:scale: 80 %
 
 | 
 
@@ -39,8 +53,15 @@ Control Alarm
 ~~~~~~~~~~~~~
 Control Alarms are specific to Control Parameters and are triggered (if enabled) when a control operation has failed for any reason other than a communications failure.
 
-.. image:: control_alarm.png
-	:scale: 50 %
+.. only:: not latex
+
+	.. image:: control_alarm.png
+		:scale: 50 %
+
+.. only:: latex
+
+	.. image:: control_alarm.png
+		:scale: 80 %
 
 | 
 
@@ -51,11 +72,17 @@ State Alarm
 State Alarms are defined in the state configuration for Parameter Nodes (Alarm checkbox per state).
 Each defined State can have Alarms and Notifications configured independently.
 
-.. image:: state_alarm.png
-	:scale: 50 %
+.. only:: not latex
+
+	.. image:: state_alarm.png
+		:scale: 50 %
+
+.. only:: latex
+
+	.. image:: state_alarm.png
+		:scale: 80 %
 
 | 
-
 
 Alarm Indicators
 -----------------
@@ -65,44 +92,76 @@ Workspaces Menu
 ~~~~~~~~~~~~~~~
 Alarms are shown in the Workspaces Menu as numbers indicating the total count of unacknowledged alarms on or within the Node. Expanding the Nodes will show the individual alarm counts next to each contained Node.
 
-.. image:: workspaces_menu_alarm_1.png
-	:scale: 50 %
+.. only:: not latex
 
-| 
+	.. image:: workspaces_menu_alarm_1.png
+		:scale: 50 %
 
-.. image:: workspaces_menu_alarm_2.png
-	:scale: 50 %
+	| 
 
-| 
+	.. image:: workspaces_menu_alarm_2.png
+		:scale: 50 %
+
+.. only:: latex
+
+	.. image:: workspaces_menu_alarm_1.png
+		:scale: 35 %
+
+	| 
+
+	.. image:: workspaces_menu_alarm_2.png
+		:scale: 35 %
+
+|  
 
 List View
 ~~~~~~~~~
 List View has an Alarm Icon which can be clicked or touched to reveal the Alarm Panel.
 The Alarm Panel displays a quick list of the currently active or acknowledged alarms for the corresponding Node.
 
-*Active Alarm*
+.. only:: not latex
 
-.. image:: list_alarm.png
-	:scale: 50 %
+	*Active Alarm*
 
-| 
+	.. image:: list_alarm.png
+		:scale: 50 %
 
-*Acknowledged Alarm*
+	| 
 
-.. image:: list_acknowledged.png
-	:scale: 50 %
+	*Acknowledged Alarm*
 
-| 
+	.. image:: list_acknowledged.png
+		:scale: 50 %
 
-*Alarm Panel accessible from List View*
+	| 
 
-.. image:: alarmlist_alarm.png
-	:scale: 50 %
+	*Alarm Panel accessible from List View*
 
-| 
+	.. image:: alarmlist_alarm.png
+		:scale: 50 %
 
-.. image:: alarmlist_acknowledged.png
-	:scale: 50 %
+	| 
+
+	.. image:: alarmlist_acknowledged.png
+		:scale: 50 %
+
+.. only:: latex
+
+	*Active Alarm*
+
+	.. image:: list_alarm.png
+
+	*Acknowledged Alarm*
+
+	.. image:: list_acknowledged.png
+
+	*Alarm Panel accessible from List View*
+
+	.. image:: alarmlist_alarm.png
+		:scale: 80 %
+
+	.. image:: alarmlist_acknowledged.png
+		:scale: 80 %
 
 | 
 
@@ -139,8 +198,15 @@ Acknowledge with comment
 |icon-alarm-comment| Acknowledge an alarm and include a comment to indicate the cause or the action that is being taken to resolve the issue.
 The acknowledge alarms dialog will be displayed and you will be prompted to enter a comment for the acknowledgement. Requires *acknowledge alarms* permission.
 
-.. image:: acknowledge_alarm_comment.png
-	:scale: 50 %
+.. only:: not latex
+
+	.. image:: acknowledge_alarm_comment.png
+		:scale: 50 %
+
+.. only:: latex
+
+	.. image:: acknowledge_alarm_comment.png
+		:scale: 80 %
 
 | 
 
@@ -154,8 +220,14 @@ Alarm History
 -------------
 |icon-events| Use the :ref:`Events View <view-events>` with the Alarm Filter enabled to review all Alarm events that have occurred for the Selected Node. Events are logged when an Alarm is raised (becomes active), Acknowledged and Cleared. All information including time, comments and user are logged with the event.
 
-.. image:: alarm_history.png
-	:scale: 50 %
+.. only:: not latex
+
+	.. image:: alarm_history.png
+		:scale: 50 %
+
+.. only:: latex
+
+	.. image:: alarm_history.png
 
 | 
 
@@ -182,40 +254,17 @@ Click or touch the subscribe icon in the List View to toggle your subscription t
 
 *Subscription Panel accessible from List View*
 
-.. image:: subscription_panel.png
-	:scale: 50 %
+.. only:: not latex
+
+	.. image:: subscription_panel.png
+		:scale: 50 %
+
+.. only:: latex
+
+	.. image:: subscription_panel.png
+		:scale: 35 %
 
 | 
 
 .. note::
 	Users require *subscribe notifications* permission to subscribe to Nodes. See :ref:`User roles <management-security-userroles>` for full details about configuring Workspace User roles and assigning permissions.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -13,8 +13,15 @@ Changes take effect immediately and logged in users will be prompted to navigate
 
 Minimum length of 5 characters is required. The subdomain will be validated on save.
 
-.. image:: account_customise_subdomain.png
-	:scale: 50 %
+.. only:: not latex
+
+	.. image:: account_customise_subdomain.png
+		:scale: 50 %
+
+.. only:: latex
+
+	.. image:: account_customise_subdomain.png
+		:scale: 60 %
 
 | 
 

@@ -10,17 +10,29 @@ Sort rows in the list by clicking on column headers.
 
 List rows are temporarily highlighted immedietly following an update. Rows will be shown with a *RED* background to indicate active alarms on the Node or one of its contained Nodes. Rows with acknowledged alarms will be shown with an *ORANGE* background.
 
-*Active Alarm*
+.. only:: not latex
 
-.. image:: list_alarm.png
-	:scale: 50 %
+	*Active Alarm*
 
-| 
+	.. image:: list_alarm.png
+		:scale: 50 %
 
-*Acknowledged Alarm*
+	| 
 
-.. image:: list_acknowledged.png
-	:scale: 50 %
+	*Acknowledged Alarm*
+
+	.. image:: list_acknowledged.png
+		:scale: 50 %
+
+.. only:: latex
+
+	*Active Alarm*
+
+	.. image:: list_alarm.png
+
+	*Acknowledged Alarm*
+
+	.. image:: list_acknowledged.png
 
 | 
 
@@ -32,8 +44,14 @@ Locations
 ~~~~~~~~~
 Locations Subview displays an overview of Location Nodes.
 
-.. image:: list_locations.png
-	:scale: 50 %
+.. only:: not latex
+
+	.. image:: list_locations.png
+		:scale: 50 %
+
+.. only:: latex
+
+	.. image:: list_locations.png
 
 | 
 
@@ -53,8 +71,14 @@ Sources
 ~~~~~~~
 Sources Subview displays a list of all Data and Attachment Sources.
 
-.. image:: list_sources.png
-	:scale: 50 %
+.. only:: not latex
+
+	.. image:: list_sources.png
+		:scale: 50 %
+
+.. only:: latex
+
+	.. image:: list_sources.png
 
 | 
 
@@ -82,8 +106,14 @@ Parameters
 ~~~~~~~~~~
 Parameters Subview displays a list of all parameters.
 
-.. image:: list_parameters.png
-	:scale: 50 %
+.. only:: not latex
+
+	.. image:: list_parameters.png
+		:scale: 50 %
+
+.. only:: latex
+
+	.. image:: list_parameters.png
 
 | 
 
@@ -114,8 +144,14 @@ Attachments
 ~~~~~~~~~~~
 Attachments subview displays a list of all attachments.
 
-.. image:: list_attachments.png
-	:scale: 50 %
+.. only:: not latex
+
+	.. image:: list_attachments.png
+		:scale: 50 %
+
+.. only:: latex
+
+	.. image:: list_attachments.png
 
 | 
 
@@ -174,12 +210,11 @@ Media Gallery
 ~~~~~~~~~~~~~
 |icon-image| Displays images and supported video attachments in the gallery view. If no attachments are checked then all attachments will be available in the gallery. 
 
-.. image:: list_gallery.png
-	:scale: 50 %
+.. only:: not latex
 
-| 
+	.. image:: list_gallery.png
+		:scale: 50 %
 
+.. only:: latex
 
-
-
-
+	.. image:: list_gallery.png

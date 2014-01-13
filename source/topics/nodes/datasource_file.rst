@@ -20,8 +20,15 @@ File type
 	**Delimited Text** store data by separating the values in each row with a specific :term:`delimiter` character.
 
 
-.. image:: datasource_file_general.png
-	:scale: 50 %
+.. only:: not latex
+
+	.. image:: datasource_file_general.png
+		:scale: 50 %
+
+.. only:: latex
+
+	.. image:: datasource_file_general.png
+		:scale: 80 %
 
 | 
 
@@ -46,8 +53,15 @@ Dropbox is used to connect to a `Dropbox`_ account. An 'eagle.io' folder will be
 
 .. _Dropbox: http://dropbox.com
 
-.. image:: datasource_file_connection.png
-	:scale: 50 %
+.. only:: not latex
+
+	.. image:: datasource_file_connection.png
+		:scale: 50 %
+
+.. only:: latex
+
+	.. image:: datasource_file_connection.png
+		:scale: 80 %
 
 | 
 
@@ -62,8 +76,15 @@ When changing the account, a popup window will be displayed which allows you to 
 Collection
 ~~~~~~~~~~
 
-.. image:: datasource_file_collection.png
-	:scale: 50 %
+.. only:: not latex
+
+	.. image:: datasource_file_collection.png
+		:scale: 50 %
+
+.. only:: latex
+
+	.. image:: datasource_file_collection.png
+		:scale: 80 %
 
 | 
 

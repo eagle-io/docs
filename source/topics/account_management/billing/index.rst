@@ -28,8 +28,14 @@ Billing History
 
 The Billing History section displays a list of all previous account bills available for download.
 
-.. image:: account_billing_history.png
-	:scale: 50 %
+.. only:: not latex
+
+	.. image:: account_billing_history.png
+		:scale: 50 %
+
+.. only:: latex
+
+	.. image:: account_billing_history.png
 
 | 
 

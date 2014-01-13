@@ -13,8 +13,15 @@ Email notifications are free and unlimited.
 
 SMS notifications incur charges on the Owners Account. You can restrict the total number of SMS's allowed to be sent from your account per billing period. You can also choose to *Disable*  SMS or set to *Unlimited*  for no restriction.
 
-.. image:: account_notification_limits.png
-	:scale: 50 %
+.. only:: not latex
+
+	.. image:: account_notification_limits.png
+		:scale: 50 %
+
+.. only:: latex
+
+	.. image:: account_notification_limits.png
+		:scale: 70 %
 
 | 
 
@@ -33,8 +40,15 @@ Users must individually select the categories in each Workspace they would like 
 
 Add, rename and remove categories as necessary.
 
-.. image:: account_notification_categories.png
-	:scale: 50 %
+.. only:: not latex
+
+	.. image:: account_notification_categories.png
+		:scale: 50 %
+
+.. only:: latex
+
+	.. image:: account_notification_categories.png
+		:scale: 80 %
 
 | 
 
