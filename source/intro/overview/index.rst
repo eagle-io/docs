@@ -42,27 +42,18 @@ The layout of these sections will vary depending on the screen size of your devi
 
 *Desktop layout*
 
-.. image:: ui_layout_desktop.png
-	:scale: 50 %
+.. only:: not latex
 
-| 
+	.. image:: ui_layout_desktop.png
+		:scale: 50 %
 
-with percents
-
-.. autoimage:: ui_layout_desktop.png
-   :scale-html: 50 %
-   :scale-latex: 50 %
+.. only:: latex
+ 
+   .. image:: ui_layout_desktop.png
 
 | 
 
 *Phone and Tablet layout*
-
-.. image:: ui_layout_phone.png
-	:scale: 50 % 
-
-| 
-
-Specialised:
 
 .. only:: not latex
  
@@ -73,14 +64,6 @@ Specialised:
  
    .. image:: ui_layout_phone.png
       :scale: 70 %
-| 
-
-opt2:
-
-.. autoimage:: ui_layout_phone.png
-   :scale-html: 50 %
-   :scale-latex: 70 %
-
 | 
 
 *Main features*
@@ -214,8 +197,15 @@ You can hover, click or touch the help icon to show the help popup - many of whi
 
 *Inline help example*
 
-.. image:: inline_help.png
-	:scale: 50 %
+.. only:: not latex
+
+	.. image:: inline_help.png
+		:scale: 50 %
+
+.. only:: latex
+	
+	.. image:: inline_help.png
+		:scale: 30 %
 
 | 
 
