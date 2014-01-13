@@ -55,21 +55,6 @@ with percents
 
 | 
 
-without percents
-
-.. autoimage:: ui_layout_desktop.png
-   :scale-html: 50
-   :scale-latex: 50
-
-| 
-
-no latex scale
-
-.. autoimage:: ui_layout_desktop.png
-   :scale-html: 50 %
-
-| 
-
 *Phone and Tablet layout*
 
 .. image:: ui_layout_phone.png
@@ -77,10 +62,23 @@ no latex scale
 
 | 
 
-opt2
+Specialised:
+
+.. only:: not latex
+ 
+   .. image:: ui_layout_phone.png
+      :scale: 50 %
+ 
+.. only:: latex
+ 
+   .. image:: ui_layout_phone.png
+
+| 
+
+opt2:
 
 .. autoimage:: ui_layout_phone.png
-   :scale-html: 50
+   :scale-html: 50 %
    :scale-latex: 100
 
 | 
