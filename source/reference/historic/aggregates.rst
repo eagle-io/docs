@@ -52,6 +52,7 @@ The Interpolated algorithm calculates a value that is:
 	- If there is no beginning bound, the aggregate will be *No Data*.
 	- If any non-good values are skipped in order to find the closest good value, the aggregate will be *Data Subnormal*.
 
+
 AVERAGE
 -------
 The average aggregate adds up the values of all good raw data for each interval, and divides the sum by the number of good values producing a mean average. If any non-good values are ignored in the computation, the aggregate quality will be *Data Subnormal*.
@@ -86,9 +87,11 @@ END
 ---
 The end aggregate retrieves the last raw value within the interval. If the value is non-good, than the quality of the aggregate will be *Data Subnormal*.
 
+
 COUNT
 -----
 This aggregate retrieves a count of all the raw values within an interval. If one or more raw values are non-good, they are not included in the count and the aggregate quality will be *Data Subnormal*.
+
 
 DELTA
 -----

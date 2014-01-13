@@ -47,10 +47,26 @@ The layout of these sections will vary depending on the screen size of your devi
 
 | 
 
+opt2
+
+.. autoimage:: ui_layout_desktop.png
+   :scale-html: 50
+   :scale-latex: 100
+
+| 
+
 *Phone and Tablet layout*
 
 .. image:: ui_layout_phone.png
 	:scale: 50 %
+
+| 
+
+opt2
+
+.. autoimage:: ui_layout_phone.png
+   :scale-html: 50
+   :scale-latex: 100
 
 | 
 

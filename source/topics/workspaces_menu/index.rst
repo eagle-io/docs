@@ -17,13 +17,16 @@ Create
 .. image:: workspaces_menu_create.png
 	:scale: 50 %
 
-The Create Menu displays a list of the types of Nodes that can be created inside the currently Selected Node. Items that are disabled can not be created inside the Selected Node - either a restriction on the type of Node or you do not have the required security permissions.
+| 
 
+The Create Menu displays a list of the types of Nodes that can be created inside the currently Selected Node. Items that are disabled can not be created inside the Selected Node - either a restriction on the type of Node or you do not have the required security permissions.
 
 *Create using Context Menu*
 
 .. image:: workspaces_menu_context.png
 	:scale: 50 %
+
+| 
 
 The Context Menu has a Create submenu which offers the same options as the Create Menu.
 
