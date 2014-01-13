@@ -24,12 +24,6 @@ Create
 	.. image:: workspaces_menu_create.png
 		:scale: 30 %
 
-.. only:: latex
-
-	alt
-
-	.. image:: workspaces_menu_create.png
-
 | 
 
 The Create Menu displays a list of the types of Nodes that can be created inside the currently Selected Node. Items that are disabled can not be created inside the Selected Node - either a restriction on the type of Node or you do not have the required security permissions.
@@ -60,8 +54,15 @@ Delete
 ------
 |icon-remove| Permanently delete a Node using the Context menu or press the *delete* key after selecting the Node. A confirmation message will be displayed.
 
-.. image:: workspaces_menu_delete.png
-	:scale: 50 %
+.. only:: not latex
+
+	.. image:: workspaces_menu_delete.png
+		:scale: 50 %
+
+.. only:: latex
+
+	.. image:: workspaces_menu_delete.png
+		:scale: 60 %
 
 | 
 

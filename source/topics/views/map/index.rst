@@ -5,9 +5,14 @@ Map
 .. note::
 	The view displays content based on the Selected Node in the Workspaces Menu. Use filters to quickly target specific parameters or review alarms.
 
+.. only:: not latex
 
-.. image:: map_overview.png
-	:scale: 50 %
+	.. image:: map_overview.png
+		:scale: 50 %
+
+.. only:: latex
+
+	.. image:: map_overview.png
 
 | 
 
@@ -15,8 +20,15 @@ Layers and Map Type
 --------------------
 Change the appearance of the map using the Map Type drop down, or select one of the available Layers to show additional information such as cloud imagery or regional weather data provided by Google.
 
-.. image:: map_controls_layers.png
-	:scale: 50 %
+.. only:: not latex
+
+	.. image:: map_controls_layers.png
+		:scale: 50 %
+
+.. only:: latex
+
+	.. image:: map_controls_layers.png
+		:scale: 35 %
 
 | 
 
@@ -30,9 +42,16 @@ Click and Hover
 ----------------
 Hover over a Location icon with a mouse to quickly show its parameters. Click or Touch the Location to pin the parameters list open or closed. 
 
-.. image:: map_location_parameters.png
-	:scale: 50 %
+.. only:: not latex
 
+	.. image:: map_location_parameters.png
+		:scale: 50 %
+
+.. only:: latex
+
+	.. image:: map_location_parameters.png
+		:scale: 35 %
+		
 | 
 
 Filters
@@ -43,22 +62,42 @@ Use filters to quickly show locations of interest.
 
 **Parameter Filters** will show only the Locations within the Selected Node that contain parameters matching the filter name(s). Both Alarms and Parameter Filters can be combined.
 
-.. image:: map_filters.png
-	:scale: 50 %
+.. only:: not latex
+
+	.. image:: map_filters.png
+		:scale: 50 %
+
+.. only:: latex
+
+	.. image:: map_filters.png
+		:scale: 35 %
 
 | 
 
 The show/hide filtered locations button found in the toolbar can be used to toggle the display of filtered locations. When active you will notice any filters locations are displayed with just a *GRAY* marker and no label. You can still hover or click these filtered locations to display the parameters list.
 
-.. image:: map_controls_filter.png
-	:scale: 50 %
+.. only:: not latex
+
+	.. image:: map_controls_filter.png
+		:scale: 50 %
+
+.. only:: latex
+
+	.. image:: map_controls_filter.png
+		:scale: 35 %
 
 | 
 
 *Map with filters applied*
 
-.. image:: map_filtered.png
-	:scale: 50 %
+.. only:: not latex
+
+	.. image:: map_filtered.png
+		:scale: 50 %
+
+.. only:: latex
+
+	.. image:: map_filtered.png
 
 | 
 
@@ -71,24 +110,43 @@ Reserved marker colors
 -----------------------
 These reserved marker colors temporarily overwrite the normal marker color:
 
-*Active Alarm*
+.. only:: not latex
 
-.. image:: map_marker_alarm.png
-	:scale: 50 %
+	*Active Alarm*
 
-| 
+	.. image:: map_marker_alarm.png
+		:scale: 50 %
 
-*Acknowledged Alarm*
+	| 
 
-.. image:: map_marker_acknowledged.png
-	:scale: 50 %
+	*Acknowledged Alarm*
 
-| 
+	.. image:: map_marker_acknowledged.png
+		:scale: 50 %
 
-*Filtered*
+	| 
 
-.. image:: map_marker_filtered.png
-	:scale: 50 %
+	*Filtered*
+
+	.. image:: map_marker_filtered.png
+		:scale: 50 %
+
+.. only:: latex
+
+	*Active Alarm*
+
+	.. image:: map_marker_alarm.png
+		:scale: 50 %
+
+	*Acknowledged Alarm*
+
+	.. image:: map_marker_acknowledged.png
+		:scale: 50 %
+
+	*Filtered*
+
+	.. image:: map_marker_filtered.png
+		:scale: 50 %
 
 | 
 
@@ -99,22 +157,43 @@ Adding a new Location marker
 
 *Map context menu*
 
-.. image:: map_contextmenu.png
-	:scale: 50 %
+.. only:: not latex
+
+	.. image:: map_contextmenu.png
+		:scale: 50 %
+
+.. only:: latex
+
+	.. image:: map_contextmenu.png
+		:scale: 35 %
 
 | 
 
 *Add Location dialog*
 
-.. image:: map_location_add_dialog.png
-	:scale: 50 %
+.. only:: not latex
+
+	.. image:: map_location_add_dialog.png
+		:scale: 50 %
+
+.. only:: latex
+
+	.. image:: map_location_add_dialog.png
+		:scale: 70 %
+
 
 | 
 
 *Drag and Drop* Locations directly from the Workspaces Menu if your using a mouse (and Workspaces Menu visible).
 
-.. image:: map_location_add_dragdrop.png
-	:scale: 50 %
+.. only:: not latex
+
+	.. image:: map_location_add_dragdrop.png
+		:scale: 50 %
+
+.. only:: latex
+	
+	.. image:: map_location_add_dragdrop.png
 
 | 
 
@@ -122,8 +201,15 @@ Reposition marker
 -----------------
 |icon-move| Select *Reposition marker* from the map marker context menu to enter reposition mode. The marker will be shown with a bouncing effect while in reposition mode. Drag and drop the marker and pan/zoom the map until the marker is in the correct position. click or touch on the map background to apply the new coordinates. 
 
-.. image:: map_location_reposition.png
-	:scale: 50 %
+.. only:: not latex
+
+	.. image:: map_location_reposition.png
+		:scale: 50 %
+
+.. only:: latex
+
+	.. image:: map_location_reposition.png
+		:scale: 35 %
 
 | 
 
