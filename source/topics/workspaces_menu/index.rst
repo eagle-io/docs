@@ -14,8 +14,21 @@ Create
 
 *Create Menu*
 
-.. image:: workspaces_menu_create.png
-	:scale: 50 %
+.. only:: not latex
+
+	.. image:: workspaces_menu_create.png
+		:scale: 50 %
+
+.. only:: latex
+	
+	.. image:: workspaces_menu_create.png
+		:scale: 30 %
+
+.. only:: latex
+
+	alt
+
+	.. image:: workspaces_menu_create.png
 
 | 
 
