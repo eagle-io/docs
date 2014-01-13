@@ -29,7 +29,7 @@ class Autoimage(Image):
             
         if builder_name == 'latex':
             #self.arguments[0] = find_image(env.config.image_dir, old_filename)
-            self.arguments[0] = find_image(os.path, old_filename)
+            self.arguments[0] = os.path.join(old_filename)
             # if env.config.black_and_white:
             #     bw_image = find_image(env.config.image_dir_black_white, old_filename)
             #     if bw_image:
