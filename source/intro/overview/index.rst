@@ -50,8 +50,8 @@ The layout of these sections will vary depending on the screen size of your devi
 opt2
 
 .. autoimage:: ui_layout_desktop.png
-   :scale-html: 50 %
-   :scale-latex: 100 %
+   :scale-html: 10
+   :scale-latex: 10
 
 | 
 
@@ -65,8 +65,8 @@ opt2
 opt2
 
 .. autoimage:: ui_layout_phone.png
-   :scale-html: 50 %
-   :scale-latex: 100 %
+   :scale-html: 50
+   :scale-latex: 100
 
 | 
 
