@@ -71,6 +71,7 @@ The layout of these sections will vary depending on the screen size of your devi
  
    .. image:: ui_layout_phone.png
       :scale: 70 %
+      
 | 
 
 *Main features*
