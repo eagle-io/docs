@@ -47,11 +47,26 @@ The layout of these sections will vary depending on the screen size of your devi
 
 | 
 
-opt2
+with percents
 
 .. autoimage:: ui_layout_desktop.png
-   :scale-html: 10
-   :scale-latex: 10
+   :scale-html: 50 %
+   :scale-latex: 50 %
+
+| 
+
+without percents
+
+.. autoimage:: ui_layout_desktop.png
+   :scale-html: 50
+   :scale-latex: 50
+
+| 
+
+no latex scale
+
+.. autoimage:: ui_layout_desktop.png
+   :scale-html: 50 %
 
 | 
 
