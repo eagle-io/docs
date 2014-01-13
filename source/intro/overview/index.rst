@@ -72,14 +72,14 @@ Specialised:
 .. only:: latex
  
    .. image:: ui_layout_phone.png
-
+      :scale: 70 %
 | 
 
 opt2:
 
 .. autoimage:: ui_layout_phone.png
    :scale-html: 50 %
-   :scale-latex: 100
+   :scale-latex: 70 %
 
 | 
 
