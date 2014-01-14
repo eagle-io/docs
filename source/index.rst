@@ -1,7 +1,9 @@
 eagle.io documentation
 ======================
 
-If you are new to Eagle.io, please take a few minutes to read through the :ref:`Getting Started <overview>` guide.
+.. only:: not latex
+
+	If you are new to Eagle.io, please take a few minutes to read through the :ref:`Getting Started <overview>` guide.
 
 .. toctree::
    :maxdepth: 2

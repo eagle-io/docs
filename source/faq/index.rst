@@ -42,7 +42,7 @@ This includes the CR200, CR800 and CR1000 series.
 	.. image:: datalogger_campbell_pakbus.jpg
 		:scale: 50 %
 
-.. only:: not latex
+.. only:: latex
 
 	.. image:: datalogger_campbell_pakbus.jpg
 		:scale: 75 %
