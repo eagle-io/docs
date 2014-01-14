@@ -18,7 +18,10 @@ The events list is live updating and always displayed in reverse chronological o
 
 .. only:: latex
 
+	| 
+
 	.. image:: events_overview.png
+	
 
 Searching the Event Log
 -----------------------
