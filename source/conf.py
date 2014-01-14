@@ -195,13 +195,14 @@ latex_elements = {
 #'papersize': 'letterpaper',
 
 # remove release label from doc.
-'releasename': '',
+'releasename': '2014',
 
 # The font size ('10pt', '11pt' or '12pt').
 'pointsize': '11pt',
 
 # Additional stuff for the LaTeX preamble.
-'preamble': '\setcounter{tocdepth}{3}',
+'preamble': '',
+
 }
 
 # Grouping the document tree into LaTeX files. List of tuples
@@ -214,7 +215,7 @@ latex_documents = [
 
 # The name of an image file (relative to this directory) to place at the top of
 # the title page.
-#latex_logo = None
+latex_logo = '_static/logo_latex.png'
 
 # For "manual" documents, if this is true, then toplevel headings are parts,
 # not chapters.
