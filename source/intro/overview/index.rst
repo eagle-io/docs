@@ -29,12 +29,12 @@ You will need a user profile to log in. This requires you to `Sign up <https://e
 	.. image:: public_login.png
 		:scale: 50 %
 
+	| 
+
 .. only:: latex
 
 	.. image:: public_login.png
 		:scale: 70 %
-
-| 
 
 1. Login button for email & password authentication
 2. Link to reset your password
@@ -54,25 +54,25 @@ The layout of these sections will vary depending on the screen size of your devi
 	.. image:: ui_layout_desktop.png
 		:scale: 50 %
 
+	| 
+
 .. only:: latex
  
    .. image:: ui_layout_desktop.png
-
-| 
 
 *Phone and Tablet layout*
 
 .. only:: not latex
  
-   .. image:: ui_layout_phone.png
-      :scale: 50 %
+	.. image:: ui_layout_phone.png
+        :scale: 50 %
+
+    | 
  
 .. only:: latex
- 
-   .. image:: ui_layout_phone.png
-      :scale: 70 %
-      
-| 
+
+    .. image:: ui_layout_phone.png
+        :scale: 70 %
 
 *Main features*
 

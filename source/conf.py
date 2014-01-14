@@ -57,7 +57,7 @@ copyright = u'2012 - 2014 Argos.io Pty Ltd'
 # The short X.Y version.
 version = '1'
 # The full version, including alpha/beta/rc tags.
-release = '1'
+release = ''
 
 
 rst_prolog = '.. include:: /vars.rstx\n'
@@ -194,8 +194,11 @@ latex_elements = {
 # The paper size ('letterpaper' or 'a4paper').
 #'papersize': 'letterpaper',
 
+# remove release label from doc.
+'releasename': '',
+
 # The font size ('10pt', '11pt' or '12pt').
-#'pointsize': '10pt',
+'pointsize': '11pt',
 
 # Additional stuff for the LaTeX preamble.
 #'preamble': '',
