@@ -3,6 +3,27 @@
 	margin-bottom: 0;
 }*/
 
+.wy-side-logo {
+	padding: 0.809em 0.809em 0 0.809em;
+	background-color: #4d86c1; /*#2980b9;*/
+}
+
+.wy-side-nav-search {
+	padding-top: 0.5em;
+	background-color: #4d86c1;
+}
+
+.wy-side-nav-search input[type=text] {
+	border-radius: 6px;
+}
+
+.wy-nav-top { 
+	background-color: #4d86c1;
+	line-height: 100%;
+	font-size: 150%;
+}
+
+
 .wy-menu-vertical li.current > a {
 	background-color: #e3e3e3;
 	border-top: none;
@@ -22,8 +43,6 @@
 	border-right: none;
 	padding-top: 0.3545em;
 }
-
-
 
 .wy-menu-vertical li .toctree-l2 a {
 	padding: 0.4045em 2.427em;
