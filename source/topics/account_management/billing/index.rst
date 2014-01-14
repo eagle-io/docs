@@ -33,10 +33,13 @@ The Billing History section displays a list of all previous account bills availa
 	.. image:: account_billing_history.png
 		:scale: 50 %
 
+	| 
+
 .. only:: latex
+
+	| 
 
 	.. image:: account_billing_history.png
 
-| 
 
 .. _international format: http://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers

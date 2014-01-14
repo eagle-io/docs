@@ -22,11 +22,13 @@ If the communications attempt is not successful during a user acquisition or sch
 	.. image:: communications_alarm.png
 		:scale: 50 %
 
+	| 
+
 .. only:: latex
+	
+	| 
 
 	.. image:: communications_alarm.png
-
-| 
 
 .. _outdated-alarm:
 
@@ -39,11 +41,14 @@ Outdated Alarms are specific to Sources and are triggered (if enabled) when no n
 	.. image:: outdated_alarm.png
 		:scale: 50 %
 
-.. only:: not latex
+	| 
+
+.. only:: latex
+
+	| 
 
 	.. image:: outdated_alarm.png
 
-| 
 
 .. _control-alarm:
 
@@ -56,11 +61,14 @@ Control Alarms are specific to Control Parameters and are triggered (if enabled)
 	.. image:: control_alarm.png
 		:scale: 50 %
 
+	| 
+
 .. only:: latex
+
+	| 
 
 	.. image:: control_alarm.png
 
-| 
 
 .. _state-arlam:
 
@@ -74,11 +82,14 @@ Each defined State can have Alarms and Notifications configured independently.
 	.. image:: state_alarm.png
 		:scale: 50 %
 
+	| 
+
 .. only:: latex
+	
+	| 
 
 	.. image:: state_alarm.png
 
-| 
 
 Alarm Indicators
 -----------------
@@ -98,17 +109,17 @@ Alarms are shown in the Workspaces Menu as numbers indicating the total count of
 	.. image:: workspaces_menu_alarm_2.png
 		:scale: 50 %
 
+	| 
+
 .. only:: latex
 
 	.. image:: workspaces_menu_alarm_1.png
 		:scale: 35 %
 
-	| 
 
 	.. image:: workspaces_menu_alarm_2.png
 		:scale: 35 %
 
-|  
 
 List View
 ~~~~~~~~~
@@ -141,6 +152,8 @@ The Alarm Panel displays a quick list of the currently active or acknowledged al
 	.. image:: alarmlist_acknowledged.png
 		:scale: 50 %
 
+	| 
+
 .. only:: latex
 
 	*Active Alarm*
@@ -159,7 +172,6 @@ The Alarm Panel displays a quick list of the currently active or acknowledged al
 	.. image:: alarmlist_acknowledged.png
 		:scale: 60 %
 
-| 
 
 Map View
 ~~~~~~~~
@@ -188,8 +200,6 @@ Map View applies the alarm color variations to the Location markers, temporarily
 	.. image:: map_marker_alarm.png
 		:scale: 40 %
 
-	| 
-
 	*Acknowledged Alarm*
 
 	.. image:: map_marker_acknowledged.png
@@ -215,11 +225,14 @@ The acknowledge alarms dialog will be displayed and you will be prompted to ente
 	.. image:: acknowledge_alarm_comment.png
 		:scale: 50 %
 
+	| 
+
 .. only:: latex
+
+	| 
 
 	.. image:: acknowledge_alarm_comment.png
 
-| 
 
 Clear
 ~~~~~
@@ -236,11 +249,14 @@ Alarm History
 	.. image:: alarm_history.png
 		:scale: 50 %
 
+	| 
+
 .. only:: latex
+
+	| 
 
 	.. image:: alarm_history.png
 
-| 
 
 Notifications
 -------------
@@ -270,12 +286,13 @@ Click or touch the subscribe icon in the List View to toggle your subscription t
 	.. image:: subscription_panel.png
 		:scale: 50 %
 
+	| 
+		
 .. only:: latex
 
 	.. image:: subscription_panel.png
 		:scale: 40 %
-
-| 
+		
 
 .. note::
 	Users require *subscribe notifications* permission to subscribe to Nodes. See :ref:`User roles <management-security-userroles>` for full details about configuring Workspace User roles and assigning permissions.

@@ -10,11 +10,11 @@ User Preferences
 	.. image:: user_profile_overview.png
 		:scale: 50 %
 
+	| 
+
 .. only:: latex
 
 	.. image:: user_profile_overview.png
-
-| 
 
 
 Change login email
@@ -53,11 +53,14 @@ Click or touch the Workspace labels to display your preferences.
 	.. image:: user_profile_notification.png
 		:scale: 50 %
 
+	| 
+
 .. only:: latex
 
-	.. image:: user_profile_notification.png
+	| 
 
-| 
+	.. image:: user_profile_notification.png
+	
 
 Within each Workspace, you will see a list of Notification Categories specific to the Workspace.
 Use the SMS/Email checkboxes to set your preferences on what types of notifications you would like to receive for each Category.

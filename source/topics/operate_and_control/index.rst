@@ -19,11 +19,12 @@ This occurs when the Source Schedule is *Disabled* or set to *Remote* (ie. devic
 	.. image:: operate_acquire_callback.png
 		:scale: 50 %
 
+	| 
+
 .. only:: latex
 
 	.. image:: operate_acquire_callback.png
 
-| 
 
 .. _control:
 
@@ -45,11 +46,14 @@ Set the control values and *Apply*. Cancel a pending control operation by clicki
 	.. image:: operate_control_dialog.png
 		:scale: 50 %
 
+	| 
+
 .. only:: latex
+
+	| 
 
 	.. image:: operate_control_dialog.png
 
-| 
 
 List View inline Control
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -60,11 +64,14 @@ Control parameters can have their control value set directly from the Parameters
 	.. image:: operate_control_inline.png
 		:scale: 50 %
 
+	| 
+
 .. only:: latex
+
+	| 
 
 	.. image:: operate_control_inline.png
 
-| 
 
 .. note:: 
 	Control Parameters can be configured to restrict the user input for the control value. See :ref:`Configuring Parameters <node-configuration-parameter>` for full details.

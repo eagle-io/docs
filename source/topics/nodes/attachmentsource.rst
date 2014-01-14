@@ -25,11 +25,14 @@ Remove after
 	.. image:: attachmentsource_general.png
 		:scale: 50 %
 
+	| 
+
 .. only:: latex
+
+	| 
 
 	.. image:: attachmentsource_general.png
 
-| 
 
 Connection
 ~~~~~~~~~~
@@ -39,11 +42,12 @@ Connection
 	.. image:: attachmentsource_connection.png
 		:scale: 50 %
 
+	| 
+
 .. only:: latex
 
 	.. image:: attachmentsource_connection.png
 
-| 
 
 Transport type
 	Select the transport used to acquire attachments. This is currently restricted to email only.
@@ -64,11 +68,11 @@ Collection
 	.. image:: attachmentsource_collection.png
 		:scale: 50 %
 
+	| 
+
 .. only:: latex
 
 	.. image:: attachmentsource_collection.png
-
-| 
 
 Sender address filter
 	For added security you can filter attachments by sender email address. Restrict to a specific email address or use \* to match multiple addresses from the same domain. Example: \*@company.com

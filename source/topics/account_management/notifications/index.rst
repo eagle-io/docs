@@ -18,12 +18,14 @@ SMS notifications incur charges on the Owners Account. You can restrict the tota
 	.. image:: account_notification_limits.png
 		:scale: 50 %
 
+	| 
+
 .. only:: latex
+
+	| 
 
 	.. image:: account_notification_limits.png
 		:scale: 70 %
-
-| 
 
 The account owner will receive an Email from the system when the total number of SMS sent within the current billing period gets close to the selected limit. Another Email will be sent when the limit is reached and no further notification SMS's will be sent until the next billing period.
 
@@ -45,13 +47,15 @@ Add, rename and remove categories as necessary.
 	.. image:: account_notification_categories.png
 		:scale: 50 %
 
+	| 
+
 .. only:: latex
+	
+	| 
 
 	.. image:: account_notification_categories.png
 		:scale: 80 %
 
-| 
 
-.. note:: Removing categories will also remove associated user notification preferences. There should always be atleast one Category configured.
-
-
+.. note:: 
+	Removing categories will also remove associated user notification preferences. There should always be atleast one Category configured.

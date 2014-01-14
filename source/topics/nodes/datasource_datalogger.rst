@@ -37,11 +37,13 @@ Security code
 	.. image:: datasource_datalogger_general.png
 		:scale: 50 %
 
+	| 
+
 .. only:: latex
 
-	.. image:: datasource_datalogger_general.png
+	| 
 
-| 
+	.. image:: datasource_datalogger_general.png
 
 
 Connection
@@ -74,11 +76,13 @@ TCP Port
 	.. image:: datasource_datalogger_connection_tcpclient.png
 		:scale: 50 %
 
+	| 
+
 .. only:: latex
 
-	.. image:: datasource_datalogger_connection_tcpclient.png
+	| 
 
-| 
+	.. image:: datasource_datalogger_connection_tcpclient.png
 
 
 TCP Callback
@@ -93,11 +97,13 @@ Device Id
 	.. image:: datasource_datalogger_connection_tcpcallback.png
 		:scale: 50 %
 
+	| 
+
 .. only:: latex
 
-	.. image:: datasource_datalogger_connection_tcpcallback.png
+	| 
 
-| 
+	.. image:: datasource_datalogger_connection_tcpcallback.png
 
 
 Scout
@@ -112,11 +118,14 @@ Device Id
 	.. image:: datasource_datalogger_connection_scout.png
 		:scale: 50 %
 
+	| 
+
 .. only:: latex
+	
+	| 
 
 	.. image:: datasource_datalogger_connection_scout.png
 
-| 
 
 .. note:: You need to *Save* the Source before you can change the Device settings.
 
@@ -129,11 +138,12 @@ Collection
 	.. image:: datasource_datalogger_collection.png
 		:scale: 50 %
 
+	| 
+
 .. only:: latex
 
 	.. image:: datasource_datalogger_collection.png
 
-| 
 
 Scheduled
 	Enable the schedule for automatic data collection. You should Disable the schedule when using the TCP Callback Transport for event based callbacks (ie. not permanently connected).

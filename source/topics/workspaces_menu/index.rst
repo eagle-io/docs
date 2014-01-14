@@ -19,12 +19,12 @@ Create
 	.. image:: workspaces_menu_create.png
 		:scale: 50 %
 
+	| 
+
 .. only:: latex
 	
 	.. image:: workspaces_menu_create.png
 		:scale: 35 %
-
-| 
 
 The Create Menu displays a list of the types of Nodes that can be created inside the currently Selected Node. Items that are disabled can not be created inside the Selected Node - either a restriction on the type of Node or you do not have the required security permissions.
 
@@ -33,7 +33,9 @@ The Create Menu displays a list of the types of Nodes that can be created inside
 .. image:: workspaces_menu_context.png
 	:scale: 50 %
 
-| 
+.. only:: not latex
+
+	| 
 
 The Context Menu has a Create submenu which offers the same options as the Create Menu.
 
@@ -59,12 +61,12 @@ Delete
 	.. image:: workspaces_menu_delete.png
 		:scale: 50 %
 
+	| 
+
 .. only:: latex
 
 	.. image:: workspaces_menu_delete.png
 		:scale: 70 %
-
-| 
 
 .. note:: 
 	Deleting a Node will also delete any of the Nodes it contains including any associated historic data, events, attachments and configuration. This operation is NOT reversible.
@@ -91,7 +93,9 @@ Move a Node (including all Nodes it contains) within a Workspace or between Work
 .. image:: workspaces_menu_move.png
 	:scale: 50 %
 
-| 
+.. only:: not latex
+
+	| 
 
 .. note:: 
 	Moving Nodes in the Workspaces Menu is currently not supported on Touch devices.

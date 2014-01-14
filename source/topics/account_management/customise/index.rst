@@ -18,12 +18,15 @@ Minimum length of 5 characters is required. The subdomain will be validated on s
 	.. image:: account_customise_subdomain.png
 		:scale: 50 %
 
+	| 
+
 .. only:: latex
+
+	| 
 
 	.. image:: account_customise_subdomain.png
 		:scale: 60 %
 
-| 
 
 .. note:: 
 	Enterprise users can bring their own domain but must contact support@eagle.io for changes.

@@ -13,11 +13,13 @@ You need to configure your Data Source to use the Scout transport. You can then 
 	.. image:: datasource_device.png
 		:scale: 50 %
 
+	| 
+
 .. only:: latex
+	
+	| 
 
 	.. image:: datasource_device.png
-
-| 
 
 
 Device settings
@@ -32,11 +34,11 @@ General
 	.. image:: device_scout_general.png
 		:scale: 50 %
 
+	| 
+
 .. only:: latex
 
 	.. image:: device_scout_general.png
-
-| 
 
 Status updates
 	Frequency of status updates - including GPS coordinates and signal strength. This option is only available when the Data Source schedule is *Enabled* and Schedule type set to *Server*. When the Data Source schedule is *Disabled* or set to *Remote* the status updates will only occur when the device performs a Callback.
@@ -62,11 +64,14 @@ The communications section allows you to change the UART Port settings to correc
 	.. image:: device_scout_communications.png
 		:scale: 50 %
 
+	| 
+
 .. only:: latex
+
+	| 
 
 	.. image:: device_scout_communications.png
 
-|
 
 .. note::
 	Some data loggers may require a specific Baud rate, but most other settings should use the defaults.
@@ -83,6 +88,6 @@ The operations section can be used to remotely reset or reboot the *Scout modem*
 
 .. only:: latex
 
-	.. image:: device_scout_operations.png
+	| 
 
-| 
+	.. image:: device_scout_operations.png

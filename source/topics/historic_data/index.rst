@@ -25,12 +25,15 @@ Use the *Jump to date* control to quickly move to a specific date.
 	.. image:: historic_table.png
 		:scale: 50 %
 
+	| 
+
 .. only:: latex
+	
+	| 
 
 	.. image:: historic_table.png
 		:scale: 80 %
 
-| 
 
 Use the display options drop down at the top of each column to specify how the data should be displayed including any aggregate calculations to be applied.
 
@@ -39,12 +42,14 @@ Use the display options drop down at the top of each column to specify how the d
 	.. image:: historic_table_column.png
 		:scale: 50 %
 
+	| 
+
 .. only:: latex
+	
+	| 
 
 	.. image:: historic_table_column.png
 		:scale: 40 %
-
-| 
 
 Display type
 	*Value* displays the parameter values.
@@ -74,12 +79,15 @@ Refer to :ref:`working with charts <working-with-charts>` for full details on ch
 	.. image:: historic_chart.png
 		:scale: 50 %
 
+	| 
+
 .. only:: latex
+	
+	| 
 
 	.. image:: historic_chart.png
 		:scale: 80 %
 
-| 
 
 Exports
 -------

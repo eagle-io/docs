@@ -6,7 +6,6 @@ Events
 
 .. note::
 	The view displays content based on the Selected Node in the Workspaces Menu. Use filters to quickly target specific parameters or review alarms.
- 
 
 The events list is live updating and always displayed in reverse chronological order. New events are automatically added to the top of the list. Scroll down the list to view older events.
 
@@ -15,11 +14,11 @@ The events list is live updating and always displayed in reverse chronological o
 	.. image:: events_overview.png
 		:scale: 50 %
 
+	| 
+
 .. only:: latex
 
 	.. image:: events_overview.png
-
-| 
 
 Searching the Event Log
 -----------------------
@@ -33,12 +32,12 @@ Use the Jump to date control to jump to a specific date. After scrolling down, y
 	.. image:: events_date.png
 		:scale: 50 %
 
+	| 
+
 .. only:: latex
 
 	.. image:: events_date.png
 		:scale: 35 %
-
-| 
 
 Detail Level
 ~~~~~~~~~~~~

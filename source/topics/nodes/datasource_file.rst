@@ -25,11 +25,11 @@ File type
 	.. image:: datasource_file_general.png
 		:scale: 50 %
 
+	| 
+
 .. only:: latex
 
 	.. image:: datasource_file_general.png
-
-| 
 
 
 Connection
@@ -53,15 +53,17 @@ Dropbox is used to connect to a `Dropbox`_ account. An *eagle.io* folder will be
 .. _Dropbox: http://dropbox.com
 
 .. only:: not latex
-
+	
 	.. image:: datasource_file_connection.png
 		:scale: 50 %
 
+	| 
+
 .. only:: latex
+	
+	| 
 
 	.. image:: datasource_file_connection.png
-
-| 
 
 When changing the account, a popup window will be displayed which allows you to login to Dropbox and authorise access as shown below.
 
@@ -86,11 +88,11 @@ Collection
 	.. image:: datasource_file_collection.png
 		:scale: 50 %
 
+	| 
+
 .. only:: latex
 
 	.. image:: datasource_file_collection.png
-
-| 
 
 Scheduled
 	Enable the schedule for automatic data collection.
@@ -103,6 +105,3 @@ Interval offset
 
 Outdated Alarm
 	See :ref:`Alarms and Notifications <outdated-alarm>`.
-
-
-

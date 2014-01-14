@@ -19,11 +19,13 @@ Enter the email address of the new user and select *Add*. Assign a :ref:`User ro
 	.. image:: workspace_sharing.png
 		:scale: 50 %
 
+	| 
+
 .. only:: latex
 
-	.. image:: workspace_sharing.png
+	| 
 
-| 	
+	.. image:: workspace_sharing.png
 
 An email notification will be sent to users when they are added or removed from the Workspace or when their user role is changed.
 New users will need to follow the instructions in the email to finalise their profile and log in for the first time.
@@ -33,5 +35,3 @@ Workspace Sharing requires *security* permission.
 
 .. note:: 
 	Administrators automatically receive unrestricted access to all Workspaces in the account.
-	
-| 

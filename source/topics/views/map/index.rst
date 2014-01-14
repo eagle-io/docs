@@ -10,11 +10,12 @@ Map
 	.. image:: map_overview.png
 		:scale: 50 %
 
+	| 
+
 .. only:: latex
 
 	.. image:: map_overview.png
 
-| 
 
 Layers and Map Type
 --------------------
@@ -25,12 +26,12 @@ Change the appearance of the map using the Map Type drop down, or select one of 
 	.. image:: map_controls_layers.png
 		:scale: 50 %
 
+	| 
+
 .. only:: latex
 
 	.. image:: map_controls_layers.png
 		:scale: 35 %
-
-| 
 
 Zoom and Pan
 -------------
@@ -47,12 +48,12 @@ Hover over a Location icon with a mouse to quickly show its parameters. Click or
 	.. image:: map_location_parameters.png
 		:scale: 50 %
 
+	| 
+
 .. only:: latex
 
 	.. image:: map_location_parameters.png
 		:scale: 35 %
-
-| 
 
 Filters
 --------
@@ -67,12 +68,12 @@ Use filters to quickly show locations of interest.
 	.. image:: map_filters.png
 		:scale: 50 %
 
+	| 
+
 .. only:: latex
 
 	.. image:: map_filters.png
 		:scale: 35 %
-
-| 
 
 The show/hide filtered locations button found in the toolbar can be used to toggle the display of filtered locations. When active you will notice any filters locations are displayed with just a *GRAY* marker and no label. You can still hover or click these filtered locations to display the parameters list.
 
@@ -81,12 +82,12 @@ The show/hide filtered locations button found in the toolbar can be used to togg
 	.. image:: map_controls_filter.png
 		:scale: 50 %
 
+	| 
+
 .. only:: latex
 
 	.. image:: map_controls_filter.png
 		:scale: 35 %
-
-| 
 
 *Map with filters applied*
 
@@ -95,12 +96,12 @@ The show/hide filtered locations button found in the toolbar can be used to togg
 	.. image:: map_filtered.png
 		:scale: 50 %
 
+	| 
+
 .. only:: latex
 
 	.. image:: map_filtered.png
 		:scale: 70 %
-
-| 
 
 When parameter filters are applied, the corresponding parameters for each applicable Location are automatically displayed. Hover or Click the locations to display all parameters. 
 
@@ -132,6 +133,8 @@ These reserved marker colors temporarily overwrite the normal marker color:
 	.. image:: map_marker_filtered.png
 		:scale: 50 %
 
+	| 
+
 .. only:: latex
 
 	*Active Alarm*
@@ -149,8 +152,6 @@ These reserved marker colors temporarily overwrite the normal marker color:
 	.. image:: map_marker_filtered.png
 		:scale: 40 %
 
-| 
-
 
 Adding a new Location marker
 -----------------------------
@@ -163,12 +164,12 @@ Adding a new Location marker
 	.. image:: map_contextmenu.png
 		:scale: 50 %
 
+	| 
+
 .. only:: latex
 
 	.. image:: map_contextmenu.png
 		:scale: 35 %
-
-| 
 
 *Add Location dialog*
 
@@ -177,13 +178,12 @@ Adding a new Location marker
 	.. image:: map_location_add_dialog.png
 		:scale: 50 %
 
+	| 
+
 .. only:: latex
 
 	.. image:: map_location_add_dialog.png
 		:scale: 70 %
-
-
-| 
 
 *Drag and Drop* Locations directly from the Workspaces Menu if your using a mouse (and Workspaces Menu visible).
 
@@ -192,11 +192,11 @@ Adding a new Location marker
 	.. image:: map_location_add_dragdrop.png
 		:scale: 50 %
 
+	| 
+
 .. only:: latex
 	
 	.. image:: map_location_add_dragdrop.png
-
-| 
 
 Reposition marker
 -----------------
@@ -207,18 +207,17 @@ Reposition marker
 	.. image:: map_location_reposition.png
 		:scale: 50 %
 
+	| 
+
 .. only:: latex
 
 	.. image:: map_location_reposition.png
 		:scale: 35 %
 
-| 
-
 Remove marker
 -------------
 |icon-remove| Select *Remove marker* from the map marker context menu to remove the marker from the map.
 This operation resets the location coordinates only. It will not delete the Location Node or any historic data.
-
 
 .. note::
 	The Location must use Fixed Coordinates and you must have *configure* permission for the Workspace to Add, Reposition or Remove the marker. Locations with Dynamic Coordinates will automatically be added, repositioned and removed as the Source receives updates.

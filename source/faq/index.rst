@@ -14,7 +14,6 @@ We support the latest versions of all major browsers: Chrome, Firefox, Internet 
 
 .. |google-chrome-latex| image:: chrome.png
 	:scale: 35%
-	:target: https://www.google.com/intl/en/chrome/browser/
 
 .. only:: not latex
 
@@ -80,12 +79,13 @@ Support is coming for `Google Drive <http://drive.google.com>`_, FTP and Email.
 	.. image:: transports-file.png
 		:scale: 50 %
 
+	| 
+
 .. only:: latex
 
 	.. image:: transports-file.png
 		:scale: 25 %
 
-| 
 
 Can I upload other types of files?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

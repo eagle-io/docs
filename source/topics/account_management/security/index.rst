@@ -17,12 +17,14 @@ If you would like a User to have restricted access to Workspaces, then DO NOT ad
 	.. image:: account_administrators.png
 		:scale: 50 %
 
+	| 
+
 .. only:: latex
+
+	| 
 
 	.. image:: account_administrators.png
 		:scale: 80 %
-
-| 
 
 .. note:: 
 	You can not remove the Account Owner or your own profile. 
@@ -43,11 +45,12 @@ Roles have permissions associated with them which define the allowed features an
 	.. image:: account_user_roles.png
 		:scale: 50 %
 
+	| 
+
 .. only:: latex
 	
 	.. image:: account_user_roles.png
-
-| 
+	
 
 *Permissions*
 

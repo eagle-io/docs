@@ -12,4 +12,6 @@ Feature Highlights
 - Event queries and Alarm Management
 - User Management and Sharing
 
-.. image:: /_static/coming-soon.png
+.. only:: not latex
+	
+	.. image:: /_static/coming-soon.png

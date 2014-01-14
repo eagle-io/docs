@@ -25,12 +25,14 @@ Source and Quality Codes must be whole numbers between 0 - 65535.
 	.. image:: account_quality.png
 		:scale: 50 %
 
+	| 
+
 .. only:: latex
+	
+	| 
 
 	.. image:: account_quality.png
 		:scale: 80 %
-
-| 
 
 Source Quality
 	Quality Code(s) to match on acquired data. Seperate multiple quality codes with a comma.

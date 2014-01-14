@@ -18,11 +18,12 @@ Locations Subview displays a chart per Location. Any Parameters contained within
 	.. image:: chart_locations.png
 		:scale: 50 %
 
+	| 
+
 .. only:: latex
 
 	.. image:: chart_locations.png
 
-| 
 
 Parameters
 ~~~~~~~~~~
@@ -33,11 +34,12 @@ Parameters Subview displays a chart per Parameter (based on Parameter name). Use
 	.. image:: chart_parameters.png
 		:scale: 50 %
 
+	| 
+
 .. only:: latex
 	
 	.. image:: chart_parameters.png
 
-| 
 
 Custom
 ~~~~~~
@@ -55,10 +57,13 @@ Hover over a chart with the mouse cursor or touch part of the display area of a 
 
 Parameter values may be shown with aggregation applied - indicated with a duration and aggregate name in brackets immediately after the Parameter name. Aggregation is based on the date range of the chart data and the Parameter configuration settings. See :ref:`Parameter configuration <node-configuration-parameter>` for full details.
 
+
 .. image:: chart_values.png
 	:scale: 50 %
 
-| 
+.. only:: not latex
+
+	| 
 
 Adjust Height
 ~~~~~~~~~~~~~
@@ -86,6 +91,8 @@ Use the navigator located directly under the main chart area to pan the chart or
 	.. image:: chart_zoomed.png
 		:scale: 50 %
 
+	| 
+
 .. only:: latex
 
 	*Chart area selected for zoom*
@@ -98,7 +105,6 @@ Use the navigator located directly under the main chart area to pan the chart or
 
 	.. image:: chart_zoomed.png
 
-| 
 
 Toggle Parameter display
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -109,11 +115,11 @@ Click or touch the parameters in the legend above the main chart area to tempora
 	.. image:: chart_toggle_parameters.png
 		:scale: 50 %
 
+	| 
+
 .. only:: latex
 
 	.. image:: chart_toggle_parameters.png
-
-| 
 
 Save as image
 ~~~~~~~~~~~~~
@@ -133,6 +139,4 @@ Toolbar Controls
 .. only:: latex
 
 	.. image:: chart_rangeselector.png
-		:scale: 30 %
-
-| 
+		:scale: 35 %

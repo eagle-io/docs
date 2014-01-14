@@ -51,10 +51,10 @@ The layout of these sections will vary depending on the screen size of your devi
 
 .. only:: not latex
 
-	.. image:: ui_layout_desktop.png
-		:scale: 50 %
+    .. image:: ui_layout_desktop.png
+        :scale: 50 %
 
-	| 
+    | 
 
 .. only:: latex
  
@@ -64,15 +64,16 @@ The layout of these sections will vary depending on the screen size of your devi
 
 .. only:: not latex
  
-	.. image:: ui_layout_phone.png
+    .. image:: ui_layout_phone.png
         :scale: 50 %
 
     | 
- 
+
 .. only:: latex
 
     .. image:: ui_layout_phone.png
         :scale: 70 %
+
 
 *Main features*
 

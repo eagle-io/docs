@@ -24,6 +24,8 @@ List rows are temporarily highlighted immedietly following an update. Rows will 
 	.. image:: list_acknowledged.png
 		:scale: 50 %
 
+	| 
+
 .. only:: latex
 
 	*Active Alarm*
@@ -33,8 +35,6 @@ List rows are temporarily highlighted immedietly following an update. Rows will 
 	*Acknowledged Alarm*
 
 	.. image:: list_acknowledged.png
-
-| 
 
 
 Subviews
@@ -49,11 +49,11 @@ Locations Subview displays an overview of Location Nodes.
 	.. image:: list_locations.png
 		:scale: 50 %
 
+	| 
+
 .. only:: latex
 
-	.. image:: list_locations.png
-
-| 
+	.. image:: list_locations.png 
 
 Location
 	Location name with path, including a preview image, map thumbnail and any configured location metadata.
@@ -76,11 +76,11 @@ Sources Subview displays a list of all Data and Attachment Sources.
 	.. image:: list_sources.png
 		:scale: 50 %
 
+	| 
+
 .. only:: latex
 
 	.. image:: list_sources.png
-
-| 
 
 Location
 	Location name with path.
@@ -111,11 +111,11 @@ Parameters Subview displays a list of all parameters.
 	.. image:: list_parameters.png
 		:scale: 50 %
 
+	| 
+
 .. only:: latex
 
 	.. image:: list_parameters.png
-
-| 
 
 Location
 	Location name with path.
@@ -149,11 +149,11 @@ Attachments subview displays a list of all attachments.
 	.. image:: list_attachments.png
 		:scale: 50 %
 
+	| 
+
 .. only:: latex
 
 	.. image:: list_attachments.png
-
-| 
 
 Preview
 	Thumbnail image or file icon. Images can be clicked or touched to be shown in the media gallery.
@@ -175,11 +175,12 @@ Properties
 .. note:: 
 	You must have the *read attachments* permission for the Workspace to see attachments in the list.
 
-| 
+.. only:: not latex
+
+	| 
 
 Toolbar Controls
 ----------------
-
 Toolbar controls should be used in combination with the row selection checkboxes to perform the selected operation on multiple Nodes at once. The same options are also available via the context menu for each row item.
 
 Notifications
