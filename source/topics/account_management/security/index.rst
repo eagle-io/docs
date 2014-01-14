@@ -46,7 +46,6 @@ Roles have permissions associated with them which define the allowed features an
 .. only:: latex
 	
 	.. image:: account_user_roles.png
-		:scale: 80 %
 
 | 
 

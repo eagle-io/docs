@@ -12,7 +12,6 @@ The Usage Overview shows a current snapshot of the Nodes being used for each Wor
 .. only:: latex
 
 	.. image:: account_workspaces.png
-		:scale: 80 %
 
 | 
 

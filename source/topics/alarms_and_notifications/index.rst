@@ -25,7 +25,6 @@ If the communications attempt is not successful during a user acquisition or sch
 .. only:: latex
 
 	.. image:: communications_alarm.png
-		:scale: 80 %
 
 | 
 
@@ -43,7 +42,6 @@ Outdated Alarms are specific to Sources and are triggered (if enabled) when no n
 .. only:: not latex
 
 	.. image:: outdated_alarm.png
-		:scale: 80 %
 
 | 
 
@@ -61,7 +59,6 @@ Control Alarms are specific to Control Parameters and are triggered (if enabled)
 .. only:: latex
 
 	.. image:: control_alarm.png
-		:scale: 80 %
 
 | 
 
@@ -80,7 +77,6 @@ Each defined State can have Alarms and Notifications configured independently.
 .. only:: latex
 
 	.. image:: state_alarm.png
-		:scale: 80 %
 
 | 
 
@@ -158,10 +154,10 @@ The Alarm Panel displays a quick list of the currently active or acknowledged al
 	*Alarm Panel accessible from List View*
 
 	.. image:: alarmlist_alarm.png
-		:scale: 80 %
+		:scale: 60 %
 
 	.. image:: alarmlist_acknowledged.png
-		:scale: 80 %
+		:scale: 60 %
 
 | 
 
@@ -169,19 +165,35 @@ Map View
 ~~~~~~~~
 Map View applies the alarm color variations to the Location markers, temporarily overwriting the default marker color. 
 
-*Active Alarm*
+.. only:: not latex
 
-.. image:: map_marker_alarm.png
-	:scale: 50 %
+	*Active Alarm*
 
-| 
+	.. image:: map_marker_alarm.png
+		:scale: 50 %
 
-*Acknowledged Alarm*
+	| 
 
-.. image:: map_marker_acknowledged.png
-	:scale: 50 %
+	*Acknowledged Alarm*
 
-| 
+	.. image:: map_marker_acknowledged.png
+		:scale: 50 %
+
+	| 
+
+.. only:: latex
+
+	*Active Alarm*
+
+	.. image:: map_marker_alarm.png
+		:scale: 40 %
+
+	| 
+
+	*Acknowledged Alarm*
+
+	.. image:: map_marker_acknowledged.png
+		:scale: 40 %
 
 
 Alarm Operations
@@ -206,7 +218,6 @@ The acknowledge alarms dialog will be displayed and you will be prompted to ente
 .. only:: latex
 
 	.. image:: acknowledge_alarm_comment.png
-		:scale: 80 %
 
 | 
 
@@ -262,7 +273,7 @@ Click or touch the subscribe icon in the List View to toggle your subscription t
 .. only:: latex
 
 	.. image:: subscription_panel.png
-		:scale: 35 %
+		:scale: 40 %
 
 | 
 

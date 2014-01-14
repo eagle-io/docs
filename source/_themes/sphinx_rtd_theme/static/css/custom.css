@@ -62,3 +62,7 @@
 .nav-icon {
 	font-size: 16px;
 }
+
+a.image-reference {
+	cursor: default;
+}

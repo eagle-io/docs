@@ -13,7 +13,6 @@ User Preferences
 .. only:: latex
 
 	.. image:: user_profile_overview.png
-		:scale: 80 %
 
 | 
 
@@ -57,7 +56,6 @@ Click or touch the Workspace labels to display your preferences.
 .. only:: latex
 
 	.. image:: user_profile_notification.png
-		:scale: 80 %
 
 | 
 

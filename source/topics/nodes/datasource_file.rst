@@ -28,7 +28,6 @@ File type
 .. only:: latex
 
 	.. image:: datasource_file_general.png
-		:scale: 80 %
 
 | 
 
@@ -49,7 +48,7 @@ Communications Alarm
 
 Dropbox
 ````````
-Dropbox is used to connect to a `Dropbox`_ account. An 'eagle.io' folder will be created in your Dropbox 'Apps' directory where you can place files for collection.
+Dropbox is used to connect to a `Dropbox`_ account. An *eagle.io* folder will be created in your Dropbox *Apps* directory where you can place files for collection.
 
 .. _Dropbox: http://dropbox.com
 
@@ -61,14 +60,20 @@ Dropbox is used to connect to a `Dropbox`_ account. An 'eagle.io' folder will be
 .. only:: latex
 
 	.. image:: datasource_file_connection.png
-		:scale: 80 %
 
 | 
 
 When changing the account, a popup window will be displayed which allows you to login to Dropbox and authorise access as shown below.
 
-.. image:: datasource_file_connection_dropbox_auth.png
-	:scale: 50 %
+.. only:: not latex
+
+	.. image:: datasource_file_connection_dropbox_auth.png
+		:scale: 50 %
+
+.. only:: latex
+
+	.. image:: datasource_file_connection_dropbox_auth.png
+		:scale: 70 %
 
 | 
 
@@ -84,7 +89,6 @@ Collection
 .. only:: latex
 
 	.. image:: datasource_file_collection.png
-		:scale: 80 %
 
 | 
 

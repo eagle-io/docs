@@ -8,11 +8,21 @@ What browsers do you support and do I need any special software?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 We support the latest versions of all major browsers: Chrome, Firefox, Internet Explorer, Safari. You do not need any special plugins or addons, just ensure you have Cookies and Javascript enabled. The interface has been designed to work seemlessly across all modern phones and computing devices.
 
-.. |google-chrome| image:: chrome.png
+.. |google-chrome-html| image:: chrome.png
 	:scale: 50%
 	:target: https://www.google.com/intl/en/chrome/browser/
 
-|google-chrome| We recommend `Google Chrome <https://www.google.com/intl/en/chrome/browser/>`_ for the best Eagle.io experience.
+.. |google-chrome-latex| image:: chrome.png
+	:scale: 35%
+	:target: https://www.google.com/intl/en/chrome/browser/
+
+.. only:: not latex
+
+	|google-chrome-html| We recommend `Google Chrome <https://www.google.com/intl/en/chrome/browser/>`_ for the best Eagle.io experience.
+
+.. only:: latex
+
+	|google-chrome-latex| We recommend `Google Chrome <https://www.google.com/intl/en/chrome/browser/>`_ for the best Eagle.io experience.
 
 
 What languages do you support?
@@ -27,8 +37,15 @@ What types of data loggers, PLCs and RTUs are supported?
 We support Campbell Scientific data loggers that use the PakBus protocol. 
 This includes the CR200, CR800 and CR1000 series.
 
-.. image:: datalogger_campbell_pakbus.jpg
-	:scale: 50 %
+.. only:: not latex
+
+	.. image:: datalogger_campbell_pakbus.jpg
+		:scale: 50 %
+
+.. only:: not latex
+
+	.. image:: datalogger_campbell_pakbus.jpg
+		:scale: 75 %
 
 Support for a wide range of data loggers and devices is coming soon. `Contact Us <https://eagle.io/contact/>`_ to find out how to get support for your device.
 
@@ -66,7 +83,7 @@ Support is coming for `Google Drive <http://drive.google.com>`_, FTP and Email.
 .. only:: latex
 
 	.. image:: transports-file.png
-		:scale: 30 %
+		:scale: 25 %
 
 | 
 

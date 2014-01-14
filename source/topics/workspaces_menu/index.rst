@@ -22,7 +22,7 @@ Create
 .. only:: latex
 	
 	.. image:: workspaces_menu_create.png
-		:scale: 30 %
+		:scale: 35 %
 
 | 
 

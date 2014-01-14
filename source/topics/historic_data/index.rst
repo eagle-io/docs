@@ -77,7 +77,7 @@ Refer to :ref:`working with charts <working-with-charts>` for full details on ch
 .. only:: latex
 
 	.. image:: historic_chart.png
-		:scale: 50 %
+		:scale: 80 %
 
 | 
 

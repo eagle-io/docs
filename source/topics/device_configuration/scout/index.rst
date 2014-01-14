@@ -16,7 +16,6 @@ You need to configure your Data Source to use the Scout transport. You can then 
 .. only:: latex
 
 	.. image:: datasource_device.png
-		:scale: 80 %
 
 | 
 
@@ -36,7 +35,6 @@ General
 .. only:: latex
 
 	.. image:: device_scout_general.png
-		:scale: 80 %
 
 | 
 
@@ -67,7 +65,6 @@ The communications section allows you to change the UART Port settings to correc
 .. only:: latex
 
 	.. image:: device_scout_communications.png
-		:scale: 50 %
 
 |
 
@@ -87,6 +84,5 @@ The operations section can be used to remotely reset or reboot the *Scout modem*
 .. only:: latex
 
 	.. image:: device_scout_operations.png
-		:scale: 80 %
 
 | 

@@ -213,7 +213,7 @@ You can hover, click or touch the help icon to show the help popup - many of whi
 .. only:: latex
 	
 	.. image:: inline_help.png
-		:scale: 30 %
+		:scale: 35 %
 
 | 
 
@@ -223,20 +223,17 @@ Offline use
 
 Eagle.io requires an internet connection for use. A disconnected notice will be displayed when the connection to the servers has failed. Normal operation will resume once the connection has been re-established. 
 
-.. image:: disconnected_notice.png
-	:scale: 50 %
+.. only:: not latex
+
+	.. image:: disconnected_notice.png
+		:scale: 50 %
+
+.. only:: latex
+
+	.. image:: disconnected_notice.png
+		:scale: 40 %
 
 | 
 
 .. note:: 
 	You may notice the app refresh after the connection is re-established after a long timeout or when updates have been released.
-
-
-
-
-
-
-
-
-
-	

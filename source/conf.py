@@ -15,11 +15,13 @@
 import sys
 import os
 
-sys.path.append(os.path.abspath('_ext'))
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #sys.path.insert(0, os.path.abspath('.'))
+
+# autoimage extension. disabled as readthedocs runs sphinx-build with -b and not -E option so this plugin is currently useless.
+#sys.path.append(os.path.abspath('_ext'))
 
 # -- General configuration ------------------------------------------------
 
@@ -29,7 +31,8 @@ sys.path.append(os.path.abspath('_ext'))
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ['autoimage']
+#extensions = ['autoimage']
+extensions = []
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']

@@ -43,8 +43,6 @@ class Autoimage(Image):
         # each run it works. Yuck.
         # I need to run sphinx-build with -E
         self.options['scale'] = self.options.get('scale-' + builder_name, 100)
-        print "scale:"
-        print self.options['scale']
         #self.options['align'] = 'center'
 
         return super(Autoimage, self).run()

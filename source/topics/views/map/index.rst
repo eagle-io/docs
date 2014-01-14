@@ -98,7 +98,7 @@ The show/hide filtered locations button found in the toolbar can be used to togg
 .. only:: latex
 
 	.. image:: map_filtered.png
-		:scale: 80 %
+		:scale: 70 %
 
 | 
 
@@ -137,17 +137,17 @@ These reserved marker colors temporarily overwrite the normal marker color:
 	*Active Alarm*
 
 	.. image:: map_marker_alarm.png
-		:scale: 50 %
+		:scale: 40 %
 
 	*Acknowledged Alarm*
 
 	.. image:: map_marker_acknowledged.png
-		:scale: 50 %
+		:scale: 40 %
 
 	*Filtered*
 
 	.. image:: map_marker_filtered.png
-		:scale: 50 %
+		:scale: 40 %
 
 | 
 

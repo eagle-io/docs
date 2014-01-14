@@ -4,6 +4,13 @@ $( document ).ready(function() {
     $("[data-toggle='wy-nav-shift']").toggleClass("shift");
     //$("[data-toggle='rst-versions']").toggleClass("shift");
   });
+
+
+  // Overwrite image link functionality so they dont follow images.
+  $("a.image-reference").click(function(e) {
+    e.preventDefault();
+  });
+
   // Close menu when you click a link.
   // $(".wy-menu-vertical .current ul li a").click(function() {
   //   $("[data-toggle='wy-nav-shift']").removeClass("shift");
@@ -13,4 +20,5 @@ $( document ).ready(function() {
   //   $("[data-toggle='rst-versions']").toggleClass("shift-up");
   // });
   $("table.docutils:not(.field-list").wrap("<div class='wy-table-responsive'></div>");
+
 });

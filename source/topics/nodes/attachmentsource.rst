@@ -28,7 +28,6 @@ Remove after
 .. only:: latex
 
 	.. image:: attachmentsource_general.png
-		:scale: 80 %
 
 | 
 
@@ -43,7 +42,6 @@ Connection
 .. only:: latex
 
 	.. image:: attachmentsource_connection.png
-		:scale: 80 %
 
 | 
 
@@ -69,7 +67,6 @@ Collection
 .. only:: latex
 
 	.. image:: attachmentsource_collection.png
-		:scale: 80 %
 
 | 
 

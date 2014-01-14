@@ -22,7 +22,6 @@ This occurs when the Source Schedule is *Disabled* or set to *Remote* (ie. devic
 .. only:: latex
 
 	.. image:: operate_acquire_callback.png
-		:scale: 80 %
 
 | 
 
@@ -49,7 +48,6 @@ Set the control values and *Apply*. Cancel a pending control operation by clicki
 .. only:: latex
 
 	.. image:: operate_control_dialog.png
-		:scale: 80 %
 
 | 
 

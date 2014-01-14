@@ -40,7 +40,6 @@ Security code
 .. only:: latex
 
 	.. image:: datasource_datalogger_general.png
-		:scale: 80 %
 
 | 
 
@@ -78,7 +77,6 @@ TCP Port
 .. only:: latex
 
 	.. image:: datasource_datalogger_connection_tcpclient.png
-		:scale: 80 %
 
 | 
 
@@ -98,8 +96,6 @@ Device Id
 .. only:: latex
 
 	.. image:: datasource_datalogger_connection_tcpcallback.png
-		:scale: 50 %
-
 
 | 
 
@@ -119,7 +115,6 @@ Device Id
 .. only:: latex
 
 	.. image:: datasource_datalogger_connection_scout.png
-		:scale: 80 %
 
 | 
 
@@ -137,7 +132,6 @@ Collection
 .. only:: latex
 
 	.. image:: datasource_datalogger_collection.png
-		:scale: 80 %
 
 | 
 
