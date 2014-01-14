@@ -5,5 +5,6 @@ Dash
 
 .. note:: This feature is currently not available.
 
-
-.. image:: /_static/coming-soon.png
+.. only:: not latex
+	
+	.. image:: /_static/coming-soon.png

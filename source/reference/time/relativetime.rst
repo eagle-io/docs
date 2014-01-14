@@ -45,6 +45,9 @@ OPC Base Time and Interval Keywords
 | YEAR (Y)             | The start of the current year   | Offset from time in years   |
 +----------------------+---------------------------------+-----------------------------+
 
+.. only:: latex
+
+	| 
 
 .. note:: 
 	You can specify both the <basetime> and <interval> in either short or long format.

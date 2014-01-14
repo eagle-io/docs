@@ -17,7 +17,7 @@ Source Enabled
 File type
 	Select the type of file(s) you would like to collect. 
 
-	**Delimited Text** store data by separating the values in each row with a specific :term:`delimiter` character.
+	*Delimited Text* store data by separating the values in each row with a specific :term:`delimiter` character.
 
 
 .. only:: not latex
@@ -28,6 +28,8 @@ File type
 	| 
 
 .. only:: latex
+
+	| 
 
 	.. image:: datasource_file_general.png
 

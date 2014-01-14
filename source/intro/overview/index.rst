@@ -1,7 +1,6 @@
 Eagle.io at a glance
 ====================
 
-
 .. _overview:
 
 Cloud-based, collaborative, real-time monitoring
@@ -97,10 +96,18 @@ Most Nodes are hierarchical and may also contain Nodes themselves. The *Workspac
 
 *Example Workspaces Menu showing hierarchy*
 
-.. image:: workspaces_menu.png
-	:scale: 50 %
+.. only:: not latex
 
-| 
+	.. image:: workspaces_menu.png
+		:scale: 50 %
+
+	| 
+
+.. only:: latex
+
+	.. image:: workspaces_menu.png
+		:scale: 40 %
+
 
 Change the Selected Node by clicking or touching on another Node. You will notice that container Nodes (with the exception of the Base Node) will automatically expand and collapse to show and hide their contained Nodes on selection.
 

@@ -76,4 +76,6 @@ Metadata provides a simple key/value data structure that can be used to store st
 
 .. only:: latex
 
+	| 
+
 	.. image:: location_metadata.png

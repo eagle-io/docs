@@ -52,6 +52,8 @@ Locations Subview displays an overview of Location Nodes.
 	| 
 
 .. only:: latex
+	
+	| 
 
 	.. image:: list_locations.png 
 
@@ -79,6 +81,8 @@ Sources Subview displays a list of all Data and Attachment Sources.
 	| 
 
 .. only:: latex
+	
+	| 
 
 	.. image:: list_sources.png
 
@@ -114,6 +118,8 @@ Parameters Subview displays a list of all parameters.
 	| 
 
 .. only:: latex
+
+	| 
 
 	.. image:: list_parameters.png
 
@@ -152,6 +158,8 @@ Attachments subview displays a list of all attachments.
 	| 
 
 .. only:: latex
+
+	| 
 
 	.. image:: list_attachments.png
 
@@ -218,4 +226,6 @@ Media Gallery
 
 .. only:: latex
 
+	| 
+	
 	.. image:: list_gallery.png
