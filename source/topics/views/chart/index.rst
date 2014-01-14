@@ -20,11 +20,9 @@ Locations Subview displays a chart per Location. Any Parameters contained within
 
 	| 
 
-.. raw:: latex
-
-	\vspace{10 mm}
-
 .. only:: latex
+
+	| 
 
 	.. image:: chart_locations.png
 
@@ -40,11 +38,9 @@ Parameters Subview displays a chart per Parameter (based on Parameter name). Use
 
 	| 
 
-.. raw:: latex
-
-	\vspace{10 mm}
-	
 .. only:: latex
+
+	| 
 	
 	.. image:: chart_parameters.png
 
