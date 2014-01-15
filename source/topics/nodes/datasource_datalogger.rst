@@ -6,9 +6,9 @@ Data Source (data logger)
 
 The type of Data Source (data logger or file) is selected at time of creation and cannot be changed. This section is specific to data logger Data Sources.
 
+
 Properties
 ----------
-
 .. include:: properties.rstx
 
 
@@ -28,7 +28,6 @@ The general section allows you to specify the type of data logger you would like
     | 
 
     .. image:: datasource_datalogger_general.png
-
 
 Source Enabled
     Uncheck the Source Enabled checkbox to stop collection and prevent alarms and notifications from triggering.
@@ -104,8 +103,6 @@ Communications Alarm
     See :ref:`Alarms and Notifications <communications-alarm>`.
 
 
-
-
 Collection
 ~~~~~~~~~~
 Collection is used to specify if and when data should be automatically collected from the Source.
@@ -118,9 +115,10 @@ Collection is used to specify if and when data should be automatically collected
     | 
 
 .. only:: latex
+    
+    | 
 
     .. image:: datasource_datalogger_collection.png
-
 
 Scheduled
     Enable the schedule for automatic data collection. You should Disable the schedule when using the TCP Callback Transport for event based callbacks (ie. not permanently connected).
@@ -138,3 +136,69 @@ Interval offset
 
 Outdated Alarm
     See :ref:`Alarms and Notifications <outdated-alarm>`.
+
+
+Parameters
+~~~~~~~~~~~
+The Parameters section allows you to manage the parameters associated with the Source.
+A list of available tables/series is shown (when not using Automatic parameter configuration) and updated automatically on every connection to the data logger.
+
+.. only:: not latex
+
+    .. image:: datasource_datalogger_parameters.png
+        :scale: 50 %
+
+    | 
+
+.. only:: latex
+    
+    | 
+
+    .. image:: datasource_datalogger_parameters.png
+
+
+Automatic Parameter Configuration
+    Check this option to automatically create, update and disable parameters based on the tables defined in the data logger. When checked, the Source tables will not be displayed.
+
+Location Coordinates
+    The Source can optionally provide Location Coordinates from a coordinate series or a pair of numeric series (lat/lng). You need to configure the Location and select this Source to be used for its coordinates. Select the table and series to use from the drop down list.
+
+Collect from date
+    |icon-calendar| Set or reset the collection pointer for the corresponding table to re-collect its data from the specified date. This operation never removes historic data - it will only update and overwrite existing values.
+
+Clear Historic
+    |icon-remove| Toggle active the Clear Historic button to clear the associated parameter's historic data on save.
+
+Parameter Selection
+    Check the Series items to create associated parameters on save. Unchecking an existing parameter will disable the associated Parameter Node but will not remove the Node or its historic data.
+
+    The parameter icon indicates the :ref:`type of parameter <node-types>` that will be created.
+    Rename and Delete operations should be performed from the Workspaces Menu.
+
+
+Time
+~~~~~
+Time allows you to configure the timezone of the Source and associated options.
+
+.. only:: not latex
+
+    .. image:: datasource_datalogger_time.png
+        :scale: 50 %
+
+    | 
+
+.. only:: latex
+    
+    | 
+
+    .. image:: datasource_datalogger_time.png
+
+Timezone
+    Select the timezone the Source uses for storing historic data. Choose *(GMT+00:00) UTC* if data timestamps are in UTC.
+
+Automatically adjust clock for Daylight Savings Time
+    Check this option if you would like to automatically update the data logger clock to account for DST in the selected timezone.
+
+Automatically update data logger with correct time
+    Check this option if you would like to automatically update the data logger clock with the correct time based on the selected timezone.
+

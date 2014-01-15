@@ -4,6 +4,7 @@ Attachment Source
 =================
 |icon-attachmentsource| Attachment Sources have the ability to automatically acquire or receive Attachments. Attachment Sources can be created inside Locations only.
 
+
 Properties
 ----------
 .. include:: properties.rstx
@@ -11,6 +12,21 @@ Properties
 
 General
 ~~~~~~~
+The general section allows you to specify attachment storage options.
+
+.. only:: not latex
+
+	.. image:: attachmentsource_general.png
+		:scale: 50 %
+
+	| 
+
+.. only:: latex
+
+	| 
+
+	.. image:: attachmentsource_general.png
+
 Source Enabled
 	Uncheck the Source Enabled checkbox to stop collection and prevent alarms and notifications from triggering.
 
@@ -20,22 +36,10 @@ Max attachments
 Remove after
 	Enable this setting to specify the maximum number of days that attachments will be stored within this Source. The expired attachments will only be removed when new attachments arrive.
 
-.. only:: not latex
-
-	.. image:: attachmentsource_general.png
-		:scale: 50 %
-
-	| 
-
-.. only:: latex
-
-	| 
-
-	.. image:: attachmentsource_general.png
-
 
 Connection
 ~~~~~~~~~~
+Configure how you would like to connect to your attachments.
 
 .. only:: not latex
 
@@ -46,8 +50,9 @@ Connection
 
 .. only:: latex
 
-	.. image:: attachmentsource_connection.png
+	| 
 
+	.. image:: attachmentsource_connection.png
 
 Transport type
 	Select the transport used to acquire attachments. This is currently restricted to email only.
@@ -62,6 +67,7 @@ Communications Alarm
 
 Collection
 ~~~~~~~~~~
+Collection is used to specify filter and processing options for attachment collection.
 
 .. only:: not latex
 
@@ -72,6 +78,8 @@ Collection
 
 .. only:: latex
 
+	| 
+
 	.. image:: attachmentsource_collection.png
 
 Sender address filter
@@ -81,11 +89,11 @@ Attachment filter
 	Enter an attachment filter to restrict the files(s) that get saved as attachments. Use \* as a wildcard character. Example: \*.jpg to save all jpg images.
 
 Process email body
-	**No** only the attachments will be processed.
+	*No* only the attachments will be processed.
 
-	**Plain Text** will store the text content of the email in addition to any attachments.
+	*Plain Text* will store the text content of the email in addition to any attachments.
 
-	**HTML** will store the HTML content of the email in addition to any attachments.
+	*HTML* will store the HTML content of the email in addition to any attachments.
 
 Outdated Alarm
 	See :ref:`Alarms and Notifications <outdated-alarm>`.
