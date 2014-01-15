@@ -6,13 +6,14 @@ Data Source (data logger)
 
 The type of Data Source (data logger or file) is selected at time of creation and cannot be changed. This section is specific to data logger Data Sources.
 
-######
+Properties
+----------
 
 .. include:: properties.rstx
 
 
 General
--------
+~~~~~~~~
 The general section allows you to specify the type of data logger you would like to connect to.  
 
 .. only:: not latex
@@ -23,6 +24,8 @@ The general section allows you to specify the type of data logger you would like
     | 
 
 .. only:: latex
+
+    | 
 
     .. image:: datasource_datalogger_general.png
 
@@ -46,7 +49,7 @@ Data logger type
 
 
 Connection
-----------
+~~~~~~~~~~
 Configure how you would like to connect to your data logger.
 
 .. only:: not latex
@@ -57,6 +60,8 @@ Configure how you would like to connect to your data logger.
     | 
 
 .. only:: latex
+
+    | 
 
     .. image:: datasource_datalogger_connection_tcpclient.png
 
@@ -102,7 +107,8 @@ Communications Alarm
 
 
 Collection
-----------
+~~~~~~~~~~
+Collection is used to specify if and when data should be automatically collected from the Source.
 
 .. only:: not latex
 
