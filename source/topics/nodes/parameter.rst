@@ -276,7 +276,7 @@ The control section allows you to configure control options for Control Paramete
     | 
 
     .. image:: parameter_control.png
-
+        
 
 Restricted values
     *None* 
