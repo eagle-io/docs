@@ -1,3 +1,5 @@
+.. _node-configuration-attachment:
+
 Attachment
 ==========
 |icon-attachment| Attachments include images, documents and other files stored in Eagle.io. New attachments can be uploaded manually by a user or acquired via an Attachment Source. Attachments can be added inside Workspaces, Locations, Groups and Attachment Sources.

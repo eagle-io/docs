@@ -1,3 +1,5 @@
+.. _node-configuration-location:
+
 Location
 =========
 |icon-location| Locations are special containers used to associate data with a geographical location.

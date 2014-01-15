@@ -1,3 +1,5 @@
+.. _node-configuration-datasource-file:
+
 Data Source (file)
 ==================
 |icon-datasource| Data Sources automatically acquire or receive timeseries data using a variety of different transport options. Connect to a :term:`data logger` or collect data from files. Data Sources can be created inside Locations only.

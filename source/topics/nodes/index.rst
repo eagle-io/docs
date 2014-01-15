@@ -5,21 +5,7 @@ Nodes and Configuration
 
 Nodes are the container objects that store all data and configuration for your projects. The following types of Nodes are available:
 
-.. toctree::
-   :maxdepth: 1
-
-   workspace
-   location
-   attachment
-   attachmentsource
-   datasource_file
-   datasource_datalogger
-   parameter
-
 .. _node-types:
-
-Types of Nodes
---------------
 
 |icon-workspace| Workspace
 	Workspaces are special container Nodes that can be shared with other users. All other Nodes are created within the Workspace. Workspaces can only be created by the Account Owner or Administrators.
@@ -93,3 +79,15 @@ Types of Nodes
 	Time Control Parameters are similar to Time Parameters however the value can be controlled by the user. Historic data represents the user control operations.
 
 | 
+
+.. toctree::
+   :hidden:
+
+   workspace
+   location
+   attachment
+   attachmentsource
+   datasource_file
+   datasource_datalogger
+   parameter
+
