@@ -99,3 +99,26 @@ Move a Node (including all Nodes it contains) within a Workspace or between Work
 
 .. note:: 
 	Moving Nodes in the Workspaces Menu is currently not supported on Touch devices.
+
+
+Note about Disabled Nodes
+-------------------------
+You may notice *GRAY* Nodes in the Workspaces Menu.
+
+Sources being configured for the first time will be shown as disabled until they have been fully configured.
+Parameters that had been created and then unchecked (or unavailable) for collection will also be shown as disabled in the Workspaces Menu, List and Map Views. 
+
+.. only:: not latex
+
+	.. image:: workspaces_menu_disabled.png
+		:scale: 50 %
+
+	| 
+
+.. only:: latex
+
+	| 
+
+	.. image:: workspaces_menu_disabled.png
+		:scale: 70 %
+
