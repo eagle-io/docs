@@ -121,4 +121,3 @@ Parameters that had been created and then unchecked (or unavailable) for collect
 
 	.. image:: workspaces_menu_disabled.png
 		:scale: 35 %
-

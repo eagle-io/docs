@@ -7,46 +7,53 @@ Parameter
 Types of Parameters
 -------------------
 
-|icon-point-number-range| Number Parameter
-    Number Parameters store historic time series data in numeric format. By default they display the current or historic value(s).
-    Parameters are managed by and are always contained in Data Sources.
+.. only:: not latex
 
-| 
+    |icon-point-number-range| Number Parameter
+        Number Parameters store historic time series data in numeric format. By default they display the current or historic value(s).
+        Parameters are managed by and are always contained in Data Sources.
 
-|icon-point-number-discrete| Number Parameter (State variation)
-    Number Parameters can also be set to display the current or historic state rather than value. This is useful for Boolean or Discrete state data.
+    | 
 
-| 
+    |icon-point-number-discrete| Number Parameter (State variation)
+        Number Parameters can also be set to display the current or historic state rather than value. This is useful for Boolean or Discrete state data.
 
-|icon-point-number-range-control| Number Control Parameter
-    Number Control Parameters are similar to Number Parameters however the value can be controlled by the user. Historic data represents the user control operations.
+    | 
 
-| 
+    |icon-point-number-range-control| Number Control Parameter
+        Number Control Parameters are similar to Number Parameters however the value can be controlled by the user. Historic data represents the user control operations.
 
-|icon-point-number-discrete-control| Number Control Parameter (State variation)
-    Number Control Parameters can also be set to display the current or historic state(s)
+    | 
 
-| 
+    |icon-point-number-discrete-control| Number Control Parameter (State variation)
+        Number Control Parameters can also be set to display the current or historic state(s)
 
-|icon-point-text| Text Parameter
-    Text Parameters store historic time series data in text format. They are useful when trying to capture events from log files or text-based data files.
+    | 
 
-| 
+    |icon-point-text| Text Parameter
+        Text Parameters store historic time series data in text format. They are useful when trying to capture events from log files or text-based data files.
 
-|icon-point-text-control| Text Control Parameter
-    Text Control Parameters are similar to Text Parameters however the value can be controlled by the user. Historic data represents the user control operations.
+    | 
 
-| 
+    |icon-point-text-control| Text Control Parameter
+        Text Control Parameters are similar to Text Parameters however the value can be controlled by the user. Historic data represents the user control operations.
 
-|icon-point-time| Time Parameter
-    Time Parameters store historic time series data as timestamps. 
+    | 
 
-| 
+    |icon-point-time| Time Parameter
+        Time Parameters store historic time series data as timestamps. 
 
-|icon-point-time-control| Time Control Parameter
-    Time Control Parameters are similar to Time Parameters however the value can be controlled by the user. Historic data represents the user control operations.
+    | 
 
-| 
+    |icon-point-time-control| Time Control Parameter
+        Time Control Parameters are similar to Time Parameters however the value can be controlled by the user. Historic data represents the user control operations.
+
+    | 
+
+.. only:: latex
+    
+    See :ref:`Nodes and Configuration <node-types>` for full list of Parameter types.
+    
 
 Properties
 ----------
@@ -276,7 +283,7 @@ The control section allows you to configure control options for Control Paramete
     | 
 
     .. image:: parameter_control.png
-        
+
 
 Restricted values
     *None* 
@@ -293,9 +300,3 @@ Restricted values
 
 Control Alarm
     See :ref:`Alarms and Notifications <control-alarm>`.
-
-
-
-
-
-
