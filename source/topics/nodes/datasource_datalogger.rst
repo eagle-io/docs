@@ -24,8 +24,6 @@ The general section allows you to specify the type of data logger you would like
 
 .. only:: latex
 
-    | 
-
     .. image:: datasource_datalogger_general.png
 
 
@@ -59,8 +57,6 @@ Configure how you would like to connect to your data logger.
     | 
 
 .. only:: latex
-
-    | 
 
     .. image:: datasource_datalogger_connection_tcpclient.png
 
