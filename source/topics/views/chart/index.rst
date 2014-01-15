@@ -149,6 +149,8 @@ Toolbar Controls
 	.. image:: chart_rangeselector.png
 		:scale: 50 %
 
+	| 
+
 .. only:: latex
 
 	| 

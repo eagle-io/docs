@@ -1,8 +1,9 @@
 $( document ).ready(function() {
   // Shift nav in mobile when clicking the menu.
-  $("[data-toggle='wy-nav-top']").click(function() {
+  $("[data-toggle='wy-nav-top']").click(function(e) {
     $("[data-toggle='wy-nav-shift']").toggleClass("shift");
-    //$("[data-toggle='rst-versions']").toggleClass("shift");
+    $("[data-toggle='rst-versions']").toggleClass("shift");
+    e.stopPropagation();
   });
 
 

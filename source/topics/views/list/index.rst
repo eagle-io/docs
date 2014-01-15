@@ -224,6 +224,8 @@ Media Gallery
 	.. image:: list_gallery.png
 		:scale: 50 %
 
+	| 
+
 .. only:: latex
 
 	| 

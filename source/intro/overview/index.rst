@@ -185,7 +185,7 @@ Context menus are built into the interface and provide quick access to navigatio
 | 
 
 .. note:: 
-	Context menus display only the items relevant to the associated Node or content the menu was displayed for. Context menu items are also dependant on User permissions. If there are no available options then no context menu will be displayed.
+	Context menus display only the items relevant to the associated Node or content the menu is displayed for. Context menu items are also dependant on User permissions. If there are no available options then no context menu will be displayed.
 
 
 Click, Touch, Tap, What?

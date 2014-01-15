@@ -86,6 +86,8 @@ The operations section can be used to remotely reset or reboot the *Scout modem*
 	.. image:: device_scout_operations.png
 		:scale: 50 %
 
+	| 
+	
 .. only:: latex
 
 	| 

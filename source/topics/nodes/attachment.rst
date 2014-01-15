@@ -18,6 +18,8 @@ The General section allows you to enter a *description* for the attachment which
 	.. image:: attachment_description.png
 		:scale: 50 %
 
+	| 
+
 .. only:: latex
 	
 	| 
