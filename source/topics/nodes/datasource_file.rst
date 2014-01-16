@@ -189,7 +189,7 @@ Ignore Daylight Savings Time
 
 Text Parser Configuration
 -------------------------
-The Text Parser allows you to define how a text file should be processed by the system including defining parameters and associated historic data. All scheduled collection and user acquisition requests will use the saved parser configuration to process any new data that has been appended to the file since last collection.
+The Text Parser allows you to define how a text file should be processed by the system including defining parameters and associating historic data. All scheduled collection and user acquisition requests will use the saved parser configuration to process any new data that has been appended to the file since last collection.
 
 .. only:: not latex
 
@@ -207,6 +207,7 @@ The Text Parser allows you to define how a text file should be processed by the 
 
 General Settings
 ~~~~~~~~~~~~~~~~
+General settings are used to specify file format and encoding options.
 
 .. only:: not latex
 
@@ -221,11 +222,24 @@ General Settings
 
 	.. image:: parser_toolbar.png
 
+Column delimiter
+	Specify the :term:`delimiter` used to seperate values in each line of the file. Select a delimiter from the drop down or enter a custom character to use.
+
+Text qualifier
+	Specify the character used to surround text values. This character will be automatically stripped if it exists in a column. Select a qualifier from the drop down or enter a custom character to use.
+
+Labels row
+	If your file contains a header row, you can specify the line number or click the row number in the Parser Preview. The corresponding row will be highlighted *BLUE* and the column values will be used as the column labels. Labels are shown for convenience, but you can assign any valid names to the parameters during or after creation.
+
+Text encoding
+	The encoding format of the text file. If you notice special characters displayed incorrectly in the Parser Preview, you may need to change this setting.
+
 
 File Contents
 ~~~~~~~~~~~~~
+The Parser extracts a sample from the beginning of the input text file and attempts to split the file into columns based on the current Column delimiter.
 
-*Raw File*
+*Input Text File*
 
 .. only:: not latex
 
@@ -257,8 +271,9 @@ File Contents
 	.. image:: parser_main.png
 
 
-Joins and Parser Configuration
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Columns and Data Type Selection
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Columns are assigned a column/data type which determine how they should be processed and the type of Parameter that will be available for creation. Use the data type drop down at the top of each column to select a data type from the available options. Column data that does not match the selected data type are displayed in *RED*. Hover over a table cell in the Parser Preview to display a tooltip (where valid) showing how the raw data will be interpreted by the parser.
 
 .. only:: not latex
 
@@ -274,7 +289,34 @@ Joins and Parser Configuration
 	.. image:: parser_column.png
 		:scale: 35 %
 
-*Join Time*
+Number
+	Interpret column data as numeric. Can be created as a Number Parameter and suitable for both analog and digital data.
+
+Boolean
+	Interpret column data as Boolean only. Can be created as a special Number Parameter with predefined states and accepts boolean data as text (TRUE or FALSE) or numberic (0 or 1).
+
+Text
+	Interpret column data as Text. Create a Text Parameter from the column.
+
+Time
+	Interpret column data as Time. You need to specify the time format using the Joins and Parser Configuration section. You can create a Time Parameter from the column.
+
+Disabled
+	The column will be *GRAY* in the Parser Preview and will not be available for Parameter creation. Setting an unused column to Disabled is optional. It has been added for convenience when working with files with lots of columns.
+
+Record Time
+	The column to use as the Record Time (timestamp for the line values). There must always be exactly one Record Time column defined. You need to specify the time format using the Joins and Parser Configuration section.
+
+Coordinates
+	Interpret column data as Coordinates (Latitude and Longitude). You can only specify one Coordinates column per file (but you can join data from other columns). Use the Joins and Parser Configuration section to specify the Latitude and Longitude fields.
+	If Coordinates (latitude and longitude) are split over multiple columns, you can also just set the data type of the columns as Number and select the individual columns when configuring the Location Coordinates for the Source.
+
+
+Joins and Parser Configuration
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+|icon-properties| The Joins and Parser Configuration section (available from the properties icon at the top of each column) is used to customise the parser for individual columns including joins, formatting and specifying quality data.
+
+Data values in input files are commonly split into separate fields and therefore will be shown as different columns in the Parser Preview. It is necessary to ensure each column you would like to use for Parameter creation has all joins/fields defined.
 
 .. only:: not latex
 
@@ -289,8 +331,9 @@ Joins and Parser Configuration
 
 	.. image:: parser_join_time.png
 
+You can join additional columns via the *Add New* row. Select the column to join from the Joins drop down and the Field to be assigned. Columns are joined in the order they are displayed (top to bottom) and the result is shown in the Parser Preview. 
 
-*Reorder Fields and Joins*
+Re-order any join/field by hovering over the item with a mouse to reveal the grab handle. Click and drag the grab handle to reposition the item in the list.
 
 .. only:: not latex
 
@@ -305,7 +348,7 @@ Joins and Parser Configuration
 
 	.. image:: parser_join_reposition.png
 
-*Join Coordinates*
+You may need to split or exclude data within a single column. Add a Separator field match and exclude specific text (as specified in the Separator format field).
 
 .. only:: not latex
 
@@ -320,7 +363,7 @@ Joins and Parser Configuration
 
 	.. image:: parser_join_coordinates.png
 
-*Join Quality*
+Quality codes can be associated with each column, either by splitting the column or joining an additional column containing the quality codes.
 
 .. only:: not latex
 
@@ -334,4 +377,6 @@ Joins and Parser Configuration
 	| 
 
 	.. image:: parser_join_quality.png
+
+All columns can be re-used as joins on other columns. For example you can have multiple parameter columns that all share the same quality code value by adding the quality code column as a join on each parameter column.
 
