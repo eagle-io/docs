@@ -58,7 +58,7 @@ Locations Subview displays an overview of Location Nodes.
 
 .. raw:: latex
 
-	\vspace{-20mm}
+	\vspace{30 mm}
 
 .. only:: not latex
 
@@ -70,6 +70,7 @@ Locations Subview displays an overview of Location Nodes.
 .. only:: latex
 
 	.. image:: list_locations.png 
+
 
 Location
 	Location name with path, including a preview image, map thumbnail and any configured location metadata.
