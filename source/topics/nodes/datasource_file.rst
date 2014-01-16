@@ -149,7 +149,7 @@ Collect from date
 	|icon-calendar| Set or reset the collection pointer for the corresponding file to re-collect its data from the specified date. This operation never removes historic data - it will only update and overwrite existing values.
 
 Parser Configuration
-	|icon-properties| Setup or Update the parser configuration for the selected file.
+	|icon-properties| Setup or Update the parser configuration for the selected file. See :ref:`Text Parser Configuration <text-parser>` for full details.
 
 Clear Historic
 	|icon-remove| Toggle active the Clear Historic button to clear the associated parameter's historic data on save.
@@ -183,3 +183,155 @@ Timezone
 
 Ignore Daylight Savings Time
 	Check this option if the Source does not offset the data timestamps to account for DST.
+
+
+.. _text-parser:
+
+Text Parser Configuration
+-------------------------
+The Text Parser allows you to define how a text file should be processed by the system including defining parameters and associated historic data. All scheduled collection and user acquisition requests will use the saved parser configuration to process any new data that has been appended to the file since last collection.
+
+.. only:: not latex
+
+	.. image:: parser_overview.png
+		:scale: 50 %
+
+	| 
+
+.. only:: latex
+	
+	| 
+
+	.. image:: parser_overview.png
+
+
+General Settings
+~~~~~~~~~~~~~~~~
+
+.. only:: not latex
+
+	.. image:: parser_toolbar.png
+		:scale: 50 %
+
+	| 
+
+.. only:: latex
+	
+	| 
+
+	.. image:: parser_toolbar.png
+
+
+File Contents
+~~~~~~~~~~~~~
+
+*Raw File*
+
+.. only:: not latex
+
+	.. image:: parser_file_01.png
+		:scale: 50 %
+
+	| 
+
+.. only:: latex
+	
+	| 
+
+	.. image:: parser_file_01.png
+		:scale: 35 %
+
+*Parser Preview*
+
+.. only:: not latex
+
+	.. image:: parser_main.png
+		:scale: 50 %
+
+	| 
+
+.. only:: latex
+	
+	| 
+
+	.. image:: parser_main.png
+
+
+Joins and Parser Configuration
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. only:: not latex
+
+	.. image:: parser_column.png
+		:scale: 50 %
+
+	| 
+
+.. only:: latex
+	
+	| 
+
+	.. image:: parser_column.png
+		:scale: 35 %
+
+*Join Time*
+
+.. only:: not latex
+
+	.. image:: parser_join_time.png
+		:scale: 50 %
+
+	| 
+
+.. only:: latex
+	
+	| 
+
+	.. image:: parser_join_time.png
+
+
+*Reorder Fields and Joins*
+
+.. only:: not latex
+
+	.. image:: parser_join_reposition.png
+		:scale: 50 %
+
+	| 
+
+.. only:: latex
+	
+	| 
+
+	.. image:: parser_join_reposition.png
+
+*Join Coordinates*
+
+.. only:: not latex
+
+	.. image:: parser_join_coordinates.png
+		:scale: 50 %
+
+	| 
+
+.. only:: latex
+	
+	| 
+
+	.. image:: parser_join_coordinates.png
+
+*Join Quality*
+
+.. only:: not latex
+
+	.. image:: parser_join_quality.png
+		:scale: 50 %
+
+	| 
+
+.. only:: latex
+	
+	| 
+
+	.. image:: parser_join_quality.png
+
