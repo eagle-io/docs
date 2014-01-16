@@ -253,7 +253,7 @@ The Parser extracts a sample from the beginning of the input text file and attem
 	| 
 
 	.. image:: parser_file_01.png
-		:scale: 35 %
+		:scale: 50 %
 
 *Parser Preview*
 

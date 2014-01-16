@@ -56,11 +56,9 @@ Locations
 ~~~~~~~~~
 Locations Subview displays an overview of Location Nodes.
 
-
 .. raw:: latex
 
-	\vspace{30 mm}
-
+	\vspace{20mm}
 
 .. only:: not latex
 
