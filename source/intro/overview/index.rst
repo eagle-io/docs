@@ -23,6 +23,10 @@ You will need a user profile to log in. This requires you to `Sign up <https://e
 
 *Login form*
 
+.. raw:: latex
+
+	\vspace{20mm}
+
 .. only:: not latex
 
 	.. image:: public_login.png
