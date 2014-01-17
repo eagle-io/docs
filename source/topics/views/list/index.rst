@@ -4,7 +4,7 @@ List
 |icon-list| Intuitive categorised lists provide quick access to the data for your most important Nodes: Locations, Sources, Parameters and Attachments.
 
 .. note::
-	The view displays content based on the Selected Node in the Workspaces Menu. Use filters to quickly target specific parameters or review alarms.
+    The view displays content based on the Selected Node in the Workspaces Menu. Use filters to quickly target specific parameters or review alarms.
 
 Sort rows in the list by clicking on column headers. 
 
@@ -13,40 +13,40 @@ Rows items will be *GRAY* if the corresponding node configuration has not been f
 
 .. only:: not latex
 
-	*Active Alarm*
+    *Active Alarm*
 
-	.. image:: list_alarm.png
-		:scale: 50 %
+    .. image:: list_alarm.png
+        :scale: 50 %
 
-	| 
+    | 
 
-	*Acknowledged Alarm*
+    *Acknowledged Alarm*
 
-	.. image:: list_acknowledged.png
-		:scale: 50 %
+    .. image:: list_acknowledged.png
+        :scale: 50 %
 
-	| 
+    | 
 
-	*Disabled*
+    *Disabled*
 
-	.. image:: list_disabled.png
-		:scale: 50 %
+    .. image:: list_disabled.png
+        :scale: 50 %
 
-	| 
+    | 
 
 .. only:: latex
 
-	*Active Alarm*
+    *Active Alarm*
 
-	.. image:: list_alarm.png
+    .. image:: list_alarm.png
 
-	*Acknowledged Alarm*
+    *Acknowledged Alarm*
 
-	.. image:: list_acknowledged.png
+    .. image:: list_acknowledged.png
 
-	*Disabled*
+    *Disabled*
 
-	.. image:: list_disabled.png
+    .. image:: list_disabled.png
 
 
 Subviews
@@ -57,33 +57,32 @@ Locations
 
 Locations Subview displays an overview of Location Nodes.
 
-.. raw:: latex
-
-	\vspace{60pt}
-
 
 .. only:: not latex
 
-	.. image:: list_locations.png
-		:scale: 50 %
+    .. image:: list_locations.png
+        :scale: 50 %
 
-	| 
+    | 
 
 .. only:: latex
 
-	.. image:: list_locations.png 
+    .. raw:: latex
 
+        \vspace{30pt}
+
+    .. image:: list_locations.png
 
 Location
-	Location name with path, including a preview image, map thumbnail and any configured location metadata.
+    Location name with path, including a preview image, map thumbnail and any configured location metadata.
 Latest Data
-	Timestamp of the most recent data from all Sources contained within the Location.
+    Timestamp of the most recent data from all Sources contained within the Location.
 Alarms
-	An alarm icon will be shown if there are any active or acknowledged alarms on or within the Location. Click or touch the alarm icon to display the Alarm Panel.
+    An alarm icon will be shown if there are any active or acknowledged alarms on or within the Location. Click or touch the alarm icon to display the Alarm Panel.
 Subscribe
-	Click or touch the subscribe icon to subscribe to the Nodes you would like to receive notifications for. You must have *subscribe notifications* permission for the Workspace. If the Location contains Sources, the Subscription Panel will be displayed so you can toggle your subscription preferences indiviually or all together.
+    Click or touch the subscribe icon to subscribe to the Nodes you would like to receive notifications for. You must have *subscribe notifications* permission for the Workspace. If the Location contains Sources, the Subscription Panel will be displayed so you can toggle your subscription preferences indiviually or all together.
 Properties
-	Show the Node properties dialog.
+    Show the Node properties dialog.
 
 Sources
 ~~~~~~~
@@ -91,35 +90,35 @@ Sources Subview displays a list of all Data and Attachment Sources.
 
 .. only:: not latex
 
-	.. image:: list_sources.png
-		:scale: 50 %
+    .. image:: list_sources.png
+        :scale: 50 %
 
-	| 
+    | 
 
 .. only:: latex
-	
-	| 
+    
+    | 
 
-	.. image:: list_sources.png
+    .. image:: list_sources.png
 
 Location
-	Location name with path.
+    Location name with path.
 Source
-	Name of Source including relative path within Location
+    Name of Source including relative path within Location
 Status
-	Current status of the Source: SCHEDULED, DOWNLOADING, UPDATING, CONTROLLING, IDLE, RETRYING, FAILED, DISABLED
+    Current status of the Source: SCHEDULED, DOWNLOADING, UPDATING, CONTROLLING, IDLE, RETRYING, FAILED, DISABLED
 Latest Data
-	Timestamp of the most recent data from the Source.
+    Timestamp of the most recent data from the Source.
 Collected
-	Displays number of records collected for a Data Source during last collection or number of files processed for an Attachment Source.
+    Displays number of records collected for a Data Source during last collection or number of files processed for an Attachment Source.
 Signal Strength
-	Displays the signal strength when the Data Source is using a Scout modem.
+    Displays the signal strength when the Data Source is using a Scout modem.
 Alarms
-	An alarm icon will be shown if there are any active or acknowledged alarms on or within the Source. Click or touch the alarm icon to display the Alarm Panel.
+    An alarm icon will be shown if there are any active or acknowledged alarms on or within the Source. Click or touch the alarm icon to display the Alarm Panel.
 Subscribe
-	Click or touch the subscribe icon to subscribe to the Nodes you would like to receive notifications for. You must have *subscribe notifications* permission for the Workspace. If the Source contains parameters, a subscription panel will be displayed so you can toggle your subscription preferences indiviually or all together.
+    Click or touch the subscribe icon to subscribe to the Nodes you would like to receive notifications for. You must have *subscribe notifications* permission for the Workspace. If the Source contains parameters, a subscription panel will be displayed so you can toggle your subscription preferences indiviually or all together.
 Properties
-	Show the Node properties dialog.
+    Show the Node properties dialog.
 
 
 Parameters
@@ -128,35 +127,35 @@ Parameters Subview displays a list of all parameters.
 
 .. only:: not latex
 
-	.. image:: list_parameters.png
-		:scale: 50 %
+    .. image:: list_parameters.png
+        :scale: 50 %
 
-	| 
+    | 
 
 .. only:: latex
 
-	| 
+    | 
 
-	.. image:: list_parameters.png
+    .. image:: list_parameters.png
 
 Location
-	Location name with path.
+    Location name with path.
 Source
-	Name of Source including relative path within Location.
+    Name of Source including relative path within Location.
 Parameter
-	Name of parameter.
+    Name of parameter.
 Value
-	Value of the parameter at the time indicated by the Latest Data column.
+    Value of the parameter at the time indicated by the Latest Data column.
 State
-	State associated with current parameter value.
+    State associated with current parameter value.
 Latest Data
-	Timestamp of the most recent data for the parameter.
+    Timestamp of the most recent data for the parameter.
 Alarms
-	An alarm icon will be shown if there are any active or acknowledged alarms for the parameter. Click or touch the alarm icon to display the Alarm Panel.
+    An alarm icon will be shown if there are any active or acknowledged alarms for the parameter. Click or touch the alarm icon to display the Alarm Panel.
 Subscribe
-	Click or touch the subscribe icon to subscribe to the Nodes you would like to receive notifications for. You must have *subscribe notifications* permission for the Workspace.
+    Click or touch the subscribe icon to subscribe to the Nodes you would like to receive notifications for. You must have *subscribe notifications* permission for the Workspace.
 Properties
-	Show the Node properties dialog.
+    Show the Node properties dialog.
 
 
 |icon-control| Control parameters can be controlled inline in the parameters list. Click the control icon and set the new value or cancel. Requires *operate* permission for the Workspace. See :ref:`Operate and Control <operate-and-control>` for full details. 
@@ -168,40 +167,40 @@ Attachments subview displays a list of all attachments.
 
 .. only:: not latex
 
-	.. image:: list_attachments.png
-		:scale: 50 %
+    .. image:: list_attachments.png
+        :scale: 50 %
 
-	| 
+    | 
 
 .. only:: latex
 
-	| 
+    | 
 
-	.. image:: list_attachments.png
+    .. image:: list_attachments.png
 
 Preview
-	Thumbnail image or file icon. Images can be clicked or touched to be shown in the media gallery.
+    Thumbnail image or file icon. Images can be clicked or touched to be shown in the media gallery.
 Container
-	Path of the container Node where the attachment is located.
+    Path of the container Node where the attachment is located.
 Name
-	Name of the attachment.
+    Name of the attachment.
 Description
-	User defined description of attachment.
+    User defined description of attachment.
 Size
-	Size of the attachment.
+    Size of the attachment.
 Time
-	Time of the attachment upload.
+    Time of the attachment upload.
 Download
-	Download the attachment.
+    Download the attachment.
 Properties
-	Show the Node properties dialog.
+    Show the Node properties dialog.
 
 .. note:: 
-	You must have the *read attachments* permission for the Workspace to see attachments in the list.
+    You must have the *read attachments* permission for the Workspace to see attachments in the list.
 
 .. only:: not latex
 
-	| 
+    | 
 
 Toolbar Controls
 ----------------
@@ -237,13 +236,13 @@ Media Gallery
 
 .. only:: not latex
 
-	.. image:: list_gallery.png
-		:scale: 50 %
+    .. image:: list_gallery.png
+        :scale: 50 %
 
-	| 
+    | 
 
 .. only:: latex
 
-	| 
-	
-	.. image:: list_gallery.png
+    | 
+    
+    .. image:: list_gallery.png
