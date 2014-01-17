@@ -54,7 +54,13 @@ Subviews
 
 Locations
 ~~~~~~~~~
+
 Locations Subview displays an overview of Location Nodes.
+
+.. raw:: latex
+
+	\vspace{60pt}
+
 
 .. only:: not latex
 
@@ -62,10 +68,6 @@ Locations Subview displays an overview of Location Nodes.
 		:scale: 50 %
 
 	| 
-
-.. raw:: latex
-
-	\vspace{60pt}
 
 .. only:: latex
 
@@ -82,7 +84,6 @@ Subscribe
 	Click or touch the subscribe icon to subscribe to the Nodes you would like to receive notifications for. You must have *subscribe notifications* permission for the Workspace. If the Location contains Sources, the Subscription Panel will be displayed so you can toggle your subscription preferences indiviually or all together.
 Properties
 	Show the Node properties dialog.
-
 
 Sources
 ~~~~~~~
