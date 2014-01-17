@@ -6,6 +6,10 @@ Eagle.io at a glance
 Cloud-based, collaborative, real-time monitoring
 ------------------------------------------------
 
+.. raw:: latex
+
+	\vspace{60pt}
+
 .. image:: network.jpg
 
 Eagle.io is a secure, reliable, easy to use cloud-based data monitoring service.
