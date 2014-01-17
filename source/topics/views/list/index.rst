@@ -44,6 +44,10 @@ Rows items will be *GRAY* if the corresponding node configuration has not been f
 
     .. image:: list_acknowledged.png
 
+    .. raw:: latex
+
+        \newpage
+
     *Disabled*
 
     .. image:: list_disabled.png
@@ -57,6 +61,9 @@ Locations
 
 Locations Subview displays an overview of Location Nodes.
 
+.. raw:: latex
+
+    \vspace{-10pt}
 
 .. only:: not latex
 
@@ -67,11 +74,10 @@ Locations Subview displays an overview of Location Nodes.
 
 .. only:: latex
 
-    .. raw:: latex
-
-        \smallskip
+    | 
 
     .. image:: list_locations.png
+
 
 Location
     Location name with path, including a preview image, map thumbnail and any configured location metadata.
@@ -84,9 +90,17 @@ Subscribe
 Properties
     Show the Node properties dialog.
 
+.. raw:: latex
+
+    \newpage
+
 Sources
 ~~~~~~~
 Sources Subview displays a list of all Data and Attachment Sources.
+
+.. raw:: latex
+
+    \vspace{-10pt}
 
 .. only:: not latex
 
@@ -120,10 +134,17 @@ Subscribe
 Properties
     Show the Node properties dialog.
 
+.. raw:: latex
+
+    \newpage
 
 Parameters
 ~~~~~~~~~~
 Parameters Subview displays a list of all parameters.
+
+.. raw:: latex
+
+    \vspace{-10pt}
 
 .. only:: not latex
 
@@ -160,11 +181,18 @@ Properties
 
 |icon-control| Control parameters can be controlled inline in the parameters list. Click the control icon and set the new value or cancel. Requires *operate* permission for the Workspace. See :ref:`Operate and Control <operate-and-control>` for full details. 
 
+.. raw:: latex
+
+    \newpage
 
 Attachments
 ~~~~~~~~~~~
 Attachments subview displays a list of all attachments.
 
+.. raw:: latex
+
+    \vspace{-10pt}
+    
 .. only:: not latex
 
     .. image:: list_attachments.png
@@ -234,6 +262,10 @@ Media Gallery
 ~~~~~~~~~~~~~
 |icon-image| Displays images and supported video attachments in the gallery view. If no attachments are checked then all attachments will be available in the gallery. 
 
+.. raw:: latex
+
+    \vspace{-10pt}
+    
 .. only:: not latex
 
     .. image:: list_gallery.png

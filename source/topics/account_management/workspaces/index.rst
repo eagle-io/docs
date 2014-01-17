@@ -4,6 +4,10 @@ Workspaces
 |icon-workspace| The Workspaces section displays a list of all Workspaces belonging to the currently selected Account.
 The Usage Overview shows a current snapshot of the Nodes being used for each Workspace. It also displays a count of Users (not including Administrators and Owners) that have access to each Workspace.
 
+.. raw:: latex
+
+    \vspace{-10pt}
+    
 .. only:: not latex
 
 	.. image:: account_workspaces.png

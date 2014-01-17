@@ -16,6 +16,10 @@ Sharing
 The Sharing section allows you to share your Workspaces with other users.
 Enter the email address of the new user and select *Add*. Assign a :ref:`User role <management-security-userroles>` to the user for this Workspace and *Save*.
 
+.. raw:: latex
+
+    \vspace{-10pt}
+    
 .. only:: not latex
 
 	.. image:: workspace_sharing.png
@@ -37,3 +41,7 @@ Workspace Sharing requires *security* permission.
 
 .. note:: 
 	Administrators automatically receive unrestricted access to all Workspaces in the account.
+
+.. raw:: latex
+
+    \newpage

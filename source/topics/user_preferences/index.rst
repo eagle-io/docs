@@ -5,6 +5,10 @@ User Preferences
 
 |icon-user| User profile, accessible from the User Menu is where all your personal preferences are configured.
 
+.. raw:: latex
+
+    \vspace{-10pt}
+
 .. only:: not latex
 
 	.. image:: user_profile_overview.png
@@ -13,6 +17,8 @@ User Preferences
 	| 
 
 .. only:: latex
+	
+	| 
 
 	.. image:: user_profile_overview.png
 
@@ -48,6 +54,10 @@ Notification preferences
 The Notifications section contains a list of Workspaces that you have been given *subscribe notifications* permissions for.
 Click or touch the Workspace labels to display your preferences.
 
+.. raw:: latex
+
+    \vspace{-10pt}
+
 .. only:: not latex
 
 	.. image:: user_profile_notification.png
@@ -67,3 +77,8 @@ Use the SMS/Email checkboxes to set your preferences on what types of notificati
 
 .. note:: 
 	You must also be subscribed to the individual Nodes you would like to receive the notifications for. See :ref:`Subscribe to Nodes <subscribe-nodes>` for full details.
+
+.. raw:: latex
+
+    \newpage
+    

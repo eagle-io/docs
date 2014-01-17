@@ -24,3 +24,7 @@ No Data
 	There is no data available for the aggregation calculation period after non-good values have been excluded.
 No Good Data
 	There is no data available for the aggregate calculation period.
+
+.. raw:: latex
+
+    \newpage

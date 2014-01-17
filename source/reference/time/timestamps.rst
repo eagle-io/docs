@@ -11,6 +11,9 @@ Users can assign a preset or custom Time format to their User profile. All times
 
 Time format may also need to be configured for some Sources. Refer to the Source configuration docs for information on specifying a time format for Delimited Text Data Sources.
 
+.. raw:: latex
+
+    \newpage
 
 .. _time-format-tokens:
 

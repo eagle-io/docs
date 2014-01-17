@@ -14,6 +14,10 @@ This occurs when the Source Schedule is *Disabled* or set to *Remote* (ie. devic
 
 *Scout modem remote connection confirmation*
 
+.. raw:: latex
+
+    \vspace{-10pt}
+
 .. only:: not latex
 
 	.. image:: operate_acquire_callback.png
@@ -22,6 +26,8 @@ This occurs when the Source Schedule is *Disabled* or set to *Remote* (ie. devic
 	| 
 
 .. only:: latex
+	
+	| 
 
 	.. image:: operate_acquire_callback.png
 
@@ -41,6 +47,10 @@ Control dialog
 The Control dialog can be opened from the Operate menu. It displays a list of Control Parameters within the chosen Node.
 Set the control values and *Apply*. Cancel a pending control operation by clicking the 'x' next to the parameter control value. The current status of the operation is shown for each parameter being updated and the rows will turn green to indicate success or red to indicate failure.
 
+.. raw:: latex
+
+    \vspace{-10pt}
+
 .. only:: not latex
 
 	.. image:: operate_control_dialog.png
@@ -59,6 +69,10 @@ List View inline Control
 ~~~~~~~~~~~~~~~~~~~~~~~~
 Control parameters can have their control value set directly from the Parameters List View. Click or touch the control icon next to the value to update or set the control value. Click or touch the control icon again to apply the new value or cancel the control operation by clicking the 'x'.
 
+.. raw:: latex
+
+    \vspace{-10pt}
+
 .. only:: not latex
 
 	.. image:: operate_control_inline.png
@@ -75,3 +89,7 @@ Control parameters can have their control value set directly from the Parameters
 
 .. note:: 
 	Control Parameters can be configured to restrict the user input for the control value. See :ref:`Configuring Parameters <node-configuration-parameter>` for full details.
+
+.. raw:: latex
+
+    \newpage

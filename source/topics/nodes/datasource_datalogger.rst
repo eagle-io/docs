@@ -16,6 +16,10 @@ General
 ~~~~~~~~
 The general section allows you to specify the type of data logger you would like to connect to.  
 
+.. raw:: latex
+
+    \vspace{-10pt}
+
 .. only:: not latex
 
     .. image:: datasource_datalogger_general.png
@@ -50,6 +54,10 @@ Data logger type
 Connection
 ~~~~~~~~~~
 Configure how you would like to connect to your data logger.
+
+.. raw:: latex
+
+    \vspace{-10pt}
 
 .. only:: not latex
 
@@ -102,10 +110,17 @@ Retry delay
 Communications Alarm
     See :ref:`Alarms and Notifications <communications-alarm>`.
 
+.. raw:: latex
+
+    \newpage
 
 Collection
 ~~~~~~~~~~
 Collection is used to specify if and when data should be automatically collected from the Source.
+
+.. raw:: latex
+
+    \vspace{-10pt}
 
 .. only:: not latex
 
@@ -137,11 +152,18 @@ Interval offset
 Outdated Alarm
     See :ref:`Alarms and Notifications <outdated-alarm>`.
 
+.. raw:: latex
 
+    \newpage
+    
 Parameters
 ~~~~~~~~~~~
 The Parameters section allows you to manage the parameters associated with the Source.
 A list of available tables/series is shown (when not using Automatic parameter configuration) and updated automatically on every connection to the data logger.
+
+.. raw:: latex
+
+    \vspace{-10pt}
 
 .. only:: not latex
 
@@ -180,6 +202,10 @@ Time
 ~~~~~
 Time allows you to configure the timezone of the Source and associated options.
 
+.. raw:: latex
+
+    \vspace{-10pt}
+    
 .. only:: not latex
 
     .. image:: datasource_datalogger_time.png
@@ -202,3 +228,6 @@ Automatically adjust clock for Daylight Savings Time
 Automatically update data logger with correct time
     Check this option if you would like to automatically update the data logger clock with the correct time based on the selected timezone.
 
+.. raw:: latex
+
+    \newpage

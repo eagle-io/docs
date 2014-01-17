@@ -5,6 +5,9 @@ Chart
 .. note::
 	The view displays content based on the Selected Node in the Workspaces Menu. Use filters to quickly target specific parameters or review alarms.
 
+.. raw:: latex
+
+    \newpage
 
 Subviews
 ---------
@@ -12,6 +15,10 @@ Subviews
 Locations
 ~~~~~~~~~
 Locations Subview displays a chart per Location. Any Parameters contained within the Location will be displayed on the same chart. If a Location does not contain any Parameters (or the Parameters have been filtered), no chart will be displayed.
+
+.. raw:: latex
+
+    \vspace{-10pt}
 
 .. only:: not latex
 
@@ -30,6 +37,10 @@ Locations Subview displays a chart per Location. Any Parameters contained within
 Parameters
 ~~~~~~~~~~
 Parameters Subview displays a chart per Parameter (based on Parameter name). Useful for comparing Parameters of the same type across multiple Locations. Filters can be applied to reduce the number of charts and/or Parameters being displayed.
+
+.. raw:: latex
+
+    \vspace{-10pt}
 
 .. only:: not latex
 
@@ -61,6 +72,10 @@ Hover over a chart with the mouse cursor or touch part of the display area of a 
 
 Parameter values may be shown with aggregation applied - indicated with a duration and aggregate name in brackets immediately after the Parameter name. Aggregation is based on the date range of the chart data and the Parameter configuration settings. See :ref:`Parameter configuration <node-configuration-parameter>` for full details.
 
+.. raw:: latex
+
+    \vspace{-10pt}
+    
 .. only:: not latex
 	
 	.. image:: chart_values.png
@@ -88,6 +103,10 @@ Click and Drag (or pinch on touch devices) over the main chart area to zoom. As 
 
 Use the navigator located directly under the main chart area to pan the chart or zoom in/out.
 
+.. raw:: latex
+
+    \newpage
+
 .. only:: not latex
 
 	*Chart area selected for zoom*
@@ -116,6 +135,9 @@ Use the navigator located directly under the main chart area to pan the chart or
 
 	.. image:: chart_zoomed.png
 
+.. raw:: latex
+
+    \newpage
 
 Toggle Parameter display
 ~~~~~~~~~~~~~~~~~~~~~~~~

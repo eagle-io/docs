@@ -13,6 +13,10 @@ Changes take effect immediately and logged in users will be prompted to navigate
 
 Minimum length of 5 characters is required. The subdomain will be validated on save.
 
+.. raw:: latex
+
+    \vspace{-10pt}
+
 .. only:: not latex
 
 	.. image:: account_customise_subdomain.png
@@ -40,3 +44,7 @@ Company Logos can be uploaded to customise the appearance of the site when acces
 Public Content
 --------------
 You can customise your landing page by changing the banner image and adding some text as desired.
+
+.. raw:: latex
+
+    \newpage

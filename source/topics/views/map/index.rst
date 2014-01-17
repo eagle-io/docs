@@ -89,6 +89,10 @@ The show/hide filtered locations button found in the toolbar can be used to togg
 	.. image:: map_controls_filter.png
 		:scale: 35 %
 
+.. raw:: latex
+
+    \newpage
+
 *Map with filters applied*
 
 .. only:: not latex
@@ -157,6 +161,10 @@ Adding a new Location marker
 -----------------------------
 |icon-location-add| Use the *Add Location* button in the toolbar or from the map context menu with a right-click or long-press on the map. The Add Location dialog will be displayed showing all locations within the Selected Node that have not been assigned coordinates.
 
+.. raw:: latex
+
+    \newpage
+    
 *Map context menu*
 
 .. only:: not latex
@@ -185,7 +193,7 @@ Adding a new Location marker
 	.. image:: map_location_add_dialog.png
 		:scale: 70 %
 
-*Drag and Drop* Locations directly from the Workspaces Menu if your using a mouse (and Workspaces Menu visible).
+*Drag and Drop* Locations directly from the Workspaces Menu (not supported on touch devices).
 
 .. only:: not latex
 

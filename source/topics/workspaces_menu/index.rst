@@ -28,6 +28,10 @@ Create
 
 The Create Menu displays a list of the types of Nodes that can be created inside the currently Selected Node. Items that are disabled can not be created inside the Selected Node - either a restriction on the type of Node or you do not have the required security permissions.
 
+.. raw:: latex
+
+    \newpage
+
 *Create using Context Menu*
 
 .. image:: workspaces_menu_context.png
@@ -108,6 +112,10 @@ You may notice *GRAY* Nodes in the Workspaces Menu.
 Sources being configured for the first time will be shown as disabled until they have been fully configured.
 Parameters that had been created and then unchecked (or unavailable) for collection will also be shown as disabled in the Workspaces Menu, List and Map Views. 
 
+.. raw:: latex
+
+    \vspace{-10pt}
+
 .. only:: not latex
 
 	.. image:: workspaces_menu_disabled.png
@@ -121,3 +129,8 @@ Parameters that had been created and then unchecked (or unavailable) for collect
 
 	.. image:: workspaces_menu_disabled.png
 		:scale: 35 %
+
+.. raw:: latex
+
+    \newpage
+    

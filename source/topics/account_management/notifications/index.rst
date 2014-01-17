@@ -13,6 +13,10 @@ Email notifications are free and unlimited.
 
 SMS notifications incur charges on the Owners Account. You can restrict the total number of SMS's allowed to be sent from your account per billing period. You can also choose to *Disable*  SMS or set to *Unlimited*  for no restriction.
 
+.. raw:: latex
+
+    \vspace{-10pt}
+
 .. only:: not latex
 
 	.. image:: account_notification_limits.png
@@ -29,7 +33,6 @@ SMS notifications incur charges on the Owners Account. You can restrict the tota
 
 The account owner will receive an Email from the system when the total number of SMS sent within the current billing period gets close to the selected limit. Another Email will be sent when the limit is reached and no further notification SMS's will be sent until the next billing period.
 
-| 
 
 .. _management-notifications-categories:
 
@@ -41,6 +44,10 @@ All Nodes, States and/or Alarms that provide a Notification option require a Cat
 Users must individually select the categories in each Workspace they would like to receive notifications for. See :ref:`Notification Preferences <user-notification-preferences>` for full details.
 
 Add, rename and remove categories as necessary.
+
+.. raw:: latex
+
+    \vspace{-10pt}
 
 .. only:: not latex
 

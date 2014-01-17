@@ -15,6 +15,10 @@ General
 ~~~~~~~
 The General section allows you to enter a *description* for the attachment which is displayed in List View.
 
+.. raw:: latex
+
+    \vspace{-10pt}
+
 .. only:: not latex
 
 	.. image:: attachment_description.png
@@ -27,4 +31,8 @@ The General section allows you to enter a *description* for the attachment which
 	| 
 	
 	.. image:: attachment_description.png
-		:scale: 70 %
+		:scale: 80 %
+
+.. raw:: latex
+
+    \newpage

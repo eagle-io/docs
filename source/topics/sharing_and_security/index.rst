@@ -15,3 +15,7 @@ See :ref:`Workspace Sharing <node-configuration-workspace-sharing>` for full det
 
 
 Workspace users are assigned a User Role specific to the Workspace which determines what interactions or operations the user is allowed to perform on that Workspace. The individual User Role permissions can be configured from :menuselection:`Account management --> Security --> User roles`. See :ref:`User Roles <management-security-userroles>` for full details.
+
+.. raw:: latex
+
+    \newpage

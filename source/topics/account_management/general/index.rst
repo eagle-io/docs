@@ -12,6 +12,7 @@ Click or touch the *Change* button to Change or Cancel the account. Follow the o
 .. note:: 
 	You must be logged in as the Account Owner to change or cancel the account.
 
+
 .. _management-general-qualitycodes:
 
 Quality Codes
@@ -20,6 +21,10 @@ The Quality Codes section displays a list of the historic :ref:`Qualities <histo
 
 Source and Quality Codes must be whole numbers between 0 - 65535.
 
+.. raw:: latex
+
+    \vspace{-10pt}
+    
 .. only:: not latex
 
 	.. image:: account_quality.png

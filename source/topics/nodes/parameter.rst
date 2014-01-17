@@ -60,11 +60,15 @@ Properties
 .. include:: properties.rstx
 
 .. note::
-    Available options will vary based on parmater type. Text parameters do not have a general section.
+    Available options will vary based on parameter type. Text Parameters do not have a general section.
 
 General
 ~~~~~~~~
 The general section allows you to specifiy display settings for Number and Time Parameters.
+
+.. raw:: latex
+
+    \vspace{-10pt}
 
 .. only:: not latex
 
@@ -97,6 +101,10 @@ States
 ~~~~~~~~
 You can associate data values with States if they fall within a specified range or match specific values (discrete).
 Number Parameters can use either Range or Discrete states. Text and Time Parameters are limited to Discrete states only and do not display the States type drop down.
+
+.. raw:: latex
+
+    \vspace{-10pt}
 
 .. only:: not latex
 
@@ -154,6 +162,10 @@ Add and Remove
 Reorder
     Hover over the States with a mouse to show the grab handle. Click and drag the grab handle to reorder the State in the list. When using Range States, only the *NORMAL* State can be repositioned.
 
+    .. raw:: latex
+
+        \vspace{-10pt}
+
     .. only:: not latex
         
         .. image:: parameter_states_reposition.png
@@ -176,6 +188,10 @@ Style
 ``````
 Select the chart type and display preferences.
 
+.. raw:: latex
+
+    \vspace{-10pt}
+
 .. only:: not latex
         
     .. image:: parameter_chart_style.png
@@ -193,6 +209,10 @@ Select the chart type and display preferences.
 Data
 `````
 Select the data and processing to be used.
+
+.. raw:: latex
+
+    \vspace{-10pt}
 
 .. only:: not latex
         
@@ -236,6 +256,10 @@ Customise
 ``````````
 Select customisation options for chart appearance.
 
+.. raw:: latex
+
+    \vspace{-10pt}
+
 .. only:: not latex
         
     .. image:: parameter_chart_customise.png
@@ -271,6 +295,10 @@ Control
 ~~~~~~~~
 The control section allows you to configure control options for Control Parameters.
 
+.. raw:: latex
+
+    \vspace{-10pt}
+
 .. only:: not latex
 
     .. image:: parameter_control.png
@@ -300,3 +328,8 @@ Restricted values
 
 Control Alarm
     See :ref:`Alarms and Notifications <control-alarm>`.
+
+.. raw:: latex
+
+    \newpage
+    

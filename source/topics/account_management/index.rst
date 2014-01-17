@@ -8,7 +8,9 @@ Use the Account selector located in the User Menu of the Account Management sect
 .. image:: account_selector.png
 	:scale: 50 %
 
-| 
+.. only:: not latex
+
+	| 
 
 .. toctree::
    :maxdepth: 2

@@ -20,6 +20,10 @@ The :term:`timestamps <timestamp>` are always displayed in your preferred timezo
 
 Use the *Jump to date* control to quickly move to a specific date.
 
+.. raw:: latex
+
+    \vspace{-10pt}
+
 .. only:: not latex
 
 	.. image:: historic_table.png
@@ -36,6 +40,10 @@ Use the *Jump to date* control to quickly move to a specific date.
 
 
 Use the display options drop down at the top of each column to specify how the data should be displayed including any aggregate calculations to be applied.
+
+.. raw:: latex
+
+    \vspace{-10pt}
 
 .. only:: not latex
 
@@ -74,6 +82,10 @@ Charts
 
 Refer to :ref:`working with charts <working-with-charts>` for full details on chart interaction and functionality.
 
+.. raw:: latex
+
+    \vspace{-10pt}
+    
 .. only:: not latex
 
 	.. image:: historic_chart.png
@@ -93,3 +105,7 @@ Exports
 -------
 
 |icon-export| Export feature is currently not available. You can copy/paste directly from the Historic Table or Download the Historic Chart.
+
+.. raw:: latex
+
+    \newpage

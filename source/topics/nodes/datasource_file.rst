@@ -18,6 +18,10 @@ General
 ~~~~~~~
 The general section allows you to specify the type file(s) you would like to collect.  
 
+.. raw:: latex
+
+    \vspace{-10pt}
+
 .. only:: not latex
 
 	.. image:: datasource_file_general.png
@@ -45,6 +49,10 @@ File type
 Connection
 ~~~~~~~~~~
 Configure how you would like to connect to your file(s).
+
+.. raw:: latex
+
+    \vspace{-10pt}
 
 .. only:: not latex
 	
@@ -92,6 +100,10 @@ Collection
 ~~~~~~~~~~
 Collection is used to specify if and when data should be automatically collected from the Source.
 
+.. raw:: latex
+
+    \vspace{-10pt}
+
 .. only:: not latex
 
 	.. image:: datasource_file_collection.png
@@ -121,6 +133,10 @@ Outdated Alarm
 Parameters
 ~~~~~~~~~~~
 The Parameters section allows you to manage the parameters associated with the Source.
+
+.. raw:: latex
+
+    \vspace{-10pt}
 
 .. only:: not latex
 
@@ -165,6 +181,10 @@ Time
 ~~~~~
 Time allows you to configure the timezone of the Source and associated options.
 
+.. raw:: latex
+
+    \vspace{-10pt}
+
 .. only:: not latex
 
 	.. image:: datasource_file_time.png
@@ -191,6 +211,10 @@ Text Parser Configuration
 -------------------------
 The Text Parser allows you to define how a text file should be processed by the system including defining parameters and associating historic data. All scheduled collection and user acquisition requests will use the saved parser configuration to process any new data that has been appended to the file since last collection.
 
+.. raw:: latex
+
+    \vspace{-10pt}
+
 .. only:: not latex
 
 	.. image:: parser_overview.png
@@ -208,6 +232,10 @@ The Text Parser allows you to define how a text file should be processed by the 
 General Settings
 ~~~~~~~~~~~~~~~~
 General settings are used to specify file format and encoding options.
+
+.. raw:: latex
+
+    \vspace{-10pt}
 
 .. only:: not latex
 
@@ -241,6 +269,10 @@ The Parser extracts a sample from the beginning of the input text file and attem
 
 *Input Text File*
 
+.. raw:: latex
+
+    \vspace{-10pt}
+
 .. only:: not latex
 
 	.. image:: parser_file_01.png
@@ -256,6 +288,10 @@ The Parser extracts a sample from the beginning of the input text file and attem
 		:scale: 50 %
 
 *Parser Preview*
+
+.. raw:: latex
+
+    \vspace{-10pt}
 
 .. only:: not latex
 
@@ -274,6 +310,10 @@ The Parser extracts a sample from the beginning of the input text file and attem
 Columns and Data Type Selection
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Columns are assigned a column/data type which determine how they should be processed and the type of Parameter that will be available for creation. Use the data type drop down at the top of each column to select a data type from the available options. Column data that does not match the selected data type are displayed in *RED*. Hover over a table cell in the Parser Preview to display a tooltip (where valid) showing how the raw data will be interpreted by the parser.
+
+.. raw:: latex
+
+    \vspace{-10pt}
 
 .. only:: not latex
 
@@ -318,6 +358,10 @@ Joins and Parser Configuration
 
 Data values in input files are commonly split into separate fields and therefore will be shown as different columns in the Parser Preview. It is necessary to ensure each column you would like to use for Parameter creation has all joins/fields defined.
 
+.. raw:: latex
+
+    \vspace{-10pt}
+
 .. only:: not latex
 
 	.. image:: parser_join_time.png
@@ -335,6 +379,10 @@ You can join additional columns via the *Add New* row. Select the column to join
 
 Re-order any join/field by hovering over the item with a mouse to reveal the grab handle. Click and drag the grab handle to reposition the item in the list.
 
+.. raw:: latex
+
+    \vspace{-10pt}
+
 .. only:: not latex
 
 	.. image:: parser_join_reposition.png
@@ -347,9 +395,17 @@ Re-order any join/field by hovering over the item with a mouse to reveal the gra
 	| 
 
 	.. image:: parser_join_reposition.png
+
+.. raw:: latex
+
+    \newpage
 
 You may need to split or exclude data within a single column. Add a Separator field match and exclude specific text (as specified in the Separator format field).
 
+.. raw:: latex
+
+    \vspace{-10pt}
+    
 .. only:: not latex
 
 	.. image:: parser_join_coordinates.png
@@ -362,9 +418,19 @@ You may need to split or exclude data within a single column. Add a Separator fi
 	| 
 
 	.. image:: parser_join_coordinates.png
+
+.. raw:: latex
+
+    \newpage
 
 Quality codes can be associated with each column, either by splitting the column or joining an additional column containing the quality codes.
 
+All columns can be re-used as joins on other columns. For example you can have multiple parameter columns that all share the same quality code value by adding the quality code column as a join on each parameter column.
+
+.. raw:: latex
+
+    \vspace{-10pt}
+    
 .. only:: not latex
 
 	.. image:: parser_join_quality.png
@@ -378,5 +444,6 @@ Quality codes can be associated with each column, either by splitting the column
 
 	.. image:: parser_join_quality.png
 
-All columns can be re-used as joins on other columns. For example you can have multiple parameter columns that all share the same quality code value by adding the quality code column as a join on each parameter column.
+.. raw:: latex
 
+    \newpage

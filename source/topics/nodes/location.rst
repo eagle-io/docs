@@ -71,6 +71,10 @@ Metadata
 ~~~~~~~~
 Metadata provides a simple key/value data structure that can be used to store static information about the location. Values can be saved as Number or Text and are displayed in the Locations List View.
 
+.. raw:: latex
+
+    \vspace{-10pt}
+    
 .. only:: not latex
 
 	.. image:: location_metadata.png
@@ -83,3 +87,8 @@ Metadata provides a simple key/value data structure that can be used to store st
 	| 
 
 	.. image:: location_metadata.png
+
+.. raw:: latex
+
+    \newpage
+

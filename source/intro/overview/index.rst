@@ -14,11 +14,9 @@ Whether your working with simple data files or managing a fleet of :term:`data l
 With real-time communications, collaboration and instant updates built into the core Eagle.io has everything you've always wanted and more.
 The lightning fast interface has been designed to work across all modern phones and computing devices with no software to install and no page reloads.
 
-| 
 
 Log in to eagle.io
 ------------------
-
 You will need a user profile to log in. This requires you to `Sign up <https://eagle.io/signup>`_ for an account or receive a :ref:`Workspace Sharing <sharing-and-security>` invitation from a registered user.
 
 *Login form*
@@ -42,9 +40,12 @@ You will need a user profile to log in. This requires you to `Sign up <https://e
 
 Layout and Navigation
 ---------------------
-
 The user interface is divided into sections which group similar functionality and content.
 The layout of these sections will vary depending on the screen size of your device including its orientation (portrait or landscape). The figures below highlight the Main features of the interface as displayed on different devices.
+
+.. raw:: latex
+
+    \newpage
 
 *Desktop layout*
 
@@ -89,7 +90,6 @@ The layout of these sections will vary depending on the screen size of your devi
 
 Selecting Nodes in the Workspaces Menu
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 The Workspaces menu displays all the Workspaces and associated content you have access to. Each item in this menu is called a Node. The highlighted item is referred to as the Selected Node.
 
 Most Nodes are hierarchical and may also contain Nodes themselves. The *Workspaces* label is the best example of this as its referred to as the Base Node and contains all the Workspace Nodes.
@@ -142,7 +142,6 @@ Review the full list of :ref:`Node types <node-types>`.
 
 Changing the View
 ~~~~~~~~~~~~~~~~~~
-
 The Selected Node (including any Nodes it contains) can be displayed in a variety of Views.
 Use the View Selector to change the View. You will notice the Content Area and Toolbar change.
 
@@ -168,13 +167,11 @@ Use the View Selector to change the View. You will notice the Content Area and T
 
 User Menu
 ~~~~~~~~~
-
 The User Menu provides quick access to the User Profile, Account Management, Log out and Help.
 
 
 Context Menus
 ~~~~~~~~~~~~~
-
 Context menus are built into the interface and provide quick access to navigation, operations and configuration for their associated elements. Right-click or long-press on a Node in the Workspaces Menu or an item in the Content Area (ie. Map marker, List item, etc.) to display it's associated context menu.
 
 *Example Context menu shown for Map marker*
@@ -182,7 +179,9 @@ Context menus are built into the interface and provide quick access to navigatio
 .. image:: context_menu.png
 	:scale: 50 %
 
-| 
+.. only:: not latex
+
+	| 
 
 .. note:: 
 	Context menus display only the items relevant to the associated Node or content the menu is displayed for. Context menu items are also dependant on User permissions. If there are no available options then no context menu will be displayed.
@@ -190,7 +189,6 @@ Context menus are built into the interface and provide quick access to navigatio
 
 Click, Touch, Tap, What?
 ~~~~~~~~~~~~~~~~~~~~~~~~
-
 The user interface has been designed to work seemlessly across all modern computing devices including desktop computers, tablets and phones which means it has built-in support for Touch devices.
 
 *Throughout this documentation you will notice the following terms:*
@@ -207,7 +205,6 @@ Right-click, Long-press
 
 Inline help
 -----------
-
 |icon-help| Help is available throughout the interface - wherever you see the help icon.
 You can hover, click or touch the help icon to show the help popup - many of which have quick links back to the relevant section in this documentation.
 
@@ -218,17 +215,16 @@ You can hover, click or touch the help icon to show the help popup - many of whi
 	.. image:: inline_help.png
 		:scale: 50 %
 
+	| 
+
 .. only:: latex
 	
 	.. image:: inline_help.png
 		:scale: 35 %
 
-| 
-
 
 Offline use
 -----------
-
 Eagle.io requires an internet connection for use. A disconnected notice will be displayed when the connection to the servers has failed. Normal operation will resume once the connection has been re-established. 
 
 .. only:: not latex
@@ -236,12 +232,12 @@ Eagle.io requires an internet connection for use. A disconnected notice will be 
 	.. image:: disconnected_notice.png
 		:scale: 50 %
 
+	| 
+
 .. only:: latex
 
 	.. image:: disconnected_notice.png
 		:scale: 40 %
-
-| 
 
 .. note:: 
 	You may notice the app refresh after the connection is re-established after a long timeout or when updates have been released.

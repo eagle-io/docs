@@ -104,7 +104,10 @@ Nodes are the container objects that store all data and configuration for your p
 |icon-point-time-control| Time Control Parameter
 	Time Control Parameters are similar to Time Parameters however the value can be controlled by the user. Historic data represents the user control operations.
 
+.. raw:: latex
 
+    \newpage
+    
 .. toctree::
    :hidden:
 
@@ -115,4 +118,3 @@ Nodes are the container objects that store all data and configuration for your p
    datasource_file
    datasource_datalogger
    parameter
-

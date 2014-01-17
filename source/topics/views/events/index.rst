@@ -9,6 +9,10 @@ Events
 
 The events list is live updating and always displayed in reverse chronological order. New events are automatically added to the top of the list. Scroll down the list to view older events.
 
+.. raw:: latex
+
+    \vspace{-10pt}
+    
 .. only:: not latex
 
 	.. image:: events_overview.png
@@ -54,6 +58,9 @@ Select the Detail level of the event log. Debug is the lowest level and will sho
 
 |icon-error| Error
 
+.. raw:: latex
+
+    \newpage
 
 Event Type
 ~~~~~~~~~~
@@ -92,3 +99,7 @@ By default events will be displayed for the Selected Node and all Nodes it conta
 
 
 Review the full list of :ref:`Node types <node-types>`.
+
+.. raw:: latex
+
+    \newpage

@@ -8,6 +8,10 @@ Source Configuration
 --------------------
 You need to configure your Data Source to use the Scout transport. You can then use the *Device settings* button to display the device settings dialog. See :ref:`configuring a Data Source <node-configuration-datasource-datalogger>` for full details.
 
+.. raw:: latex
+
+    \vspace{-10pt}
+
 .. only:: not latex
 
 	.. image:: datasource_device.png
@@ -28,6 +32,11 @@ The device settings dialog allows you to review and configure the settings for y
 
 General
 ~~~~~~~
+The general section allows you to configure the device for use with your SIM.
+
+.. raw:: latex
+
+    \vspace{-10pt}
 
 .. only:: not latex
 
@@ -37,6 +46,8 @@ General
 	| 
 
 .. only:: latex
+
+	| 
 
 	.. image:: device_scout_general.png
 
@@ -58,6 +69,10 @@ Network configuration
 Communications
 ~~~~~~~~~~~~~~
 The communications section allows you to change the UART Port settings to correctly pass data between Eagle.io and your data logger.
+
+.. raw:: latex
+
+    \vspace{-10pt}
 
 .. only:: not latex
 
@@ -81,6 +96,10 @@ Operations
 ~~~~~~~~~~
 The operations section can be used to remotely reset or reboot the *Scout modem*.
 
+.. raw:: latex
+
+    \vspace{-10pt}
+
 .. only:: not latex
 
 	.. image:: device_scout_operations.png
@@ -93,3 +112,7 @@ The operations section can be used to remotely reset or reboot the *Scout modem*
 	| 
 
 	.. image:: device_scout_operations.png
+
+.. raw:: latex
+
+    \newpage

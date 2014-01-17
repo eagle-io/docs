@@ -14,6 +14,10 @@ General
 ~~~~~~~
 The general section allows you to specify attachment storage options.
 
+.. raw:: latex
+
+    \vspace{-10pt}
+
 .. only:: not latex
 
 	.. image:: attachmentsource_general.png
@@ -40,6 +44,10 @@ Remove after
 Connection
 ~~~~~~~~~~
 Configure how you would like to connect to your attachments.
+
+.. raw:: latex
+
+    \vspace{-10pt}
 
 .. only:: not latex
 
@@ -69,6 +77,10 @@ Collection
 ~~~~~~~~~~
 Collection is used to specify filter and processing options for attachment collection.
 
+.. raw:: latex
+
+    \vspace{-10pt}
+    
 .. only:: not latex
 
 	.. image:: attachmentsource_collection.png
@@ -97,3 +109,7 @@ Process email body
 
 Outdated Alarm
 	See :ref:`Alarms and Notifications <outdated-alarm>`.
+
+.. raw:: latex
+
+    \newpage

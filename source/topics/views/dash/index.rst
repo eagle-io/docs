@@ -8,3 +8,7 @@ Dash
 .. only:: not latex
 	
 	.. image:: /_static/coming-soon.png
+
+.. raw:: latex
+
+    \newpage
