@@ -101,6 +101,8 @@ Attachment filter
 	Enter an attachment filter to restrict the files(s) that get saved as attachments. Use \* as a wildcard character. Example: \*.jpg to save all jpg images.
 
 Process email body
+	Specify if the email message body should also be processed:
+
 	*No* only the attachments will be processed.
 
 	*Plain Text* will store the text content of the email in addition to any attachments.

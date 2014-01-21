@@ -136,6 +136,8 @@ Number Parameters can use either Range or Discrete states. Text and Time Paramet
 
 
 States Type
+    Select the type of States most suitable to your data:
+
     *Range* is the default option for most analog data and allows you to define a State that covers a range of values. eg. 1-10 = LOW
 
     *Discrete* is most commonly used with digital data where a State represents a specific (or matching) value. eg. 0 = OFF, 1 = ON
@@ -314,6 +316,8 @@ The control section allows you to configure control options for Control Paramete
 
 
 Restricted values
+    Select what values are acceptable for control operations:
+
     *None* 
 
         None does not restrict the control value. User can enter any value of the same type as the parameter. eg. Number, Text, Time.
