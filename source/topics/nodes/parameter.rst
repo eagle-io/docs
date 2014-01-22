@@ -292,6 +292,15 @@ Column placement
 Marker size
     Data point markers are hidden by default (shown on hover), but can be set to always display by specifying a size between 1-6 (small-large).
 
+State thresholds
+    Select which State thresholds should be displayed on the chart:
+
+    *Hidden* will not display any State thresholds.
+
+    *All States* will display all configured States.
+
+    *Alarm States Only* will only display States that have also been set to alarm.
+
 
 Control
 ~~~~~~~~
