@@ -76,12 +76,14 @@ Filter events by Event type. Use this drop down to quickly find events related t
 
 |icon-notification| Notification
 
+|icon-control| Control
+
 |icon-security| Security
 
 
 Node Type
 ~~~~~~~~~
-By default events will be displayed for the Selected Node and all Nodes it contains. You can use the Node type drop down to filter on a specific type of node. For example select Attachment to display all events related to attachments within the Selected Node.
+By default events will be displayed for the Selected Node and all Nodes it contains. You can use the Node type drop down to filter on a specific :ref:`type of node <node-types>`. For example select Attachment to display all events related to attachments within the Selected Node.
 
 |icon-select-all| All
 
@@ -96,9 +98,6 @@ By default events will be displayed for the Selected Node and all Nodes it conta
 |icon-point-number-range| Parameter
 
 |icon-attachment| Attachment
-
-
-Review the full list of :ref:`Node types <node-types>`.
 
 .. raw:: latex
 
