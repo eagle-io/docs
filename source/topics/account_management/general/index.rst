@@ -17,11 +17,11 @@ Click or touch the *Change* button to Change or Cancel the account. Follow the o
 
 Backup
 ------
-The Backup section allows you to configure your own off-site data backups.
+The Backup section allows you to configure your own offsite data backups.
 
-*Historic data* is currently the only item available for backup. When enabled, any new data acquired or collected (on schedule) from a Data Source is immediately sent to the Transport for backup. 
+*Historic data* can be selected for automatic backup. When enabled, all data acquired or collected on schedule from Data Source Nodes will be sent to the Transport for immediate backup. 
 
-The backup files contain all data that has been collected from the Data Source, including data/tables that dont have associated Parameters configured in Eagle.io. The data is stored in a standard Delimited Text format and new data is automatically appended to the same file(s).
+The backup files contain all data collected from the Data Source. The data is stored in Delimited Text format. A *backup* folder will be created at the *Remote path* and sub-directories will be created for all Data Sources configured in the account (upon acquisition). Newly acquired data will be appended to existing files within the sub-directories.
 
 .. raw:: latex
 
@@ -57,7 +57,7 @@ Password
 	Password for the associated user account (or leave blank for none).
 
 .. note::
-	Your data and configuration is automatically backed on the Eagle.io Network. You only need to enable backups if you would like to keep an off-site copy of the data.
+	Your data and configuration is always backed up on the Eagle.io Network. You only need to enable account backups if you would like to keep an off-site copy of the data.
 
 .. raw:: latex
 
