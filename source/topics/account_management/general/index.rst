@@ -47,6 +47,12 @@ Transport
 FTP host
 	Host name or IP address of the FTP Server.
 
+Port
+	TCP Port to use for connection to the FTP Server. Default Port 21 for standard FTP/FTPS or 990 for FTP with Implicit SSL.
+
+Mode
+	FTP Secure connection options. Use *FTP* for standard connection or choose an available *FTPS* mode. Consult your network administrator to verify the settings required for connection to your FTP Server.
+
 Remote path
 	Specifiy the remote path on the FTP Server where the backup files will be created. A *backup* folder will be created within the specified directory. You must have *Read* and *Write* permissions for the remote path.
 
@@ -57,7 +63,7 @@ Password
 	Password for the associated user account (or leave blank for none).
 
 .. note::
-	Your data and configuration is always backed up on the Eagle.io Network. You only need to enable account backups if you would like to keep an off-site copy of the data.
+	Your data and configuration is always backed up on the Eagle.io Network. You only need to enable account backups if you would like to keep an offsite copy of the data.
 
 .. raw:: latex
 
