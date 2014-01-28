@@ -97,8 +97,8 @@ Collection is used to specify filter and processing options for attachment colle
 Sender address filter
 	For added security you can filter attachments by sender email address. Restrict to a specific email address or use \* to match multiple addresses from the same domain. Example: \*@company.com
 
-Attachment filter
-	Enter an attachment filter to restrict the files(s) that get saved as attachments. Use \* as a wildcard character. Example: \*.jpg to save all jpg images.
+Attachment types
+	Restrict which file(s) get processed as Attachments by specifying a comma separated list of file extensions. eg. *jpg, png, mp4* will process standard media files and ignore all other file types.
 
 Process email body
 	Specify if the email message body should also be processed:
