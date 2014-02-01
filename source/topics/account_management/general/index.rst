@@ -17,7 +17,7 @@ Click or touch the *Change* button to Change or Cancel the account. Follow the o
 
 Backup
 ------
-The Backup section allows you to configure your own offsite data backups.
+Configure live backup of your data to your FTP server. This feature is only available for *PREMIUM* and *ENTERPRISE* accounts.
 
 *Historic data* can be selected for automatic backup. When enabled, all data acquired or collected on schedule from Data Source Nodes will be sent to the Transport for immediate backup. 
 
@@ -42,7 +42,7 @@ The backup files contain all data collected from the Data Source. The data is st
 		:scale: 80 %
 
 Transport
-	Select the transport to use for the backup. FTP Client is currently the only supported backup transport.
+	Select the transport to use for the backup. *FTP* is supported in `passive mode <http://en.wikipedia.org/wiki/File_Transfer_Protocol>`_ only.
 
 FTP host
 	Host name or IP address of the FTP Server.
