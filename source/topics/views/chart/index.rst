@@ -1,3 +1,5 @@
+.. _view-chart:
+
 Chart
 =========
 |icon-chart| Use the Chart View for reviewing your timeseries data in highly interactive charts. Choose to group data on charts by Location or Parameter type. Charts are displayed using the settings configured for each individual parameter. See :ref:`Parameter configuration <node-configuration-parameter>` for full details.

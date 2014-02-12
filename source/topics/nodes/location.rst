@@ -88,6 +88,29 @@ Metadata provides a simple key/value data structure that can be used to store st
 
 	.. image:: location_metadata.png
 
+
+Historic
+~~~~~~~~
+Use the *Delete* button to permanently remove all historic coordinate data for this Location.
+
+.. raw:: latex
+
+    \vspace{-10pt}
+    
+.. only:: not latex
+
+    .. image:: location_historic.png
+        :scale: 50 %
+
+    | 
+
+.. only:: latex
+    
+    | 
+
+    .. image:: location_historic.png
+
+
 .. raw:: latex
 
     \newpage

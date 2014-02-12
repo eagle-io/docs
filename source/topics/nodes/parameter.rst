@@ -302,6 +302,30 @@ State thresholds
     *Alarm States Only* will only display States that have also been set to alarm.
 
 
+.. _node-configuration-parameter-historic:
+
+Historic
+~~~~~~~~
+Use the *Delete* button to permanently remove all historic data for this Parameter.
+
+.. raw:: latex
+
+    \vspace{-10pt}
+    
+.. only:: not latex
+
+    .. image:: parameter_historic.png
+        :scale: 50 %
+
+    | 
+
+.. only:: latex
+    
+    | 
+
+    .. image:: parameter_historic.png
+
+
 Control
 ~~~~~~~~
 The control section allows you to configure control options for Control Parameters.

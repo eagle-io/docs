@@ -45,6 +45,7 @@ File type
 
 		Data is stored as rows of values separated with a specific :term:`delimiter` character.
 
+.. _node-configuration-datasource-file-connection:
 
 Connection
 ~~~~~~~~~~
@@ -95,6 +96,7 @@ Transport type
 Communications Alarm
 	See :ref:`Alarms and Notifications <communications-alarm>`.
 
+.. _node-configuration-datasource-file-collection:
 
 Collection
 ~~~~~~~~~~
@@ -130,9 +132,9 @@ Outdated Alarm
 	See :ref:`Alarms and Notifications <outdated-alarm>`.
 
 
-Parameters
+Series
 ~~~~~~~~~~~
-The Parameters section allows you to manage the parameters associated with the Source.
+The Series section allows you to assign Series from the Source to New or Existing Parameters.
 
 .. raw:: latex
 
@@ -140,7 +142,7 @@ The Parameters section allows you to manage the parameters associated with the S
 
 .. only:: not latex
 
-	.. image:: datasource_file_parameters.png
+	.. image:: datasource_file_series.png
 		:scale: 50 %
 
 	| 
@@ -149,7 +151,7 @@ The Parameters section allows you to manage the parameters associated with the S
 	
 	| 
 
-	.. image:: datasource_file_parameters.png
+	.. image:: datasource_file_series.png
 
 
 Add Files
@@ -159,7 +161,7 @@ Location Coordinates
 	The Source can optionally provide Location Coordinates from a coordinate series or a pair of numeric series (lat/lng). You need to configure the Location and select this Source to be used for its coordinates. Select the file and series to use from the drop down list.
 
 Remove Files
-	Click the 'x' to remove a file from the Source. All parameters associated with the file will be disabled.
+	Click the 'x' to remove a file from the Source. All parameters associated with the series from the file will be disabled.
 
 Collect from date
 	|icon-calendar| Set or reset the collection pointer for the corresponding file to re-collect its data from the specified date. This operation never removes historic data - it will only update and overwrite existing values.
@@ -167,14 +169,35 @@ Collect from date
 Parser Configuration
 	|icon-properties| Setup or Update the parser configuration for the selected file. See :ref:`Text Parser Configuration <text-parser>` for full details.
 
-Clear Historic
-	|icon-remove| Toggle active the Clear Historic button to clear the associated parameter's historic data on save.
+Parameter Assignment
+	You must assign Series to New or Existing parameters and set the Series for collection by ensuring its checkbox is enabled.
+	Any Parameters assigned to Series will be disabled when the Series is unchecked for collection. 
 
-Parameter Selection
-	Check the Series items to create associated parameters on save. Unchecking an existing parameter will disable the associated Parameter Node but will not remove the Node or its historic data.
+	Parameters can be re-assigned to new Series at any time without loosing existing historic data.
 
-	The parameter icon indicates the :ref:`type of parameter <node-types>` that will be created.
+	The series icon indicates the :ref:`type of parameter <node-types>` that will be created.
 	Rename and Delete operations should be performed from the Workspaces Menu.
+
+Historic
+~~~~~~~~
+Use the *Delete* button to permanently remove all historic data for Parameters contained with the Source. Alternatively use the :ref:`Parameter Historic <node-configuration-parameter-historic>` section to delete historic data for individual Parameters.
+
+.. raw:: latex
+
+    \vspace{-10pt}
+    
+.. only:: not latex
+
+    .. image:: datasource_historic.png
+        :scale: 50 %
+
+    | 
+
+.. only:: latex
+    
+    | 
+
+    .. image:: datasource_historic.png
 
 
 Time
@@ -209,7 +232,7 @@ Ignore Daylight Savings Time
 
 Text Parser Configuration
 -------------------------
-The Text Parser allows you to define how a text file should be processed by the system including defining parameters and associating historic data. All scheduled collection and user acquisition requests will use the saved parser configuration to process any new data that has been appended to the file since last collection.
+The Text Parser allows you to define how a text file should be processed by the system including defining series to be assigned to Parameters. All scheduled collection and user acquisition requests will use the saved parser configuration to process any new data that has been appended to the file since last collection.
 
 .. raw:: latex
 
@@ -309,7 +332,7 @@ The Parser extracts a sample from the beginning of the input text file and attem
 
 Columns and Data Type Selection
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Columns are assigned a column/data type which determine how they should be processed and the type of Parameter that will be available for creation. Use the data type drop down at the top of each column to select a data type from the available options. Column data that does not match the selected data type are displayed in *RED*. Hover over a table cell in the Parser Preview to display a tooltip (where valid) showing how the raw data will be interpreted by the parser.
+Columns are assigned a series data type which determine how they should be processed and the type of Parameter that will be available for creation. Use the data type drop down at the top of each column to select a data type from the available options. Columns that does not match the selected series data type are displayed in *RED*. Hover over a table cell in the Parser Preview to display a tooltip (where valid) showing how the raw data will be interpreted by the parser.
 
 .. raw:: latex
 

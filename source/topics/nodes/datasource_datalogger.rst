@@ -156,10 +156,10 @@ Outdated Alarm
 
     \newpage
     
-Parameters
+Series
 ~~~~~~~~~~~
-The Parameters section allows you to manage the parameters associated with the Source.
-A list of available tables/series is shown (when not using Automatic parameter configuration) and updated automatically on every connection to the data logger.
+The Series section allows you to assign Series from the Source to New or Existing Parameters.
+A list of available tables/series is shown (when not using Automatic parameter configuration) and automatically updated on every connection to the data logger.
 
 .. raw:: latex
 
@@ -167,7 +167,7 @@ A list of available tables/series is shown (when not using Automatic parameter c
 
 .. only:: not latex
 
-    .. image:: datasource_datalogger_parameters.png
+    .. image:: datasource_datalogger_series.png
         :scale: 50 %
 
     | 
@@ -176,7 +176,7 @@ A list of available tables/series is shown (when not using Automatic parameter c
     
     | 
 
-    .. image:: datasource_datalogger_parameters.png
+    .. image:: datasource_datalogger_series.png
 
 
 Automatic Parameter Configuration
@@ -188,14 +188,36 @@ Location Coordinates
 Collect from date
     |icon-calendar| Set or reset the collection pointer for the corresponding table to re-collect its data from the specified date. This operation never removes historic data - it will only update and overwrite existing values.
 
-Clear Historic
-    |icon-remove| Toggle active the Clear Historic button to clear the associated parameter's historic data on save.
-
 Parameter Selection
-    Check the Series items to create associated parameters on save. Unchecking an existing parameter will disable the associated Parameter Node but will not remove the Node or its historic data.
+    You must assign Series to New or Existing parameters and set the Series for collection by ensuring its checkbox is enabled.
+    Any Parameters assigned to Series will be disabled when the Series is unchecked for collection. 
 
-    The parameter icon indicates the :ref:`type of parameter <node-types>` that will be created.
+    Parameters can be re-assigned to new Series at any time without loosing existing historic data.
+
+    The series icon indicates the :ref:`type of parameter <node-types>` that will be created.
     Rename and Delete operations should be performed from the Workspaces Menu.
+
+
+Historic
+~~~~~~~~
+Use the *Delete* button to permanently remove all historic data for Parameters contained with the Source. Alternatively use the :ref:`Parameter Historic <node-configuration-parameter-historic>` section to delete historic data for individual Parameters.
+
+.. raw:: latex
+
+    \vspace{-10pt}
+    
+.. only:: not latex
+
+    .. image:: datasource_historic.png
+        :scale: 50 %
+
+    | 
+
+.. only:: latex
+    
+    | 
+
+    .. image:: datasource_historic.png
 
 
 Time
