@@ -28,6 +28,8 @@ The following aggregates are available depending on the Display Type setting of 
 +--------------+-------+-------+
 | RANGE        | x     |       |
 +--------------+-------+-------+
+| CHANGE       | x     | x     |
++--------------+-------+-------+
 | START        | x     | x     |
 +--------------+-------+-------+
 | END          | x     | x     |
@@ -76,6 +78,11 @@ The maximum aggregate retrieves the maximum good raw value within the interval.
 RANGE
 -----
 The range aggregate finds the difference between the raw maximum and raw minimum values in the interval. If only one value exists in the interval, the range is zero. Note that the range is always zero or positive.
+
+
+CHANGE
+------
+The change aggregate retrieves raw values which has been filtered to remove any non-unique sequential values.
 
 
 START
