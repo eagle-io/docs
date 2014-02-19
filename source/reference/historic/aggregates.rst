@@ -82,7 +82,7 @@ The range aggregate finds the difference between the raw maximum and raw minimum
 
 CHANGE
 ------
-The change aggregate retrieves raw values which has been filtered to remove any non-unique sequential values.
+The change aggregate retrieves raw values which have been filtered to remove any duplicate sequential values.
 
 
 START
