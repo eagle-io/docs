@@ -58,7 +58,29 @@ Outdated Alarms are specific to Sources and are triggered (if enabled) when no n
 	.. image:: outdated_alarm.png
 
 
-.. _control-alarm:
+.. _configuration-alarm:
+
+Configuration Alarm
+~~~~~~~~~~~~~~~~~~~
+Configuration Alarms are specific to data logger Datasources and are triggered (if enabled) when an error is encountered when applying the user-selected configuration file(s).
+
+.. raw:: latex
+
+    \vspace{-10pt}
+
+.. only:: not latex
+
+	.. image:: configuration_alarm.png
+		:scale: 50 %
+
+	| 
+
+.. only:: latex
+
+	| 
+
+	.. image:: configuration_alarm.png
+
 
 Control Alarm
 ~~~~~~~~~~~~~

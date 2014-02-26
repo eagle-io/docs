@@ -155,6 +155,32 @@ Outdated Alarm
 .. raw:: latex
 
     \newpage
+
+
+Configuration
+~~~~~~~~~~~~~
+Configuration displays configuration set in the remote data logger including program name, firmware, etc. To send new configuration to a supported logger, use the Manage configuration dialog.
+
+.. raw:: latex
+
+    \vspace{-10pt}
+
+.. only:: not latex
+
+    .. image:: datasource_datalogger_configuration.png
+        :scale: 50 %
+
+    | 
+
+.. only:: latex
+    
+    | 
+
+    .. image:: datasource_datalogger_configuration.png
+
+Configuration Alarm
+    See :ref:`Alarms and Notifications <configuration-alarm>`.
+
     
 Series
 ~~~~~~~~~~~

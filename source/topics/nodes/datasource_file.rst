@@ -232,7 +232,7 @@ Ignore Daylight Savings Time
 
 Text Parser Configuration
 -------------------------
-The Text Parser allows you to define how a text file should be processed by the system including defining series to be assigned to Parameters. All scheduled collection and user acquisition requests will use the saved parser configuration to process any new data that has been appended to the file since last collection.
+The Text Parser allows you to define how a delimited text file should be processed by the system including defining series to be assigned to Parameters. All scheduled collection and user acquisition requests will use the saved parser configuration to process any new data that has been appended to the file since last collection.
 
 .. raw:: latex
 
