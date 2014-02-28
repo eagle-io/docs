@@ -97,3 +97,8 @@ Update firmware
 
 Transfer only
     Send raw files to the logger.
+
+
+.. raw:: latex
+
+    \newpage
