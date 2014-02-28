@@ -62,7 +62,7 @@ Outdated Alarms are specific to Sources and are triggered (if enabled) when no n
 
 Configuration Alarm
 ~~~~~~~~~~~~~~~~~~~
-Configuration Alarms are specific to data logger Datasources and are triggered (if enabled) when an error is encountered when applying the user-selected configuration file(s).
+Configuration Alarms are specific to data logger Data Sources and are triggered (if enabled) when an error is encountered when applying the user-selected :ref:`configuration <operate-manageconfiguration>` file(s).
 
 .. raw:: latex
 
