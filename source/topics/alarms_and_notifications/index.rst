@@ -82,6 +82,8 @@ Configuration Alarms are specific to data logger Data Sources and are triggered 
 	.. image:: configuration_alarm.png
 
 
+.. _control-alarm:
+
 Control Alarm
 ~~~~~~~~~~~~~
 Control Alarms are specific to Control Parameters and are triggered (if enabled) when a control operation has failed for any reason other than a communications failure.
