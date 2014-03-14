@@ -88,7 +88,7 @@ Nodes are the container objects that store all data and configuration for your p
 	| 
 
 |icon-point-text-control| Text Control Parameter
-	Text Control Parameters are similar to Text Parameters however the value can be controlled by the user. Historic data represents the user control operations.
+	Text Control Parameters are similar to Text Parameters however the value can be controlled by the user. Historic data represents the user control operations. Please note: Text Control Parameters for Campbell Scientific data loggers currently do not support Control operations.
 
 .. only:: not latex
 	
