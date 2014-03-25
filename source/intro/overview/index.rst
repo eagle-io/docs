@@ -80,7 +80,7 @@ The layout of these sections will vary depending on the screen size of your devi
 1. Create Menu
 2. Filters
 3. Status Bar
-4. User Menu, Help and Fullscreen mode
+4. User Menu, Messages, Help and Fullscreen mode
 5. View Selector
 6. Toolbar
 7. Content Area

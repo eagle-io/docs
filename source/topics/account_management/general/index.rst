@@ -94,7 +94,7 @@ Source and Quality Codes must be whole numbers between 0 - 65535.
 		:scale: 80 %
 
 Source Quality
-	Quality Code(s) to match on acquired data. Seperate multiple quality codes with a comma.
+	Quality Code(s) to match on acquired data. Separate multiple quality codes with a comma.
 
 Quality Code
 	Quality Code to apply to the data for display and export. You can use the same Code as the Source or specify a custom code. Must be numeric.

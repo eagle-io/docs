@@ -62,12 +62,21 @@ TCP Callback
 Scout 
 	The *Scout modem* is the easiest way to connect your data logger to Eagle.io. The Scout takes any standard internet ready SIM Card without the need for fixed IP addresses and has a range of smart features including inbuilt GPS, signal strength monitoring, event based reporting and low power mode.
 
+What level of functionality do you provide for connected data loggers?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Eagle.io provides much more than just data retrieval and display. From Eagle.io you can upload programs and firmware (including network wide updates in one click), perform Control operations (setting of public table variables in Campbell Scientific data loggers), automatically create/update/merge parameters as programs change, automatic clock sync with timezone and daylight savings support, and a range of other smart features designed to make managing your network of data loggers easier than ever before.
+
+Can I connect to my data logger using 3rd party software?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Yes! You can enable *Remote Access* to your data logger at any time. An Internet address and Port will be allocated to allow you to immediately connect via TCP/IP. You can specify a session timeout and restrict access based on IP Address or allow connections from anywhere. Want to use LoggerNet or other tools for your low level operations - no problem. See :ref:`Data Source <node-configuration-datasource-datalogger>` configuration for full details.
+
+
 Files
 -----
 
 What types of time series data files do you support?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-We support most types of delimited text files such as csv, loggernet and other standard formats. See :ref:`Data Source <node-configuration-datasource-datalogger>` configuration for full details.
+We support most types of delimited text files such as csv, loggernet and other standard formats. See :ref:`Data Source <node-configuration-datasource-file>` configuration for full details.
 
 What file transports do you support for automatic collection?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

@@ -101,7 +101,33 @@ Transport type
         Device Id
             The unique 15 digit IMEI number assigned to the *Scout modem*. Printed on the back of device.
 
+Remote access
+    Remote access allows you to connect directly to your data logger over TCP/IP (TCP Callback and Scout transport only). An Internet address and Port will be temporarily allocated when enabling remote access. Scheduled collection, control and configuration will not be available while a remote client is connected, and the Source status will show *REMOTE*.
 
+    Session timeout
+        Select a duration for the session, after which the remote access connection will be automatically closed.
+
+    Allow acces from
+        Restrict access to your data logger from your current IP address or a range of IP addresses specified using CIDR notation. Select *Anywhere* to allow connections from any Internet enabled device.
+
+    If the remote device is not connected or another client is already connected when you try to connect, a status message will be returned and remote access refused.
+
+.. raw:: latex
+
+    \vspace{-10pt}
+
+.. only:: not latex
+
+    .. image:: datasource_datalogger_connection_remoteaccess.png
+        :scale: 50 %
+
+    | 
+
+.. only:: latex
+
+    | 
+
+    .. image:: datasource_datalogger_connection_remoteaccess.png
 
 Retry attempts
     Select how many retry attempts are made during an acquisition or scheduled collection before the communications is considered failed.
@@ -222,7 +248,7 @@ Parameter Selection
 
     Parameters can be re-assigned to new Series at any time without loosing existing historic data.
 
-    The series icon indicates the :ref:`type of parameter <node-types>` that will be created.
+    The series icon indicates the :ref:`type of Parameter <node-types>` that will be created.
     Rename and Delete operations should be performed from the Workspaces Menu.
 
 

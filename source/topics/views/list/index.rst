@@ -120,7 +120,33 @@ Location
 Source
     Name of Source including relative path within Location
 Status
-    Current status of the Source: SCHEDULED, DOWNLOADING, UPDATING, CONTROLLING, IDLE, RETRYING, FAILED, DISABLED
+    Current status of the Source: 
+
+    DISABLED
+        The Source has been disabled by a user and will not be updated.
+    IDLE
+        The Source is enabled for communication but has no collection scheduled.
+    SCHEDULED
+        The Source is enabled for communication and has collection scheduled.
+    QUEUED
+        The Source is queued for communication.
+    CONNECTING
+        Eagle.io is currently attempting to connect to the Source.
+    CONTROLLING
+        Control operations are being performed on the connected Source.
+    DOWNLOADING
+        Data is currently being downloaded from the connected Source.                                     
+    RETRYING
+        Acquisition, Control or Configure operations have failed so a retry attempt has been scheduled.
+    FAILED
+        Acquisition, Control or Configure operations have failed (after retry attempts exceeded).
+    PROCESSING
+        Data is being processed after being downloaded from the connected Source.
+    CONFIGURING
+        Eagle.io is currently sending configuration to the Source.
+    REMOTE
+        Remote access is enabled and a client is connected. Acquisition, Control and Configure operations will not be available during this time.
+
 Latest Data
     Timestamp of the most recent data from the Source.
 Collected

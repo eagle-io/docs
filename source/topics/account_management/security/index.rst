@@ -31,7 +31,7 @@ If you would like a User to have restricted access to Workspaces, then DO NOT ad
 		:scale: 80 %
 
 .. note:: 
-	You can not remove the Account Owner or your own profile. 
+	You can not remove the Account Owner or your own user profile from the list. 
 
 
 .. _management-security-userroles:
@@ -63,6 +63,9 @@ View
 
 Read attachments
 	Preview and Download attachments.
+
+Send messages
+	Send messages to users of the Workspace.
 
 Subscribe notifications
 	Subscribe to Nodes and receive Email and SMS notifications.

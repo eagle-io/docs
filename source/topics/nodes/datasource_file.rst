@@ -274,7 +274,7 @@ General settings are used to specify file format and encoding options.
 	.. image:: parser_toolbar.png
 
 Column delimiter
-	Specify the :term:`delimiter` used to seperate values in each line of the file. Select a delimiter from the drop down or enter a custom character to use.
+	Specify the :term:`delimiter` used to separate values in each line of the file. Select a delimiter from the drop down or enter a custom character to use.
 
 Text qualifier
 	Specify the character used to surround text values. This character will be automatically stripped if it exists in a column. Select a qualifier from the drop down or enter a custom character to use.

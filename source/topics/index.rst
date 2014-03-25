@@ -10,6 +10,7 @@ Introductions to all the key parts of eagle.io you’ll need to know:
    views/index
    nodes/index
    user_preferences/index
+   messages/index
    alarms_and_notifications/index
    operate_and_control/index
    historic_data/index
