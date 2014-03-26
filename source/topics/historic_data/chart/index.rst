@@ -22,7 +22,7 @@ Refer to :ref:`working with charts <working-with-charts>` for full details on ch
     | 
 
     .. image:: historic_chart.png
-        :scale: 80 %
+        :scale: 100 %
 
 
 By default only the first 15 parameters will be displayed. Use the *Parameter selection* panel accessible via the arrow on the right to refine your selection and change how the data should be displayed, including any aggregate calculations to be applied.

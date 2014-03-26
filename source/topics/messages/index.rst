@@ -23,6 +23,7 @@ The Messages icon indicates the total number of *Unread* messages. Clicking the 
     | 
 
     .. image:: messages_menu.png
+        :scale: 50 %
 
 .. note::
     Export messages are automatically removed from the system after 12 hours.
@@ -49,7 +50,6 @@ The Messages dialog displays the full message content and provides management fu
     | 
 
     .. image:: messages_all.png
-
 
 New message
 ------------

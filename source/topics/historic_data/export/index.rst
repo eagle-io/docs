@@ -23,7 +23,7 @@ Use the *Advanced* button to show/hide the advanced export options.
     | 
 
     .. image:: historic_export.png
-        :scale: 80 %
+        :scale: 100 %
 
 Period
     Select the date range for the data to be exported.

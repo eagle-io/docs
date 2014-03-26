@@ -154,11 +154,11 @@ Alarms are shown in the Workspaces Menu as numbers indicating the total count of
 .. only:: latex
 
 	.. image:: workspaces_menu_alarm_1.png
-		:scale: 35 %
+		:scale: 40 %
 
 
 	.. image:: workspaces_menu_alarm_2.png
-		:scale: 35 %
+		:scale: 40 %
 
 
 List View

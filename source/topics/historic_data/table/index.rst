@@ -22,7 +22,7 @@ Use the *Jump to date* control to quickly move to a specific date.
 	| 
 
 	.. image:: historic_table.png
-		:scale: 80 %
+		:scale: 100 %
 
 
 By default only the first 15 parameters will be displayed. Use the *Parameter selection* panel accessible via the arrow on the right to refine your selection and change how the data should be displayed, including any aggregate calculations to be applied.
