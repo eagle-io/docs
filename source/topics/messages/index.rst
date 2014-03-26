@@ -74,7 +74,7 @@ Send a new message to all users of a Workspace including the associated account 
     .. image:: messages_new.png
 
 .. note::
-    You must have *Send Messages* permission for the Workspace in order to be able to send messages to its users.
+    You must have *Send Messages* permission for the Workspace in order to send messages to its users.
 
 .. raw:: latex
 
