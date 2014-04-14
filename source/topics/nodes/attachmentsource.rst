@@ -63,41 +63,26 @@ Configure how you would like to connect to your attachments.
 	.. image:: attachmentsource_connection.png
 
 Transport type
-	Select the transport used to acquire attachments. This is currently restricted to email only.
-	Email attachments to upload@eagle.io.
+	Select the transport used to acquire attachments.
 
-Subject text
+	*Email attachments to upload@eagle.io*
+
+		Email attachments to upload@eagle.io using the auto-generated subject exactly as shown.
+
+	*Upload attachments to ftp.eagle.io*
+
+		Ftp your files to ftp.eagle.io using the auto-generated user name exactly as shown. No password required. Use Tcp port 21 for standard Ftp and Tcp port 990 for implicit SSL.
+
+Email subject
 	The subject of the email must appear exactly as shown. Click *change* to generate a new subject.
 
-Communications Alarm
-	See :ref:`Alarms and Notifications <communications-alarm>`.
-
-
-Collection
-~~~~~~~~~~
-Collection is used to specify filter and processing options for attachment collection.
-
-.. raw:: latex
-
-    \vspace{-10pt}
-    
-.. only:: not latex
-
-	.. image:: attachmentsource_collection.png
-		:scale: 50 %
-
-	| 
-
-.. only:: latex
-
-	| 
-
-	.. image:: attachmentsource_collection.png
+Ftp user
+	The user name to use to login to the Ftp server. Click *change* to generate a new Ftp user.
 
 Sender address filter
 	For added security you can filter attachments by sender email address. Restrict to a specific email address or to a specific domain. eg. user@company.com or @company.com. Leave blank for no restriction.
 
-Attachment types
+Attachment / File types
 	Restrict which file(s) get processed as Attachments by specifying a comma separated list of file extensions. eg. *jpg, png, mp4* will process standard media files and ignore all other file types.
 
 Process email body
@@ -108,6 +93,15 @@ Process email body
 	*Plain Text* will store the text content of the email in addition to any attachments.
 
 	*HTML* will store the HTML content of the email in addition to any attachments.
+
+Communications Alarm
+	See :ref:`Alarms and Notifications <communications-alarm>`.
+
+
+
+
+Collection
+~~~~~~~~~~
 
 Outdated Alarm
 	See :ref:`Alarms and Notifications <outdated-alarm>`.
