@@ -54,7 +54,7 @@ Data logger type
             Leave blank if the device has no security code.
 
 Write mode
-    Select how acquired data will be written.
+    Select how acquired data will be written:
             
     *Merge and overwrite* will insert the acquired data into the existing historic data and overwrite the existing values when timestamps match.
     

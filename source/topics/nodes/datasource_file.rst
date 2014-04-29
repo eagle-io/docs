@@ -46,7 +46,7 @@ File type
 		Data is stored as rows of values separated with a specific :term:`delimiter` character.
 
 Write mode
-    Select how acquired data will be written.
+    Select how acquired data will be written:
             
     *Merge and overwrite* will insert the acquired data into the existing historic data and overwrite the existing values when timestamps match.
     
