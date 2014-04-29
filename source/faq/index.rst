@@ -80,8 +80,13 @@ We support most types of delimited text files such as csv, loggernet and other s
 
 What file transports do you support for automatic collection?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-We currently support automatic collection from any `Dropbox <http://www.dropbox.com>`_ account.
-Support is coming for `Google Drive <http://drive.google.com>`_, FTP and Email.
+We support automatic collection via the following transports: 
+
+- Any `Dropbox <http://www.dropbox.com>`_ account
+- Email to our servers
+- FTP to our servers
+- Personal FTP servers
+- Any HTTP(s) url
 
 .. only:: not latex
 
@@ -95,11 +100,12 @@ Support is coming for `Google Drive <http://drive.google.com>`_, FTP and Email.
 	.. image:: transports-file.png
 		:scale: 25 %
 
+You can also import and upload data manually from local files.
+
 
 Can I upload other types of files?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Eagle.io supports uploading files of any type. You can manually upload files through the interface or use an :ref:`Attachment Source <node-configuration-attachmentsource>` for automated uploads. Please note that attachment storage incurs a fee on the owners account.
-All content and files uploaded must comply with our `Acceptable Use Policy <https://eagle.io/policies/acceptableuse>`_.
+Eagle.io supports uploading files of any type. You can manually upload files through the interface or use an :ref:`Attachment Source <node-configuration-attachmentsource>` for automated uploads. All content and files uploaded must comply with our `Acceptable Use Policy <https://eagle.io/policies/acceptableuse>`_.
 
 
 Cameras
@@ -109,8 +115,9 @@ Do you support cameras sending images or video files to Eagle.io?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Yes, you can create an :ref:`Attachment Source <node-configuration-attachmentsource>` which accepts files of any type. The files are stored as Attachments and you can set your Locations to display the most recent images uploaded. Images and video can be reviewed in the media gallery or downloaded for offline viewing.
 
-We currently support email as the Attachment Source transport. Support for FTP is coming soon.
-Your camera must have in-built support for emailing images/files with custom subject text.
+We support Email and FTP as the Attachment Source transport. 
+To send via Email, your camera must have in-built support for emailing images/files with custom subject text.
+For uploads via FTP you can simply enter the credentials provided on Source creation.
 
 Do you support live streaming video?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

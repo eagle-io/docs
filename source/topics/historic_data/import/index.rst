@@ -40,7 +40,7 @@ File type
 Select file
     Click or touch the *Browse* button to select a file from your computer or device. There is a 250MB file size limit per import. To import a file exceeding the size limit you should split it into smaller chunks (< 250MB) and import separately.
 
-Import method
+Write mode
     Select how the new data will be imported:
     
     *Merge and overwrite*

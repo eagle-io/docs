@@ -47,8 +47,20 @@ Data logger type
         PakBus address
             Default value is 1.
 
+        PakBus neighbor
+            PakBus neighbor address when using PakBus routing. Leave blank when connecting directly to the end device.
+
         Security code
             Leave blank if the device has no security code.
+
+Write mode
+    Select how acquired data will be written.
+            
+    *Merge and overwrite* will insert the acquired data into the existing historic data and overwrite the existing values when timestamps match.
+    
+    *Merge and preserve* will merge the acquired data into the existing historic data and will not overwrite existing values when timestamps match.
+
+    *Replace existing* will remove all existing historic data within the range of data being acquired.
 
 
 Connection

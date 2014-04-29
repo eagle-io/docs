@@ -45,6 +45,15 @@ File type
 
 		Data is stored as rows of values separated with a specific :term:`delimiter` character.
 
+Write mode
+    Select how acquired data will be written.
+            
+    *Merge and overwrite* will insert the acquired data into the existing historic data and overwrite the existing values when timestamps match.
+    
+    *Merge and preserve* will merge the acquired data into the existing historic data and will not overwrite existing values when timestamps match.
+
+    *Replace existing* will remove all existing historic data within the range of data being acquired.
+
 .. _node-configuration-datasource-file-connection:
 
 Connection
@@ -68,12 +77,6 @@ Configure how you would like to connect to your file(s).
 
 	.. image:: datasource_file_connection.png
 
-Retry attempts
-	Select how many retry attempts are made during an acquisition or scheduled collection before the communications is considered failed.
-
-Retry delay
-	Select the delay between retry attempts. The retry attempts multiplied by the retry delay should not exceed the collection interval.
-
 Transport type
 	Select the transport used to acquire files:
 
@@ -92,6 +95,58 @@ Transport type
 				:scale: 70 %
 
 		When changing the account, a popup window will be displayed which allows you to login to Dropbox and authorise access as shown above.
+
+	*Email data to upload@eagle.io*
+
+		Email attachments to upload@eagle.io using the auto-generated subject exactly as shown.
+
+		Sender address filter
+			For added security you can filter attachments by sender email address. Restrict to a specific email address or to a specific domain. eg. user@company.com or @company.com. Leave blank for no restriction.
+
+	*Upload data to ftp.eagle.io*
+
+		Ftp your files to ftp.eagle.io using the auto-generated user name exactly as shown. No password required. Use Tcp port 21 for standard Ftp and Tcp port 990 for implicit SSL.
+
+	*FTP Client*
+		
+		Connect to a specific FTP Server to collection data files. Note: FTP is supported in `passive mode <http://en.wikipedia.org/wiki/File_Transfer_Protocol>`_ only.
+
+		FTP host
+			Host name or IP address of the FTP Server.
+
+		Port
+			TCP Port to use for connection to the FTP Server. Default Port 21 for standard FTP/FTPS or 990 for FTP with Implicit SSL.
+
+		Mode
+			FTP Secure connection options. Use *FTP* for standard connection or choose an available *FTPS* mode. Consult your network administrator to verify the settings required for connection to your FTP Server.
+
+		Remote path
+			Specifiy the base remote path on the FTP Server that you have accesss to. You can retrieve files from sub-directories within this path.
+
+		User
+			Specifiy the name of the user account for the system to use when connecting to the FTP Server. Enter *anonymous* if no user account is required.
+
+		Password
+			Password for the associated user account (or leave blank for none).
+
+	*Http Client*
+
+		No configuration required.
+
+Read mode
+	Select how data should be read from the file:
+
+	*Read from start of file* will read in the entire file on each acquisition.
+	
+	*Read from last acquire* will only read new data added to the file since last acquisition.
+	
+	Optionally delete files after acquire (not supported on all transports).
+
+Retry attempts
+	Select how many retry attempts are made during an acquisition or scheduled collection before the communications is considered failed.
+
+Retry delay
+	Select the delay between retry attempts. The retry attempts multiplied by the retry delay should not exceed the collection interval.
 
 Communications Alarm
 	See :ref:`Alarms and Notifications <communications-alarm>`.
