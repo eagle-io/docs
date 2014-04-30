@@ -215,14 +215,17 @@ Add Files
 Location Coordinates
 	The Source can optionally provide Location Coordinates from a coordinate series or a pair of numeric series (lat/lng). You need to configure the Location and select this Source to be used for its coordinates. Select the file and series to use from the drop down list.
 
-Remove Files
-	Click the 'x' to remove a file from the Source. All parameters associated with the series from the file will be disabled.
+Modify file match
+	Modify the file configuration including name match/path/url/etc. and optionally upload new sample data for some transport types.
 
-Collect from date
-	|icon-calendar| Set or reset the collection pointer for the corresponding file to re-collect its data from the specified date. This operation never removes historic data - it will only update and overwrite existing values.
-
-Parser Configuration
+Configure parser
 	|icon-properties| Setup or Update the parser configuration for the selected file. See :ref:`Text Parser Configuration <text-parser>` for full details.
+
+Set acquire time
+    |icon-calendar| Set or reset the collection pointer for the corresponding table to re-collect its data from the specified date using the Write mode option selected in the General tab.
+
+Remove file
+	Select this option from the drop down table menu to remove this file from the Source. All parameters associated with the series from the file will be disabled.
 
 Parameter Assignment
 	You must assign Series to New or Existing parameters and set the Series for collection by ensuring its checkbox is enabled.

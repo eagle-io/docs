@@ -251,8 +251,8 @@ Automatic Parameter Configuration
 Location Coordinates
     The Source can optionally provide Location Coordinates from a coordinate series or a pair of numeric series (lat/lng). You need to configure the Location and select this Source to be used for its coordinates. Select the table and series to use from the drop down list.
 
-Collect from date
-    |icon-calendar| Set or reset the collection pointer for the corresponding table to re-collect its data from the specified date. This operation never removes historic data - it will only update and overwrite existing values.
+Set acquire time
+    |icon-calendar| Set or reset the collection pointer for the corresponding table to re-collect its data from the specified date using the Write mode option selected in the General tab.
 
 Parameter Selection
     You must assign Series to New or Existing parameters and set the Series for collection by ensuring its checkbox is enabled.
