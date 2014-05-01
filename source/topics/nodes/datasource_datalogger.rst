@@ -199,7 +199,7 @@ Outdated Alarm
 
 Configuration
 ~~~~~~~~~~~~~
-Configuration displays configuration set in the remote data logger including program name, firmware, etc. To send new configuration to a supported logger, use the Manage configuration dialog.
+Configuration displays configuration set in the remote data logger including program name, firmware, etc. To send new configuration to a supported logger, use the :ref:`Manage configuration <operate-manageconfiguration>` dialog.
 
 .. raw:: latex
 
@@ -254,7 +254,7 @@ Location Coordinates
 Set acquire time
     |icon-calendar| Set or reset the collection pointer for the corresponding table to re-collect its data from the specified date using the Write mode option selected in the General tab.
 
-Parameter Selection
+Parameter Assignment
     You must assign Series to New or Existing parameters and set the Series for collection by ensuring its checkbox is enabled.
     Any Parameters assigned to Series will be disabled when the Series is unchecked for collection. 
 
