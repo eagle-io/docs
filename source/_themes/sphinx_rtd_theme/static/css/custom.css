@@ -4,17 +4,19 @@
 }*/
 
 .wy-side-logo {
-	padding: 0.809em 0.809em 0 0.809em;
-	background-color: #4d86c1; /*#2980b9;*/
+	padding: 0;
 }
 
 .wy-side-nav-search {
-	padding-top: 0.5em;
-	background-color: #4d86c1;
+	padding: 15px;
+	background-color: #e3e3e3;
+	margin-bottom: 0;
+	border-right: solid 1px #c9c9c9;
 }
 
 .wy-side-nav-search input[type=text] {
 	border-radius: 6px;
+	border-color: #343131;
 }
 
 .wy-nav-top { 
