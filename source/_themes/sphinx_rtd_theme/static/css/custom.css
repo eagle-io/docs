@@ -3,6 +3,34 @@
 	margin-bottom: 0;
 }*/
 
+@import url(https://fonts.googleapis.com/css?family=Merriweather+Sans);
+@import url(https://fonts.googleapis.com/css?family=Oxygen);
+
+/* scafolding */
+body {
+  font-family: "Oxygen";
+}
+
+p {
+	text-align: justify;
+}
+
+h1, h2, h3, h4, h5, h6, legend {
+ font-family: "Merriweather Sans";
+ font-weight: 500;
+ line-height: 1.1;
+}
+
+/* general styles */
+.nav-icon {
+	font-size: 16px;
+}
+
+a.image-reference {
+	cursor: default;
+}
+
+/* menu overrides */
 .wy-side-logo {
 	padding: 0;
 }
@@ -29,6 +57,9 @@ li.toctree-l1 > a {
 	display: block !important;
 }
 
+.wy-menu-vertical {
+	border-top: 1px solid #c9c9c9;
+}
 
 .wy-menu-vertical li.current > a {
 	background-color: #e3e3e3;
@@ -81,13 +112,4 @@ li.toctree-l1 > a {
 /* dont force images to 100% on small screens */
 .rst-content img {
 	width: auto;
-}
-
-/* general styles */
-.nav-icon {
-	font-size: 16px;
-}
-
-a.image-reference {
-	cursor: default;
 }
