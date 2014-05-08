@@ -41,12 +41,12 @@ Types of Parameters
     | 
 
     |icon-point-time| Time Parameter
-        Time Parameters store historic time series data as timestamps. 
+        Time Parameters store historic time series data as timestamps. Note: Time Parameters can not be displayed on charts.
 
     | 
 
     |icon-point-time-control| Time Control Parameter
-        Time Control Parameters are similar to Time Parameters however the value can be controlled by the user. Historic data represents the user control operations.
+        Time Control Parameters are similar to Time Parameters however the value can be controlled by the user. Historic data represents the user control operations. Note: Time Parameters can not be displayed on charts.
 
     | 
 
@@ -60,7 +60,9 @@ Properties
 .. include:: properties.rstx
 
 .. note::
-    Available options will vary based on parameter type. Text Parameters do not have a general section.
+    Available options will vary based on Parameter type.
+
+.. _node-configuration-parameter-general:
 
 General
 ~~~~~~~~
@@ -94,7 +96,11 @@ Units
     The units (suffix) to be displayed with the value or state.
 
 Format
-    Specify how the value should be formatted for display. Number parameters use this setting to determine how many decimal places should be shown. Time parameters use this setting to determine the formatting of the timestamp (used instead of your user time format preference if set).
+    Specify how the value should be formatted for display. 
+
+    *Number Parameters* use this setting to set how many decimal places should be shown (leave empty to display the value with all included decimal places). *0* will always display a digit. *#* will only display a digit if it exists.
+
+    *Time Parameters* use this setting to determine the formatting of the timestamp (leave empty to display timestamps in your default user time format). Select a preset format from the drop down list or specify a custom format using :ref:`time format tokens <time-format-tokens>`.
 
 
 States

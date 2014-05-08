@@ -7,9 +7,9 @@ Historic Data Aggregates provide a method to resample raw data over a specified 
 
 Advantages of aggregation:
 	- Reduces the size of the dataset. Charts and tabular data can be loaded faster
-	- Easy generation of advanced statistical reports and charts. eg. Daily totals.
+	- Easy generation of advanced statistical reports and charts. eg. Daily totals
 
-The following aggregates are available depending on the Display Type setting of the Parameter:
+The following aggregates are available depending on the :ref:`Display type <node-configuration-parameter-general>` setting of the Parameter:
 
 +--------------+-------+-------+
 |  Aggregate   | VALUE | STATE |
@@ -39,10 +39,12 @@ The following aggregates are available depending on the Display Type setting of 
 | DELTA        | x     |       |
 +--------------+-------+-------+
 
+.. note::
+    Text and Time Parameters only support *State* aggregates.
 
 RAW
 ---
-No Aggregate calculation is applied. Raw data (as collected by the Source) is returned.
+No Aggregation is applied. Raw data (as collected by the Source) is returned.
 
 
 INTERPOLATED
@@ -106,4 +108,4 @@ The delta aggregate retrieves the difference between the earliest and latest goo
 
 
 
-.. note:: Aggregates implement the OPC-UA Historical Access v1.0 Specification
+.. note:: Aggregates use the OPC-UA Historical Access v1.0 Specification

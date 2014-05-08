@@ -95,14 +95,14 @@ Nodes are the container objects that store all data and configuration for your p
 	| 
 
 |icon-point-time| Time Parameter
-	Time Parameters store historic time series data as timestamps. 
+	Time Parameters store historic time series data as timestamps. Note: Time Parameters can not be displayed on charts.
 
 .. only:: not latex
 	
 	| 
 
 |icon-point-time-control| Time Control Parameter
-	Time Control Parameters are similar to Time Parameters however the value can be controlled by the user. Historic data represents the user control operations.
+	Time Control Parameters are similar to Time Parameters however the value can be controlled by the user. Historic data represents the user control operations. Note: Time Parameters can not be displayed on charts.
 
 .. raw:: latex
 

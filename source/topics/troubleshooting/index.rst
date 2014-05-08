@@ -15,5 +15,5 @@ Location Nodes do not expand to show their contained Nodes in the Workspaces Men
 	You must have *configure* permission on the Workspace to see Nodes contained within Locations from the Workspaces Menu. The content associated with the hidden Nodes will still be displayed in the Views.
 
 Context Menu not displayed or has limited options
-	Most context menu items require certain Workspace permissions. If there are no context menu items available to the user then no context menu will be displayed.
+	Most context menu items require certain Workspace permissions. If there are no context menu items available to the user then the context menu will not be displayed.
 
