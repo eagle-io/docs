@@ -154,8 +154,8 @@ Name
 Threshold
     Specify the value to use as the State threshold. States positioned above *NORMAL* will use this value as their lower threshold. States positioned below *NORMAL* will use this value as their upper threshold.
 
-Match
-    Specify the value to match. Applies to Discrete states only.
+Match / Contains
+    Specify the value to match (Number Parameters) or a value that is contained in the data (Text Parameters). Applies to Discrete states only.
 
 Description
     Enter a description to save with the State.
