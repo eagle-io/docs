@@ -218,7 +218,7 @@ Location Coordinates
 Modify file match
 	|icon-table| Modify the file configuration including name match/path/url/etc. and optionally upload new sample data for some transport types.
 
-Configure parser
+Configure parser or series
 	|icon-properties| Setup or Update the parser configuration for the selected file. See :ref:`Text Parser Configuration <text-parser>` for full details.
 
 Set acquire time

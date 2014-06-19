@@ -163,7 +163,6 @@ Description
 Category, Notifications, Alarm
     Configure Alarm and Notification preferences. See :ref:`Alarms and Notifications <alarms-and-notifications>` for full details.
 
-
 Add and Remove
     Use the *Add* button to add new States or click the 'x' to remove a specific State.
 

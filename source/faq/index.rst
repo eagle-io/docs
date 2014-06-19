@@ -33,8 +33,10 @@ Data Loggers
 
 What types of data loggers, PLCs and RTUs are supported?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-We support Campbell Scientific data loggers that use the PakBus protocol. 
-This includes the CR200, CR800 and CR1000 series.
+We support the following range of dataloggers:
+
+Campbell Scientific
+	Data loggers that use the PakBus protocol including the CR200, CR800 and CR1000 series.
 
 .. only:: not latex
 
@@ -46,7 +48,21 @@ This includes the CR200, CR800 and CR1000 series.
 	.. image:: datalogger_campbell_pakbus.jpg
 		:scale: 75 %
 
-Support for a wide range of data loggers and devices is coming soon. `Contact Us <https://eagle.io/contact/>`_ to find out how to get support for your device.
+WaterLog Storm3
+
+.. only:: not latex
+
+	.. image:: datalogger_waterlog_storm3.jpg
+		:scale: 50 %
+
+.. only:: latex
+
+	.. image:: datalogger_waterlog_storm3.jpg
+		:scale: 40 %
+
+| 
+
+Support for a wide range of additional data loggers and devices is coming soon. `Contact Us <https://eagle.io/contact/>`_ to find out how to get support for your device.
 
 
 What connection options are supported?
@@ -56,11 +72,12 @@ You can use a variety of transport options to connect your data logger to Eagle.
 TCP Client
 	Connect to any device with a Public IP Address or Domain name (including DDNS)
 
-TCP Callback 
-	Allow any remote device to establish an IP connection to Eagle.io using a special identification number. You can use your modem or data logger to send the Id on initial connection.
+TCP Callback or Stream
+	Allow any remote device to establish an IP connection to Eagle.io using a special identification number. You can use your modem or data logger to send the Id on initial connection, or include a unique identifier in the data stream.
 
 Scout 
 	The *Scout modem* is the easiest way to connect your data logger to Eagle.io. The Scout takes any standard internet ready SIM Card without the need for fixed IP addresses and has a range of smart features including inbuilt GPS, signal strength monitoring, event based reporting and low power mode.
+
 
 What level of functionality do you provide for connected data loggers?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
