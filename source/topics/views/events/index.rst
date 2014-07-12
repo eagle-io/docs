@@ -93,6 +93,8 @@ By default events will be displayed for the Selected Node and all Nodes it conta
 
 |icon-location| Location
 
+|icon-dash| Dashboard
+
 |icon-datasource| Source
 
 |icon-point-number-range| Parameter

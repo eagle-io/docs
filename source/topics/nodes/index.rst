@@ -29,6 +29,13 @@ Nodes are the container objects that store all data and configuration for your p
 	
 	| 
 
+|icon-dash| Dashboard
+	Dashboards allow users to create customised views of their data in visually appealing layouts using animated gauges, charts, lists, maps and other graphical controls.
+
+.. only:: not latex
+	
+	| 
+
 |icon-attachment| Attachment
 	Attachments include images, documents and other files stored in Eagle.io. New attachments can be uploaded manually by a user or acquired via an Attachment Source.
 	Attachments can be added inside Workspaces, Locations, Groups and Attachment Sources.
@@ -113,6 +120,7 @@ Nodes are the container objects that store all data and configuration for your p
 
    workspace
    location
+   dashboard
    attachment
    attachmentsource
    datasource_file

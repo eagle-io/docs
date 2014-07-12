@@ -109,7 +109,7 @@ Most Nodes are hierarchical and may also contain Nodes themselves. The *Workspac
 		:scale: 40 %
 
 
-Change the Selected Node by clicking or touching on another Node. You will notice that container Nodes (with the exception of the Base Node) will automatically expand and collapse to show and hide their contained Nodes on selection.
+Change the Selected Node by clicking or touching on another Node. You will notice that container Nodes will automatically expand and collapse to show and hide their contained Nodes on selection.
 
 Selecting a Node focuses your View. Only the selected Node and the Nodes it contains will be available in the Content Area.
 
@@ -129,6 +129,9 @@ You can easily show all content by selecting the Base Node.
 |icon-location| Location
 	Locations are special containers used to associate data with a geographical location.
 	Locations can be created inside Workspaces and Groups.
+
+|icon-dash| Dashboard
+	Dashboards allow users to create customised views of their data in visually appealing layouts using animated gauges, charts, lists, maps and other graphical controls.
 
 |icon-datasource| Data Source
 	Data Sources automatically acquire or receive timeseries data using a variety of different transport options. Connect to a :term:`data logger` or collect data from files. Data Sources can be created inside Locations only.
@@ -161,8 +164,7 @@ Use the View Selector to change the View. You will notice the Content Area and T
 	Use the Events View to quickly audit the system, a user or history of alarms.
 
 |icon-dash| Dash 
-	The Dashboard allows you to display your data in graphical format using gauges, buttons and other custom widgets.
-	Note: This feature is currently not available.
+	The Dash is for viewing the customised graphical dashboards and also provides an overview of all dashboard nodes available based on the Selected Node in the Workspaces menu. 
 
 
 User Menu
