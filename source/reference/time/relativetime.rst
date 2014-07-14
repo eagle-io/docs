@@ -3,7 +3,7 @@
 Relative Time
 =============
 
-OPC Relative Time is used to represent date and time in an easy to ready format that allows users to navigate or select a period of time without explicitly specifying a date. An example use is NOW-5M which simply translates to the current time minus 5 minutes. All times are relative to the user profile timezone. A duration is specified with both a base time and interval.
+OPC Relative Time is used to represent date and time in an easy to read format that allows users to navigate or select a period of time without explicitly specifying a date. An example use is NOW-5M which simply translates to the current time minus 5 minutes. All times are relative to the user profile timezone. A duration is specified with both a base time and interval.
 
 OPC Relative Time syntax::
 
