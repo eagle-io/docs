@@ -90,9 +90,11 @@ Copy *(Ctrl+C)* and Paste *(Ctrl+V)* is the quickest and easiest way to duplicat
 
 Move
 ----
-Move a Node (including all Nodes it contains) within a Workspace or between Workspaces.
+|icon-move| Move a Node (including all Nodes it contains) within a Workspace or between Workspaces.
 
-*Click and Drag* a Node in the Workspaces Menu. Drag the Selected Node to the destination Node and release the mouse button when you see the destination node highlighted. Nodes will automatically expand when hovered.
+Select *Move* from the Context Menu to open the *Move dialog* and select a destination node for the move operation.
+
+Alternatively *Click and Drag* a Node in the Workspaces Menu to the destination Node and release the mouse button when you see the destination node highlighted. Nodes will automatically expand when hovered.
 
 .. image:: workspaces_menu_move.png
 	:scale: 50 %
@@ -101,8 +103,6 @@ Move a Node (including all Nodes it contains) within a Workspace or between Work
 
 	| 
 
-.. note:: 
-	Moving Nodes in the Workspaces Menu is currently not supported on Touch devices.
 
 
 Note about Disabled Nodes
