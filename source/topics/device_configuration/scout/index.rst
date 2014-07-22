@@ -66,9 +66,9 @@ Network configuration
 .. _international format: http://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers
 
 
-Communications
-~~~~~~~~~~~~~~
-The communications section allows you to change the UART Port settings to correctly pass data between Eagle.io and your data logger.
+Communication
+~~~~~~~~~~~~~
+The communication section allows you to change the COM1 port settings to correctly pass data between Eagle.io and your data logger.
 
 .. raw:: latex
 
@@ -76,7 +76,7 @@ The communications section allows you to change the UART Port settings to correc
 
 .. only:: not latex
 
-	.. image:: device_scout_communications.png
+	.. image:: device_scout_communication.png
 		:scale: 50 %
 
 	| 
@@ -85,16 +85,16 @@ The communications section allows you to change the UART Port settings to correc
 
 	| 
 
-	.. image:: device_scout_communications.png
+	.. image:: device_scout_communication.png
 
 
 .. note::
 	Some data loggers may require a specific Baud rate, but most other settings should use the defaults.
 
 
-Operations
-~~~~~~~~~~
-The operations section can be used to remotely reset or reboot the *Scout modem*.
+Configuration
+~~~~~~~~~~~~~
+The configuration section allows you to view software versions and configure updates.
 
 .. raw:: latex
 
@@ -102,7 +102,38 @@ The operations section can be used to remotely reset or reboot the *Scout modem*
 
 .. only:: not latex
 
-	.. image:: device_scout_operations.png
+	.. image:: device_scout_configuration.png
+		:scale: 50 %
+
+	| 
+
+.. only:: latex
+
+	| 
+
+	.. image:: device_scout_configuration.png
+
+Software updates
+	Select an option for software updates:
+
+	*Release* will use the latest stable software (recommended).
+
+	*Development* will use an unstable version of the software still being tested.
+
+	*Do not update automatically* will disable the updates.
+
+
+Operation
+~~~~~~~~~
+The operation section can be used to remotely reset or reboot the *Scout modem* or retrieve its internal logs.
+
+.. raw:: latex
+
+    \vspace{-10pt}
+
+.. only:: not latex
+
+	.. image:: device_scout_operation.png
 		:scale: 50 %
 
 	| 
@@ -111,7 +142,7 @@ The operations section can be used to remotely reset or reboot the *Scout modem*
 
 	| 
 
-	.. image:: device_scout_operations.png
+	.. image:: device_scout_operation.png
 
 .. raw:: latex
 
