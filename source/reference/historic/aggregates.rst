@@ -53,8 +53,8 @@ The Interpolated algorithm calculates a value that is:
 
 	- Equal to or higher than the last raw historic value before the start of the sample. For the purposes of this section, we will refer to the last raw historic value before the start of the sample as the ‘last pre-sample’ historic value. 
 	- Equal to or lower than the next raw historic value after the ‘last pre-sample’ historic value. The ‘next’ value may be in the sample or could be after the sample. If there is no ‘next’ raw historic value, the interpolated value will be exactly the same as the ‘last pre-sample’ value.
-	- If there is no beginning bound, the aggregate will be *No Data*.
-	- If any non-good values are skipped in order to find the closest good value, the aggregate will be *Data Subnormal*.
+	- If there is no beginning bound, the aggregate quality will be *No Data*.
+	- If any non-good values are skipped in order to find the closest good value, the aggregate quality will be *Data Subnormal*.
 
 
 AVERAGE
@@ -104,7 +104,7 @@ This aggregate retrieves a count of all the raw values within an interval. If on
 
 DELTA
 -----
-The delta aggregate retrieves the difference between the earliest and latest good raw values in an interval. If the last value is less than the first value, the result will be negative. If the last value is the same as the first value, or if the last value is also the first value at the same timestamp, the result will be zero. If the last value is greater than the first value, the result will be positive. If any non-good values exist earlier or later than the earliest and latest good values, respectively, the aggregate is *Data Subnormal*.
+The delta aggregate retrieves the difference between the earliest and latest good raw values in an interval. If the last value is less than the first value, the result will be negative. If the last value is the same as the first value, or if the last value is also the first value at the same timestamp, the result will be zero. If the last value is greater than the first value, the result will be positive. If any non-good values exist earlier or later than the earliest and latest good values, respectively, the aggregate quality is *Data Subnormal*.
 
 
 
