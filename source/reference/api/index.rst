@@ -2,7 +2,7 @@ HTTP API
 ========
 
 .. note:: 
-   We are currently developing a full-featured HTTP API which will make it easy for developers to interact with Eagle.io from a 3rd party application or service. We intend to release the initial version Q3 2014.
+   We are currently developing a full-featured HTTP API which will make it easy for developers to interact with Eagle.io from a 3rd party application or service.
 
 Feature Highlights
 ------------------
