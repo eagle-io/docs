@@ -122,6 +122,8 @@ Software updates
 
 	*Do not update automatically* will disable the updates.
 
+Device log level
+	Select the detail level of the device logs. Debug is the lowest level and will record all events. Select a higher level to filter out less important events. Logs are only retrieved on request via the *Retrieve logs* button in the Operation section. 
 
 Operation
 ~~~~~~~~~
