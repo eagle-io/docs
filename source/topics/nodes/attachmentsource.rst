@@ -65,16 +65,16 @@ Configure how you would like to connect to your attachments.
 Transport type
 	Select the transport used to acquire attachments.
 
-	*Email attachments to upload@eagle.io*
+	*Email attachments*
 
-		Email attachments to upload@eagle.io using the auto-generated subject exactly as shown.
+		Email attachments using the auto-generated address exactly as shown.
 
 	*Upload attachments to ftp.eagle.io*
 
 		Ftp your files to ftp.eagle.io using the auto-generated user name exactly as shown. No password is usually required (however certain ftp clients may require a password to be set in there connection settings and the password 'data' can be used). Use Tcp port 21 for standard Ftp and Tcp port 990 for implicit SSL.
 
-Email subject
-	The subject of the email must appear exactly as shown. Click *change* to generate a new subject.
+Email address
+	Email your attachments to this address. Click *change* to generate a new email address.
 
 Ftp user
 	The user name to use to login to the Ftp server. Click *change* to generate a new Ftp user.

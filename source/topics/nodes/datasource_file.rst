@@ -96,12 +96,12 @@ Transport type
 
 		When changing the account, a popup window will be displayed which allows you to login to Dropbox and authorise access as shown above.
 
-	*Email data to upload@eagle.io*
+	*Email*
 
-		Email attachments to upload@eagle.io using the auto-generated subject exactly as shown.
+		Email data using the auto-generated email address exactly as shown.
 
 		Sender address filter
-			For added security you can filter attachments by sender email address. Restrict to a specific email address or to a specific domain. eg. user@company.com or @company.com. Leave blank for no restriction.
+			For added security you can filter by sender email address. Restrict to a specific email address or to a specific domain. eg. user@company.com or @company.com. Leave blank for no restriction.
 
 	*Upload data to ftp.eagle.io*
 
