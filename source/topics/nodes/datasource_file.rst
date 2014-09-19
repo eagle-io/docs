@@ -216,10 +216,11 @@ Location Coordinates
 	The Source can optionally provide Location Coordinates from a coordinate series or a pair of numeric series (lat/lng). You need to configure the Location and select this Source to be used for its coordinates. Select the file and series to use from the drop down list.
 
 Modify file match
-	|icon-table| Modify the file configuration including name match/path/url/etc. and optionally upload new sample data for some transport types.
+	|icon-table| Modify the file configuration and matching criteria and select a sample file to use for configuring series.
+	Some transport types such as Email or FTP Server require you to upload a local sample file or alternatively *Skip or Reset sample file and retrieve on next acquistion*.
 
-Configure parser or series
-	|icon-properties| Setup or Update the parser configuration for the selected file. See :ref:`Text Parser Configuration <text-parser>` for full details.
+Configure series
+	|icon-properties| Setup or Update the parser configuration for the selected file. See :ref:`Text Parser Configuration <text-parser>` for full details. If a sample data file has not been uploaded or acquired the Configure series menu item will be disabled.
 
 Set acquire time
     |icon-calendar| Set or reset the collection pointer for the corresponding table to re-collect its data from the specified date using the Write mode option selected in the General tab.
