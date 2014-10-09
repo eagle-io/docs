@@ -6,4 +6,3 @@ Reference
 
    time/index
    historic/index
-   api/index

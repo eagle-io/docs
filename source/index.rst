@@ -10,6 +10,7 @@ eagle.io documentation
 
    intro/index
    topics/index
+   api/index
    reference/index
    faq/index
    glossary/index

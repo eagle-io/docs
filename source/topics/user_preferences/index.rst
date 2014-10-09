@@ -78,6 +78,40 @@ Use the SMS/Email checkboxes to set your preferences on what types of notificati
 .. note:: 
 	You must also be subscribed to the individual Nodes you would like to receive the notifications for. See :ref:`Subscribe to Nodes <subscribe-nodes>` for full details.
 
+
+.. _user-api-keys:
+
+API Keys
+---------
+API keys are used to authenticate eagle.io :ref:`HTTP API <api>` requests.
+The API keys section allows you to create, delete or modify the permissions for API keys associated with your user account.
+You can have multiple API keys active at once. 
+
+.. raw:: latex
+
+    \vspace{-10pt}
+
+.. only:: not latex
+
+	.. image:: user_profile_apikeys.png
+		:scale: 50 %
+
+	| 
+
+.. only:: latex
+
+	| 
+
+	.. image:: user_profile_apikeys.png
+
+
+API resource requests are always limited to the users Workspace and Account permissions. 
+Individual API key's must be assigned permissions which can be used to further restrict the actions an API request can perform.
+
+.. note::
+	Your API keys carry many privileges, so be sure to keep them secret!
+
+
 .. raw:: latex
 
     \newpage
