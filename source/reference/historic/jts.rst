@@ -82,8 +82,8 @@ The header is optional and is used to describe the data contained within the doc
 =================   ============================    ============================================================================
 Header Attribute    Example                         Description
 =================   ============================    ============================================================================
-**startTime**       2014-08-16T02:00:00.000Z        :ref:`ISO8601<time-format-iso8601>` timestamp of earliest data in document
-**endTime**         2014-08-16T02:20:43.000Z        :ref:`ISO8601<time-format-iso8601>` timestamp of latest data in document
+**startTime**       2014-08-16T02:00:00.000Z        :ref:`ISO8601<time-format-iso8601>` timestamp of earliest record in document
+**endTime**         2014-08-16T02:20:43.000Z        :ref:`ISO8601<time-format-iso8601>` timestamp of latest record in document
 **recordCount**     5                               Total record count (number of array items in data)
 **columns**                                         Object describing columns in document
 =================   ============================    ============================================================================
