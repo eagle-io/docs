@@ -3,7 +3,10 @@
 API Resources
 ==============
 
-tables for each resource showing endpoints...
+API Resources are the URL endpoints for interacting with the system.
+Interactions may include creating, reading, updating or deleting an asset, extracting or inserting historic data, or performing operations such as triggering data acquisition, control operations or configuration management. 
+
+Refer to the :ref:`Quick Start <api-overview>` guide for instructions on using the API.
 
 
 .. toctree::
