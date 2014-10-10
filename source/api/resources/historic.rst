@@ -26,44 +26,48 @@ Get historic data from one or more nodes using **_id's**.
 Arguments
 ~~~~~~~~~
 
-=================   ========================    =================================================================
-Argument            Example                     Description
-=================   ========================    =================================================================
-**format**          JSON                        *Optional - Default is JSON*. 
-                                                Data format to return: *[JSON, CSV]*
+.. table::
+    :class: table-fluid
 
-**startTime**       2014-08-16T02:00:00Z        *Required*. [#f1]_
-                                                :ref:`ISO8601<time-format-iso8601>` timestamp
+    =================   ========================    =================================================================
+    Argument            Example                     Description
+    =================   ========================    =================================================================
+    **format**          JSON                        *Optional - Default is JSON*. 
+                                                    Data format to return: *[JSON, CSV]*
 
-**endTime**         2014-08-16T02:20:43Z        *Required*. [#f1]_
-                                                :ref:`ISO8601<time-format-iso8601>` timestamp
+    **startTime**       2014-08-16T02:00:00Z        *Required*. [#f1]_
+                                                    :ref:`ISO8601<time-format-iso8601>` timestamp
 
-**limit**           100                         *Optional*. 
-                                                Maximum number of historic records to be returned
+    **endTime**         2014-08-16T02:20:43Z        *Required*. [#f1]_
+                                                    :ref:`ISO8601<time-format-iso8601>` timestamp
 
-**quality**         FALSE                       *Optional - Default is FALSE*. 
-                                                Flag to include :ref:`quality <historic-quality>`
+    **limit**           100                         *Optional*. 
+                                                    Maximum number of historic records to be returned
 
-**header**          TRUE                        *Optional - Default is TRUE*. 
-                                                Flag to include header  
+    **quality**         FALSE                       *Optional - Default is FALSE*. 
+                                                    Flag to include :ref:`quality <historic-quality>`
 
-**nodes**           541a5a129bc9b4035f906d70    *Required*. 
-                                                Comma delimited list of node _id's to include in extraction.
-                                                Individual node options are specified in parentheses.
+    **header**          TRUE                        *Optional - Default is TRUE*. 
+                                                    Flag to include header  
 
-| **renderType**      VALUE                     *Optional - Default is node displayType*. 
-                                                Rendering of value: *[VALUE, STATE]*
+    **nodes**           541a5a129bc9b4035f906d70    *Required*. 
+                                                    Comma delimited list of node _id's to include in extraction.
+                                                    Individual node options are specified in parentheses.
 
-| **aggregate**       AVERAGE                   *Optional - Default is NONE (raw)*. 
-                                                Historic :ref:`aggregate <historic-aggregates>` to apply to 
-                                                extracted data.
+    | **renderType**      VALUE                     *Optional - Default is node displayType*. 
+                                                    Rendering of value: *[VALUE, STATE]*
 
-| **baseTime**        D                         *Optional*. 
-                                                :ref:`OPC Base Time <relative-time>` required for aggregation.
+    | **aggregate**       AVERAGE                   *Optional - Default is NONE (raw)*. 
+                                                    Historic :ref:`aggregate <historic-aggregates>` to apply to 
+                                                    extracted data.
 
-| **interval**        3H                        *Optional*. 
-                                                :ref:`OPC Interval <relative-time>` required for aggregation.
-=================   ========================    =================================================================
+    | **baseTime**        D                         *Optional*. 
+                                                    :ref:`OPC Base Time <relative-time>` required for aggregation.
+
+    | **interval**        3H                        *Optional*. 
+                                                    :ref:`OPC Interval <relative-time>` required for aggregation.
+    =================   ========================    =================================================================
+
 .. [#f1] startTime or endTime can be omitted when ``limit`` is specified.
 
 
@@ -142,25 +146,29 @@ Post historic data to one or more nodes by **_id's**.
 Arguments
 ~~~~~~~~~
 
-=================   ========================    ======================================================================
-Argument            Example                     Description
-=================   ========================    ======================================================================
-**format**          JSON                        *Optional - Default is JSON*. 
-                                                Data format being inserted: *[JSON]*. CSV support coming soon...
+.. table::
+    :class: table-fluid
 
-**writeMode**       MERGE_OVERWRITE_EXISTING    *Optional - Default is MERGE_OVERWRITE_EXISTING*. 
-                                                See all available :ref:`write mode <historic-data-import-writemode>` 
-                                                options.
+    =================   ========================    ======================================================================
+    Argument            Example                     Description
+    =================   ========================    ======================================================================
+    **format**          JSON                        *Optional - Default is JSON*. 
+                                                    Data format being inserted: *[JSON]*. CSV support coming soon...
 
-**nodes**           541a5a129bc9b4035f906d70    *Required*. [#f2]_
-                                                Comma delimited list of node _id's to include in extraction. 
-                                                Individual node options are specified in parentheses.
+    **writeMode**       MERGE_OVERWRITE_EXISTING    *Optional - Default is MERGE_OVERWRITE_EXISTING*. 
+                                                    See all available :ref:`write mode <historic-data-import-writemode>` 
+                                                    options.
 
-| **columnIndex**   0                           *Required*. [#f2]_
-                                                Index of column in data to be associated with this node. 
-                                                Headers will be used where available, however column index can be 
-                                                overwritten if required.
-=================   ========================    ======================================================================
+    **nodes**           541a5a129bc9b4035f906d70    *Required*. [#f2]_
+                                                    Comma delimited list of node _id's to include in extraction. 
+                                                    Individual node options are specified in parentheses.
+
+    | **columnIndex**   0                           *Required*. [#f2]_
+                                                    Index of column in data to be associated with this node. 
+                                                    Headers will be used where available, however column index can be 
+                                                    overwritten if required.
+    =================   ========================    ======================================================================
+    
 .. [#f2] nodes argument can be omitted if data contains headers
 
 Include individual node arguments in parentheses with key/value separated by colons and multiple arguments semicolon delimited::

@@ -15,21 +15,24 @@ User Attributes
 -----------------
 Consumers of Users should tolerate the addition of new attributes and variance in ordering of attributes with ease. Not all attributes appear in all contexts. It is generally safe to consider a nulled attribute, an empty set, and the absence of an attribute as the same thing.
 
-=================   =========   ====================================================================
-Attributes          Type        Description
-=================   =========   ====================================================================
-**_class**          String      Identifies resource type: *io.eagle.models.owner.User*
-**_id**             String      Unique identifier for this owner
-**contact**         Object      
-| **email**         String      Email address of user
-| **phone**         String      Fully qualified international phone number
-**createdTime**     String      :ref:`ISO8601<time-format-iso8601>` timestamp the user was created.
-**name**            Object      
-| **first**         String      First name of user
-| **last**          String      Last name of user
-**timeFormat**      String      :ref:`Time format <time-format-tokens>` for timestamp display
-**timezone**        String      :ref:`Timezone <timezone>` for timestamp display
-=================   =========   ====================================================================
+.. table::
+    :class: table-fluid
+
+    =================   =========   ====================================================================
+    Attributes          Type        Description
+    =================   =========   ====================================================================
+    **_class**          String      Identifies resource type: *io.eagle.models.owner.User*
+    **_id**             String      Unique identifier for this owner
+    **contact**         Object      
+    | **email**         String      Email address of user
+    | **phone**         String      Fully qualified international phone number
+    **createdTime**     String      :ref:`ISO8601<time-format-iso8601>` timestamp the user was created.
+    **name**            Object      
+    | **first**         String      First name of user
+    | **last**          String      Last name of user
+    **timeFormat**      String      :ref:`Time format <time-format-tokens>` for timestamp display
+    **timezone**        String      :ref:`Timezone <timezone>` for timestamp display
+    =================   =========   ====================================================================
 
 | 
 
@@ -40,12 +43,15 @@ Get the authenticated users details.
 Arguments
 ~~~~~~~~~
 
-=================   =================   ================================================================
-Argument            Example             Description
-=================   =================   ================================================================
-**attr**            _id,name            *Optional.* 
-                                        Comma delimited list of attributes to include in response
-=================   =================   ================================================================
+.. table::
+    :class: table-fluid
+    
+    =================   =================   ================================================================
+    Argument            Example             Description
+    =================   =================   ================================================================
+    **attr**            _id,name            *Optional.* 
+                                            Comma delimited list of attributes to include in response
+    =================   =================   ================================================================
 
 Request
 ~~~~~~~~

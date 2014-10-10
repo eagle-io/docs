@@ -15,21 +15,24 @@ Device Attributes
 -----------------
 Consumers of Devices should tolerate the addition of new attributes and variance in ordering of attributes with ease. Not all attributes appear in all contexts. It is generally safe to consider a nulled attribute, an empty set, and the absence of an attribute as the same thing.
 
-=================   =========   ========================================================================================
-Attribute           Type        Description
-=================   =========   ========================================================================================
-**_class**          String      Identifies resource type: *io.eagle.models.device.*\*
-**_id**             String      Unique identifier for this device
-**config**          Object      Object containing device specific configuration
-**createdTime**     String      :ref:`ISO8601<time-format-iso8601>` timestamp the device was created
-**datasourceId**    String      Associated Data Source _id
-**deviceKey**       String      IMEI or Unique identifier for this device
-**isConnected**     Boolean     Flag to indicate if device is currently connected
-**lastConnected**   String      :ref:`ISO8601<time-format-iso8601>` timestamp the device last established a connection
-**phoneNumber**     String      Phone number associated with the device
-**software**        Object      Object containing info about the current device software
-**workspaceId**     String      Associated Workspace _id
-=================   =========   ========================================================================================
+.. table::
+    :class: table-fluid
+
+    =================   =========   ========================================================================================
+    Attribute           Type        Description
+    =================   =========   ========================================================================================
+    **_class**          String      Identifies resource type: *io.eagle.models.device.*\*
+    **_id**             String      Unique identifier for this device
+    **config**          Object      Object containing device specific configuration
+    **createdTime**     String      :ref:`ISO8601<time-format-iso8601>` timestamp the device was created
+    **datasourceId**    String      Associated Data Source _id
+    **deviceKey**       String      IMEI or Unique identifier for this device
+    **isConnected**     Boolean     Flag to indicate if device is currently connected
+    **lastConnected**   String      :ref:`ISO8601<time-format-iso8601>` timestamp the device last established a connection
+    **phoneNumber**     String      Phone number associated with the device
+    **software**        Object      Object containing info about the current device software
+    **workspaceId**     String      Associated Workspace _id
+    =================   =========   ========================================================================================
 
 | 
 
@@ -41,12 +44,15 @@ List all devices visible to the authenticated user.
 Arguments
 ~~~~~~~~~
 
-=================   =================   ================================================================
-Argument            Example             Description
-=================   =================   ================================================================
-**attr**            _id,slug            *Optional.* 
-                                        Comma delimited list of attributes to include in response
-=================   =================   ================================================================
+.. table::
+    :class: table-fluid
+
+    =================   =================   ================================================================
+    Argument            Example             Description
+    =================   =================   ================================================================
+    **attr**            _id,slug            *Optional.* 
+                                            Comma delimited list of attributes to include in response
+    =================   =================   ================================================================
 
 Request
 ~~~~~~~~
@@ -158,12 +164,15 @@ Get a device by its **_id**.
 Arguments
 ~~~~~~~~~
 
-=================   =================   ================================================================
-Argument            Example             Description
-=================   =================   ================================================================
-**attr**            _id,_class          *Optional.* 
-                                        Comma delimited list of attributes to include in response
-=================   =================   ================================================================
+.. table::
+    :class: table-fluid
+    
+    =================   =================   ================================================================
+    Argument            Example             Description
+    =================   =================   ================================================================
+    **attr**            _id,_class          *Optional.* 
+                                            Comma delimited list of attributes to include in response
+    =================   =================   ================================================================
 
 Request
 ~~~~~~~

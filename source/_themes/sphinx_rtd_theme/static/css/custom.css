@@ -117,3 +117,19 @@ li.toctree-l1 > a {
 .rst-content img {
 	width: auto;
 }
+
+
+/* non-responsive tables */
+table.table-fluid {
+	width: 100%;
+}
+table.table-fluid td, table.table-fluid th {
+	white-space: normal;
+	vertical-align: top !important;
+}
+
+table.table-col1-nowrap td:first-child, table.table-col1-nowrap th:first-child {
+	white-space: nowrap !important;
+}
+
+

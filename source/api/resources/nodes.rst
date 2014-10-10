@@ -16,78 +16,90 @@ Node Attributes
 -----------------
 Consumers of Nodes should tolerate the addition of new attributes and variance in ordering of attributes with ease. Not all attributes appear in all contexts. It is generally safe to consider a nulled attribute, an empty set, and the absence of an attribute as the same thing.
 
-================================    =========   ===========================================================================
-General attributes                  Type        Description
-================================    =========   ===========================================================================
-**_class**                          String      Identifies resource type: *io.eagle.models.node.*\*
-**_id**                             String      Unique identifier for this node
-**alarms**                          Object      Alarm configuration and status
-**createdTime**                     String      :ref:`ISO8601<time-format-iso8601>` timestamp the node was created
-**isActive**                        Boolean     Flag to indicate if node is active
-**metadata**                        Array       Array of metadata fields and values
-**name**                            String      Name of node
-**ownerId**                         String      Unique owner _id
-**parentId**                        String      Parent node _id (not included in Workspace)
-**workspaceId**                     String      Associated Workspace _id (not included in Workspace)
-================================    =========   ===========================================================================
+.. table::
+    :class: table-fluid
 
-================================    =========   ===========================================================================
-Attachment attributes               Type        Description
-================================    =========   ===========================================================================
-**fileSize**                        Int64       Size of attachment in bytes
-**mimeType**                        String      Mime-type of the attachment
-================================    =========   ===========================================================================
+    ================================    =========   ===========================================================================
+    General attributes                  Type        Description
+    ================================    =========   ===========================================================================
+    **_class**                          String      Identifies resource type: *io.eagle.models.node.*\*
+    **_id**                             String      Unique identifier for this node
+    **alarms**                          Object      Alarm configuration and status
+    **createdTime**                     String      :ref:`ISO8601<time-format-iso8601>` timestamp the node was created
+    **isActive**                        Boolean     Flag to indicate if node is active
+    **metadata**                        Array       Array of metadata fields and values
+    **name**                            String      Name of node
+    **ownerId**                         String      Unique owner _id
+    **parentId**                        String      Parent node _id (not included in Workspace)
+    **workspaceId**                     String      Associated Workspace _id (not included in Workspace)
+    ================================    =========   ===========================================================================
 
-================================    =========   ===========================================================================
-Parameter & Location attributes     Type        Description
-================================    =========   ===========================================================================
-**currentQuality**                  Int32       Quality code associated with current value
-**currentStateId**                  String      State _id associated with current value
-**currentTime**                     String      :ref:`ISO8601<time-format-iso8601>` timestamp of the current value
-**currentValue**                    Mixed       Current value. Type inherited from _class
-**displayType**                     String      Default display type of parameter: 
-                                                *[VALUE, STATE]*
-**format**                          String      Formatting to apply to displayed value
-**oldestQuality**                   Int32       Quality code associated with oldest value
-**oldestStateId**                   String      State _id associated with oldest value
-**oldestTime**                      String      :ref:`ISO8601<time-format-iso8601>` timestamp of the oldest value
-**oldestValue**                     Mixed       Oldest value. Type inherited from _class
-**previousQuality**                 Int32       Quality code associated with oldest value
-**previousStateId**                 String      State _id associated with previous value
-**previousTime**                    String      :ref:`ISO8601<time-format-iso8601>` timestamp of the previous value
-**previousValue**                   Mixed       Previous value. Type inherited from _class
-**states**                          Array       Array of state configuration objects
-**statesType**                      String      States evaluation mode:
-                                                *[RANGE, DISCRETE]*
-**units**                           String      Units to display with value
-================================    =========   ===========================================================================
+.. table::
+    :class: table-fluid
 
-================================    =========   ===========================================================================
-Source attributes                   Type        Description
-================================    =========   ===========================================================================
-**currentAttachmentId**             String      Current attachment _id associated with Attachment Source
-**currentStatus**                   String      Current status: 
-                                                *[DISABLED, FAILED, IDLE, SCHEDULED, QUEUED, CONNECTING, 
-                                                DOWNLOADING, PROCESSING, RETRYING, CONFIGURING, CONTROLLING, REMOTE]*
-**clockSync**                       Boolean     Flag to indicate if data logger clock is being syncronized with server
-**firmwareVersion**                 String      Firmware version in-use by data logger
-**isEnabled**                       Boolean     Flag to enable or disable the Source
-**lastAcquireRecordCount**          Int32       Number of records acquired on last acquistion
-**lastCommsAttempt**                String      :ref:`ISO8601<time-format-iso8601>` timestamp of the 
-                                                last communications attempt
-**lastCommsSuccess**                String      :ref:`ISO8601<time-format-iso8601>` timestamp of the 
-                                                last successful communication with Source
-**model**                           String      Model of data logger in-use
-**pakBusAddress**                   Int32       PakBus address of Campbell data logger
-**pakBusGatewayAddress**            Int32       PakBus gateway address of Campbell data logger
-**progName**                        String      Name of program currently loaded in Campbell data logger
-**scheduleType**                    String      Type of Schedule for automatic collection:
-                                                *[SERVER, REMOTE, NONE]*
-**timezone**                        String      :ref:`Timezone <timezone>` of Source data.
-**timezoneAdjustForDst**            Boolean     Flag to indicate if acquired data is adjusted for DST in selected timezone
-**totalCommsAttempt**               Int32       Total count of communications attempts
-**totalCommsSuccess**               Int32       Total count of successful communications
-================================    =========   ===========================================================================
+    ================================    =========   ===========================================================================
+    Attachment attributes               Type        Description
+    ================================    =========   ===========================================================================
+    **fileSize**                        Int64       Size of attachment in bytes
+    **mimeType**                        String      Mime-type of the attachment
+    ================================    =========   ===========================================================================
+
+.. table::
+    :class: table-fluid
+
+    ================================    =========   ===========================================================================
+    Parameter & Location attributes     Type        Description
+    ================================    =========   ===========================================================================
+    **currentQuality**                  Int32       Quality code associated with current value
+    **currentStateId**                  String      State _id associated with current value
+    **currentTime**                     String      :ref:`ISO8601<time-format-iso8601>` timestamp of the current value
+    **currentValue**                    Mixed       Current value. Type inherited from _class
+    **displayType**                     String      Default display type of parameter: 
+                                                    *[VALUE, STATE]*
+    **format**                          String      Formatting to apply to displayed value
+    **oldestQuality**                   Int32       Quality code associated with oldest value
+    **oldestStateId**                   String      State _id associated with oldest value
+    **oldestTime**                      String      :ref:`ISO8601<time-format-iso8601>` timestamp of the oldest value
+    **oldestValue**                     Mixed       Oldest value. Type inherited from _class
+    **previousQuality**                 Int32       Quality code associated with oldest value
+    **previousStateId**                 String      State _id associated with previous value
+    **previousTime**                    String      :ref:`ISO8601<time-format-iso8601>` timestamp of the previous value
+    **previousValue**                   Mixed       Previous value. Type inherited from _class
+    **states**                          Array       Array of state configuration objects
+    **statesType**                      String      States evaluation mode:
+                                                    *[RANGE, DISCRETE]*
+    **units**                           String      Units to display with value
+    ================================    =========   ===========================================================================
+
+.. table::
+    :class: table-fluid
+
+    ================================    =========   ===========================================================================
+    Source attributes                   Type        Description
+    ================================    =========   ===========================================================================
+    **currentAttachmentId**             String      Current attachment _id associated with Attachment Source
+    **currentStatus**                   String      Current status: 
+                                                    *[DISABLED, FAILED, IDLE, SCHEDULED, QUEUED, CONNECTING, 
+                                                    DOWNLOADING, PROCESSING, RETRYING, CONFIGURING, CONTROLLING, REMOTE]*
+    **clockSync**                       Boolean     Flag to indicate if data logger clock is being syncronized with server
+    **firmwareVersion**                 String      Firmware version in-use by data logger
+    **isEnabled**                       Boolean     Flag to enable or disable the Source
+    **lastAcquireRecordCount**          Int32       Number of records acquired on last acquistion
+    **lastCommsAttempt**                String      :ref:`ISO8601<time-format-iso8601>` timestamp of the 
+                                                    last communications attempt
+    **lastCommsSuccess**                String      :ref:`ISO8601<time-format-iso8601>` timestamp of the 
+                                                    last successful communication with Source
+    **model**                           String      Model of data logger in-use
+    **pakBusAddress**                   Int32       PakBus address of Campbell data logger
+    **pakBusGatewayAddress**            Int32       PakBus gateway address of Campbell data logger
+    **progName**                        String      Name of program currently loaded in Campbell data logger
+    **scheduleType**                    String      Type of Schedule for automatic collection:
+                                                    *[SERVER, REMOTE, NONE]*
+    **timezone**                        String      :ref:`Timezone <timezone>` of Source data.
+    **timezoneAdjustForDst**            Boolean     Flag to indicate if acquired data is adjusted for DST in selected timezone
+    **totalCommsAttempt**               Int32       Total count of communications attempts
+    **totalCommsSuccess**               Int32       Total count of successful communications
+    ================================    =========   ===========================================================================
 
 | 
 
@@ -99,16 +111,19 @@ List all nodes visible to the authenticated user.
 Arguments
 ~~~~~~~~~
 
-=================   =================   ================================================================
-Argument            Example             Description
-=================   =================   ================================================================
-**attr**            _id,slug            *Optional.* 
-                                        Comma delimited list of attributes to include in response
-**type**            TREE                *Optional - default is LIST* 
+.. table::
+    :class: table-fluid
 
-                                        | **LIST** returns a flat list of nodes
-                                        | **TREE** returns hierarchical list of nodes
-=================   =================   ================================================================
+    =================   =================   ================================================================
+    Argument            Example             Description
+    =================   =================   ================================================================
+    **attr**            _id,slug            *Optional.* 
+                                            Comma delimited list of attributes to include in response
+    **type**            TREE                *Optional - default is LIST* 
+
+                                            | **LIST** returns a flat list of nodes
+                                            | **TREE** returns hierarchical list of nodes
+    =================   =================   ================================================================
 
 Request
 ~~~~~~~~
@@ -269,12 +284,15 @@ Get a node by its **_id**.
 Arguments
 ~~~~~~~~~
 
-=================   =================   ================================================================
-Argument            Example             Description
-=================   =================   ================================================================
-**attr**            _id,_class          *Optional.* 
-                                        Comma delimited list of attributes to include in response
-=================   =================   ================================================================
+.. table::
+    :class: table-fluid
+
+    =================   =================   ================================================================
+    Argument            Example             Description
+    =================   =================   ================================================================
+    **attr**            _id,_class          *Optional.* 
+                                            Comma delimited list of attributes to include in response
+    =================   =================   ================================================================
 
 Request
 ~~~~~~~~
@@ -316,40 +334,44 @@ Get historic data from a node by its **_id**. Data can be returned in JSON (:ref
 Arguments
 ~~~~~~~~~
 
-=================   ========================    =================================================================
-Argument            Example                     Description
-=================   ========================    =================================================================
-**format**          JSON                        *Optional - Default is JSON*. 
-                                                Data format to return: *[JSON, CSV]*
+.. table::
+    :class: table-fluid
 
-**startTime**       2014-08-16T02:00:00Z        *Required*. [#f1]_
-                                                :ref:`ISO8601<time-format-iso8601>` timestamp
+    =================   ========================    =================================================================
+    Argument            Example                     Description
+    =================   ========================    =================================================================
+    **format**          JSON                        *Optional - Default is JSON*. 
+                                                    Data format to return: *[JSON, CSV]*
 
-**endTime**         2014-08-16T02:20:43Z        *Required*. [#f1]_
-                                                :ref:`ISO8601<time-format-iso8601>` timestamp
+    **startTime**       2014-08-16T02:00:00Z        *Required*. [#f1]_
+                                                    :ref:`ISO8601<time-format-iso8601>` timestamp
 
-**limit**           100                         *Optional*. 
-                                                Maximum number of historic records to be returned
+    **endTime**         2014-08-16T02:20:43Z        *Required*. [#f1]_
+                                                    :ref:`ISO8601<time-format-iso8601>` timestamp
 
-**quality**         FALSE                       *Optional - Default is FALSE*. 
-                                                Flag to include :ref:`quality <historic-quality>`
+    **limit**           100                         *Optional*. 
+                                                    Maximum number of historic records to be returned
 
-**header**          TRUE                        *Optional - Default is TRUE*. 
-                                                Flag to include header  
+    **quality**         FALSE                       *Optional - Default is FALSE*. 
+                                                    Flag to include :ref:`quality <historic-quality>`
 
-**renderType**      VALUE                       *Optional - Default is node displayType*. 
-                                                Rendering of value: *[VALUE, STATE]*
+    **header**          TRUE                        *Optional - Default is TRUE*. 
+                                                    Flag to include header  
 
-**aggregate**       AVERAGE                     *Optional - Default is NONE (raw)*. 
-                                                Historic :ref:`aggregate <historic-aggregates>` to apply to 
-                                                extracted data.
+    **renderType**      VALUE                       *Optional - Default is node displayType*. 
+                                                    Rendering of value: *[VALUE, STATE]*
 
-**baseTime**        D                           *Optional*. 
-                                                :ref:`OPC Base Time <relative-time>` required for aggregation.
+    **aggregate**       AVERAGE                     *Optional - Default is NONE (raw)*. 
+                                                    Historic :ref:`aggregate <historic-aggregates>` to apply to 
+                                                    extracted data.
 
-**interval**        3H                          *Optional*. 
-                                                :ref:`OPC Interval <relative-time>` required for aggregation.
-=================   ========================    =================================================================
+    **baseTime**        D                           *Optional*. 
+                                                    :ref:`OPC Base Time <relative-time>` required for aggregation.
+
+    **interval**        3H                          *Optional*. 
+                                                    :ref:`OPC Interval <relative-time>` required for aggregation.
+    =================   ========================    =================================================================
+
 .. [#f1] startTime or endTime can be omitted when ``limit`` is specified.
 
 
@@ -423,22 +445,24 @@ Post historic data to a node by its **_id**. Data can be inserted in JSON (:ref:
 Arguments
 ~~~~~~~~~
 
-=================   ========================    ======================================================================
-Argument            Example                     Description
-=================   ========================    ======================================================================
-**format**          JSON                        *Optional - Default is JSON*. 
-                                                Data format being inserted: *[JSON]*. CSV support coming soon...
+.. table::
+    :class: table-fluid
 
-**writeMode**       MERGE_OVERWRITE_EXISTING    *Optional - Default is MERGE_OVERWRITE_EXISTING*. 
-                                                See all available :ref:`write mode <historic-data-import-writemode>` 
-                                                options.
+    =================   ========================    ======================================================================
+    Argument            Example                     Description
+    =================   ========================    ======================================================================
+    **format**          JSON                        *Optional - Default is JSON*. 
+                                                    Data format being inserted: *[JSON]*. CSV support coming soon...
 
-**columnIndex**     0                           *Optional - Default is 0*. 
-                                                Index of column in data to be associated with this node. 
-                                                Headers will be used where available, however column index can be 
-                                                overwritten if required.
-=================   ========================    ======================================================================
+    **writeMode**       MERGE_OVERWRITE_EXISTING    *Optional - Default is MERGE_OVERWRITE_EXISTING*. 
+                                                    See all available :ref:`write mode <historic-data-import-writemode>` 
+                                                    options.
 
+    **columnIndex**     0                           *Optional - Default is 0*. 
+                                                    Index of column in data to be associated with this node. 
+                                                    Headers will be used where available, however column index can be 
+                                                    overwritten if required.
+    =================   ========================    ======================================================================
 
 Request
 ~~~~~~~~
