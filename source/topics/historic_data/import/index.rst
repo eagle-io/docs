@@ -1,3 +1,5 @@
+.. _historic-data-import:
+
 Import
 =======
 
@@ -40,20 +42,30 @@ File type
 Select file
     Click or touch the *Browse* button to select a file from your computer or device. There is a 250MB file size limit per import. To import a file exceeding the size limit you should split it into smaller chunks (< 250MB) and import separately.
 
+.. _historic-data-import-writemode:
+
 Write mode
     Select how the new data will be imported:
     
-    *Merge and overwrite*
+    *Merge and overwrite* [API: MERGE_OVERWRITE_EXISTING]
 
         Insert the imported data into the existing historic data and overwrite the existing values when timestamps match.
 
-    *Merge and preserve*
+    *Merge and preserve* [API: MERGE_PRESERVE_EXISTING]
     
         Merge the imported data into the existing historic data and do not overwrite existing values when timestamps match.
 
-    *Replace* 
+    *Replace* [API: INSERT_DELETE_EXISTING]
         
         Remove all existing historic data within the range of data being imported and replace with imported data.
+
+    [API: MERGE_FAIL_ON_EXISTING]
+
+        Merge the imported data into the existing historic data but fail if timestamps match.
+
+    [API: INSERT_FAIL_ON_EXISTING]
+
+        Insert new data only if there is no existing historic data within the range being imported.
 
 Timezone
     Select the timezone of the data being imported. This is generally the location of the sensor or device, but can be adjusted as required.

@@ -7,7 +7,9 @@ Historic Data
 You can store more than a billion individual data points per time series. This may include high-resolution millisecond data or historic records from the past 100+ years. 
 
 Data is always stored in a raw unprocessed format with optional quality information. 
-You can display and export the data in tabular or chart format.
+You can display and export the data in tabular or chart format via the user interface. 
+
+You can also use the eagle.io :ref:`HTTP API <api>` for importing or extracting data.
 
 Use :ref:`historic aggregates <historic-aggregates>` to process the raw data and apply specific calculations for statistical analysis.
 

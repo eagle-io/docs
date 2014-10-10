@@ -15,15 +15,15 @@ Owner Attributes
 -----------------
 Consumers of Owners should tolerate the addition of new attributes and variance in ordering of attributes with ease. Not all attributes appear in all contexts. It is generally safe to consider a nulled attribute, an empty set, and the absence of an attribute as the same thing.
 
-=================   =========   ===============================================================
+=================   =========   =======================================================================
 Attribute           Type        Description
-=================   =========   ===============================================================
+=================   =========   =======================================================================
 **_class**          String      Identifies resource type: *io.eagle.models.owner.Owner*
 **_id**             String      Unique identifier for this owner
 **accountName**     String      Name of the Account
-**createdTime**     String      ISO8601 timestamp the account was created.
+**createdTime**     String      :ref:`ISO8601<time-format-iso8601>` timestamp the account was created.
 **slug**            String      Used as part of Node full name path
-=================   =========   ===============================================================
+=================   =========   =======================================================================
 
 | 
 

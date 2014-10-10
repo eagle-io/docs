@@ -1,15 +1,29 @@
 Timestamps
 ==========
 
-:term:`Timestamps <timestamp>` are used to display the date and time of an event in a highly customisable, easy to read format. Time format is specified using time format tokens as shown below.
+:term:`Timestamps <timestamp>` represent the date and time of an event and can be represented in different formats.
+
+.. _time-format-iso8601:
+
+ISO8601 
+--------
+The :ref:`HTTP API <api>` requires all timestamps to use the `ISO8601 <http://en.wikipedia.org/wiki/ISO_8601>`_ standard format for date and time display. Timestamps in this format are expected to be in UTC with the *Z* zone designator applied. Timestamps can optionally specify fractional seconds using 3 decimal places.
+
+Example::
+    
+    2014-10-09T22:38:11Z
+    2014-10-09T22:38:11.000Z
+
+
+User customisable format
+------------------------
+Users can assign a preset or custom Time format to their User profile using the time format tokens below. All timestamps displayed to the user will be in their preferred format (where applicable).
 
 Example::
 	
 	YYYY-MM-DD HH:mm:ss
 
-Users can assign a preset or custom Time format to their User profile. All timestamps displayed to the user will be in their preferred format (where applicable).
-
-Time format may also need to be configured for some Sources. Refer to the Source configuration docs for information on specifying a time format for Delimited Text Data Sources.
+Time format may also need to be configured for some Sources. Refer to the Source configuration docs for information on specifying a time format for Sources.
 
 .. raw:: latex
 

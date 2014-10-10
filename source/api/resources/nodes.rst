@@ -22,7 +22,7 @@ General attributes                  Type        Description
 **_class**                          String      Identifies resource type: *io.eagle.models.node.*\*
 **_id**                             String      Unique identifier for this node
 **alarms**                          Object      Alarm configuration and status
-**createdTime**                     String      ISO8601 timestamp the node was created
+**createdTime**                     String      :ref:`ISO8601<time-format-iso8601>` timestamp the node was created
 **isActive**                        Boolean     Flag to indicate if node is active
 **metadata**                        Array       Array of metadata fields and values
 **name**                            String      Name of node
@@ -43,18 +43,18 @@ Parameter & Location attributes     Type        Description
 ================================    =========   ===========================================================================
 **currentQuality**                  Int32       Quality code associated with current value
 **currentStateId**                  String      State _id associated with current value
-**currentTime**                     String      ISO8601 timestamp of the current value
+**currentTime**                     String      :ref:`ISO8601<time-format-iso8601>` timestamp of the current value
 **currentValue**                    Mixed       Current value. Type inherited from _class
 **displayType**                     String      Default display type of parameter: 
                                                 *[VALUE, STATE]*
 **format**                          String      Formatting to apply to displayed value
 **oldestQuality**                   Int32       Quality code associated with oldest value
 **oldestStateId**                   String      State _id associated with oldest value
-**oldestTime**                      String      ISO8601 timestamp of the oldest value
+**oldestTime**                      String      :ref:`ISO8601<time-format-iso8601>` timestamp of the oldest value
 **oldestValue**                     Mixed       Oldest value. Type inherited from _class
 **previousQuality**                 Int32       Quality code associated with oldest value
 **previousStateId**                 String      State _id associated with previous value
-**previousTime**                    String      ISO8601 timestamp of the previous value
+**previousTime**                    String      :ref:`ISO8601<time-format-iso8601>` timestamp of the previous value
 **previousValue**                   Mixed       Previous value. Type inherited from _class
 **states**                          Array       Array of state configuration objects
 **statesType**                      String      States evaluation mode:
@@ -73,8 +73,10 @@ Source attributes                   Type        Description
 **firmwareVersion**                 String      Firmware version in-use by data logger
 **isEnabled**                       Boolean     Flag to enable or disable the Source
 **lastAcquireRecordCount**          Int32       Number of records acquired on last acquistion
-**lastCommsAttempt**                String      ISO8601 timestamp of the last communications attempt
-**lastCommsSuccess**                String      ISO8601 timestamp of the last successful communication with Source
+**lastCommsAttempt**                String      :ref:`ISO8601<time-format-iso8601>` timestamp of the 
+                                                last communications attempt
+**lastCommsSuccess**                String      :ref:`ISO8601<time-format-iso8601>` timestamp of the 
+                                                last successful communication with Source
 **model**                           String      Model of data logger in-use
 **pakBusAddress**                   Int32       PakBus address of Campbell data logger
 **pakBusGatewayAddress**            Int32       PakBus gateway address of Campbell data logger
@@ -305,11 +307,10 @@ Response
 
 Get historic data from a node
 ------------------------------
-Get historic data from a node by its **_id**. Data can be returned in JSON (JTS) or CSV format. Use the :ref:`Historic resource<api-resources-historic>` for extracting historic data from multiple nodes in a single request.
+Get historic data from a node by its **_id**. Data can be returned in JSON (:ref:`JTS <historic-jts>`) or CSV format. Use the :ref:`Historic resource<api-resources-historic>` for extracting historic data from multiple nodes in a single request.
 
 .. note:: 
     Only available for Location and Parameter nodes.
-
     
 
 Arguments
@@ -322,10 +323,10 @@ Argument            Example                     Description
                                                 Data format to return: *[JSON, CSV]*
 
 **startTime**       2014-08-16T02:00:00Z        *Required*. [#f1]_
-                                                ISO8601 timestamp
+                                                :ref:`ISO8601<time-format-iso8601>` timestamp
 
 **endTime**         2014-08-16T02:20:43Z        *Required*. [#f1]_
-                                                ISO8601 timestamp
+                                                :ref:`ISO8601<time-format-iso8601>` timestamp
 
 **limit**           100                         *Optional*. 
                                                 Maximum number of historic records to be returned
@@ -373,8 +374,8 @@ Response
         "docType": "jts",
         "version": "1.0",
         "header": {
-            "startTs": "2014-08-16T02:00:00.000Z",
-            "endTs": "2014-08-16T02:20:43.000Z",
+            "startTime": "2014-08-16T02:00:00.000Z",
+            "endTime": "2014-08-16T02:20:43.000Z",
             "recordCount": 5,
             "columns": {
                 "0": {
@@ -413,30 +414,30 @@ Response
 
 Post historic data to a node
 ------------------------------
-Post historic data to a node by its **_id**. Data can be inserted in JSON (JTS) or CSV format. Use the :ref:`Historic resource<api-resources-historic>` for posting historic data to multiple nodes in a single request.
+Post historic data to a node by its **_id**. Data can be inserted in JSON (:ref:`JTS <historic-jts>`) or CSV format. Use the :ref:`Historic resource<api-resources-historic>` for posting historic data to multiple nodes in a single request.
 
 .. note:: 
     Only available for Location and Parameter nodes.
 
 
-
-
 Arguments
 ~~~~~~~~~
 
-=================   ========================    =================================================================
+=================   ========================    ======================================================================
 Argument            Example                     Description
-=================   ========================    =================================================================
+=================   ========================    ======================================================================
 **format**          JSON                        *Optional - Default is JSON*. 
-                                                Data format being inserted: *[JSON, CSV]*
+                                                Data format being inserted: *[JSON]*. CSV support coming soon...
 
-**writeMode**       MERGE_OVERWRITE_EXISTING    *Optional - Default is MERGE_OVERWRITE_EXISTING*
+**writeMode**       MERGE_OVERWRITE_EXISTING    *Optional - Default is MERGE_OVERWRITE_EXISTING*. 
+                                                See all available :ref:`write mode <historic-data-import-writemode>` 
+                                                options.
 
 **columnIndex**     0                           *Optional - Default is 0*. 
                                                 Index of column in data to be associated with this node. 
                                                 Headers will be used where available, however column index can be 
                                                 overwritten if required.
-=================   ========================    =================================================================
+=================   ========================    ======================================================================
 
 
 Request

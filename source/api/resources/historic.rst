@@ -3,7 +3,7 @@
 Historic
 =========
 
-Historic data can be extracted or inserted into one or more nodes in a single request. You can also use the :ref:`Nodes resource <api-resources-nodes>` to extract or insert data for a single node.
+Historic data can be extracted or inserted into one or more nodes in a single request. You can also use the :ref:`Nodes resource <api-resources-nodes>` to extract or insert data for a single node. Data can be extracted or inserted in either JSON (:ref:`JTS <historic-jts>`) or CSV format (insert via CSV coming soon).
 
 We recommend you ``limit`` the size of requests to 1000 records or less and use :ref:`HTTP compression <api-overview-compression>` whenever possible. If the request or response is too large or exceeds our processing time threshold, the **413 Request Too Large** error response will be returned.
 
@@ -15,14 +15,6 @@ Successful extraction requests will result in a **200 OK** response with the dat
 .. contents:: Quick Links
     :depth: 1
     :local:
-
-| 
-
-Historic Data Format
---------------------
-Historic data can be extracted or inserted in either JSON (JTS) or CSV format.
-
-.. Add explanation (or link to def) for JSON and CSV formats
 
 | 
 
@@ -41,10 +33,10 @@ Argument            Example                     Description
                                                 Data format to return: *[JSON, CSV]*
 
 **startTime**       2014-08-16T02:00:00Z        *Required*. [#f1]_
-                                                ISO8601 timestamp
+                                                :ref:`ISO8601<time-format-iso8601>` timestamp
 
 **endTime**         2014-08-16T02:20:43Z        *Required*. [#f1]_
-                                                ISO8601 timestamp
+                                                :ref:`ISO8601<time-format-iso8601>` timestamp
 
 **limit**           100                         *Optional*. 
                                                 Maximum number of historic records to be returned
@@ -105,8 +97,8 @@ Response
         "docType": "jts",
         "version": "1.0",
         "header": {
-            "startTs": "2014-08-16T02:00:00.000Z",
-            "endTs": "2014-08-16T02:20:43.000Z",
+            "startTime": "2014-08-16T02:00:00.000Z",
+            "endTime": "2014-08-16T02:20:43.000Z",
             "recordCount": 5,
             "columns": {
                 "0": {
@@ -147,17 +139,18 @@ Post historic data to nodes
 ------------------------------
 Post historic data to one or more nodes by **_id's**.
 
-
 Arguments
 ~~~~~~~~~
 
-=================   ========================    =================================================================
+=================   ========================    ======================================================================
 Argument            Example                     Description
-=================   ========================    =================================================================
+=================   ========================    ======================================================================
 **format**          JSON                        *Optional - Default is JSON*. 
-                                                Data format being inserted: *[JSON, CSV]*
+                                                Data format being inserted: *[JSON]*. CSV support coming soon...
 
-**writeMode**       MERGE_OVERWRITE_EXISTING    *Optional - Default is MERGE_OVERWRITE_EXISTING*
+**writeMode**       MERGE_OVERWRITE_EXISTING    *Optional - Default is MERGE_OVERWRITE_EXISTING*. 
+                                                See all available :ref:`write mode <historic-data-import-writemode>` 
+                                                options.
 
 **nodes**           541a5a129bc9b4035f906d70    *Required*. [#f2]_
                                                 Comma delimited list of node _id's to include in extraction. 
@@ -167,7 +160,7 @@ Argument            Example                     Description
                                                 Index of column in data to be associated with this node. 
                                                 Headers will be used where available, however column index can be 
                                                 overwritten if required.
-=================   ========================    =================================================================
+=================   ========================    ======================================================================
 .. [#f2] nodes argument can be omitted if data contains headers
 
 Include individual node arguments in parentheses with key/value separated by colons and multiple arguments semicolon delimited::

@@ -7,4 +7,5 @@ When working with :term:`time series` or historic data there are several importa
    :maxdepth: 2
 
    aggregates
+   jts
    quality
