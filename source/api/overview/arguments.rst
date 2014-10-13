@@ -16,3 +16,6 @@ Sub-arguments should be included in parentheses with key/value separated by colo
 ::
 
     /api/v1/nodes/?arg1=val1(subarg1:subval1;subarg2:subval2...),val2,val3
+
+
+All special characters should be `Url Encoded <http://en.wikipedia.org/wiki/Percent-encoding>`_.

@@ -29,9 +29,9 @@ Arguments
 .. table::
     :class: table-fluid
 
-    =================   ========================    =================================================================
+    =================   ========================    ===================================================================
     Argument            Example                     Description
-    =================   ========================    =================================================================
+    =================   ========================    ===================================================================
     **format**          JSON                        *Optional - Default is JSON*. 
                                                     Data format to return: *[JSON, CSV]*
 
@@ -50,34 +50,34 @@ Arguments
     **header**          TRUE                        *Optional - Default is TRUE*. 
                                                     Flag to include header  
 
-    **nodes**           541a5a129bc9b4035f906d70    *Required*. 
-                                                    Comma delimited list of node _id's to include in extraction.
-                                                    Individual node options are specified in parentheses.
+    **params**          541a5a129bc9b4035f906d70    *Required*. 
+                                                    Comma delimited list of parameter _id's to include in extraction.
+                                                    Individual parameter options are specified in parentheses.
 
-    | **renderType**      VALUE                     *Optional - Default is node displayType*. 
+    | **renderType**    VALUE                       *Optional - Default is parameter displayType*. 
                                                     Rendering of value: *[VALUE, STATE]*
 
-    | **aggregate**       AVERAGE                   *Optional - Default is NONE (raw)*. 
+    | **aggregate**     AVERAGE                     *Optional - Default is NONE (raw)*. 
                                                     Historic :ref:`aggregate <historic-aggregates>` to apply to 
                                                     extracted data.
 
-    | **baseTime**        D                         *Optional*. 
+    | **baseTime**      D                           *Optional*. 
                                                     :ref:`OPC Base Time <relative-time>` required for aggregation.
 
-    | **interval**        3H                        *Optional*. 
+    | **interval**      3H                          *Optional*. 
                                                     :ref:`OPC Interval <relative-time>` required for aggregation.
-    =================   ========================    =================================================================
+    =================   ========================    ===================================================================
 
 .. [#f1] startTime or endTime can be omitted when ``limit`` is specified.
 
 
-Include individual node arguments in parentheses with key/value separated by colons and multiple arguments semicolon delimited::
+Include individual parameter arguments in parentheses with key/value separated by colons and multiple arguments semicolon delimited::
     
-    nodes=:_id(key:value;key:value),:_id
+    params=:_id(key:value;key:value),:_id
 
-Example with optional node arguments::
+Example with optional parameter arguments::
 
-    nodes=541a5a129bc9b4035f906d70,541a5a129bc9b4035f906d71(aggregate:AVERAGE;baseTime:D;interval:3H)
+    params=541a5a129bc9b4035f906d70,541a5a129bc9b4035f906d71(aggregate:AVERAGE;baseTime:D;interval:3H)
 
 
 Request
@@ -159,25 +159,23 @@ Arguments
                                                     See all available :ref:`write mode <historic-data-import-writemode>` 
                                                     options.
 
-    **nodes**           541a5a129bc9b4035f906d70    *Required*. [#f2]_
-                                                    Comma delimited list of node _id's to include in extraction. 
-                                                    Individual node options are specified in parentheses.
+    **params**          541a5a129bc9b4035f906d70    *Required*. [#f2]_
+                                                    Comma delimited list of parameter _id's to include in extraction. 
+                                                    Individual parameter options are specified in parentheses.
 
     | **columnIndex**   0                           *Required*. [#f2]_
-                                                    Index of column in data to be associated with this node. 
-                                                    Headers will be used where available, however column index can be 
-                                                    overwritten if required.
+                                                    Index of column in data to be associated with this parameter. 
     =================   ========================    ======================================================================
     
-.. [#f2] nodes argument can be omitted if data contains headers
+.. [#f2] params argument can be omitted if JTS Document contains headers
 
-Include individual node arguments in parentheses with key/value separated by colons and multiple arguments semicolon delimited::
+Include individual parameter arguments in parentheses with key/value separated by colons and multiple arguments semicolon delimited::
     
-    nodes=:_id(key:value;key:value),:_id
+    params=:_id(key:value;key:value),:_id
 
-Example with required node arguments::
+Example with required parameter arguments::
 
-    nodes=541a5a129bc9b4035f906d70(columnIndex:0),541a5a129bc9b4035f906d71(columnIndex:1)
+    params=541a5a129bc9b4035f906d70(columnIndex:0),541a5a129bc9b4035f906d71(columnIndex:1)
 
 
 Request

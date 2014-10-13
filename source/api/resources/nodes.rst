@@ -459,9 +459,8 @@ Arguments
                                                     options.
 
     **columnIndex**     0                           *Optional - Default is 0*. 
-                                                    Index of column in data to be associated with this node. 
-                                                    Headers will be used where available, however column index can be 
-                                                    overwritten if required.
+                                                    Index of column in data to be associated with this parameter. Will use
+                                                    index specified in JTS Doc header if available or default to 0.
     =================   ========================    ======================================================================
 
 Request
