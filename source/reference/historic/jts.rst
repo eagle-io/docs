@@ -195,9 +195,10 @@ The data attribute contains an array of records. Each record contains a 'ts' :re
 Data Types
 ~~~~~~~~~~~
 
-JTS supports both simple and complex data types. Complex data types are always encapsulated in a JSON object denoted by '$'.
+JTS supports both simple and complex data types. Complex data types are always encapsulated in a JSON object with its key prefixed with '$'.
+
 When inserting historic data, the data type *MUST* match the parameter type. For example, TIME data is only accepted on Time parameters.
-Data that has been exported using renderType 'STATE' will always use *String* data types.
+Data that has been exported using renderType 'STATE' will always have a *String* format.
 
 The following data types are supported in the 'v' value field of a record column:
 
@@ -207,11 +208,11 @@ The following data types are supported in the 'v' value field of a record column
     =================   ============================    =================================================   =======================================
     Data Type           Accepted Parameter Type         Format                                              Example
     =================   ============================    =================================================   =======================================
-    NUMBER              Number parameters               Number                                              24.5
-    TEXT                Text parameters                 String                                              "valve open"
-    TIME                Time parameters                 {"$time": :ref:`"ISO8601<time-format-iso8601>`"}    {"$time": "2014-08-16T02:00:00Z"}
+    **NUMBER**          Number parameters               Number                                              24.5
+    **TEXT**            Text parameters                 String                                              "valve open"
+    **TIME**            Time parameters                 {"$time": :ref:`"ISO8601<time-format-iso8601>`"}    {"$time": "2014-08-16T02:00:00Z"}
                                                            
-    COORDINATES         Locations                       {"$coords": [<latitude>, <longitude>]}              {"$coords": [-33.86785, 151.20732]}
+    **COORDINATES**     Locations                       {"$coords": [<latitude>, <longitude>]}              {"$coords": [-33.86785, 151.20732]}
     =================   ============================    =================================================   =======================================
 
 .. note::
