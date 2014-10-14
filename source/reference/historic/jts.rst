@@ -21,6 +21,7 @@ Example JTS document::
                     "id": "541a5a129bc9b4035f906d70",
                     "name": "Temperature",
                     "dataType": "NUMBER",
+                    "format": "0.###",
                     "aggregate": "NONE"
                 }
             }
@@ -121,8 +122,11 @@ The header *columns* object contains *column index* keys which map to the corres
     **id**              541a5a129bc9b4035f906d70        Unique identifier of resource (usually its _id)
     **name**            Temperature                     Name of resource or node
     **dataType**        NUMBER                          Expected data type: *[NUMBER, TEXT, TIME, COORDINATES]*
+    **format**          0.###                           :ref:`Format <node-configuration-parameter-general>` of the value.
     **aggregate**       NONE                            Historic :ref:`aggregate <historic-aggregates>` applied to data. 
                                                         Default is NONE
+    **baseTime**        D                               :ref:`OPC Base Time <relative-time>` used for aggregation
+    **interval**        1H                              :ref:`OPC Interval <relative-time>` used for aggregation                                    
     =================   ============================    ============================================================================
 
 ::
@@ -132,12 +136,14 @@ The header *columns* object contains *column index* keys which map to the corres
             "id": "<id>",
             "name": "<name>",
             "dataType": "<dataType>",
-            "aggregate": "<aggregate>"
+            "format": "<format>",
+            "aggregate": "<aggregate>",
+            "baseTime": "<baseTime>",
+            "interval": "<interval>"
         },
         "1": {},
         "2": {}
     }
-
 
 
 Data
