@@ -78,7 +78,7 @@ Response
         "_class": "io.eagle.models.user.User",
         "_id": "540d1edbeaec496ecc61ff6e",
         "contact": {
-            "email": "nick@eagle.io",
+            "email": "user@company.com",
             "phone": "+61400000001"
         },
         "createdTime": "2014-09-08T03:13:31.488Z",
