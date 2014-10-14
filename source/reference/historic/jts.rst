@@ -21,6 +21,7 @@ Example JTS document::
                     "id": "541a5a129bc9b4035f906d70",
                     "name": "Temperature",
                     "dataType": "NUMBER",
+                    "renderType": "VALUE",
                     "format": "0.###",
                     "aggregate": "NONE"
                 }
@@ -121,7 +122,10 @@ The header *columns* object contains *column index* keys which map to the corres
     =================   ============================    ============================================================================
     **id**              541a5a129bc9b4035f906d70        Unique identifier of resource (usually its _id)
     **name**            Temperature                     Name of resource or node
-    **dataType**        NUMBER                          Expected data type: *[NUMBER, TEXT, TIME, COORDINATES]*
+    **dataType**        NUMBER                          :ref:`Data type <historic-jts-datatypes>` of associated node. 
+                                                        *[NUMBER, TEXT, TIME, COORDINATES]* Note: if 'renderType' is STATE the data  
+                                                        in this document will be String.
+    **renderType**      VALUE                           Rendering of 'v' attribute in records. *[VALUE, STATE]*
     **format**          0.###                           :ref:`Format <node-configuration-parameter-general>` of the value.
     **aggregate**       NONE                            Historic :ref:`aggregate <historic-aggregates>` applied to data. 
                                                         Default is NONE
@@ -193,6 +197,7 @@ Data Types
 
 JTS supports both simple and complex data types. Complex data types are always encapsulated in a JSON object denoted by '$'.
 When inserting historic data, the data type *MUST* match the parameter type. For example, TIME data is only accepted on Time parameters.
+Data that has been exported using renderType 'STATE' will always use *String* data types.
 
 The following data types are supported in the 'v' value field of a record column:
 
