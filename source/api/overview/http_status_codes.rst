@@ -20,7 +20,8 @@ The eagle.io API will return appropriate `HTTP status codes <http://en.wikipedia
     405     Method Not Allowed                                  Resource does not support the requested HTTP Method
     413     Request Too Large                                   Request body or response exceeds limit
     429     Too Many Requests                                   Request has been rejected for exceeding usage limits
-    500     Internal Server Error                               Error occurred processing the request    
+    500     Internal Server Error                               Error occurred processing the request
+    503     Service Unavailable                                 Service is temporarily unavailable    
     =====   =================================================   ========================================================
 
 Error and Status messages

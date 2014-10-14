@@ -16,7 +16,9 @@ Successful extraction requests will result in a **200 OK** response with the dat
     :depth: 1
     :local:
 
-| 
+.. only:: not latex
+
+    |
 
 Get historic data from nodes
 ----------------------------
@@ -137,8 +139,10 @@ Response
         ]
     }
 
-| 
+.. only:: not latex
 
+    |
+    
 Post historic data to nodes
 ------------------------------
 Post historic data to one or more nodes by **_id's**.

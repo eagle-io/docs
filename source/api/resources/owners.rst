@@ -9,7 +9,9 @@ Owners contain details about the eagle.io account associated with a Workspace or
     :depth: 1
     :local:
 
-| 
+.. only:: not latex
+
+    |
 
 Owner Attributes
 -----------------
@@ -28,7 +30,9 @@ Consumers of Owners should tolerate the addition of new attributes and variance 
     **slug**            String      Used as part of Node full name path
     =================   =========   =======================================================================
 
-| 
+.. only:: not latex
+
+    |
 
 List all owners
 ----------------
@@ -83,7 +87,9 @@ Response
         }
     ]
 
-| 
+.. only:: not latex
+
+    |
 
 Get an owner 
 -------------

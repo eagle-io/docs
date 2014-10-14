@@ -9,7 +9,9 @@ Devices contain details about modems and other communication hardware associated
     :depth: 1
     :local:
 
-| 
+.. only:: not latex
+
+    |
 
 Device Attributes
 -----------------
@@ -34,7 +36,9 @@ Consumers of Devices should tolerate the addition of new attributes and variance
     **workspaceId**     String      Associated Workspace _id
     =================   =========   ========================================================================================
 
-| 
+.. only:: not latex
+
+    |
 
 List all devices
 ----------------
@@ -154,12 +158,13 @@ Response
         }
     ]
 
-| 
+.. only:: not latex
 
+    |
+    
 Get a device
 -------------
 Get a device by its **_id**.
-
 
 Arguments
 ~~~~~~~~~

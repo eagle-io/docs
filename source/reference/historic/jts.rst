@@ -49,19 +49,26 @@ Example JTS document::
         ]
     }
 
-| 
+
+.. only:: not latex
+
+    |
+    
 
 JTS Document specification
 --------------------------
 
-=================   =============   ============================================================
-Attribute           Example         Description
-=================   =============   ============================================================
-**docType**         jts             *Required*. Must be 'jts'
-**version**         1.0             *Required*. Version '1.0' supported
-**header**                          *Optional*. Object describing document data
-**data**                            *Required*. Array of historic records in chronological order
-=================   =============   ============================================================
+.. table::
+    :class: table-fluid
+
+    =================   =============   ============================================================
+    Attribute           Example         Description
+    =================   =============   ============================================================
+    **docType**         jts             *Required*. Must be 'jts'
+    **version**         1.0             *Required*. Version '1.0' supported
+    **header**                          *Optional*. Object describing document data
+    **data**                            *Required*. Array of historic records in chronological order
+    =================   =============   ============================================================
 
 ::
     
@@ -79,14 +86,17 @@ Header
 
 The header is optional and is used to describe the data contained within the document.
 
-=================   ============================    ============================================================================
-Header Attribute    Example                         Description
-=================   ============================    ============================================================================
-**startTime**       2014-08-16T02:00:00.000Z        :ref:`ISO8601<time-format-iso8601>` timestamp of earliest record in document
-**endTime**         2014-08-16T02:20:43.000Z        :ref:`ISO8601<time-format-iso8601>` timestamp of latest record in document
-**recordCount**     5                               Total record count (number of array items in data)
-**columns**                                         Object describing columns in document
-=================   ============================    ============================================================================
+.. table::
+    :class: table-fluid
+
+    =================   ============================    ============================================================================
+    Header Attribute    Example                         Description
+    =================   ============================    ============================================================================
+    **startTime**       2014-08-16T02:00:00.000Z        :ref:`ISO8601<time-format-iso8601>` timestamp of earliest record in document
+    **endTime**         2014-08-16T02:20:43.000Z        :ref:`ISO8601<time-format-iso8601>` timestamp of latest record in document
+    **recordCount**     5                               Total record count (number of array items in data)
+    **columns**                                         Object describing columns in document
+    =================   ============================    ============================================================================
 
 :: 
     
@@ -102,15 +112,18 @@ Header Columns
 ````````````````
 The header *columns* object contains *column index* keys which map to the corresponding *column index* in the record fields object. Column index assignment is generally zero-based (first index is 0).
 
-=================   ============================    ============================================================================
-Column Attribute    Example                         Description
-=================   ============================    ============================================================================
-**id**              541a5a129bc9b4035f906d70        Unique identifier of resource (usually its _id)
-**name**            Temperature                     Name of resource or node
-**dataType**        NUMBER                          Expected data type: *[NUMBER, TEXT, TIME]*
-**aggregate**       NONE                            Historic :ref:`aggregate <historic-aggregates>` applied to data. 
-                                                    Default is NONE
-=================   ============================    ============================================================================
+.. table::
+    :class: table-fluid
+
+    =================   ============================    ============================================================================
+    Column Attribute    Example                         Description
+    =================   ============================    ============================================================================
+    **id**              541a5a129bc9b4035f906d70        Unique identifier of resource (usually its _id)
+    **name**            Temperature                     Name of resource or node
+    **dataType**        NUMBER                          Expected data type: *[NUMBER, TEXT, TIME, COORDINATES]*
+    **aggregate**       NONE                            Historic :ref:`aggregate <historic-aggregates>` applied to data. 
+                                                        Default is NONE
+    =================   ============================    ============================================================================
 
 ::
 
@@ -132,14 +145,19 @@ Data
 
 The data attribute contains an array of records. Each record contains a 'ts' :ref:`ISO8601<time-format-iso8601>` timestamp and an 'f' fields object which can contain value and quality data for 1 or more columns (using column index as key).
 
-=================   ============================    ============================================================================
-Header Attribute    Example                         Description
-=================   ============================    ============================================================================
-**ts**              2014-08-16T02:00:00.000Z        *Required*. :ref:`ISO8601<time-format-iso8601>` timestamp of data point(s)
-**v**               10.4                            *Optional*. Value of column for the corresponding timestamp. 
-                                                    Data type should match *dataType* option in header
-**q**               100                             *Optional*. Quality code associated with data value
-=================   ============================    ============================================================================
+.. table::
+    :class: table-fluid
+
+    =================   ============================    ======================================================================================
+    Record Attribute    Example                         Description
+    =================   ============================    ======================================================================================
+    **ts**              2014-08-16T02:00:00.000Z        *Required*. :ref:`ISO8601<time-format-iso8601>` timestamp of data point(s)
+    **f**                                               *Required*. Object containing data for 1 or more columns 
+                                                        (using column index as key)
+    | **v**             10.4                            *Optional*. Value of column for the corresponding record timestamp 
+                                                        :ref:`Data type <historic-jts-datatypes>` should match *dataType* option in header
+    | **q**             100                             *Optional*. Quality code associated with data value for this column
+    =================   ============================    ======================================================================================
 
 ::
 
@@ -162,6 +180,31 @@ Header Attribute    Example                         Description
     The 'f' fields object can be sparsley populated by only including columns that have data for the associated record timestamp.
 
 
+.. _historic-jts-datatypes:
+
+Data Types
+~~~~~~~~~~~
+
+JTS supports both simple and complex data types. Complex data types are always encapsulated in a JSON object denoted by '$'.
+When inserting historic data, the data type *MUST* match the parameter type. For example, TIME data is only accepted on Time parameters.
+
+The following data types are supported in the 'v' value field of a record column:
+
+.. table::
+    :class: table-fluid
+
+    =================   ============================    =================================================   =======================================
+    Data Type           Accepted Parameter Type         Format                                              Example
+    =================   ============================    =================================================   =======================================
+    NUMBER              Number parameters               Number                                              24.5
+    TEXT                Text parameters                 String                                              "valve open"
+    TIME                Time parameters                 {"$time": :ref:`"ISO8601<time-format-iso8601>`"}    {"$time": "2014-08-16T02:00:00Z"}
+                                                           
+    COORDINATES         Locations                       {"$coords": [<latitude>, <longitude>]}              {"$coords": [-33.86785, 151.20732]}
+    =================   ============================    =================================================   =======================================
+
+.. note::
+    The record 'ts' field can be expressed as a simple :ref:`ISO8601<time-format-iso8601>` timestamp instead of the complex TIME data type.
 
 .. raw:: latex
 

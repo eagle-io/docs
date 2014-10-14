@@ -7,7 +7,7 @@ Timestamps
 
 ISO8601 
 --------
-The :ref:`HTTP API <api>` requires all timestamps to use the `ISO8601 <http://en.wikipedia.org/wiki/ISO_8601>`_ standard format for date and time display. Timestamps in this format are expected to be in UTC with the *Z* zone designator applied. Timestamps can optionally specify fractional seconds using 3 decimal places.
+The :ref:`HTTP API <api>` requires all timestamps to use the `ISO8601 <http://en.wikipedia.org/wiki/ISO_8601>`_ standard format for date and time display. Timestamps in this format are expected to be in UTC with the 'Z' (Zulu) zone designator applied. Timestamps can optionally specify fractional seconds using 3 decimal places.
 
 Example::
     

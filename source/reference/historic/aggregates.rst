@@ -14,7 +14,7 @@ The following aggregates are available depending on the :ref:`Display type <node
 +--------------+-------+-------+
 |  Aggregate   | VALUE | STATE |
 +==============+=======+=======+
-| RAW          | x     | x     |
+| NONE (raw)   | x     | x     |
 +--------------+-------+-------+
 | INTERPOLATED | x     |       |
 +--------------+-------+-------+

@@ -10,7 +10,9 @@ There are various :ref:`types of nodes <nodes-and-configuration>` including: Wor
     :depth: 1
     :local:
 
-| 
+.. only:: not latex
+
+    |
 
 Node Attributes
 -----------------
@@ -101,7 +103,9 @@ Consumers of Nodes should tolerate the addition of new attributes and variance i
     **totalCommsSuccess**               Int32       Total count of successful communications
     ================================    =========   ===========================================================================
 
-| 
+.. only:: not latex
+
+    |
 
 List all nodes
 ----------------
@@ -274,7 +278,9 @@ Example response when ``type`` argument is TREE. Descendants are wrapped in a ``
         }
     ]
 
-| 
+.. only:: not latex
+
+    |
 
 Get a node
 -------------
@@ -321,7 +327,9 @@ Response
         "ownerId": "52969365593a1a3a3200000f"
     }
 
-| 
+.. only:: not latex
+
+    |
 
 Get historic data from a node
 ------------------------------
@@ -432,8 +440,10 @@ Response
         ]
     }
 
-| 
+.. only:: not latex
 
+    |
+    
 Post historic data to a node
 ------------------------------
 Post historic data to a node by its **_id**. Data can be inserted in JSON (:ref:`JTS <historic-jts>`) or CSV format. Use the :ref:`Historic resource<api-resources-historic>` for posting historic data to multiple nodes in a single request.

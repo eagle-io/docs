@@ -9,7 +9,9 @@ Users contain details about eagle.io user profiles.
     :depth: 1
     :local:
 
-| 
+.. only:: not latex
+
+    |
 
 User Attributes
 -----------------
@@ -34,7 +36,9 @@ Consumers of Users should tolerate the addition of new attributes and variance i
     **timezone**        String      :ref:`Timezone <timezone>` for timestamp display
     =================   =========   ====================================================================
 
-| 
+.. only:: not latex
+
+    |
 
 Get your user 
 -------------
