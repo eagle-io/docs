@@ -11,7 +11,7 @@ The eagle.io API will return appropriate `HTTP status codes <http://en.wikipedia
     =====   =================================================   ========================================================
     200     OK                                                  Completed successfully
     201     Created                                             Resource created successfully
-    202     Operation accepted                                  Operation still on-going
+    202     Operation accepted                                  Operation accepted but not yet complete
     304     Not Modified                                        There was no new data to return
     400     Bad Request                                         The request was invalid or cannot be otherwise served
     401     Unauthorized                                        Authentication failed
