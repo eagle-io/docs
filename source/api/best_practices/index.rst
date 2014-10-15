@@ -72,8 +72,3 @@ Use development tools such as `cURL <http://curl.haxx.se>`_ or `Postman <http://
     | 
 
     .. image:: api_dev_postman.png
-
-
-
-
-

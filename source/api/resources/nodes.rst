@@ -462,11 +462,17 @@ Arguments
     Argument            Example                     Description
     =================   ========================    ======================================================================
     **format**          JSON                        *Optional - Default is JSON*. 
-                                                    Data format being inserted: *[JSON]*. CSV support coming soon...
+                                                    Data format being inserted: *[JSON]*. (CSV support coming soon)
 
     **writeMode**       MERGE_OVERWRITE_EXISTING    *Optional - Default is MERGE_OVERWRITE_EXISTING*. 
                                                     See all available :ref:`write mode <historic-data-import-writemode>` 
                                                     options.
+
+    **notifyMode**      LATEST                      *Optional - Default is LATEST*.
+                                                    When to generate events, raise alarms and send notifications: 
+                                                    *[NEW, LATEST, NEVER]*.
+                                                    NEW: All events newer than parameter current value. 
+                                                    LATEST: Latest event newer than parameter current value.
 
     **columnIndex**     0                           *Optional - Default is 0*. 
                                                     Index of column in data to be associated with this parameter. Will use

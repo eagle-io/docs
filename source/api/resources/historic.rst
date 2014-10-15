@@ -157,11 +157,17 @@ Arguments
     Argument            Example                     Description
     =================   ========================    ======================================================================
     **format**          JSON                        *Optional - Default is JSON*. 
-                                                    Data format being inserted: *[JSON]*. CSV support coming soon...
+                                                    Data format being inserted: *[JSON]*. (CSV support coming soon)
 
     **writeMode**       MERGE_OVERWRITE_EXISTING    *Optional - Default is MERGE_OVERWRITE_EXISTING*. 
                                                     See all available :ref:`write mode <historic-data-import-writemode>` 
                                                     options.
+
+    **notifyMode**      LATEST                      *Optional - Default is LATEST*.
+                                                    When to generate events, raise alarms and send notifications: 
+                                                    *[NEW, LATEST, NEVER]*.
+                                                    NEW: All events newer than parameter current value. 
+                                                    LATEST: Latest event newer than parameter current value.
 
     **params**          541a5a129bc9b4035f906d70    *Required*. [#f2]_
                                                     Comma delimited list of parameter _id's to include in extraction. 
