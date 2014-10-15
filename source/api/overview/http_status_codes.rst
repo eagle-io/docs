@@ -1,3 +1,5 @@
+.. _api-overview-http-status-codes:
+
 HTTP Status Codes
 ------------------
 

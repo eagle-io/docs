@@ -1,4 +1,6 @@
-Usage limits
+.. _api-overview-usage-limits:
+
+Usage Limits
 -------------
 
 API usage is rate limited by IP Address to prevent misuse.

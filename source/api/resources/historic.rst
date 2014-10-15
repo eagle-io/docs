@@ -7,7 +7,7 @@ Historic data can be extracted or inserted into one or more nodes in a single re
 
 We recommend you ``limit`` the size of requests to 1000 records or less and use :ref:`HTTP compression <api-overview-compression>` whenever possible. If the request or response is too large or exceeds our processing time threshold, the **413 Request Too Large** error response will be returned.
 
-Successful extraction requests will result in a **200 OK** response with the data returned in the body of the response. Successful insertion requests always results in a **202 Accepted** response.
+Successful extraction requests will result in a **200 OK** response with the data returned in the body of the response. Successful insertion requests always result in a **202 Accepted** response.
 
 .. note:: 
     Only available for Location and Parameter nodes.

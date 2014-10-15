@@ -3,7 +3,7 @@
 Authentication
 --------------
 
-You authenticate to the eagle.io API by providing one of your API keys in the **X-Api-Key** request header::
+You authenticate to the eagle.io API by providing one of your :ref:`API keys <user-api-keys>` in the **X-Api-Key** request header::
 
     GET /api/v1/nodes/
     Host: eagle.io
