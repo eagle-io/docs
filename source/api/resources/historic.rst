@@ -163,11 +163,11 @@ Arguments
                                                     See all available :ref:`write mode <historic-data-import-writemode>` 
                                                     options.
 
-    **notifyMode**      LATEST                      *Optional - Default is LATEST*.
+    **notifyOn**        LATEST_ONLY                 *Optional - Default is LATEST_ONLY*.
                                                     When to generate events, raise alarms and send notifications: 
-                                                    *[NEW, LATEST, NEVER]*.
-                                                    NEW: All events newer than parameter current value. 
-                                                    LATEST: Latest event newer than parameter current value.
+                                                    *[ALL_NEWER, LATEST_ONLY, NONE]*.
+                                                    ALL_NEWER: All events newer than parameter current value. 
+                                                    LATEST_ONLY: Latest event newer than parameter current value.
 
     **params**          541a5a129bc9b4035f906d70    *Required*. [#f2]_
                                                     Comma delimited list of parameter _id's to include in extraction. 

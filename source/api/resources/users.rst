@@ -24,11 +24,11 @@ Consumers of Users should tolerate the addition of new attributes and variance i
     Attributes          Type        Description
     =================   =========   ====================================================================
     **_class**          String      Identifies resource type: *io.eagle.models.owner.User*
-    **_id**             String      Unique identifier for this owner
+    **_id**             ObjectId    Unique identifier for this owner
     **contact**         Object      
     | **email**         String      Email address of user
     | **phone**         String      Fully qualified international phone number
-    **createdTime**     String      :ref:`ISO8601<time-format-iso8601>` timestamp the user was created.
+    **createdTime**     Date        :ref:`ISO8601<time-format-iso8601>` timestamp the user was created.
     **name**            Object      
     | **first**         String      First name of user
     | **last**          String      Last name of user

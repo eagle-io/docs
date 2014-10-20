@@ -24,9 +24,9 @@ Consumers of Owners should tolerate the addition of new attributes and variance 
     Attribute           Type        Description
     =================   =========   =======================================================================
     **_class**          String      Identifies resource type: *io.eagle.models.owner.Owner*
-    **_id**             String      Unique identifier for this owner
+    **_id**             ObjectId    Unique identifier for this owner
     **accountName**     String      Name of the Account
-    **createdTime**     String      :ref:`ISO8601<time-format-iso8601>` timestamp the account was created.
+    **createdTime**     Date        :ref:`ISO8601<time-format-iso8601>` timestamp the account was created.
     **slug**            String      Used as part of Node full name path
     =================   =========   =======================================================================
 
@@ -45,12 +45,28 @@ Arguments
 .. table::
     :class: table-fluid
 
-    =================   =================   ================================================================
-    Argument            Example             Description
-    =================   =================   ================================================================
-    **attr**            _id,slug            *Optional.* 
-                                            Comma delimited list of attributes to include in response
-    =================   =================   ================================================================
+    =================   =====================   ================================================================
+    Argument            Example                 Description
+    =================   =====================   ================================================================
+    **attr**            _id,slug                *Optional*. 
+                                                Comma delimited list of attributes to include in response
+
+    **filter**          slug($eq:mycomp87)      *Optional*. 
+                                                :ref:`Filter <api-overview-request-arguments-filter>` the 
+                                                records based on attribute value(s)
+
+    **limit**           100                     *Optional*. 
+                                                Maximum number of records to be returned
+
+    **skip**            50                      *Optional*. 
+                                                Skip the first *n* records returned. Can be used with 
+                                                ``limit`` to paginate results
+
+    **sort**            createdTime(DESC)       *Optional*. 
+                                                Comma delimited list of attributes to sort by. Optionally 
+                                                include sort direction in parentheses or default to ASC: 
+                                                *[ASC, DESC]*
+    =================   =====================   ================================================================
 
 Request
 ~~~~~~~~

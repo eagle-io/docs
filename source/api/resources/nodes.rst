@@ -25,15 +25,15 @@ Consumers of Nodes should tolerate the addition of new attributes and variance i
     General attributes                  Type        Description
     ================================    =========   ===========================================================================
     **_class**                          String      Identifies resource type: *io.eagle.models.node.*\*
-    **_id**                             String      Unique identifier for this node
+    **_id**                             ObjectId    Unique identifier for this node
     **alarms**                          Object      Alarm configuration and status
-    **createdTime**                     String      :ref:`ISO8601<time-format-iso8601>` timestamp the node was created
+    **createdTime**                     Date        :ref:`ISO8601<time-format-iso8601>` timestamp the node was created
     **isActive**                        Boolean     Flag to indicate if node is active
     **metadata**                        Array       Array of metadata fields and values
     **name**                            String      Name of node
-    **ownerId**                         String      Unique owner _id
-    **parentId**                        String      Parent node _id (not included in Workspace)
-    **workspaceId**                     String      Associated Workspace _id (not included in Workspace)
+    **ownerId**                         ObjectId    Unique owner _id
+    **parentId**                        ObjectId    Parent node _id (not included in Workspace)
+    **workspaceId**                     ObjectId    Associated Workspace _id (not included in Workspace)
     ================================    =========   ===========================================================================
 
 .. table::
@@ -53,20 +53,20 @@ Consumers of Nodes should tolerate the addition of new attributes and variance i
     Parameter & Location attributes     Type        Description
     ================================    =========   ===========================================================================
     **currentQuality**                  Int32       Quality code associated with current value
-    **currentStateId**                  String      State _id associated with current value
-    **currentTime**                     String      :ref:`ISO8601<time-format-iso8601>` timestamp of the current value
-    **currentValue**                    Mixed       Current value. Type inherited from _class
+    **currentStateId**                  ObjectId    State _id associated with current value
+    **currentTime**                     Date        :ref:`ISO8601<time-format-iso8601>` timestamp of the current value
+    **currentValue**                    Variable    Current value. Type inherited from _class
     **displayType**                     String      Default display type of parameter: 
                                                     *[VALUE, STATE]*
     **format**                          String      Formatting to apply to displayed value
     **oldestQuality**                   Int32       Quality code associated with oldest value
-    **oldestStateId**                   String      State _id associated with oldest value
-    **oldestTime**                      String      :ref:`ISO8601<time-format-iso8601>` timestamp of the oldest value
-    **oldestValue**                     Mixed       Oldest value. Type inherited from _class
+    **oldestStateId**                   ObjectId    State _id associated with oldest value
+    **oldestTime**                      Date        :ref:`ISO8601<time-format-iso8601>` timestamp of the oldest value
+    **oldestValue**                     Variable    Oldest value. Type inherited from _class
     **previousQuality**                 Int32       Quality code associated with oldest value
-    **previousStateId**                 String      State _id associated with previous value
-    **previousTime**                    String      :ref:`ISO8601<time-format-iso8601>` timestamp of the previous value
-    **previousValue**                   Mixed       Previous value. Type inherited from _class
+    **previousStateId**                 ObjectId    State _id associated with previous value
+    **previousTime**                    Date        :ref:`ISO8601<time-format-iso8601>` timestamp of the previous value
+    **previousValue**                   Variable    Previous value. Type inherited from _class
     **states**                          Array       Array of state configuration objects
     **statesType**                      String      States evaluation mode:
                                                     *[RANGE, DISCRETE]*
@@ -79,7 +79,7 @@ Consumers of Nodes should tolerate the addition of new attributes and variance i
     ================================    =========   ===========================================================================
     Source attributes                   Type        Description
     ================================    =========   ===========================================================================
-    **currentAttachmentId**             String      Current attachment _id associated with Attachment Source
+    **currentAttachmentId**             ObjectId    Current attachment _id associated with Attachment Source
     **currentStatus**                   String      Current status: 
                                                     *[DISABLED, FAILED, IDLE, SCHEDULED, QUEUED, CONNECTING, 
                                                     DOWNLOADING, PROCESSING, RETRYING, CONFIGURING, CONTROLLING, REMOTE]*
@@ -87,9 +87,9 @@ Consumers of Nodes should tolerate the addition of new attributes and variance i
     **firmwareVersion**                 String      Firmware version in-use by data logger
     **isEnabled**                       Boolean     Flag to enable or disable the Source
     **lastAcquireRecordCount**          Int32       Number of records acquired on last acquistion
-    **lastCommsAttempt**                String      :ref:`ISO8601<time-format-iso8601>` timestamp of the 
+    **lastCommsAttempt**                Date        :ref:`ISO8601<time-format-iso8601>` timestamp of the 
                                                     last communications attempt
-    **lastCommsSuccess**                String      :ref:`ISO8601<time-format-iso8601>` timestamp of the 
+    **lastCommsSuccess**                Date        :ref:`ISO8601<time-format-iso8601>` timestamp of the 
                                                     last successful communication with Source
     **model**                           String      Model of data logger in-use
     **pakBusAddress**                   Int32       PakBus address of Campbell data logger
@@ -118,16 +118,34 @@ Arguments
 .. table::
     :class: table-fluid
 
-    =================   =================   ================================================================
-    Argument            Example             Description
-    =================   =================   ================================================================
-    **attr**            _id,slug            *Optional.* 
-                                            Comma delimited list of attributes to include in response
-    **type**            TREE                *Optional - default is LIST* 
+    =================   =====================   ================================================================
+    Argument            Example                 Description
+    =================   =====================   ================================================================
+    **attr**            _id,slug                *Optional.* 
+                                                Comma delimited list of attributes to include in response
+    **type**            TREE                    *Optional - default is LIST* [#f1]_
 
-                                            | **LIST** returns a flat list of nodes
-                                            | **TREE** returns hierarchical list of nodes
-    =================   =================   ================================================================
+                                                | **LIST** returns a flat list of nodes
+                                                | **TREE** returns hierarchical list of nodes
+
+    **filter**          isActive($eq:true)      *Optional*. 
+                                                :ref:`Filter <api-overview-request-arguments-filter>` the 
+                                                records based on attribute value(s)
+
+    **limit**           100                     *Optional*. 
+                                                Maximum number of records to be returned
+
+    **skip**            50                      *Optional*. 
+                                                Skip the first *n* records returned. Can be used with 
+                                                ``limit`` to paginate results
+
+    **sort**            createdTime(DESC)       *Optional*. 
+                                                Comma delimited list of attributes to sort by. Optionally 
+                                                include sort direction in parentheses or default to ASC: 
+                                                *[ASC, DESC]*
+    =================   =====================   ================================================================
+
+.. [#f1] When TREE ``type`` is specified the filter, limit, skip and sort arguments are not allowed.
 
 Request
 ~~~~~~~~
@@ -351,10 +369,10 @@ Arguments
     **format**          JSON                        *Optional - Default is JSON*. 
                                                     Data format to return: *[JSON, CSV]*
 
-    **startTime**       2014-08-16T02:00:00Z        *Required*. [#f1]_
+    **startTime**       2014-08-16T02:00:00Z        *Required*. [#f2]_
                                                     :ref:`ISO8601<time-format-iso8601>` timestamp
 
-    **endTime**         2014-08-16T02:20:43Z        *Required*. [#f1]_
+    **endTime**         2014-08-16T02:20:43Z        *Required*. [#f2]_
                                                     :ref:`ISO8601<time-format-iso8601>` timestamp
 
     **limit**           100                         *Optional*. 
@@ -380,7 +398,7 @@ Arguments
                                                     :ref:`OPC Interval <relative-time>` required for aggregation.
     =================   ========================    =================================================================
 
-.. [#f1] startTime or endTime can be omitted when ``limit`` is specified.
+.. [#f2] startTime or endTime can be omitted when ``limit`` is specified.
 
 
 Request
@@ -446,7 +464,7 @@ Response
     
 Post historic data to a node
 ------------------------------
-Post historic data to a node by its **_id**. Data can be inserted in JSON (:ref:`JTS <historic-jts>`) or CSV format. Use the :ref:`Historic resource<api-resources-historic>` for posting historic data to multiple nodes in a single request.
+Post historic data to a node by its **_id**. Data can be inserted in JSON (:ref:`JTS <historic-jts>`) or CSV format. Use the :ref:`Historic resource <api-resources-historic>` for posting historic data to multiple nodes in a single request.
 
 .. note:: 
     Only available for Location and Parameter nodes.
@@ -468,11 +486,11 @@ Arguments
                                                     See all available :ref:`write mode <historic-data-import-writemode>` 
                                                     options.
 
-    **notifyMode**      LATEST                      *Optional - Default is LATEST*.
+    **notifyOn**        LATEST_ONLY                 *Optional - Default is LATEST_ONLY*.
                                                     When to generate events, raise alarms and send notifications: 
-                                                    *[NEW, LATEST, NEVER]*.
-                                                    NEW: All events newer than parameter current value. 
-                                                    LATEST: Latest event newer than parameter current value.
+                                                    *[ALL_NEWER, LATEST_ONLY, NONE]*.
+                                                    ALL_NEWER: All events newer than parameter current value. 
+                                                    LATEST_ONLY: Latest event newer than parameter current value.
 
     **columnIndex**     0                           *Optional - Default is 0*. 
                                                     Index of column in data to be associated with this parameter. Will use

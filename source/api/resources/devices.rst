@@ -24,16 +24,16 @@ Consumers of Devices should tolerate the addition of new attributes and variance
     Attribute           Type        Description
     =================   =========   ========================================================================================
     **_class**          String      Identifies resource type: *io.eagle.models.device.*\*
-    **_id**             String      Unique identifier for this device
+    **_id**             ObjectId    Unique identifier for this device
     **config**          Object      Object containing device specific configuration
-    **createdTime**     String      :ref:`ISO8601<time-format-iso8601>` timestamp the device was created
-    **datasourceId**    String      Associated Data Source _id
+    **createdTime**     Date        :ref:`ISO8601<time-format-iso8601>` timestamp the device was created
+    **datasourceId**    ObjectId    Associated Data Source _id
     **deviceKey**       String      IMEI or Unique identifier for this device
     **isConnected**     Boolean     Flag to indicate if device is currently connected
-    **lastConnected**   String      :ref:`ISO8601<time-format-iso8601>` timestamp the device last established a connection
+    **lastConnected**   Date        :ref:`ISO8601<time-format-iso8601>` timestamp the device last established a connection
     **phoneNumber**     String      Phone number associated with the device
     **software**        Object      Object containing info about the current device software
-    **workspaceId**     String      Associated Workspace _id
+    **workspaceId**     ObjectId    Associated Workspace _id
     =================   =========   ========================================================================================
 
 .. only:: not latex
@@ -51,12 +51,28 @@ Arguments
 .. table::
     :class: table-fluid
 
-    =================   =================   ================================================================
-    Argument            Example             Description
-    =================   =================   ================================================================
-    **attr**            _id,slug            *Optional.* 
-                                            Comma delimited list of attributes to include in response
-    =================   =================   ================================================================
+    =================   =====================   ================================================================
+    Argument            Example                 Description
+    =================   =====================   ================================================================
+    **attr**            _id,phoneNumber         *Optional*. 
+                                                Comma delimited list of attributes to include in response
+
+    **filter**          isConnected($eq:true)   *Optional*. 
+                                                :ref:`Filter <api-overview-request-arguments-filter>` the 
+                                                records based on attribute value(s)
+
+    **limit**           100                     *Optional*. 
+                                                Maximum number of records to be returned
+
+    **skip**            50                      *Optional*. 
+                                                Skip the first *n* records returned. Can be used with 
+                                                ``limit`` to paginate results
+
+    **sort**            createdTime(DESC)       *Optional*. 
+                                                Comma delimited list of attributes to sort by. Optionally 
+                                                include sort direction in parentheses or default to ASC: 
+                                                *[ASC, DESC]*
+    =================   =====================   ================================================================
 
 Request
 ~~~~~~~~
@@ -80,6 +96,7 @@ Response
         {
             "_class": "io.eagle.models.device.Device",
             "_id": "53ce0b6a0eba8dc46900000f",
+            "createdTime": "2014-09-08T04:13:32.488Z",
             "datasourceId": "541a45c1d07ac441473b0fc3",
             "deviceKey": "123456789012347",
             "isConnected": true,
@@ -140,6 +157,7 @@ Response
                     "host": ""
                 }
             },
+            "createdTime": "2014-09-08T05:24:15.461Z",
             "datasourceId": "542500c063c2b8fa6bec342e",
             "deviceKey": "123456789012313",
             "isConnected": false,
