@@ -52,6 +52,7 @@ Consumers of Nodes should tolerate the addition of new attributes and variance i
     ================================    =========   ===========================================================================
     Parameter & Location attributes     Type        Description
     ================================    =========   ===========================================================================
+    **controlValue**                    Variable    Pending control value. Type inherited from _class
     **currentQuality**                  Int32       Quality code associated with current value
     **currentStateId**                  ObjectId    State _id associated with current value
     **currentTime**                     Date        :ref:`ISO8601<time-format-iso8601>` timestamp of the current value
