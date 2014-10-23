@@ -27,7 +27,7 @@ Consumers of Nodes should tolerate the addition of new attributes and variance i
     **_class**                          String      Identifies resource type: *io.eagle.models.node.*\*
     **_id**                             ObjectId    Unique identifier for this node
     **alarms**                          Object      Alarm configuration and status
-    **createdTime**                     Date        :ref:`ISO8601<time-format-iso8601>` timestamp the node was created
+    **createdTime**                     Time        :ref:`ISO8601<time-format-iso8601>` timestamp the node was created
     **isActive**                        Boolean     Flag to indicate if node is active
     **metadata**                        Array       Array of metadata fields and values
     **name**                            String      Name of node
@@ -55,18 +55,18 @@ Consumers of Nodes should tolerate the addition of new attributes and variance i
     **controlValue**                    Variable    Pending control value. Type inherited from _class
     **currentQuality**                  Int32       Quality code associated with current value
     **currentStateId**                  ObjectId    State _id associated with current value
-    **currentTime**                     Date        :ref:`ISO8601<time-format-iso8601>` timestamp of the current value
+    **currentTime**                     Time        :ref:`ISO8601<time-format-iso8601>` timestamp of the current value
     **currentValue**                    Variable    Current value. Type inherited from _class
     **displayType**                     String      Default display type of parameter: 
                                                     *[VALUE, STATE]*
     **format**                          String      Formatting to apply to displayed value
     **oldestQuality**                   Int32       Quality code associated with oldest value
     **oldestStateId**                   ObjectId    State _id associated with oldest value
-    **oldestTime**                      Date        :ref:`ISO8601<time-format-iso8601>` timestamp of the oldest value
+    **oldestTime**                      Time        :ref:`ISO8601<time-format-iso8601>` timestamp of the oldest value
     **oldestValue**                     Variable    Oldest value. Type inherited from _class
     **previousQuality**                 Int32       Quality code associated with oldest value
     **previousStateId**                 ObjectId    State _id associated with previous value
-    **previousTime**                    Date        :ref:`ISO8601<time-format-iso8601>` timestamp of the previous value
+    **previousTime**                    Time        :ref:`ISO8601<time-format-iso8601>` timestamp of the previous value
     **previousValue**                   Variable    Previous value. Type inherited from _class
     **states**                          Array       Array of state configuration objects
     **statesType**                      String      States evaluation mode:
@@ -88,9 +88,9 @@ Consumers of Nodes should tolerate the addition of new attributes and variance i
     **firmwareVersion**                 String      Firmware version in-use by data logger
     **isEnabled**                       Boolean     Flag to enable or disable the Source
     **lastAcquireRecordCount**          Int32       Number of records acquired on last acquistion
-    **lastCommsAttempt**                Date        :ref:`ISO8601<time-format-iso8601>` timestamp of the 
+    **lastCommsAttempt**                Time        :ref:`ISO8601<time-format-iso8601>` timestamp of the 
                                                     last communications attempt
-    **lastCommsSuccess**                Date        :ref:`ISO8601<time-format-iso8601>` timestamp of the 
+    **lastCommsSuccess**                Time        :ref:`ISO8601<time-format-iso8601>` timestamp of the 
                                                     last successful communication with Source
     **model**                           String      Model of data logger in-use
     **pakBusAddress**                   Int32       PakBus address of Campbell data logger

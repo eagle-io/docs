@@ -26,11 +26,11 @@ Consumers of Devices should tolerate the addition of new attributes and variance
     **_class**          String      Identifies resource type: *io.eagle.models.device.*\*
     **_id**             ObjectId    Unique identifier for this device
     **config**          Object      Object containing device specific configuration
-    **createdTime**     Date        :ref:`ISO8601<time-format-iso8601>` timestamp the device was created
+    **createdTime**     Time        :ref:`ISO8601<time-format-iso8601>` timestamp the device was created
     **datasourceId**    ObjectId    Associated Data Source _id
     **deviceKey**       String      IMEI or Unique identifier for this device
     **isConnected**     Boolean     Flag to indicate if device is currently connected
-    **lastConnected**   Date        :ref:`ISO8601<time-format-iso8601>` timestamp the device last established a connection
+    **lastConnected**   Time        :ref:`ISO8601<time-format-iso8601>` timestamp the device last established a connection
     **phoneNumber**     String      Phone number associated with the device
     **software**        Object      Object containing info about the current device software
     **workspaceId**     ObjectId    Associated Workspace _id

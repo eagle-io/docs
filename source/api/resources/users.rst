@@ -28,7 +28,7 @@ Consumers of Users should tolerate the addition of new attributes and variance i
     **contact**         Object      
     | **email**         String      Email address of user
     | **phone**         String      Fully qualified international phone number
-    **createdTime**     Date        :ref:`ISO8601<time-format-iso8601>` timestamp the user was created.
+    **createdTime**     Time        :ref:`ISO8601<time-format-iso8601>` timestamp the user was created.
     **name**            Object      
     | **first**         String      First name of user
     | **last**          String      Last name of user

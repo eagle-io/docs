@@ -183,7 +183,7 @@ Attributes are assigned specific *Data types* which are enforced for all request
                                                         **Double** for double precision floating point numbers
     **Boolean**         true                            *true* or *false*
     **String**          "Valve Open"                    Any text surrounded in quotes
-    **Date**            "2014-09-24T19:48:32.000Z"      :ref:`ISO8601<time-format-iso8601>` timestamp surrounded in quotes
+    **Time**            "2014-09-24T19:48:32.000Z"      :ref:`ISO8601<time-format-iso8601>` timestamp surrounded in quotes
     **ObjectId**        "53ce0b6a0eba8dc46900000f"      Unique identifier surrounded in quotes
     **Array**           ["item1", "item2"]              List of items. May contain any data type but generally not mixed
     **Object**          {"key": "value"}                Nested attributes
@@ -245,17 +245,17 @@ The following operators can be used when specifying filter criteria. Use is limi
     =================   =========================================   ===========================
     Operator            Supported data types                        Description
     =================   =========================================   ===========================
-    **$gt**             Number, Date                                Greater than
+    **$gt**             Number, Time                                Greater than
 
-    **$gte**            Number, Date                                Greater than or equal to
+    **$gte**            Number, Time                                Greater than or equal to
 
-    **$lt**             Number, Date                                Less than
+    **$lt**             Number, Time                                Less than
 
-    **$lte**            Number, Date                                Less than or equal to
+    **$lte**            Number, Time                                Less than or equal to
 
-    **$eq**             Number, Date, Boolean, String, ObjectId     Equal
+    **$eq**             Number, Time, Boolean, String, ObjectId     Equal
 
-    **$ne**             Number, Date, Boolean, String, ObjectId     Not equal
+    **$ne**             Number, Time, Boolean, String, ObjectId     Not equal
 
     **$match**          String                                      Text match
     =================   =========================================   ===========================
@@ -272,9 +272,9 @@ An example of a multi-criteria filter request for retrieving nodes with (name ma
 .. note:: 
     If the attribute data type is **Variable** you must explicitly specify the data type of the operand. 
 
-Example specifying currentValue operand as a Date::
+Example specifying currentValue operand as a Time::
     
-    /?filter=currentValue($eq:Date(2015-01-01T00:00:00Z))
+    /?filter=currentValue($eq:Time(2015-01-01T00:00:00Z))
 
 .. only:: not latex
 
