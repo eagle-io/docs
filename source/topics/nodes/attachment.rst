@@ -2,7 +2,7 @@
 
 Attachment
 ==========
-|icon-attachment| Attachments include images, documents and other files stored in Eagle.io. New attachments can be uploaded manually by a user or acquired via an Attachment Source. Attachments can be added inside Workspaces, Locations, Groups and Attachment Sources.
+|icon-attachment| Attachments include images, documents and other files stored in eagle.io. New attachments can be uploaded manually by a user or acquired via an Attachment Source. Attachments can be added inside Workspaces, Locations, Groups and Attachment Sources.
 
 To view attachments navigate to :menuselection:`List View --> Attachments`. You will see a list of all attachments within the Selected Node. Requires *view attachments* permission.
 

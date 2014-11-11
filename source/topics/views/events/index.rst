@@ -5,7 +5,7 @@ Events
 |icon-events| Every interaction (user and system generated) is recorded in the Events log. Use the Events View to quickly audit the system, a user or history of alarms.
 
 .. note::
-	The view displays content based on the Selected Node in the Workspaces Menu. Use filters to quickly target specific parameters or review alarms.
+	The view displays content based on the Selected Node in the Workspaces Tree. Use filters to quickly target specific parameters or review alarms.
 
 The events list is live updating and always displayed in reverse chronological order. New events are automatically added to the top of the list. Scroll down the list to view older events.
 

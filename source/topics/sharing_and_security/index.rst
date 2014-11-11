@@ -7,7 +7,7 @@ Every interaction with the system is authenticated to ensure the user performing
 
 The account owner can specify a list of :ref:`administrators <management-security-administrators>` that automatically receive unrestricted access to the account and its Workspaces. Only trusted users should be added as administrators.
 
-Workspaces can be shared with anyone. Users new to Eagle.io will receive an email notification prompting them to confirm their email address and configure their personal preferences. Select *Sharing* from the Workspace Node context menu to display the Sharing/Properties dialog.
+Workspaces can be shared with anyone. Users new to eagle.io will receive an email notification prompting them to confirm their email address and configure their personal preferences. Select *Sharing* from the Workspace Node context menu to display the Sharing/Properties dialog.
 See :ref:`Workspace Sharing <node-configuration-workspace-sharing>` for full details
 
 .. note::

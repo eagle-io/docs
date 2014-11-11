@@ -3,7 +3,7 @@ Map
 |icon-map| Map provides a fully featured interactive interface for displaying location based data.
 
 .. note::
-	The view displays content based on the Selected Node in the Workspaces Menu. Use filters to quickly target specific parameters or review alarms.
+	The view displays content based on the Selected Node in the Workspaces Tree. Use filters to quickly target specific parameters or review alarms.
 
 .. only:: not latex
 
@@ -193,7 +193,7 @@ Adding a new Location marker
 	.. image:: map_location_add_dialog.png
 		:scale: 70 %
 
-*Drag and Drop* Locations directly from the Workspaces Menu (not supported on touch devices).
+*Drag and Drop* Locations directly from the Workspaces Tree (not supported on touch devices).
 
 .. only:: not latex
 

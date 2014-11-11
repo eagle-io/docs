@@ -235,7 +235,7 @@ Parameter Assignment
 	Parameters can be re-assigned to new Series at any time without loosing existing historic data.
 
 	The series icon indicates the :ref:`type of parameter <node-types>` that will be created.
-	Rename and Delete operations should be performed from the Workspaces Menu.
+	Rename and Delete operations should be performed from the Workspaces Tree.
 
 Historic
 ~~~~~~~~

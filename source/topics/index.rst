@@ -1,4 +1,4 @@
-Using Eagle.io
+Using eagle.io
 ==============
 
 Introductions to all the key parts of eagle.io you’ll need to know:
@@ -6,7 +6,7 @@ Introductions to all the key parts of eagle.io you’ll need to know:
 .. toctree::
    :maxdepth: 2
 
-   workspaces_menu/index
+   workspaces_tree/index
    views/index
    nodes/index
    user_preferences/index

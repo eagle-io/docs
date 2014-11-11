@@ -6,7 +6,7 @@ General
 
 What browsers do you support and do I need any special software?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-We support the latest versions of all major browsers: Chrome 16+, Firefox 16+, Internet Explorer 10+, Safari 6+. You do not need any special plugins or addons, just ensure you have Cookies and Javascript enabled. The interface has been designed to work seemlessly across all modern phones and computing devices.
+We support the latest versions of all major browsers: Chrome 16+, Firefox 16+, Internet Explorer 10+, Safari 6+. You do not need any special plugins or addons, just ensure you have Cookies and Javascript enabled. The interface has been designed to work seamlessly across all modern phones and computing devices.
 
 .. |google-chrome-html| image:: chrome.png
 	:scale: 50%
@@ -17,11 +17,11 @@ We support the latest versions of all major browsers: Chrome 16+, Firefox 16+, I
 
 .. only:: not latex
 
-	|google-chrome-html| We recommend `Google Chrome <https://www.google.com/intl/en/chrome/browser/>`_ for the best Eagle.io experience.
+	|google-chrome-html| We recommend `Google Chrome <https://www.google.com/intl/en/chrome/browser/>`_ for the best eagle.io experience.
 
 .. only:: latex
 
-	|google-chrome-latex| We recommend `Google Chrome <https://www.google.com/intl/en/chrome/browser/>`_ for the best Eagle.io experience.
+	|google-chrome-latex| We recommend `Google Chrome <https://www.google.com/intl/en/chrome/browser/>`_ for the best eagle.io experience.
 
 
 What languages do you support?
@@ -67,21 +67,24 @@ Support for a wide range of additional data loggers and devices is coming soon. 
 
 What connection options are supported?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-You can use a variety of transport options to connect your data logger to Eagle.io including:
+You can use a variety of transport options to connect your data logger to eagle.io including:
 
 TCP Client
 	Connect to any device with a Public IP Address or Domain name (including DDNS)
 
 TCP Callback or Stream
-	Allow any remote device to establish an IP connection to Eagle.io using a special identification number. You can use your modem or data logger to send the Id on initial connection, or include a unique identifier in the data stream.
+	Allow any remote device to establish an IP connection to eagle.io using a special identification number. You can use your modem or data logger to send the Id on initial connection, or include a unique identifier in the data stream.
 
 Scout 
-	The *Scout modem* is the easiest way to connect your data logger to Eagle.io. The Scout takes any standard internet ready SIM Card without the need for fixed IP addresses and has a range of smart features including inbuilt GPS, signal strength monitoring, event based reporting and low power mode.
+	The *Scout modem* is the easiest way to connect your data logger to eagle.io. The Scout takes any standard internet ready SIM Card without the need for fixed IP addresses and has a range of smart features including inbuilt GPS, signal strength monitoring, event based reporting and low power mode.
 
 
 What level of functionality do you provide for connected data loggers?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Eagle.io provides much more than just data retrieval and display. From Eagle.io you can upload programs and firmware (including network wide updates in one click), perform Control operations (setting of public table variables in Campbell Scientific data loggers), automatically create/update/merge parameters as programs change, automatic clock sync with timezone and daylight savings support, and a range of other smart features designed to make managing your network of data loggers easier than ever before.
+- Upload programs and firmware (including network wide updates in one click)
+- Perform Control operations (setting of public table variables in Campbell Scientific data loggers)
+- Create/update/merge parameters automatically as programs change
+- Synchronize device clock with timezone and daylight savings support
 
 Can I connect to my data logger using 3rd party software?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -122,13 +125,13 @@ You can also import and upload data manually from local files.
 
 Can I upload other types of files?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Eagle.io supports uploading files of any type. You can manually upload files through the interface or use an :ref:`Attachment Source <node-configuration-attachmentsource>` for automated uploads. All content and files uploaded must comply with our `Acceptable Use Policy <https://eagle.io/policies/acceptableuse>`_.
+Files of any type can be uploaded through the interface or use an :ref:`Attachment Source <node-configuration-attachmentsource>` for automated uploads. All content and files uploaded must comply with our `Acceptable Use Policy <https://eagle.io/policies/acceptableuse>`_.
 
 
 Cameras
 -------
 
-Do you support cameras sending images or video files to Eagle.io?
+Do you support cameras sending images or video files to eagle.io?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Yes, you can create an :ref:`Attachment Source <node-configuration-attachmentsource>` which accepts files of any type. The files are stored as Attachments and you can set your Locations to display the most recent images uploaded. Images and video can be reviewed in the media gallery or downloaded for offline viewing.
 

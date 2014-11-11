@@ -136,7 +136,7 @@ Status messages are returned for certain requests that have been accepted but do
 HTTP Compression
 ------------------
 
-Eagle.io supports HTTP compression on both incoming and outgoing requests. Compression is highly recommended where large requests are being submitted.
+HTTP compression is supported on both incoming and outgoing requests. Compression is highly recommended where large requests are being submitted.
 
 We use the standard HTTP method of specifying compression encoding, with support for the gzip compression schema.
 

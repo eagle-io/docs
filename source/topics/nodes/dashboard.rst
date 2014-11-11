@@ -134,12 +134,12 @@ The general section allows you to configure layout and display options for the T
 
 Links
 ``````
-Links assign Nodes in the Workspaces Menu to Tiles so the corresponding data can be displayed and updated live.
+Links assign Nodes in the Workspaces Tree to Tiles so the corresponding data can be displayed and updated live.
 Each type of Tile may enforce specific Link requirements. For example the Location map tile can only be linked to a single Location Node. Some tiles allow for multiple links to be assigned. The link label is user configurable and displayed on certain tiles. ie. Historic chart legend, etc.
 
 Dashboard tiles can not be linked to Nodes in a different Workspace.
 
-You can *Change* the linked Node or Click the *x* to remove the link completely. Use the *Add link* button to display the Workspaces Menu and select a new Node to link.
+You can *Change* the linked Node or Click the *x* to remove the link completely. Use the *Add link* button to display the Workspaces Tree and select a new Node to link.
 
 .. only:: not latex
 
@@ -157,7 +157,7 @@ You can *Change* the linked Node or Click the *x* to remove the link completely.
 
 Drag and Drop Links
 --------------------
-Nodes can be dragged with a mouse directly from the Workspaces Menu and dropped onto applicable Tiles (indicated with drop-accept and drop-blocked mouse cursor icons).
+Nodes can be dragged with a mouse directly from the Workspaces Tree and dropped onto applicable Tiles (indicated with drop-accept and drop-blocked mouse cursor icons).
 
 .. only:: not latex
 
@@ -186,7 +186,7 @@ Nodes can be dragged with a mouse directly from the Workspaces Menu and dropped 
 
 Copy/Paste Dashboards
 --------------------------
-|icon-paste| Copy/Paste operations can be performed from the Workspaces Menu to quickly duplicate one or more dashboards. Links are automatically re-assigned to corresponding Nodes relative to the Dashboard in the destination where they exist. ie. You can copy/paste complete Locations containing Dashboards without manually re-assigning all Links.
+|icon-paste| Copy/Paste operations can be performed from the Workspaces Tree to quickly duplicate one or more dashboards. Links are automatically re-assigned to corresponding Nodes relative to the Dashboard in the destination where they exist. ie. You can copy/paste complete Locations containing Dashboards without manually re-assigning all Links.
 
 Move Dashboards
 --------------------

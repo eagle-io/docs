@@ -4,7 +4,7 @@ List
 |icon-list| Intuitive categorised lists provide quick access to the data for your most important Nodes: Locations, Sources, Parameters and Attachments.
 
 .. note::
-    The view displays content based on the Selected Node in the Workspaces Menu. Use filters to quickly target specific parameters or review alarms.
+    The view displays content based on the Selected Node in the Workspaces Tree. Use filters to quickly target specific parameters or review alarms.
 
 Sort rows in the list by clicking on column headers. 
 
@@ -131,7 +131,7 @@ Status
     QUEUED
         The Source is queued for communication.
     CONNECTING
-        Eagle.io is currently attempting to connect to the Source.
+        Attempting to connect to the Source.
     CONTROLLING
         Control operations are being performed on the connected Source.
     DOWNLOADING
@@ -143,7 +143,7 @@ Status
     PROCESSING
         Data is being processed after being downloaded from the connected Source.
     CONFIGURING
-        Eagle.io is currently sending configuration to the Source.
+        Sending configuration to the Source.
     REMOTE
         Remote access is enabled and a client is connected. Acquisition, Control and Configure operations will not be available during this time.
 

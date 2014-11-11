@@ -135,29 +135,29 @@ Alarm Indicators
 -----------------
 Alarms are always shown in *RED*. When an alarm has been Acknowledged it will be shown in *ORANGE*. When the Alarm is Cleared (when the condition or problem has returned to normal, or when the user has manually cleared the alarm) the Node or Content is displayed with its normal color. See below for an example of alarm content.
 
-Workspaces Menu
+Workspaces Tree
 ~~~~~~~~~~~~~~~
-Alarms are shown in the Workspaces Menu as numbers indicating the total count of unacknowledged alarms on or within the Node. Expanding the Nodes will show the individual alarm counts next to each contained Node.
+Alarms are shown in the Workspaces Tree as numbers indicating the total count of unacknowledged alarms on or within the Node. Expanding the Nodes will show the individual alarm counts next to each contained Node.
 
 .. only:: not latex
 
-	.. image:: workspaces_menu_alarm_1.png
+	.. image:: workspaces_tree_alarm_1.png
 		:scale: 50 %
 
 	| 
 
-	.. image:: workspaces_menu_alarm_2.png
+	.. image:: workspaces_tree_alarm_2.png
 		:scale: 50 %
 
 	| 
 
 .. only:: latex
 
-	.. image:: workspaces_menu_alarm_1.png
+	.. image:: workspaces_tree_alarm_1.png
 		:scale: 40 %
 
 
-	.. image:: workspaces_menu_alarm_2.png
+	.. image:: workspaces_tree_alarm_2.png
 		:scale: 40 %
 
 

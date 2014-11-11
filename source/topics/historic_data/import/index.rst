@@ -3,7 +3,7 @@
 Import
 =======
 
-|icon-import| Historic Import is accessible from the Data Source context menu in the Workspaces Menu. You can upload/import historic data from a locally accessible file, into New or Existing :ref:`Parameters <node-configuration-parameter>`, or update the historic coordinate data for :ref:`Locations <node-configuration-location>`.
+|icon-import| Historic Import is accessible from the Data Source context menu in the Workspaces Tree. You can upload/import historic data from a locally accessible file, into New or Existing :ref:`Parameters <node-configuration-parameter>`, or update the historic coordinate data for :ref:`Locations <node-configuration-location>`.
 
 For automatic collection of your data you should configure the :ref:`Connection <node-configuration-datasource-file-connection>` and :ref:`Collection <node-configuration-datasource-file-collection>` properties of a file Data Source. 
 
@@ -125,7 +125,7 @@ Location Coordinates
 Parameter Assignment
     Assign Series to New or Existing parameters by toggling the New/Existing button (only enable when there are existing Parameters matching the data type of the Series). Uncheck any Series you do not want want to import.
 
-    Any newly created parameters will be created within the Source and shown as GRAYED out in the Workspaces Menu and Content Views to distinguish them from parameters assigned to series being automatically collected from datalogger or file Data Sources.
+    Any newly created parameters will be created within the Source and shown as GRAYED out in the Workspaces Tree and Content Views to distinguish them from parameters assigned to series being automatically collected from datalogger or file Data Sources.
 
     Parameters can be re-assigned to new Series at any time without loosing existing historic data.
 

@@ -6,7 +6,7 @@ Dash
 
 Overview
 --------
-|icon-dash-overview| The dashboards overview is displayed when a container Node is selected in the Workspaces Menu. All dashboard Nodes within the Selected Node are shown. Click on a dashboard to select it for display. When viewing an individual Dashboard you can click the Overview button to get back to this view.
+|icon-dash-overview| The dashboards overview is displayed when a container Node is selected in the Workspaces Tree. All dashboard Nodes within the Selected Node are shown. Click on a dashboard to select it for display. When viewing an individual Dashboard you can click the Overview button to get back to this view.
 
 .. only:: not latex
 

@@ -1,7 +1,7 @@
 Chart
 ======
 
-|icon-chart| Historic chart is accessible from the List View toolbar and Node context menus. The Historic Chart provides the same functionality as the charts displayed in :ref:`Chart View <view-chart>` but can be displayed directly from the Workspaces Menu, Map or List View without navigating away from your current view.
+|icon-chart| Historic chart is accessible from the List View toolbar and Node context menus. The Historic Chart provides the same functionality as the charts displayed in :ref:`Chart View <view-chart>` but can be displayed directly from the Workspaces Tree, Map or List View without navigating away from your current view.
 
 Use the date range selector below the chart to adjust the date range being shown on the chart.
 Refer to :ref:`working with charts <working-with-charts>` for full details on chart interaction and functionality.

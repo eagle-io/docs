@@ -10,7 +10,7 @@ Contact
 
 **Phone** number should follow the standard `international format`_ starting with '+' and including country and area code.
 
-**Email** address is used for all account related correspondance with Eagle.io. This email address may be different to your personal profile email.
+**Email** address is used for all account related correspondance with eagle.io. This email address may be different to your personal profile email.
 
 .. note:: 
 	Public enquires will also be sent to this address for Premium and Enterprise accounts.

@@ -5,7 +5,7 @@ JSON Time Series
 
 `JSON <http://json.org>`_ Time Series (JTS) is a lightweight data-interchange format for :term:`time series <time series>` data. It has been designed to be highly readable, parsable and extendable.
 
-Eagle.io natively supports JTS documents, which can be easily imported and exported via the :ref:`HTTP API <api>`.
+The JTS document format is nativey supported by eagle.io which can be easily imported and exported via the :ref:`HTTP API <api>`.
 
 Example JTS document::
 

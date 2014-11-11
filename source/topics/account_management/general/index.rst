@@ -63,7 +63,7 @@ Password
 	Password for the associated user account (or leave blank for none).
 
 .. note::
-	Your data and configuration is always backed up on the Eagle.io Network. You only need to enable account backups if you would like to keep an offsite copy of the data.
+	Your data and configuration is always backed up on the eagle.io Network. You only need to enable account backups if you would like to keep an offsite copy of the data.
 
 .. raw:: latex
 

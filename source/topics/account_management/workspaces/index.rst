@@ -24,4 +24,4 @@ The Usage Overview shows a current snapshot of the Nodes being used for each Wor
 You can add a new Workspace, rename or remove existing Workspaces or configure Sharing and Security via the properties icons.
 
 .. note:: 
-	Workspaces can be created, renamed or modified directly from the Workspaces Menu.
+	Workspaces can be created, renamed or modified directly from the Workspaces Tree.

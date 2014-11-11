@@ -1,4 +1,4 @@
-Eagle.io at a glance
+Introducing eagle.io
 ====================
 
 .. _overview:
@@ -8,10 +8,10 @@ Cloud-based, collaborative, real-time monitoring
 
 .. image:: network.jpg
 
-Eagle.io is a secure, reliable, easy to use cloud-based data monitoring service.
-Whether you're working with simple data files or managing a fleet of :term:`data loggers <data logger>`, Eagle.io has you covered.
+Introducing eagle.io, the secure, reliable, easy to use cloud-based data monitoring service.
+Whether you're working with simple data files or managing a fleet of :term:`data loggers <data logger>`, eagle.io has you covered.
 
-With real-time communications, collaboration and instant updates built into the core Eagle.io has everything you've always wanted and more.
+With real-time communications, collaboration and instant updates built into the core eagle.io has everything you've always wanted and more.
 The lightning fast interface has been designed to work across all modern phones and computing devices with no software to install and no page reloads.
 
 
@@ -84,28 +84,28 @@ The layout of these sections will vary depending on the screen size of your devi
 5. View Selector
 6. Toolbar
 7. Content Area
-8. Workspaces Menu
-9. Workspaces Menu show/hide button
+8. Workspaces Tree
+9. Workspaces Tree show/hide button
 
 
-Selecting Nodes in the Workspaces Menu
+Selecting Nodes in the Workspaces Tree
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-The Workspaces menu displays all the Workspaces and associated content you have access to. Each item in this menu is called a Node. The highlighted item is referred to as the Selected Node.
+The Workspaces Tree displays all the Workspaces and associated content you have access to. Each item in this menu is called a Node. The highlighted item is referred to as the Selected Node.
 
 Most Nodes are hierarchical and may also contain Nodes themselves. The *Workspaces* label is the best example of this as its referred to as the Base Node and contains all the Workspace Nodes.
 
-*Example Workspaces Menu showing hierarchy*
+*Example Workspaces Tree showing hierarchy*
 
 .. only:: not latex
 
-	.. image:: workspaces_menu.png
+	.. image:: workspaces_tree.png
 		:scale: 50 %
 
 	| 
 
 .. only:: latex
 
-	.. image:: workspaces_menu.png
+	.. image:: workspaces_tree.png
 		:scale: 40 %
 
 
@@ -116,7 +116,7 @@ Selecting a Node focuses your View. Only the selected Node and the Nodes it cont
 You can easily show all content by selecting the Base Node.
 
 .. note::
-	The Workspaces Menu will be hidden by default when displayed on small screens. You can see the Selected Node displayed in the Status Bar. Double-click or Double-tap the status bar to quickly reveal the Workspaces Menu. Alternatively you can use the Workspaces Menu show/hide button.
+	The Workspaces Tree will be hidden by default when displayed on small screens. You can see the Selected Node displayed in the Status Bar. Double-click or Double-tap the status bar to quickly reveal the Workspaces Tree. Alternatively you can use the Workspaces Tree show/hide button.
 
 *Most common types of Nodes:*
 
@@ -164,7 +164,7 @@ Use the View Selector to change the View. You will notice the Content Area and T
 	Use the Events View to quickly audit the system, a user or history of alarms.
 
 |icon-dash| Dash 
-	The Dash is for viewing the customised graphical dashboards and also provides an overview of all dashboard nodes available based on the Selected Node in the Workspaces menu. 
+	The Dash is for viewing the customised graphical dashboards and also provides an overview of all dashboard nodes available based on the Selected Node in the Workspaces Tree. 
 
 
 User Menu
@@ -174,7 +174,7 @@ The User Menu provides quick access to the User Profile, Account Management, Log
 
 Context Menus
 ~~~~~~~~~~~~~
-Context menus are built into the interface and provide quick access to navigation, operations and configuration for their associated elements. Right-click or long-press on a Node in the Workspaces Menu or an item in the Content Area (ie. Map marker, List item, etc.) to display it's associated context menu.
+Context menus are built into the interface and provide quick access to navigation, operations and configuration for their associated elements. Right-click or long-press on a Node in the Workspaces Tree or an item in the Content Area (ie. Map marker, List item, etc.) to display it's associated context menu.
 
 *Example Context menu shown for Map marker*
 
@@ -227,7 +227,7 @@ You can hover, click or touch the help icon to show the help popup - many of whi
 
 Offline use
 -----------
-Eagle.io requires an internet connection for use. A disconnected notice will be displayed when the connection to the servers has failed. Normal operation will resume once the connection has been re-established. 
+An internet connection is required. If the connection to eagle.io has failed a disconnected notice will be displayed. Normal operation will resume once the connection has been re-established. 
 
 .. only:: not latex
 
