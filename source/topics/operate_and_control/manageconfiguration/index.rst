@@ -81,10 +81,10 @@ Run always
     Send a pre-compiled (.bin) CR200 program to the logger and run the program immediately and on startup.
 
 
-Campbell PakBus CR800/CR1000
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Campbell PakBus CR800/CR1000/CR6
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Run always
-    Send a CR800 (.cr8) / CR1000 (.cr1) program to the logger and run the program immediately and on startup.
+    Send a CR800 (.cr8), CR1000 (.cr1) or CR6 (.cr6) program to the logger and run the program immediately and on startup.
 
 Run always (preserve data)
     Send a program to the logger and run the program immediately and on startup. Data tables will not be reset if possible.

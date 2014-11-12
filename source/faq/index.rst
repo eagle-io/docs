@@ -36,7 +36,7 @@ What types of data loggers, PLCs and RTUs are supported?
 We support the following range of dataloggers:
 
 Campbell Scientific
-	Data loggers that use the PakBus protocol including the CR200, CR800 and CR1000 series.
+	Data loggers that use the PakBus protocol including the CR200, CR800, CR1000 and CR6 series.
 
 .. only:: not latex
 
