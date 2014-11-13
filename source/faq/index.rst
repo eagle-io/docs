@@ -33,10 +33,10 @@ Data Loggers
 
 What types of data loggers, PLCs and RTUs are supported?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-We support the following range of dataloggers:
+We support the following range of data loggers:
 
 Campbell Scientific
-	Data loggers that use the PakBus protocol including the CR200, CR800, CR1000 and CR6 series.
+	Campbell PakBus loggers including the CR200, CR800, CR1000 and CR6 series.
 
 .. only:: not latex
 
@@ -48,7 +48,53 @@ Campbell Scientific
 	.. image:: datalogger_campbell_pakbus.jpg
 		:scale: 75 %
 
-WaterLog Storm3
+dataTaker
+	Thermo Fisher Scientific DT80 range.
+
+.. only:: not latex
+
+	.. image:: datalogger_datataker.jpg
+		:scale: 50 %
+
+.. only:: latex
+
+	.. image:: datalogger_datataker.jpg
+		:scale: 70 %
+
+| 
+
+Generic
+	Virtually any data logger that can *Email* or *FTP* data in CSV format.
+
+.. only:: not latex
+
+	.. image:: datalogger_generic.jpg
+		:scale: 50 %
+
+.. only:: latex
+
+	.. image:: datalogger_generic.jpg
+		:scale: 40 %
+
+| 
+
+Spider
+	Halytech Spider SMS and microSpider range.
+
+.. only:: not latex
+
+	.. image:: datalogger_halytech_spider.jpg
+		:scale: 50 %
+
+.. only:: latex
+
+	.. image:: datalogger_halytech_spider.jpg
+		:scale: 70 %
+
+| 
+
+WaterLog
+	WaterLog Storm3 series.
 
 .. only:: not latex
 

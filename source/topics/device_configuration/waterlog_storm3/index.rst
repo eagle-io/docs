@@ -6,15 +6,12 @@ The WaterLog Storm3 data logger can be configured to send data to eagle.io in a 
 
 Source configuration
 --------------------
-You need to configure your Data Source to use the TCP File Server transport. See :ref:`configuring a Data Source <node-configuration-datasource-datalogger>` for full details.
 
-.. raw:: latex
-
-    \vspace{-10pt}
+1. Create a :ref:`Data Source<node-configuration-datasource-datalogger>` and select *Data logger* as the Source Type. Choose *WaterLog* from the list and click Next.
 
 .. only:: not latex
 
-    .. image:: waterlog_storm3_connection.png
+    .. image:: waterlog_storm3_wizard_1.png
         :scale: 50 %
 
     | 
@@ -23,8 +20,59 @@ You need to configure your Data Source to use the TCP File Server transport. See
     
     | 
 
-    .. image:: waterlog_storm3_connection.png
+    .. image:: waterlog_storm3_wizard_1.png
 
+2. Choose the *Model* of the *WaterLog* logger and specify the number of sensors connected (this can be changed later). Click Next.
+
+.. only:: not latex
+
+    .. image:: waterlog_storm3_wizard_2.png
+        :scale: 50 %
+
+    | 
+
+.. only:: latex
+    
+    | 
+
+    .. image:: waterlog_storm3_wizard_2.png
+
+3. Select *TCP File Server* as the transport type and a *Site Id* will be automatically generated. Select the timezone of the logger's clock and click Next.
+
+.. only:: not latex
+
+    .. image:: waterlog_storm3_wizard_3.png
+        :scale: 50 %
+
+    | 
+
+.. only:: latex
+    
+    | 
+
+    .. image:: waterlog_storm3_wizard_3.png
+
+4. Specify the parameter names for each connected sensor and optionally assign units. Click Finish to complete the setup. 
+
+.. only:: not latex
+
+    .. image:: waterlog_storm3_wizard_4.png
+        :scale: 50 %
+
+    | 
+
+.. only:: latex
+    
+    | 
+
+    .. image:: waterlog_storm3_wizard_4.png
+
+.. note:: 
+    You can reconfigure the number of sensors, ordering of sensors and Site Id from the :ref:`Data Source<node-configuration-datasource-datalogger>` properties dialog after creation.
+
+.. only:: not latex
+
+    |
 
 Device settings
 ---------------
@@ -35,7 +83,7 @@ Overview
 The *System Overview* section accessible from the *Home* menu requires the following settings to be applied:
 
 Site ID
-    Enter the unique identification code generated during Data Source creation.
+    Use the the unique *Site Id* identification code generated during Data Source creation.
 
 System Date/Time
     Ensure the correct local time is set in the device. You should set the timezone of the Data Source to match your local timezone.
@@ -46,7 +94,7 @@ System Date/Time
 
 .. only:: not latex
 
-    .. image:: waterlog_storm3_overview.png
+    .. image:: waterlog_storm3_device_1.png
         :scale: 50 %
 
     | 
@@ -55,7 +103,7 @@ System Date/Time
 
     | 
 
-    .. image:: waterlog_storm3_overview.png
+    .. image:: waterlog_storm3_device_1.png
 
 
 Storm Central Setup
@@ -83,7 +131,7 @@ Date/Time Format
 
 .. only:: not latex
 
-    .. image:: waterlog_storm3_outputs.png
+    .. image:: waterlog_storm3_device_2.png
         :scale: 50 %
 
     | 
@@ -92,5 +140,7 @@ Date/Time Format
 
     | 
 
-    .. image:: waterlog_storm3_outputs.png
+    .. image:: waterlog_storm3_device_2.png
 
+.. note:: 
+    Use the :ref:`Events <view-events>` view with the detail level set to *Debug* for reviewing communication history and diagnosing configuration issues.

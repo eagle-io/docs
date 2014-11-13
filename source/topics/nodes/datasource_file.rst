@@ -188,6 +188,7 @@ Interval offset
 Outdated Alarm
 	See :ref:`Alarms and Notifications <outdated-alarm>`.
 
+.. _node-configuration-datasource-file-series:
 
 Series
 ~~~~~~~~~~~

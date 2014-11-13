@@ -7,4 +7,5 @@ The following topics will assist when configuring your device for eagle.io:
    :maxdepth: 2
 
    scout/index
+   datataker/index
    waterlog_storm3/index
