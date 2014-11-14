@@ -108,6 +108,8 @@ You can have multiple API keys active at once.
 API resource requests are always limited to the users Workspace and Account permissions. 
 Individual API key's must be assigned permissions which can be used to further restrict the actions an API request can perform.
 
+The *Display Node Ids in properties dialog* option is useful for retrieving a specific Node Id for use with the HTTP API. The *Node Id* will be shown in the associated Node properties dialog.
+
 .. note::
 	Your API keys carry many privileges, so be sure to keep them secret!
 
