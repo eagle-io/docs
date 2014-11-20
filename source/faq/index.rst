@@ -46,7 +46,7 @@ Campbell Scientific
 .. only:: latex
 
 	.. image:: datalogger_campbell_pakbus.jpg
-		:scale: 75 %
+		:scale: 100 %
 
 CellVisor
 	E State Automation CellVisor 3000/6000 series.
@@ -74,7 +74,7 @@ dataTaker
 .. only:: latex
 
 	.. image:: datalogger_datataker.jpg
-		:scale: 70 %
+		:scale: 55 %
 
 | 
 
@@ -194,7 +194,7 @@ We support automatic collection via the following transports:
 .. only:: latex
 
 	.. image:: transports-file.png
-		:scale: 25 %
+		:scale: 30 %
 
 You can also import and upload data manually from local files.
 
