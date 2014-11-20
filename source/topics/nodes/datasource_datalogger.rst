@@ -6,6 +6,7 @@ Data Source (data logger)
 
 The type of Data Source (data logger or file) is selected at time of creation and cannot be changed. This section is specific to data logger Data Sources.
 
+Refer to the :ref:`Device configuration <device-configuration>` section for a quick guide to connecting a range of industry standard data loggers.
 
 Properties
 ----------
@@ -42,7 +43,7 @@ Data logger type
     *Campbell Scientific [PakBus]*
 
         Model
-            Select the model of the data logger (use CR1000 if your model is not shown).
+            Select the model of the data logger.
 
         PakBus address
             Default value is 1.
@@ -67,6 +68,7 @@ Write mode
 
     *Replace existing* will remove all existing historic data within the range of data being acquired.
 
+.. _node-configuration-datasource-datalogger-connection:
 
 Connection
 ~~~~~~~~~~
@@ -90,7 +92,7 @@ Configure how you would like to connect to your data logger.
     .. image:: datasource_datalogger_connection_tcpclient.png
 
 Transport type
-    Select the transport used to acquire files:
+    The following transports are available for certain data loggers:
 
     *TCP Client*
 

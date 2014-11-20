@@ -36,7 +36,7 @@ What types of data loggers, PLCs and RTUs are supported?
 We support the following range of data loggers:
 
 Campbell Scientific
-	Campbell PakBus loggers including the CR200, CR800, CR1000 and CR6 series.
+	Campbell PakBus loggers including the CR200, CR800, CR1000, CR3000 and CR6 series.
 
 .. only:: not latex
 
@@ -47,6 +47,21 @@ Campbell Scientific
 
 	.. image:: datalogger_campbell_pakbus.jpg
 		:scale: 75 %
+
+CellVisor
+	E State Automation CellVisor 3000/6000 series.
+
+.. only:: not latex
+
+	.. image:: datalogger_cellvisor.jpg
+		:scale: 50 %
+
+.. only:: latex
+
+	.. image:: datalogger_cellvisor.jpg
+		:scale: 40 %
+
+| 
 
 dataTaker
 	Thermo Fisher Scientific DT80 range.
@@ -75,6 +90,21 @@ Generic
 
 	.. image:: datalogger_generic.jpg
 		:scale: 40 %
+
+| 
+
+OTT netDL
+	OTT netDL 500 and 1000.
+
+.. only:: not latex
+
+	.. image:: datalogger_ott_netdl.jpg
+		:scale: 60 %
+
+.. only:: latex
+
+	.. image:: datalogger_ott_netdl.jpg
+		:scale: 50 %
 
 | 
 

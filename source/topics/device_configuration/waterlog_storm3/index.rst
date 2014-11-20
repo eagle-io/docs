@@ -1,8 +1,20 @@
-.. _device-waterlog_storm3:
+.. _device-waterlog-storm3:
 
-WaterLog Storm3
-===============
-The WaterLog Storm3 data logger can be configured to send data to eagle.io in a few easy steps.
+WaterLog
+==========
+The `WaterLog <http://www.waterlog.com/>`_ **Storm 3** series data logger can be configured to send data to eagle.io in a few easy steps.
+
+.. only:: not latex
+
+    .. image:: datalogger_waterlog_storm3.jpg
+        :scale: 50 %
+
+.. only:: latex
+
+    .. image:: datalogger_waterlog_storm3.jpg
+        :scale: 40 %
+
+| 
 
 Source configuration
 --------------------
@@ -22,7 +34,7 @@ Source configuration
 
     .. image:: waterlog_storm3_wizard_1.png
 
-2. Choose the *Model* of the *WaterLog* logger and specify the number of sensors connected (this can be changed later). Click Next.
+2. Select the data logger *Model* and specify the number of sensors connected (this can be changed later). Click Next.
 
 .. only:: not latex
 
