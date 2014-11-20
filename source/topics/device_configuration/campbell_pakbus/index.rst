@@ -12,7 +12,7 @@ Eagle.io provides full support for `Campbell Scientific <http://www.campbellsci.
 .. only:: latex
 
     .. image:: datalogger_campbell_pakbus.jpg
-        :scale: 75 %
+        :scale: 100 %
 
 This section provides instructions for connecting your PakBus data logger to eagle.io.
 Refer to :ref:`Operate and Control <operate-and-control>` for advanced usage instructions.
