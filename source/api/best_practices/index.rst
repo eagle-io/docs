@@ -52,6 +52,15 @@ Responses will always use :ref:`HTTP Status Codes <api-overview-http-status-code
 
     |
 
+Discover Node Ids from the user interface
+-----------------------------------------
+Enable the :ref:`Display Node Ids in properties dialog <user-api-keys>` option to quickly discover Node Id's from the user interface.
+The Node Id will be shown in the associated Node properties dialog.
+
+.. only:: not latex
+
+    |
+
 Use Development Tools for testing
 ----------------------------------
 Use development tools such as `cURL <http://curl.haxx.se>`_ or `Postman <http://www.getpostman.com>`_ to test API requests and responses. We recommend `Postman <http://www.getpostman.com>`_ for its simple to use, powerful user interface.

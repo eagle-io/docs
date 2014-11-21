@@ -303,8 +303,7 @@ Example response when ``type`` argument is TREE. Descendants are wrapped in a ``
 
 Get a node
 -------------
-Get a node by its **_id**.
-
+Get a node by its **_id**. 
 
 Arguments
 ~~~~~~~~~
