@@ -95,7 +95,7 @@ Parameter values may be shown with aggregation applied - indicated with a durati
 
 Adjust Height
 ~~~~~~~~~~~~~
-Drag any of the horizontal bars that separate the charts Up or Down to decrease or increase the height of all displayed charts.
+Use the grab handle in the bottom right corner of the chart to increase or decrease its height.
 This option is currently not available on touch devices.
 
 
