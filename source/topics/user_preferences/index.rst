@@ -25,7 +25,7 @@ User Preferences
 
 Change login email
 ------------------
-Use the *change* button to update your user profile email address. Please ensure you have full access to the new email address or you will not be able to reset your password using the *Forgot Password* link.
+Use the *Change* button to update your user profile email address. An email will be sent to the new address with a one-time verification link to confirm the change. Any re-sends or new address changes will invalidate previously generated links.
 
 
 Login with your Google or Yahoo account
