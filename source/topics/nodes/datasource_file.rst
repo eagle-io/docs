@@ -220,7 +220,7 @@ Location Coordinates
 
 Modify file match
 	|icon-table| Modify the file configuration and matching criteria and select a sample file to use for configuring series.
-	Some transport types such as Email or FTP Server require you to upload a local sample file or alternatively *Skip or Reset sample file and retrieve on next acquistion*.
+	Some transport types such as Email or FTP Server require you to upload a local sample file or alternatively *Skip or Reset sample file and retrieve on next acquistion*. The *file name match* should uniquely match the name of uploaded file(s). For example use *.csv* to match all files with a csv extension (case-insensitive). Enable the *Match using regular expression* for advanced matching. 
 
 Configure series
 	|icon-properties| Setup or Update the parser configuration for the selected file. See :ref:`Text Parser Configuration <text-parser>` for full details. If a sample data file has not been uploaded or acquired the Configure series menu item will be disabled.
