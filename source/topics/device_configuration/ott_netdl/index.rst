@@ -49,7 +49,7 @@ Source configuration
 
     .. image:: ott_netdl_wizard_2.png
 
-3. Specify *CST* as the *File name match* unless you have configured your logger to output with a different file extension. This will match all incoming files for this Source containing 'CST' (case-sensitive) in the filename. To continue the setup you will need a sample copy of the logger's output data file(s). 
+3. Specify *CST* as the *File name match* unless you have configured your logger to output with a different file extension. This will match all incoming files for this Source containing 'CST' in the filename. To continue the setup you will need a sample copy of the logger's output data file(s). 
 
 .. only:: not latex
 

@@ -49,7 +49,7 @@ Source configuration
 
     .. image:: spider_wizard_2.png
 
-3. Specify *csv* as the *File name match*. This will match all incoming files for this Source containing 'csv' (case-sensitive) in the filename. To continue the setup you will need a sample copy of the logger's output data file(s). 
+3. Specify *csv* as the *File name match*. This will match all incoming files for this Source containing 'csv' in the filename. To continue the setup you will need a sample copy of the logger's output data file(s). 
 
 .. only:: not latex
 
