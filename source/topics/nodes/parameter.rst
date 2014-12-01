@@ -157,9 +157,6 @@ Threshold
 Match / Contains
     Specify the value to match (Number Parameters) or a value that is contained in the data (Text Parameters). Applies to Discrete states only.
 
-Description
-    Enter a description to save with the State.
-
 Category, Notifications, Alarm
     Configure Alarm and Notification preferences. See :ref:`Alarms and Notifications <alarms-and-notifications>` for full details.
 
