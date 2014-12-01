@@ -183,6 +183,7 @@ Reorder
         
         .. image:: parameter_states_reposition.png
 
+    You can re-order the states on a touch device by long-pressing on a state row and a context menu will appear with options to move the state up or down.
 
 Chart
 ~~~~~~
