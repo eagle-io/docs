@@ -39,11 +39,54 @@ Minimum length of 5 characters is required. The subdomain will be validated on s
 Company Logo
 ~~~~~~~~~~~~
 Company Logos can be uploaded to customize the appearance of the site when accessed via the account subdomain/domain.
+Click on the logo images to replace them with your own. For best results use images that conform to the recommended dimensions.
 
+.. raw:: latex
+
+    \vspace{-10pt}
+
+.. only:: not latex
+
+    .. image:: account_customise_product.png
+        :scale: 50 %
+
+    | 
+
+.. only:: latex
+    
+    | 
+
+    .. image:: account_customise_product.png
+        :scale: 70 %
 
 Public Content
 --------------
+
+Front Page
+~~~~~~~~~~
 You can customize your landing page by changing the banner image and adding some text as desired.
+
+.. raw:: latex
+
+    \vspace{-10pt}
+
+.. only:: not latex
+
+    .. image:: account_customise_public.png
+        :scale: 50 %
+
+    | 
+
+.. only:: latex
+    
+    | 
+
+    .. image:: account_customise_public.png
+        :scale: 70 %
+
+Contact
+~~~~~~~
+Tick or untick *Contact details* checkbox to display your account contact details on the public *Contact Us* page.
 
 .. raw:: latex
 
