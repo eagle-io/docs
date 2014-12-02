@@ -131,7 +131,7 @@ You can easily show all content by selecting the Base Node.
 	Locations can be created inside Workspaces and Groups.
 
 |icon-dash| Dashboard
-	Dashboards allow users to create customised views of their data in visually appealing layouts using animated gauges, charts, lists, maps and other graphical controls.
+	Dashboards allow users to create customized views of their data in visually appealing layouts using animated gauges, charts, lists, maps and other graphical controls.
 
 |icon-datasource| Data Source
 	Data Sources automatically acquire or receive timeseries data using a variety of different transport options. Connect to a :term:`data logger` or collect data from files. Data Sources can be created inside Locations only.
@@ -164,7 +164,7 @@ Use the View Selector to change the View. You will notice the Content Area and T
 	Use the Events View to quickly audit the system, a user or history of alarms.
 
 |icon-dash| Dash 
-	The Dash is for viewing the customised graphical dashboards and also provides an overview of all dashboard nodes available based on the Selected Node in the Workspaces Tree. 
+	The Dash is for viewing the customized graphical dashboards and also provides an overview of all dashboard nodes available based on the Selected Node in the Workspaces Tree. 
 
 
 User Menu

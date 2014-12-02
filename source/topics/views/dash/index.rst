@@ -1,7 +1,7 @@
 Dash
 =========
 
-|icon-dash| The Dash is for selecting and viewing the customised graphical :ref:`dashboards <node-configuration-dashboard>`.
+|icon-dash| The Dash is for selecting and viewing the customized graphical :ref:`dashboards <node-configuration-dashboard>`.
 
 
 Overview

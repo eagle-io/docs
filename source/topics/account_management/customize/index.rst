@@ -1,10 +1,10 @@
-Customisation
+Customization
 =============
 
-|icon-customise| Premium and Enterprise Accounts have access to the following customisation features:
+|icon-customise| Premium and Enterprise Accounts have access to the following customization features:
 
-Product Customisation
----------------------
+Product 
+--------
 
 Domains
 ~~~~~~~
@@ -38,12 +38,12 @@ Minimum length of 5 characters is required. The subdomain will be validated on s
 
 Company Logo
 ~~~~~~~~~~~~
-Company Logos can be uploaded to customise the appearance of the site when accessed via the account subdomain/domain.
+Company Logos can be uploaded to customize the appearance of the site when accessed via the account subdomain/domain.
 
 
 Public Content
 --------------
-You can customise your landing page by changing the banner image and adding some text as desired.
+You can customize your landing page by changing the banner image and adding some text as desired.
 
 .. raw:: latex
 

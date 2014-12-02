@@ -60,7 +60,7 @@ Parameters Subview displays a chart per Parameter (based on Parameter name). Use
 
 Custom
 ~~~~~~
-Custom Subview displays the customised Chart Nodes. This feature is currently not available.
+Custom Subview displays the customized Chart Nodes. This feature is currently not available.
 
 
 .. _working-with-charts:

@@ -30,7 +30,7 @@ Nodes are the container objects that store all data and configuration for your p
 	| 
 
 |icon-dash| Dashboard
-	:ref:`Dashboards <node-configuration-dashboard>` allow users to create customised views of their data in visually appealing layouts using animated gauges, charts, lists, maps and other graphical controls.
+	:ref:`Dashboards <node-configuration-dashboard>` allow users to create customized views of their data in visually appealing layouts using animated gauges, charts, lists, maps and other graphical controls.
 
 .. only:: not latex
 	

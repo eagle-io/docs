@@ -196,7 +196,7 @@ Scheduled
 Schedule type
     *Server* is the recommended option for always connected devices and allows easy schedule configuration.
 
-    *Remote* enables a *Scout modem* to maintain its own schedule allowing for low power mode and customised configuration.
+    *Remote* enables a *Scout modem* to maintain its own schedule allowing for low power mode and customized configuration.
 
 Collection interval
     Select the frequency of the collection.

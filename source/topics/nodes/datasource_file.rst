@@ -439,7 +439,7 @@ Coordinates
 
 Joins and Parser Configuration
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-|icon-properties| The Joins and Parser Configuration section (available from the properties icon at the top of each column) is used to customise the parser for individual columns including joins, formatting and specifying quality data.
+|icon-properties| The Joins and Parser Configuration section (available from the properties icon at the top of each column) is used to customize the parser for individual columns including joins, formatting and specifying quality data.
 
 Data values in input files are commonly split into separate fields and therefore will be shown as different columns in the Parser Preview. It is necessary to ensure each column you would like to use for Parameter creation has all joins/fields defined.
 

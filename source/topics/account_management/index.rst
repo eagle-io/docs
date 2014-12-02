@@ -20,4 +20,4 @@ Use the Account selector located in the User Menu of the Account Management sect
    workspaces/index
    notifications/index
    billing/index
-   customise/index
+   customize/index

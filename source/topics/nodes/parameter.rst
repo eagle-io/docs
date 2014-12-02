@@ -257,9 +257,9 @@ Aggregation mode
         Raw does not perform any aggregation of data. This option should ONLY be used where you know the period to be displayed does not contain more than a thousand data points. Displaying high resolution raw data can impact on chart performance and in some cases may cause the chart to fail loading or have adverse affects on your web browser.
 
 
-Customise
+Customize
 ``````````
-Select customisation options for chart appearance.
+Select customization options for chart appearance.
 
 .. raw:: latex
 
