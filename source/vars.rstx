@@ -51,6 +51,12 @@
 
 .. |icon-file| image:: /_static/icons/file.*
 
+.. |icon-file-checkmark| image:: /_static/icons/file-checkmark.*
+
+.. |icon-file-cancel| image:: /_static/icons/file-cancel.*
+
+.. |icon-file-search| image:: /_static/icons/file-search.*
+
 .. |icon-filter-active| image:: /_static/icons/filter-active.*
 
 .. |icon-filter| image:: /_static/icons/filter.*

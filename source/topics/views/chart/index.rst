@@ -62,7 +62,6 @@ Custom
 ~~~~~~
 Custom Subview displays the customized Chart Nodes. This feature is currently not available.
 
-
 .. _working-with-charts:
 
 Working with charts

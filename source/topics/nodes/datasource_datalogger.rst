@@ -267,7 +267,7 @@ Location Coordinates
     The Source can optionally provide Location Coordinates from a coordinate series or a pair of numeric series (lat/lng). You need to configure the Location and select this Source to be used for its coordinates. Select the table and series to use from the drop down list.
 
 Configure series
-    |icon-properties| Re-configure the series, sensors, etc. for certain data loggers.
+    |icon-table| Re-configure the series/sensors for specific data loggers only.
     
 Set acquire time
     |icon-calendar| Set or reset the collection pointer for the corresponding table to re-collect its data from the specified date using the Write mode option selected in the General tab.
