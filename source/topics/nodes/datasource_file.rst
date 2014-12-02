@@ -106,8 +106,9 @@ Transport type
 	*Upload data to ftp.eagle.io*
 
 		Ftp your files to ftp.eagle.io using the auto-generated user name exactly as shown. 
-		Password is optional. Note: certain ftp clients may require a password to be set. 
-		Use Tcp port 21 for standard Ftp and Tcp port 990 for Implicit SSL.
+		Password is optional. 
+		Use Tcp port 21 for standard Ftp and Tcp port 990 for Implicit SSL. 
+		**Note**: Only one concurrent ftp connection is allowed per Source.
 
 	*FTP Client*
 		
