@@ -17,9 +17,10 @@ Map
 	.. image:: map_overview.png
 
 
-Layers and Map Type
---------------------
-Change the appearance of the map using the Map Type drop down, or select one of the available Layers to show additional information such as cloud imagery or regional weather data provided by Google.
+Map styles
+-----------
+Use the style controls in the top-right corner of the map to change the map appearance.
+Toggle between Map, Satellite and Terrain styles.
 
 .. only:: not latex
 
