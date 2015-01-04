@@ -80,7 +80,7 @@ Configure how you would like to connect to your file(s).
 Transport type
 	Select the transport used to acquire files:
 
-	*Dropbox*
+	*Read from Dropbox*
 
 		Dropbox is used to connect to a `Dropbox`_ account. An *eagle.io* folder will be created in your Dropbox *Apps* directory where you can place files for collection.
 
@@ -96,21 +96,21 @@ Transport type
 
 		When changing the account, a popup window will be displayed which allows you to login to Dropbox and authorise access as shown above.
 
-	*Email*
+	*Email to eagle.io*
 
 		Email data using the auto-generated email address exactly as shown.
 
 		Sender address filter
 			For added security you can filter by sender email address. Restrict to a specific email address or to a specific domain. eg. user@company.com or @company.com. Leave blank for no restriction.
 
-	*Upload data to ftp.eagle.io*
+	*Upload to ftp.eagle.io*
 
 		Ftp your files to ftp.eagle.io using the auto-generated user name exactly as shown. 
 		Password is optional. 
 		Use Tcp port 21 for standard Ftp and Tcp port 990 for Implicit SSL. 
 		**Note**: Only one concurrent ftp connection is allowed per Source.
 
-	*FTP Client*
+	*Download from FTP site*
 		
 		Connect to a specific FTP Server to collection data files. Note: FTP is supported in `passive mode <http://en.wikipedia.org/wiki/File_Transfer_Protocol>`_ only.
 
@@ -132,7 +132,7 @@ Transport type
 		Password
 			Password for the associated user account (or leave blank for none).
 
-	*Http Client*
+	*Download from web site*
 
 		No configuration required.
 

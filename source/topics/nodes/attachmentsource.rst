@@ -65,11 +65,11 @@ Configure how you would like to connect to your attachments.
 Transport type
 	Select the transport used to acquire attachments.
 
-	*Email attachments*
+	*Email to eagle.io*
 
 		Email attachments using the auto-generated address exactly as shown.
 
-	*Upload attachments to ftp.eagle.io*
+	*Upload to ftp.eagle.io*
 
 		Ftp your files to ftp.eagle.io using the auto-generated user name exactly as shown. 
 		Password is optional. 

@@ -178,11 +178,11 @@ What file transports do you support for automatic collection?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 We support automatic collection via the following transports: 
 
-- Any `Dropbox <http://www.dropbox.com>`_ account
-- Email to our servers
-- FTP to our servers
-- Personal FTP servers
-- Any HTTP(s) url
+- Read from `Dropbox <http://www.dropbox.com>`_
+- Email to eagle.io
+- Upload to ftp.eagle.io
+- Download from FTP site
+- Download from web site
 
 .. only:: not latex
 
@@ -196,7 +196,7 @@ We support automatic collection via the following transports:
 	.. image:: transports-file.png
 		:scale: 30 %
 
-You can also import and upload data manually from local files.
+You can also manually import and export data files directly from the user interface or use our :ref:`HTTP API <api>` for automation.
 
 
 Can I upload other types of files?
