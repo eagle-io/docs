@@ -214,7 +214,7 @@ The Series section allows you to assign Series from the Source to New or Existin
 
 
 Add Files
-	Add new files to be acquired by the Source. A list of files will be displayed which are available using the current connection options. Select the new files to be added. You will need to setup the parser configuration for each file added.
+	Add new files to be acquired by the Source (10 files maximum). A list of files will be displayed which are available using the current connection options. Select the new files to be added. You will need to setup the parser configuration for each file added.
 
 Location Coordinates
 	The Source can optionally provide Location Coordinates from a coordinate series or a pair of numeric series (lat/lng). You need to configure the Location and select this Source to be used for its coordinates. Select the file and series to use from the drop down list.
