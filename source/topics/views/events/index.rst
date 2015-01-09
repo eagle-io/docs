@@ -58,6 +58,9 @@ Select the Detail level of the event log. Debug is the lowest level and will sho
 
 |icon-error| Error
 
+.. note::
+	Debug level events are automatically purged from the event log after 30 days.
+
 .. raw:: latex
 
     \newpage
