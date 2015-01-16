@@ -88,7 +88,7 @@ The API keys section allows you to create, delete or modify the permissions for 
 You can have multiple API keys active at once. 
 
 API resource requests are always limited to the users Workspace and Account permissions. 
-Individual API key's must be assigned permissions which can be used to further restrict the actions an API request can perform.
+Individual API key's can optionally be assigned the *read only* permission to restrict the actions an API request can perform (GET requests only).
 
 .. raw:: latex
 
