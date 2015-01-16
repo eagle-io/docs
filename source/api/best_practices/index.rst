@@ -13,7 +13,7 @@ Enforce Security
 -----------------
 All requests must be made over **HTTPS**.
 
-:ref:`API keys <user-api-keys>` should be kept secret and permissions for each key should be restricted to the bare essentials.
+:ref:`API keys <user-api-keys>` should be kept secret and the *read-only* permission assigned to keys that only need to perform read operations (GET requests).
 Account owners or managers with access to multiple Workspaces are advised to create additional user accounts for the sole purpose of API access with User Permissions assigned to individual Workspaces.
 
 .. only:: not latex
