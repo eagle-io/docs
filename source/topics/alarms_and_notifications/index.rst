@@ -325,20 +325,20 @@ Subscribe to Nodes
 
 When changing subscription options from the toolbar or context menu the checked or chosen Nodes including all contained Nodes will have the new subscription options applied.
 
-Click or touch the subscribe icon in the List View to toggle your subscription to the corresponding Node(s). If the Node contains other Nodes (ie. Location Node contains Source Node), the Subscription Panel will be displayed to allow you to select which types of Nodes you would like to subscribe to or unsubscribe from. A partially colored subscription icon indicates that not all contained Nodes have been subscribed to.
+Click or touch the subscribe icon in the List View to toggle your subscription to the corresponding Node(s). If the Node contains other Nodes (ie. Location Node contains Source Node), the Notification Subscription Panel will be displayed to allow you to select which types of Nodes you would like to subscribe to or unsubscribe from. A partially colored subscription icon indicates that not all child Nodes have been subscribed to.
 
-*Subscription Panel accessible from List View*
+*Notification Subscription Panel accessible from List View*
 
 .. only:: not latex
 
-	.. image:: subscription_panel.png
+	.. image:: notification_panel.png
 		:scale: 50 %
 
 	| 
 		
 .. only:: latex
 
-	.. image:: subscription_panel.png
+	.. image:: notification_panel.png
 		:scale: 40 %
 		
 
