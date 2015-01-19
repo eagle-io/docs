@@ -25,7 +25,8 @@ Consumers of Owners should tolerate the addition of new attributes and variance 
     =================   =========   =======================================================================
     **_class**          String      Identifies resource type: *io.eagle.models.owner.Owner*
     **_id**             ObjectId    Unique identifier for this owner
-    **accountName**     String      Name of the Account
+    **accountName**     String      Name of the account
+    **categories**      Array       Array of notification categories configured for this owner
     **createdTime**     Time        :ref:`ISO8601<time-format-iso8601>` timestamp the account was created.
     **slug**            String      Used as part of Node full name path
     =================   =========   =======================================================================
