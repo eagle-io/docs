@@ -52,7 +52,11 @@ Consumers of Nodes should tolerate the addition of new attributes and variance i
     ================================    =========   ===========================================================================
     Parameter & Location attributes     Type        Description
     ================================    =========   ===========================================================================
-    **controlValue**                    Variable    Pending control value. Type inherited from _class
+    **controlValue**                    Variable    Pending control value. Type inherited from _class.
+    **controlValueMaximum**             Double      Maximum control value when controlValueRestriction set to RANGE
+    **controlValueMinimum**             Double      Minimum control value when controlValueRestriction set to RANGE
+    **controlValueRestriction**         String      Control value is restricted to:
+                                                    *[NONE, RANGE, STATES]*
     **currentQuality**                  Int32       Quality code associated with current value
     **currentStateId**                  ObjectId    State _id associated with current value
     **currentTime**                     Time        :ref:`ISO8601<time-format-iso8601>` timestamp of the current value
