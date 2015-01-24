@@ -11,3 +11,11 @@ Users can assign a timezone to their User profile. All data displayed to the use
 Example::
 	
 	(GMT-08:00) Pacific Time
+
+| 
+
+The :ref:`HTTP API <api>` requires all timezones to be specified using the *TZ* naming convention as specified in `this list <http://en.wikipedia.org/wiki/List_of_tz_database_time_zones>`_. *Etc/UTC* should be used for UTC.
+
+Example::
+
+    America/Los_Angeles

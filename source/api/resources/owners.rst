@@ -35,9 +35,9 @@ Consumers of Owners should tolerate the addition of new attributes and variance 
 
     |
 
-List all owners
-----------------
-List all owners visible to the authenticated user.
+Retrieve all owners
+--------------------
+Retrieve a list of all owners visible to the authenticated user. Optionally *filter* by attribute values.
 
 
 Arguments
@@ -93,14 +93,48 @@ Response
             "_id": "5424fbe96c4728a166f0d725",
             "accountName": "My Personal Account",
             "createdTime": "2014-01-26T05:38:49.167Z",
-            "slug": "mypers42"
+            "slug": "mypers42",
+            "categories": [
+                {
+                    "name": "Maintenance",
+                    "index": 0,
+                    "_id": "52969367593a1a3a32000012"
+                },
+                {
+                    "name": "Operations",
+                    "index": 1,
+                    "_id": "52969367593a1a3a32000011"
+                },
+                {
+                    "name": "Critical",
+                    "index": 2,
+                    "_id": "52969367593a1a3a32000010"
+                }
+            ]
         },
         {
             "_class": "io.eagle.models.owner.Owner",
             "_id": "52969365593a1a3a3200000f",
             "accountName": "My Company Account",
             "createdTime": "2013-11-28T00:50:47.543Z",
-            "slug": "mycomp87"
+            "slug": "mycomp87",
+            "categories": [
+                {
+                    "name": "LOW",
+                    "index": 0,
+                    "_id": "52969367593a1a3a32000022"
+                },
+                {
+                    "name": "MEDIUM",
+                    "index": 1,
+                    "_id": "52969367593a1a3a32000021"
+                },
+                {
+                    "name": "HIGH",
+                    "index": 2,
+                    "_id": "52969367593a1a3a32000020"
+                }
+            ]
         }
     ]
 
@@ -108,9 +142,9 @@ Response
 
     |
 
-Get an owner 
--------------
-Get an owner by its **_id**.
+Retrieve an owner 
+-----------------
+Retrieve an owner by its **_id**.
 
 Arguments
 ~~~~~~~~~
@@ -147,7 +181,24 @@ Response
         "_id": "5424fbe96c4728a166f0d725",
         "accountName": "My Personal Account",
         "createdTime": "2014-01-26T05:38:49.167Z",
-        "slug": "mypers42"
+        "slug": "mypers42",
+        "categories": [
+            {
+                "name": "Maintenance",
+                "index": 0,
+                "_id": "52969367593a1a3a32000012"
+            },
+            {
+                "name": "Operations",
+                "index": 1,
+                "_id": "52969367593a1a3a32000011"
+            },
+            {
+                "name": "Critical",
+                "index": 2,
+                "_id": "52969367593a1a3a32000010"
+            }
+        ]
     }
 
 

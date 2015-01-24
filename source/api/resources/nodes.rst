@@ -21,100 +21,100 @@ Consumers of Nodes should tolerate the addition of new attributes and variance i
 .. table::
     :class: table-fluid
 
-    ================================    =========   ===========================================================================
-    General attributes                  Type        Description
-    ================================    =========   ===========================================================================
-    **_class**                          String      Identifies resource type: *io.eagle.models.node.*\*
-    **_id**                             ObjectId    Unique identifier for this node
-    **alarms**                          Object      Alarm configuration and status
-    **createdTime**                     Time        :ref:`ISO8601<time-format-iso8601>` timestamp the node was created
-    **isActive**                        Boolean     Flag to indicate if node is active
-    **metadata**                        Array       Array of metadata fields and values
-    **name**                            String      Name of node
-    **ownerId**                         ObjectId    Unique owner _id
-    **parentId**                        ObjectId    Parent node _id (not included in Workspace)
-    **workspaceId**                     ObjectId    Associated Workspace _id (not included in Workspace)
-    ================================    =========   ===========================================================================
+    ================================    =========   =========   ===========================================================================
+    Standard attributes                 Type        Update      Description
+    ================================    =========   =========   ===========================================================================
+    **_class**                          String                  Identifies resource type: *io.eagle.models.node.*\*
+    **_id**                             ObjectId                Unique identifier for this node
+    **alarms**                          Object      Yes         Alarm configuration and status
+    **createdTime**                     Time                    :ref:`ISO8601<time-format-iso8601>` timestamp the node was created
+    **isActive**                        Boolean                 Flag to indicate if node is active
+    **metadata**                        Array                   Array of metadata fields and values
+    **name**                            String      Yes         Name of node
+    **ownerId**                         ObjectId                Unique owner _id
+    **parentId**                        ObjectId                Parent node _id (not included in Workspace)
+    **workspaceId**                     ObjectId                Associated Workspace _id (not included in Workspace)
+    ================================    =========   =========   ===========================================================================
 
 .. table::
     :class: table-fluid
 
-    ================================    =========   ===========================================================================
-    Attachment attributes               Type        Description
-    ================================    =========   ===========================================================================
-    **fileSize**                        Int64       Size of attachment in bytes
-    **mimeType**                        String      Mime-type of the attachment
-    ================================    =========   ===========================================================================
+    ================================    =========   =========   ===========================================================================
+    Attachment attributes               Type        Update      Description
+    ================================    =========   =========   ===========================================================================
+    **fileSize**                        Int64                   Size of attachment in bytes
+    **mimeType**                        String                  Mime-type of the attachment
+    ================================    =========   =========   ===========================================================================
 
 .. table::
     :class: table-fluid
 
-    ================================    =========   ===========================================================================
-    Parameter & Location attributes     Type        Description
-    ================================    =========   ===========================================================================
-    **controlValue**                    Variable    Pending control value. Type inherited from _class.
-    **controlValueMaximum**             Double      Maximum control value when controlValueRestriction set to RANGE
-    **controlValueMinimum**             Double      Minimum control value when controlValueRestriction set to RANGE
-    **controlValueRestriction**         String      Control value is restricted to:
-                                                    *[NONE, RANGE, STATES]*
-    **currentQuality**                  Int32       Quality code associated with current value
-    **currentStateId**                  ObjectId    State _id associated with current value
-    **currentTime**                     Time        :ref:`ISO8601<time-format-iso8601>` timestamp of the current value
-    **currentValue**                    Variable    Current value. Type inherited from _class
-    **displayType**                     String      Default display type of parameter: 
-                                                    *[VALUE, STATE]*
-    **format**                          String      Formatting to apply to displayed value
-    **oldestQuality**                   Int32       Quality code associated with oldest value
-    **oldestStateId**                   ObjectId    State _id associated with oldest value
-    **oldestTime**                      Time        :ref:`ISO8601<time-format-iso8601>` timestamp of the oldest value
-    **oldestValue**                     Variable    Oldest value. Type inherited from _class
-    **previousQuality**                 Int32       Quality code associated with oldest value
-    **previousStateId**                 ObjectId    State _id associated with previous value
-    **previousTime**                    Time        :ref:`ISO8601<time-format-iso8601>` timestamp of the previous value
-    **previousValue**                   Variable    Previous value. Type inherited from _class
-    **states**                          Array       Array of state configuration objects
-    **statesType**                      String      States evaluation mode:
-                                                    *[RANGE, DISCRETE]*
-    **units**                           String      Units to display with value
-    ================================    =========   ===========================================================================
+    ================================    =========   =========   ===========================================================================
+    Parameter & Location attributes     Type        Update      Description
+    ================================    =========   =========   ===========================================================================
+    **controlValue**                    Variable    Yes         Pending control value. Type inherited from _class.
+    **controlValueMaximum**             Double      Yes         Maximum control value when controlValueRestriction set to RANGE
+    **controlValueMinimum**             Double      Yes         Minimum control value when controlValueRestriction set to RANGE
+    **controlValueRestriction**         String      Yes         Control value is restricted to:
+                                                                *[NONE, RANGE, STATES]*
+    **currentQuality**                  Int32                   Quality code associated with current value
+    **currentStateId**                  ObjectId                State _id associated with current value
+    **currentTime**                     Time                    :ref:`ISO8601<time-format-iso8601>` timestamp of the current value
+    **currentValue**                    Variable                Current value. Type inherited from _class
+    **displayType**                     String      Yes         Default display type of parameter: 
+                                                                *[VALUE, STATE]*
+    **format**                          String      Yes         Formatting to apply to displayed value
+    **oldestQuality**                   Int32                   Quality code associated with oldest value
+    **oldestStateId**                   ObjectId                State _id associated with oldest value
+    **oldestTime**                      Time                    :ref:`ISO8601<time-format-iso8601>` timestamp of the oldest value
+    **oldestValue**                     Variable                Oldest value. Type inherited from _class
+    **previousQuality**                 Int32                   Quality code associated with oldest value
+    **previousStateId**                 ObjectId                State _id associated with previous value
+    **previousTime**                    Time                    :ref:`ISO8601<time-format-iso8601>` timestamp of the previous value
+    **previousValue**                   Variable                Previous value. Type inherited from _class
+    **states**                          Array       Yes         Array of state configuration objects
+    **statesType**                      String      Yes         States evaluation mode:
+                                                                *[RANGE, DISCRETE]*
+    **units**                           String      Yes         Units to display with value
+    ================================    =========   =========   ===========================================================================
 
 .. table::
     :class: table-fluid
 
-    ================================    =========   ===========================================================================
-    Source attributes                   Type        Description
-    ================================    =========   ===========================================================================
-    **currentAttachmentId**             ObjectId    Current attachment _id associated with Attachment Source
-    **currentStatus**                   String      Current status: 
-                                                    *[DISABLED, FAILED, IDLE, SCHEDULED, QUEUED, CONNECTING, 
-                                                    DOWNLOADING, PROCESSING, RETRYING, CONFIGURING, CONTROLLING, REMOTE]*
-    **clockSync**                       Boolean     Flag to indicate if data logger clock is being syncronized with server
-    **firmwareVersion**                 String      Firmware version in-use by data logger
-    **isEnabled**                       Boolean     Flag to enable or disable the Source
-    **lastAcquireRecordCount**          Int32       Number of records acquired on last acquistion
-    **lastCommsAttempt**                Time        :ref:`ISO8601<time-format-iso8601>` timestamp of the 
-                                                    last communications attempt
-    **lastCommsSuccess**                Time        :ref:`ISO8601<time-format-iso8601>` timestamp of the 
-                                                    last successful communication with Source
-    **model**                           String      Model of data logger in-use
-    **pakBusAddress**                   Int32       PakBus address of Campbell data logger
-    **pakBusGatewayAddress**            Int32       PakBus gateway address of Campbell data logger
-    **progName**                        String      Name of program currently loaded in Campbell data logger
-    **scheduleType**                    String      Type of Schedule for automatic collection:
-                                                    *[SERVER, REMOTE, NONE]*
-    **timezone**                        String      :ref:`Timezone <timezone>` of Source data.
-    **timezoneAdjustForDst**            Boolean     Flag to indicate if acquired data is adjusted for DST in selected timezone
-    **totalCommsAttempt**               Int32       Total count of communications attempts
-    **totalCommsSuccess**               Int32       Total count of successful communications
-    ================================    =========   ===========================================================================
+    ================================    =========   =========   ===========================================================================
+    Source attributes                   Type        Update      Description
+    ================================    =========   =========   ===========================================================================
+    **currentAttachmentId**             ObjectId                Current attachment _id associated with Attachment Source
+    **currentStatus**                   String                  Current status: 
+                                                                *[DISABLED, FAILED, IDLE, SCHEDULED, QUEUED, CONNECTING, 
+                                                                DOWNLOADING, PROCESSING, RETRYING, CONFIGURING, CONTROLLING, REMOTE]*
+    **clockSync**                       Boolean                 Flag to indicate if data logger clock is being syncronized with server
+    **firmwareVersion**                 String                  Firmware version in-use by data logger
+    **isEnabled**                       Boolean     Yes         Flag to enable or disable the Source
+    **lastAcquireRecordCount**          Int32                   Number of records acquired on last acquistion
+    **lastCommsAttempt**                Time                    :ref:`ISO8601<time-format-iso8601>` timestamp of the 
+                                                                last communications attempt
+    **lastCommsSuccess**                Time                    :ref:`ISO8601<time-format-iso8601>` timestamp of the 
+                                                                last successful communication with Source
+    **model**                           String                  Model of data logger in-use
+    **pakBusAddress**                   Int32       Yes         PakBus address of Campbell data logger
+    **pakBusGatewayAddress**            Int32       Yes         PakBus gateway address of Campbell data logger
+    **progName**                        String                  Name of program currently loaded in Campbell data logger
+    **scheduleType**                    String                  Type of Schedule for automatic collection:
+                                                                *[SERVER, REMOTE, NONE]*
+    **timezone**                        String      Yes         :ref:`Timezone <timezone>` of Source data.
+    **timezoneAdjustForDst**            Boolean     Yes         Flag to indicate if acquired data is adjusted for DST in selected timezone
+    **totalCommsAttempt**               Int32                   Total count of communications attempts
+    **totalCommsSuccess**               Int32                   Total count of successful communications
+    ================================    =========   =========   ===========================================================================
 
 .. only:: not latex
 
     |
 
-List all nodes
-----------------
-List all nodes visible to the authenticated user.
+Retrieve all nodes
+------------------
+Retrieve a list of all nodes visible to the authenticated user. Optionally *filter* by attribute values.
 
 
 Arguments
@@ -305,9 +305,9 @@ Example response when ``type`` argument is TREE. Descendants are wrapped in a ``
 
     |
 
-Get a node
--------------
-Get a node by its **_id**. 
+Retrieve a node
+---------------
+Retrieve a node by its **_id**. 
 
 Arguments
 ~~~~~~~~~
@@ -353,13 +353,480 @@ Response
 
     |
 
-Get historic data from a node
-------------------------------
-Get historic data from a node by its **_id**. Data can be returned in JSON (:ref:`JTS <historic-jts>`) or CSV format. Use the :ref:`Historic resource<api-resources-historic>` for extracting historic data from multiple nodes in a single request.
+
+
+
+
+
+
+Update a node
+---------------
+Update a node by its **_id**. 
+Updates are limited to the attributes listed with the *Update* flag. 
+Multiple attributes can be updated in a single request.
+
+The updated node will be returned in the response if the request is successful. You can optionally limit the returned attributes by specifying the **attr** argument.
+
+Refer to the examples below when updating complex attributes such as alarms and states.
 
 .. note:: 
-    Only available for Location and Parameter nodes.
+    Required permission: *Configure*
+
+Arguments
+~~~~~~~~~
+
+.. table::
+    :class: table-fluid
+
+    =================   =================   ================================================================
+    Argument            Example             Description
+    =================   =================   ================================================================
+    **attr**            _id,_class          *Optional.* 
+                                            Comma delimited list of attributes to include in successful 
+                                            response
+    =================   =================   ================================================================
+
+Request
+~~~~~~~~
+
+::
+
+    PUT /api/v1/nodes/:_id
+
+::
+
+    {
+        "name": "My Renamed Workspace"
+    }
+
+Response
+~~~~~~~~
+
+::
     
+    HTTP/1.1 200 OK
+    Content-Type: application/json; charset=utf-8
+
+::
+    
+    {
+        "_class": "io.eagle.models.node.Workspace",
+        "_id": "536884ecb5a76fd5d3000014",
+        "createdTime": "2014-05-06T06:45:00.061Z",
+        "isActive": true,
+        "metadata": [],
+        "name": "My Renamed Workspace",
+        "ownerId": "52969365593a1a3a3200000f"
+    }
+
+
+Updating alarm configuration
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Alarm configuration can be included in the update request for Location, Source and Parameter nodes. You must specify each alarm type as a nested attribute containing the *config* to be updated. Only changed attributes need to be specified.
+
+.. table::
+    :class: table-fluid
+
+    ================================    =========   ===========================================================================
+    Alarm config attributes             Type        Description
+    ================================    =========   ===========================================================================
+    **isEnabled**                       Boolean     Enable or disable the alarm
+    **notify**                          String      When notifications should be triggered:
+                                                    *[NEVER, ALWAYS, AWAY_FROM_NORMAL, TOWARDS_NORMAL]*.
+    **categoryId**                      ObjectId    Id of :ref:`owner category<api-resources-owners>` to assign to this alarm. 
+                                                    Required when *notify* option is not *NEVER*
+    ================================    =========   ===========================================================================
+
+Example::
+
+    {
+        "alarms": {
+            "communicationsAlarm": {
+                "config": {
+                    "isEnabled": true,
+                    "notify": "ALWAYS",
+                    "categoryId": "52969367593a1a3a32000012"
+                }
+            },
+            "configurationAlarm": { "config": { "isEnabled": false } }
+        }
+    }
+
+
+The alarm types available are specific to the type of node being updated:
+
+.. table::
+    :class: table-fluid
+
+    ========================   ========================================================
+    Alarm types                Supported nodes
+    ========================   ========================================================
+    **communicationsAlarm**    Sources
+    **configurationAlarm**     Sources
+    **controlAlarm**           Control parameters
+    **outdatedAlarm**          Sources
+    **stateAlarm** [1]_        Locations, Parameters
+    ========================   ========================================================
+
+.. [1] stateAlarm has no direct configuration. Modify *states* to change state alarm behaviour.
+
+
+
+Updating states configuration
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+States configuration can be included in the update request for Number and Text Parameter nodes. 
+Number parameters can use either *DISCRETE* or *RANGE* states. Text parameters are limited to *DISCRETE* states only. 
+
+States can be reset to parameter defaults by updating the *states* attribute with *null*.
+
+**Update** existing states by providing the *_id* attribute for each state in the request. Any states without the *_id* attribute will be ignored. Only changed attributes need to be specified.
+
+If no states in the request contain an *_id* attribute the update will **Replace** the existing states.
+**RANGE** states for number parameters must always be specified in *ascending* order based on *threshold* and 
+there must be one state with the *name* attribute set to *NORMAL*.
+
+.. note::
+    State type for number parameters can be changed with the *statesType* attribute. When changing *statesType* 
+    you should specify new *states* configuration or default states will be applied.
+
+
+.. table::
+    :class: table-fluid
+
+    ================================    =========   ===========================================================================
+    State attributes                    Type        Description
+    ================================    =========   ===========================================================================
+    **name**                            String      *Required*. Unique name assigned to the state
+    **threshold**                       Variable    *Required*. Unique threshold value for the state. 
+                                                    Number parameters require a *Double*. 
+                                                    Text parameters require a *String*.
+    **isAlarm**                         Boolean     *Optional - default is false*. 
+                                                    Flag to indicate if this state should raise an alarm. 
+                                                    Not valid for *NORMAL* RANGE state.
+    **notify**                          String      *Optional - default is NEVER*. 
+                                                    When notifications should be triggered:
+                                                    *[NEVER, ALWAYS, AWAY_FROM_NORMAL, TOWARDS_NORMAL]*. 
+                                                    DISCRETE states and the *NORMAL* RANGE state is restricted to: 
+                                                    *[NEVER, ALWAYS]*
+    **categoryId**                      ObjectId    Id of :ref:`owner category <api-resources-owners>` to assign to this state. 
+                                                    Required when *notify* option is not *NEVER*
+    ================================    =========   ===========================================================================
+
+Example replacing DISCRETE states
+
+::
+
+    {
+        "statesType": "DISCRETE",
+        "states": [        
+            {
+                "name": "OFF",
+                "threshold": 0
+            },
+            {
+                "name": "ON",
+                "threshold": 1,
+                "isAlarm": true,
+                "notify": "ALWAYS",
+                "categoryId": "52969367593a1a3a32000012"
+            }
+        ]
+    }
+
+Example updating existing DISCRETE states
+
+::
+
+    {
+        "statesType": "DISCRETE",
+        "states": [        
+            {
+                "_id": "52969367593a1a3a32000091",
+                "name": "SIREN OFF"
+            },
+            {
+                "_id": "52969367593a1a3a32000092",
+                "name": "SIREN ON",
+                "notify": "NEVER"
+            }
+        ]
+    }
+
+
+Example replacing RANGE states
+
+::
+
+    {
+        "statesType": "RANGE",
+        "states": [        
+            {
+                "name": "LOW",
+                "threshold": 20
+            },
+            {
+                "name": "NORMAL"
+            },
+            {
+                "name": "HIGH",
+                "threshold": 50
+            },
+            {
+                "name": "CRITICAL",
+                "threshold": 100,
+                "isAlarm": true,
+                "notify": "ALWAYS",
+                "categoryId": "52969367593a1a3a32000012"
+            }
+        ]
+    }
+
+
+.. only:: not latex
+
+    |
+
+
+
+
+
+
+
+Acknowledge node alarms
+------------------------
+Acknowledge active alarms for a node by its **_id**. Optionally provide a *comment* for the acknowledgement.
+
+.. note:: 
+    Only available for Location, Source and Parameter nodes. 
+    Required permission: *Acknowledge alarms*
+
+Arguments
+~~~~~~~~~
+
+.. table::
+    :class: table-fluid
+
+    =================   ========================    ======================================================================
+    Argument            Example                     Description
+    =================   ========================    ======================================================================
+    **alarmTypes**      stateAlarm,controlAlarm     *Optional - Default is ALL*. 
+                                                    Comma delimited list of specific alarms to acknowledge:
+                                                    *[communicationsAlarm, configurationAlarm, controlAlarm, 
+                                                    outdatedAlarm, stateAlarm]*
+    =================   ========================    ======================================================================
+
+
+Request
+~~~~~~~~
+
+::
+
+    POST /api/v1/nodes/:_id/alarms/acknowledge
+
+::
+
+    {
+        "comment": "maintenance team investigating"
+    }
+
+Response
+~~~~~~~~
+
+::
+    
+    HTTP/1.1 202 Accepted
+    Content-Type: application/json; charset=utf-8
+
+::
+    
+    {
+        "status": {
+            "code": 202,
+            "message": "Operation accepted but not yet complete"
+        }
+    }
+
+.. only:: not latex
+
+    |
+
+
+
+Clear node alarms
+------------------
+Clear active and acknowledged alarms for a node by its **_id**.
+
+.. note:: 
+    Only available for Location, Source and Parameter nodes. 
+    Required permission: *Edit states and alarms*
+
+Arguments
+~~~~~~~~~
+
+.. table::
+    :class: table-fluid
+
+    =================   ========================    ======================================================================
+    Argument            Example                     Description
+    =================   ========================    ======================================================================
+    **alarmTypes**      stateAlarm,controlAlarm     *Optional - Default is ALL*. 
+                                                    Comma delimited list of specific alarms to clear:
+                                                    *[communicationsAlarm, configurationAlarm, controlAlarm, 
+                                                    outdatedAlarm, stateAlarm]*
+    =================   ========================    ======================================================================
+
+
+Request
+~~~~~~~~
+
+::
+
+    POST /api/v1/nodes/:_id/alarms/clear
+
+Response
+~~~~~~~~
+
+::
+    
+    HTTP/1.1 202 Accepted
+    Content-Type: application/json; charset=utf-8
+
+::
+    
+    {
+        "status": {
+            "code": 202,
+            "message": "Operation accepted but not yet complete"
+        }
+    }
+
+.. only:: not latex
+
+    |
+
+
+
+Subscribe to node notifications
+-------------------------------
+Subscribe the authenticated user to receive notifications for a node by its **_id**. 
+
+.. note:: 
+    Only available for Location, Source and Parameter nodes. 
+    Required permission: *Subscribe notifications*
+
+Request
+~~~~~~~~
+
+::
+
+    POST /api/v1/nodes/:_id/notifications/subscribe
+
+Response
+~~~~~~~~
+
+::
+    
+    HTTP/1.1 202 Accepted
+    Content-Type: application/json; charset=utf-8
+
+::
+    
+    {
+        "status": {
+            "code": 202,
+            "message": "Operation accepted but not yet complete"
+        }
+    }
+
+.. only:: not latex
+
+    |
+
+
+
+Unsubscribe from node notifications
+-----------------------------------
+Unsubscribe the authenticated user from receiving notifications for a node by its **_id**. 
+
+.. note:: 
+    Only available for Location, Source and Parameter nodes. 
+    Required permission: *Subscribe notifications*
+
+Request
+~~~~~~~~
+
+::
+
+    POST /api/v1/nodes/:_id/notifications/unsubscribe
+
+Response
+~~~~~~~~
+
+::
+    
+    HTTP/1.1 202 Accepted
+    Content-Type: application/json; charset=utf-8
+
+::
+    
+    {
+        "status": {
+            "code": 202,
+            "message": "Operation accepted but not yet complete"
+        }
+    }
+
+.. only:: not latex
+
+    |
+
+
+
+Trigger an acquisition
+-----------------------
+Trigger an acquisition (*Acquire Now*) for a Source node by its **_id**.
+
+.. note:: 
+    Only available for Source nodes with Transports that allow for manual collection. 
+    Required permission: *Operate*
+
+Request
+~~~~~~~~
+
+::
+
+    POST /api/v1/nodes/:_id/operate/acquire
+
+Response
+~~~~~~~~
+
+::
+    
+    HTTP/1.1 202 Accepted
+    Content-Type: application/json; charset=utf-8
+
+::
+    
+    {
+        "status": {
+            "code": 202,
+            "message": "Operation accepted but not yet complete"
+        }
+    }
+
+.. only:: not latex
+
+    |
+
+
+
+Retrieve node historic data
+---------------------------
+Retrieve historic data from a node by its **_id**. Data can be returned in JSON (:ref:`JTS <historic-jts>`) or CSV format. Use the :ref:`Historic resource<api-resources-historic>` for extracting historic data from multiple nodes in a single request.
+
+.. note:: 
+    Only available for Location and Parameter nodes. 
+    Required permission: *View*
 
 Arguments
 ~~~~~~~~~
@@ -465,13 +932,16 @@ Response
 .. only:: not latex
 
     |
-    
-Post historic data to a node
-------------------------------
-Post historic data to a node by its **_id**. Data can be inserted in JSON (:ref:`JTS <historic-jts>`) or CSV format. Use the :ref:`Historic resource <api-resources-historic>` for posting historic data to multiple nodes in a single request.
+
+
+
+Update node historic data
+-------------------------
+Update historic data for a node by its **_id**. Data can be inserted in JSON (:ref:`JTS <historic-jts>`) or CSV format. Use the :ref:`Historic resource <api-resources-historic>` to update historic data for multiple nodes in a single request.
 
 .. note:: 
-    Only available for Location and Parameter nodes.
+    Only available for Location and Parameter nodes. 
+    Required permission: *Configure*
 
 
 Arguments
@@ -506,7 +976,7 @@ Request
 
 ::
 
-    POST /api/v1/nodes/:_id/historic
+    PUT /api/v1/nodes/:_id/historic
 
 ::
 
@@ -545,4 +1015,93 @@ Response
             "message": "Operation accepted but not yet complete"
         }
     }
+
+.. only:: not latex
+
+    |
+
+
+
+Update node historic data with a single value
+----------------------------------------------
+Update historic data for a node with a single *value* with optional *quality* and *timestamp*.
+If *timestamp* is omitted the time the request was made will be used. Existing values with the same timestamp will be overwritten.
+
+.. note:: 
+    Only available for Location and Parameter nodes. 
+    Required permission: *Configure*
+
+Request
+~~~~~~~~
+
+::
+
+    PUT /api/v1/nodes/:_id/historic/now
+
+::
+
+    {
+        "value": 10,
+        "quality": 192,
+        "timestamp": "2015-01-09T23:38:00Z"
+    }
+
+Response
+~~~~~~~~
+
+::
+    
+    HTTP/1.1 202 Accepted
+    Content-Type: application/json; charset=utf-8
+
+::
+    
+    {
+        "status": {
+            "code": 202,
+            "message": "Operation accepted but not yet complete"
+        }
+    }
+
+.. only:: not latex
+
+    |
+
+
+
+Delete node historic data
+--------------------------
+Delete all historic data from a node by its **_id**.
+
+.. note:: 
+    Only available for Location and Parameter nodes. 
+    Required permission: *Configure*
+
+Request
+~~~~~~~~
+
+::
+
+    DELETE /api/v1/nodes/:_id/historic
+
+Response
+~~~~~~~~
+
+::
+    
+    HTTP/1.1 202 Accepted
+    Content-Type: application/json; charset=utf-8
+
+::
+    
+    {
+        "status": {
+            "code": 202,
+            "message": "Operation accepted but not yet complete"
+        }
+    }
+
+.. only:: not latex
+
+    |
 

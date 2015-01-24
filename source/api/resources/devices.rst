@@ -40,9 +40,9 @@ Consumers of Devices should tolerate the addition of new attributes and variance
 
     |
 
-List all devices
-----------------
-List all devices visible to the authenticated user.
+Retrieve all devices
+--------------------
+Retrieve a list of all devices visible to the authenticated user. Optionally *filter* by attribute values.
 
 
 Arguments
@@ -180,9 +180,9 @@ Response
 
     |
     
-Get a device
--------------
-Get a device by its **_id**.
+Retrieve a device
+-----------------
+Retrieve a device by its **_id**.
 
 Arguments
 ~~~~~~~~~

@@ -20,9 +20,9 @@ Successful extraction requests will result in a **200 OK** response with the dat
 
     |
 
-Get historic data from nodes
-----------------------------
-Get historic data from one or more nodes using **_id's**.
+Retrieve historic data from multiple nodes
+------------------------------------------
+Retrieve historic data from multiple nodes in a single request using **_id's**.
 
 
 Arguments
@@ -143,9 +143,9 @@ Response
 
     |
     
-Post historic data to nodes
-------------------------------
-Post historic data to one or more nodes by **_id's**.
+Update historic data for multiple nodes
+----------------------------------------
+Update historic data for one or more nodes by **_id's**.
 
 Arguments
 ~~~~~~~~~
@@ -193,7 +193,7 @@ Request
 
 ::
 
-    POST /api/v1/historic
+    PUT /api/v1/historic
 
 ::
 

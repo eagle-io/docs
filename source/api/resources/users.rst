@@ -40,9 +40,9 @@ Consumers of Users should tolerate the addition of new attributes and variance i
 
     |
 
-Get your user 
--------------
-Get the authenticated users details.
+Retrieve your user profile
+--------------------------
+Retrieve the authenticated users profile.
 
 Arguments
 ~~~~~~~~~
