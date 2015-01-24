@@ -485,6 +485,8 @@ If no states in the request contain an *_id* attribute the update will **Replace
 **RANGE** states for number parameters must always be specified in *ascending* order based on *threshold* and 
 there must be one state with the *name* attribute set to *NORMAL*.
 
+Refer to :ref:`Parameter states<node-configuration-parameter>` for further information.
+
 .. note::
     State type for number parameters can be changed with the *statesType* attribute. When changing *statesType* 
     you should specify new *states* configuration or default states will be applied.

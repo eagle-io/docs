@@ -152,7 +152,7 @@ Name
     Assign a Name for each State. The *NORMAL* State (Range States) can not be renamed or removed.
 
 Threshold
-    Specify the value to use as the State threshold. States positioned above *NORMAL* will use this value as their lower threshold. States positioned below *NORMAL* will use this value as their upper threshold.
+    Specify the value to use as the State threshold. States positioned above *NORMAL* will activate when the current value ascends past the given threshold. States positioned below *NORMAL* will activate when the current value descends past the given threshold.
 
 Match / Contains
     Specify the value to match (Number Parameters) or a value that is contained in the data (Text Parameters). Applies to Discrete states only.
