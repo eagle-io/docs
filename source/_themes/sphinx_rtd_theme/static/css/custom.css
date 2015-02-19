@@ -26,8 +26,8 @@ strong {
 }
 
 /* hide promo links inserted by RTD */
-.wy-menu.rst-pro{
-	display: none;
+.wy-menu.rst-pro {
+	display: none !important;
 }
 
 /* general styles */
