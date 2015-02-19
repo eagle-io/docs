@@ -195,7 +195,7 @@ latex_elements = {
 #'papersize': 'letterpaper',
 
 # remove release label from doc.
-'releasename': '2014',
+'releasename': '2015',
 
 # The font size ('10pt', '11pt' or '12pt').
 'pointsize': '11pt',
