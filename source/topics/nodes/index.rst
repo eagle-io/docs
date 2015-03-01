@@ -29,6 +29,13 @@ Nodes are the container objects that store all data and configuration for your p
 	
 	| 
 
+|icon-chart| Chart
+	:ref:`Charts <node-configuration-chart>` allow users to configure customized charts that can be displayed in charts view or added to the dash. Custom chart types include Historic charts with multiple y-axes and Wind Rose charts.
+
+.. only:: not latex
+	
+	| 
+
 |icon-dash| Dashboard
 	:ref:`Dashboards <node-configuration-dashboard>` allow users to create customized views of their data in visually appealing layouts using animated gauges, charts, lists, maps and other graphical controls.
 
@@ -120,6 +127,7 @@ Nodes are the container objects that store all data and configuration for your p
 
    workspace
    location
+   chart
    dashboard
    attachment
    attachmentsource
