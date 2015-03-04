@@ -176,20 +176,20 @@ Attributes are assigned specific *Data types* which are enforced for all request
 .. table::
     :class: table-fluid table-col1-nowrap
 
-    =================   =============================   =======================================================================     
-    Data type           Example                         Description
-    =================   =============================   =======================================================================  
-    **Number**          12.4                            Any number. Also expressed as **Int32** or **Int64** for integers and 
-                                                        **Double** for double precision floating point numbers
-    **Boolean**         true                            *true* or *false*
-    **String**          "Valve Open"                    Any text surrounded in quotes
-    **Time**            "2014-09-24T19:48:32.000Z"      :ref:`ISO8601<time-format-iso8601>` timestamp surrounded in quotes
-    **ObjectId**        "53ce0b6a0eba8dc46900000f"      Unique identifier surrounded in quotes
-    **Array**           ["item1", "item2"]              List of items. May contain any data type but generally not mixed
-    **Object**          {"key": "value"}                Nested attributes
-    **Variable**                                        May contain various data types but usually specific for 
-                                                        each resource _class
-    =================   =============================   =======================================================================     
+    =====================   =============================   =======================================================================     
+    Data type               Example                         Description
+    =====================   =============================   =======================================================================  
+    **Number**              12.4                            Any number. Also expressed as **Int32** or **Int64** for integers and 
+                                                            **Double** for double precision floating point numbers
+    **Boolean**             true                            *true* or *false*
+    **String**              "Valve Open"                    Any text surrounded in quotes
+    **Time**                "2014-09-24T19:48:32.000Z"      :ref:`ISO8601<time-format-iso8601>` timestamp surrounded in quotes
+    **ObjectId**            "53ce0b6a0eba8dc46900000f"      Unique identifier surrounded in quotes
+    **Array**               ["item1", "item2"]              List of items. May contain any data type but generally not mixed
+    **Object**              {"key": "value"}                Nested attributes
+    **Variable**                                            May contain various data types but usually specific for each resource 
+                                                            _class
+    =====================   =============================   =======================================================================     
 
 .. only:: not latex
 
