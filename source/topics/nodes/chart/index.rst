@@ -232,6 +232,14 @@ Nodes can be dragged with a mouse directly from the Workspaces Tree and dropped 
         :scale: 80 %
 
 
+Copy/Paste Charts
+--------------------------
+|icon-paste| Copy/Paste operations can be performed from the Workspaces Tree to quickly duplicate one or more charts. Links are automatically re-assigned to corresponding Nodes relative to the Chart in the destination where they exist. ie. You can copy/paste complete Locations containing Charts without manually re-assigning all Links.
+
+Move Charts
+--------------------
+|icon-move| Moving a Chart within a Workspace will keep existing links. Moving a Chart between Workspaces will invalidate all Links.
+
 .. raw:: latex
 
     \newpage
