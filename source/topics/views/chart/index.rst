@@ -60,7 +60,25 @@ Parameters Subview displays a chart per Parameter (based on Parameter name). Use
 
 Custom
 ~~~~~~
-Custom Subview displays the customized Chart Nodes. This feature is currently not available.
+Custom Subview displays a list of pre-configured :ref:`custom charts <node-configuration-chart>`.
+
+.. raw:: latex
+
+    \vspace{-10pt}
+
+.. only:: not latex
+
+	.. image:: chart_custom.png
+		:scale: 50 %
+
+	| 
+
+.. only:: latex
+
+	| 
+	
+	.. image:: chart_custom.png
+
 
 .. _working-with-charts:
 

@@ -23,7 +23,7 @@ Tile layout is automatically adjusted to best suit your display device.
 
 Add tile
 --------
-|icon-dash-tile| Click the Add tile button from the Toolbar to open the Tile library. Select the type of Tile you would like to add from the presets and click the *Add tile* button.
+|icon-dash-tile| Click the Add tile button from the Toolbar to open the Tile library. Select the type of Tile you would like to add from the presets or click cancel to close the dialog.
 
 .. only:: not latex
 

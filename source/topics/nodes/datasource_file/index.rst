@@ -11,7 +11,7 @@ The type of Data Source (data logger or file) is selected at time of creation an
 
 Properties
 ----------
-.. include:: properties.rstx
+.. include:: ../properties.rstx
 
 
 General

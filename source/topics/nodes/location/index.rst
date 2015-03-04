@@ -8,7 +8,7 @@ Locations can be created inside Workspaces and Groups.
 
 Properties
 ----------
-.. include:: properties.rstx
+.. include:: ../properties.rstx
 
 
 General

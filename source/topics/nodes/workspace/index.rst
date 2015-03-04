@@ -7,7 +7,7 @@ Workspace
 
 Properties
 ----------
-.. include:: properties.rstx
+.. include:: ../properties.rstx
 
 .. _node-configuration-workspace-sharing:
 

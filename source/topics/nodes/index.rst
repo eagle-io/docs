@@ -30,7 +30,7 @@ Nodes are the container objects that store all data and configuration for your p
 	| 
 
 |icon-chart| Chart
-	:ref:`Charts <node-configuration-chart>` allow users to configure customized charts that can be displayed in charts view or added to the dash. Custom chart types include Historic charts with multiple y-axes and Wind Rose charts.
+	Create various types of :ref:`charts <node-configuration-chart>` with customized functionality and appearance including historic charts with multiple y-axes and wind rose charts with configurable ranges.
 
 .. only:: not latex
 	
@@ -125,12 +125,12 @@ Nodes are the container objects that store all data and configuration for your p
 .. toctree::
    :hidden:
 
-   workspace
-   location
-   chart
-   dashboard
-   attachment
-   attachmentsource
-   datasource_file
-   datasource_datalogger
-   parameter
+   workspace/index
+   location/index
+   chart/index
+   dashboard/index
+   attachment/index
+   attachmentsource/index
+   datasource_file/index
+   datasource_datalogger/index
+   parameter/index

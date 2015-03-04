@@ -7,7 +7,7 @@ Attachment Source
 
 Properties
 ----------
-.. include:: properties.rstx
+.. include:: ../properties.rstx
 
 
 General

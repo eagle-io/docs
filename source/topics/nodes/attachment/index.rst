@@ -8,7 +8,7 @@ To view attachments navigate to :menuselection:`List View --> Attachments`. You 
 
 Properties
 ----------
-.. include:: properties.rstx
+.. include:: ../properties.rstx
 
 
 General

@@ -130,6 +130,9 @@ You can easily show all content by selecting the Base Node.
 	Locations are special containers used to associate data with a geographical location.
 	Locations can be created inside Workspaces and Groups.
 
+|icon-chart| Chart
+	Create various types of charts with customized functionality and appearance including historic charts with multiple y-axes and wind rose charts with configurable ranges.
+
 |icon-dash| Dashboard
 	Dashboards allow users to create customized views of their data in visually appealing layouts using animated gauges, charts, lists, maps and other graphical controls.
 
@@ -157,7 +160,7 @@ Use the View Selector to change the View. You will notice the Content Area and T
 	Intuitive categorised lists provide quick access to the data for your most important Nodes: Locations, Sources, Parameters, Attachments.
 
 |icon-chart| Chart
-	Use the Chart View for reviewing your timeseries data in highly interactive charts. Choose to group data on charts by Location or Parameter type.
+	Use the Chart View for reviewing your timeseries data in highly interactive charts. Choose to group data on charts by Location or Parameter type. You can also setup custom charts for full customization over functionality and appearance.
 
 |icon-events| Events
 	Every interaction (user and system generated) is recorded in the Events log. 

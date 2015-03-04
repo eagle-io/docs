@@ -57,7 +57,7 @@ Types of Parameters
 
 Properties
 ----------
-.. include:: properties.rstx
+.. include:: ../properties.rstx
 
 .. note::
     Available options will vary based on Parameter type.

@@ -10,7 +10,7 @@ Refer to the :ref:`Device configuration <device-configuration>` section for a qu
 
 Properties
 ----------
-.. include:: properties.rstx
+.. include:: ../properties.rstx
 
 
 General
