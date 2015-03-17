@@ -1,14 +1,14 @@
 Customization
 =============
 
-|icon-customise| Premium and Enterprise Accounts have access to the following customization features:
+|icon-customise| The following customization features are available depending on your account type:
 
 Product 
 --------
 
 Domains
 ~~~~~~~
-Premium users can specify a subdomain of their choosing and change this at any time.
+Standard account owners can specify a subdomain of their choosing and change this at any time.
 Changes take effect immediately and logged in users will be prompted to navigate to the new url.
 
 Minimum length of 5 characters is required. The subdomain will be validated on save.
@@ -33,12 +33,12 @@ Minimum length of 5 characters is required. The subdomain will be validated on s
 
 
 .. note:: 
-	Enterprise users can bring their own domain but must contact support@eagle.io for changes.
+	Premium and Enterprise account owners can bring their own domain but must contact support@eagle.io for changes.
 
 
 Company Logo
 ~~~~~~~~~~~~
-Company Logos can be uploaded to customize the appearance of the site when accessed via the account subdomain/domain.
+Company logos can be uploaded to customize the appearance of the site when accessed via the account subdomain/domain.
 Click on the logo images to replace them with your own. For best results use images that conform to the recommended dimensions.
 
 .. raw:: latex
@@ -64,7 +64,7 @@ Public Content
 
 Front Page
 ~~~~~~~~~~
-You can customize your landing page by changing the banner image and adding some text as desired.
+You can customize your landing page by changing the banner image and description.
 
 .. raw:: latex
 
