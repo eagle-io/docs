@@ -135,11 +135,13 @@ The general section allows you to configure layout and display options for the T
 Links
 ``````
 Links assign Nodes in the Workspaces Tree to Tiles so the corresponding data can be displayed and updated live.
-Each type of Tile may enforce specific Link requirements. For example the Location map tile can only be linked to a single Location Node. Some tiles allow for multiple links to be assigned. The link label is user configurable and displayed on certain tiles. ie. Historic chart legend, etc.
+Each type of Tile may enforce specific Link requirements. For example the Location map tile can only be linked to a single Location Node. Some tiles allow for multiple links to be assigned. 
 
-Dashboard tiles can not be linked to Nodes in a different Workspace.
+Click the *Edit* button to show and modify the configuration for each link. Use the *Add link* button to display the Workspaces Tree and select a new Node to link. Links can be removed via the dropdown menu (accessible by clicking the menu button on the top-right corner of the link item). 
 
-You can *Change* the linked Node or Click the *x* to remove the link completely. Use the *Add link* button to display the Workspaces Tree and select a new Node to link.
+Dashboard tiles can not have links to Nodes in different Workspace and currently do not support the same nodes being linked more than once to the same tile.
+
+Drag and drop links in the list to change their display order on the tile.
 
 .. only:: not latex
 
