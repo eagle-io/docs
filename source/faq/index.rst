@@ -19,14 +19,31 @@ We support the latest versions of all major browsers: Chrome 16+, Firefox 16+, I
 
 	|google-chrome-html| We recommend `Google Chrome <https://www.google.com/intl/en/chrome/browser/>`_ for the best eagle.io experience.
 
+	| 
+
 .. only:: latex
 
 	|google-chrome-latex| We recommend `Google Chrome <https://www.google.com/intl/en/chrome/browser/>`_ for the best eagle.io experience.
 
 
+How do I access an existing users data?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Account access is managed by the owner of the account and any nominated account administrators. 
+Please request access directly from the appropriate persons in charge of the account. 
+
+New users will receive an email invitation with a link to enter their details and access the site.
+
+.. only:: not latex
+
+	| 
+
 What languages do you support?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 English is currently the only supported language. Support for other languages is coming soon. You can however set your timezone and display preferences.
+
+.. only:: not latex
+
+	| 
 
 Data Loggers
 ------------
@@ -140,6 +157,9 @@ WaterLog
 
 Support for a wide range of additional data loggers and devices is coming soon. `Contact Us <https://eagle.io/contact/>`_ to find out how to get support for your device.
 
+.. only:: not latex
+
+	| 
 
 What connection options are supported?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -154,6 +174,9 @@ TCP Callback or Stream
 Scout 
 	The *Scout modem* is the easiest way to connect your data logger to eagle.io. The Scout takes any standard internet ready SIM Card without the need for fixed IP addresses and has a range of smart features including inbuilt GPS, signal strength monitoring, event based reporting and low power mode.
 
+.. only:: not latex
+
+	| 
 
 What level of functionality do you provide for connected data loggers?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -162,10 +185,17 @@ What level of functionality do you provide for connected data loggers?
 - Create/update/merge parameters automatically as programs change
 - Synchronize device clock with timezone and daylight savings support
 
+.. only:: not latex
+
+	| 
+
 Can I connect to my data logger using 3rd party software?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Yes! You can enable *Remote Access* to your data logger at any time. An Internet address and Port will be allocated to allow you to immediately connect via TCP/IP. You can specify a session timeout and restrict access based on IP Address or allow connections from anywhere. Want to use LoggerNet or other tools for your low level operations - no problem. See :ref:`Data Source <node-configuration-datasource-datalogger>` configuration for full details.
 
+.. only:: not latex
+
+	| 
 
 Files
 -----
@@ -173,6 +203,10 @@ Files
 What types of time series data files do you support?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 We support most types of delimited text files such as csv, loggernet and other standard formats. See :ref:`Data Source <node-configuration-datasource-file>` configuration for full details.
+
+.. only:: not latex
+
+	| 
 
 What file transports do you support for automatic collection?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -198,11 +232,17 @@ We support automatic collection via the following transports:
 
 You can also manually import and export data files directly from the user interface or use our :ref:`HTTP API <api>` for automation.
 
+.. only:: not latex
+
+	| 
 
 Can I upload other types of files?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Files of any type can be uploaded through the interface or use an :ref:`Attachment Source <node-configuration-attachmentsource>` for automated uploads. All content and files uploaded must comply with our `Acceptable Use Policy <https://eagle.io/policies/acceptableuse>`_.
 
+.. only:: not latex
+
+	| 
 
 Cameras
 -------
@@ -215,6 +255,14 @@ We support Email and FTP as the Attachment Source transport.
 To send via Email, your camera must have in-built support for emailing images/files with custom subject text.
 For uploads via FTP you can simply enter the credentials provided on Source creation.
 
+.. only:: not latex
+
+	| 
+
 Do you support live streaming video?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Support for live streaming video with optional PTZ control (Pan, Tilt, Zoom) is coming soon.
+
+.. only:: not latex
+
+	| 
