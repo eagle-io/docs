@@ -10,7 +10,7 @@ The Usage Overview shows a current snapshot of the Nodes being used for each Wor
     
 .. only:: not latex
 
-	.. image:: account_workspaces.png
+	.. image:: account_workspaces.jpg
 		:scale: 50 %
 
 	| 
@@ -19,7 +19,7 @@ The Usage Overview shows a current snapshot of the Nodes being used for each Wor
 
 	| 
 
-	.. image:: account_workspaces.png
+	.. image:: account_workspaces.jpg
 
 You can add a new Workspace, rename or remove existing Workspaces or configure Sharing and Security via the properties icons.
 

@@ -23,7 +23,7 @@ Source configuration
 
 .. only:: not latex
 
-    .. image:: spider_wizard_1.png
+    .. image:: spider_wizard_1.jpg
         :scale: 50 %
 
     | 
@@ -32,13 +32,13 @@ Source configuration
     
     | 
 
-    .. image:: spider_wizard_1.png
+    .. image:: spider_wizard_1.jpg
 
 2. Select *Upload data to ftp.eagle.io* as the transport type. A unique *Ftp user* account will be automatically generated per Data Source. You can optionally specify a password to be used by the logger for additional security. Select the timezone of the logger's clock and click Next.
 
 .. only:: not latex
 
-    .. image:: spider_wizard_2.png
+    .. image:: spider_wizard_2.jpg
         :scale: 50 %
 
     | 
@@ -47,13 +47,13 @@ Source configuration
     
     | 
 
-    .. image:: spider_wizard_2.png
+    .. image:: spider_wizard_2.jpg
 
 3. Specify *csv* as the *File name match*. This will match all incoming files for this Source containing 'csv' in the filename. To continue the setup you will need a sample copy of the logger's output data file(s). 
 
 .. only:: not latex
 
-    .. image:: spider_wizard_3.png
+    .. image:: spider_wizard_3.jpg
         :scale: 50 %
 
     | 
@@ -62,7 +62,7 @@ Source configuration
     
     | 
 
-    .. image:: spider_wizard_3.png
+    .. image:: spider_wizard_3.jpg
 
 .. note:: 
     If you do not have a sample available, click the *Skip* checkbox and click finish on the next screen. A sample will be saved automatically on the initial upload from the data logger and you will need to open the :ref:`Data Source <node-configuration-datasource-datalogger>` properties dialog and :ref:`configure the series <node-configuration-datasource-file-series>` to create parameters.
@@ -71,7 +71,7 @@ Source configuration
 
 .. only:: not latex
 
-    .. image:: spider_wizard_4a.png
+    .. image:: spider_wizard_4a.jpg
         :scale: 50 %
 
     | 
@@ -80,7 +80,7 @@ Source configuration
     
     | 
 
-    .. image:: spider_wizard_4a.png
+    .. image:: spider_wizard_4a.jpg
 
 If the file contains a header row, set the *Labels row* control to the corresponding row number which will assign default labels for parameter creation.
 
@@ -90,7 +90,7 @@ You will need to change the default time format for the *Record Time* column. Cl
 
 .. only:: not latex
 
-    .. image:: spider_wizard_4b.png
+    .. image:: spider_wizard_4b.jpg
         :scale: 50 %
 
     | 
@@ -99,13 +99,13 @@ You will need to change the default time format for the *Record Time* column. Cl
     
     | 
 
-    .. image:: spider_wizard_4b.png
+    .. image:: spider_wizard_4b.jpg
 
 5. Specify the parameter names (and optionally units) for each series/column defined in the Parser configuration. Uncheck any series you do not want to create as parameters. Click Finish to complete the setup. 
 
 .. only:: not latex
 
-    .. image:: spider_wizard_5.png
+    .. image:: spider_wizard_5.jpg
         :scale: 50 %
 
     | 
@@ -114,7 +114,7 @@ You will need to change the default time format for the *Record Time* column. Cl
     
     | 
 
-    .. image:: spider_wizard_5.png
+    .. image:: spider_wizard_5.jpg
 
 .. note:: 
     You can reconfigure the file name match/sample file, parser configuration and parameter assignment from the :ref:`Data Source<node-configuration-datasource-file>` properties dialog after creation.

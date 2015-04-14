@@ -19,7 +19,7 @@ Minimum length of 5 characters is required. The subdomain will be validated on s
 
 .. only:: not latex
 
-	.. image:: account_customise_subdomain.png
+	.. image:: account_customise_subdomain.jpg
 		:scale: 50 %
 
 	| 
@@ -28,7 +28,7 @@ Minimum length of 5 characters is required. The subdomain will be validated on s
 
 	| 
 
-	.. image:: account_customise_subdomain.png
+	.. image:: account_customise_subdomain.jpg
 		:scale: 60 %
 
 
@@ -47,7 +47,7 @@ Click on the logo images to replace them with your own. For best results use ima
 
 .. only:: not latex
 
-    .. image:: account_customise_product.png
+    .. image:: account_customise_product.jpg
         :scale: 50 %
 
     | 
@@ -56,7 +56,7 @@ Click on the logo images to replace them with your own. For best results use ima
     
     | 
 
-    .. image:: account_customise_product.png
+    .. image:: account_customise_product.jpg
         :scale: 70 %
 
 Public Content
@@ -72,7 +72,7 @@ You can customize your landing page by changing the banner image and description
 
 .. only:: not latex
 
-    .. image:: account_customise_public.png
+    .. image:: account_customise_public.jpg
         :scale: 50 %
 
     | 
@@ -81,7 +81,7 @@ You can customize your landing page by changing the banner image and description
     
     | 
 
-    .. image:: account_customise_public.png
+    .. image:: account_customise_public.jpg
         :scale: 70 %
 
 Contact

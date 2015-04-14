@@ -20,7 +20,7 @@ The current status of the operation is shown for each Data Source being configur
 
 .. only:: not latex
 
-    .. image:: operate_manageconfiguration_dialog.png
+    .. image:: operate_manageconfiguration_dialog.jpg
         :scale: 50 %
 
     | 
@@ -29,7 +29,7 @@ The current status of the operation is shown for each Data Source being configur
 
     | 
 
-    .. image:: operate_manageconfiguration_dialog.png
+    .. image:: operate_manageconfiguration_dialog.jpg
 
 Use the *Browse* button to select file(s) to upload. After the files have been selected you must assign a :ref:`configuration option <operate-manageconfiguration-options>` to each file.
 
@@ -56,7 +56,7 @@ Use the *Send now* button to immediately trigger or retry a configuration update
 
 .. only:: not latex
 
-    .. image:: operate_manageconfiguration_panel.png
+    .. image:: operate_manageconfiguration_panel.jpg
         :scale: 50 %
 
     | 
@@ -65,7 +65,7 @@ Use the *Send now* button to immediately trigger or retry a configuration update
 
     | 
 
-    .. image:: operate_manageconfiguration_panel.png
+    .. image:: operate_manageconfiguration_panel.jpg
 
 
 .. _operate-manageconfiguration-options:

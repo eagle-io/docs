@@ -15,21 +15,21 @@ Rows items will be *GRAY* if the corresponding node configuration has not been f
 
     *Active Alarm*
 
-    .. image:: list_alarm.png
+    .. image:: list_alarm.jpg
         :scale: 50 %
 
     | 
 
     *Acknowledged Alarm*
 
-    .. image:: list_acknowledged.png
+    .. image:: list_acknowledged.jpg
         :scale: 50 %
 
     | 
 
     *Disabled*
 
-    .. image:: list_disabled.png
+    .. image:: list_disabled.jpg
         :scale: 50 %
 
     | 
@@ -38,11 +38,11 @@ Rows items will be *GRAY* if the corresponding node configuration has not been f
 
     *Active Alarm*
 
-    .. image:: list_alarm.png
+    .. image:: list_alarm.jpg
 
     *Acknowledged Alarm*
 
-    .. image:: list_acknowledged.png
+    .. image:: list_acknowledged.jpg
 
     .. raw:: latex
 
@@ -50,7 +50,7 @@ Rows items will be *GRAY* if the corresponding node configuration has not been f
 
     *Disabled*
 
-    .. image:: list_disabled.png
+    .. image:: list_disabled.jpg
 
 
 Subviews
@@ -67,7 +67,7 @@ Locations Subview displays an overview of Location Nodes.
 
 .. only:: not latex
 
-    .. image:: list_locations.png
+    .. image:: list_locations.jpg
         :scale: 50 %
 
     | 
@@ -76,7 +76,7 @@ Locations Subview displays an overview of Location Nodes.
 
     | 
 
-    .. image:: list_locations.png
+    .. image:: list_locations.jpg
 
 
 Location
@@ -104,7 +104,7 @@ Sources Subview displays a list of all Data and Attachment Sources.
 
 .. only:: not latex
 
-    .. image:: list_sources.png
+    .. image:: list_sources.jpg
         :scale: 50 %
 
     | 
@@ -113,7 +113,7 @@ Sources Subview displays a list of all Data and Attachment Sources.
     
     | 
 
-    .. image:: list_sources.png
+    .. image:: list_sources.jpg
 
 Location
     Location name with path.
@@ -174,7 +174,7 @@ Parameters Subview displays a list of all parameters.
 
 .. only:: not latex
 
-    .. image:: list_parameters.png
+    .. image:: list_parameters.jpg
         :scale: 50 %
 
     | 
@@ -183,7 +183,7 @@ Parameters Subview displays a list of all parameters.
 
     | 
 
-    .. image:: list_parameters.png
+    .. image:: list_parameters.jpg
 
 Location
     Location name with path.
@@ -221,7 +221,7 @@ Attachments subview displays a list of all attachments.
     
 .. only:: not latex
 
-    .. image:: list_attachments.png
+    .. image:: list_attachments.jpg
         :scale: 50 %
 
     | 
@@ -230,7 +230,7 @@ Attachments subview displays a list of all attachments.
 
     | 
 
-    .. image:: list_attachments.png
+    .. image:: list_attachments.jpg
 
 Preview
     Thumbnail image or file icon. Images can be clicked or touched to be shown in the media gallery.
@@ -294,7 +294,7 @@ Media Gallery
     
 .. only:: not latex
 
-    .. image:: list_gallery.png
+    .. image:: list_gallery.jpg
         :scale: 50 %
 
     | 
@@ -303,4 +303,4 @@ Media Gallery
 
     | 
     
-    .. image:: list_gallery.png
+    .. image:: list_gallery.jpg

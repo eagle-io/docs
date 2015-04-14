@@ -15,7 +15,7 @@ The events list is live updating and always displayed in reverse chronological o
     
 .. only:: not latex
 
-	.. image:: events_overview.png
+	.. image:: events_overview.jpg
 		:scale: 50 %
 
 	| 
@@ -24,7 +24,7 @@ The events list is live updating and always displayed in reverse chronological o
 
 	| 
 
-	.. image:: events_overview.png
+	.. image:: events_overview.jpg
 	
 
 Searching the Event Log
@@ -36,14 +36,14 @@ Use the Jump to date control to jump to a specific date. After scrolling down, y
 
 .. only:: not latex
 
-	.. image:: events_date.png
+	.. image:: events_date.jpg
 		:scale: 50 %
 
 	| 
 
 .. only:: latex
 
-	.. image:: events_date.png
+	.. image:: events_date.jpg
 		:scale: 35 %
 
 Detail Level

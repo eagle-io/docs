@@ -201,7 +201,7 @@ The Series section allows you to assign Series from the Source to New or Existin
 
 .. only:: not latex
 
-	.. image:: datasource_file_series.png
+	.. image:: datasource_file_series.jpg
 		:scale: 50 %
 
 	| 
@@ -210,7 +210,7 @@ The Series section allows you to assign Series from the Source to New or Existin
 	
 	| 
 
-	.. image:: datasource_file_series.png
+	.. image:: datasource_file_series.jpg
 
 
 Add Files

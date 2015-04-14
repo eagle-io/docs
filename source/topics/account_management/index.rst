@@ -5,7 +5,7 @@ Account Management
 
 Use the Account selector located in the User Menu of the Account Management section to switch between all the Accounts you own or have Administration access to.
 
-.. image:: account_selector.png
+.. image:: account_selector.jpg
 	:scale: 50 %
 
 .. only:: not latex

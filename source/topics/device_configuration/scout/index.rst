@@ -6,12 +6,12 @@ The *Scout modem* is the easiest way to connect your data logger to eagle.io. Th
 
 .. only:: not latex
 
-    .. image:: scout.png
+    .. image:: scout.jpg
         :scale: 50 %
 
 .. only:: latex
 
-    .. image:: scout.png
+    .. image:: scout.jpg
         :scale: 35 %
 
 | 
@@ -26,7 +26,7 @@ You need to configure your Data Source to use the Scout transport. You can then 
 
 .. only:: not latex
 
-	.. image:: datasource_device.png
+	.. image:: datasource_device.jpg
 		:scale: 50 %
 
 	| 
@@ -35,7 +35,7 @@ You need to configure your Data Source to use the Scout transport. You can then 
 	
 	| 
 
-	.. image:: datasource_device.png
+	.. image:: datasource_device.jpg
 
 
 Device settings
@@ -52,7 +52,7 @@ The general section allows you to configure the device for use with your SIM.
 
 .. only:: not latex
 
-	.. image:: device_scout_general.png
+	.. image:: device_scout_general.jpg
 		:scale: 50 %
 
 	| 
@@ -61,7 +61,7 @@ The general section allows you to configure the device for use with your SIM.
 
 	| 
 
-	.. image:: device_scout_general.png
+	.. image:: device_scout_general.jpg
 
 Status updates
 	Frequency of status updates - including GPS coordinates and signal strength. This option is only available when the Data Source schedule is *Enabled* and Schedule type set to *Server*. When the Data Source schedule is *Disabled* or set to *Remote* the status updates will only occur when the device performs a Callback.
@@ -88,7 +88,7 @@ The communication section allows you to change the COM1 port settings to correct
 
 .. only:: not latex
 
-	.. image:: device_scout_communication.png
+	.. image:: device_scout_communication.jpg
 		:scale: 50 %
 
 	| 
@@ -97,7 +97,7 @@ The communication section allows you to change the COM1 port settings to correct
 
 	| 
 
-	.. image:: device_scout_communication.png
+	.. image:: device_scout_communication.jpg
 
 
 .. note::
@@ -114,7 +114,7 @@ The configuration section allows you to view software versions and configure upd
 
 .. only:: not latex
 
-	.. image:: device_scout_configuration.png
+	.. image:: device_scout_configuration.jpg
 		:scale: 50 %
 
 	| 
@@ -123,7 +123,7 @@ The configuration section allows you to view software versions and configure upd
 
 	| 
 
-	.. image:: device_scout_configuration.png
+	.. image:: device_scout_configuration.jpg
 
 Software updates
 	Select an option for software updates:
@@ -147,7 +147,7 @@ The operation section can be used to remotely reset or reboot the *Scout modem* 
 
 .. only:: not latex
 
-	.. image:: device_scout_operation.png
+	.. image:: device_scout_operation.jpg
 		:scale: 50 %
 
 	| 
@@ -156,7 +156,7 @@ The operation section can be used to remotely reset or reboot the *Scout modem* 
 
 	| 
 
-	.. image:: device_scout_operation.png
+	.. image:: device_scout_operation.jpg
 
 .. raw:: latex
 

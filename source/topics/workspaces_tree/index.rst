@@ -16,14 +16,14 @@ Create
 
 .. only:: not latex
 
-	.. image:: workspaces_tree_create.png
+	.. image:: workspaces_tree_create.jpg
 		:scale: 50 %
 
 	| 
 
 .. only:: latex
 	
-	.. image:: workspaces_tree_create.png
+	.. image:: workspaces_tree_create.jpg
 		:scale: 35 %
 
 The Create Menu displays a list of the types of Nodes that can be created inside the currently Selected Node. Items that are disabled can not be created inside the Selected Node - either a restriction on the type of Node or you do not have the required security permissions.
@@ -34,7 +34,7 @@ The Create Menu displays a list of the types of Nodes that can be created inside
 
 *Create using Context Menu*
 
-.. image:: workspaces_tree_context.png
+.. image:: workspaces_tree_context.jpg
 	:scale: 50 %
 
 .. only:: not latex
@@ -48,7 +48,7 @@ Rename
 ------
 |icon-rename| Rename a Node from the context menu or press the *F2* key after selecting a Node. 
 
-.. image:: workspaces_tree_rename.png
+.. image:: workspaces_tree_rename.jpg
 	:scale: 50 %
 
 The Node will be selected and you can type in a new name and press enter/return or click anywhere outside the Node to apply.
@@ -62,14 +62,14 @@ Delete
 
 .. only:: not latex
 
-	.. image:: workspaces_tree_delete.png
+	.. image:: workspaces_tree_delete.jpg
 		:scale: 50 %
 
 	| 
 
 .. only:: latex
 
-	.. image:: workspaces_tree_delete.png
+	.. image:: workspaces_tree_delete.jpg
 		:scale: 70 %
 
 .. note:: 
@@ -96,7 +96,7 @@ Select *Move* from the Context Menu to open the *Move dialog* and select a desti
 
 Alternatively *Click and Drag* a Node in the Workspaces Tree to the destination Node and release the mouse button when you see the destination node highlighted. Nodes will automatically expand when hovered.
 
-.. image:: workspaces_tree_move.png
+.. image:: workspaces_tree_move.jpg
 	:scale: 50 %
 
 .. only:: not latex
@@ -118,7 +118,7 @@ Parameters that had been created and then unchecked (or unavailable) for collect
 
 .. only:: not latex
 
-	.. image:: workspaces_tree_disabled.png
+	.. image:: workspaces_tree_disabled.jpg
 		:scale: 50 %
 
 	| 
@@ -127,7 +127,7 @@ Parameters that had been created and then unchecked (or unavailable) for collect
 
 	| 
 
-	.. image:: workspaces_tree_disabled.png
+	.. image:: workspaces_tree_disabled.jpg
 		:scale: 35 %
 
 .. raw:: latex

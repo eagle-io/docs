@@ -21,7 +21,7 @@ Select a file to import from your computer or device and configure import option
 
 .. only:: not latex
 
-    .. image:: historic_import_selection.png
+    .. image:: historic_import_selection.jpg
         :scale: 50 %
 
     | 
@@ -30,7 +30,7 @@ Select a file to import from your computer or device and configure import option
 
     | 
 
-    .. image:: historic_import_selection.png
+    .. image:: historic_import_selection.jpg
 
 File type
     Select the type of file you would like to import:
@@ -85,7 +85,7 @@ The Text Parser allows you to define how the delimited text file being imported 
 
 .. only:: not latex
 
-    .. image:: historic_import_parser.png
+    .. image:: historic_import_parser.jpg
         :scale: 50 %
 
     | 
@@ -94,7 +94,7 @@ The Text Parser allows you to define how the delimited text file being imported 
 
     | 
 
-    .. image:: historic_import_parser.png
+    .. image:: historic_import_parser.jpg
 
 
 Assign Series to Parameters and Location
@@ -108,7 +108,7 @@ Assign the newly defined Series to New or Existing Parameters. You can also assi
 
 .. only:: not latex
 
-    .. image:: historic_import_series.png
+    .. image:: historic_import_series.jpg
         :scale: 50 %
 
     | 
@@ -117,7 +117,7 @@ Assign the newly defined Series to New or Existing Parameters. You can also assi
 
     | 
 
-    .. image:: historic_import_series.png
+    .. image:: historic_import_series.jpg
 
 Location Coordinates
     The imported file can optionally provide Location Coordinates from a coordinate series or a pair of numeric series (lat/lng) and will import the data into the Location Node this Source is contained within.
@@ -143,7 +143,7 @@ The Process and Upload screen displays a progress bar and status information abo
 
 .. only:: not latex
 
-    .. image:: historic_import_process.png
+    .. image:: historic_import_process.jpg
         :scale: 50 %
 
     | 
@@ -152,7 +152,7 @@ The Process and Upload screen displays a progress bar and status information abo
 
     | 
 
-    .. image:: historic_import_process.png
+    .. image:: historic_import_process.jpg
 
 
 .. note:: Files containing a large number of records may be time consuming to process. Some browsers/devices may also enforce certain limits which prevent successful import of large files even if they are smaller than the 250MB limit.

@@ -19,7 +19,7 @@ SMS notifications incur charges on the Owners Account. You can restrict the tota
 
 .. only:: not latex
 
-	.. image:: account_notification_limits.png
+	.. image:: account_notification_limits.jpg
 		:scale: 50 %
 
 	| 
@@ -28,7 +28,7 @@ SMS notifications incur charges on the Owners Account. You can restrict the tota
 
 	| 
 
-	.. image:: account_notification_limits.png
+	.. image:: account_notification_limits.jpg
 		:scale: 70 %
 
 The account owner will receive an Email from the system when the total number of SMS sent within the current billing period gets close to the selected limit. Another Email will be sent when the limit is reached and no further notification SMS's will be sent until the next billing period.
@@ -51,7 +51,7 @@ Add, rename and remove categories as necessary.
 
 .. only:: not latex
 
-	.. image:: account_notification_categories.png
+	.. image:: account_notification_categories.jpg
 		:scale: 50 %
 
 	| 
@@ -60,7 +60,7 @@ Add, rename and remove categories as necessary.
 	
 	| 
 
-	.. image:: account_notification_categories.png
+	.. image:: account_notification_categories.jpg
 		:scale: 80 %
 
 

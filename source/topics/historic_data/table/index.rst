@@ -12,7 +12,7 @@ Use the *Jump to date* control to quickly move to a specific date.
 
 .. only:: not latex
 
-	.. image:: historic_table.png
+	.. image:: historic_table.jpg
 		:scale: 50 %
 
 	| 
@@ -21,7 +21,7 @@ Use the *Jump to date* control to quickly move to a specific date.
 	
 	| 
 
-	.. image:: historic_table.png
+	.. image:: historic_table.jpg
 		:scale: 100 %
 
 
@@ -33,7 +33,7 @@ By default only the first 15 parameters will be displayed. Use the *Parameter se
 
 .. only:: not latex
 
-	.. image:: ../historic_parameter_selection.png
+	.. image:: ../historic_parameter_selection.jpg
 		:scale: 50 %
 
 	| 
@@ -42,7 +42,7 @@ By default only the first 15 parameters will be displayed. Use the *Parameter se
 	
 	| 
 
-	.. image:: ../historic_parameter_selection.png
+	.. image:: ../historic_parameter_selection.jpg
 		:scale: 40 %
 
 Display type

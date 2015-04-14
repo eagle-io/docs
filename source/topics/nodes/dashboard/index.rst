@@ -9,7 +9,7 @@ Tile layout is automatically adjusted to best suit your display device.
 
 .. only:: not latex
 
-    .. image:: dash_layout.png
+    .. image:: dash_layout.jpg
         :scale: 50 %
 
     | 
@@ -18,7 +18,7 @@ Tile layout is automatically adjusted to best suit your display device.
 
 	| 
 
-    .. image:: dash_layout.png
+    .. image:: dash_layout.jpg
 
 
 Add tile
@@ -27,7 +27,7 @@ Add tile
 
 .. only:: not latex
 
-    .. image:: dash_tile_library.png
+    .. image:: dash_tile_library.jpg
         :scale: 50 %
 
     | 
@@ -36,7 +36,7 @@ Add tile
 
     | 
 
-    .. image:: dash_tile_library.png
+    .. image:: dash_tile_library.jpg
 
 
 Tile operations
@@ -45,14 +45,14 @@ Moving the mouse over or touching a tile will show the title bar and menu button
 
 .. only:: not latex
 
-    .. image:: dash_tile_operations.png
+    .. image:: dash_tile_operations.jpg
         :scale: 50 %
 
     | 
 
 .. only:: latex
 
-    .. image:: dash_tile_operations.png
+    .. image:: dash_tile_operations.jpg
     	:scale: 30 %
 
 Reposition
@@ -61,14 +61,14 @@ Click or Touch, hold and drag the title bar to reposition the Tile on the Dashbo
 
 .. only:: not latex
 
-    .. image:: dash_tile_reposition.png
+    .. image:: dash_tile_reposition.jpg
         :scale: 50 %
 
     | 
 
 .. only:: latex
 
-    .. image:: dash_tile_reposition.png
+    .. image:: dash_tile_reposition.jpg
     	:scale: 30 %
 
 Resize
@@ -77,14 +77,14 @@ Click or Touch, hold and drag the resize handle to adjust the width and height o
 
 .. only:: not latex
 
-    .. image:: dash_tile_resize.png
+    .. image:: dash_tile_resize.jpg
         :scale: 50 %
 
     | 
 
 .. only:: latex
 
-    .. image:: dash_tile_resize.png
+    .. image:: dash_tile_resize.jpg
     	:scale: 30 %
 
 Rename
@@ -93,14 +93,14 @@ Rename
 
 .. only:: not latex
 
-    .. image:: dash_tile_rename.png
+    .. image:: dash_tile_rename.jpg
         :scale: 50 %
 
     | 
 
 .. only:: latex
 
-    .. image:: dash_tile_rename.png
+    .. image:: dash_tile_rename.jpg
     	:scale: 30 %
 
 Delete
@@ -121,14 +121,14 @@ The general section allows you to configure layout and display options for the T
 
 .. only:: not latex
 
-    .. image:: dash_tile_properties_general.png
+    .. image:: dash_tile_properties_general.jpg
         :scale: 50 %
 
     | 
 
 .. only:: latex
 
-    .. image:: dash_tile_properties_general.png
+    .. image:: dash_tile_properties_general.jpg
     	:scale: 70 %
 
 
@@ -145,7 +145,7 @@ Drag and drop links in the list to change their display order on the tile.
 
 .. only:: not latex
 
-    .. image:: dash_tile_properties_links.png
+    .. image:: dash_tile_properties_links.jpg
         :scale: 50 %
 
     | 
@@ -154,7 +154,7 @@ Drag and drop links in the list to change their display order on the tile.
 
 	| 
 
-    .. image:: dash_tile_properties_links.png
+    .. image:: dash_tile_properties_links.jpg
 
 
 Drag and Drop Links
@@ -163,27 +163,27 @@ Nodes can be dragged with a mouse directly from the Workspaces Tree and dropped 
 
 .. only:: not latex
 
-    .. image:: dash_tile_link_drag.png
+    .. image:: dash_tile_link_drag.jpg
         :scale: 50 %
 
     | 
 
 .. only:: latex
 
-    .. image:: dash_tile_link_drag.png
+    .. image:: dash_tile_link_drag.jpg
     	:scale: 30 %
 
 
 .. only:: not latex
 
-    .. image:: dash_tile_link_drop.png
+    .. image:: dash_tile_link_drop.jpg
         :scale: 50 %
 
     | 
 
 .. only:: latex
 
-    .. image:: dash_tile_link_drop.png
+    .. image:: dash_tile_link_drop.jpg
     	:scale: 30 %
 
 Copy/Paste Dashboards

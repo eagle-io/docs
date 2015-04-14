@@ -7,14 +7,14 @@ Map
 
 .. only:: not latex
 
-	.. image:: map_overview.png
+	.. image:: map_overview.jpg
 		:scale: 50 %
 
 	| 
 
 .. only:: latex
 
-	.. image:: map_overview.png
+	.. image:: map_overview.jpg
 
 
 Map styles
@@ -24,14 +24,14 @@ Toggle between Map, Satellite and Terrain styles.
 
 .. only:: not latex
 
-	.. image:: map_controls_layers.png
+	.. image:: map_controls_layers.jpg
 		:scale: 50 %
 
 	| 
 
 .. only:: latex
 
-	.. image:: map_controls_layers.png
+	.. image:: map_controls_layers.jpg
 		:scale: 35 %
 
 Zoom and Pan
@@ -46,14 +46,14 @@ Hover over a Location icon with a mouse to quickly show its parameters. Click or
 
 .. only:: not latex
 
-	.. image:: map_location_parameters.png
+	.. image:: map_location_parameters.jpg
 		:scale: 50 %
 
 	| 
 
 .. only:: latex
 
-	.. image:: map_location_parameters.png
+	.. image:: map_location_parameters.jpg
 		:scale: 35 %
 
 Filters
@@ -66,28 +66,28 @@ Use filters to quickly show locations of interest.
 
 .. only:: not latex
 
-	.. image:: map_filters.png
+	.. image:: map_filters.jpg
 		:scale: 50 %
 
 	| 
 
 .. only:: latex
 
-	.. image:: map_filters.png
+	.. image:: map_filters.jpg
 		:scale: 35 %
 
 The show/hide filtered locations button found in the toolbar can be used to toggle the display of filtered locations. When active you will notice any filters locations are displayed with just a *GRAY* marker and no label. You can still hover or click these filtered locations to display the parameters list.
 
 .. only:: not latex
 
-	.. image:: map_controls_filter.png
+	.. image:: map_controls_filter.jpg
 		:scale: 50 %
 
 	| 
 
 .. only:: latex
 
-	.. image:: map_controls_filter.png
+	.. image:: map_controls_filter.jpg
 		:scale: 35 %
 
 .. raw:: latex
@@ -98,14 +98,14 @@ The show/hide filtered locations button found in the toolbar can be used to togg
 
 .. only:: not latex
 
-	.. image:: map_filtered.png
+	.. image:: map_filtered.jpg
 		:scale: 50 %
 
 	| 
 
 .. only:: latex
 
-	.. image:: map_filtered.png
+	.. image:: map_filtered.jpg
 		:scale: 70 %
 
 When parameter filters are applied, the corresponding parameters for each applicable Location are automatically displayed. Hover or Click the locations to display all parameters. 
@@ -121,21 +121,21 @@ These reserved marker colors temporarily overwrite the normal marker color:
 
 	*Active Alarm*
 
-	.. image:: map_marker_alarm.png
+	.. image:: map_marker_alarm.jpg
 		:scale: 50 %
 
 	| 
 
 	*Acknowledged Alarm*
 
-	.. image:: map_marker_acknowledged.png
+	.. image:: map_marker_acknowledged.jpg
 		:scale: 50 %
 
 	| 
 
 	*Filtered*
 
-	.. image:: map_marker_filtered.png
+	.. image:: map_marker_filtered.jpg
 		:scale: 50 %
 
 	| 
@@ -144,17 +144,17 @@ These reserved marker colors temporarily overwrite the normal marker color:
 
 	*Active Alarm*
 
-	.. image:: map_marker_alarm.png
+	.. image:: map_marker_alarm.jpg
 		:scale: 40 %
 
 	*Acknowledged Alarm*
 
-	.. image:: map_marker_acknowledged.png
+	.. image:: map_marker_acknowledged.jpg
 		:scale: 40 %
 
 	*Filtered*
 
-	.. image:: map_marker_filtered.png
+	.. image:: map_marker_filtered.jpg
 		:scale: 40 %
 
 
@@ -170,42 +170,42 @@ Adding a new Location marker
 
 .. only:: not latex
 
-	.. image:: map_contextmenu.png
+	.. image:: map_contextmenu.jpg
 		:scale: 50 %
 
 	| 
 
 .. only:: latex
 
-	.. image:: map_contextmenu.png
+	.. image:: map_contextmenu.jpg
 		:scale: 35 %
 
 *Add Location dialog*
 
 .. only:: not latex
 
-	.. image:: map_location_add_dialog.png
+	.. image:: map_location_add_dialog.jpg
 		:scale: 50 %
 
 	| 
 
 .. only:: latex
 
-	.. image:: map_location_add_dialog.png
+	.. image:: map_location_add_dialog.jpg
 		:scale: 70 %
 
 *Drag and Drop* Locations directly from the Workspaces Tree (not supported on touch devices).
 
 .. only:: not latex
 
-	.. image:: map_location_add_dragdrop.png
+	.. image:: map_location_add_dragdrop.jpg
 		:scale: 50 %
 
 	| 
 
 .. only:: latex
 	
-	.. image:: map_location_add_dragdrop.png
+	.. image:: map_location_add_dragdrop.jpg
 
 Reposition marker
 -----------------
@@ -213,14 +213,14 @@ Reposition marker
 
 .. only:: not latex
 
-	.. image:: map_location_reposition.png
+	.. image:: map_location_reposition.jpg
 		:scale: 50 %
 
 	| 
 
 .. only:: latex
 
-	.. image:: map_location_reposition.png
+	.. image:: map_location_reposition.jpg
 		:scale: 35 %
 
 Remove marker

@@ -201,7 +201,7 @@ latex_elements = {
 'pointsize': '11pt',
 
 # Additional stuff for the LaTeX preamble.
-'preamble': '',
+'preamble': ''
 
 }
 

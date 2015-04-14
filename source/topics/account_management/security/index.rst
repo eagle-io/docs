@@ -18,7 +18,7 @@ If you would like a User to have restricted access to Workspaces, then DO NOT ad
     
 .. only:: not latex
 
-	.. image:: account_administrators.png
+	.. image:: account_administrators.jpg
 		:scale: 50 %
 
 	| 
@@ -27,7 +27,7 @@ If you would like a User to have restricted access to Workspaces, then DO NOT ad
 
 	| 
 
-	.. image:: account_administrators.png
+	.. image:: account_administrators.jpg
 		:scale: 80 %
 
 .. note:: 
@@ -46,14 +46,14 @@ Roles have permissions associated with them which define the allowed features an
 
 .. only:: not latex
 
-	.. image:: account_user_roles.png
+	.. image:: account_user_roles.jpg
 		:scale: 50 %
 
 	| 
 
 .. only:: latex
 	
-	.. image:: account_user_roles.png
+	.. image:: account_user_roles.jpg
 	
 
 *Permissions*

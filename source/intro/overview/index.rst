@@ -30,7 +30,7 @@ You will need a user profile to log in. This requires you to `Sign up <https://e
 
 .. only:: latex
 
-	.. image:: public_login.png
+	.. image:: public_login.jpg
 		:scale: 70 %
 
 1. Login button for email & password authentication
@@ -58,7 +58,7 @@ The layout of these sections will vary depending on the screen size of your devi
 
 .. only:: latex
  
-   .. image:: ui_layout_desktop.png
+   .. image:: ui_layout_desktop.jpg
 
 *Phone and Tablet layout*
 
@@ -71,7 +71,7 @@ The layout of these sections will vary depending on the screen size of your devi
 
 .. only:: latex
 
-    .. image:: ui_layout_phone.png
+    .. image:: ui_layout_phone.jpg
         :scale: 70 %
 
 
@@ -98,14 +98,14 @@ Most Nodes are hierarchical and may also contain Nodes themselves. The *Workspac
 
 .. only:: not latex
 
-	.. image:: workspaces_tree.png
+	.. image:: workspaces_tree.jpg
 		:scale: 50 %
 
 	| 
 
 .. only:: latex
 
-	.. image:: workspaces_tree.png
+	.. image:: workspaces_tree.jpg
 		:scale: 40 %
 
 
@@ -181,7 +181,7 @@ Context menus are built into the interface and provide quick access to navigatio
 
 *Example Context menu shown for Map marker*
 
-.. image:: context_menu.png
+.. image:: context_menu.jpg
 	:scale: 50 %
 
 .. only:: not latex
@@ -217,14 +217,14 @@ You can hover, click or touch the help icon to show the help popup - many of whi
 
 .. only:: not latex
 
-	.. image:: inline_help.png
+	.. image:: inline_help.jpg
 		:scale: 50 %
 
 	| 
 
 .. only:: latex
 	
-	.. image:: inline_help.png
+	.. image:: inline_help.jpg
 		:scale: 35 %
 
 
@@ -234,14 +234,14 @@ An internet connection is required. If the connection to eagle.io has failed a d
 
 .. only:: not latex
 
-	.. image:: disconnected_notice.png
+	.. image:: disconnected_notice.jpg
 		:scale: 50 %
 
 	| 
 
 .. only:: latex
 
-	.. image:: disconnected_notice.png
+	.. image:: disconnected_notice.jpg
 		:scale: 40 %
 
 .. note:: 

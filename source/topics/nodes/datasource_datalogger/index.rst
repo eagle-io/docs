@@ -179,7 +179,7 @@ Collection is used to specify if and when data should be automatically collected
 
 .. only:: not latex
 
-    .. image:: datasource_datalogger_collection.png
+    .. image:: datasource_datalogger_collection.jpg
         :scale: 50 %
 
     | 
@@ -188,7 +188,7 @@ Collection is used to specify if and when data should be automatically collected
     
     | 
 
-    .. image:: datasource_datalogger_collection.png
+    .. image:: datasource_datalogger_collection.jpg
 
 Scheduled
     Enable the schedule for automatic data collection. You should Disable the schedule when using the TCP Callback Transport for event based callbacks (ie. not permanently connected).
@@ -222,7 +222,7 @@ Configuration displays configuration set in the remote data logger including pro
 
 .. only:: not latex
 
-    .. image:: datasource_datalogger_configuration.png
+    .. image:: datasource_datalogger_configuration.jpg
         :scale: 50 %
 
     | 
@@ -231,7 +231,7 @@ Configuration displays configuration set in the remote data logger including pro
     
     | 
 
-    .. image:: datasource_datalogger_configuration.png
+    .. image:: datasource_datalogger_configuration.jpg
 
 Configuration Alarm
     See :ref:`Alarms and Notifications <configuration-alarm>`.
@@ -248,7 +248,7 @@ A list of available tables/series is shown (when not using Automatic parameter c
 
 .. only:: not latex
 
-    .. image:: datasource_datalogger_series.png
+    .. image:: datasource_datalogger_series.jpg
         :scale: 50 %
 
     | 
@@ -257,7 +257,7 @@ A list of available tables/series is shown (when not using Automatic parameter c
     
     | 
 
-    .. image:: datasource_datalogger_series.png
+    .. image:: datasource_datalogger_series.jpg
 
 
 Automatic Parameter Configuration
@@ -292,7 +292,7 @@ Use the *Delete* button to permanently remove all historic data for Parameters c
     
 .. only:: not latex
 
-    .. image:: datasource_historic.png
+    .. image:: datasource_historic.jpg
         :scale: 50 %
 
     | 
@@ -301,7 +301,7 @@ Use the *Delete* button to permanently remove all historic data for Parameters c
     
     | 
 
-    .. image:: datasource_historic.png
+    .. image:: datasource_historic.jpg
 
 
 Time
@@ -314,7 +314,7 @@ Time allows you to configure the timezone of the Source and associated options.
     
 .. only:: not latex
 
-    .. image:: datasource_datalogger_time.png
+    .. image:: datasource_datalogger_time.jpg
         :scale: 50 %
 
     | 
@@ -323,7 +323,7 @@ Time allows you to configure the timezone of the Source and associated options.
     
     | 
 
-    .. image:: datasource_datalogger_time.png
+    .. image:: datasource_datalogger_time.jpg
 
 Timezone
     Select the timezone the Source uses for storing historic data. Choose *(GMT+00:00) UTC* if data timestamps are in UTC.

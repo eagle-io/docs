@@ -24,7 +24,7 @@ Source configuration
 
 .. only:: not latex
 
-    .. image:: campbell_pakbus_wizard_1.png
+    .. image:: campbell_pakbus_wizard_1.jpg
         :scale: 50 %
 
     | 
@@ -33,13 +33,13 @@ Source configuration
     
     | 
 
-    .. image:: campbell_pakbus_wizard_1.png
+    .. image:: campbell_pakbus_wizard_1.jpg
 
 2. Select the data logger *Model* and *PakBus address* (default is 1). Optionally specify a *PakBus neighbor* and logger *Security code*. Click Next.
 
 .. only:: not latex
 
-    .. image:: campbell_pakbus_wizard_2.png
+    .. image:: campbell_pakbus_wizard_2.jpg
         :scale: 50 %
 
     | 
@@ -48,13 +48,13 @@ Source configuration
     
     | 
 
-    .. image:: campbell_pakbus_wizard_2.png
+    .. image:: campbell_pakbus_wizard_2.jpg
 
 3. Select a *Transport type* to use for :ref:`connecting to your logger <node-configuration-datasource-datalogger-connection>`. This example uses the *TCP Client* Transport type to connect directly to a logger accessible via the Internet. Select the *Collection interval* and *Timezone* of the data logger. Refer to :ref:`Data Source configuration <node-configuration-datasource-datalogger>` for a full list of available options.
 
 .. only:: not latex
 
-    .. image:: campbell_pakbus_wizard_3.png
+    .. image:: campbell_pakbus_wizard_3.jpg
         :scale: 50 %
 
     | 
@@ -63,13 +63,13 @@ Source configuration
     
     | 
 
-    .. image:: campbell_pakbus_wizard_3.png
+    .. image:: campbell_pakbus_wizard_3.jpg
 
 4. You can choose to *Connect to the data logger now and manually setup parameters* if the logger is online. Alternatively choose the *Automatically setup parameters on initial connection* option and click Next to complete the setup.
 
 .. only:: not latex
 
-    .. image:: campbell_pakbus_wizard_4.png
+    .. image:: campbell_pakbus_wizard_4.jpg
         :scale: 50 %
 
     | 
@@ -78,13 +78,13 @@ Source configuration
     
     | 
 
-    .. image:: campbell_pakbus_wizard_4.png
+    .. image:: campbell_pakbus_wizard_4.jpg
 
 5. Table definitions are retrieved from the logger upon successful connection. Select the series from each table that you would like to create as parameters. You can create :ref:`Control <operate-control>` Parameters from any Public table variables. Specify the parameter names (and optionally units) and click Finish to complete the setup. 
 
 .. only:: not latex
 
-    .. image:: campbell_pakbus_wizard_5.png
+    .. image:: campbell_pakbus_wizard_5.jpg
         :scale: 50 %
 
     | 
@@ -93,7 +93,7 @@ Source configuration
     
     | 
 
-    .. image:: campbell_pakbus_wizard_5.png
+    .. image:: campbell_pakbus_wizard_5.jpg
 
 
 .. note:: 
@@ -110,7 +110,7 @@ Refer to your `Campbell Scientific <http://www.campbellsci.com/>`_ PakBus logger
 
 .. only:: not latex
 
-    .. image:: campbell_pakbus_device_1.png
+    .. image:: campbell_pakbus_device_1.jpg
         :scale: 50 %
 
     | 
@@ -119,7 +119,7 @@ Refer to your `Campbell Scientific <http://www.campbellsci.com/>`_ PakBus logger
     
     | 
 
-    .. image:: campbell_pakbus_device_1.png
+    .. image:: campbell_pakbus_device_1.jpg
 
 The following Server settings should be assigned as a minimum:
 

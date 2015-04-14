@@ -60,7 +60,7 @@ Click or touch the Workspace labels to display your preferences.
 
 .. only:: not latex
 
-	.. image:: user_profile_notification.png
+	.. image:: user_profile_notification.jpg
 		:scale: 50 %
 
 	| 
@@ -69,7 +69,7 @@ Click or touch the Workspace labels to display your preferences.
 
 	| 
 
-	.. image:: user_profile_notification.png
+	.. image:: user_profile_notification.jpg
 	
 
 Within each Workspace, you will see a list of Notification Categories specific to the Workspace.
@@ -96,7 +96,7 @@ Individual API key's can optionally be assigned the *read-only* permission to re
 
 .. only:: not latex
 
-	.. image:: user_profile_apikeys.png
+	.. image:: user_profile_apikeys.jpg
 		:scale: 50 %
 
 	| 
@@ -105,7 +105,7 @@ Individual API key's can optionally be assigned the *read-only* permission to re
 
 	| 
 
-	.. image:: user_profile_apikeys.png
+	.. image:: user_profile_apikeys.jpg
 
 The *Display Node Ids in properties dialog* option is useful for retrieving a specific Node Id for use with the HTTP API. The *Node Id* will be shown in the associated Node properties dialog.
 

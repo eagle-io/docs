@@ -71,7 +71,7 @@ Use development tools such as `cURL <http://curl.haxx.se>`_ or `Postman <http://
 
 .. only:: not latex
 
-    .. image:: api_dev_postman.png
+    .. image:: api_dev_postman.jpg
         :scale: 50 %
 
     | 
@@ -80,4 +80,4 @@ Use development tools such as `cURL <http://curl.haxx.se>`_ or `Postman <http://
 
     | 
 
-    .. image:: api_dev_postman.png
+    .. image:: api_dev_postman.jpg

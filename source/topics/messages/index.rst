@@ -13,7 +13,7 @@ The Messages icon indicates the total number of *Unread* messages. Clicking the 
 
 .. only:: not latex
 
-    .. image:: messages_menu.png
+    .. image:: messages_menu.jpg
         :scale: 50 %
 
     | 
@@ -22,7 +22,7 @@ The Messages icon indicates the total number of *Unread* messages. Clicking the 
     
     | 
 
-    .. image:: messages_menu.png
+    .. image:: messages_menu.jpg
         :scale: 50 %
 
 .. note::
@@ -40,7 +40,7 @@ The Messages dialog displays the full message content and provides management fu
 
 .. only:: not latex
 
-    .. image:: messages_all.png
+    .. image:: messages_all.jpg
         :scale: 50 %
 
     | 
@@ -49,7 +49,7 @@ The Messages dialog displays the full message content and provides management fu
     
     | 
 
-    .. image:: messages_all.png
+    .. image:: messages_all.jpg
 
 New message
 ------------
@@ -62,7 +62,7 @@ Send a new message to all users of a Workspace including the associated account 
 
 .. only:: not latex
 
-    .. image:: messages_new.png
+    .. image:: messages_new.jpg
         :scale: 50 %
 
     | 
@@ -71,7 +71,7 @@ Send a new message to all users of a Workspace including the associated account 
     
     | 
 
-    .. image:: messages_new.png
+    .. image:: messages_new.jpg
 
 .. note::
     You must have *Send Messages* permission for the Workspace in order to send messages to its users.

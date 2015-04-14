@@ -13,7 +13,7 @@ Use the *Advanced* button to show/hide the advanced export options.
 
 .. only:: not latex
 
-    .. image:: historic_export.png
+    .. image:: historic_export.jpg
         :scale: 50 %
 
     | 
@@ -22,7 +22,7 @@ Use the *Advanced* button to show/hide the advanced export options.
     
     | 
 
-    .. image:: historic_export.png
+    .. image:: historic_export.jpg
         :scale: 100 %
 
 Period
@@ -89,7 +89,7 @@ By default only the first 15 parameters will be selected for export. Use the *Pa
 
 .. only:: not latex
 
-    .. image:: ../historic_parameter_selection.png
+    .. image:: ../historic_parameter_selection.jpg
         :scale: 50 %
 
     | 
@@ -98,7 +98,7 @@ By default only the first 15 parameters will be selected for export. Use the *Pa
     
     | 
 
-    .. image:: ../historic_parameter_selection.png
+    .. image:: ../historic_parameter_selection.jpg
         :scale: 40 %
 
 Display type

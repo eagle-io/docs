@@ -34,7 +34,7 @@ The Billing History section displays a list of all previous account bills availa
     
 .. only:: not latex
 
-	.. image:: account_billing_history.png
+	.. image:: account_billing_history.jpg
 		:scale: 50 %
 
 	| 
@@ -43,7 +43,7 @@ The Billing History section displays a list of all previous account bills availa
 
 	| 
 
-	.. image:: account_billing_history.png
+	.. image:: account_billing_history.jpg
 
 
 .. _international format: http://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers

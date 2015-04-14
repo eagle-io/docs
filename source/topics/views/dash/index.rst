@@ -10,7 +10,7 @@ Overview
 
 .. only:: not latex
 
-    .. image:: dash_overview.png
+    .. image:: dash_overview.jpg
         :scale: 50 %
 
     | 
@@ -19,7 +19,7 @@ Overview
 
     | 
 
-    .. image:: dash_overview.png
+    .. image:: dash_overview.jpg
 
 
 Dashboard view
@@ -32,7 +32,7 @@ Refer to :ref:`Dashboard configuration <node-configuration-dashboard>` for Creat
 
 .. only:: not latex
 
-    .. image:: dash_layout.png
+    .. image:: dash_layout.jpg
         :scale: 50 %
 
     | 
@@ -41,7 +41,7 @@ Refer to :ref:`Dashboard configuration <node-configuration-dashboard>` for Creat
 
     | 
 
-    .. image:: dash_layout.png
+    .. image:: dash_layout.jpg
     
 
 .. raw:: latex

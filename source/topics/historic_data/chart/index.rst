@@ -12,7 +12,7 @@ Refer to :ref:`working with charts <working-with-charts>` for full details on ch
     
 .. only:: not latex
 
-    .. image:: historic_chart.png
+    .. image:: historic_chart.jpg
         :scale: 50 %
 
     | 
@@ -21,7 +21,7 @@ Refer to :ref:`working with charts <working-with-charts>` for full details on ch
     
     | 
 
-    .. image:: historic_chart.png
+    .. image:: historic_chart.jpg
         :scale: 100 %
 
 
@@ -33,7 +33,7 @@ By default only the first 15 parameters will be displayed. Use the *Parameter se
 
 .. only:: not latex
 
-    .. image:: ../historic_parameter_selection.png
+    .. image:: ../historic_parameter_selection.jpg
         :scale: 50 %
 
     | 
@@ -42,7 +42,7 @@ By default only the first 15 parameters will be displayed. Use the *Parameter se
     
     | 
 
-    .. image:: ../historic_parameter_selection.png
+    .. image:: ../historic_parameter_selection.jpg
         :scale: 40 %
 
 Auto/Custom

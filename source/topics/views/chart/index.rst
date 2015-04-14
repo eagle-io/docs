@@ -24,7 +24,7 @@ Locations Subview displays a chart per Location. Any Parameters contained within
 
 .. only:: not latex
 
-	.. image:: chart_locations.png
+	.. image:: chart_locations.jpg
 		:scale: 50 %
 
 	| 
@@ -33,7 +33,7 @@ Locations Subview displays a chart per Location. Any Parameters contained within
 
 	| 
 
-	.. image:: chart_locations.png
+	.. image:: chart_locations.jpg
 
 
 Parameters
@@ -46,7 +46,7 @@ Parameters Subview displays a chart per Parameter (based on Parameter name). Use
 
 .. only:: not latex
 
-	.. image:: chart_parameters.png
+	.. image:: chart_parameters.jpg
 		:scale: 50 %
 
 	| 
@@ -55,7 +55,7 @@ Parameters Subview displays a chart per Parameter (based on Parameter name). Use
 
 	| 
 	
-	.. image:: chart_parameters.png
+	.. image:: chart_parameters.jpg
 
 
 Custom
@@ -68,7 +68,7 @@ Custom Subview displays a list of pre-configured :ref:`custom charts <node-confi
 
 .. only:: not latex
 
-	.. image:: chart_custom.png
+	.. image:: chart_custom.jpg
 		:scale: 50 %
 
 	| 
@@ -77,7 +77,7 @@ Custom Subview displays a list of pre-configured :ref:`custom charts <node-confi
 
 	| 
 	
-	.. image:: chart_custom.png
+	.. image:: chart_custom.jpg
 
 
 .. _working-with-charts:
@@ -97,7 +97,7 @@ Parameter values may be shown with aggregation applied - indicated with a durati
     
 .. only:: not latex
 	
-	.. image:: chart_values.png
+	.. image:: chart_values.jpg
 		:scale: 50 %
 
 	| 
@@ -106,7 +106,7 @@ Parameter values may be shown with aggregation applied - indicated with a durati
 
 	| 
 	
-	.. image:: chart_values.png
+	.. image:: chart_values.jpg
 		:scale: 50 %
 
 
@@ -130,14 +130,14 @@ Use the navigator located directly under the main chart area to pan the chart or
 
 	*Chart area selected for zoom*
 
-	.. image:: chart_zoom.png
+	.. image:: chart_zoom.jpg
 		:scale: 50 %
 
 	| 
 
 	*Chart after zoom*
 
-	.. image:: chart_zoomed.png
+	.. image:: chart_zoomed.jpg
 		:scale: 50 %
 
 	| 
@@ -146,13 +146,13 @@ Use the navigator located directly under the main chart area to pan the chart or
 
 	*Chart area selected for zoom*
 
-	.. image:: chart_zoom.png
+	.. image:: chart_zoom.jpg
 
 	| 
 
 	*Chart after zoom*
 
-	.. image:: chart_zoomed.png
+	.. image:: chart_zoomed.jpg
 
 .. raw:: latex
 
@@ -164,7 +164,7 @@ Click or touch the parameters in the legend above the main chart area to tempora
 
 .. only:: not latex
 
-	.. image:: chart_toggle_parameters.png
+	.. image:: chart_toggle_parameters.jpg
 		:scale: 50 %
 
 	| 
@@ -173,7 +173,7 @@ Click or touch the parameters in the legend above the main chart area to tempora
 
 	| 
 
-	.. image:: chart_toggle_parameters.png
+	.. image:: chart_toggle_parameters.jpg
 
 Save as image
 ~~~~~~~~~~~~~
@@ -187,7 +187,7 @@ Toolbar Controls
 
 .. only:: not latex
 
-	.. image:: chart_rangeselector.png
+	.. image:: chart_rangeselector.jpg
 		:scale: 50 %
 
 	| 
@@ -196,5 +196,5 @@ Toolbar Controls
 
 	| 
 
-	.. image:: chart_rangeselector.png
+	.. image:: chart_rangeselector.jpg
 		:scale: 35 %

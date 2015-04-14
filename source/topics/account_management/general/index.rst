@@ -27,7 +27,7 @@ Source and Quality Codes must be whole numbers between 0 - 65535.
     
 .. only:: not latex
 
-	.. image:: account_quality.png
+	.. image:: account_quality.jpg
 		:scale: 50 %
 
 	| 
@@ -36,7 +36,7 @@ Source and Quality Codes must be whole numbers between 0 - 65535.
 	
 	| 
 
-	.. image:: account_quality.png
+	.. image:: account_quality.jpg
 		:scale: 80 %
 
 Source Quality

@@ -23,7 +23,7 @@ If the communications attempt is not successful during a user acquisition or sch
 
 .. only:: not latex
 
-	.. image:: communications_alarm.png
+	.. image:: communications_alarm.jpg
 		:scale: 50 %
 
 	| 
@@ -32,7 +32,7 @@ If the communications attempt is not successful during a user acquisition or sch
 	
 	| 
 
-	.. image:: communications_alarm.png
+	.. image:: communications_alarm.jpg
 
 .. _outdated-alarm:
 
@@ -46,7 +46,7 @@ Outdated Alarms are specific to Sources and are triggered (if enabled) when no n
 
 .. only:: not latex
 
-	.. image:: outdated_alarm.png
+	.. image:: outdated_alarm.jpg
 		:scale: 50 %
 
 	| 
@@ -55,7 +55,7 @@ Outdated Alarms are specific to Sources and are triggered (if enabled) when no n
 
 	| 
 
-	.. image:: outdated_alarm.png
+	.. image:: outdated_alarm.jpg
 
 
 .. _configuration-alarm:
@@ -70,7 +70,7 @@ Configuration Alarms are specific to data logger Data Sources and are triggered 
 
 .. only:: not latex
 
-	.. image:: configuration_alarm.png
+	.. image:: configuration_alarm.jpg
 		:scale: 50 %
 
 	| 
@@ -79,7 +79,7 @@ Configuration Alarms are specific to data logger Data Sources and are triggered 
 
 	| 
 
-	.. image:: configuration_alarm.png
+	.. image:: configuration_alarm.jpg
 
 
 .. _control-alarm:
@@ -94,7 +94,7 @@ Control Alarms are specific to Control Parameters and are triggered (if enabled)
 
 .. only:: not latex
 
-	.. image:: control_alarm.png
+	.. image:: control_alarm.jpg
 		:scale: 50 %
 
 	| 
@@ -103,7 +103,7 @@ Control Alarms are specific to Control Parameters and are triggered (if enabled)
 
 	| 
 
-	.. image:: control_alarm.png
+	.. image:: control_alarm.jpg
 
 
 .. _state-arlam:
@@ -119,7 +119,7 @@ Each defined State can have Alarms and Notifications configured independently.
 
 .. only:: not latex
 
-	.. image:: state_alarm.png
+	.. image:: state_alarm.jpg
 		:scale: 50 %
 
 	| 
@@ -128,7 +128,7 @@ Each defined State can have Alarms and Notifications configured independently.
 	
 	| 
 
-	.. image:: state_alarm.png
+	.. image:: state_alarm.jpg
 
 
 Alarm Indicators
@@ -141,23 +141,23 @@ Alarms are shown in the Workspaces Tree as numbers indicating the total count of
 
 .. only:: not latex
 
-	.. image:: workspaces_tree_alarm_1.png
+	.. image:: workspaces_tree_alarm_1.jpg
 		:scale: 50 %
 
 	| 
 
-	.. image:: workspaces_tree_alarm_2.png
+	.. image:: workspaces_tree_alarm_2.jpg
 		:scale: 50 %
 
 	| 
 
 .. only:: latex
 
-	.. image:: workspaces_tree_alarm_1.png
+	.. image:: workspaces_tree_alarm_1.jpg
 		:scale: 40 %
 
 
-	.. image:: workspaces_tree_alarm_2.png
+	.. image:: workspaces_tree_alarm_2.jpg
 		:scale: 40 %
 
 
@@ -170,26 +170,26 @@ The Alarm Panel displays a quick list of the currently active or acknowledged al
 
 	*Active Alarm*
 
-	.. image:: list_alarm.png
+	.. image:: list_alarm.jpg
 		:scale: 50 %
 
 	| 
 
 	*Acknowledged Alarm*
 
-	.. image:: list_acknowledged.png
+	.. image:: list_acknowledged.jpg
 		:scale: 50 %
 
 	| 
 
 	*Alarm Panel accessible from List View*
 
-	.. image:: alarmlist_alarm.png
+	.. image:: alarmlist_alarm.jpg
 		:scale: 50 %
 
 	| 
 
-	.. image:: alarmlist_acknowledged.png
+	.. image:: alarmlist_acknowledged.jpg
 		:scale: 50 %
 
 	| 
@@ -198,18 +198,18 @@ The Alarm Panel displays a quick list of the currently active or acknowledged al
 
 	*Active Alarm*
 
-	.. image:: list_alarm.png
+	.. image:: list_alarm.jpg
 
 	*Acknowledged Alarm*
 
-	.. image:: list_acknowledged.png
+	.. image:: list_acknowledged.jpg
 
 	*Alarm Panel accessible from List View*
 
-	.. image:: alarmlist_alarm.png
+	.. image:: alarmlist_alarm.jpg
 		:scale: 60 %
 
-	.. image:: alarmlist_acknowledged.png
+	.. image:: alarmlist_acknowledged.jpg
 		:scale: 60 %
 
 
@@ -221,14 +221,14 @@ Map View applies the alarm color variations to the Location markers, temporarily
 
 	*Active Alarm*
 
-	.. image:: map_marker_alarm.png
+	.. image:: map_marker_alarm.jpg
 		:scale: 50 %
 
 	| 
 
 	*Acknowledged Alarm*
 
-	.. image:: map_marker_acknowledged.png
+	.. image:: map_marker_acknowledged.jpg
 		:scale: 50 %
 
 	| 
@@ -237,12 +237,12 @@ Map View applies the alarm color variations to the Location markers, temporarily
 
 	*Active Alarm*
 
-	.. image:: map_marker_alarm.png
+	.. image:: map_marker_alarm.jpg
 		:scale: 40 %
 
 	*Acknowledged Alarm*
 
-	.. image:: map_marker_acknowledged.png
+	.. image:: map_marker_acknowledged.jpg
 		:scale: 40 %
 
 
@@ -266,7 +266,7 @@ The acknowledge alarms dialog will be displayed and you will be prompted to ente
 
 .. only:: not latex
 
-	.. image:: acknowledge_alarm_comment.png
+	.. image:: acknowledge_alarm_comment.jpg
 		:scale: 50 %
 
 	| 
@@ -275,7 +275,7 @@ The acknowledge alarms dialog will be displayed and you will be prompted to ente
 
 	| 
 
-	.. image:: acknowledge_alarm_comment.png
+	.. image:: acknowledge_alarm_comment.jpg
 
 
 Clear
@@ -294,7 +294,7 @@ Alarm History
 
 .. only:: not latex
 
-	.. image:: alarm_history.png
+	.. image:: alarm_history.jpg
 		:scale: 50 %
 
 	| 
@@ -303,7 +303,7 @@ Alarm History
 
 	| 
 
-	.. image:: alarm_history.png
+	.. image:: alarm_history.jpg
 
 
 Notifications
@@ -331,14 +331,14 @@ Click or touch the subscribe icon in the List View to toggle your subscription t
 
 .. only:: not latex
 
-	.. image:: notification_panel.png
+	.. image:: notification_panel.jpg
 		:scale: 50 %
 
 	| 
 		
 .. only:: latex
 
-	.. image:: notification_panel.png
+	.. image:: notification_panel.jpg
 		:scale: 40 %
 		
 

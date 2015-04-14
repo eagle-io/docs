@@ -8,11 +8,11 @@ What browsers do you support and do I need any special software?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 We support the latest versions of all major browsers: Chrome 16+, Firefox 16+, Internet Explorer 10+, Safari 6+. You do not need any special plugins or addons, just ensure you have Cookies and Javascript enabled. The interface has been designed to work seamlessly across all modern phones and computing devices.
 
-.. |google-chrome-html| image:: chrome.png
+.. |google-chrome-html| image:: chrome.jpg
 	:scale: 50%
 	:target: https://www.google.com/intl/en/chrome/browser/
 
-.. |google-chrome-latex| image:: chrome.png
+.. |google-chrome-latex| image:: chrome.jpg
 	:scale: 35%
 
 .. only:: not latex
@@ -220,14 +220,14 @@ We support automatic collection via the following transports:
 
 .. only:: not latex
 
-	.. image:: transports-file.png
+	.. image:: transports-file.jpg
 		:scale: 50 %
 
 	| 
 
 .. only:: latex
 
-	.. image:: transports-file.png
+	.. image:: transports-file.jpg
 		:scale: 30 %
 
 You can also manually import and export data files directly from the user interface or use our :ref:`HTTP API <api>` for automation.
