@@ -74,7 +74,7 @@ The general section allows you to specifiy display settings for Number and Time 
 
 .. only:: not latex
 
-    .. image:: parameter_general.png
+    .. image:: parameter_general.jpg
         :scale: 50 %
 
     | 
@@ -83,7 +83,7 @@ The general section allows you to specifiy display settings for Number and Time 
 
     | 
 
-    .. image:: parameter_general.png
+    .. image:: parameter_general.jpg
 
 Display type
     Select how this parameter should be displayed by default:
@@ -105,25 +105,24 @@ Format
 
 States
 ~~~~~~~~
-You can associate data values with States if they fall within a specified range or match specific values (discrete).
-Number Parameters can use either Range or Discrete states. Text and Time Parameters are limited to Discrete states only and do not display the States type drop down.
+States allow you to define unlimited numbers of *Ranges* or *Discrete* thresholds that uniquely describe the current value of the parameter. 
+Each state can optionally be configured to raise an alarm and/or send notifications.
 
-.. raw:: latex
+.. note::
+    Number Parameters can use either Range or Discrete states. Text Parameters are limited to Discrete states only.
 
-    \vspace{-10pt}
+Click the Edit button to show and modify the configuration for each state. Use the *Add state* button to create a new state. States can be removed via the dropdown menu (accessible by clicking the menu button on the top-right corner of the state item).
+
+
+Range States
+`````````````
+Drag and drop the NORMAL state in the list to change its order.
+The NORMAL state must always exist and can not be removed. 
+Position states above or below the NORMAL state to capture higher or lower than normal values respectively.
 
 .. only:: not latex
 
-    *Range States*
-
-    .. image:: parameter_states_range.png
-        :scale: 50 %
-
-    | 
-
-    *Discrete States*
-
-    .. image:: parameter_states_discrete.png
+    .. image:: parameter_states_range.jpg
         :scale: 50 %
 
     | 
@@ -132,61 +131,65 @@ Number Parameters can use either Range or Discrete states. Text and Time Paramet
 
     | 
 
-    *Range States*
-
-    .. image:: parameter_states_range.png
-
-    *Discrete States*
-
-    .. image:: parameter_states_discrete.png
+    .. image:: parameter_states_range.jpg
 
 
-States Type
-    Select the type of States most suitable to your data:
+Discrete States
+````````````````
+Drag and drop states in the list to change their display order.
+
+.. only:: not latex
+
+    .. image:: parameter_states_discrete.jpg
+        :scale: 50 %
+
+    | 
+
+.. only:: latex
+
+    | 
+
+    .. image:: parameter_states_discrete.jpg
+
+
+States type
+    Select the type of States most suitable for your data.
 
     *Range* is the default option for most analog data and allows you to define a State that covers a range of values. eg. 1-10 = LOW
 
     *Discrete* is most commonly used with digital data where a State represents a specific (or matching) value. eg. 0 = OFF, 1 = ON
 
 Hysteresis
-    Hysteresis is the threshold by which the parameter value is required to decrease by (States above *NORMAL*) or increase by (States below *NORMAL*) in order for the active state to revert towards *NORMAL*. Note: Hysteresis only applies to *Range States* and must be a positive number.
+    Hysteresis is the amount the parameter value is required to decrease below the state threshold by (states above *NORMAL*) or increase above the state threshold by (states below *NORMAL*) in order for the active state to become inactive as it revert towards *NORMAL*. 
+    Hysteresis only applies to *Range States* and must be a positive number.
 
 Name 
-    Assign a Name for each State. The *NORMAL* State (Range States) can not be renamed or removed.
+    Assign a unique name for each State. The *NORMAL* State (Range States) can not be renamed or removed.
 
 Threshold
-    Specify the value to use as the State threshold. States positioned above *NORMAL* will activate when the current value ascends past the given threshold. States positioned below *NORMAL* will activate when the current value descends past the given threshold.
+    States positioned above *NORMAL* will be active when the parameter value increases to this threshold. States positioned below *NORMAL* will be active when the parameter value decreases to this threshold. Applies to *Range States* only.
 
-Match / Contains
-    Specify the value to match (Number Parameters) or a value that is contained in the data (Text Parameters). Applies to Discrete states only.
+Match
+    Specify the numeric value to match (*Number Parameters*) or text that is contained within the parameter value (*Text Parameters*). Applies to *Discrete States* only.
 
-Category, Notifications, Alarm
-    Configure Alarm and Notification preferences. See :ref:`Alarms and Notifications <alarms-and-notifications>` for full details.
+Raise alarm
+    Check this option to raise an :ref:`alarm <alarms-and-notifications>` when this state becomes active. 
 
-Add and Remove
-    Use the *Add* button to add new States or click the 'x' to remove a specific State.
+Notifications
+    Select when notifications should be sent.
 
-Reorder
-    Hover over the States with a mouse to show the grab handle. Click and drag the grab handle to reorder the State in the list. When using Range States, only the *NORMAL* State can be repositioned.
+    *Active or Inactive* will send notifications when the state becomes active or inactive.
 
-    .. raw:: latex
+    *Active* will only send notifications when the state becomes active.
 
-        \vspace{-10pt}
+    *Inactive* will only send notifications when the state becomes inactive.
+    
+    *Never* will not send notifications.
 
-    .. only:: not latex
-        
-        .. image:: parameter_states_reposition.png
-            :scale: 50 %
+Category
+    Select the category of subscribed users that will receive notifications for this State. See :ref:`Alarms and Notifications <alarms-and-notifications>` for more info.
 
-        | 
 
-    .. only:: latex
-
-        | 
-        
-        .. image:: parameter_states_reposition.png
-
-    You can re-order the states on a touch device by long-pressing on a state row and a context menu will appear with options to move the state up or down.
 
 Chart
 ~~~~~~
