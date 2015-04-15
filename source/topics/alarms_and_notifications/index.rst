@@ -110,8 +110,8 @@ Control Alarms are specific to Control Parameters and are triggered (if enabled)
 
 State Alarm
 ~~~~~~~~~~~
-State Alarms are defined in the state configuration for Parameter Nodes (Alarm checkbox per state).
-Each defined State can have Alarms and Notifications configured independently.
+State Alarms are defined in the state configuration for Parameter Nodes.
+Each State can have individual alarm and notification criteria.
 
 .. raw:: latex
 
