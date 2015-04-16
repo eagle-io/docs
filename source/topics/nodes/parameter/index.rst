@@ -160,8 +160,8 @@ States type
     *Discrete* is most commonly used with digital data where a State represents a specific (or matching) value. eg. 0 = OFF, 1 = ON
 
 Hysteresis
-    Hysteresis is the amount the parameter value is required to decrease below the state threshold by (states above *NORMAL*) or increase above the state threshold by (states below *NORMAL*) in order for the active state to become inactive as it revert towards *NORMAL*. 
-    Hysteresis only applies to *Range States* and must be a positive number.
+    Hysteresis is the amount the parameter value is required to decrease below the state threshold (states above *NORMAL*) or increase above the state threshold (states below *NORMAL*) for the active state to become inactive as it revert towards *NORMAL*. 
+    Hysteresis only applies to *Range States* and must be a number greater than or equal to 0.
 
 Name 
     Assign a unique name for each State. The *NORMAL* State (Range States) can not be renamed or removed.
