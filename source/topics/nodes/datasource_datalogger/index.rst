@@ -23,7 +23,7 @@ The general section allows you to specify the type of data logger you would like
 
 .. only:: not latex
 
-    .. image:: datasource_datalogger_general.png
+    .. image:: datasource_datalogger_general.jpg
         :scale: 50 %
 
     | 
@@ -32,7 +32,7 @@ The general section allows you to specify the type of data logger you would like
 
     | 
 
-    .. image:: datasource_datalogger_general.png
+    .. image:: datasource_datalogger_general.jpg
 
 Source Enabled
     Uncheck the Source Enabled checkbox to stop collection and prevent alarms and notifications from triggering.
@@ -52,7 +52,10 @@ Data logger type
             PakBus neighbor address when using PakBus routing. Leave blank when connecting directly to the end device.
 
         Security code
-            Leave blank if the device has no security code.
+            Optional security code pre-conigured in the data logger. Leave blank for none.
+
+        Encryption key
+            Optional PakBus encryption key pre-configured in data logger. Leave blank for none.
 
     *WaterLog*
 
