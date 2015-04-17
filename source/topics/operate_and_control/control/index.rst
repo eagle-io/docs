@@ -8,8 +8,6 @@ The control operation will be attempted immedietly upon applying or setting the 
 
 Control Parameters store the history of the control values set by the user, not the value of the parameter in the data logger.
 
-.. note:: 
-    Text Control Parameters for Campbell Scientific data loggers currently do not support Control operations.
 
 Control dialog
 --------------
