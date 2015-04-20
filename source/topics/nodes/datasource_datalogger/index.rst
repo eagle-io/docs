@@ -57,6 +57,9 @@ Data logger type
         Encryption key
             Optional PakBus encryption key pre-configured in data logger. Leave blank for none.
 
+        TCP password
+            Optional PakBus TCP password pre-configured in data logger. Leave blank for none.
+
     *WaterLog*
 
         Model
