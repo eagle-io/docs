@@ -28,12 +28,6 @@ Change login email
 Use the *Change* button to update your user profile email address. An email will be sent to the new address with a one-time verification link to confirm the change. Any re-sends or new address changes will invalidate previously generated links.
 
 
-Login with your Google or Yahoo account
----------------------------------------
-You can optionally link your Google+ or Yahoo! account to your user profile.
-To link your profile, click on the Google+ or Yahoo! login icon from the login form (on the public site). After authorising the request, you will be asked to enter your normal login details. Next time just click the login icon for immediate access.
-
-
 Choose a Timezone and Time format
 ---------------------------------
 Select the :ref:`timezone <timezone>` you would like to use for displaying Workspace data. All data and notifications are displayed in your timezone regardless of the data's origin.
