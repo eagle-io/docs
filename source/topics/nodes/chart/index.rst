@@ -7,6 +7,24 @@ Chart
 To view custom charts navigate to :menuselection:`Chart View --> Custom`. You will see a list of all custom charts under the selected Node.
 You can also display any pre-configured charts as a *Custom chart* tile on a :ref:`Dashboard <node-configuration-dashboard>`.
 
+.. raw:: latex
+
+    \vspace{-10pt}
+
+.. only:: not latex
+
+    .. image:: chart_example_1.jpg
+        :scale: 50 %
+
+    | 
+
+.. only:: latex
+    
+    | 
+    
+    .. image:: chart_example_1.jpg
+        :scale: 80 %
+
 
 Properties
 ----------
