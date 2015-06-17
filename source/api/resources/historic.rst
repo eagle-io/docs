@@ -31,44 +31,50 @@ Arguments
 .. table::
     :class: table-fluid
 
-    =================   ========================    ===================================================================
-    Argument            Example                     Description
-    =================   ========================    ===================================================================
-    **format**          JSON                        *Optional - Default is JSON*. 
-                                                    Data format to return: *[JSON, CSV]*
+    ====================    ========================    ===================================================================
+    Argument                Example                     Description
+    ====================    ========================    ===================================================================
+    **format**              JSON                        *Optional - Default is JSON*. 
+                                                        Data format to return: *[JSON, CSV]*
 
-    **startTime**       2014-08-16T02:00:00Z        *Required*. [#f1]_
-                                                    :ref:`ISO8601<time-format-iso8601>` timestamp
+    **startTime**           2014-08-16T02:00:00Z        *Required*. [#f1]_
+                                                        :ref:`ISO8601<time-format-iso8601>` timestamp
 
-    **endTime**         2014-08-16T02:20:43Z        *Required*. [#f1]_
-                                                    :ref:`ISO8601<time-format-iso8601>` timestamp
+    **endTime**             2014-08-16T02:20:43Z        *Required*. [#f1]_
+                                                        :ref:`ISO8601<time-format-iso8601>` timestamp
 
-    **limit**           100                         *Optional*. 
-                                                    Maximum number of historic records to be returned
+    **limit**               100                         *Optional*. 
+                                                        Maximum number of historic records to be returned
 
-    **quality**         FALSE                       *Optional - Default is FALSE*. 
-                                                    Flag to include :ref:`quality <historic-quality>`
+    **quality**             FALSE                       *Optional - Default is FALSE*. 
+                                                        Flag to include :ref:`quality <historic-quality>`
 
-    **header**          TRUE                        *Optional - Default is TRUE*. 
-                                                    Flag to include header  
+    **header**              TRUE                        *Optional - Default is TRUE*. 
+                                                        Flag to include header  
 
-    **params**          541a5a129bc9b4035f906d70    *Required*. 
-                                                    Comma delimited list of parameter _id's to include in extraction.
-                                                    Individual parameter options are specified in parentheses.
+    **params**              541a5a129bc9b4035f906d70    *Required*. 
+                                                        Comma delimited list of parameter _id's to include in extraction.
+                                                        Individual parameter options are specified in parentheses.
 
-    | **renderType**    VALUE                       *Optional - Default is parameter displayType*. 
-                                                    Rendering of value: *[VALUE, STATE]*
+    | **renderType**        VALUE                       *Optional - Default is parameter displayType*. 
+                                                        Rendering of value: *[VALUE, STATE]*
 
-    | **aggregate**     AVERAGE                     *Optional - Default is NONE (raw)*. 
-                                                    Historic :ref:`aggregate <historic-aggregates>` to apply to 
-                                                    extracted data.
+    | **renderFormat**      0.000                       *Optional - Default is node format*.
+                                                        :ref:`Format <node-configuration-parameter-general>` to apply
+                                                        when renderType is VALUE. '#' must be  
+                                                        `Url Encoded <http://en.wikipedia.org/wiki/Percent-encoding>`_ 
+                                                        as '%23'.
 
-    | **baseTime**      D                           *Optional*. 
-                                                    :ref:`OPC Base Time <relative-time>` required for aggregation.
+    | **aggregate**         AVERAGE                     *Optional - Default is NONE (raw)*. 
+                                                        Historic :ref:`aggregate <historic-aggregates>` to apply to 
+                                                        extracted data.
 
-    | **interval**      3H                          *Optional*. 
-                                                    :ref:`OPC Interval <relative-time>` required for aggregation.
-    =================   ========================    ===================================================================
+    | **baseTime**          D                           *Optional*. 
+                                                        :ref:`OPC Base Time <relative-time>` required for aggregation.
+
+    | **interval**          3H                          *Optional*. 
+                                                        :ref:`OPC Interval <relative-time>` required for aggregation.
+    ====================    ========================    ===================================================================
 
 .. [#f1] startTime or endTime can be omitted when ``limit`` is specified.
 

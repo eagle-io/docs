@@ -860,6 +860,12 @@ Arguments
     **renderType**      VALUE                       *Optional - Default is node displayType*. 
                                                     Rendering of value: *[VALUE, STATE]*
 
+    **renderFormat**    0.000                       *Optional - Default is node format*.
+                                                    :ref:`Format <node-configuration-parameter-general>` to apply
+                                                    when renderType is VALUE. '#' must be  
+                                                    `Url Encoded <http://en.wikipedia.org/wiki/Percent-encoding>`_ 
+                                                    as '%23'.
+
     **aggregate**       AVERAGE                     *Optional - Default is NONE (raw)*. 
                                                     Historic :ref:`aggregate <historic-aggregates>` to apply to 
                                                     extracted data.

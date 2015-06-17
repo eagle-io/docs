@@ -53,6 +53,18 @@ Delimiter
 Text qualifier
     Specify a character to use for surrounding text values.
 
+Number format
+    Specify how number parameters should format values:
+
+    *Parameter format*
+        Use the format configured in each parameter.
+
+    *Full resolution*
+        Will ouput the value with all available decimal places.
+
+    *Custom*
+        Specify a custom :ref:`format <node-configuration-parameter-general>` to be used.
+
 Time format
     Specify the output format for timestamps. Select a preset format from the drop down list or specify a custom format using :ref:`time format tokens <time-format-tokens>`.
 
@@ -65,15 +77,12 @@ Quality
     Specify how quality information should be exported:
 
     *Do not include*
-
         Quality is ignored.
 
     *Include with value*
-
         Quality code will be included in the same column as the value, separated with a Quality delimiter.
 
     *Include as separate value*
-
         Quality code will be included as a separate column in the file.
 
 Quality delimiter
