@@ -199,6 +199,7 @@ Charts can not have links to Nodes in different Workspace and currently do not s
 
 Drag and drop links in the list to change their display order on the chart.
 
+Refer to :ref:`Parameter chart configuration <node-configuration-parameter-chart>` for a description of all available settings.
 
 .. raw:: latex
 

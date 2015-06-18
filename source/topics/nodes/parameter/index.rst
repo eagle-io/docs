@@ -190,6 +190,7 @@ Category
     Select the category of subscribed users that will receive notifications for this State. See :ref:`Alarms and Notifications <alarms-and-notifications>` for more info.
 
 
+.. _node-configuration-parameter-chart:
 
 Chart
 ~~~~~~
