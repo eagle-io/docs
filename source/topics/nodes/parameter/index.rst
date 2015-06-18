@@ -304,11 +304,17 @@ Marker size
 State thresholds
     Select which State thresholds should be displayed on the chart:
 
-    *Hidden* will not display any State thresholds.
+    *Hidden*
+        Hide all State thresholds.
 
-    *All States* will display all configured States.
+    *All States* 
+        Show all State thresholds.
 
-    *Alarm States Only* will only display States that have also been set to alarm.
+    *Alarm States Only* 
+        Show alarm State thresholds only.
+
+    *Non-Alarm States Only*
+        Show non-alarm State thresholds only.
 
 
 .. _node-configuration-parameter-historic:
