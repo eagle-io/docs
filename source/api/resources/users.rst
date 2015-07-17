@@ -23,8 +23,8 @@ Consumers of Users should tolerate the addition of new attributes and variance i
     =================   =========   ====================================================================
     Attributes          Type        Description
     =================   =========   ====================================================================
-    **_class**          String      Identifies resource type: *io.eagle.models.owner.User*
-    **_id**             ObjectId    Unique identifier for this owner
+    **_class**          String      Identifies resource type: *io.eagle.models.user.User*
+    **_id**             ObjectId    Unique identifier for this user
     **contact**         Object      
     | **email**         String      Email address of user
     | **phone**         String      Fully qualified international phone number

@@ -42,7 +42,14 @@ Consumers of Nodes should tolerate the addition of new attributes and variance i
     ================================    =========   =========   ===========================================================================
     Attachment attributes               Type        Update      Description
     ================================    =========   =========   ===========================================================================
+    **description**                     String      Yes         Description of attachment as set by user.
     **fileSize**                        Int64                   Size of attachment in bytes
+    **fileUrl** [#f1]_                  String                  Attachment URL. Requires *ATTACHMENT_READ* permission.
+                                                                Optionally specify an ``expiry`` period for the URL.
+    **filePreviewUrl** [#f1]_           String                  Preview URL. Only included if the attachment is a valid media file.
+                                                                Requires *ATTACHMENT_READ* permission.
+                                                                Optionally specify an ``expiry`` period for the URL.
+                                                                Note: image dimensions may change without notice.
     **mimeType**                        String                  Mime-type of the attachment
     ================================    =========   =========   ===========================================================================
 
@@ -108,6 +115,8 @@ Consumers of Nodes should tolerate the addition of new attributes and variance i
     **totalCommsSuccess**               Int32                   Total count of successful communications
     ================================    =========   =========   ===========================================================================
 
+.. [#f1] Certain attributes can not be used in filter criteria.
+
 .. only:: not latex
 
     |
@@ -128,8 +137,7 @@ Arguments
     =================   =====================   ================================================================
     **attr**            _id,slug                *Optional.* 
                                                 Comma delimited list of attributes to include in response
-    **type**            TREE                    *Optional - default is LIST* [#f1]_
-
+    **type**            TREE                    *Optional - default is LIST* [#f2]_
                                                 | **LIST** returns a flat list of nodes
                                                 | **TREE** returns hierarchical list of nodes
 
@@ -148,9 +156,14 @@ Arguments
                                                 Comma delimited list of attributes to sort by. Optionally 
                                                 include sort direction in parentheses or default to ASC: 
                                                 *[ASC, DESC]*
+
+    **expiry**          60                      *Optional*. 
+                                                Expiry period in minutes for any included resource links. 
+                                                ie. *fileUrl* for Attachments. Default is 0 (no expiry).
+                                                Expired resource links will return 403 Forbidden.
     =================   =====================   ================================================================
 
-.. [#f1] When TREE ``type`` is specified the filter, limit, skip and sort arguments are not allowed.
+.. [#f2] When TREE ``type`` is specified the filter, limit, skip and sort arguments are not allowed.
 
 Request
 ~~~~~~~~
@@ -320,6 +333,11 @@ Arguments
     =================   =================   ================================================================
     **attr**            _id,_class          *Optional.* 
                                             Comma delimited list of attributes to include in response
+
+    **expiry**          60                  *Optional*. 
+                                            Expiry period in minutes for any included resource links. 
+                                            ie. *fileUrl* for Attachments. Default is 0 (no expiry).
+                                            Expired resource links will return 403 Forbidden.
     =================   =================   ================================================================
 
 Request
@@ -842,10 +860,10 @@ Arguments
     **format**          JSON                        *Optional - Default is JSON*. 
                                                     Data format to return: *[JSON, CSV]*
 
-    **startTime**       2014-08-16T02:00:00Z        *Required*. [#f2]_
+    **startTime**       2014-08-16T02:00:00Z        *Required*. [#f3]_
                                                     :ref:`ISO8601<time-format-iso8601>` timestamp
 
-    **endTime**         2014-08-16T02:20:43Z        *Required*. [#f2]_
+    **endTime**         2014-08-16T02:20:43Z        *Required*. [#f3]_
                                                     :ref:`ISO8601<time-format-iso8601>` timestamp
 
     **limit**           100                         *Optional*. 
@@ -863,7 +881,7 @@ Arguments
     **renderFormat**    0.000                       *Optional - Default is node format*.
                                                     :ref:`Format <node-configuration-parameter-general>` to apply
                                                     when renderType is VALUE. '#' must be  
-                                                    `Url Encoded <http://en.wikipedia.org/wiki/Percent-encoding>`_ 
+                                                    `URL Encoded <http://en.wikipedia.org/wiki/Percent-encoding>`_ 
                                                     as '%23'.
 
     **aggregate**       AVERAGE                     *Optional - Default is NONE (raw)*. 
@@ -877,7 +895,7 @@ Arguments
                                                     :ref:`OPC Interval <relative-time>` required for aggregation.
     =================   ========================    =================================================================
 
-.. [#f2] startTime or endTime can be omitted when ``limit`` is specified.
+.. [#f3] startTime or endTime can be omitted when ``limit`` is specified.
 
 
 Request
