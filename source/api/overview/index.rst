@@ -7,6 +7,8 @@ The eagle.io API conforms to the design principles of `Representational State Tr
 
 Our API is designed to have predictable, resource-oriented URLs and to use HTTP response codes to indicate API errors. We use built-in HTTP features which can be understood by off-the-shelf HTTP clients. 
 
+Example code is available on `GitHub <https://github.com/eagleio/api-examples>`_.
+
 .. only:: not latex
 
     |
