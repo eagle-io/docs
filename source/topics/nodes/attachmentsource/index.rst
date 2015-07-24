@@ -69,7 +69,7 @@ Transport type
 
 		Email attachments using the auto-generated address exactly as shown. 
 
-		**Note**: The maxium accepted size per email (including all attachments) is 25MB.
+		**Note**: The maximum accepted size per email (including all attachments) is 25MB.
 
 	*Upload to ftp.eagle.io*
 

@@ -103,7 +103,7 @@ Transport type
 		Sender address filter
 			For added security you can filter by sender email address. Restrict to a specific email address or to a specific domain. eg. user@company.com or @company.com. Leave blank for no restriction.
 
-		**Note**: The maxium accepted size per email (including all data files) is 25MB.
+		**Note**: The maximum accepted size per email (including all data files) is 25MB.
 
 	*Upload to ftp.eagle.io*
 
