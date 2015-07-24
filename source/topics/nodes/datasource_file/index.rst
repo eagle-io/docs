@@ -103,12 +103,15 @@ Transport type
 		Sender address filter
 			For added security you can filter by sender email address. Restrict to a specific email address or to a specific domain. eg. user@company.com or @company.com. Leave blank for no restriction.
 
+		**Note**: The maxium accepted size per email (including all data files) is 25MB.
+
 	*Upload to ftp.eagle.io*
 
 		Ftp your files to ftp.eagle.io using the auto-generated user name exactly as shown. 
 		Password is optional. 
 		Use Tcp port 21 for standard Ftp and Tcp port 990 for Implicit SSL. 
-		**Note**: Only one concurrent ftp connection is allowed per Source.
+
+		**Note**: Only one concurrent ftp connection is allowed per Source. The maximum accepted size per file is 100MB.
 
 	*Download from FTP site*
 		

@@ -67,14 +67,17 @@ Transport type
 
 	*Email to eagle.io*
 
-		Email attachments using the auto-generated address exactly as shown.
+		Email attachments using the auto-generated address exactly as shown. 
+
+		**Note**: The maxium accepted size per email (including all attachments) is 25MB.
 
 	*Upload to ftp.eagle.io*
 
 		Ftp your files to ftp.eagle.io using the auto-generated user name exactly as shown. 
 		Password is optional. 
-		Use Tcp port 21 for standard Ftp and Tcp port 990 for implicit SSL. 
-		**Note**: Only one concurrent ftp connection is allowed per Source.
+		Use Tcp port 21 for standard Ftp and Tcp port 990 for implicit SSL.
+
+		**Note**: Only one concurrent ftp connection is allowed per Source. The maximum accepted size per file is 100MB.
 
 Email address
 	Email your attachments to this address. Click *change* to generate a new email address.
