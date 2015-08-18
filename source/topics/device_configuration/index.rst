@@ -15,6 +15,7 @@ The following topics will assist when configuring your device for eagle.io:
    ott_netdl/index
    scout/index
    waterlog_storm3/index
+   ydoc/index
 
 .. note:: 
     We are continually adding support for new devices. 

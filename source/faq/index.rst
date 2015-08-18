@@ -140,6 +140,21 @@ Spider
 
 | 
 
+YDOC
+	YDOC ML-315 range of data loggers.
+
+.. only:: not latex
+
+	.. image:: datalogger_ydoc.jpg
+		:scale: 50 %
+
+.. only:: latex
+
+	.. image:: datalogger_ydoc.jpg
+		:scale: 40 %
+
+| 
+
 WaterLog
 	WaterLog Storm3 series.
 
