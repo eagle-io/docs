@@ -306,7 +306,7 @@ The Text Parser allows you to define how a delimited text file should be process
 
 .. only:: not latex
 
-	.. image:: parser_overview.png
+	.. image:: parser_overview.jpg
 		:scale: 50 %
 
 	| 
@@ -315,7 +315,7 @@ The Text Parser allows you to define how a delimited text file should be process
 	
 	| 
 
-	.. image:: parser_overview.png
+	.. image:: parser_overview.jpg
 
 
 General Settings
@@ -328,7 +328,7 @@ General settings are used to specify file format and encoding options.
 
 .. only:: not latex
 
-	.. image:: parser_toolbar.png
+	.. image:: parser_toolbar.jpg
 		:scale: 50 %
 
 	| 
@@ -337,16 +337,19 @@ General settings are used to specify file format and encoding options.
 	
 	| 
 
-	.. image:: parser_toolbar.png
+	.. image:: parser_toolbar.jpg
 
 Column delimiter
 	Specify the :term:`delimiter` used to separate values in each line of the file. Select a delimiter from the drop down or enter a custom character to use.
 
+Labels row
+	If your file contains a labels header row, you can specify the corresponding line number or click the row number in the Parser Preview. The corresponding row will be highlighted *BLUE* and the column values will be used as the column labels. Labels are shown for convenience, but you can assign any valid names to the parameters during or after creation.
+
+Units row
+	If your file contains a units header row, you can specify the corresponding line number or right-click the row number in the Parser Preview. The corresponding row will be highlighted *BLUE* and the associated column values will be used as the default units. You can change the units during or after parameter creation.
+
 Text qualifier
 	Specify the character used to surround text values. This character will be automatically stripped if it exists in a column. Select a qualifier from the drop down or enter a custom character to use.
-
-Labels row
-	If your file contains a header row, you can specify the line number or click the row number in the Parser Preview. The corresponding row will be highlighted *BLUE* and the column values will be used as the column labels. Labels are shown for convenience, but you can assign any valid names to the parameters during or after creation.
 
 Text encoding
 	The encoding format of the text file. If you notice special characters displayed incorrectly in the Parser Preview, you may need to change this setting.
@@ -384,7 +387,7 @@ The Parser extracts a sample from the beginning of the input text file and attem
 
 .. only:: not latex
 
-	.. image:: parser_main.png
+	.. image:: parser_preview.jpg
 		:scale: 50 %
 
 	| 
@@ -393,7 +396,7 @@ The Parser extracts a sample from the beginning of the input text file and attem
 	
 	| 
 
-	.. image:: parser_main.png
+	.. image:: parser_preview.jpg
 
 
 Columns and Data Type Selection
