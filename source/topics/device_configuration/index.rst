@@ -14,6 +14,7 @@ The following topics will assist when configuring your device for eagle.io:
    halytech_spider/index
    ott_netdl/index
    scout/index
+   sensorlog/index
    waterlog_storm3/index
    ydoc/index
 
