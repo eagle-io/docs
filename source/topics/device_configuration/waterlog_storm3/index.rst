@@ -95,7 +95,7 @@ Overview
 The *System Overview* section accessible from the *Home* menu requires the following settings to be applied:
 
 Site ID
-    Use the the unique *Site Id* identification code generated during Data Source creation.
+    Use the unique *Site Id* identification code generated during Data Source creation.
 
 System Date/Time
     Ensure the correct local time is set in the device. You should set the timezone of the Data Source to match your local timezone.

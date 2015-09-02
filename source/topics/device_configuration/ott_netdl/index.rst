@@ -157,7 +157,7 @@ Password
 FTP Path 
     Leave blank
 
-2. Create a new *Transmission* and configure *Server 1* to use the Server item created in the previous step. Specify the data transmission cycle for frequency of uploads. Set the *Data format* to *Custom-built* with no compression.
+2. Create a new *Transmission* (Transmission Internet) and configure the *Server 1* option to use the Server item created in the previous step. Navigate to the *Data Transmission* tab and specify the data transmission cycle for frequency of uploads. Set the *Data format* to *Custom-built* with no compression. 
 
 .. only:: not latex
 
@@ -172,7 +172,7 @@ FTP Path
 
     .. image:: ott_netdl_device_2.jpg
 
-The custom-built code is used to format the data with multiple parameter/channel values per line. An example format which includes values for channels 10 and 11::
+Switch to the *Data transmission 2* tab and enter the appropriate custom-built code which is used to format the data with multiple parameter/channel values per line. An example format which includes values for channels 10 and 11::
     
     <STATION>;<DATE>;<TSTD><TMIN><FOR 0>;<GB0010;4;1;0;1>;<GB0011;4;1;0;1><ENDFOR><EXT>
 
