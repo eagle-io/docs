@@ -144,20 +144,7 @@ Use the OTT Data Logger Operating Program to configure the netDL logger for comm
 
     .. image:: ott_netdl_device_1.jpg
 
-The following settings should be assigned to the FTP section:
-
-Server address
-    ftp.eagle.io
-Port
-    21
-User name
-    Use the unique *FTP user* generated during Data Source creation.
-Password
-    Use the password you assigned during Data Source creation (or leave blank for none).
-FTP Path 
-    Leave blank
-
-2. Create a new *Transmission* (Transmission Internet) and configure the *Server 1* option to use the Server item created in the previous step. Navigate to the *Data Transmission* tab and specify the data transmission cycle for frequency of uploads. Set the *Data format* to *Custom-built* with no compression. 
+2. Change to the FTP tab.
 
 .. only:: not latex
 
@@ -172,11 +159,122 @@ FTP Path
 
     .. image:: ott_netdl_device_2.jpg
 
-Switch to the *Data transmission 2* tab and enter the appropriate custom-built code which is used to format the data with multiple parameter/channel values per line. An example format which includes values for channels 10 and 11::
+The following FTP settings should be assigned:
+
+Server address
+    ftp.eagle.io
+Port
+    21
+User name
+    Use the unique *FTP user* generated during Data Source creation.
+Password
+    Use the password you assigned during Data Source creation (or leave blank for none).
+FTP Path 
+    Leave blank
+
+3. Create a new *Transmission* and select *Transmission Internet* as the type.
+
+.. only:: not latex
+
+    .. image:: ott_netdl_device_3.jpg
+        :scale: 50 %
+
+    | 
+
+.. only:: latex
+    
+    | 
+
+    .. image:: ott_netdl_device_3.jpg
+
+4. Configure the *Server 1* option to use the newly created Server. ie. eagle.io
+
+.. only:: not latex
+
+    .. image:: ott_netdl_device_4.jpg
+        :scale: 50 %
+
+    | 
+
+.. only:: latex
+    
+    | 
+
+    .. image:: ott_netdl_device_4.jpg
+
+5. Change to the *Data Transmission* tab and specify the *Cycle Standard* which sets the frequency of uploads (ie. 5min). Set the *Data format* to *Custom-built* with no compression. 
+
+.. only:: not latex
+
+    .. image:: ott_netdl_device_5.jpg
+        :scale: 50 %
+
+    | 
+
+.. only:: latex
+    
+    | 
+
+    .. image:: ott_netdl_device_5.jpg
+
+6. Switch to the *Data transmission 2* tab and enter the appropriate custom-built code which is used to format the data with multiple parameter/channel values per line.
+
+.. only:: not latex
+
+    .. image:: ott_netdl_device_6.jpg
+        :scale: 50 %
+
+    | 
+
+.. only:: latex
+    
+    | 
+
+    .. image:: ott_netdl_device_6.jpg
+
+
+An example format which includes values for channels 10 and 11::
     
     <STATION>;<DATE>;<TSTD><TMIN><FOR 0>;<GB0010;4;1;0;1>;<GB0011;4;1;0;1><ENDFOR><EXT>
 
-Refer to your OTT netDL `user manual <http://www.ott.com>`_ for help with custom-built transmission code.
+This example will output a file with contents similar to::
+    
+    0000000700;2014 11 18;0300;1.275;18.70 
+
+Description of Custom Built format (extract from OTT support)::
+
+    Control characters start with '^'
+    ^M means CR + line feed.
+    ^H means backspace (act. Write pointer -1).
+
+    <STATION> Station identifier
+
+    Date/time refers to the build time of the message, normally 5 mins before transmission time.
+    <DATE> will be replaced with the actual date in ANSI-format ‘JJJJ MM TT’, e. g. 2000 01 01
+    <TSTD x> actual hour; 'x' means a value which will be substracted.
+    <TMIN x> actual minute; 'x' means a value which will be substracted.
+    <DTIME x> actual time (Date, hour, minute; 'x' will be substracted.
+
+    <FOR from[;to]> 'from' and 'to' refers to the data stored in the logger. 
+    0 refers to the last stored value, 1 is the value before and so on. 
+    If no 'to' value specified it will be set to 0 (so to the last stored value). 
+    The 'from' value has to be higher than 'to' for correct chronological ordering.
+
+    Sensor/Channel output
+    <GBnr;s[;factor][;Offset][;Out]>  
+    Channel number, transmitted characters per value, factor, offset, output format
+    With 'factor' and 'Offset' it is possible to convert degrees Celsius to Fahrenheit.
+    The conversion works as following: New value = old value * factor + offset.
+    Out: output format
+    0 = without decimal point (default)
+    1 = measuring value with decimal point
+    2 = Included for ZRXP formats (ANSI Date/time value, <cr><lf>)
+    
+    <ENDFOR> end of FOR-loop; repeat until all data defined in 'for' command is output.
+
+    <EXT> extention of file. CST by default but can be changed to CSV with <EXTcsv>
+
+Refer to your OTT netDL `user manual <http://www.ott.com>`_ or contact `OTT support <http://www.ott.com/en-us/contact/>`_ for help with custom-built transmission code.
 
 .. note:: 
     Use the :ref:`Events <view-events>` view with the detail level set to *Debug* for reviewing communication history and diagnosing configuration issues.
