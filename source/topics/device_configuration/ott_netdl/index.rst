@@ -179,6 +179,7 @@ FTP Path
 
     .. image:: ott_netdl_device_5.jpg
 
+6. Tick all the channels you would like to transmit to eagle.io (or select the *All channels* option) and save the configuration to the data logger.
 
 .. note:: 
     Use the :ref:`Events <view-events>` view with the detail level set to *Debug* for reviewing communication history and diagnosing configuration issues.
