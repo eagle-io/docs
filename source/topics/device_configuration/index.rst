@@ -12,6 +12,7 @@ The following topics will assist when configuring your device for eagle.io:
    cellvisor/index
    datataker/index
    halytech_spider/index
+   maxon_intelimax/index
    ott_netdl/index
    scout/index
    sensorlog/index

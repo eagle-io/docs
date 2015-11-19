@@ -18,7 +18,7 @@ The *Scout modem* is the easiest way to connect your data logger to eagle.io. Th
 
 Source configuration
 --------------------
-You need to configure your Data Source to use the Scout transport. You can then use the *Device settings* button to display the device settings dialog. See :ref:`configuring a Data Source <node-configuration-datasource-datalogger>` for full details.
+You need to configure your Data Source to use the **Scout** transport. You can then use the *Device settings* button to display the device settings dialog. See :ref:`configuring a Data Source <node-configuration-datasource-datalogger>` for full details.
 
 .. raw:: latex
 
