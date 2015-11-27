@@ -123,6 +123,10 @@ li.toctree-l1 > a {
 	width: auto;
 }
 
+.rst-content.highlighted {
+	padding: 0 2px;
+}
+
 
 /* non-responsive tables */
 table.table-fluid {
