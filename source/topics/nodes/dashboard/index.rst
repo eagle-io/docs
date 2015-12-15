@@ -188,15 +188,15 @@ Nodes can be dragged with a mouse directly from the Workspaces Tree and dropped 
 
 Copy/Paste Dashboards
 --------------------------
-|icon-paste| Copy/Paste operations can be performed from the Workspaces Tree to quickly duplicate one or more dashboards. Links are automatically re-assigned to corresponding Nodes relative to the Dashboard in the destination where they exist. ie. You can copy/paste complete Locations containing Dashboards without manually re-assigning all Links.
+|icon-paste| Copy/Paste operations can be performed from the Workspaces Tree to quickly duplicate one or more dashboards. Links are automatically re-assigned to corresponding Nodes relative to the Dashboard in the destination where they exist (within the same Workspace). ie. You can copy/paste complete Locations containing Dashboards without manually re-assigning all Links.
 
 Move Dashboards
 --------------------
-|icon-move| Moving a Dashboard within a Workspace will keep existing links. Moving a Dashboard between Workspaces will invalidate all Links.
+|icon-move| Moving a Dashboard within a Workspace will keep existing links. Moving a Dashboard between Workspaces will invalidate any Link where the linked node is not available in the destination Workspace.
 
 Link error
 -----------
-|icon-warning| If a linked Node is removed or not accessible after a copy/paste or move operation then the Tile may display the Link error icon to indicate a problem with one or more Links. Links can be removed or reconfigured from the Links section in the Tile properties dialog.
+|icon-warning| If a linked Node is removed or not accessible after a copy/paste or move operation then the Tile will display the Link error icon to indicate a problem with one or more Links. Links can be removed or reconfigured from the Links section in the Tile properties dialog.
 
 .. raw:: latex
 
