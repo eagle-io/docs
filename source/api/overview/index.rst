@@ -303,7 +303,7 @@ Request
     Content-Type: application/json
 
 
-The body of the request must be valid JSON or a **400 Bad Request** response will be returned. The complete HTTP request should not exceed 10MB before compression. A **413 Request Too Large** response will be returned for requests exceeding the size limit.
+The body of the request must be valid JSON or a **400 Bad Request** response will be returned. The complete HTTP request should not exceed 5MB before compression. A **413 Request Too Large** response will be returned for requests exceeding the size limit.
 
 Example request for inserting historic data:
 
