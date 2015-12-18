@@ -846,7 +846,7 @@ Retrieve historic data from a node by its **_id**. Data can be returned in JSON 
 
 .. note:: 
     Only available for Location and Parameter nodes. 
-    Required permission: *View*
+    Required permission: *Export data*
 
 Arguments
 ~~~~~~~~~

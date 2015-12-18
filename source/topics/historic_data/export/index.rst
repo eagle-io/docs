@@ -1,7 +1,7 @@
 Export
 ======
 
-|icon-export| Historic export is accessible from the List View toolbar and Node context menus. You can export all data in the system via the *Base Node* context menu or use filters and the List View for precision selection.
+|icon-export| Historic export is accessible from the List View toolbar and Node context menus. You can export all data in the system via the *Base Node* context menu or use filters and the List View for precision selection. Exporting historic data requires the *export data* permission.
 
 The export process runs in the background so you can continue your work (including triggering additional exports) and you will be notified via *Messages* upon completion. Historic export data is always packaged into a compressed zip archive and available as a secure download. The exported files will automatically be removed from the server/messages after 12 hours.
 

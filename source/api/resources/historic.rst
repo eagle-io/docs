@@ -9,9 +9,6 @@ We recommend you ``limit`` the size of requests to 1000 records or less and use 
 
 Successful extraction requests will result in a **200 OK** response with the data returned in the body of the response. Successful insertion requests always result in a **202 Accepted** response.
 
-.. note:: 
-    Only available for Location and Parameter nodes.
-
 .. contents:: Quick Links
     :depth: 1
     :local:
@@ -23,6 +20,10 @@ Successful extraction requests will result in a **200 OK** response with the dat
 Retrieve historic data from multiple nodes
 ------------------------------------------
 Retrieve historic data from multiple nodes in a single request using **_id's**.
+
+.. note:: 
+    Only available for Location and Parameter nodes. 
+    Required permission: *Export data*
 
 
 Arguments
@@ -152,6 +153,11 @@ Response
 Update historic data for multiple nodes
 ----------------------------------------
 Update historic data for one or more nodes by **_id's**.
+
+.. note:: 
+    Only available for Location and Parameter nodes. 
+    Required permission: *Configure*
+
 
 Arguments
 ~~~~~~~~~

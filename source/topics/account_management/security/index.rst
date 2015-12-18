@@ -64,6 +64,9 @@ View
 Read attachments
 	Preview and Download attachments.
 
+Export data
+	Export historic data associated with parameters and locations.
+
 Send messages
 	Send messages to users of the Workspace.
 
