@@ -188,7 +188,7 @@ Nodes can be dragged with a mouse directly from the Workspaces Tree and dropped 
 
 Copy/Paste Dashboards
 --------------------------
-|icon-paste| Copy/Paste operations can be performed from the Workspaces Tree to quickly duplicate one or more dashboards. Links are automatically re-assigned to corresponding Nodes relative to the Dashboard in the destination where they exist (within the same Workspace). ie. You can copy/paste complete Locations containing Dashboards without manually re-assigning all Links.
+|icon-paste| Copy/Paste operations can be performed from the Workspaces Tree to quickly duplicate one or more dashboards. Links are automatically re-assigned to corresponding Nodes relative to the Dashboard if they exists at the destination. ie. You can copy/paste complete Locations containing Dashboards without manually re-assigning all Links.
 
 Move Dashboards
 --------------------
