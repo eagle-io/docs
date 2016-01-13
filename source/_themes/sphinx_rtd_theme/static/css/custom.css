@@ -44,6 +44,11 @@ a.image-reference {
 	padding: 0;
 }
 
+.wy-side-logo > a > img {
+	height: 60px;
+	margin: 10px 0 10px 5px;
+}
+
 .wy-side-nav-search {
 	padding: 15px;
 	background-color: #e3e3e3;
