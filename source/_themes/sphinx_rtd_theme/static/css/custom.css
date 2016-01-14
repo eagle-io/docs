@@ -45,8 +45,9 @@ a.image-reference {
 }
 
 .wy-side-logo > a > img {
-	height: 60px;
-	margin: 6px 0 6px 3px;
+	max-height: 60px;
+	margin: 6px 3px;
+	width : auto;
 }
 
 .wy-side-nav-search {
