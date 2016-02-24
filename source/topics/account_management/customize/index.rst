@@ -36,7 +36,6 @@ Minimum length of 5 characters is required. The subdomain will be validated on s
 	| 
 
 	.. image:: account_customize_product_domain.jpg
-		:scale: 60 %
 
 .. only:: not latex
 
@@ -66,7 +65,6 @@ Click on the logo images to replace them with your own. For best results use ima
     | 
 
     .. image:: account_customize_product_logos.jpg
-        :scale: 70 %
 
 .. only:: not latex
 
@@ -97,7 +95,6 @@ You can customize your landing page by changing the banner image and description
     | 
 
     .. image:: account_customize_public_front.jpg
-        :scale: 70 %
 
 .. only:: not latex
 
@@ -124,7 +121,6 @@ Tick or untick the *Contact details* checkbox to display or hide your account co
     | 
 
     .. image:: account_customize_public_contact.jpg
-        :scale: 70 %
 
 .. raw:: latex
 

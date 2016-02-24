@@ -31,6 +31,7 @@ Please contact support@eagle.io if you have any issues updating your billing inf
 
     .. image:: account_billing_payment.jpg
 
+
 .. only:: not latex
 
     |

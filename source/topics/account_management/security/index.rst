@@ -33,7 +33,6 @@ Add a new administrators by entering their email addresses and click *Add*. Sepa
 	| 
 
 	.. image:: account_administrators.jpg
-		:scale: 80 %
 
 .. note:: 
 	You should only add trusted users as Administrators to keep your account secure. 

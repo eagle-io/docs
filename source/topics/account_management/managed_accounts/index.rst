@@ -41,7 +41,6 @@ Disabled trial accounts will be automatically removed 3 months after expiry.
     | 
 
     .. image:: account_managed_trials.jpg
-        :scale: 70 %
 
 .. note::
     When a trial account is disabled, users will not have access to workspaces, historic data or events until the account has been *extended* or *upgraded to paid*.
@@ -66,7 +65,7 @@ Specify the *account name* and *account owner email* address.
     | 
 
     .. image:: account_managed_new.jpg
-        :scale: 70 %
+
 
 You can optionally send a welcome email to the account owner. 
 If the user has never logged-in to the system, the welcome email will contain a link to activate their user profile. You can skip the welcome email if you want to customize the account first, then use the *resend invite* option from the account list when ready (only available if the user has never logged-in).
@@ -106,7 +105,6 @@ Use the dropdown menu to *Switch to account*, *Disable*, *Enable* or *Close acco
     | 
 
     .. image:: account_managed_accounts.jpg
-        :scale: 70 %
 
 
 Click the *New account* button to create a new paid account. All account options are the same as the *New trial* dialog above.

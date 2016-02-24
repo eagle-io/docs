@@ -29,7 +29,6 @@ The account owner or manager can change the account name or view a summary of cu
 	| 
 
 	.. image:: account_general_overview.jpg
-		:scale: 80 %
 
 
 .. note:: 
@@ -65,7 +64,6 @@ Please ensure your contact details are always up to date so that we can contact 
 	| 
 
 	.. image:: account_general_contact.jpg
-		:scale: 80 %
 
 
 .. _international format: http://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers
@@ -100,7 +98,6 @@ Source and Quality Codes must be whole numbers between 0 - 65535.
 	| 
 
 	.. image:: account_general_quality.jpg
-		:scale: 80 %
 
 Source Quality
 	Quality Code(s) to match on acquired data. Separate multiple quality codes with a comma.

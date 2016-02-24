@@ -34,7 +34,7 @@ SMS notifications incur charges on the account. You can restrict the total numbe
 	| 
 
 	.. image:: account_notification_limits.jpg
-		:scale: 70 %
+
 
 The account owner will receive an email from the system when the total number of SMS sent within the current billing period gets close to the selected limit. Another email will be sent when the limit is reached and no further notification SMS will be sent until the next billing period.
 
@@ -69,7 +69,6 @@ Add, rename and remove categories as needed for your organization.
 	| 
 
 	.. image:: account_notification_categories.jpg
-		:scale: 80 %
 
 
 .. note:: 
