@@ -48,7 +48,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'eagle.io'
-copyright = u'2012 - 2015 Argos.io Pty Ltd'
+copyright = u'2016 Argos.io Pty Ltd'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -195,7 +195,7 @@ latex_elements = {
 #'papersize': 'letterpaper',
 
 # remove release label from doc.
-'releasename': '2015',
+'releasename': '2016',
 
 # The font size ('10pt', '11pt' or '12pt').
 'pointsize': '11pt',
