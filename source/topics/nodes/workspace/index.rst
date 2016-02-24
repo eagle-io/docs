@@ -4,10 +4,17 @@ Workspace
 =========
 |icon-workspace| Workspaces are special container Nodes that can be shared with other users. All other Nodes are created within the Workspace. Workspaces can only be created by the Account Owner or Administrators.
 
+.. only:: not latex
+
+    |
 
 Properties
 ----------
 .. include:: ../properties.rstx
+
+.. only:: not latex
+
+    |
 
 .. _node-configuration-workspace-sharing:
 

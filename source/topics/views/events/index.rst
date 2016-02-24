@@ -26,6 +26,9 @@ The events list is live updating and always displayed in reverse chronological o
 
 	.. image:: events_overview.jpg
 	
+.. only:: not latex
+
+    |
 
 Searching the Event Log
 -----------------------
@@ -46,6 +49,10 @@ Use the Jump to date control to jump to a specific date. After scrolling down, y
 	.. image:: events_date.jpg
 		:scale: 35 %
 
+.. only:: not latex
+
+    |
+
 Detail Level
 ~~~~~~~~~~~~
 Select the Detail level of the event log. Debug is the lowest level and will show all events, select a higher detail level to filter out the less important events. For example Info includes Warning and Error events (but not Debug events). The available detail levels include:
@@ -60,6 +67,10 @@ Select the Detail level of the event log. Debug is the lowest level and will sho
 
 .. note::
 	Debug level events are automatically purged from the event log after 30 days.
+
+.. only:: not latex
+
+    |
 
 .. raw:: latex
 
@@ -83,6 +94,9 @@ Filter events by Event type. Use this drop down to quickly find events related t
 
 |icon-security| Security
 
+.. only:: not latex
+
+    |
 
 Node Type
 ~~~~~~~~~

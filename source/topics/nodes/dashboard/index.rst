@@ -20,6 +20,9 @@ Tile layout is automatically adjusted to best suit your display device.
 
     .. image:: dash_layout.jpg
 
+.. only:: not latex
+
+    |
 
 Add tile
 --------
@@ -38,6 +41,9 @@ Add tile
 
     .. image:: dash_tile_library.jpg
 
+.. only:: not latex
+
+    |
 
 Tile operations
 ----------------
@@ -55,6 +61,10 @@ Moving the mouse over or touching a tile will show the title bar and menu button
     .. image:: dash_tile_operations.jpg
     	:scale: 30 %
 
+.. only:: not latex
+
+    |
+
 Reposition
 ~~~~~~~~~~
 Click or Touch, hold and drag the title bar to reposition the Tile on the Dashboard. Tile layout is automatically adjusted to suit the display device and tiles are always ordered in rows starting from the top left to bottom right of the screen. Requires *Configure* permission.
@@ -70,6 +80,10 @@ Click or Touch, hold and drag the title bar to reposition the Tile on the Dashbo
 
     .. image:: dash_tile_reposition.jpg
     	:scale: 30 %
+
+.. only:: not latex
+
+    |
 
 Resize
 ~~~~~~
@@ -87,6 +101,10 @@ Click or Touch, hold and drag the resize handle to adjust the width and height o
     .. image:: dash_tile_resize.jpg
     	:scale: 30 %
 
+.. only:: not latex
+
+    |
+
 Rename
 ~~~~~~
 |icon-rename| Select *Rename* from the tile menu to update or remove the Tile label.
@@ -103,17 +121,33 @@ Rename
     .. image:: dash_tile_rename.jpg
     	:scale: 30 %
 
+.. only:: not latex
+
+    |
+
 Delete
 ~~~~~~
 |icon-remove| Delete the Tile from the Dashboard.
+
+.. only:: not latex
+
+    |
 
 Duplicate
 ~~~~~~~~~
 |icon-copy| Duplicate the current Tile and its configuration.
 
+.. only:: not latex
+
+    |
+
 Properties
 ~~~~~~~~~~
 |icon-properties| Configure the Tile properties to change General display settings and Links.
+
+.. only:: not latex
+
+    |
 
 General
 `````````
@@ -131,6 +165,9 @@ The general section allows you to configure layout and display options for the T
     .. image:: dash_tile_properties_general.jpg
     	:scale: 70 %
 
+.. only:: not latex
+
+    |
 
 Links
 ``````
@@ -156,6 +193,9 @@ Drag and drop links in the list to change their display order on the tile.
 
     .. image:: dash_tile_properties_links.jpg
 
+.. only:: not latex
+
+    |
 
 Drag and Drop Links
 --------------------
@@ -186,13 +226,25 @@ Nodes can be dragged with a mouse directly from the Workspaces Tree and dropped 
     .. image:: dash_tile_link_drop.jpg
     	:scale: 30 %
 
+.. only:: not latex
+
+    |
+
 Copy/Paste Dashboards
 --------------------------
 |icon-paste| Copy/Paste operations can be performed from the Workspaces Tree to quickly duplicate one or more dashboards. Links are automatically re-assigned to corresponding Nodes relative to the Dashboard if they exists at the destination. ie. You can copy/paste complete Locations containing Dashboards without manually re-assigning all Links.
 
+.. only:: not latex
+
+    |
+
 Move Dashboards
 --------------------
 |icon-move| Moving a Dashboard within a Workspace will keep existing links. Moving a Dashboard between Workspaces will invalidate any Link where the linked node is not available in the destination Workspace.
+
+.. only:: not latex
+
+    |
 
 Link error
 -----------

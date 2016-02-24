@@ -5,6 +5,10 @@ Nodes and Configuration
 
 Nodes are the container objects that store all data and configuration for your projects. The following types of Nodes are available:
 
+.. only:: not latex
+
+    |
+    
 .. _node-types:
 
 |icon-workspace| Workspaces

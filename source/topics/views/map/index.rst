@@ -16,6 +16,9 @@ Map
 
 	.. image:: map_overview.jpg
 
+.. only:: not latex
+
+    |
 
 Map styles
 -----------
@@ -34,11 +37,18 @@ Toggle between Map, Satellite and Terrain styles.
 	.. image:: map_controls_layers.jpg
 		:scale: 35 %
 
+.. only:: not latex
+
+    |
+
 Zoom and Pan
 -------------
 Use the standard Google Map controls to Zoom/Pan or enter Street View. You can also use your mouse wheel or pinch gestures to zoom.
 The appearance and layout of the map controls will vary depending on the type of device you are using.
 
+.. only:: not latex
+
+    |
 
 Click and Hover
 ----------------
@@ -55,6 +65,10 @@ Hover over a Location icon with a mouse to quickly show its parameters. Click or
 
 	.. image:: map_location_parameters.jpg
 		:scale: 35 %
+
+.. only:: not latex
+
+    |
 
 Filters
 --------
@@ -112,6 +126,9 @@ When parameter filters are applied, the corresponding parameters for each applic
 
 Locations containing alarms will have their marker displayed in *RED* If all alarms within a location have been acknowledged the marker will be displayed in *ORANGE*.
 
+.. only:: not latex
+
+    |
 
 Reserved marker colors
 -----------------------
@@ -157,6 +174,9 @@ These reserved marker colors temporarily overwrite the normal marker color:
 	.. image:: map_marker_filtered.jpg
 		:scale: 40 %
 
+.. only:: not latex
+
+    |
 
 Adding a new Location marker
 -----------------------------
@@ -207,6 +227,10 @@ Adding a new Location marker
 	
 	.. image:: map_location_add_dragdrop.jpg
 
+.. only:: not latex
+
+    |
+
 Reposition marker
 -----------------
 |icon-move| Select *Reposition marker* from the map marker context menu to enter reposition mode. The marker will be shown with a bouncing effect while in reposition mode. Drag and drop the marker and pan/zoom the map until the marker is in the correct position. click or touch on the map background to apply the new coordinates. 
@@ -223,6 +247,10 @@ Reposition marker
 	.. image:: map_location_reposition.jpg
 		:scale: 35 %
 
+.. only:: not latex
+
+    |
+
 Remove marker
 -------------
 |icon-remove| Select *Remove marker* from the map marker context menu to remove the marker from the map.
@@ -230,4 +258,3 @@ This operation resets the location coordinates only. It will not delete the Loca
 
 .. note::
 	The Location must use Fixed Coordinates and you must have *configure* permission for the Workspace to Add, Reposition or Remove the marker. Locations with Dynamic Coordinates will automatically be added, repositioned and removed as the Source receives updates.
-

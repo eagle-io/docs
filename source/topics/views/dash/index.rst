@@ -3,6 +3,9 @@ Dash
 
 |icon-dash| The Dash is for selecting and viewing the customized graphical :ref:`dashboards <node-configuration-dashboard>`.
 
+.. only:: not latex
+
+    |
 
 Overview
 --------
@@ -21,6 +24,9 @@ Overview
 
     .. image:: dash_overview.jpg
 
+.. only:: not latex
+
+    |
 
 Dashboard view
 --------------

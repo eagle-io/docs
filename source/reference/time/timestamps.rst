@@ -3,6 +3,10 @@ Timestamps
 
 :term:`Timestamps <timestamp>` represent the date and time of an event and can be represented in different formats.
 
+.. only:: not latex
+
+    |
+
 .. _time-format-iso8601:
 
 ISO8601 
@@ -14,6 +18,9 @@ Example::
     2014-10-09T22:38:11Z
     2014-10-09T22:38:11.000Z
 
+.. only:: not latex
+
+    |
 
 User customizable format
 ------------------------
@@ -25,9 +32,14 @@ Example::
 
 Time format may also need to be configured for some Sources. Refer to the Source configuration docs for information on specifying a time format for Sources.
 
+.. only:: not latex
+
+    |
+
 .. raw:: latex
 
     \newpage
+
 
 .. _time-format-tokens:
 
@@ -132,3 +144,8 @@ Time format tokens
 
 .. rubric:: Footnotes
 .. [#f1] Tokens not available for Delimited Text Source.
+
+
+.. raw:: latex
+
+    \newpage

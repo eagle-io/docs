@@ -9,7 +9,10 @@ For automatic collection of your data you should configure the :ref:`Connection 
 
 The Historic Import Wizard will guide you through the following steps to successfully import your time series data:
 
+.. only:: not latex
 
+    |
+    
 Select a file 
 --------------
 
@@ -73,7 +76,10 @@ Timezone
 Ignore Daylight Savings Time
     Check this option if the Source does not offset the data timestamps to account for DST.
 
+.. only:: not latex
 
+    |
+    
 Use the Text Parser to define Series
 ------------------------------------
 
@@ -96,7 +102,10 @@ The Text Parser allows you to define how the delimited text file being imported 
 
     .. image:: historic_import_parser.jpg
 
+.. only:: not latex
 
+    |
+    
 Assign Series to Parameters and Location
 ----------------------------------------
 
@@ -131,7 +140,10 @@ Parameter Assignment
 
     The series icon indicates the :ref:`type of parameter <node-types>` that can be assigned to the Series.
 
+.. only:: not latex
 
+    |
+    
 Process and Upload
 ------------------
 

@@ -8,11 +8,17 @@ Data Source (file)
 
 The type of Data Source (data logger or file) is selected at time of creation and cannot be changed. This section is specific to file Data Sources.
 
+.. only:: not latex
+
+    |
 
 Properties
 ----------
 .. include:: ../properties.rstx
 
+.. only:: not latex
+
+    |
 
 General
 ~~~~~~~
@@ -54,6 +60,10 @@ Write mode
 
     *Replace existing* will remove all existing historic data within the range of data being acquired.
 
+.. only:: not latex
+
+    |
+
 .. _node-configuration-datasource-file-connection:
 
 Connection
@@ -87,7 +97,7 @@ Transport type
 		.. only:: not latex
 
 			.. image:: datasource_file_connection_dropbox_auth.png
-				:scale: 50 %
+				:scale: 60 %
 
 		.. only:: latex
 
@@ -157,6 +167,10 @@ Retry delay
 Communications Alarm
 	See :ref:`Alarms and Notifications <communications-alarm>`.
 
+.. only:: not latex
+
+    |
+
 .. _node-configuration-datasource-file-collection:
 
 Collection
@@ -191,6 +205,10 @@ Interval offset
 
 Outdated Alarm
 	See :ref:`Alarms and Notifications <outdated-alarm>`.
+
+.. only:: not latex
+
+    |
 
 .. _node-configuration-datasource-file-series:
 
@@ -244,6 +262,10 @@ Parameter Assignment
 	The series icon indicates the :ref:`type of parameter <node-types>` that will be created.
 	Rename and Delete operations should be performed from the Workspaces Tree.
 
+.. only:: not latex
+
+    |
+
 Historic
 ~~~~~~~~
 Use the *Delete* button to permanently remove all historic data for Parameters contained with the Source. Alternatively use the :ref:`Parameter Historic <node-configuration-parameter-historic>` section to delete historic data for individual Parameters.
@@ -265,6 +287,9 @@ Use the *Delete* button to permanently remove all historic data for Parameters c
 
     .. image:: datasource_historic.png
 
+.. only:: not latex
+
+    |
 
 Time
 ~~~~~
@@ -293,6 +318,9 @@ Timezone
 Ignore Daylight Savings Time
 	Check this option if the Source does not offset the data timestamps to account for DST.
 
+.. only:: not latex
+
+    |
 
 .. _text-parser:
 
@@ -317,6 +345,9 @@ The Text Parser allows you to define how a delimited text file should be process
 
 	.. image:: parser_overview.jpg
 
+.. only:: not latex
+
+    |
 
 General Settings
 ~~~~~~~~~~~~~~~~
@@ -354,7 +385,10 @@ Text qualifier
 Text encoding
 	The encoding format of the text file. If you notice special characters displayed incorrectly in the Parser Preview, you may need to change this setting.
 
+.. only:: not latex
 
+    |
+    
 File Contents
 ~~~~~~~~~~~~~
 The Parser extracts a sample from the beginning of the input text file and attempts to split the file into columns based on the current Column delimiter.
@@ -398,7 +432,10 @@ The Parser extracts a sample from the beginning of the input text file and attem
 
 	.. image:: parser_preview.jpg
 
+.. only:: not latex
 
+    |
+    
 Columns and Data Type Selection
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Columns are assigned a series data type which determine how they should be processed and the type of Parameter that will be available for creation. Use the data type drop down at the top of each column to select a data type from the available options. Columns that does not match the selected series data type are displayed in *RED*. Hover over a table cell in the Parser Preview to display a tooltip (where valid) showing how the raw data will be interpreted by the parser.
@@ -443,7 +480,10 @@ Coordinates
 	Interpret column data as Coordinates (Latitude and Longitude). You can only specify one Coordinates column per file (but you can join data from other columns). Use the Joins and Parser Configuration section to specify the Latitude and Longitude fields.
 	If Coordinates (latitude and longitude) are split over multiple columns, you can also just set the data type of the columns as Number and select the individual columns when configuring the Location Coordinates for the Source.
 
+.. only:: not latex
 
+    |
+    
 Joins and Parser Configuration
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 |icon-properties| The Joins and Parser Configuration section (available from the properties icon at the top of each column) is used to customize the parser for individual columns including joins, formatting and specifying quality data.

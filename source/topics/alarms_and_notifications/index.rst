@@ -6,10 +6,18 @@ Alarms and Notifications
 
 |icon-notification| Notifications are used to inform users of an Alarm or other condition without the users needing to be logged into the system. Notifications can be sent via Email and SMS. Users must personally subscribe to specific Nodes and specify their :ref:`notification preferences <user-notification-preferences>`.
 
+.. only:: not latex
+
+    |
+    
 Types of Alarms
 ---------------
 There are different types of alarms which apply to specific Nodes. Notifications can optionally be configured for Alarms and require a Category to be selected. The notification drop down is used to specify when notifications should be sent - when the alarm is raised and/or cleared. Learn more about :ref:`configuring nodes <nodes-and-configuration>`.
 
+.. only:: not latex
+
+    |
+    
 .. _communications-alarm:
 
 Communications Alarm
@@ -34,6 +42,10 @@ If the communications attempt is not successful during a user acquisition or sch
 
 	.. image:: communications_alarm.jpg
 
+.. only:: not latex
+
+    |
+    
 .. _outdated-alarm:
 
 Outdated Alarm
@@ -57,7 +69,10 @@ Outdated Alarms are specific to Sources and are triggered (if enabled) when no n
 
 	.. image:: outdated_alarm.jpg
 
+.. only:: not latex
 
+    |
+    
 .. _configuration-alarm:
 
 Configuration Alarm
@@ -81,7 +96,10 @@ Configuration Alarms are specific to data logger Data Sources and are triggered 
 
 	.. image:: configuration_alarm.jpg
 
+.. only:: not latex
 
+    |
+    
 .. _control-alarm:
 
 Control Alarm
@@ -105,7 +123,10 @@ Control Alarms are specific to Control Parameters and are triggered (if enabled)
 
 	.. image:: control_alarm.jpg
 
+.. only:: not latex
 
+    |
+    
 .. _state-arlam:
 
 State Alarm
@@ -130,11 +151,18 @@ Each State can have individual alarm and notification criteria.
 
 	.. image:: state_alarm.jpg
 
+.. only:: not latex
 
+    |
+    
 Alarm Indicators
 -----------------
 Alarms are always shown in *RED*. When an alarm has been Acknowledged it will be shown in *ORANGE*. When the Alarm is Cleared (when the condition or problem has returned to normal, or when the user has manually cleared the alarm) the Node or Content is displayed with its normal color. See below for an example of alarm content.
 
+.. only:: not latex
+
+    |
+    
 Workspaces Tree
 ~~~~~~~~~~~~~~~
 Alarms are shown in the Workspaces Tree as numbers indicating the total count of unacknowledged alarms on or within the Node. Expanding the Nodes will show the individual alarm counts next to each contained Node.
@@ -160,7 +188,10 @@ Alarms are shown in the Workspaces Tree as numbers indicating the total count of
 	.. image:: workspaces_tree_alarm_2.jpg
 		:scale: 40 %
 
+.. only:: not latex
 
+    |
+    
 List View
 ~~~~~~~~~
 List View has an Alarm Icon which can be clicked or touched to reveal the Alarm Panel.
@@ -212,7 +243,10 @@ The Alarm Panel displays a quick list of the currently active or acknowledged al
 	.. image:: alarmlist_acknowledged.jpg
 		:scale: 60 %
 
+.. only:: not latex
 
+    |
+    
 Map View
 ~~~~~~~~
 Map View applies the alarm color variations to the Location markers, temporarily overwriting the default marker color. 
@@ -245,16 +279,27 @@ Map View applies the alarm color variations to the Location markers, temporarily
 	.. image:: map_marker_acknowledged.jpg
 		:scale: 40 %
 
+.. only:: not latex
 
+    |
+    
 Alarm Operations
 -----------------
 Alarm operations are accessible from the Node and View context menus, List View toolbar and Alarms Panel (accessible from List View).
 The following alarm operations are available:
 
+.. only:: not latex
+
+    |
+    
 Acknowledge
 ~~~~~~~~~~~
 |icon-alarm-check| Acknowledge an alarm so other users do not attempt to investigate the same alarm condition. Requires *acknowledge alarms* permission.
 
+.. only:: not latex
+
+    |
+    
 Acknowledge with comment
 ~~~~~~~~~~~~~~~~~~~~~~~~
 |icon-alarm-comment| Acknowledge an alarm and include a comment to indicate the cause or the action that is being taken to resolve the issue.
@@ -277,13 +322,19 @@ The acknowledge alarms dialog will be displayed and you will be prompted to ente
 
 	.. image:: acknowledge_alarm_comment.jpg
 
+.. only:: not latex
 
-Clear
-~~~~~
+    |
+    
+Clear alarm
+~~~~~~~~~~~~
 |icon-alarm-cancel| Clear alarms to reset any active or acknowledged alarms on the Node. Alarms are automatically cleared by the system when the condition or problem has returned to normal. You should only clear alarms if you have changed the alarm configuration for the Node after the alarm has occurred, otherwise there will no longer be any visual indication that the Node is in an abnormal condition until the alarm is raised again.
 Requires *edit states and alarms* permission.
 
+.. only:: not latex
 
+    |
+    
 Alarm History
 -------------
 |icon-events| Use the :ref:`Events View <view-events>` with the Alarm Filter enabled to review all Alarm events that have occurred for the Selected Node. Events are logged when an Alarm is raised (becomes active), Acknowledged and Cleared. All information including time, comments and user are logged with the event.
@@ -305,7 +356,10 @@ Alarm History
 
 	.. image:: alarm_history.jpg
 
+.. only:: not latex
 
+    |
+    
 Notifications
 -------------
 There are 3 steps to configuring notifications:
@@ -316,7 +370,10 @@ There are 3 steps to configuring notifications:
 
 Account administrators can also define custom notification categories and set limits on certain types of notifications. See :ref:`managing notifications <management-notifications>` for full details.
 
+.. only:: not latex
 
+    |
+    
 .. _subscribe-nodes:
 
 Subscribe to Nodes

@@ -6,6 +6,9 @@ The Workspaces Tree is the place to go for organising, configuring and managing 
 .. note:: 
 	Most operations require you to display the Context Menu. Right-click or long-press on a Node in the Workspace Menu to display its Context Menu.
 
+.. only:: not latex
+
+    |
 
 Create
 ------
@@ -43,6 +46,9 @@ The Create Menu displays a list of the types of Nodes that can be created inside
 
 The Context Menu has a Create submenu which offers the same options as the Create Menu.
 
+.. only:: not latex
+
+    |
 
 Rename
 ------
@@ -55,6 +61,10 @@ The Node will be selected and you can type in a new name and press enter/return 
 
 .. note:: 
 	Nodes must be uniquely named within the current container Node. Restricted characters include forward slash '/' and underscore '_'.
+
+.. only:: not latex
+
+    |
 
 Delete
 ------
@@ -75,6 +85,9 @@ Delete
 .. note:: 
 	Deleting a Node will also delete any of the Nodes it contains including any associated historic data, events, attachments and configuration. This operation is NOT reversible.
 
+.. only:: not latex
+
+    |
 
 Copy and Paste
 --------------
@@ -87,6 +100,9 @@ Copy *(Ctrl+C)* and Paste *(Ctrl+V)* is the quickest and easiest way to duplicat
 .. note:: 
 	The copy operation is done at the time of pasting. The original Node being copied must exist or the paste operation will be aborted.
 
+.. only:: not latex
+
+    |
 
 Move
 ----
@@ -102,8 +118,6 @@ Alternatively *Click and Drag* a Node in the Workspaces Tree to the destination 
 .. only:: not latex
 
 	| 
-
-
 
 Note about Disabled Nodes
 -------------------------

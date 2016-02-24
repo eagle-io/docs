@@ -25,11 +25,17 @@ You can also display any pre-configured charts as a *Custom chart* tile on a :re
     .. image:: chart_example_1.jpg
         :scale: 80 %
 
+.. only:: not latex
+
+    |
 
 Properties
 ----------
 |icon-properties| Configure properties via the Workspaces Tree' context menu. Requires *configure* permission.
 
+.. only:: not latex
+
+    |
 
 General
 ~~~~~~~
@@ -187,6 +193,9 @@ Click the *Edit* button to show and modify the configuration for each speed rang
 
 .. note:: Range items are automatically reordered based on threshold value.
 
+.. only:: not latex
+
+    |
 
 Links
 ~~~~~~

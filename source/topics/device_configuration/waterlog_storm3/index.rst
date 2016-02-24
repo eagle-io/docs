@@ -118,6 +118,10 @@ System Date/Time
     .. image:: waterlog_storm3_device_1.jpg
 
 
+.. only:: not latex
+
+    |
+    
 Storm Central Setup
 ~~~~~~~~~~~~~~~~~~~
 The *Storm Central Setup* section accessible from the *Outputs* menu requires the following settings to be applied:

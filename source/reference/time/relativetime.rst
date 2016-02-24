@@ -21,6 +21,9 @@ Example usage::
 	D+9H  (9am current day)
 	NOW-7D+6H  (6 days and 18hours ago)
 
+.. only:: not latex
+
+    |
 
 OPC Base Time and Interval Keywords
 -----------------------------------

@@ -5,11 +5,17 @@ Location
 |icon-location| Locations are special containers used to associate data with a geographical location.
 Locations can be created inside Workspaces and Groups.
 
+.. only:: not latex
+
+    |
 
 Properties
 ----------
 .. include:: ../properties.rstx
 
+.. only:: not latex
+
+    |
 
 General
 ~~~~~~~
@@ -67,6 +73,10 @@ Image zoom/pan
 		.. image:: location_general_imagepreview.png
 			:scale: 40 %
 
+.. only:: not latex
+
+    |
+
 Metadata
 ~~~~~~~~
 Metadata provides a simple key/value data structure that can be used to store static information about the location. Values can be saved as Number or Text and are displayed in the Locations List View.
@@ -88,6 +98,9 @@ Metadata provides a simple key/value data structure that can be used to store st
 
 	.. image:: location_metadata.png
 
+.. only:: not latex
+
+    |
 
 Historic
 ~~~~~~~~
@@ -114,4 +127,3 @@ Use the *Delete* button to permanently remove all historic coordinate data for t
 .. raw:: latex
 
     \newpage
-

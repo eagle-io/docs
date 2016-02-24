@@ -7,9 +7,9 @@ Chart
 .. note::
 	The view displays content based on the Selected Node in the Workspaces Tree. Use filters to quickly target specific parameters or review alarms.
 
-.. raw:: latex
+.. only:: not latex
 
-    \newpage
+    |
 
 Subviews
 ---------
@@ -35,6 +35,9 @@ Locations Subview displays a chart per Location. Any Parameters contained within
 
 	.. image:: chart_locations.jpg
 
+.. only:: not latex
+
+    |
 
 Parameters
 ~~~~~~~~~~
@@ -57,6 +60,9 @@ Parameters Subview displays a chart per Parameter (based on Parameter name). Use
 	
 	.. image:: chart_parameters.jpg
 
+.. only:: not latex
+
+    |
 
 Custom
 ~~~~~~
@@ -79,6 +85,9 @@ Custom Subview displays a list of pre-configured :ref:`custom charts <node-confi
 	
 	.. image:: chart_custom.jpg
 
+.. only:: not latex
+
+    |
 
 .. _working-with-charts:
 
@@ -109,12 +118,18 @@ Parameter values may be shown with aggregation applied - indicated with a durati
 	.. image:: chart_values.jpg
 		:scale: 50 %
 
+.. only:: not latex
+
+    |
 
 Adjust Height
 ~~~~~~~~~~~~~
 Use the grab handle in the bottom right corner of the chart to increase or decrease its height.
 This option is currently not available on touch devices.
 
+.. only:: not latex
+
+    |
 
 Zoom
 ~~~~
@@ -154,6 +169,10 @@ Use the navigator located directly under the main chart area to pan the chart or
 
 	.. image:: chart_zoomed.jpg
 
+.. only:: not latex
+
+    |
+
 .. raw:: latex
 
     \newpage
@@ -175,10 +194,17 @@ Click or touch the parameters in the legend above the main chart area to tempora
 
 	.. image:: chart_toggle_parameters.jpg
 
+.. only:: not latex
+
+    |
+
 Save as image
 ~~~~~~~~~~~~~
 |icon-download| Save the chart as an image by clicking or touching the download chart button at the top of the chart. The image may be saved automatically or opened in a new window, depending on your web browser.
 
+.. only:: not latex
+
+    |
 
 Toolbar Controls
 ----------------

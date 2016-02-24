@@ -8,11 +8,18 @@ The type of Data Source (data logger or file) is selected at time of creation an
 
 Refer to the :ref:`Device configuration <device-configuration>` section for a quick guide to connecting a range of industry standard data loggers.
 
+.. only:: not latex
+
+    |
+    
 Properties
 ----------
 .. include:: ../properties.rstx
 
+.. only:: not latex
 
+    |
+    
 General
 ~~~~~~~~
 The general section allows you to specify the type of data logger you would like to connect to.  
@@ -74,6 +81,10 @@ Write mode
 
     *Replace existing* will remove all existing historic data within the range of data being acquired.
 
+.. only:: not latex
+
+    |
+    
 .. _node-configuration-datasource-datalogger-connection:
 
 Connection
@@ -173,6 +184,10 @@ Retry delay
 Communications Alarm
     See :ref:`Alarms and Notifications <communications-alarm>`.
 
+.. only:: not latex
+
+    |
+    
 .. raw:: latex
 
     \newpage
@@ -215,6 +230,10 @@ Interval offset
 Outdated Alarm
     See :ref:`Alarms and Notifications <outdated-alarm>`.
 
+.. only:: not latex
+
+    |
+    
 .. raw:: latex
 
     \newpage
@@ -244,6 +263,9 @@ Configuration displays configuration set in the remote data logger including pro
 Configuration Alarm
     See :ref:`Alarms and Notifications <configuration-alarm>`.
 
+.. only:: not latex
+
+    |
     
 Series
 ~~~~~~~~~~~
@@ -289,7 +311,10 @@ Parameter Assignment
     The series icon indicates the :ref:`type of Parameter <node-types>` that will be created.
     Rename and Delete operations should be performed from the Workspaces Tree.
 
+.. only:: not latex
 
+    |
+    
 Historic
 ~~~~~~~~
 Use the *Delete* button to permanently remove all historic data for Parameters contained with the Source. Alternatively use the :ref:`Parameter Historic <node-configuration-parameter-historic>` section to delete historic data for individual Parameters.
@@ -311,7 +336,10 @@ Use the *Delete* button to permanently remove all historic data for Parameters c
 
     .. image:: datasource_historic.jpg
 
+.. only:: not latex
 
+    |
+    
 Time
 ~~~~~
 Time allows you to configure the timezone of the Source and associated options.

@@ -6,10 +6,17 @@ Attachment
 
 To view attachments navigate to :menuselection:`List View --> Attachments`. You will see a list of all attachments within the Selected Node. Requires *view attachments* permission.
 
+.. only:: not latex
+
+    |
+
 Properties
 ----------
 .. include:: ../properties.rstx
 
+.. only:: not latex
+
+    |
 
 General
 ~~~~~~~

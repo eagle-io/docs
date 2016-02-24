@@ -53,6 +53,10 @@ Rows items will be *GRAY* if the corresponding node configuration has not been f
     .. image:: list_disabled.jpg
 
 
+.. only:: not latex
+
+    |
+
 Subviews
 ---------
 
@@ -89,6 +93,10 @@ Subscribe
     Click or touch the subscribe icon to subscribe to the Nodes you would like to receive notifications for. You must have *subscribe notifications* permission for the Workspace. If the Location contains Sources, the Subscription Panel will be displayed so you can toggle your subscription preferences indiviually or all together.
 Properties
     Show the Node properties dialog.
+
+.. only:: not latex
+
+    |
 
 .. raw:: latex
 
@@ -160,6 +168,10 @@ Subscribe
 Properties
     Show the Node properties dialog.
 
+.. only:: not latex
+
+    |
+
 .. raw:: latex
 
     \newpage
@@ -206,6 +218,10 @@ Properties
 
 
 |icon-control| Control parameters can be controlled inline in the parameters list. Click the control icon and set the new value or cancel. Requires *operate* permission for the Workspace. See :ref:`Operate and Control <operate-and-control>` for full details. 
+
+.. only:: not latex
+
+    |
 
 .. raw:: latex
 

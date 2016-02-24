@@ -4,6 +4,10 @@ Parameter
 ==========
 |icon-point-number-range| Parameters are managed by and contained within Data Sources. Parameters store the individual timeseries acquired by its Data Source. There are a few different types of parameters but essentially they support Monitoring or Controlling of values.
 
+.. only:: not latex
+
+    |
+    
 Types of Parameters
 -------------------
 
@@ -53,7 +57,10 @@ Types of Parameters
 .. only:: latex
     
     See :ref:`Nodes and Configuration <node-types>` for full list of Parameter types.
-    
+
+.. only:: not latex
+
+    |
 
 Properties
 ----------
@@ -62,6 +69,10 @@ Properties
 .. note::
     Available options will vary based on Parameter type.
 
+.. only:: not latex
+
+    |
+    
 .. _node-configuration-parameter-general:
 
 General
@@ -102,7 +113,10 @@ Format
 
     *Time Parameters* use this setting to determine the formatting of the timestamp (leave empty to display timestamps in your default user time format). Select a preset format from the drop down list or specify a custom format using :ref:`time format tokens <time-format-tokens>`.
 
+.. only:: not latex
 
+    |
+    
 States
 ~~~~~~~~
 States allow you to define unlimited numbers of *Ranges* or *Discrete* thresholds that uniquely describe the current value of the parameter. 
@@ -113,7 +127,10 @@ Each state can optionally be configured to raise an alarm and/or send notificati
 
 Click the Edit button to show and modify the configuration for each state. Use the *Add state* button to create a new state. States can be removed via the dropdown menu (accessible by clicking the menu button on the top-right corner of the state item).
 
+.. only:: not latex
 
+    |
+    
 Range States
 `````````````
 Drag and drop the NORMAL state in the list to change its order.
@@ -133,7 +150,10 @@ Position states above or below the NORMAL state to capture higher or lower than 
 
     .. image:: parameter_states_range.jpg
 
+.. only:: not latex
 
+    |
+    
 Discrete States
 ````````````````
 Drag and drop states in the list to change their display order.
@@ -189,7 +209,10 @@ Notifications
 Category
     Select the category of subscribed users that will receive notifications for this State. See :ref:`Alarms and Notifications <alarms-and-notifications>` for more info.
 
+.. only:: not latex
 
+    |
+    
 .. _node-configuration-parameter-chart:
 
 Chart

@@ -4,11 +4,17 @@ Attachment Source
 =================
 |icon-attachmentsource| Attachment Sources have the ability to automatically acquire or receive Attachments. Attachment Sources can be created inside Locations only.
 
+.. only:: not latex
+
+    |
 
 Properties
 ----------
 .. include:: ../properties.rstx
 
+.. only:: not latex
+
+    |
 
 General
 ~~~~~~~
@@ -40,6 +46,9 @@ Max attachments
 Remove after
 	Enable this setting to specify the maximum number of days that attachments will be stored within this Source. The expired attachments will only be removed when new attachments arrive.
 
+.. only:: not latex
+
+    |
 
 Connection
 ~~~~~~~~~~
@@ -103,8 +112,9 @@ Process email body
 Communications Alarm
 	See :ref:`Alarms and Notifications <communications-alarm>`.
 
+.. only:: not latex
 
-
+    |
 
 Collection
 ~~~~~~~~~~

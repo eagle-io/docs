@@ -38,10 +38,18 @@ You need to configure your Data Source to use the **Scout** transport. You can t
 	.. image:: datasource_device.jpg
 
 
+.. only:: not latex
+
+    |
+    
 Device settings
 ---------------
 The device settings dialog allows you to review and configure the settings for your Scout. The status message at the bottom of the dialog will indicate if the remote device is *up to date* or *out of date*. Configuration updates will automatically be applied on the next successful connection.
 
+.. only:: not latex
+
+    |
+    
 General
 ~~~~~~~
 The general section allows you to configure the device for use with your SIM.
@@ -77,7 +85,10 @@ Network configuration
 
 .. _international format: http://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers
 
+.. only:: not latex
 
+    |
+    
 Communication
 ~~~~~~~~~~~~~
 The communication section allows you to change the COM1 port settings to correctly pass data between eagle.io and your data logger.
@@ -103,7 +114,10 @@ The communication section allows you to change the COM1 port settings to correct
 .. note::
 	Some data loggers may require a specific Baud rate, but most other settings should use the defaults.
 
+.. only:: not latex
 
+    |
+    
 Configuration
 ~~~~~~~~~~~~~
 The configuration section allows you to view software versions and configure updates.
@@ -137,6 +151,10 @@ Software updates
 Device log level
 	Select the detail level of the device logs. Debug is the lowest level and will record all events. Select a higher level to filter out less important events. Logs are only retrieved on request via the *Retrieve logs* button in the Operation section. 
 
+.. only:: not latex
+
+    |
+    
 Operation
 ~~~~~~~~~
 The operation section can be used to remotely reset or reboot the *Scout modem* or retrieve its internal logs.

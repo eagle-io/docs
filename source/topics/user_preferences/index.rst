@@ -22,25 +22,37 @@ User Preferences
 
 	.. image:: user_profile_overview.png
 
+.. only:: not latex
 
+    |
+    
 Change login email
 ------------------
 Use the *Change* button to update your user profile email address. An email will be sent to the new address with a one-time verification link to confirm the change. Any re-sends or new address changes will invalidate previously generated links.
 
+.. only:: not latex
 
+    |
+    
 Choose a Timezone and Time format
 ---------------------------------
 Select the :ref:`timezone <timezone>` you would like to use for displaying Workspace data. All data and notifications are displayed in your timezone regardless of the data's origin.
 
 Time format is used to specify the default appearance of date & time information. Select a preset format from the drop down list or specify a custom format using :ref:`time format tokens <time-format-tokens>`.
 
+.. only:: not latex
 
+    |
+    
 Resetting your password
 -----------------------
 The User profile has a *Change Password* section for immediate password changes.
 If you have forgotten your password you can use the *Forgot Password* link on the public site to send a reset link to your User profile email address.
 
+.. only:: not latex
 
+    |
+    
 .. _user-notification-preferences:
 
 Notification preferences
@@ -72,7 +84,10 @@ Use the SMS/Email checkboxes to set your preferences on what types of notificati
 .. note:: 
 	You must also be subscribed to the individual Nodes you would like to receive the notifications for. See :ref:`Subscribe to Nodes <subscribe-nodes>` for full details.
 
+.. only:: not latex
 
+    |
+    
 .. _user-api-keys:
 
 API Keys

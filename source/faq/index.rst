@@ -1,6 +1,10 @@
 Frequently Asked Questions
 ==========================
 
+.. only:: not latex
+
+    |
+    
 General
 -------
 

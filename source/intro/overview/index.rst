@@ -3,8 +3,8 @@ Introducing eagle.io
 
 .. _overview:
 
-Cloud-based, collaborative, real-time monitoring
-------------------------------------------------
+Connect, configure and control your monitoring fleet from the cloud
+--------------------------------------------------------------------
 
 .. image:: network.jpg
 
@@ -14,6 +14,9 @@ Whether you're working with simple data files or managing a fleet of :term:`data
 With real-time communications, collaboration and instant updates built into the core eagle.io has everything you've always wanted and more.
 The lightning fast interface has been designed to work across all modern phones and computing devices with no software to install and no page reloads.
 
+.. only:: not latex
+
+    |
 
 Log in to eagle.io
 ------------------
@@ -37,6 +40,9 @@ You will need a user profile to log in. This requires you to `Sign up <https://e
 2. Link to reset your password
 3. Login with your Google+ or Yahoo! account
 
+.. only:: not latex
+
+    |
 
 Layout and Navigation
 ---------------------
@@ -87,6 +93,9 @@ The layout of these sections will vary depending on the screen size of your devi
 8. Workspaces Tree
 9. Workspaces Tree show/hide button
 
+.. only:: not latex
+
+    |
 
 Selecting Nodes in the Workspaces Tree
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -145,6 +154,9 @@ You can easily show all content by selecting the Base Node.
 
 Review the full list of :ref:`Node types <node-types>`.
 
+.. only:: not latex
+
+    |
 
 Changing the View
 ~~~~~~~~~~~~~~~~~~
@@ -170,11 +182,18 @@ Use the View Selector to change the View. You will notice the Content Area and T
 	The Dash is for viewing the customized graphical dashboards and also provides an overview of all dashboard nodes available based on the Selected Node in the Workspaces Tree. 
 
 
+.. only:: not latex
+
+    |
+
 User Menu
 ~~~~~~~~~
 The User Menu provides quick access to the User Profile, Account Management, Log out and Help.
 
+.. only:: not latex
 
+    |
+    
 Context Menus
 ~~~~~~~~~~~~~
 Context menus are built into the interface and provide quick access to navigation, operations and configuration for their associated elements. Right-click or long-press on a Node in the Workspaces Tree or an item in the Content Area (ie. Map marker, List item, etc.) to display it's associated context menu.
@@ -192,6 +211,10 @@ Context menus are built into the interface and provide quick access to navigatio
 	Context menus display only the items relevant to the associated Node or content the menu is displayed for. Context menu items are also dependant on User permissions. If there are no available options then no context menu will be displayed.
 
 
+.. only:: not latex
+
+    |
+
 Click, Touch, Tap, What?
 ~~~~~~~~~~~~~~~~~~~~~~~~
 The user interface has been designed to work seemlessly across all modern computing devices including desktop computers, tablets and phones which means it has built-in support for Touch devices.
@@ -207,6 +230,9 @@ Double-click, Double-tap
 Right-click, Long-press
 	Using a dual button mouse, use the alternate button to Click. When using a single button mouse or touch device you need to click (or touch) and hold without releasing for a few seconds.
 
+.. only:: not latex
+
+    |
 
 Inline help
 -----------
@@ -227,6 +253,9 @@ You can hover, click or touch the help icon to show the help popup - many of whi
 	.. image:: inline_help.jpg
 		:scale: 35 %
 
+.. only:: not latex
+
+    |
 
 Offline use
 -----------

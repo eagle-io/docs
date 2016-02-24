@@ -17,6 +17,10 @@ Eagle.io provides full support for `Campbell Scientific <http://www.campbellsci.
 This section provides instructions for connecting your PakBus data logger to eagle.io.
 Refer to :ref:`Operate and Control <operate-and-control>` for advanced usage instructions.
 
+.. only:: not latex
+
+    |
+    
 Source configuration
 --------------------
 
