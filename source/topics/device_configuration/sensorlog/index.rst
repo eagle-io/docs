@@ -103,6 +103,7 @@ Launch the SensorLog App and open the *Configuration* section.
     | 
 
     .. image:: sensorlog_device.jpg
+        :scale: 50%
 
 The following settings should be assigned:
 
