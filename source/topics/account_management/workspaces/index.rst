@@ -1,8 +1,9 @@
 Workspaces
 ==========
 
-|icon-workspace| The Workspaces section displays a list of all Workspaces belonging to the currently selected Account.
-The Usage Overview shows a current snapshot of the Nodes being used for each Workspace. It also displays a count of Users (not including Administrators and Owners) that have access to each Workspace.
+|icon-workspace| The workspaces section displays a list of all workspaces in the account. You can add, remove or configure workspaces. 
+
+The usage overview shows a current snapshot of usage for each workspace in the account. The user count does not include the account owner, administrators or account managers.
 
 .. raw:: latex
 
@@ -21,7 +22,10 @@ The Usage Overview shows a current snapshot of the Nodes being used for each Wor
 
 	.. image:: account_workspaces.jpg
 
-You can add a new Workspace, rename or remove existing Workspaces or configure Sharing and Security via the properties icons.
 
 .. note:: 
-	Workspaces can be created, renamed or modified directly from the Workspaces Tree.
+	Workspaces can also be created, removed or configured directly from the Workspaces Tree.
+
+.. raw:: latex
+
+    \newpage

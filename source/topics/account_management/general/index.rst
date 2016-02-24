@@ -1,22 +1,85 @@
 General
 =======
-|icon-backend| General section allows you to configure the following:
+
+|icon-backend| General section provides an overview of the account and allows you to change your contact details and setup quality code information.
+
+.. only:: not latex
+
+    |
 
 
-Changing or Cancelling the Account
-----------------------------------
-The Overview section displays the current *Account Type*. 
+Overview
+--------
 
-Click or touch the *Change* button to Change or Cancel the account. Follow the on-screen instructions to proceed.
+The account owner or manager can change the account name or view a summary of current usage and billing charges for non-managed accounts.
+
+.. raw:: latex
+
+    \vspace{-10pt}
+    
+.. only:: not latex
+
+	.. image:: account_general_overview.jpg
+		:scale: 50 %
+
+	| 
+
+.. only:: latex
+	
+	| 
+
+	.. image:: account_general_overview.jpg
+		:scale: 80 %
+
 
 .. note:: 
-	You must be logged in as the Account Owner to change or cancel the account.
+	Only the account owner or manager can change the account name or close the account.
+
+.. only:: not latex
+
+    |
+
+
+Contact
+--------
+
+Please ensure your contact details are always up to date so that we can contact you when required. You can optionally specifiy a different support phone number and email address for any public enquires or customer support requests.
+
+**Phone** number should follow the standard `international format`_ starting with '+' and including country and area code.
+
+**Email** address is used for all account related correspondance with eagle.io. You should use your company admin email rather than your personal email address. eg. *admin@company.com*
+
+.. raw:: latex
+
+    \vspace{-10pt}
+    
+.. only:: not latex
+
+	.. image:: account_general_contact.jpg
+		:scale: 50 %
+
+	| 
+
+.. only:: latex
+	
+	| 
+
+	.. image:: account_general_contact.jpg
+		:scale: 80 %
+
+
+.. _international format: http://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers
+
+.. only:: not latex
+
+    |
 
 
 .. _management-general-qualitycodes:
 
 Quality Codes
 -------------
+
 The Quality Codes section displays a list of the historic :ref:`Qualities <historic-quality>` for this Account. Quality Code settings apply to all Workspaces in the account. Use the *Add* button to create custom quality codes.
 
 Source and Quality Codes must be whole numbers between 0 - 65535.
@@ -27,7 +90,7 @@ Source and Quality Codes must be whole numbers between 0 - 65535.
     
 .. only:: not latex
 
-	.. image:: account_quality.jpg
+	.. image:: account_general_quality.jpg
 		:scale: 50 %
 
 	| 
@@ -36,7 +99,7 @@ Source and Quality Codes must be whole numbers between 0 - 65535.
 	
 	| 
 
-	.. image:: account_quality.jpg
+	.. image:: account_general_quality.jpg
 		:scale: 80 %
 
 Source Quality

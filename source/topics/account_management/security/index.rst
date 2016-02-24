@@ -1,16 +1,21 @@
 Security
 ========
+
 |icon-security| Security allows you to configure Administrators of the account and User roles.
+
+.. only:: not latex
+
+    |
 
 .. _management-security-administrators:
 
 Administrators
 ---------------
-Administrators have full access to your account but can not Close or Change the account type.
-You should only add trusted users as Administrators to keep your account secure.
 
-Administrators automatically receive unrestricted access to all Workspaces and configuration settings for the account. There is no need to explicitly Share a Workspace with any Administrators of the same account.
-If you would like a User to have restricted access to Workspaces, then DO NOT add them as Administrators. Instead use Workspace Sharing to add them as a User of a Workspace with an assigned role.
+Administrators have full access to your account including unrestricted access to all Workspaces and most configuration settings for the account. There is no need to explicitly :ref:`Share a Workspace <node-configuration-workspace-sharing>` with any Administrators of the same account.
+If you would like a user to have restricted access to Workspaces, then *do not* add them as Administrators. Instead use :ref:`Workspace Sharing <node-configuration-workspace-sharing>` to add them as a User of a Workspace with an assigned role.
+
+Add a new administrators by entering their email addresses and click *Add*. Separate multiple email addresses with a comma. Remove administrators by clicking the trash icons. Click *Save* to confirm.
 
 .. raw:: latex
 
@@ -31,16 +36,20 @@ If you would like a User to have restricted access to Workspaces, then DO NOT ad
 		:scale: 80 %
 
 .. note:: 
-	You can not remove the Account Owner or your own user profile from the list. 
+	You should only add trusted users as Administrators to keep your account secure. 
 
+.. only:: not latex
+
+    |
 
 .. _management-security-userroles:
 
 User roles
 ----------
-User Roles are assigned when Sharing a Workspace with a User to restrict access to that Workspace.
-Create unlimited new roles, or change existing roles as necessary.
-Roles have permissions associated with them which define the allowed features and functionality.
+
+User roles are assigned when :ref:`Sharing a Workspace <node-configuration-workspace-sharing>` with a user to restrict access to the Workspace.
+Create unlimited new roles, or change existing role permissions as needed. 
+Roles have permissions associated with them which restrict user functionality.
 
 *Default User Roles*
 
@@ -90,4 +99,8 @@ Security
 
 
 .. note:: 
-	Security and Sharing changes take effect immediately on save. Users currently logged into the system which are affected may notice the interface reload as the changes are applied.
+	Security and Sharing changes take effect immediately on save.
+
+.. raw:: latex
+
+    \newpage
