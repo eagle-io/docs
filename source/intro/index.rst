@@ -9,3 +9,4 @@ Getting Started
    :maxdepth: 2
 
    overview/index
+   tutorials/index
