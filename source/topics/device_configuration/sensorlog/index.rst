@@ -2,7 +2,7 @@
 
 SensorLog
 ===============
-The `SensorLog <https://itunes.apple.com/au/app/sensorlog/id388014573/>`_ iOS 8.0+ App for iPhone and iPad can be configured to send data to eagle.io for demonstration purposes in a few easy steps.
+The `SensorLog <https://itunes.apple.com/au/app/sensorlog/id388014573/>`_ iOS 8.0+ App for iPhone and iPad can be configured to send data to `eagle.io <https://eagle.io>`_ for demonstration purposes in a few easy steps.
 
 .. only:: not latex
 

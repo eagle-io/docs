@@ -3,7 +3,7 @@
 Best Practices
 ==============
 
-As you build with the eagle.io API, take note of the following best practices to ensure you develop safe, reliable and efficient code.
+As you build with the `eagle.io <https://eagle.io>`_ API, take note of the following best practices to ensure you develop safe, reliable and efficient code.
 
 .. only:: not latex
 

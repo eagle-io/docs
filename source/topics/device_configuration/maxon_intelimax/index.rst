@@ -2,7 +2,7 @@
 
 Maxon Intelimax+
 ================
-The `Maxon Intelimax+ 3G SERIAL MA-2020 <http://www.maxon.com.au/products/modems-routers/INTELIMAX+_3G_SERIAL_MA-2020.html>`_ modem can be quickly configured to connect your data logger to eagle.io. The *Intelimax+* takes any standard internet ready SIM Card without the need for fixed IP addresses and offers exceptional performance in locations with marginal signal strength.
+The `Maxon Intelimax+ 3G SERIAL MA-2020 <http://www.maxon.com.au/products/modems-routers/INTELIMAX+_3G_SERIAL_MA-2020.html>`_ modem can be quickly configured to connect your data logger to `eagle.io <https://eagle.io>`_. The *Intelimax+* takes any standard internet ready SIM Card without the need for fixed IP addresses and offers exceptional performance in locations with marginal signal strength.
 
 .. only:: not latex
 

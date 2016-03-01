@@ -2,7 +2,7 @@
 
 YDOC
 ===============
-The `YDOC <http://www.your-data-our-care.com/>`_ **ML-315** range of data loggers can be configured to send data to eagle.io in a few easy steps.
+The `YDOC <http://www.your-data-our-care.com/>`_ **ML-315** range of data loggers can be configured to send data to `eagle.io <https://eagle.io>`_ in a few easy steps.
 
 .. only:: not latex
 

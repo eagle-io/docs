@@ -3,7 +3,7 @@
 HTTP API
 =========
 
-The HTTP API has been designed to make it easy for developers to interact with eagle.io from a 3rd party application or service.
+The HTTP API has been designed to make it easy for developers to interact with `eagle.io <https://eagle.io>`_ from a 3rd party application or service.
 
 Refer to the :ref:`Quick Start <api-overview>` guide to get up and running.
 Be sure to review our recommended :ref:`Best Practices <api-best-practices>` for working with the API.

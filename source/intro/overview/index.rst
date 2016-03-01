@@ -1,5 +1,5 @@
-Introducing eagle.io
-====================
+Introducing `eagle.io <https://eagle.io>`_
+===========================================
 
 .. _overview:
 
@@ -8,7 +8,7 @@ Connect, configure and control your monitoring fleet from the cloud
 
 .. image:: network.jpg
 
-Introducing eagle.io, the secure, reliable, easy to use cloud-based data monitoring service.
+Introducing `eagle.io <https://eagle.io>`_, the secure, reliable, easy to use cloud-based data monitoring service.
 Whether you're working with simple data files or managing a fleet of :term:`data loggers <data logger>`, eagle.io has you covered.
 
 With real-time communications, collaboration and instant updates built into the core eagle.io has everything you've always wanted and more.

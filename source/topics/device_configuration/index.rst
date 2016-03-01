@@ -3,7 +3,7 @@
 Device Configuration
 ====================
 
-The following topics will assist when configuring your device for eagle.io:
+The following topics will assist when configuring your device for `eagle.io <https://eagle.io>`_
 
 .. toctree::
    :maxdepth: 1

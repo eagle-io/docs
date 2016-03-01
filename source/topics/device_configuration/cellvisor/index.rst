@@ -2,7 +2,7 @@
 
 CellVisor
 ===============
-The `E State Automation <http://www.estateautomation.com.au>`_ **CellVisor** range of data loggers can be configured to send data to eagle.io in a few easy steps.
+The `E State Automation <http://www.estateautomation.com.au>`_ **CellVisor** range of data loggers can be configured to send data to `eagle.io <https://eagle.io>`_ in a few easy steps.
 
 .. only:: not latex
 

@@ -21,13 +21,13 @@ We support the latest versions of all major browsers: Chrome 16+, Firefox 16+, I
 
 .. only:: not latex
 
-	|google-chrome-html| We recommend `Google Chrome <https://www.google.com/intl/en/chrome/browser/>`_ for the best eagle.io experience.
+	|google-chrome-html| We recommend `Google Chrome <https://www.google.com/intl/en/chrome/browser/>`_ for the best `eagle.io <https://eagle.io>`_ experience.
 
 	| 
 
 .. only:: latex
 
-	|google-chrome-latex| We recommend `Google Chrome <https://www.google.com/intl/en/chrome/browser/>`_ for the best eagle.io experience.
+	|google-chrome-latex| We recommend `Google Chrome <https://www.google.com/intl/en/chrome/browser/>`_ for the best `eagle.io <https://eagle.io>`_ experience.
 
 
 How do I access an existing users data?
@@ -182,7 +182,7 @@ Support for a wide range of additional data loggers and devices is coming soon. 
 
 What connection options are supported?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-You can use a variety of transport options to connect your data logger to eagle.io including:
+You can use a variety of transport options to connect your data logger to `eagle.io <https://eagle.io>`_ including:
 
 TCP Client
 	Connect to any device with a Public IP Address or Domain name (including DDNS)
@@ -257,7 +257,7 @@ You can also manually import and export data files directly from the user interf
 
 Can I upload other types of files?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Files of any type can be uploaded through the interface or use an :ref:`Attachment Source <node-configuration-attachmentsource>` for automated uploads. All content and files uploaded must comply with our `Acceptable Use Policy <https://eagle.io/policies/acceptableuse>`_.
+Files of any type can be uploaded through the interface or use an :ref:`Attachment Source <node-configuration-attachmentsource>` for automated uploads. All content and files uploaded must comply with our `Terms of Use <https://eagle.io/policies/terms>`_.
 
 .. only:: not latex
 

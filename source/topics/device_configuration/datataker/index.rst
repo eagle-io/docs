@@ -2,7 +2,7 @@
 
 dataTaker
 ===============
-The `dataTaker <http://datataker.com>`_ **DT80** range of data loggers can be configured to send data to eagle.io in a few easy steps.
+The `dataTaker <http://datataker.com>`_ **DT80** range of data loggers can be configured to send data to `eagle.io <https://eagle.io>`_ in a few easy steps.
 
 .. only:: not latex
 

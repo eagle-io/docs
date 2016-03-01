@@ -2,7 +2,7 @@
 
 OTT netDL
 ===============
-The `OTT <http://ott.com>`_ **netDL 500** and **netDL 1000** data loggers can be configured to send data to eagle.io in a few easy steps.
+The `OTT <http://ott.com>`_ **netDL 500** and **netDL 1000** data loggers can be configured to send data to `eagle.io <https://eagle.io>`_ in a few easy steps.
 
 .. only:: not latex
 

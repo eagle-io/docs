@@ -1,7 +1,7 @@
 Using eagle.io
 ==============
 
-Introductions to all the key parts of eagle.io you’ll need to know:
+Introductions to all the key parts of `eagle.io <https://eagle.io>`_ you’ll need to know:
 
 .. toctree::
    :maxdepth: 2

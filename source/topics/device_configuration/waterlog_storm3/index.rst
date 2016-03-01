@@ -2,7 +2,7 @@
 
 WaterLog
 ==========
-The `WaterLog <http://www.waterlog.com/>`_ **Storm 3** series data logger can be configured to send data to eagle.io in a few easy steps.
+The `WaterLog <http://www.waterlog.com/>`_ **Storm 3** series data logger can be configured to send data to `eagle.io <https://eagle.io>`_ in a few easy steps.
 
 .. only:: not latex
 

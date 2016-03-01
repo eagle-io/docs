@@ -2,7 +2,7 @@
 
 Spider 
 ===========
-The `Halytech <http://halytech.com.au>`_ **Spider SMS** and **microSpider** range of data loggers can be configured to send data to eagle.io in a few easy steps.
+The `Halytech <http://halytech.com.au>`_ **Spider SMS** and **microSpider** range of data loggers can be configured to send data to `eagle.io <https://eagle.io>`_ in a few easy steps.
 
 .. only:: not latex
 
