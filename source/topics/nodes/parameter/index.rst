@@ -103,6 +103,12 @@ Display type
 
     *State* can be used for digital or discrete data and displays the state associated with the value (rather than the value).
 
+Multiplier
+    Multiplier is applied to raw data for state evaluation and display. Note: Multiplier changes will be applied to all stored historic data.
+
+Offset
+    Value added to raw data for state evaluation and display. Note: Offset changes will be applied to all stored historic data. Multiplier is always applied first.
+
 Units
     The units (suffix) to be displayed with the value or state.
 

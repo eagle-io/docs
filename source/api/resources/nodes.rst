@@ -67,10 +67,15 @@ Consumers of Nodes should tolerate the addition of new attributes and variance i
     **currentQuality**                  Int32                   Quality code associated with current value
     **currentStateId**                  ObjectId                State _id associated with current value
     **currentTime**                     Time                    :ref:`ISO8601<time-format-iso8601>` timestamp of the current value
-    **currentValue**                    Variable                Current value. Type inherited from _class
+    **currentValue**                    Variable                Latest value with multiplier and offset applied. 
+                                                                Type inherited from _class
     **displayType**                     String      Yes         Default display type of parameter: 
                                                                 *[VALUE, STATE]*
     **format**                          String      Yes         Formatting to apply to displayed value
+    **multiplier**                      Double      Yes         Value to multiply rawValue and historic data on extraction. 
+                                                                Applies to number parameters only
+    **offset**                          Double      Yes         Value to add to rawValue and historic data on extraction. 
+                                                                Applies to number parameters only
     **oldestQuality**                   Int32                   Quality code associated with oldest value
     **oldestStateId**                   ObjectId                State _id associated with oldest value
     **oldestTime**                      Time                    :ref:`ISO8601<time-format-iso8601>` timestamp of the oldest value
@@ -79,6 +84,7 @@ Consumers of Nodes should tolerate the addition of new attributes and variance i
     **previousStateId**                 ObjectId                State _id associated with previous value
     **previousTime**                    Time                    :ref:`ISO8601<time-format-iso8601>` timestamp of the previous value
     **previousValue**                   Variable                Previous value. Type inherited from _class
+    **rawValue**                        Double                  Latest raw value. Applies to number parameters only
     **states**                          Array       Yes         Array of state configuration objects
     **statesType**                      String      Yes         States evaluation mode:
                                                                 *[RANGE, DISCRETE]*
