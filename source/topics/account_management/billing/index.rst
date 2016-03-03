@@ -8,10 +8,10 @@ Billing
     |
 
 
-Billing
--------
+Payment Information
+--------------------
 
-Credit Card information must be kept up to date. You will be notified about any failed transactions.
+Credit Card details must be kept up to date. You will be notified about any failed transactions.
 Please contact support@eagle.io if you have any issues updating your billing information.
 
 .. raw:: latex
