@@ -134,7 +134,7 @@ li.toctree-l1 > a {
 }
 
 .rst-content .line-block {
-	margin-bottom: 0;
+	margin-bottom: 0 !important;
 }
 
 
