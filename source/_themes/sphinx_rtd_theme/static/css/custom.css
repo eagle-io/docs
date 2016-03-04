@@ -133,6 +133,10 @@ li.toctree-l1 > a {
 	padding: 0 2px;
 }
 
+.rst-content .line-block {
+	margin-bottom: 0;
+}
+
 
 /* non-responsive tables */
 table.table-fluid {
