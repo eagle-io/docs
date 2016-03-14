@@ -8,7 +8,7 @@ Managed accounts
 Administrators of your account automatically inherit administrator access to all managed accounts. 
 
 .. note::
-    Users of managed accounts do not have access to the *managed accounts* section.
+    Trial accounts and users of managed accounts do not have access to the *managed accounts* section.
 
 .. only:: not latex
 
