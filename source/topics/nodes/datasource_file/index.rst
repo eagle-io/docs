@@ -30,7 +30,7 @@ The general section allows you to specify the type file(s) you would like to col
 
 .. only:: not latex
 
-	.. image:: datasource_file_general.png
+	.. image:: datasource_file_general.jpg
 		:scale: 50 %
 
 	| 
@@ -39,7 +39,7 @@ The general section allows you to specify the type file(s) you would like to col
 
 	| 
 
-	.. image:: datasource_file_general.png
+	.. image:: datasource_file_general.jpg
 
 Source Enabled
 	Uncheck the Source Enabled checkbox to stop collection and prevent alarms and notifications from triggering.
@@ -76,7 +76,7 @@ Configure how you would like to connect to your file(s).
 
 .. only:: not latex
 	
-	.. image:: datasource_file_connection.png
+	.. image:: datasource_file_connection.jpg
 		:scale: 50 %
 
 	| 
@@ -85,7 +85,7 @@ Configure how you would like to connect to your file(s).
 	
 	| 
 
-	.. image:: datasource_file_connection.png
+	.. image:: datasource_file_connection.jpg
 
 Transport type
 	Select the transport used to acquire files:
@@ -96,13 +96,13 @@ Transport type
 
 		.. only:: not latex
 
-			.. image:: datasource_file_connection_dropbox_auth.png
-				:scale: 60 %
+			.. image:: datasource_file_connection_dropbox_auth.jpg
+				:scale: 40 %
 
 		.. only:: latex
 
-			.. image:: datasource_file_connection_dropbox_auth.png
-				:scale: 70 %
+			.. image:: datasource_file_connection_dropbox_auth.jpg
+				:scale: 50 %
 
 		When changing the account, a popup window will be displayed which allows you to login to Dropbox and authorise access as shown above.
 
@@ -183,7 +183,7 @@ Collection is used to specify if and when data should be automatically collected
 
 .. only:: not latex
 
-	.. image:: datasource_file_collection.png
+	.. image:: datasource_file_collection.jpg
 		:scale: 50 %
 
 	| 
@@ -192,7 +192,7 @@ Collection is used to specify if and when data should be automatically collected
 	
 	| 
 
-	.. image:: datasource_file_collection.png
+	.. image:: datasource_file_collection.jpg
 
 Scheduled
 	Enable the schedule for automatic data collection.
@@ -301,7 +301,7 @@ Time allows you to configure the timezone of the Source and associated options.
 
 .. only:: not latex
 
-	.. image:: datasource_file_time.png
+	.. image:: datasource_file_time.jpg
 		:scale: 50 %
 
 	| 
@@ -310,7 +310,7 @@ Time allows you to configure the timezone of the Source and associated options.
 	
 	| 
 
-	.. image:: datasource_file_time.png
+	.. image:: datasource_file_time.jpg
 
 Timezone
 	Select the timezone the Source uses for storing historic data. Choose *(GMT+00:00) UTC* if data timestamps are in UTC.
@@ -384,6 +384,9 @@ Text qualifier
 
 Text encoding
 	The encoding format of the text file. If you notice special characters displayed incorrectly in the Parser Preview, you may need to change this setting.
+
+Reset to defaults
+	Resets parser configuration and joins to system defaults.
 
 .. only:: not latex
 
@@ -496,7 +499,7 @@ Data values in input files are commonly split into separate fields and therefore
 
 .. only:: not latex
 
-	.. image:: parser_join_time.png
+	.. image:: parser_join_time.jpg
 		:scale: 50 %
 
 	| 
@@ -505,7 +508,7 @@ Data values in input files are commonly split into separate fields and therefore
 	
 	| 
 
-	.. image:: parser_join_time.png
+	.. image:: parser_join_time.jpg
 
 You can join additional columns via the *Add New* row. Select the column to join from the Joins drop down and the Field to be assigned. Columns are joined in the order they are displayed (top to bottom) and the result is shown in the Parser Preview. 
 
@@ -540,7 +543,7 @@ You may need to split or exclude data within a single column. Add a Separator fi
     
 .. only:: not latex
 
-	.. image:: parser_join_coordinates.png
+	.. image:: parser_join_coordinates.jpg
 		:scale: 50 %
 
 	| 
@@ -549,7 +552,7 @@ You may need to split or exclude data within a single column. Add a Separator fi
 	
 	| 
 
-	.. image:: parser_join_coordinates.png
+	.. image:: parser_join_coordinates.jpg
 
 .. raw:: latex
 
@@ -565,7 +568,7 @@ All columns can be re-used as joins on other columns. For example you can have m
     
 .. only:: not latex
 
-	.. image:: parser_join_quality.png
+	.. image:: parser_join_quality.jpg
 		:scale: 50 %
 
 	| 
@@ -574,7 +577,28 @@ All columns can be re-used as joins on other columns. For example you can have m
 	
 	| 
 
-	.. image:: parser_join_quality.png
+	.. image:: parser_join_quality.jpg
+
+
+You can optionally specify a **format** and **formatFilter** to include or exclude the field or the entire record based on the data matching the specified format.
+In the example below all records will be excluded where the data in *Column 6 (Quality)* equals *50*.
+
+.. raw:: latex
+
+    \vspace{-10pt}
+    
+.. only:: not latex
+
+	.. image:: parser_join_filter.jpg
+		:scale: 50 %
+
+	| 
+
+.. only:: latex
+	
+	| 
+
+	.. image:: parser_join_filter.jpg
 
 .. raw:: latex
 
