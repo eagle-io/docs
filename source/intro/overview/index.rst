@@ -188,7 +188,7 @@ Use the View Selector to change the View. You will notice the Content Area and T
 
 User Menu
 ~~~~~~~~~
-The User Menu provides quick access to the User Profile, Account Management, Log out and Help.
+The User Menu provides quick access to the User Profile, Account Settings, Log out and Help.
 
 .. only:: not latex
 

@@ -5,7 +5,7 @@ Quality
 
 Historic data can optionally contain quality information. Each data point in the time series can store a quality code that represents the quality of the value captured. System quality codes may also be applied automatically when displaying or exporting the historic data (usually when aggregate calculations are applied).
 
-The account management :ref:`Quality Codes <management-general-qualitycodes>` section allows Account Owners and Administrators to add custom quality codes or modify the built-in system quality codes.
+The account settings :ref:`Quality Codes <management-general-qualitycodes>` section allows Account Owners and Administrators to add custom quality codes or modify the built-in system quality codes.
 
 Quality codes are assigned a Type which represents the validity of the data: GOOD, BAD or UNCERTAIN.
 
