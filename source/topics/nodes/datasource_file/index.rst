@@ -580,7 +580,7 @@ All columns can be re-used as joins on other columns. For example you can have m
 	.. image:: parser_join_quality.jpg
 
 
-You can optionally specify a **format** and **formatFilter** to include or exclude the field or the entire record based on the data matching the specified format.
+You can optionally specify a **format** and **format filter** to include or exclude the field or the entire record based on the data matching the specified format.
 In the example below all records will be excluded where the data in *Column 6 (Quality)* equals *50*.
 
 .. raw:: latex
