@@ -114,6 +114,21 @@ Generic
 
 | 
 
+Libelium
+	Waspmote / Plug & Sense! using either direct *TCP Server* connection or *Meshlium* devices.
+
+.. only:: not latex
+
+	.. image:: datalogger_libelium.jpg
+		:scale: 50 %
+
+.. only:: latex
+
+	.. image:: datalogger_libelium.jpg
+		:scale: 55 %
+
+| 
+
 OTT netDL
 	OTT netDL 500 and 1000.
 
@@ -185,13 +200,22 @@ What connection options are supported?
 You can use a variety of transport options to connect your data logger to `eagle.io <https://eagle.io>`_ including:
 
 TCP Client
-	Connect to any device with a Public IP Address or Domain name (including DDNS)
+	Connect to any device with a Public IP Address or Domain name (including DDNS).
 
-TCP Callback or Stream
+TCP Server
+	WaterLog, SensorLog, Waspmotes and other devices can establish a direct connection to the cloud to stream data on schedule or event-based.
+
+TCP Callback
 	Allow any remote device to establish an IP connection to eagle.io using a special identification number. You can use your modem or data logger to send the Id on initial connection, or include a unique identifier in the data stream.
 
 Scout 
 	The *Scout modem* is the easiest way to connect your data logger to eagle.io. The Scout takes any standard internet ready SIM Card without the need for fixed IP addresses and has a range of smart features including inbuilt GPS, signal strength monitoring, event based reporting and low power mode.
+
+Meshlium
+	Meshlium devices provide efficient routing of data collected from Waspmote devices in large Libelium sensor networks.
+
+FTP & Email
+	Send your data to the cloud via FTP or Email.
 
 .. only:: not latex
 

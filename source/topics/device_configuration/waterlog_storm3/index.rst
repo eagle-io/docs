@@ -49,7 +49,7 @@ Source configuration
 
     .. image:: waterlog_storm3_wizard_2.jpg
 
-3. Select *TCP File Server* as the transport type and a *Site Id* will be automatically generated. Select the timezone of the logger's clock and click Next.
+3. Select *TCP Server* as the transport type and a *Site Id* will be automatically generated. Select the timezone of the logger's clock and click Next.
 
 .. only:: not latex
 
