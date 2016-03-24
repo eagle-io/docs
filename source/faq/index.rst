@@ -115,8 +115,8 @@ Generic
 | 
 
 Libelium
-	Waspmote / Plug & Sense! using either direct *TCP Server* connection or *Meshlium* devices.
-
+	Waspmote and Plug & Sense! range with support for *Direct Connect* or *Meshlium*
+	
 .. only:: not latex
 
 	.. image:: datalogger_libelium.jpg
