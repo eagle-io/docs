@@ -12,6 +12,7 @@ The following topics will assist when configuring your device for `eagle.io <htt
    cellvisor/index
    datataker/index
    halytech_spider/index
+   libelium_waspmote/index
    maxon_intelimax/index
    ott_netdl/index
    scout/index
