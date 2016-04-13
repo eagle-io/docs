@@ -1,3 +1,5 @@
+.. _view-map:
+
 Map
 ==========
 |icon-map| Map provides a fully featured interactive interface for displaying location based data.
@@ -22,8 +24,31 @@ Map
 
 Map styles
 -----------
-Use the style controls in the top-right corner of the map to change the map appearance.
+Use the style controls in the top-left corner of the map to change the map appearance.
 Toggle between Map, Satellite and Terrain styles.
+
+.. only:: not latex
+
+	.. image:: map_controls_style.jpg
+		:scale: 50 %
+
+	| 
+
+.. only:: latex
+
+	.. image:: map_controls_style.jpg
+		:scale: 35 %
+
+.. only:: not latex
+
+    |
+
+.. _view-map-layers:
+
+Map layers
+--------------
+Use the Map layers toolbar menu to quickly show or hide KML (and KMZ) files that have been associated with Workspace(s). 
+The menu will display layers based on your current selection in the :ref:`Workspaces Tree <workspaces_tree>`. Refer to :ref:`Workspaces configuration <node-configuration-workspace-maplayers>` for help with adding or removing map layers.
 
 .. only:: not latex
 
@@ -37,6 +62,22 @@ Toggle between Map, Satellite and Terrain styles.
 	.. image:: map_controls_layers.jpg
 		:scale: 35 %
 
+Example KML layer displayed on map:
+
+.. only:: not latex
+
+	.. image:: map_controls_layers_example.jpg
+		:scale: 50 %
+
+	| 
+
+.. only:: latex
+
+	.. image:: map_controls_layers_example.jpg
+		:scale: 100 %
+
+.. note:: A maximum of 10 unique layers can be shown on the map at any one time. Additional layers can be shown only after another layer has been hidden.
+
 .. only:: not latex
 
     |
@@ -44,7 +85,7 @@ Toggle between Map, Satellite and Terrain styles.
 Zoom and Pan
 -------------
 Use the standard Google Map controls to Zoom/Pan or enter Street View. You can also use your mouse wheel or pinch gestures to zoom.
-The appearance and layout of the map controls will vary depending on the type of device you are using.
+The appearance and layout of the map controls many vary depending on the type of device you are using.
 
 .. only:: not latex
 

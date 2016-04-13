@@ -1,3 +1,5 @@
+.. _workspaces_tree:
+
 Workspaces Tree
 ===============
 
