@@ -40,7 +40,6 @@ Layers can be removed via the dropdown menu (accessible by clicking the menu but
 
 Drag and drop layers in the list (or use the dropdown menu) to change their display order on the map.
 
-
 .. raw:: latex
 
     \vspace{-10pt}
