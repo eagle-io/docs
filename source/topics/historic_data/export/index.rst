@@ -34,6 +34,11 @@ Format
     *Delimited Text* 
 
         Data is stored as rows of values separated with a specific :term:`delimiter` character.
+
+    *JSON Time Series*
+
+        Data is stored in the :ref:`JSON Time Series <historic-jts>` format. 
+        
 Output
     Select how the parameter data should be grouped:
 

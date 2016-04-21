@@ -11,7 +11,7 @@ User Preferences
 
 .. only:: not latex
 
-	.. image:: user_profile_overview.png
+	.. image:: user_profile_overview.jpg
 		:scale: 50 %
 
 	| 
@@ -20,7 +20,7 @@ User Preferences
 	
 	| 
 
-	.. image:: user_profile_overview.png
+	.. image:: user_profile_overview.jpg
 
 .. only:: not latex
 

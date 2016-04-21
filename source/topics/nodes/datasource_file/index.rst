@@ -45,11 +45,16 @@ Source Enabled
 	Uncheck the Source Enabled checkbox to stop collection and prevent alarms and notifications from triggering.
 
 File type
-	Select the type of file(s) you would like to collect:
+	Select the type of file(s) you would like to collect. The file type must be selected during datasource creation and can not be changed.
 
 	*Delimited Text* 
 
 		Data is stored as rows of values separated with a specific :term:`delimiter` character.
+
+	*JSON Time Series*
+
+		Data is stored in the :ref:`JSON Time Series <historic-jts>` format. 
+		Note: JTS files to be acquired must contain a *columns* header that specifies *name* and *dataType* of each column included in the *data*.
 
 Write mode
     Select how acquired data will be written:
@@ -90,39 +95,6 @@ Configure how you would like to connect to your file(s).
 Transport type
 	Select the transport used to acquire files:
 
-	*Read from Dropbox*
-
-		Dropbox is used to connect to a `Dropbox`_ account. An *eagle.io* folder will be created in your Dropbox *Apps* directory where you can place files for collection.
-
-		.. only:: not latex
-
-			.. image:: datasource_file_connection_dropbox_auth.jpg
-				:scale: 40 %
-
-		.. only:: latex
-
-			.. image:: datasource_file_connection_dropbox_auth.jpg
-				:scale: 50 %
-
-		When changing the account, a popup window will be displayed which allows you to login to Dropbox and authorise access as shown above.
-
-	*Email to eagle.io*
-
-		Email data using the auto-generated email address exactly as shown.
-
-		Sender address filter
-			For added security you can filter by sender email address. Restrict to a specific email address or to a specific domain. eg. user@company.com or @company.com. Leave blank for no restriction.
-
-		**Note**: The maximum accepted size per email (including all data files) is 25MB.
-
-	*Upload to ftp.eagle.io*
-
-		Ftp your files to ftp.eagle.io using the auto-generated user name exactly as shown. 
-		Password is optional. 
-		Use Tcp port 21 for standard Ftp and Tcp port 990 for Implicit SSL. 
-
-		**Note**: Only one concurrent ftp connection is allowed per Source. The maximum accepted size per file is 100MB.
-
 	*Download from FTP site*
 		
 		Connect to a specific FTP Server to collection data files. Note: FTP is supported in `passive mode <http://en.wikipedia.org/wiki/File_Transfer_Protocol>`_ only.
@@ -145,9 +117,44 @@ Transport type
 		Password
 			Password for the associated user account (or leave blank for none).
 
-	*Download from web site*
+	*Download from Web site*
 
 		No configuration required.
+
+	*Email to eagle.io*
+
+		Email data using the auto-generated email address exactly as shown.
+
+		Sender address filter
+			For added security you can filter by sender email address. Restrict to a specific email address or to a specific domain. eg. user@company.com or @company.com. Leave blank for no restriction.
+
+		**Note**: The maximum accepted size per email (including all data files) is 25MB.
+
+	*Read from Dropbox*
+
+		Dropbox is used to connect to a `Dropbox`_ account. An *eagle.io* folder will be created in your Dropbox *Apps* directory where you can place files for collection.
+
+		.. only:: not latex
+
+			.. image:: datasource_file_connection_dropbox_auth.jpg
+				:scale: 40 %
+
+		.. only:: latex
+
+			.. image:: datasource_file_connection_dropbox_auth.jpg
+				:scale: 50 %
+
+		When changing the account, a popup window will be displayed which allows you to login to Dropbox and authorise access as shown above.
+
+	*Upload to ftp.eagle.io*
+
+		Ftp your files to ftp.eagle.io using the auto-generated user name exactly as shown. 
+		Password is optional. 
+		Use Tcp port 21 for standard Ftp and Tcp port 990 for Implicit SSL. 
+
+		**Note**: Only one concurrent ftp connection is allowed per Source. The maximum accepted size per file is 100MB.
+
+	
 
 Read mode
 	Select how data should be read from the file:

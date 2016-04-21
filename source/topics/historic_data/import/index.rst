@@ -42,6 +42,11 @@ File type
 
         Data is stored as rows of values separated with a specific :term:`delimiter` character.
 
+    *JSON Time Series*
+
+        Data is stored in the :ref:`JSON Time Series <historic-jts>` format. 
+        Note: JTS files to be imported must contain a *columns* header that specifies *name* and *dataType* of each column included in the *data*.
+
 Select file
     Click or touch the *Browse* button to select a file from your computer or device. There is a 250MB file size limit per import. To import a file exceeding the size limit you should split it into smaller chunks (< 250MB) and import separately.
 
