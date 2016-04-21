@@ -32,50 +32,59 @@ Arguments
 .. table::
     :class: table-fluid
 
-    ====================    ========================    ===================================================================
-    Argument                Example                     Description
-    ====================    ========================    ===================================================================
-    **format**              JSON                        *Optional - Default is JSON*. 
-                                                        Data format to return: *[JSON, CSV]*
+    ========================    ========================    ===================================================================
+    Argument                    Example                     Description
+    ========================    ========================    ===================================================================
+    **format**                  JSON                        *Optional - Default is JSON*. 
+                                                            Data format to return: *[JSON, CSV]*
 
-    **startTime**           2014-08-16T02:00:00Z        *Required*. [#f1]_
-                                                        :ref:`ISO8601<time-format-iso8601>` timestamp
+    **startTime**               2014-08-16T02:00:00Z        *Required*. [#f1]_
+                                                            :ref:`ISO8601<time-format-iso8601>` timestamp
 
-    **endTime**             2014-08-16T02:20:43Z        *Required*. [#f1]_
-                                                        :ref:`ISO8601<time-format-iso8601>` timestamp
+    **endTime**                 2014-08-16T02:20:43Z        *Required*. [#f1]_
+                                                            :ref:`ISO8601<time-format-iso8601>` timestamp
 
-    **limit**               100                         *Optional*. 
-                                                        Maximum number of historic records to be returned
+    **timezone**                Etc/UTC                     *Optional - default is Etc/UTC*. 
+                                                            :ref:`Timezone <timezone>` applied to timestamps. 
+                                                            Aggregate *interval* and *baseTime* calculations will also use 
+                                                            this zone.
 
-    **quality**             FALSE                       *Optional - Default is FALSE*. 
-                                                        Flag to include :ref:`quality <historic-quality>`
+    **timezoneAdjustForDst**    FALSE                       *Optional - default is FALSE*. 
+                                                            Flag to indicate if timestamps should be adjusted for DST in
+                                                            selected *timezone*.
 
-    **header**              TRUE                        *Optional - Default is TRUE*. 
-                                                        Flag to include header  
+    **limit**                   100                         *Optional*. 
+                                                            Maximum number of historic records to be returned
 
-    **params**              541a5a129bc9b4035f906d70    *Required*. 
-                                                        Comma delimited list of parameter _id's to include in extraction.
-                                                        Individual parameter options are specified in parentheses.
+    **quality**                 FALSE                       *Optional - Default is FALSE*. 
+                                                            Flag to include :ref:`quality <historic-quality>`
 
-    | **renderType**        VALUE                       *Optional - Default is parameter displayType*. 
-                                                        Rendering of value: *[VALUE, STATE]*
+    **header**                  TRUE                        *Optional - Default is TRUE*. 
+                                                            Flag to include header  
 
-    | **renderFormat**      0.000                       *Optional - Default is node format*.
-                                                        :ref:`Format <node-configuration-parameter-general>` to apply
-                                                        when renderType is VALUE. '#' must be  
-                                                        `Url Encoded <http://en.wikipedia.org/wiki/Percent-encoding>`_ 
-                                                        as '%23'.
+    **params**                  541a5a129bc9b4035f906d70    *Required*. 
+                                                            Comma delimited list of parameter _id's to include in extraction.
+                                                            Individual parameter options are specified in parentheses.
 
-    | **aggregate**         AVERAGE                     *Optional - Default is NONE (raw)*. 
-                                                        Historic :ref:`aggregate <historic-aggregates>` to apply to 
-                                                        extracted data.
+    | **renderType**            VALUE                       *Optional - Default is parameter displayType*. 
+                                                            Rendering of value: *[VALUE, STATE]*
 
-    | **baseTime**          D                           *Optional*. 
-                                                        :ref:`OPC Base Time <relative-time>` required for aggregation.
+    | **renderFormat**          0.000                       *Optional - Default is node format*.
+                                                            :ref:`Format <node-configuration-parameter-general>` to apply
+                                                            when renderType is VALUE. '#' must be  
+                                                            `Url Encoded <http://en.wikipedia.org/wiki/Percent-encoding>`_ 
+                                                            as '%23'.
 
-    | **interval**          3H                          *Optional*. 
-                                                        :ref:`OPC Interval <relative-time>` required for aggregation.
-    ====================    ========================    ===================================================================
+    | **aggregate**             AVERAGE                     *Optional - Default is NONE (raw)*. 
+                                                            Historic :ref:`aggregate <historic-aggregates>` to apply to 
+                                                            extracted data.
+
+    | **baseTime**              D                           *Optional*. 
+                                                            :ref:`OPC Base Time <relative-time>` required for aggregation.
+
+    | **interval**              3H                          *Optional*. 
+                                                            :ref:`OPC Interval <relative-time>` required for aggregation.
+    ========================    ========================    ===================================================================
 
 .. [#f1] startTime or endTime can be omitted when ``limit`` is specified.
 
