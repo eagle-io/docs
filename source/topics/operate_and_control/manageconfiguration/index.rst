@@ -97,10 +97,10 @@ Run always
 
     |
     
-Campbell PakBus CR800/CR1000/CR3000/CR6
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Campbell PakBus CR300/CR800/CR1000/CR3000/CR6
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Run always
-    Send a CR800 (.cr8), CR1000 (.cr1), CR3000 (.cr3) or CR6 (.cr6) program to the logger and run the program immediately and on startup.
+    Send a CR300 (.cr300), CR800 (.cr8), CR1000 (.cr1), CR3000 (.cr3) or CR6 (.cr6) program (or pre-compiled .dld file) to the logger and run the program immediately and on startup.
 
 Run always (preserve data)
     Send a program to the logger and run the program immediately and on startup. Data tables will not be reset if possible.
