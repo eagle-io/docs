@@ -89,7 +89,7 @@ Delete
 
 .. only:: not latex
 
-    |
+    | 
 
 Copy and Paste
 --------------
@@ -104,7 +104,7 @@ Copy *(Ctrl+C)* and Paste *(Ctrl+V)* is the quickest and easiest way to duplicat
 
 .. only:: not latex
 
-    |
+    | 
 
 Move
 ----
@@ -117,12 +117,14 @@ Alternatively *Click and Drag* a Node in the Workspaces Tree to the destination 
 .. image:: workspaces_tree_move.jpg
 	:scale: 50 %
 
+|  
+
 .. only:: not latex
 
 	| 
 
-Note about Disabled Nodes
--------------------------
+Disabled Nodes
+---------------
 You may notice *GRAY* Nodes in the Workspaces Tree.
 
 Sources being configured for the first time will be shown as disabled until they have been fully configured.
@@ -145,6 +147,35 @@ Parameters that had been created and then unchecked (or unavailable) for collect
 
 	.. image:: workspaces_tree_disabled.jpg
 		:scale: 35 %
+
+.. only:: not latex
+
+    | 
+
+Demo Nodes
+-----------
+You may notice *PURPLE* Nodes in the Workspaces Tree and Content Views.
+
+Sample Data Source nodes are initially added to new accounts for demonstration purposes and do not incur usage charges. You can safely delete these demo nodes at any time.
+
+.. raw:: latex
+
+    \vspace{-10pt}
+
+.. only:: not latex
+
+    .. image:: workspaces_tree_demo.jpg
+        :scale: 50 %
+
+    | 
+
+.. only:: latex
+
+    | 
+
+    .. image:: workspaces_tree_demo.jpg
+        :scale: 35 %
+
 
 .. raw:: latex
 
