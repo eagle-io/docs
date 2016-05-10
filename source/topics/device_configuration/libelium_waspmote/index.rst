@@ -133,10 +133,16 @@ Use the online `Libelium code generator <http://www.libelium.com/development/was
 Apply the following settings for direct connection to eagle.io:
 
 Wapmote identificator
-    Use the unique *Waspmote Id* code generated during Data Source creation.
+    Use the unique *Waspmote Id* generated during Data Source creation.
+
+Add Time Stamp (RTC)
+    Enabled
+
+Communication Module
+    GPRS
 
 PIN
-    Enter the PIN number for the SIM card
+    Enter the PIN number for the SIM card (required)
 
 Protocol
     TCP
