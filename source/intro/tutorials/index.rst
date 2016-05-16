@@ -6,4 +6,5 @@ Tutorials
 
    navigation/index
    datasource/index
+   dashboard/index
    charts/index
