@@ -20,6 +20,8 @@ The following aggregates are available depending on the :ref:`Display type <node
 +--------------+-------+-------+
 | AVERAGE      | x     |       |
 +--------------+-------+-------+
+| MEDIAN       | x     |       |
++--------------+-------+-------+
 | TOTAL        | x     |       |
 +--------------+-------+-------+
 | MINIMUM      | x     |       |
@@ -27,6 +29,8 @@ The following aggregates are available depending on the :ref:`Display type <node
 | MAXIMUM      | x     |       |
 +--------------+-------+-------+
 | RANGE        | x     |       |
++--------------+-------+-------+
+| DELTA        | x     |       |
 +--------------+-------+-------+
 | CHANGE       | x     | x     |
 +--------------+-------+-------+
@@ -36,16 +40,22 @@ The following aggregates are available depending on the :ref:`Display type <node
 +--------------+-------+-------+
 | COUNT        | x     | x     |
 +--------------+-------+-------+
-| DELTA        | x     |       |
-+--------------+-------+-------+
+
 
 .. note::
     Text and Time Parameters only support *State* aggregates.
+
+.. only:: not latex
+
+    |
 
 RAW
 ---
 No Aggregation is applied. Raw data (as collected by the Source) is returned.
 
+.. only:: not latex
+
+    |
 
 INTERPOLATED
 ------------
@@ -56,56 +66,100 @@ The Interpolated algorithm calculates a value that is:
 	- If there is no beginning bound, the aggregate quality will be *No Data*.
 	- If any non-good values are skipped in order to find the closest good value, the aggregate quality will be *Data Subnormal*.
 
+.. only:: not latex
+
+    |
 
 AVERAGE
 -------
 The average aggregate adds up the values of all good raw data for each interval, and divides the sum by the number of good values producing a mean average. If any non-good values are ignored in the computation, the aggregate quality will be *Data Subnormal*.
 
+.. only:: not latex
+
+    |
+
+MEDIAN
+------
+The median aggregate sorts the good values for each interval and selects the middle value as the median. If any non-good values are ignored in the computation, the aggregate quality will be *Data Subnormal*.
+
+.. only:: not latex
+
+    |
 
 TOTAL
 -----
 The total aggregate adds up all the values of all good raw values for each interval. If any non-good values are ignored in the computation, the aggregate quality will be *Data Subnormal*.
 
+.. only:: not latex
+
+    |
 
 MINIMUM
 -------
 The minimum aggregate retrieves the minimum good raw value within the interval.
 
+.. only:: not latex
+
+    |
 
 MAXIMUM
 -------
 The maximum aggregate retrieves the maximum good raw value within the interval.
 
+.. only:: not latex
+
+    |
 
 RANGE
 -----
 The range aggregate finds the difference between the raw maximum and raw minimum values in the interval. If only one value exists in the interval, the range is zero. Note that the range is always zero or positive.
 
+.. only:: not latex
 
-CHANGE
-------
-The change aggregate retrieves raw values which have been filtered to remove any duplicate sequential values.
-
-
-START
------
-The start aggregate retrieves the first raw value within the interval. If the value is non-good, than the quality of the aggregate will be *Data Subnormal*.
-
-
-END
----
-The end aggregate retrieves the last raw value within the interval. If the value is non-good, than the quality of the aggregate will be *Data Subnormal*.
-
-
-COUNT
------
-This aggregate retrieves a count of all the raw values within an interval. If one or more raw values are non-good, they are not included in the count and the aggregate quality will be *Data Subnormal*.
-
+    |
 
 DELTA
 -----
 The delta aggregate retrieves the difference between the earliest and latest good raw values in an interval. If the last value is less than the first value, the result will be negative. If the last value is the same as the first value, or if the last value is also the first value at the same timestamp, the result will be zero. If the last value is greater than the first value, the result will be positive. If any non-good values exist earlier or later than the earliest and latest good values, respectively, the aggregate quality is *Data Subnormal*.
 
+.. only:: not latex
 
+    |
+
+CHANGE
+------
+The change aggregate retrieves raw values which have been filtered to remove any duplicate sequential values.
+
+.. only:: not latex
+
+    |
+
+START
+-----
+The start aggregate retrieves the first raw value within the interval. If the value is non-good, than the quality of the aggregate will be *Data Subnormal*.
+
+.. only:: not latex
+
+    |
+
+END
+---
+The end aggregate retrieves the last raw value within the interval. If the value is non-good, than the quality of the aggregate will be *Data Subnormal*.
+
+.. only:: not latex
+
+    |
+
+COUNT
+-----
+This aggregate retrieves a count of all the raw values within an interval. If one or more raw values are non-good, they are not included in the count and the aggregate quality will be *Data Subnormal*.
+
+.. only:: not latex
+
+    |
 
 .. note:: Aggregates use the OPC-UA Historical Access v1.0 Specification
+
+.. raw:: latex
+
+    \newpage
