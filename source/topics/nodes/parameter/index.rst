@@ -346,6 +346,8 @@ State thresholds
     *Non-Alarm States Only*
         Show non-alarm State thresholds only.
 
+    *User Notification States Only*
+        Show thresholds for States that have a category assigned that the viewing user is subscribed to receive notifications from.
 
 .. _node-configuration-parameter-historic:
 
