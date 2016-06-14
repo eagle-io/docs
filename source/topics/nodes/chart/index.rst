@@ -116,7 +116,9 @@ You can create unlimited numbers of y-axes on the chart.
 
 Click the *Edit* button to show and modify the configuration for each y-axes. Use the *Add Y axis* button to create a new axis. Axes can be removed via the dropdown menu (accessible by clicking the menu button on the top-right corner of the axis item). 
 
-Drag and drop axes in the list to change their display order on the chart.
+Y-axes can be *linear* with *automatic* or *fixed* minimum and maximum ranges or displayed with *logarithmic* scaling.
+
+Drag and drop axes in the list to change their display order on the chart. 
 
 .. raw:: latex
 
@@ -124,7 +126,7 @@ Drag and drop axes in the list to change their display order on the chart.
 
 .. only:: not latex
 
-    .. image:: chart_historic_axes_yaxes.png
+    .. image:: chart_historic_axes_yaxes.jpg
         :scale: 50 %
 
     | 
@@ -133,7 +135,7 @@ Drag and drop axes in the list to change their display order on the chart.
     
     | 
     
-    .. image:: chart_historic_axes_yaxes.png
+    .. image:: chart_historic_axes_yaxes.jpg
         :scale: 80 %
 
 
