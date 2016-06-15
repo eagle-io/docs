@@ -30,7 +30,7 @@ Type
     
     **Remote KML** should be used when the file is located on a publically accessible web server.
 
-Select file / Dile URL
+Select file / File URL
     Select a file to upload or enter the full HTTP(S) URL to the file.
 
 Label
@@ -39,6 +39,11 @@ Label
 Layers can be removed via the dropdown menu (accessible by clicking the menu button on the top-right corner of the layer item). 
 
 Drag and drop layers in the list (or use the dropdown menu) to change their display order on the map.
+
+::
+
+    Example URL: http://water.weather.gov/ahps/worldfiles/ahps_national_obs.kmz
+
 
 .. raw:: latex
 
