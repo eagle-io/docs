@@ -29,7 +29,6 @@ Consumers of Nodes should tolerate the addition of new attributes and variance i
     **alarms**                          Object      Yes         Alarm configuration and status
     **createdTime**                     Time                    :ref:`ISO8601<time-format-iso8601>` timestamp the node was created
     **isActive**                        Boolean                 Flag to indicate if node is active
-    **metadata**                        Array                   Array of metadata fields and values
     **name**                            String      Yes         Name of node
     **ownerId**                         ObjectId                Unique owner _id
     **parentId**                        ObjectId                Parent node _id (not included in Workspace)
@@ -72,6 +71,7 @@ Consumers of Nodes should tolerate the addition of new attributes and variance i
     **displayType**                     String      Yes         Default display type of parameter: 
                                                                 *[VALUE, STATE]*
     **format**                          String      Yes         Formatting to apply to displayed value
+    **metadata**                        Array                   Array of metadata fields and values for a location
     **multiplier**                      Double      Yes         Value to multiply rawValue and historic data on extraction. 
                                                                 Applies to number parameters only
     **offset**                          Double      Yes         Value to add to rawValue and historic data on extraction. 
@@ -368,7 +368,6 @@ Response
         "_id": "536884ecb5a76fd5d3000014",
         "createdTime": "2014-05-06T06:45:00.061Z",
         "isActive": true,
-        "metadata": [],
         "name": "My Workspace",
         "ownerId": "52969365593a1a3a3200000f"
     }
@@ -438,7 +437,6 @@ Response
         "_id": "536884ecb5a76fd5d3000014",
         "createdTime": "2014-05-06T06:45:00.061Z",
         "isActive": true,
-        "metadata": [],
         "name": "My Renamed Workspace",
         "ownerId": "52969365593a1a3a3200000f"
     }

@@ -21,7 +21,7 @@ Authentication
 You authenticate to the eagle.io API by providing one of your :ref:`API keys <user-api-keys>` in the **X-Api-Key** request header::
 
     GET /api/v1/nodes/
-    Host: eagle.io
+    Host: api.eagle.io
     X-Api-Key: xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 You can manage your API keys from your :ref:`user preferences <user-preferences>`. You can have multiple API keys active at one time. Your API keys carry many privileges, so be sure to keep them secret.
@@ -55,8 +55,8 @@ The following HTTP methods are used to determine which action to take on a parti
 
 ::
 
-    POST /api/v1/nodes/542a5a129bc9b4035f906d70
-    Host: eagle.io
+    POST /api/v1/nodes/5a2a5a129bc9b4035f906d70
+    Host: api.eagle.io
     X-Api-Key: xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
     X-HTTP-Method-Override: DELETE
 
@@ -310,7 +310,7 @@ Example request for inserting historic data:
 ::
 
     POST /api/v1/nodes/542a5a129bc9b4035f906d70/historic/
-    Host: eagle.io
+    Host: api.eagle.io
     X-Api-Key: xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
     Content-Type: application/json
 
@@ -348,7 +348,6 @@ Example response from a Nodes GET request:
         "displayType": "VALUE",
         "format": "0.###",
         "isActive": true,
-        "metadata": [],
         "name": "Temperature",
         "oldestStateId": "541a58dc9bc9b4035f906938",
         "oldestTime": "2014-02-13T22:58:53.000Z",
@@ -384,7 +383,7 @@ Versioning
 The API version number is specified as part of the URL.
 **v1** is the currently supported version and has a base URL::
 
-    https://eagle.io/api/v1/
+    https://api.eagle.io/api/v1/
 
 As we make updates and additions to the eagle.io API, we will only make changes, add new features and/or implement fixes to the current released API that do not affect backward compatibility.
 
