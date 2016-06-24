@@ -103,6 +103,8 @@ The Workspaces Tree displays all the Workspaces and associated content you have 
 
 Most Nodes are hierarchical and may also contain Nodes themselves. The *Workspaces* label is the best example of this as its referred to as the Base Node and contains all the Workspace Nodes.
 
+If you have access to more than one Workspace you may notice some of the Workspaces are *GRAYED* out when you first login. Select the Workspace to load its assets.
+
 *Example Workspaces Tree showing hierarchy*
 
 .. only:: not latex

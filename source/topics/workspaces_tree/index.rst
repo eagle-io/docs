@@ -123,9 +123,38 @@ Alternatively *Click and Drag* a Node in the Workspaces Tree to the destination 
 
 	| 
 
+Workspace Loading On-demand
+---------------------------
+If you have access to more than one Workspace you may notice some of the Workspaces are *GRAYED* out in the Workspaces Tree when you first login.
+Click on the Workspace or select *Load Workspace* from the Workspace context menu to load its assets. 
+
+You can load all Workspaces by selecting *Load Workspaces* from the top-level *WORKSPACES* context menu or clicking its *LOAD ALL* button.
+
+.. raw:: latex
+
+    \vspace{-10pt}
+
+.. only:: not latex
+
+    .. image:: workspaces_tree_ondemand.jpg
+        :scale: 50 %
+
+    | 
+
+.. only:: latex
+
+    | 
+
+    .. image:: workspaces_tree_ondemand.jpg
+        :scale: 35 %
+
+.. only:: not latex
+
+    | 
+
 Disabled Nodes
 ---------------
-You may notice *GRAY* Nodes in the Workspaces Tree.
+You may notice *GREY* Nodes within a Workspace.
 
 Sources being configured for the first time will be shown as disabled until they have been fully configured.
 Parameters that had been created and then unchecked (or unavailable) for collection will also be shown as disabled in the Workspaces Tree, List and Map Views. 

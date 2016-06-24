@@ -481,7 +481,7 @@ Time
 	Interpret column data as Time. You need to specify the time format using the Joins and Parser Configuration section. You can create a Time Parameter from the column.
 
 Disabled
-	The column will be *GRAY* in the Parser Preview and will not be available for Parameter creation. Setting an unused column to Disabled is optional. It has been added for convenience when working with files with lots of columns.
+	The column will be *GREY* in the Parser Preview and will not be available for Parameter creation. Setting an unused column to Disabled is optional. It has been added for convenience when working with files with lots of columns.
 
 Record Time
 	The column to use as the Record Time (timestamp for the line values). There must always be exactly one Record Time column defined. You need to specify the time format using the Joins and Parser Configuration section.

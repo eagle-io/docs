@@ -139,7 +139,7 @@ Location Coordinates
 Parameter Assignment
     Assign Series to New or Existing parameters by toggling the New/Existing button (only enable when there are existing Parameters matching the data type of the Series). Uncheck any Series you do not want want to import.
 
-    Any newly created parameters will be created within the Source and shown as GRAYED out in the Workspaces Tree and Content Views to distinguish them from parameters assigned to series being automatically collected from datalogger or file Data Sources.
+    Any newly created parameters will be created within the Source and shown as GREYED out in the Workspaces Tree and Content Views to distinguish them from parameters assigned to series being automatically collected from datalogger or file Data Sources.
 
     Parameters can be re-assigned to new Series at any time without loosing existing historic data.
 

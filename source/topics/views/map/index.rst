@@ -131,7 +131,7 @@ Use filters to quickly show locations of interest.
 	.. image:: map_filters.jpg
 		:scale: 35 %
 
-The show/hide filtered locations button found in the toolbar can be used to toggle the display of filtered locations. When active you will notice any filters locations are displayed with just a *GRAY* marker and no label. You can still hover or click these filtered locations to display the parameters list.
+The show/hide filtered locations button found in the toolbar can be used to toggle the display of filtered locations. When active you will notice any filters locations are displayed with just a *GREY* marker and no label. You can still hover or click these filtered locations to display the parameters list.
 
 .. only:: not latex
 
