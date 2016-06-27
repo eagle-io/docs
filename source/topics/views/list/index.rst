@@ -159,8 +159,6 @@ Latest Data
     Timestamp of the most recent data from the Source.
 Collected
     Displays number of records collected for a Data Source during last collection or number of files processed for an Attachment Source.
-Signal Strength
-    Displays the signal strength when the Data Source is using a Scout modem.
 Alarms
     An alarm icon will be shown if there are any active or acknowledged alarms on or within the Source. Click or touch the alarm icon to display the Alarm Panel.
 Subscribe
