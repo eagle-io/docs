@@ -392,6 +392,9 @@ Text qualifier
 Text encoding
 	The encoding format of the text file. If you notice special characters displayed incorrectly in the Parser Preview, you may need to change this setting.
 
+Match
+	*Smart* match will intelligently extract any values from the field that matches the column data type. *Strict* will only extract a value from the field if the entire field contents matches the column data type.
+
 Reset to defaults
 	Resets parser configuration and joins to system defaults.
 
