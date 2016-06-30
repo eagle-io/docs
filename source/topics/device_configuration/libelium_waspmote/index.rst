@@ -129,47 +129,18 @@ Use the settings below for *Direct Connection* or *Meshlium Connection* with you
 
 Direct Connection
 ~~~~~~~~~~~~~~~~~~
-Use the online `Libelium code generator <http://www.libelium.com/development/waspmote/code_generator>`_ to create an operating program for your Waspmote. 
-Apply the following settings for direct connection to eagle.io:
+Refer to our :download:`example Waspmote operating program <./waspmote.pde>` for establishing a direct connection to eagle.io.
 
-Wapmote identificator
-    Use the unique *Waspmote Id* generated during Data Source creation.
+Apply the following settings to the variables at the top of the operating program:
 
-Add Time Stamp (RTC)
-    Enabled
+waspmoteId
+    Use the unique *Waspmote Id* generated during Data Source creation. eg. "8494091048"
 
-Communication Module
-    GPRS
+host
+    "device.eagle.io"
 
-PIN
-    Enter the PIN number for the SIM card (required)
-
-Protocol
-    TCP
-
-IP Address
-    54.252.235.152
-
-Port
-    5566
-
-.. raw:: latex
-
-    \vspace{-10pt}
-
-.. only:: not latex
-
-    .. image:: libelium_waspmote_device_1.jpg
-        :scale: 50 %
-
-    | 
-
-.. only:: latex
-
-    | 
-
-    .. image:: libelium_waspmote_device_1.jpg
-
+port
+    "5566"
 
 .. only:: not latex
 

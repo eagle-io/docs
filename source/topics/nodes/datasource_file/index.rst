@@ -121,6 +121,10 @@ Transport type
 
 		No configuration required.
 
+		The File URL (when adding file) must start with *http://* or *https://*. 
+		Optionally specify the login username and password as part of the URL if HTTP Basic authentication is required. 
+		eg. *http://user:password@company.com/file.csv*.
+
 	*Email to eagle.io*
 
 		Email data using the auto-generated email address exactly as shown.
