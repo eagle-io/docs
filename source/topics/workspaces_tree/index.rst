@@ -128,7 +128,7 @@ Workspace Loading On-demand
 If you have access to more than one Workspace you may notice some of the Workspaces are *GRAYED* out in the Workspaces Tree when you first login.
 Click on the Workspace or select *Load Workspace* from the Workspace context menu to load its assets. 
 
-You can load all Workspaces by selecting *Load Workspaces* from the top-level *WORKSPACES* context menu or clicking its *LOAD ALL* button.
+You can load all Workspaces by selecting *Load Workspaces* from the top-level *WORKSPACES* context menu.
 
 .. raw:: latex
 
@@ -146,6 +146,34 @@ You can load all Workspaces by selecting *Load Workspaces* from the top-level *W
     | 
 
     .. image:: workspaces_tree_ondemand.jpg
+        :scale: 60 %
+
+.. only:: not latex
+
+    | 
+
+Workspace Grouping by Account
+------------------------------
+If you have access to more than one account you will notice Workspaces are automatically grouped under the associated account in the Workspaces Tree.
+
+Selecting an account will display content related to all *Loaded Workspaces* you have access to for that account.
+
+.. raw:: latex
+
+    \vspace{-10pt}
+
+.. only:: not latex
+
+    .. image:: workspaces_tree_grouping.jpg
+        :scale: 50 %
+
+    | 
+
+.. only:: latex
+
+    | 
+
+    .. image:: workspaces_tree_grouping.jpg
         :scale: 35 %
 
 .. only:: not latex
