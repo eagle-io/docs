@@ -41,7 +41,7 @@ You need to configure your Data Source to use the **TCP Callback** transport. Cl
 
 Device settings
 ---------------
-Use the Intelimax GUI software to configure the logger for communication with eagle.io. Refer to your Intelimax+ `user manual <http://www.maxon.com.au/products/modems-routers/INTELIMAX+_3G_SERIAL_MA-2020.html>`_ for connection instructions.
+Use the `Intelimax GUI software <http://www.maxon.com.au/product-supports/drivers-and-manuals.html>`_ to configure the logger for communication with eagle.io. Refer to your Intelimax+ `user manual <http://www.maxon.com.au/products/modems-routers/INTELIMAX+_3G_SERIAL_MA-2020.html>`_ for connection instructions.
 
 .. raw:: latex
 
