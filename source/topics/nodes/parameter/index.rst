@@ -215,6 +215,12 @@ Notifications
 Category
     Select the category of subscribed users that will receive notifications for this State. See :ref:`Alarms and Notifications <alarms-and-notifications>` for more info.
 
+Active message
+    Enter a custom message to send when the state becomes active. Leave blank for a default message that includes the state name, value and timestamp.
+
+Inactive message
+    Enter a custom message to send when the state becomes inactive. Leave blank for a default message that includes the state name, value and timestamp.
+
 .. only:: not latex
 
     |
