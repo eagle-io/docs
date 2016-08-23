@@ -534,6 +534,12 @@ Refer to :ref:`Parameter states<node-configuration-parameter>` for further infor
                                                     *[NEVER, ALWAYS]*
     **categoryId**                      ObjectId    Id of :ref:`owner category <api-resources-owners>` to assign to this state. 
                                                     Required when *notify* option is not *NEVER*
+    **messageAway**                     String      *Optional*.
+                                                    Custom message to send when the state becomes active (away from normal). 
+                                                    Maximum of 255 characters. Leave empty for default message.
+    **messageTowards**                  String      *Optional*.
+                                                    Custom message to send when the state becomes inactive (towards normal). 
+                                                    Maximum of 255 characters. Leave empty for default message.
     ================================    =========   ===========================================================================
 
 Example replacing DISCRETE states
@@ -553,6 +559,8 @@ Example replacing DISCRETE states
                 "isAlarm": true,
                 "notify": "ALWAYS",
                 "categoryId": "52969367593a1a3a32000012"
+                "messageAway": "PUMP IS RUNNING"
+                "messageTowards": "PUMP IS OFF"
             }
         ]
     }
