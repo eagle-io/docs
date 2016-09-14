@@ -2,7 +2,7 @@
 
 Chart
 =========
-|icon-chart| Use the Chart View for reviewing your timeseries data in highly interactive charts. Choose to group data on charts by Location or Parameter type. Charts are displayed using the settings configured for each individual parameter. See :ref:`Parameter configuration <node-configuration-parameter>` for full details.
+|icon-chart| Use the Chart View for reviewing your timeseries data as highly interactive charts. Choose to group data on charts by Location or Parameter type. Charts are displayed using the settings configured for each individual parameter. See :ref:`Parameter configuration <node-configuration-parameter>` for full details.
 
 .. note::
 	The view displays content based on the Selected Node in the Workspaces Tree. Use filters to quickly target specific parameters or review alarms.
