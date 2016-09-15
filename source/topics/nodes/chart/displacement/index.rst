@@ -351,3 +351,8 @@ Move Charts
 Link error
 -----------
 |icon-warning| If a linked Node is removed or not accessible after a copy/paste or move operation then the Chart will display the Link error icon to indicate a problem with one or more Links. Links can be removed or reconfigured from the Profile & Links section in the chart properties dialog.
+
+
+.. raw:: latex
+
+    \newpage
