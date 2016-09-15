@@ -2,7 +2,7 @@
 
 Displacement
 ===================
-Displacement charts allow you to visualize *vertical* or *horizontal* measurment displacement over time. 
+Displacement charts allow you to visualize *vertical* or *horizontal* measurement displacement over time. 
 Typically, instruments that require displacement charts are on a string along a line, either down a borehole, along a structure or underneath embankments.
 
 .. raw:: latex
