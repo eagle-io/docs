@@ -4,6 +4,9 @@ Attachment Source
 =================
 |icon-attachmentsource| Attachment Sources have the ability to automatically acquire or receive :ref:`attachments <node-configuration-attachment>`. Attachment Sources can be created inside Locations only.
 
+.. note:: Maximum file size for an attachment accepted for an attachment source is 100MB.
+
+
 .. only:: not latex
 
     |
