@@ -123,6 +123,7 @@ Optionally enter a description to be displayed on the chart below the title.
     .. image:: ../chart_default_general_description.png
         :scale: 80 %
 
+| 
 
 Axes
 ~~~~~
@@ -146,6 +147,7 @@ The Axes section allows you to customize the style and functionality of the char
     .. image:: chart_displacement_axes.jpg
         :scale: 80 %
 
+| 
 
 Thresholds
 ~~~~~~~~~~~
@@ -172,6 +174,7 @@ Drag and drop thresholds in the list to change their display order on the chart.
     .. image:: chart_displacement_thresholds.jpg
         :scale: 80 %
 
+| 
 
 Style
 ~~~~~
@@ -196,10 +199,12 @@ Refer to :ref:`parameter chart configuration <node-configuration-parameter-chart
     .. image:: chart_displacement_style.jpg
         :scale: 80 %
 
+| 
 
 Data
 ~~~~~
 Use the data section to set the aggregation mode for time series data to be displayed on the chart. 
+The aggregation mode applies to the measurement data, while the aggregation period applies to the time ranges. 
 Refer to :ref:`parameter chart configuration <node-configuration-parameter-chart>` for a description of all available aggregation settings.
 
 .. raw:: latex
@@ -220,6 +225,14 @@ Refer to :ref:`parameter chart configuration <node-configuration-parameter-chart
     .. image:: chart_displacement_data.jpg
         :scale: 80 %
 
+Automatic
+    Automatic allows the chart to determine the most suitable period based on the chart range. 
+Custom
+    Custom requires the choice of aggregate type (which will be applied to the measurement data) and period interval (which will determine the timestamp of each series). 
+Raw 
+    Raw uses the timestamps and measurements of the records directly as the series represented on the chart. However, as the maximum number of series that can be displayed on a chart is 15, while a typical data file could contain hundreds or thousands of individual timestamped records, some form of aggregation is generally recommended.
+
+| 
 
 Profile & Links
 ~~~~~~~~~~~~~~~~
