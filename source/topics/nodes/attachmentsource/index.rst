@@ -2,7 +2,7 @@
 
 Attachment Source
 =================
-|icon-attachmentsource| Attachment Sources have the ability to automatically acquire or receive Attachments. Attachment Sources can be created inside Locations only.
+|icon-attachmentsource| Attachment Sources have the ability to automatically acquire or receive :ref:`attachments <node-configuration-attachment>`. Attachment Sources can be created inside Locations only.
 
 .. only:: not latex
 

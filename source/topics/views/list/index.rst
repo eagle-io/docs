@@ -1,3 +1,5 @@
+.. _view-list:
+
 List
 ==========
 
@@ -225,9 +227,11 @@ Properties
 
     \newpage
 
+.. _view-list-attachments:
+
 Attachments
 ~~~~~~~~~~~
-Attachments subview displays a list of all attachments.
+Attachments subview displays a list of all file :ref:`attachments <node-configuration-attachment>`.
 
 .. raw:: latex
 

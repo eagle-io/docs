@@ -10,7 +10,7 @@ General
 
 What browsers do you support and do I need any special software?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-We support the latest versions of all major browsers: Chrome 16+, Firefox 16+, Internet Explorer 10+, Safari 6+ and Microsoft Edge. You do not need any special plugins or addons, just ensure you have Cookies and Javascript enabled. The interface has been designed to work seamlessly across all modern phones and computing devices.
+We support the latest versions of all major browsers: Chrome 16+, Firefox 16+, Internet Explorer 10+, Safari 6+ and Microsoft Edge. You do not need any special plugins or addons, just ensure you have **Cookies** and **Javascript enabled**. The interface has been designed to work seamlessly across all modern phones, tablets and other computing devices.
 
 .. |google-chrome-html| image:: chrome.jpg
 	:scale: 50%
@@ -43,11 +43,23 @@ New users will receive an email invitation with a link to enter their details an
 
 What languages do you support?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-English is currently the only supported language. Support for other languages is coming soon. You can however set your timezone and display preferences.
+English is currently the only supported language. 
+We recommend you use the `Google Translate extension for Chrome <https://chrome.google.com/webstore/search/google%20translate%20extension?hl=en>`_ for other languages. 
+Users can set their own locale and timezone display preferences.
 
 .. only:: not latex
 
 	| 
+
+What types of charts do you support?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+We offer a variety of highly customizable interactive charts including :ref:`Historic <node-configuration-chart-historic>`, :ref:`Windrose <node-configuration-chart-windrose>` and :ref:`Displacement <node-configuration-chart-displacement>` charts. 
+Check out our :ref:`charts documentation <node-configuration-chart>` for full usage details.
+
+.. only:: not latex
+
+	| 
+
 
 Data Loggers
 ------------
@@ -281,7 +293,7 @@ You can also manually import and export data files directly from the user interf
 
 Can I upload other types of files?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Files of any type can be uploaded through the interface or use an :ref:`Attachment Source <node-configuration-attachmentsource>` for automated uploads. All content and files uploaded must comply with our `Terms of Use <https://eagle.io/policies/terms>`_.
+Files of any type can be uploaded through the interface as an :ref:`Attachment <node-configuration-attachment>` or use an :ref:`Attachment Source <node-configuration-attachmentsource>` for automated uploads. All content and files uploaded must comply with our `Terms of Use <https://eagle.io/policies/terms>`_.
 
 .. only:: not latex
 
@@ -304,7 +316,7 @@ For uploads via FTP you can simply enter the credentials provided on Source crea
 
 Do you support live streaming video?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Support for live streaming video with optional PTZ control (Pan, Tilt, Zoom) is coming soon.
+No. However, we do intend to add support for live streaming video with optional PTZ control (Pan, Tilt, Zoom) in the future.
 
 .. only:: not latex
 

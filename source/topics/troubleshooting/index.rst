@@ -11,7 +11,7 @@ The interface is not displaying correctly or does not appear to be up to date
     |
 
 Uploading attachment failed
-	Ensure you have a stable internet connection and retry. Some camera phones generate large files which may be time consuming to upload. 
+	Ensure you have a stable internet connection and retry. Some camera phones generate large files which may be time consuming to upload. Note: there is a file size limit of 100MB per file.
 
 .. only:: not latex
 

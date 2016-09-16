@@ -3,7 +3,7 @@
 Historic
 =========
 
-Historic data can be extracted or inserted into one or more nodes in a single request. You can also use the :ref:`Nodes resource <api-resources-nodes>` to extract or insert data for a single node. Data can be extracted or inserted in either JSON (:ref:`JTS <historic-jts>`) or CSV format (insert via CSV coming soon).
+Historic data can be extracted or inserted into one or more nodes in a single request. You can also use the :ref:`Nodes resource <api-resources-nodes>` to extract or insert data for a single node. Data can be extracted or inserted in JSON (:ref:`JTS <historic-jts>`) format.
 
 We recommend you ``limit`` the size of requests to 1000 records or less and use :ref:`HTTP compression <api-overview-compression>` whenever possible. If the request or response is too large or exceeds our processing time threshold, the **413 Request Too Large** error response will be returned.
 
