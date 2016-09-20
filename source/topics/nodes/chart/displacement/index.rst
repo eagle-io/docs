@@ -37,8 +37,9 @@ Properties
 
 General
 ~~~~~~~
-The General section allows a default *Start range* and *End range* to be set. This range will be used when the chart is initially displayed. 
-Select *Custom* to enter a specific :ref:`OPC relative time <relative-time>`. The *None* option can be used to read forward or back through the time series data until the *Maximum series* limit is reached.
+The General section allows a default *Start range* and *End range* to be set. This range will be used when the chart is initially displayed.
+Choose a preset or *Custom OPC* for :ref:`relative time <relative-time>`. Select *Custom Fixed* for absolute time.
+The *None* option can be used to read forward or back through the time series data until the *Maximum series* limit is reached.
 
 .. raw:: latex
 
@@ -46,7 +47,7 @@ Select *Custom* to enter a specific :ref:`OPC relative time <relative-time>`. Th
 
 .. only:: not latex
 
-    .. image:: ../chart_default_general_range.png
+    .. image:: ../chart_default_general_range.jpg
         :scale: 50 %
 
     | 
@@ -55,7 +56,7 @@ Select *Custom* to enter a specific :ref:`OPC relative time <relative-time>`. Th
     
     | 
     
-    .. image:: ../chart_default_general_range.png
+    .. image:: ../chart_default_general_range.jpg
         :scale: 80 %
 
 You can customize the chart with a number of other general settings:
@@ -111,7 +112,7 @@ Optionally enter a description to be displayed on the chart below the title.
 
 .. only:: not latex
 
-    .. image:: ../chart_default_general_description.png
+    .. image:: ../chart_default_general_description.jpg
         :scale: 50 %
 
     | 
@@ -120,7 +121,7 @@ Optionally enter a description to be displayed on the chart below the title.
     
     | 
     
-    .. image:: ../chart_default_general_description.png
+    .. image:: ../chart_default_general_description.jpg
         :scale: 80 %
 
 | 

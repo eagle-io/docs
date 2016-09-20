@@ -206,7 +206,7 @@ Parameter
 Value
     Value of the parameter at the time indicated by the Latest Data column.
 State
-    State associated with current parameter value.
+    State associated with current parameter value. An indicator will be displayed if the parameter has non-default states configured.
 Latest Data
     Timestamp of the most recent data for the parameter.
 Alarms
