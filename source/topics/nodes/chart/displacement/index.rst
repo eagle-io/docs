@@ -94,6 +94,10 @@ Depth/Distance offset
 Depth/Distance units
     Suffix to display with the depth/distance values.
 
+Measurement baseline
+    *Absolute:* Measurements are not modified.
+    *Relative:* Measurements from initial series are subtracted from all subsequent series.
+
 Measurement process
     Processing to apply to all measurement values. *Raw* will not apply any processing. *Sum from Start* and *Sum from End* will totalise measurement values.
 
