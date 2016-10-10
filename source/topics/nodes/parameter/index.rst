@@ -274,7 +274,6 @@ Select the data and processing to be used.
     
     .. image:: parameter_chart_data.png
 
-
 Aggregation mode
     *Automatic*
 
@@ -297,6 +296,15 @@ Aggregation mode
     *Raw* 
 
         Raw does not perform any aggregation of data. This option should ONLY be used where you know the period to be displayed does not contain more than a thousand data points. Displaying high resolution raw data can impact on chart performance and in some cases may cause the chart to fail loading or have adverse affects on your web browser.
+
+Baseline type (Custom Historic Charts only)
+    *Absolute*
+
+        Data point values are not modified.
+
+    *Relative*
+    
+        The first data point value in the requested time range is subtracted from all subsequent data point values.
 
 
 Customize
