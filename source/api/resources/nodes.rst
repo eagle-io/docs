@@ -914,6 +914,11 @@ Arguments
 
     **interval**                3H                          *Optional*. 
                                                             :ref:`OPC Interval <relative-time>` required for aggregation.
+
+    **baselineType**            RELATIVE                    *Optional - Default is ABSOLUTE*. 
+                                                            Absolute will return data point values unmodified. Relative will 
+                                                            subtract the first data point value from all subsequent data 
+                                                            point values: *[ABSOLUTE, RELATIVE]*
     ========================    ========================    =================================================================
 
 .. [#f3] startTime or endTime can be omitted when ``limit`` is specified.
