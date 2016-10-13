@@ -87,7 +87,7 @@ Metadata provides a simple key/value data structure that can be used to store st
     
 .. only:: not latex
 
-	.. image:: location_metadata.png
+	.. image:: location_metadata.jpg
 		:scale: 50 %
 
 	| 
@@ -96,7 +96,7 @@ Metadata provides a simple key/value data structure that can be used to store st
 
 	| 
 
-	.. image:: location_metadata.png
+	.. image:: location_metadata.jpg
 
 .. only:: not latex
 
@@ -123,6 +123,16 @@ Use the *Delete* button to permanently remove all historic coordinate data for t
 
     .. image:: location_historic.png
 
+
+.. only:: not latex
+
+    |
+
+.. _node-configuration-location-security:
+
+Security
+~~~~~~~~~~
+.. include:: ../properties_node_security.rstx
 
 .. raw:: latex
 

@@ -329,7 +329,14 @@ Timezone
 Ignore Daylight Savings Time
 	Check this option if the Source does not offset the data timestamps to account for DST.
 
+
 .. only:: not latex
+
+    |
+
+Security
+~~~~~~~~~~
+.. include:: ../properties_node_security.rstx
 
     |
 

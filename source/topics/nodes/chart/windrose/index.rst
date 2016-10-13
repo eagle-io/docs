@@ -165,6 +165,14 @@ Charts can not have links to Nodes in different Workspace and currently do not s
     .. image:: chart_windrose_links.jpg
         :scale: 80 %
 
+.. only:: not latex
+
+    |
+
+Security
+~~~~~~~~~~
+.. include:: ../../properties_node_security.rstx
+
 | 
 
 Drag and Drop Links

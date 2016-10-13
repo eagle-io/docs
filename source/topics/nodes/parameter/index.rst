@@ -427,7 +427,14 @@ Restricted values
 Control Alarm
     See :ref:`Alarms and Notifications <control-alarm>`.
 
+.. only:: not latex
+
+    |
+
+Security
+~~~~~~~~~~
+.. include:: ../properties_node_security.rstx
+
 .. raw:: latex
 
     \newpage
-    

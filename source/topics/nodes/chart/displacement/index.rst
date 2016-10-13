@@ -337,6 +337,13 @@ Use the checkboxes to select the parameters you would like to link and click *Ad
     .. image:: chart_displacement_links_add.jpg
         :scale: 80 %
 
+.. only:: not latex
+
+    |
+
+Security
+~~~~~~~~~~
+.. include:: ../../properties_node_security.rstx
 
 | 
 

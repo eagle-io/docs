@@ -193,9 +193,16 @@ Drag and drop links in the list to change their display order on the tile.
 
     .. image:: dash_tile_properties_links.jpg
 
+
 .. only:: not latex
 
     |
+
+Security
+`````````
+.. include:: ../properties_node_security.rstx
+
+| 
 
 Drag and Drop Links
 --------------------

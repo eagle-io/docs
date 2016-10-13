@@ -171,6 +171,14 @@ Refer to :ref:`Parameter chart configuration <node-configuration-parameter-chart
     .. image:: chart_historic_links.png
         :scale: 80 %
 
+.. only:: not latex
+
+    |
+
+Security
+~~~~~~~~~~
+.. include:: ../../properties_node_security.rstx
+
 | 
 
 Drag and Drop Links

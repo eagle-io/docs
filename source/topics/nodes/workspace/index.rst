@@ -79,12 +79,13 @@ Drag and drop layers in the list (or use the dropdown menu) to change their disp
 
     |
 
-.. _node-configuration-workspace-sharing:
+.. _node-configuration-workspace-security:
 
-Sharing
-~~~~~~~
-The Sharing section allows you to share your Workspaces with other users.
-Enter the email address of the new user and select *Add*. Assign a :ref:`User role <management-security-userroles>` to the user for this Workspace and *Save*.
+Security
+~~~~~~~~~
+The Security section allows a user with *security* permission to share the Workspace with other users.
+Enter the email address of the new users (separate multiple email addresses with a comma), assign a :ref:`User role <management-security-userroles>` and click *Add*. 
+You can remove or modify user roles for existing Workspace users. Click *Save* when complete.
 
 .. raw:: latex
 
@@ -92,7 +93,7 @@ Enter the email address of the new user and select *Add*. Assign a :ref:`User ro
     
 .. only:: not latex
 
-	.. image:: workspace_sharing.png
+	.. image:: workspace_security.jpg
 		:scale: 50 %
 
 	| 
@@ -101,13 +102,13 @@ Enter the email address of the new user and select *Add*. Assign a :ref:`User ro
 
 	| 
 
-	.. image:: workspace_sharing.png
+	.. image:: workspace_security.jpg
 
 An email notification will be sent to users when they are added or removed from the Workspace or when their user role is changed.
-New users will need to follow the instructions in the email to finalise their profile and log in for the first time.
+New users will need to follow the instructions in the email to configure their user profile and log in.
 Existing users who are currently logged in and viewing the interface will notice the new settings take affect immediately.
 
-Workspace Sharing requires *security* permission.
+You can restrict user access to any Node in the Workspace by opening the corresponding :ref:`Node Security <node-configuration-location-security>` dialog.
 
 .. note:: 
 	Administrators automatically receive unrestricted access to all Workspaces in the account.

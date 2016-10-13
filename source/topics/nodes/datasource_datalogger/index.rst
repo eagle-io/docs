@@ -383,6 +383,16 @@ Automatically adjust clock for Daylight Savings Time
 Automatically update data logger with correct time
     Check this option if you would like to automatically update the data logger clock with the correct time based on the selected timezone.
 
+
+.. only:: not latex
+
+    |
+
+Security
+~~~~~~~~~~
+.. include:: ../properties_node_security.rstx
+
 .. raw:: latex
 
     \newpage
+

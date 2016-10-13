@@ -12,8 +12,8 @@ Security
 Administrators
 ---------------
 
-Administrators have full access to your account including unrestricted access to all Workspaces and most configuration settings for the account. There is no need to explicitly :ref:`Share a Workspace <node-configuration-workspace-sharing>` with any Administrators of the same account.
-If you would like a user to have restricted access to Workspaces, then *do not* add them as Administrators. Instead use :ref:`Workspace Sharing <node-configuration-workspace-sharing>` to add them as a User of a Workspace with an assigned role.
+Administrators have full access to your account including unrestricted access to all Workspaces and most configuration settings for the account. There is no need to explicitly :ref:`Share a Workspace <node-configuration-workspace-security>` with any Administrators of the same account.
+If you would like a user to have restricted access to Workspaces, then *do not* add them as Administrators. Instead use :ref:`Workspace Sharing <node-configuration-workspace-security>` to add them as a User of a Workspace with an assigned role.
 
 Add a new administrators by entering their email addresses and click *Add*. Separate multiple email addresses with a comma. Remove administrators by clicking the trash icons. Click *Save* to confirm.
 
@@ -46,7 +46,7 @@ Add a new administrators by entering their email addresses and click *Add*. Sepa
 User roles
 ----------
 
-User roles are assigned when :ref:`Sharing a Workspace <node-configuration-workspace-sharing>` with a user to restrict access to the Workspace.
+User roles are assigned when :ref:`Sharing a Workspace <node-configuration-workspace-security>` with a user to restrict access to the Workspace.
 Create unlimited new roles, or change existing role permissions as needed. 
 Roles have permissions associated with them which restrict user functionality.
 

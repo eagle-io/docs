@@ -64,6 +64,14 @@ The General section allows you to enter a *description* for the attachment which
 	.. image:: attachment_description.jpg
 		:scale: 80 %
 
+.. only:: not latex
+
+    |
+
+Security
+~~~~~~~~~~
+.. include:: ../properties_node_security.rstx
+
 .. raw:: latex
 
     \newpage

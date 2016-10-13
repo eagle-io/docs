@@ -121,9 +121,16 @@ Communications Alarm
 
 Collection
 ~~~~~~~~~~
-
 Outdated Alarm
 	See :ref:`Alarms and Notifications <outdated-alarm>`.
+
+.. only:: not latex
+
+    |
+
+Security
+~~~~~~~~~~
+.. include:: ../properties_node_security.rstx
 
 .. raw:: latex
 
