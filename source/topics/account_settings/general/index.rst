@@ -99,11 +99,15 @@ Source and Quality Codes must be whole numbers between 0 - 65535.
 
 	.. image:: account_general_quality.jpg
 
-Source Quality
-	Quality Code(s) to match on acquired data. Separate multiple quality codes with a comma.
+Exclude quality
+    You can optionally choose to exclude *Bad* and *Uncertain* quality coded data from all historic data requests. 
+    Excluded data points will not be visible on Charts, Tabular data and Historic API requests.
 
-Quality Code
-	Quality Code to apply to the data for display and export. You can use the same Code as the Source or specify a custom code. Must be numeric.
+Source quality
+	Quality code(s) to match on acquired data. Separate multiple quality codes with a comma.
+
+Quality code
+	Quality code to apply to the data for display and export. You can use the same Code as the Source or specify a custom code. Must be numeric.
 
 Refer to the :ref:`Quality reference <historic-quality>` for further details.
 
