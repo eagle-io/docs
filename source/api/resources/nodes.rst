@@ -987,9 +987,9 @@ Response
 
 
 
-Update node historic data
--------------------------
-Update historic data for a node by its **_id**. Data can be inserted in JSON (:ref:`JTS <historic-jts>`) or CSV format. Use the :ref:`Historic resource <api-resources-historic>` to update historic data for multiple nodes in a single request.
+Update Parameter or Location historic data
+-------------------------------------------
+Update historic data for a Parameter or Location node by its **_id**. Data can be inserted in JSON (:ref:`JTS <historic-jts>`) or CSV format. Use the :ref:`Historic resource <api-resources-historic>` to update historic data for multiple nodes in a single request.
 
 .. note:: 
     Only available for Location and Parameter nodes. 
@@ -1072,6 +1072,107 @@ Response
 
     |
 
+
+Update Data Source historic data
+---------------------------------
+Update historic data for multiple parameters via a Data Source node **_id**. 
+Data can be inserted in JSON (:ref:`JTS <historic-jts>`) format. New parameters will be automatically created.
+
+The JTS Document must contain header columns. Each column must either specify a parameter **id** or **name**. 
+If **id** is provided it will be used to match to the associated parameter under the current Data Source, otherwise 
+the associated parameter will be matched using the **name** attribute.
+
+If a column specified in the header can not be matched to a parameter (and **name** was provided), a new parameter will be created automatically. 
+Optionally specify the **dataType** (NUMBER, TEXT, TIME. Default is NUMBER) and **units** in the column header which will be used when creating the new parameter.
+
+.. note:: 
+    Only available for Datasource nodes. 
+    Required permission: *Configure*
+
+
+Arguments
+~~~~~~~~~
+
+.. table::
+    :class: table-fluid
+
+    =================   ========================    ======================================================================
+    Argument            Example                     Description
+    =================   ========================    ======================================================================
+    **format**          JSON                        *Optional - Default is JSON*. 
+                                                    Data format being inserted: *[JSON]*. (CSV support coming soon)
+
+    **writeMode**       MERGE_OVERWRITE_EXISTING    *Optional - Default is MERGE_OVERWRITE_EXISTING*. 
+                                                    See all available :ref:`write mode <historic-data-import-writemode>` 
+                                                    options.
+
+    **notifyOn**        LATEST_ONLY                 *Optional - Default is LATEST_ONLY*.
+                                                    When to generate events, raise alarms and send notifications: 
+                                                    *[ALL_NEWER, LATEST_ONLY, NONE]*.
+                                                    ALL_NEWER: All events newer than parameter current value. 
+                                                    LATEST_ONLY: Latest event newer than parameter current value.
+    =================   ========================    ======================================================================
+
+Request
+~~~~~~~~
+
+::
+
+    PUT /api/v1/nodes/:_id/historic
+
+::
+
+    {
+        "docType": "jts",
+        "version": "1.0",
+        "header" : {
+            "columns": {
+                "0": {
+                    "name": "Temperature",
+                    "dataType": "NUMBER",
+                    "units": "°C"
+                },
+                "1": {
+                    "id": "541a5a129bc9b4035f906d71"
+                }
+            }
+        }
+        "data": [
+            { 
+                "ts": "2014-09-17T07:30:00Z",
+                "f": { "0": {"v": 25.05 } }
+            },
+            { 
+                "ts": "2014-09-17T07:40:00Z",
+                "f": { "0": {"v": 25.20 } }
+            },
+            { 
+                "ts": "2014-09-17T07:50:00Z",
+                "f": { "0": {"v": 25.14 }, "1": {"v": "text data here"} }
+            }
+        ]
+    }
+
+Response
+~~~~~~~~
+
+::
+    
+    HTTP/1.1 202 Accepted
+    Content-Type: application/json; charset=utf-8
+
+::
+    
+    {
+        "status": {
+            "code": 202,
+            "message": "Operation accepted but not yet complete"
+        }
+    }
+
+.. only:: not latex
+
+    |
 
 
 Update node historic data with a single value
