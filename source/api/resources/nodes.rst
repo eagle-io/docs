@@ -1082,7 +1082,7 @@ The JTS Document must contain header columns. Each column must either specify a 
 If **id** is provided it will be used to match to the associated parameter under the current Data Source, otherwise 
 the associated parameter will be matched using the **name** attribute.
 
-If a column specified in the header can not be matched to a parameter (and **name** was provided), a new parameter will be created automatically. 
+If a column specified in the header can not be matched to an existing parameter (and **name** was provided), a new parameter will be created automatically. 
 Optionally specify the **dataType** (NUMBER, TEXT, TIME. Default is NUMBER) and **units** in the column header which will be used when creating the new parameter.
 
 .. note:: 

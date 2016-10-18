@@ -27,7 +27,7 @@ Administrators also have full access to :ref:`Managed accounts <management-manag
 
 Workspace
 ~~~~~~~~~~
-Individual users can be :ref:`added to a Workspace <node-configuration-workspace-security>` and assigned a :ref:`User Role <management-security-userroles>` specific to that Workspace (role-based security).
+Individual users can be :ref:`added to a Workspace <node-configuration-workspace-security>` and assigned a :ref:`User role <management-security-userroles>` specific to the Workspace (role-based security).
 The user roles are maintained by administrators and the owner. 
 Each user role has a set of security permissions assigned (e.g. acknowledge alarms, export data, configure) which define the interactions allowed by a user for all assets (nodes) in the Workspace.
 
