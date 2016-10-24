@@ -185,7 +185,6 @@ Disabled Nodes
 You may notice *GREY* Nodes within a Workspace.
 
 Sources being configured for the first time will be shown as disabled until they have been fully configured.
-Parameters that had been created and then unchecked (or unavailable) for collection will also be shown as disabled in the Workspaces Tree, List and Map Views. 
 
 .. raw:: latex
 
