@@ -88,16 +88,11 @@ Use the SMS/Email checkboxes to set your preferences on what types of notificati
 
     |
     
-.. _user-api-keys:
+.. _user-additional:
 
-API Keys
----------
-API keys are used to authenticate eagle.io :ref:`HTTP API <api>` requests.
-The API keys section allows you to create, delete or modify the permissions for API keys associated with your user account.
-You can have multiple API keys active at once. 
-
-API resource requests are always limited to the users Workspace and Account permissions. 
-Individual API key's can optionally be assigned the *read-only* permission to restrict the actions an API request can perform (GET requests only).
+Additional
+-----------
+The *Display Node Ids in properties dialog* option is useful for retrieving a specific Node Id for use with the HTTP API. The *Node Id* will be shown in the associated Node properties dialog.
 
 .. raw:: latex
 
@@ -105,7 +100,7 @@ Individual API key's can optionally be assigned the *read-only* permission to re
 
 .. only:: not latex
 
-	.. image:: user_profile_apikeys.jpg
+	.. image:: user_profile_additional.jpg
 		:scale: 50 %
 
 	| 
@@ -114,12 +109,7 @@ Individual API key's can optionally be assigned the *read-only* permission to re
 
 	| 
 
-	.. image:: user_profile_apikeys.jpg
-
-The *Display Node Ids in properties dialog* option is useful for retrieving a specific Node Id for use with the HTTP API. The *Node Id* will be shown in the associated Node properties dialog.
-
-.. note::
-	Your API keys carry many privileges, so be sure to keep them secret!
+	.. image:: user_profile_additional.jpg
 
 
 .. raw:: latex

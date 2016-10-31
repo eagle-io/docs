@@ -100,6 +100,40 @@ Security
 .. note:: 
 	Security and Sharing changes take effect immediately on save.
 
+.. only:: not latex
+
+    |
+
+.. _management-security-userroles:
+
+API keys
+----------
+
+API keys are used to authenticate eagle.io HTTP API requests. The API keys section allows you to create, delete or modify the permissions for API keys associated with your user account. You can have multiple API keys active at once.
+
+API resource requests are always restricted to Workspaces in the associated account. Individual API key’s can optionally be assigned the *Read only* permission to restrict the actions an API request can perform (GET requests only). 
+You can also set the access level to *Limited workspaces* and check all the Workspaces this API key is allowed to access. 
+
+.. raw:: latex
+
+    \vspace{-10pt}
+    
+.. only:: not latex
+
+	.. image:: account_apikeys.jpg
+		:scale: 50 %
+
+	| 
+
+.. only:: latex
+
+	| 
+
+	.. image:: account_apikeys.jpg
+
+.. note:: 
+	Your API keys carry many privileges, so be sure to keep them secret!
+
 .. raw:: latex
 
     \newpage

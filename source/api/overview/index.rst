@@ -18,13 +18,13 @@ Example code is available on `GitHub <https://github.com/eagleio/api-examples>`_
 Authentication
 --------------
 
-You authenticate to the eagle.io API by providing one of your :ref:`API keys <user-api-keys>` in the **X-Api-Key** request header::
+You authenticate to the eagle.io API by providing one of your :ref:`API keys <management-security-apikeys>` in the **X-Api-Key** request header::
 
     GET /api/v1/nodes/
     Host: api.eagle.io
     X-Api-Key: xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
-You can manage your API keys from your :ref:`user preferences <user-preferences>`. You can have multiple API keys active at one time. Your API keys carry many privileges, so be sure to keep them secret.
+You can manage your API keys from the account settings :ref:`API keys <management-security-apikeys>` security tab. You can have multiple API keys active at one time. Your API keys carry many privileges, so be sure to keep them secret.
 
 All API requests must be made over **HTTPS**. Calls made over plain HTTP will fail. You must authenticate for all requests.
 
