@@ -129,7 +129,7 @@ Use the settings below for *Direct Connection* or *Meshlium Connection* with you
 
 Direct Connection
 ~~~~~~~~~~~~~~~~~~
-Refer to our :download:`example Waspmote operating program <./waspmote.pde>` for establishing a direct connection to eagle.io.
+Refer to our :download:`example Waspmote operating program <./waspmote-3g-eagleio.pde>` for establishing a direct connection to eagle.io.
 
 Apply the following settings to the variables at the top of the operating program:
 
