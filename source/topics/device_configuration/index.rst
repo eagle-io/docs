@@ -15,6 +15,7 @@ The following topics will assist when configuring your device for `eagle.io <htt
    libelium_waspmote/index
    maxon_intelimax/index
    ott_netdl/index
+   metasphere_pointorange3g/index
    scout/index
    sensorlog/index
    waterlog_storm3/index

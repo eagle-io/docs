@@ -338,7 +338,7 @@ Security
 ~~~~~~~~~~
 .. include:: ../properties_node_security.rstx
 
-    |
+| 
 
 .. _text-parser:
 
