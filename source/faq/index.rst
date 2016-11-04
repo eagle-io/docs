@@ -156,6 +156,21 @@ OTT netDL
 
 | 
 
+Point Orange 3G
+	Metasphere Point Orange 3G RTU.
+
+.. only:: not latex
+
+	.. image:: datalogger_pointorange3g.jpg
+		:scale: 50 %
+
+.. only:: latex
+
+	.. image:: datalogger_pointorange3g.jpg
+		:scale: 50 %
+
+| 
+
 Spider
 	Halytech Spider SMS and microSpider range.
 
