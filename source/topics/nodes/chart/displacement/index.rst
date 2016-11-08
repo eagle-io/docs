@@ -88,12 +88,6 @@ Maximum series
 Series time format
     Select a preset display format from the drop down list or specify a custom format using :ref:`time format tokens <time-format-tokens>`.
 
-Depth/Distance offset
-    Numeric value to add/subtract from each depth/distance value.
-
-Depth/Distance units
-    Suffix to display with the depth/distance values.
-
 Measurement baseline
     *Absolute:* Measurements are not modified.
     *Relative:* Measurements from initial series are subtracted from all subsequent series.
@@ -106,6 +100,9 @@ Measurement offset
 
 Measurement units
     Suffix to display with measurement values.
+
+Depth/Distance units
+    Suffix to display with the depth/distance values.
 
 
 Optionally enter a description to be displayed on the chart below the title.
@@ -243,26 +240,12 @@ Profile & Links
 ~~~~~~~~~~~~~~~~
 Displacement charts require you to define a profile containing depths/distances with corresponding measurement parameters.
 
-.. raw:: latex
+Choose from 3 *profile type* options:
 
-    \vspace{-10pt}
-
-.. only:: not latex
-
-    .. image:: chart_displacement_links_profiletype.jpg
-        :scale: 50 %
-
-    | 
-
-.. only:: latex
-    
-    | 
-    
-    .. image:: chart_displacement_links_profiletype.jpg
-        :scale: 80 %
-
-
+Parameter
+``````````
 Set the *profile type* to *parameter* for dynamic depth/distance values based on time series data stored in linked parameters.
+Optionally specify a numeric *offset* to add or subtract from each depth/distance value.
 
 .. raw:: latex
 
@@ -270,7 +253,7 @@ Set the *profile type* to *parameter* for dynamic depth/distance values based on
 
 .. only:: not latex
 
-    .. image:: chart_displacement_links_profile.jpg
+    .. image:: chart_displacement_links_profile_parameter.jpg
         :scale: 50 %
 
     | 
@@ -279,11 +262,14 @@ Set the *profile type* to *parameter* for dynamic depth/distance values based on
     
     | 
     
-    .. image:: chart_displacement_links_profile.jpg
+    .. image:: chart_displacement_links_profile_parameter.jpg
         :scale: 80 %
 
+| 
 
-Alternatively, set the *profile type* to *fixed* to manually define static depth/distance values.
+Fixed - Manual
+```````````````
+Set the *profile type* to *fixed - manual* to manually define static depth/distance values.
 
 .. raw:: latex
 
@@ -291,7 +277,7 @@ Alternatively, set the *profile type* to *fixed* to manually define static depth
 
 .. only:: not latex
 
-    .. image:: chart_displacement_links_fixedprofile.jpg
+    .. image:: chart_displacement_links_profile_fixed_manual.jpg
         :scale: 50 %
 
     | 
@@ -300,9 +286,32 @@ Alternatively, set the *profile type* to *fixed* to manually define static depth
     
     | 
     
-    .. image:: chart_displacement_links_fixedprofile.jpg
+    .. image:: chart_displacement_links_profile_fixed_manual.jpg
         :scale: 80 %
 
+| 
+
+Fixed - Incremental
+````````````````````
+Set the *profile type* to *fixed - incremental* to automatically generate depth/distance values using *start* and *increment* values.
+
+.. raw:: latex
+
+    \vspace{-10pt}
+
+.. only:: not latex
+
+    .. image:: chart_displacement_links_profile_fixed_incremental.jpg
+        :scale: 50 %
+
+    | 
+
+.. only:: latex
+    
+    | 
+    
+    .. image:: chart_displacement_links_profile_fixed_incremental.jpg
+        :scale: 80 %
 
 Drag and drop items in each list to re-order. Links and Values can be updated or removed via the dropdown menu (accessible by clicking the menu button on the top-right corner of the item). 
 
