@@ -23,7 +23,6 @@ Retrieve historic data from multiple nodes in a single request using **_id's**.
 
 .. note:: 
     Only available for Location and Parameter nodes. 
-    Required permission: *Export data*
 
 
 Arguments
@@ -170,7 +169,7 @@ Update historic data for one or more nodes by **_id's**.
 
 .. note:: 
     Only available for Location and Parameter nodes. 
-    Required permission: *Configure*
+    Required API key permission: *Modify*
 
 
 Arguments

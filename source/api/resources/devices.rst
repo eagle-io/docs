@@ -41,7 +41,7 @@ Consumers of Devices should tolerate the addition of new attributes and variance
 
 Retrieve all devices
 --------------------
-Retrieve a list of all devices visible to the authenticated user. Optionally *filter* by attribute values.
+Retrieve a list of all devices available to the authenticated API key. Optionally *filter* by attribute values.
 
 
 Arguments

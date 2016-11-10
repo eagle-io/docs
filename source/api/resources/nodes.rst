@@ -26,6 +26,7 @@ Consumers of Nodes should tolerate the addition of new attributes and variance i
     ================================    =========   =========   ===========================================================================
     **_class**                          String                  Identifies resource type: *io.eagle.models.node.*\*
     **_id**                             ObjectId                Unique identifier for this node
+    **customId**                        String      Yes         Optional user assigned identifier for this node. Unique to owner (account)
     **alarms**                          Object      Yes         Alarm configuration and status
     **createdTime**                     Time                    :ref:`ISO8601<time-format-iso8601>` timestamp the node was created
     **isActive**                        Boolean                 Flag to indicate if node is active
@@ -129,7 +130,7 @@ Consumers of Nodes should tolerate the addition of new attributes and variance i
 
 Retrieve all nodes
 ------------------
-Retrieve a list of all nodes visible to the authenticated user. Optionally *filter* by attribute values.
+Retrieve a list of all nodes available to the authenticated API key. Optionally *filter* by attribute values.
 
 
 Arguments
@@ -379,9 +380,6 @@ Response
 
 
 
-
-
-
 Update a node
 ---------------
 Update a node by its **_id**. 
@@ -393,7 +391,7 @@ The updated node will be returned in the response if the request is successful. 
 Refer to the examples below when updating complex attributes such as alarms and states.
 
 .. note:: 
-    Required permission: *Configure*
+    Required API key permission: *Modify*
 
 Arguments
 ~~~~~~~~~
@@ -620,17 +618,13 @@ Example replacing RANGE states
 
 
 
-
-
-
-
 Acknowledge node alarms
 ------------------------
 Acknowledge active alarms for a node by its **_id**. Optionally provide a *comment* for the acknowledgement.
 
 .. note:: 
     Only available for Location, Source and Parameter nodes. 
-    Required permission: *Acknowledge alarms*
+    Required API key permission: *Modify*
 
 Arguments
 ~~~~~~~~~
@@ -690,7 +684,7 @@ Clear active and acknowledged alarms for a node by its **_id**.
 
 .. note:: 
     Only available for Location, Source and Parameter nodes. 
-    Required permission: *Edit states and alarms*
+    Required API key permission: *Modify*
 
 Arguments
 ~~~~~~~~~
@@ -738,89 +732,13 @@ Response
 
 
 
-Subscribe to node notifications
--------------------------------
-Subscribe the authenticated user to receive notifications for a node by its **_id**. 
-
-.. note:: 
-    Only available for Location, Source and Parameter nodes. 
-    Required permission: *Subscribe notifications*
-
-Request
-~~~~~~~~
-
-::
-
-    POST /api/v1/nodes/:_id/notifications/subscribe
-
-Response
-~~~~~~~~
-
-::
-    
-    HTTP/1.1 202 Accepted
-    Content-Type: application/json; charset=utf-8
-
-::
-    
-    {
-        "status": {
-            "code": 202,
-            "message": "Operation accepted but not yet complete"
-        }
-    }
-
-.. only:: not latex
-
-    |
-
-
-
-Unsubscribe from node notifications
------------------------------------
-Unsubscribe the authenticated user from receiving notifications for a node by its **_id**. 
-
-.. note:: 
-    Only available for Location, Source and Parameter nodes. 
-    Required permission: *Subscribe notifications*
-
-Request
-~~~~~~~~
-
-::
-
-    POST /api/v1/nodes/:_id/notifications/unsubscribe
-
-Response
-~~~~~~~~
-
-::
-    
-    HTTP/1.1 202 Accepted
-    Content-Type: application/json; charset=utf-8
-
-::
-    
-    {
-        "status": {
-            "code": 202,
-            "message": "Operation accepted but not yet complete"
-        }
-    }
-
-.. only:: not latex
-
-    |
-
-
-
 Trigger an acquisition
 -----------------------
 Trigger an acquisition (*Acquire Now*) for a Source node by its **_id**.
 
 .. note:: 
     Only available for Source nodes with Transports that allow for manual collection. 
-    Required permission: *Operate*
+    Required API key permission: *Modify*
 
 Request
 ~~~~~~~~
@@ -858,7 +776,7 @@ Retrieve historic data from a node by its **_id**. Data can be returned in JSON 
 
 .. note:: 
     Only available for Location and Parameter nodes. 
-    Required permission: *Export data*
+    Required API key permission: *Modify*
 
 Arguments
 ~~~~~~~~~
@@ -993,7 +911,7 @@ Update historic data for a Parameter or Location node by its **_id**. Data can b
 
 .. note:: 
     Only available for Location and Parameter nodes. 
-    Required permission: *Configure*
+    Required API key permission: *Modify*
 
 
 Arguments
@@ -1087,7 +1005,7 @@ Optionally specify the **dataType** (NUMBER, TEXT, TIME. Default is NUMBER) and 
 
 .. note:: 
     Only available for Datasource nodes. 
-    Required permission: *Configure*
+    Required API key permission: *Modify*
 
 
 Arguments
@@ -1182,7 +1100,7 @@ If *timestamp* is omitted the time the request was made will be used. Existing v
 
 .. note:: 
     Only available for Location and Parameter nodes. 
-    Required permission: *Configure*
+    Required API key permission: *Modify*
 
 Request
 ~~~~~~~~
@@ -1228,7 +1146,7 @@ Delete all historic data from a node by its **_id**.
 
 .. note:: 
     Only available for Location and Parameter nodes. 
-    Required permission: *Configure*
+    Required API key permission: *Modify*
 
 Request
 ~~~~~~~~

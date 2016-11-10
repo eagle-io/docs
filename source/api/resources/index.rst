@@ -12,8 +12,7 @@ Refer to the :ref:`Quick Start <api-overview>` guide for instructions on using t
 .. toctree::
     :maxdepth: 2
 
-    devices
-    historic
     nodes
+    historic
+    devices
     owners
-    users
