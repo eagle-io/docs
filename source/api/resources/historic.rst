@@ -19,7 +19,7 @@ Successful extraction requests will result in a **200 OK** response with the dat
 
 Retrieve historic data from multiple nodes
 ------------------------------------------
-Retrieve historic data from multiple nodes in a single request using **_id's**.
+Retrieve historic data from multiple nodes in a single request using **id's**.
 
 .. note:: 
     Only available for Location and Parameter nodes. 
@@ -95,7 +95,7 @@ Arguments
 
 Include individual parameter arguments in parentheses with key/value separated by colons and multiple arguments semicolon delimited::
     
-    params=:_id(key:value;key:value),:_id
+    params=:id(key:value;key:value),:id
 
 Example with optional parameter arguments::
 
@@ -165,7 +165,7 @@ Response
     
 Update historic data for multiple nodes
 ----------------------------------------
-Update historic data for one or more nodes by **_id's**.
+Update historic data for one or more nodes by **id's**.
 
 .. note:: 
     Only available for Location and Parameter nodes. 
@@ -206,7 +206,7 @@ Arguments
 
 Include individual parameter arguments in parentheses with key/value separated by colons and multiple arguments semicolon delimited::
     
-    params=:_id(key:value;key:value),:_id
+    params=:id(key:value;key:value),:id
 
 Example with required parameter arguments::
 

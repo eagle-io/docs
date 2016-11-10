@@ -169,7 +169,7 @@ Response
     
 Retrieve a device
 -----------------
-Retrieve a device by its **_id**.
+Retrieve a device by its **id**.
 
 Arguments
 ~~~~~~~~~
@@ -189,7 +189,7 @@ Request
 
 ::
 
-    GET /api/v1/devices/:_id
+    GET /api/v1/devices/:id
 
 Response
 ~~~~~~~~

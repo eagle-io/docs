@@ -327,7 +327,7 @@ Example response when ``type`` argument is TREE. Descendants are wrapped in a ``
 
 Retrieve a node
 ---------------
-Retrieve a node by its **_id**. 
+Retrieve a node by its **id**. 
 
 Arguments
 ~~~~~~~~~
@@ -338,6 +338,9 @@ Arguments
     =================   =================   ================================================================
     Argument            Example             Description
     =================   =================   ================================================================
+    **cid**             1                   *Optional - default is 0.* 
+                                            Flag to indicate node should be retrieved by its *customId*.
+
     **attr**            _id,_class          *Optional.* 
                                             Comma delimited list of attributes to include in response
 
@@ -352,7 +355,7 @@ Request
 
 ::
 
-    GET /api/v1/nodes/:_id
+    GET /api/v1/nodes/:id
 
 Response
 ~~~~~~~~
@@ -382,7 +385,7 @@ Response
 
 Update a node
 ---------------
-Update a node by its **_id**. 
+Update a node by its **id**. 
 Updates are limited to the attributes listed with the *Update* flag. 
 Multiple attributes can be updated in a single request.
 
@@ -402,6 +405,9 @@ Arguments
     =================   =================   ================================================================
     Argument            Example             Description
     =================   =================   ================================================================
+    **cid**             1                   *Optional - default is 0.* 
+                                            Flag to indicate node should be retrieved by its *customId*.
+
     **attr**            _id,_class          *Optional*. 
                                             Comma delimited list of attributes to include in successful 
                                             response
@@ -412,7 +418,7 @@ Request
 
 ::
 
-    PUT /api/v1/nodes/:_id
+    PUT /api/v1/nodes/:id
 
 ::
 
@@ -620,7 +626,7 @@ Example replacing RANGE states
 
 Acknowledge node alarms
 ------------------------
-Acknowledge active alarms for a node by its **_id**. Optionally provide a *comment* for the acknowledgement.
+Acknowledge active alarms for a node by its **id**. Optionally provide a *comment* for the acknowledgement.
 
 .. note:: 
     Only available for Location, Source and Parameter nodes. 
@@ -635,6 +641,9 @@ Arguments
     =================   ========================    ======================================================================
     Argument            Example                     Description
     =================   ========================    ======================================================================
+    **cid**             1                           *Optional - default is 0.* 
+                                                    Flag to indicate node should be retrieved by its *customId*.
+
     **alarmTypes**      stateAlarm,controlAlarm     *Optional - Default is ALL*. 
                                                     Comma delimited list of specific alarms to acknowledge:
                                                     *[communicationsAlarm, configurationAlarm, controlAlarm, 
@@ -647,7 +656,7 @@ Request
 
 ::
 
-    POST /api/v1/nodes/:_id/alarms/acknowledge
+    POST /api/v1/nodes/:id/alarms/acknowledge
 
 ::
 
@@ -680,7 +689,7 @@ Response
 
 Clear node alarms
 ------------------
-Clear active and acknowledged alarms for a node by its **_id**.
+Clear active and acknowledged alarms for a node by its **id**.
 
 .. note:: 
     Only available for Location, Source and Parameter nodes. 
@@ -695,6 +704,9 @@ Arguments
     =================   ========================    ======================================================================
     Argument            Example                     Description
     =================   ========================    ======================================================================
+    **cid**             1                           *Optional - default is 0.* 
+                                                    Flag to indicate node should be retrieved by its *customId*.
+
     **alarmTypes**      stateAlarm,controlAlarm     *Optional - Default is ALL*. 
                                                     Comma delimited list of specific alarms to clear:
                                                     *[communicationsAlarm, configurationAlarm, controlAlarm, 
@@ -707,7 +719,7 @@ Request
 
 ::
 
-    POST /api/v1/nodes/:_id/alarms/clear
+    POST /api/v1/nodes/:id/alarms/clear
 
 Response
 ~~~~~~~~
@@ -745,7 +757,7 @@ Request
 
 ::
 
-    POST /api/v1/nodes/:_id/operate/acquire
+    POST /api/v1/nodes/:id/operate/acquire
 
 Response
 ~~~~~~~~
@@ -772,7 +784,7 @@ Response
 
 Retrieve node historic data
 ---------------------------
-Retrieve historic data from a node by its **_id**. Data can be returned in JSON (:ref:`JTS <historic-jts>`) or CSV format. Use the :ref:`Historic resource<api-resources-historic>` for extracting historic data from multiple nodes in a single request.
+Retrieve historic data from a node by its **id**. Data can be returned in JSON (:ref:`JTS <historic-jts>`) or CSV format. Use the :ref:`Historic resource<api-resources-historic>` for extracting historic data from multiple nodes in a single request.
 
 .. note:: 
     Only available for Location and Parameter nodes. 
@@ -787,6 +799,9 @@ Arguments
     ========================    ========================    =================================================================
     Argument                    Example                     Description
     ========================    ========================    =================================================================
+    **cid**                     1                           *Optional - default is 0.* 
+                                                            Flag to indicate node should be retrieved by its *customId*.
+
     **format**                  JSON                        *Optional - Default is JSON*. 
                                                             Data format to return: *[JSON, CSV]*
 
@@ -847,7 +862,7 @@ Request
 
 ::
 
-    GET /api/v1/nodes/:_id/historic
+    GET /api/v1/nodes/:id/historic
 
 Response
 ~~~~~~~~
@@ -907,7 +922,7 @@ Response
 
 Update Parameter or Location historic data
 -------------------------------------------
-Update historic data for a Parameter or Location node by its **_id**. Data can be inserted in JSON (:ref:`JTS <historic-jts>`) or CSV format. Use the :ref:`Historic resource <api-resources-historic>` to update historic data for multiple nodes in a single request.
+Update historic data for a Parameter or Location node by its **id**. Data can be inserted in JSON (:ref:`JTS <historic-jts>`) or CSV format. Use the :ref:`Historic resource <api-resources-historic>` to update historic data for multiple nodes in a single request.
 
 .. note:: 
     Only available for Location and Parameter nodes. 
@@ -923,6 +938,9 @@ Arguments
     =================   ========================    ======================================================================
     Argument            Example                     Description
     =================   ========================    ======================================================================
+    **cid**             1                           *Optional - default is 0.* 
+                                                    Flag to indicate node should be retrieved by its *customId*.
+
     **format**          JSON                        *Optional - Default is JSON*. 
                                                     Data format being inserted: *[JSON]*. (CSV support coming soon)
 
@@ -946,7 +964,7 @@ Request
 
 ::
 
-    PUT /api/v1/nodes/:_id/historic
+    PUT /api/v1/nodes/:id/historic
 
 ::
 
@@ -993,7 +1011,7 @@ Response
 
 Update Data Source historic data
 ---------------------------------
-Update historic data for multiple parameters via a Data Source node **_id**. 
+Update historic data for multiple parameters via a Data Source node **id**. 
 Data can be inserted in JSON (:ref:`JTS <historic-jts>`) format. New parameters will be automatically created.
 
 The JTS Document must contain header columns. Each column must either specify a parameter **id** or **name**. 
@@ -1017,6 +1035,9 @@ Arguments
     =================   ========================    ======================================================================
     Argument            Example                     Description
     =================   ========================    ======================================================================
+    **cid**             1                           *Optional - default is 0.* 
+                                                    Flag to indicate node should be retrieved by its *customId*.
+
     **format**          JSON                        *Optional - Default is JSON*. 
                                                     Data format being inserted: *[JSON]*. (CSV support coming soon)
 
@@ -1036,7 +1057,7 @@ Request
 
 ::
 
-    PUT /api/v1/nodes/:_id/historic
+    PUT /api/v1/nodes/:id/historic
 
 ::
 
@@ -1102,12 +1123,25 @@ If *timestamp* is omitted the time the request was made will be used. Existing v
     Only available for Location and Parameter nodes. 
     Required API key permission: *Modify*
 
+Arguments
+~~~~~~~~~
+
+.. table::
+    :class: table-fluid
+
+    =================   =================   ================================================================
+    Argument            Example             Description
+    =================   =================   ================================================================
+    **cid**             1                   *Optional - default is 0.* 
+                                            Flag to indicate node should be retrieved by its *customId*.
+    =================   =================   ================================================================
+
 Request
 ~~~~~~~~
 
 ::
 
-    PUT /api/v1/nodes/:_id/historic/now
+    PUT /api/v1/nodes/:id/historic/now
 
 ::
 
@@ -1142,18 +1176,31 @@ Response
 
 Delete node historic data
 --------------------------
-Delete all historic data from a node by its **_id**.
+Delete all historic data from a node by its **id**.
 
 .. note:: 
     Only available for Location and Parameter nodes. 
     Required API key permission: *Modify*
+
+Arguments
+~~~~~~~~~
+
+.. table::
+    :class: table-fluid
+
+    =================   =================   ================================================================
+    Argument            Example             Description
+    =================   =================   ================================================================
+    **cid**             1                   *Optional - default is 0.* 
+                                            Flag to indicate node should be retrieved by its *customId*.
+    =================   =================   ================================================================
 
 Request
 ~~~~~~~~
 
 ::
 
-    DELETE /api/v1/nodes/:_id/historic
+    DELETE /api/v1/nodes/:id/historic
 
 Response
 ~~~~~~~~
