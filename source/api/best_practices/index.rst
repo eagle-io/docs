@@ -13,8 +13,8 @@ Enforce Security
 -----------------
 All requests must be made over **HTTPS**.
 
-:ref:`API keys <user-api-keys>` should be kept secret and the *read-only* permission assigned to keys that only need to perform read operations (GET requests).
-Account owners or managers with access to multiple Workspaces are advised to create additional user accounts for the sole purpose of API access with User Permissions assigned to individual Workspaces.
+:ref:`API keys <management-security-apikeys>` should be kept secret and the *Read only* permission assigned to keys that only need to perform read operations (GET requests).
+For additional security, you can restrict the API key to certain Workspaces by setting the *Access level* to *Limited Workspaces*.
 
 .. only:: not latex
 
@@ -54,8 +54,8 @@ Responses will always use :ref:`HTTP Status Codes <api-overview-http-status-code
 
 Discover Node Ids from the user interface
 -----------------------------------------
-Enable the :ref:`Display Node Ids in properties dialog <user-api-keys>` option to quickly discover Node Id's from the user interface.
-The Node Id will be shown in the associated Node properties dialog.
+Enable the :ref:`Display Node Ids in properties dialog <user-preferences-other>` option to quickly discover Node Id's from the user interface.
+The Node Id will be shown in the associated Node properties dialog. You can also assign your own unique Custom Id to every node for use with the API.
 
 .. only:: not latex
 

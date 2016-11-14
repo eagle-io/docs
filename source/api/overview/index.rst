@@ -377,6 +377,27 @@ Example response from a Nodes GET request:
 
     |
 
+Resource Ids
+---------------
+
+Most resources must be accessed with an *id*. The automatically assigned id is stored as the *_id* attribute of the resource.
+Nodes can optionally be assigned a unique *customId* which can also be used to access the resource prepended with '@'. 
+:ref:`Learn how to assign a customId <user-preferences-other>`.
+
+Example accessing a node by its automatically assigned *_id*
+::
+
+    /api/v1/nodes/536884ecb5a76fd5d3000014
+
+Example accessing a node by its *customId*
+::
+
+    /api/v1/nodes/@sensor_254
+
+.. only:: not latex
+
+    |
+
 Versioning
 ------------
 

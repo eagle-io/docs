@@ -11,7 +11,7 @@ User Preferences
 
 .. only:: not latex
 
-	.. image:: user_profile_overview.jpg
+	.. image:: user_profile_general.jpg
 		:scale: 50 %
 
 	| 
@@ -20,7 +20,7 @@ User Preferences
 	
 	| 
 
-	.. image:: user_profile_overview.jpg
+	.. image:: user_profile_general.jpg
 
 .. only:: not latex
 
@@ -47,7 +47,24 @@ Time format is used to specify the default appearance of date & time information
 Resetting your password
 -----------------------
 The User profile has a *Change Password* section for immediate password changes.
-If you have forgotten your password you can use the *Forgot Password* link on the public site to send a reset link to your User profile email address.
+If you have forgotten your password you can use the *Forgot Password* link on the public site to send a reset link to your user profile email address.
+
+.. raw:: latex
+
+    \vspace{-10pt}
+
+.. only:: not latex
+
+    .. image:: user_profile_password.jpg
+        :scale: 50 %
+
+    | 
+
+.. only:: latex
+
+    | 
+
+    .. image:: user_profile_password.jpg
 
 .. only:: not latex
 
@@ -66,7 +83,7 @@ Click or touch the Workspace labels to display your preferences.
 
 .. only:: not latex
 
-	.. image:: user_profile_notification.jpg
+	.. image:: user_profile_notifications.jpg
 		:scale: 50 %
 
 	| 
@@ -75,7 +92,7 @@ Click or touch the Workspace labels to display your preferences.
 
 	| 
 
-	.. image:: user_profile_notification.jpg
+	.. image:: user_profile_notifications.jpg
 	
 
 Within each Workspace, you will see a list of Notification Categories specific to the Workspace.
@@ -88,11 +105,13 @@ Use the SMS/Email checkboxes to set your preferences on what types of notificati
 
     |
     
-.. _user-additional:
+.. _user-preferences-other:
 
-Additional
------------
+Other
+--------
 The *Display Node Ids in properties dialog* option is useful for retrieving a specific Node Id for use with the HTTP API. The *Node Id* will be shown in the associated Node properties dialog.
+
+You can optionally assign a *Custom Id* for each Node for use with the HTTP API. The Custom Id must be unique within the account and is limited to 255 alphanumeric and the following special characters: dot (.), underscore (_) and hyphen (-). 
 
 .. raw:: latex
 
@@ -100,7 +119,7 @@ The *Display Node Ids in properties dialog* option is useful for retrieving a sp
 
 .. only:: not latex
 
-	.. image:: user_profile_additional.jpg
+	.. image:: user_profile_other.jpg
 		:scale: 50 %
 
 	| 
@@ -109,8 +128,27 @@ The *Display Node Ids in properties dialog* option is useful for retrieving a sp
 
 	| 
 
-	.. image:: user_profile_additional.jpg
+	.. image:: user_profile_other.jpg
 
+
+Example Node properties dialog showing *Node Id* and optional *Custom Id*:
+
+.. raw:: latex
+
+    \vspace{-10pt}
+
+.. only:: not latex
+
+    .. image:: user_profile_nodeid_example.jpg
+        :scale: 50 %
+
+    | 
+
+.. only:: latex
+
+    | 
+
+    .. image:: user_profile_nodeid_example.jpg
 
 .. raw:: latex
 

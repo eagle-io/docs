@@ -19,7 +19,7 @@ Successful extraction requests will result in a **200 OK** response with the dat
 
 Retrieve historic data from multiple nodes
 ------------------------------------------
-Retrieve historic data from multiple nodes in a single request using **id's**.
+Retrieve historic data from multiple nodes in a single request using **node id's**. You can use the automatically assigned *_id's* or your own *customId's* prepended with '@'.
 
 .. note:: 
     Only available for Location and Parameter nodes. 
@@ -43,12 +43,12 @@ Arguments
     **endTime**                 2014-08-16T02:20:43Z        *Required*. [#f1]_
                                                             :ref:`ISO8601<time-format-iso8601>` timestamp
 
-    **timezone**                Etc/UTC                     *Optional - default is Etc/UTC*. 
+    **timezone**                Etc/UTC                     *Optional - Default is Etc/UTC*. 
                                                             :ref:`Timezone <timezone>` applied to timestamps. 
                                                             Aggregate *interval* and *baseTime* calculations will also use 
                                                             this zone.
 
-    **timezoneAdjustForDst**    FALSE                       *Optional - default is FALSE*. 
+    **timezoneAdjustForDst**    FALSE                       *Optional - Default is FALSE*. 
                                                             Flag to indicate if timestamps should be adjusted for DST in
                                                             selected *timezone*.
 
@@ -59,10 +59,10 @@ Arguments
                                                             Flag to include :ref:`quality <historic-quality>`
 
     **header**                  TRUE                        *Optional - Default is TRUE*. 
-                                                            Flag to include header  
+                                                            Flag to include header
 
     **params**                  541a5a129bc9b4035f906d70    *Required*. 
-                                                            Comma delimited list of parameter _id's to include in extraction.
+                                @sensor_254                 Comma delimited list of parameter id's to include in extraction.
                                                             Individual parameter options are specified in parentheses.
 
     | **renderType**            VALUE                       *Optional - Default is parameter displayType*. 
@@ -99,7 +99,7 @@ Include individual parameter arguments in parentheses with key/value separated b
 
 Example with optional parameter arguments::
 
-    params=541a5a129bc9b4035f906d70,541a5a129bc9b4035f906d71(aggregate:AVERAGE;baseTime:D;interval:3H)
+    params=541a5a129bc9b4035f906d71(aggregate:AVERAGE;baseTime:D;interval:3H),@sensor_254,@sensor_255
 
 
 Request
@@ -165,7 +165,7 @@ Response
     
 Update historic data for multiple nodes
 ----------------------------------------
-Update historic data for one or more nodes by **id's**.
+Update historic data for one or more nodes by **id's**. You can use the automatically assigned *_id's* or your own *customId's* prepended with '@'.
 
 .. note:: 
     Only available for Location and Parameter nodes. 
@@ -195,7 +195,7 @@ Arguments
                                                     LATEST_ONLY: Latest event newer than parameter current value.
 
     **params**          541a5a129bc9b4035f906d70    *Required*. [#f2]_
-                                                    Comma delimited list of parameter _id's to include in extraction. 
+                        @sensor_254                 Comma delimited list of parameter _id's to include in extraction. 
                                                     Individual parameter options are specified in parentheses.
 
     | **columnIndex**   0                           *Required*. [#f2]_
@@ -210,7 +210,7 @@ Include individual parameter arguments in parentheses with key/value separated b
 
 Example with required parameter arguments::
 
-    params=541a5a129bc9b4035f906d70(columnIndex:0),541a5a129bc9b4035f906d71(columnIndex:1)
+    params=541a5a129bc9b4035f906d70(columnIndex:0),@sensor_254(columnIndex:1)
 
 
 Request

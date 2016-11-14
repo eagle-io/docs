@@ -33,7 +33,7 @@ Consumers of Nodes should tolerate the addition of new attributes and variance i
     **name**                            String      Yes         Name of node
     **ownerId**                         ObjectId                Unique owner _id
     **parentId**                        ObjectId                Parent node _id (not included in Workspace)
-    **workspaceId**                     ObjectId                Associated Workspace _id (not included in Workspace)
+    **workspaceId**                     ObjectId                Associated Workspace _id (not set on Workspace node)
     ================================    =========   =========   ===========================================================================
 
 .. table::
@@ -144,7 +144,8 @@ Arguments
     =================   =====================   ================================================================
     **attr**            _id,slug                *Optional.* 
                                                 Comma delimited list of attributes to include in response
-    **type**            TREE                    *Optional - default is LIST* [#f2]_
+
+    **type**            TREE                    *Optional - Default is LIST* [#f2]_
                                                 | **LIST** returns a flat list of nodes
                                                 | **TREE** returns hierarchical list of nodes
 
@@ -327,7 +328,7 @@ Example response when ``type`` argument is TREE. Descendants are wrapped in a ``
 
 Retrieve a node
 ---------------
-Retrieve a node by its **id**. 
+Retrieve a node by its **id**. You can use the automatically assigned *_id* or your own *customId* prepended with '@'.
 
 Arguments
 ~~~~~~~~~
@@ -338,9 +339,6 @@ Arguments
     =================   =================   ================================================================
     Argument            Example             Description
     =================   =================   ================================================================
-    **cid**             1                   *Optional - default is 0.* 
-                                            Flag to indicate node should be retrieved by its *customId*.
-
     **attr**            _id,_class          *Optional.* 
                                             Comma delimited list of attributes to include in response
 
@@ -356,6 +354,16 @@ Request
 ::
 
     GET /api/v1/nodes/:id
+
+Example accessing a node by its automatically assigned *_id*
+::
+
+    /api/v1/nodes/536884ecb5a76fd5d3000014
+
+Example accessing a node by its *customId*
+::
+
+    /api/v1/nodes/@workspace-01
 
 Response
 ~~~~~~~~
@@ -373,7 +381,8 @@ Response
         "createdTime": "2014-05-06T06:45:00.061Z",
         "isActive": true,
         "name": "My Workspace",
-        "ownerId": "52969365593a1a3a3200000f"
+        "ownerId": "52969365593a1a3a3200000f",
+        "customId": "workspace-01"
     }
 
 .. only:: not latex
@@ -385,7 +394,7 @@ Response
 
 Update a node
 ---------------
-Update a node by its **id**. 
+Update a node by its **id**. You can use the automatically assigned *_id* or your own *customId* prepended with '@'.
 Updates are limited to the attributes listed with the *Update* flag. 
 Multiple attributes can be updated in a single request.
 
@@ -405,9 +414,6 @@ Arguments
     =================   =================   ================================================================
     Argument            Example             Description
     =================   =================   ================================================================
-    **cid**             1                   *Optional - default is 0.* 
-                                            Flag to indicate node should be retrieved by its *customId*.
-
     **attr**            _id,_class          *Optional*. 
                                             Comma delimited list of attributes to include in successful 
                                             response
@@ -528,10 +534,10 @@ Refer to :ref:`Parameter states<node-configuration-parameter>` for further infor
     **threshold**                       Variable    *Required*. Unique threshold value for the state. 
                                                     Number parameters require a *Double*. 
                                                     Text parameters require a *String*.
-    **isAlarm**                         Boolean     *Optional - default is false*. 
+    **isAlarm**                         Boolean     *Optional - Default is FALSE*. 
                                                     Flag to indicate if this state should raise an alarm. 
                                                     Not valid for *NORMAL* RANGE state.
-    **notify**                          String      *Optional - default is NEVER*. 
+    **notify**                          String      *Optional - Default is NEVER*. 
                                                     When notifications should be triggered:
                                                     *[NEVER, ALWAYS, AWAY_FROM_NORMAL, TOWARDS_NORMAL]*. 
                                                     DISCRETE states and the *NORMAL* RANGE state is restricted to: 
@@ -626,7 +632,8 @@ Example replacing RANGE states
 
 Acknowledge node alarms
 ------------------------
-Acknowledge active alarms for a node by its **id**. Optionally provide a *comment* for the acknowledgement.
+Acknowledge active alarms for a node by its **id**. You can use the automatically assigned *_id* or your own *customId* prepended with '@'. 
+Optionally provide a *comment* for the acknowledgement.
 
 .. note:: 
     Only available for Location, Source and Parameter nodes. 
@@ -641,9 +648,6 @@ Arguments
     =================   ========================    ======================================================================
     Argument            Example                     Description
     =================   ========================    ======================================================================
-    **cid**             1                           *Optional - default is 0.* 
-                                                    Flag to indicate node should be retrieved by its *customId*.
-
     **alarmTypes**      stateAlarm,controlAlarm     *Optional - Default is ALL*. 
                                                     Comma delimited list of specific alarms to acknowledge:
                                                     *[communicationsAlarm, configurationAlarm, controlAlarm, 
@@ -689,7 +693,7 @@ Response
 
 Clear node alarms
 ------------------
-Clear active and acknowledged alarms for a node by its **id**.
+Clear active and acknowledged alarms for a node by its **id**. You can use the automatically assigned *_id* or your own *customId* prepended with '@'.
 
 .. note:: 
     Only available for Location, Source and Parameter nodes. 
@@ -704,9 +708,6 @@ Arguments
     =================   ========================    ======================================================================
     Argument            Example                     Description
     =================   ========================    ======================================================================
-    **cid**             1                           *Optional - default is 0.* 
-                                                    Flag to indicate node should be retrieved by its *customId*.
-
     **alarmTypes**      stateAlarm,controlAlarm     *Optional - Default is ALL*. 
                                                     Comma delimited list of specific alarms to clear:
                                                     *[communicationsAlarm, configurationAlarm, controlAlarm, 
@@ -746,7 +747,7 @@ Response
 
 Trigger an acquisition
 -----------------------
-Trigger an acquisition (*Acquire Now*) for a Source node by its **_id**.
+Trigger an acquisition (*Acquire Now*) for a Source node by its **id**. You can use the automatically assigned *_id* or your own *customId* prepended with '@'.
 
 .. note:: 
     Only available for Source nodes with Transports that allow for manual collection. 
@@ -784,7 +785,8 @@ Response
 
 Retrieve node historic data
 ---------------------------
-Retrieve historic data from a node by its **id**. Data can be returned in JSON (:ref:`JTS <historic-jts>`) or CSV format. Use the :ref:`Historic resource<api-resources-historic>` for extracting historic data from multiple nodes in a single request.
+Retrieve historic data from a node by its **id**. You can use the automatically assigned *_id* or your own *customId* prepended with '@'. 
+Data can be returned in JSON (:ref:`JTS <historic-jts>`) or CSV format. Use the :ref:`Historic resource<api-resources-historic>` for extracting historic data from multiple nodes in a single request.
 
 .. note:: 
     Only available for Location and Parameter nodes. 
@@ -799,9 +801,6 @@ Arguments
     ========================    ========================    =================================================================
     Argument                    Example                     Description
     ========================    ========================    =================================================================
-    **cid**                     1                           *Optional - default is 0.* 
-                                                            Flag to indicate node should be retrieved by its *customId*.
-
     **format**                  JSON                        *Optional - Default is JSON*. 
                                                             Data format to return: *[JSON, CSV]*
 
@@ -811,12 +810,12 @@ Arguments
     **endTime**                 2014-08-16T02:20:43Z        *Required*. [#f3]_
                                                             :ref:`ISO8601<time-format-iso8601>` timestamp
 
-    **timezone**                Etc/UTC                     *Optional - default is Etc/UTC*. 
+    **timezone**                Etc/UTC                     *Optional - Default is Etc/UTC*. 
                                                             :ref:`Timezone <timezone>` applied to timestamps. 
                                                             Aggregate *interval* and *baseTime* calculations will also use 
                                                             this zone.
 
-    **timezoneAdjustForDst**    FALSE                       *Optional - default is FALSE*. 
+    **timezoneAdjustForDst**    FALSE                       *Optional - Default is FALSE*. 
                                                             Flag to indicate if timestamps should be adjusted for DST in
                                                             selected *timezone*.
 
@@ -922,7 +921,8 @@ Response
 
 Update Parameter or Location historic data
 -------------------------------------------
-Update historic data for a Parameter or Location node by its **id**. Data can be inserted in JSON (:ref:`JTS <historic-jts>`) or CSV format. Use the :ref:`Historic resource <api-resources-historic>` to update historic data for multiple nodes in a single request.
+Update historic data for a Parameter or Location node by its **id**. You can use the automatically assigned *_id* or your own *customId* prepended with '@'. 
+Data can be inserted in JSON (:ref:`JTS <historic-jts>`) or CSV format. Use the :ref:`Historic resource <api-resources-historic>` to update historic data for multiple nodes in a single request.
 
 .. note:: 
     Only available for Location and Parameter nodes. 
@@ -938,9 +938,6 @@ Arguments
     =================   ========================    ======================================================================
     Argument            Example                     Description
     =================   ========================    ======================================================================
-    **cid**             1                           *Optional - default is 0.* 
-                                                    Flag to indicate node should be retrieved by its *customId*.
-
     **format**          JSON                        *Optional - Default is JSON*. 
                                                     Data format being inserted: *[JSON]*. (CSV support coming soon)
 
@@ -1011,7 +1008,7 @@ Response
 
 Update Data Source historic data
 ---------------------------------
-Update historic data for multiple parameters via a Data Source node **id**. 
+Update historic data for multiple parameters via a Data Source node **id**. You can use the automatically assigned *_id* or your own *customId* prepended with '@'. 
 Data can be inserted in JSON (:ref:`JTS <historic-jts>`) format. New parameters will be automatically created.
 
 The JTS Document must contain header columns. Each column must either specify a parameter **id** or **name**. 
@@ -1035,9 +1032,6 @@ Arguments
     =================   ========================    ======================================================================
     Argument            Example                     Description
     =================   ========================    ======================================================================
-    **cid**             1                           *Optional - default is 0.* 
-                                                    Flag to indicate node should be retrieved by its *customId*.
-
     **format**          JSON                        *Optional - Default is JSON*. 
                                                     Data format being inserted: *[JSON]*. (CSV support coming soon)
 
@@ -1116,25 +1110,13 @@ Response
 
 Update node historic data with a single value
 ----------------------------------------------
-Update historic data for a node with a single *value* with optional *quality* and *timestamp*.
+Update historic data for a node with a single *value* with optional *quality* and *timestamp*. You can use the automatically assigned *_id* or your own *customId* prepended with '@'.
 If *timestamp* is omitted the time the request was made will be used. Existing values with the same timestamp will be overwritten.
 
 .. note:: 
     Only available for Location and Parameter nodes. 
     Required API key permission: *Modify*
 
-Arguments
-~~~~~~~~~
-
-.. table::
-    :class: table-fluid
-
-    =================   =================   ================================================================
-    Argument            Example             Description
-    =================   =================   ================================================================
-    **cid**             1                   *Optional - default is 0.* 
-                                            Flag to indicate node should be retrieved by its *customId*.
-    =================   =================   ================================================================
 
 Request
 ~~~~~~~~
@@ -1176,24 +1158,12 @@ Response
 
 Delete node historic data
 --------------------------
-Delete all historic data from a node by its **id**.
+Delete all historic data from a node by its **id**. You can use the automatically assigned *_id* or your own *customId* prepended with '@'.
 
 .. note:: 
     Only available for Location and Parameter nodes. 
     Required API key permission: *Modify*
 
-Arguments
-~~~~~~~~~
-
-.. table::
-    :class: table-fluid
-
-    =================   =================   ================================================================
-    Argument            Example             Description
-    =================   =================   ================================================================
-    **cid**             1                   *Optional - default is 0.* 
-                                            Flag to indicate node should be retrieved by its *customId*.
-    =================   =================   ================================================================
 
 Request
 ~~~~~~~~

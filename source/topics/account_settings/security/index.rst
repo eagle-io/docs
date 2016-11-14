@@ -104,7 +104,7 @@ Security
 
     |
 
-.. _management-security-userroles:
+.. _management-security-apikeys:
 
 API keys
 ----------
