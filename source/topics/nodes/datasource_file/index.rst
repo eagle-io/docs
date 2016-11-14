@@ -163,9 +163,9 @@ Transport type
 Read mode
 	Select how data should be read from the file:
 
-	*Read from start of file* will read in the entire file on each acquisition.
+	*Read all records* will read in the entire file on each acquisition.
 	
-	*Read from last acquire* will only read new data added to the file since last acquisition.
+	*Read new records* will only read new data added to the file since last acquisition.
 	
 	Optionally delete files after acquire (not supported on all transports).
 
@@ -338,7 +338,7 @@ Security
 ~~~~~~~~~~
 .. include:: ../properties_node_security.rstx
 
-    |
+| 
 
 .. _text-parser:
 
