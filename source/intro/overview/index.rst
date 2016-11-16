@@ -20,13 +20,13 @@ The lightning fast interface has been designed to work across all modern phones 
 
 Log in to eagle.io
 ------------------
-You will need a user profile to log in. This requires you to `Sign up <https://eagle.io/signup>`_ for an account or receive a :ref:`Workspace Sharing <sharing-and-security>` invitation from a registered user.
+You will need a user profile to log in. This requires you to `sign up <https://eagle.io/trial>`_ for an account or receive a :ref:`Workspace Sharing <sharing-and-security>` invitation from a registered user.
 
 *Login form*
 
 .. only:: not latex
 
-	.. image:: public_login.png
+	.. image:: public_login.jpg
 		:scale: 50 %
 
 	| 
@@ -36,9 +36,7 @@ You will need a user profile to log in. This requires you to `Sign up <https://e
 	.. image:: public_login.jpg
 		:scale: 70 %
 
-1. Login button for email & password authentication
-2. Link to reset your password
-3. Login with your Google+ or Yahoo! account
+Enter your *email* address & *password* to login. If you have forgotten your password, simply click the *forgot password* link to reset it.
 
 .. only:: not latex
 
