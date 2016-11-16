@@ -26,9 +26,9 @@ Consumers of Nodes should tolerate the addition of new attributes and variance i
     ================================    =========   =========   ===========================================================================
     **_class**                          String                  Identifies resource type: *io.eagle.models.node.*\*
     **_id**                             ObjectId                Unique identifier for this node
-    **customId**                        String      Yes         Optional user assigned identifier for this node. Unique to owner (account)
     **alarms**                          Object      Yes         Alarm configuration and status
     **createdTime**                     Time                    :ref:`ISO8601<time-format-iso8601>` timestamp the node was created
+    **customId**                        String      Yes         Optional user-assigned identifier for this node. Unique to owner (account)
     **isActive**                        Boolean                 Flag to indicate if node is active
     **name**                            String      Yes         Name of node
     **ownerId**                         ObjectId                Unique owner _id

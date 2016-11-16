@@ -44,7 +44,7 @@ Responses will always use :ref:`HTTP Status Codes <api-overview-http-status-code
 
 - Large or long running requests
 - Moved, renamed or deleted resources
-- User permission and account changes
+- API key permission and account changes
 - Usage limits exceeded
 - Service temporarily unavailable
 
