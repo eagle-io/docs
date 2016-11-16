@@ -34,7 +34,7 @@ You will need a user profile to log in. This requires you to `sign up <https://e
 .. only:: latex
 
 	.. image:: public_login.jpg
-		:scale: 70 %
+		:scale: 40 %
 
 Enter your *email* address & *password* to login. If you have forgotten your password, simply click the *forgot password* link to reset it.
 
