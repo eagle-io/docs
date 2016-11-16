@@ -58,7 +58,7 @@ Request
 
 ::
 
-    GET /api/v1/owners/me
+    GET /api/v1/owners/account
 
 Response
 ~~~~~~~~
