@@ -4,8 +4,9 @@ Attachment Source
 =================
 |icon-attachmentsource| Attachment Sources have the ability to automatically acquire or receive :ref:`attachments <node-configuration-attachment>`. Attachment Sources can be created inside Locations only.
 
-.. note:: Maximum file size for an attachment accepted for an attachment source is 100MB.
-
+.. note:: 
+	There is a maximum limit of 144 attachments that can be received per 24 hours which equates to 1 attachment every 10 minutes. 
+	A maximum file size limit of 100MB applies per attachment.
 
 .. only:: not latex
 
@@ -123,6 +124,9 @@ Collection
 ~~~~~~~~~~
 Outdated Alarm
 	See :ref:`Alarms and Notifications <outdated-alarm>`.
+
+Overload Alarm
+	See :ref:`Alarms and Notifications <overload-alarm>`.
 
 .. only:: not latex
 

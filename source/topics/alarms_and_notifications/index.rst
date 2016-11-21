@@ -72,6 +72,39 @@ Outdated Alarms are specific to Sources and are triggered (if enabled) when no n
 .. only:: not latex
 
     |
+
+.. _overload-alarm:
+
+Overload Alarm
+~~~~~~~~~~~~~~
+Overload Alarms are specific to Sources and are triggered when the Source has exceeded the allowable load limits:
+
+Attachment Source
+    Maximum of 144 attachments received per 24 hours (1 attachment every 10 minutes).
+
+Data Source
+    Maximum of 17280 records per day (5 second logging).
+
+.. raw:: latex
+
+    \vspace{-10pt}
+
+.. only:: not latex
+
+    .. image:: overload_alarm.jpg
+        :scale: 50 %
+
+    | 
+
+.. only:: latex
+
+    | 
+
+    .. image:: overload_alarm.jpg
+
+.. only:: not latex
+
+    |
     
 .. _configuration-alarm:
 

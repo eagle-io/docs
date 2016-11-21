@@ -462,7 +462,7 @@ Alarm configuration can be included in the update request for Location, Source a
     ================================    =========   ===========================================================================
     Alarm config attributes             Type        Description
     ================================    =========   ===========================================================================
-    **isEnabled**                       Boolean     Enable or disable the alarm
+    **isEnabled**                       Boolean     Enable or disable the alarm. Overload alarm can not be disabled.
     **notify**                          String      When notifications should be triggered:
                                                     *[NEVER, ALWAYS, AWAY_FROM_NORMAL, TOWARDS_NORMAL]*.
     **categoryId**                      ObjectId    Id of :ref:`owner category<api-resources-owners>` to assign to this alarm. 
@@ -497,6 +497,7 @@ The alarm types available are specific to the type of node being updated:
     **configurationAlarm**     Sources
     **controlAlarm**           Control parameters
     **outdatedAlarm**          Sources
+    **overloadAlarm**          Sources
     **stateAlarm** [1]_        Locations, Parameters
     ========================   ========================================================
 
@@ -651,7 +652,7 @@ Arguments
     **alarmTypes**      stateAlarm,controlAlarm     *Optional - Default is ALL*. 
                                                     Comma delimited list of specific alarms to acknowledge:
                                                     *[communicationsAlarm, configurationAlarm, controlAlarm, 
-                                                    outdatedAlarm, stateAlarm]*
+                                                    outdatedAlarm, overloadAlarm, stateAlarm]*
     =================   ========================    ======================================================================
 
 
@@ -711,7 +712,7 @@ Arguments
     **alarmTypes**      stateAlarm,controlAlarm     *Optional - Default is ALL*. 
                                                     Comma delimited list of specific alarms to clear:
                                                     *[communicationsAlarm, configurationAlarm, controlAlarm, 
-                                                    outdatedAlarm, stateAlarm]*
+                                                    outdatedAlarm, overloadAlarm, stateAlarm]*
     =================   ========================    ======================================================================
 
 
