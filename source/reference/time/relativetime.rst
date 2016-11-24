@@ -33,6 +33,10 @@ OPC Base Time and Interval Keywords
 +======================+=================================+=============================+
 | NOW                  | The current time                | N/A                         |
 +----------------------+---------------------------------+-----------------------------+
+| FIRST                | Earliest data value time        | N/A                         |
++----------------------+---------------------------------+-----------------------------+
+| LAST                 | Most recent data value time     | N/A                         |
++----------------------+---------------------------------+-----------------------------+
 | SECOND (S)           | The start of the current second | Offset from time in seconds |
 +----------------------+---------------------------------+-----------------------------+
 | MINUTE (M)           | The start of the current minute | Offset from time in minutes |
