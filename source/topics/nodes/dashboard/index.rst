@@ -67,7 +67,7 @@ Moving the mouse over or touching a tile will show the title bar and menu button
 
 Reposition
 ~~~~~~~~~~
-Click or Touch, hold and drag the title bar to reposition the Tile on the Dashboard. Tile layout is automatically adjusted to suit the display device and tiles are always ordered in rows starting from the top left to bottom right of the screen. Requires *Configure* permission. **Note:** Reposition operation not available on small screen devices (width <620px).
+Click or Touch, hold and drag the title bar to reposition the Tile on the Dashboard. Tile layout is automatically adjusted to suit the display device and tiles are always ordered in rows starting from the top left to bottom right of the screen. Requires *Configure* permission. **Note:** Reposition operation not available on small screen touch devices (width <820px).
 
 .. only:: not latex
 
@@ -87,7 +87,7 @@ Click or Touch, hold and drag the title bar to reposition the Tile on the Dashbo
 
 Resize
 ~~~~~~
-Click or Touch, hold and drag the resize handle to adjust the width and height of the Tile. Requires *Configure* permission. **Note:** Resize operation not available on small screen devices (width <620px).
+Click or Touch, hold and drag the resize handle to adjust the width and height of the Tile. Requires *Configure* permission. **Note:** Resize operation not available on small screen touch devices (width <820px).
 
 .. only:: not latex
 
