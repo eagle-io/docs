@@ -9,8 +9,8 @@ The type of Data Source (data logger or file) is selected at time of creation an
 Refer to the :ref:`Device configuration <device-configuration>` section for a quick guide to connecting a range of industry standard data loggers.
 
 .. note:: 
-    There is a maximum limit of 17280 records per parameter allowed per day which equates to 5 second logging or short bursts of high resolution data. 
-    Exceeding this limit will trigger an :ref:`Overload Alarm <overload-alarm>` on the Source.
+    Eagle.io supports the acquisition and storage of up to 20000 records per :ref:`Data Source <node-configuration-datasource-datalogger>` per day. 
+    Exceeding this limit will trigger an :ref:`Overload Alarm <overload-alarm>` on the Source. Refer to Historic Data :ref:`Limits <historic-limits>` for more information.
 
 .. only:: not latex
 

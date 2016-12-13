@@ -77,13 +77,14 @@ Outdated Alarms are specific to Sources and are triggered (if enabled) when no n
 
 Overload Alarm
 ~~~~~~~~~~~~~~
-Overload Alarms are specific to Sources and are triggered when the Source has exceeded the allowable load limits:
+Overload Alarms are specific to Sources and are triggered when a Source has exceeded the allowable limits:
 
 Attachment Source
-    Maximum of 144 attachments received per 24 hours (1 attachment every 10 minutes).
+    Maximum of 150 files received per :ref:`Attachment Source <node-configuration-attachmentsource>` per day.
 
 Data Source
-    Maximum of 17280 records per day (5 second logging).
+    Acquisition and storage of up to 20000 records per :ref:`Data Source <node-configuration-datasource-datalogger>` per day. 
+    Refer to Historic Data :ref:`Limits <historic-limits>` for more information.
 
 .. raw:: latex
 

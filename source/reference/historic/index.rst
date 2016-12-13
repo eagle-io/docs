@@ -9,3 +9,4 @@ When working with :term:`time series` or historic data there are several importa
    aggregates
    jts
    quality
+   limits

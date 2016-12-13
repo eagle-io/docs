@@ -60,6 +60,34 @@ Check out our :ref:`charts documentation <node-configuration-chart>` for full us
 
 	| 
 
+How much historic data can I store?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+We support the acquisition and storage of up to **20000 records per** :ref:`Data Source <node-configuration-datasource-datalogger>` **per day**. 
+Refer to Historic Data :ref:`Limits <historic-limits>` for more information about storage limits.
+
+.. only:: not latex
+
+	| 
+
+Where is my data stored and is it secure?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+We store all customer data securely on Amazon Web Services data hosting facilities located in the USA and Australia. 
+Data is strictly segregated so that no user may ever view, tamper with, or become aware of the data of any other user.
+Refer to our `Compliance <https://eagle.io/policies/compliance>`_ section for full details.
+
+.. only:: not latex
+
+	| 
+
+Do you have a service level guarantee?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+We provide a full service level guarantee (99.9% up-time commitment) to clients subscribed to our Standard (or larger) pricing plans. 
+Refer to our `SLA <https://eagle.io/policies/sla>`_ for full details. 
+
+.. only:: not latex
+
+	| 
+
 
 Data Loggers
 ------------

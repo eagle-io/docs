@@ -3,8 +3,8 @@
 Historic Data
 ==============
 
-|icon-history| Historic data is always associated with an individual parameter. 
-You can store millions of individual data points per parameter with a maximum limit of 17280 records per day. This equates to 5 second logging or short-bursts of millisecond data. 
+|icon-history| Eagle.io supports the acquisition and storage of up to **20000 records per** :ref:`Data Source <node-configuration-datasource-datalogger>` **per day**. 
+Exceeding the limit will trigger an :ref:`Overload Alarm <overload-alarm>` on the Source. Refer to Historic Data :ref:`Limits <historic-limits>` for more information.
 
 Data is always stored in a raw unprocessed format with optional quality information. 
 You can display and export the data in tabular or chart format via the user interface in either raw or processed format. 
@@ -21,3 +21,5 @@ Use :ref:`historic aggregates <historic-aggregates>` to process the raw data and
    chart/index
    export/index
    import/index
+
+| 
