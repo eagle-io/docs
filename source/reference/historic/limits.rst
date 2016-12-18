@@ -6,6 +6,8 @@ Limits
 Eagle.io supports the acquisition and storage of up to **20000 records per** :ref:`Data Source <node-configuration-datasource-datalogger>` **per day**. 
 Exceeding the limit will trigger an :ref:`Overload Alarm <overload-alarm>` on the Source.
 
+.. note:: If you believe your application may exceed our historic limits, please contact us to discuss your requirements.
+
 Daily intervals are defined in the UTC time zone. The acquisition limit applies to the number of records acquired in one UTC day, regardless of the record timestamps. The storage limit applies to the number of records that have timestamps occurring on the same UTC day, regardless of when they are acquired. 
 
 The limit of 20000 records is sufficient for Data Sources that generate data continuously at 5-second intervals. While eagle.io supports smaller data intervals (down to 1 millisecond), such resolutions cannot be generated continuously. For example, if a Data Source generated data at 1-second intervals, the limit of 20000 records would be reached in under 6 hours.
