@@ -79,7 +79,7 @@ The following HTTP headers are used by the eagle.io API:
     Header                      Value               Required    Description
     =========================   =================   =========   ===============================================================================
     X-Api-Key                   YOUR_API_KEY        Yes         Unique API authentication key generated 
-                                                                from :ref:`user preferences <user-preferences>`
+                                                                from :ref:`account settings <management-security-apikeys>`
     Content-Type                application/json    Yes         All requests containing JSON data in the body must specify this header
     Content-Encoding            gzip                No          Request body is gzip compressed
     Accept-Encoding             gzip                No          Response will use gzip compression when content-length exceeds 1024 bytes
