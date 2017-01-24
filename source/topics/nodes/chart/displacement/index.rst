@@ -90,7 +90,12 @@ Series time format
 
 Measurement baseline
     *Absolute:* Measurements are not modified.
-    *Relative:* Measurements from initial series are subtracted from all subsequent series.
+
+    *Relative to first value in range:* Measurements from first series in requested range are subtracted from all subsequent series.
+
+    *Relative to first recorded value:* Measurements from first series in parameter history are subtracted from all subsquent series.
+
+    *Relative to fixed time:* Measurements from series at a user-defined time are subtracted from all subsquent series. Select the time from the control below this option.
 
 Measurement process
     Processing to apply to all measurement values. *Raw* will not apply any processing. *Sum from Start* and *Sum from End* will totalise measurement values.
