@@ -404,10 +404,10 @@ Format
 	*Row series* should be used when each row (line) in the file represents a single series or sensor.
 
 Labels row
-	If your file contains a labels header row, you can specify the corresponding line number or click the row number in the Parser Preview. The corresponding row will be highlighted *BLUE* and the column values will be used as the column labels. Labels are shown for convenience, but you can assign any valid names to the parameters during or after creation.
+	If your file contains a labels header row you can specify the corresponding line number or click the row number in the Parser Preview. The corresponding row will be highlighted and the column values will be used as the column labels. Labels are shown for convenience, but you can assign any valid names to the parameters during or after creation.
 
 Units row
-	If your file contains a units header row, you can specify the corresponding line number or right-click the row number in the Parser Preview. The corresponding row will be highlighted *BLUE* and the associated column values will be used as the default units. You can change the units during or after parameter creation.
+	If your file contains a units header row (and your using *Column series* format) you can specify the corresponding line number or right-click the row number in the Parser Preview. The corresponding row will be highlighted and the associated column values will be used as the default units. You can change the units during or after parameter creation.
 
 Text qualifier
 	Specify the character used to surround text values. This character will be automatically stripped if it exists in a column. Select a qualifier from the drop down or enter a custom character to use.
@@ -482,7 +482,7 @@ Row Series Format
 This format should be used when each row (line in file) represents a single series or sensor. Every row must contain a timestamp, unique identifier for the sensor (Series ID) and a value.
 The parser preview will only display rows with unique Series ID's. 
 The sample input file may not contain all the possible Series ID's, so you can click the *Add new series* button and enter additional Series ID's as required. 
-Ensure the correct data type is set for each series.
+Ensure the correct data type is set for all series.
 
 *Input Text File*
 
