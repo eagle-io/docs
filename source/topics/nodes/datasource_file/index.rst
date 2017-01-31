@@ -398,6 +398,11 @@ General settings are used to specify file format and encoding options.
 Column delimiter
 	Specify the :term:`delimiter` used to separate values in each line of the file. Select a delimiter from the drop down or enter a custom character to use.
 
+Format
+	Select the record format of the file. 
+	*Column series* should be used when each column in the file represents a single series or sensor. 
+	*Row series* should be used when each row (line) in the file represents a single series or sensor.
+
 Labels row
 	If your file contains a labels header row, you can specify the corresponding line number or click the row number in the Parser Preview. The corresponding row will be highlighted *BLUE* and the column values will be used as the column labels. Labels are shown for convenience, but you can assign any valid names to the parameters during or after creation.
 
@@ -422,7 +427,11 @@ Reset to defaults
     
 File Contents
 ~~~~~~~~~~~~~
-The Parser extracts a sample from the beginning of the input text file and attempts to split the file into columns based on the current Column delimiter.
+The Parser extracts a sample from the beginning of the input text file and attempts to split the file into columns based on the current Column delimiter and Format.
+
+Column Series Format
+```````````````````````
+This format should be used when each column represents a single series or sensor. Every row is considered a record and must contain a timestamp. 
 
 *Input Text File*
 
@@ -432,7 +441,7 @@ The Parser extracts a sample from the beginning of the input text file and attem
 
 .. only:: not latex
 
-	.. image:: parser_file_01.png
+	.. image:: parser_file_column.jpg
 		:scale: 50 %
 
 	| 
@@ -441,7 +450,7 @@ The Parser extracts a sample from the beginning of the input text file and attem
 	
 	| 
 
-	.. image:: parser_file_01.png
+	.. image:: parser_file_column.jpg
 		:scale: 50 %
 
 *Parser Preview*
@@ -452,7 +461,7 @@ The Parser extracts a sample from the beginning of the input text file and attem
 
 .. only:: not latex
 
-	.. image:: parser_preview.jpg
+	.. image:: parser_preview_column.jpg
 		:scale: 50 %
 
 	| 
@@ -461,15 +470,21 @@ The Parser extracts a sample from the beginning of the input text file and attem
 	
 	| 
 
-	.. image:: parser_preview.jpg
+	.. image:: parser_preview_column.jpg
 
 .. only:: not latex
 
     |
-    
-Columns and Data Type Selection
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Columns are assigned a series data type which determine how they should be processed and the type of Parameter that will be available for creation. Use the data type drop down at the top of each column to select a data type from the available options. Columns that does not match the selected series data type are displayed in *RED*. Hover over a table cell in the Parser Preview to display a tooltip (where valid) showing how the raw data will be interpreted by the parser.
+
+
+Row Series Format
+```````````````````````
+This format should be used when each row (line in file) represents a single series or sensor. Every row must contain a timestamp, unique identifier for the sensor (Series ID) and a value.
+The parser preview will only display rows with unique Series ID's. 
+The sample input file may not contain all the possible Series ID's, so you can click the *Add new series* button and enter additional Series ID's as required. 
+Ensure the correct data type is set for each series.
+
+*Input Text File*
 
 .. raw:: latex
 
@@ -477,7 +492,7 @@ Columns are assigned a series data type which determine how they should be proce
 
 .. only:: not latex
 
-	.. image:: parser_column.png
+	.. image:: parser_file_row.jpg
 		:scale: 50 %
 
 	| 
@@ -486,20 +501,93 @@ Columns are assigned a series data type which determine how they should be proce
 	
 	| 
 
-	.. image:: parser_column.png
+	.. image:: parser_file_row.jpg
+		:scale: 50 %
+
+*Parser Preview*
+
+.. raw:: latex
+
+    \vspace{-10pt}
+
+.. only:: not latex
+
+	.. image:: parser_preview_row.jpg
+		:scale: 50 %
+
+	| 
+
+.. only:: latex
+	
+	| 
+
+	.. image:: parser_preview_row.jpg
+
+.. only:: not latex
+
+    |
+    
+Columns and Data Type Selection
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In *Column Series* format, columns are assigned a series data type which determines how they should be processed and the type of Parameter that will be available for creation. 
+
+.. raw:: latex
+
+    \vspace{-10pt}
+
+.. only:: not latex
+
+	.. image:: parser_types_column.jpg
+		:scale: 50 %
+
+	| 
+
+.. only:: latex
+	
+	| 
+
+	.. image:: parser_types_column.jpg
 		:scale: 35 %
 
+In *Row Series* format, columns are assigned as *Record Time*, *Series ID*, *Value* or *Disabled*. 
+The column that is assigned as the *Value* column has individual data types assigned per row.
+
+.. raw:: latex
+
+    \vspace{-10pt}
+
+.. only:: not latex
+
+	.. image:: parser_types_row.jpg
+		:scale: 50 %
+
+	| 
+
+.. only:: latex
+	
+	| 
+
+	.. image:: parser_types_row.jpg
+		:scale: 35 %
+
+Use the data type drop down menu in the column/row to select a data type from the available options. 
+Individual cells that do not match the selected series data type are displayed in *RED*. 
+Hover over a cell in the Parser Preview to display a tooltip (where valid) showing how the raw data will be interpreted by the parser.
+
+Series Data Types
+`````````````````
+
 Number
-	Interpret column data as numeric. Can be created as a Number Parameter and suitable for both analog and digital data.
+	Interpret data as numeric. Can be created as a Number Parameter and suitable for both analog and digital data.
 
 Boolean
-	Interpret column data as Boolean only. Can be created as a special Number Parameter with predefined states and accepts boolean data as text (TRUE or FALSE) or numberic (0 or 1).
+	Interpret data as Boolean only. Can be created as a special Number Parameter with predefined states and accepts boolean data as text (TRUE or FALSE) or numberic (0 or 1).
 
 Text
-	Interpret column data as Text. Create a Text Parameter from the column.
+	Interpret data as Text. Create a Text Parameter from the column.
 
 Time
-	Interpret column data as Time. You need to specify the time format using the Joins and Parser Configuration section. You can create a Time Parameter from the column.
+	Interpret data as Time. You need to specify the time format using the Joins and Parser Configuration section. You can create a Time Parameter from the column.
 
 Disabled
 	The column will be *GREY* in the Parser Preview and will not be available for Parameter creation. Setting an unused column to Disabled is optional. It has been added for convenience when working with files with lots of columns.
@@ -517,7 +605,7 @@ Coordinates
     
 Joins and Parser Configuration
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-|icon-properties| The Joins and Parser Configuration section (available from the properties icon at the top of each column) is used to customize the parser for individual columns including joins, formatting and specifying quality data.
+|icon-properties| The Joins and Parser Configuration section (available from the properties icon at the top of each column or in each row of the Value column for Row Series format) is used to customize the parser for individual columns/series including joins, formatting and specifying quality.
 
 Data values in input files are commonly split into separate fields and therefore will be shown as different columns in the Parser Preview. It is necessary to ensure each column you would like to use for Parameter creation has all joins/fields defined.
 
