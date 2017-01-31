@@ -626,7 +626,7 @@ Data values in input files are commonly split into separate fields and therefore
 
 	.. image:: parser_join_time.jpg
 
-You can join additional columns via the *Add New* row. Select the column to join from the Joins drop down and the Field to be assigned. Columns are joined in the order they are displayed (top to bottom) and the result is shown in the Parser Preview. 
+You can join additional columns via the *Add join* button. Select the column to join from the Joins drop down and the Field to be assigned. Columns are joined in the order they are displayed (top to bottom) and the result is shown in the Parser Preview. 
 
 Re-order any join/field by hovering over the item with a mouse to reveal the grab handle. Click and drag the grab handle to reposition the item in the list.
 
@@ -649,9 +649,9 @@ Re-order any join/field by hovering over the item with a mouse to reveal the gra
 
 .. raw:: latex
 
-    \newpage
+    \newpage    
 
-You may need to split or exclude data within a single column. Add a Separator field match and exclude specific text (as specified in the Separator format field).
+You may need to split or exclude data within a single column. Add a Separator field and exclude specific text (as specified in the Separator format field).
 
 .. raw:: latex
 
@@ -669,6 +669,29 @@ You may need to split or exclude data within a single column. Add a Separator fi
 	| 
 
 	.. image:: parser_join_coordinates.jpg
+
+.. raw:: latex
+
+    \newpage
+
+When using *Row Series* format, column joins and data type for the *Value* column must be configured per series. Use the dropdown data type selector and properties toggle button for each series/row.
+
+.. raw:: latex
+
+    \vspace{-10pt}
+
+.. only:: not latex
+
+	.. image:: parser_join_row.jpg
+		:scale: 50 %
+
+	| 
+
+.. only:: latex
+	
+	| 
+
+	.. image:: parser_join_row.jpg
 
 .. raw:: latex
 
