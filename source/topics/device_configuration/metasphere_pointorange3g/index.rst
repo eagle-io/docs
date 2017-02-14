@@ -162,7 +162,7 @@ The following settings should be assigned in the **FTP** section:
 Username
     Use the unique *FTP user* generated during Data Source creation.
 Password
-    Use the password you assigned during Data Source creation (or leave blank for none).
+    Use the password you assigned during Data Source creation (or set to ‘pass’ for none).
 CSV Location
     /
 Protocol
