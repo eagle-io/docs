@@ -1012,12 +1012,12 @@ Update Data Source historic data
 Update historic data for multiple parameters via a Data Source node **id**. You can use the automatically assigned *_id* or your own *customId* prepended with '@'. 
 Data can be inserted in JSON (:ref:`JTS <historic-jts>`) format. New parameters will be automatically created.
 
-The JTS Document must contain header columns. Each column must either specify a parameter **id** or **name**. 
+The JTS Document must contain header columns. Each column must either specify a **series** or parameter **id**. 
 If **id** is provided it will be used to match to the associated parameter under the current Data Source, otherwise 
-the associated parameter will be matched using the **name** attribute.
+the associated parameter will be matched using the **series** attribute.
 
-If a column specified in the header can not be matched to an existing parameter (and **name** was provided), a new parameter will be created automatically. 
-Optionally specify the **dataType** (NUMBER, TEXT, TIME. Default is NUMBER) and **units** in the column header which will be used when creating the new parameter.
+If a column specified in the header can not be matched to an existing parameter (and **series** was provided), a new parameter will be created automatically. 
+Optionally specify **name**, **dataType** (NUMBER, TEXT, TIME. Default is NUMBER) and **units** in the column header which will be used when creating new parameters.
 
 .. note:: 
     Only available for Datasource nodes. 
@@ -1062,6 +1062,7 @@ Request
         "header" : {
             "columns": {
                 "0": {
+                    "series": "temp1",
                     "name": "Temperature",
                     "dataType": "NUMBER",
                     "units": "°C"
@@ -1074,15 +1075,15 @@ Request
         "data": [
             { 
                 "ts": "2014-09-17T07:30:00Z",
-                "f": { "0": {"v": 25.05 } }
+                "f": { "0": { "v": 25.05 } }
             },
             { 
                 "ts": "2014-09-17T07:40:00Z",
-                "f": { "0": {"v": 25.20 } }
+                "f": { "0": { "v": 25.20 } }
             },
             { 
                 "ts": "2014-09-17T07:50:00Z",
-                "f": { "0": {"v": 25.14 }, "1": {"v": "text data here"} }
+                "f": { "0": { "v": 25.14 }, "1": { "v": "text data here" } }
             }
         ]
     }
