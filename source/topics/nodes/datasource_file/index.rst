@@ -99,6 +99,10 @@ Configure how you would like to connect to your file(s).
 Transport type
 	Select the transport used to acquire files:
 
+	*None*
+
+		Select this option when data will arrive exclusively via the :ref:`HTTP API <api>` or manually imported.
+
 	*Download from FTP site*
 		
 		Connect to a specific FTP Server to collection data files. Note: FTP is supported in `passive mode <http://en.wikipedia.org/wiki/File_Transfer_Protocol>`_ only.
