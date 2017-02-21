@@ -11,7 +11,7 @@ List
 Sort rows in the list by clicking on column headers. 
 
 List rows are temporarily highlighted immedietly following an update. Rows will be shown with a *RED* background to indicate active alarms on the Node or one of its contained Nodes. Rows with acknowledged alarms will be shown with an *ORANGE* background.
-Rows will be *GREY* for Sources that have not been fully configured.
+Rows will be shown in *GREY* if the corresponding node configuration has not been finalised (Sources) or the parameter is not linked to the Data Source for automatic collection (Parameters).
 
 .. only:: not latex
 
