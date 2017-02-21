@@ -101,7 +101,7 @@ Transport type
 
 	*None*
 
-		Select this option when data will arrive exclusively via the :ref:`HTTP API <api>` or manually imported.
+		Select this option when data will arrive exclusively via the :ref:`HTTP API <api>` or :ref:`manually imported <historic-data-import>`.
 
 	*Download from FTP site*
 		
