@@ -4,8 +4,8 @@ Dashboard
 =========
 |icon-dash| Dashboards allow users to create customized views of their data in visually appealing layouts using animated gauges, charts, lists, maps and other graphical controls.
 
-Dashboards contain user configurable tiles which can be linked to Nodes to display your important data in real-time with live updates.
-Tile layout is automatically adjusted to best suit your display device.
+Dashboards contain user configurable tiles which can be linked to Nodes to display your important data in real-time with live updates. 
+Tile layout is automatically adjusted on mobile devices.
 
 .. only:: not latex
 
