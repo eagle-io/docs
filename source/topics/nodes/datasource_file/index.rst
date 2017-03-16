@@ -133,6 +133,22 @@ Transport type
 		Optionally specify the login username and password as part of the URL if HTTP Basic authentication is required. 
 		eg. *http://user:password@company.com/file.csv*.
 
+		Special tags can be inserted in the URL which will be replaced with dynamic values prior to acquisition. The tags are surrounded by double curly brackets.
+		We currently support the following tags:
+			STR(Source.currentTime,':ref:`<timeformat> <time-format-tokens>`')
+				Current time of the Data Source (most recent data timestamp).
+				
+			STR(TIME(':ref:`<opc> <relative-time>`'),':ref:`<timeformat> <time-format-tokens>`’)
+				Relative time
+
+		An example of a URL with dynamic tags to request data from last collection to now:
+		::
+			http://data.com/?start={{STR(Source.currentTime,'YYYY.MM.DD')}}&end={{STR(TIME('NOW'),'YYYY.MM.DD')}}
+
+		Outputs a URL similar to:
+		::
+			http://data.com/?start=2015.01.01&end=2017.12.01
+
 	*Email to eagle.io*
 
 		Email data using the auto-generated email address exactly as shown.
