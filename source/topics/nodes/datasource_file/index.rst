@@ -141,11 +141,11 @@ Transport type
 			STR(TIME(':ref:`<opc> <relative-time>`'),':ref:`<timeformat> <time-format-tokens>`’)
 				Relative time
 
-		An example of a URL with dynamic tags to request data from last collection to now:
+		An example of a URL with special tags to request data from last collection to now
 		::
 			http://data.com/?start={{STR(Source.currentTime,'YYYY.MM.DD')}}&end={{STR(TIME('NOW'),'YYYY.MM.DD')}}
 
-		Outputs a URL similar to:
+		Outputs a URL similar to
 		::
 			http://data.com/?start=2015.01.01&end=2017.12.01
 
