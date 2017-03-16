@@ -141,7 +141,7 @@ Transport type
 			STR(TIME(':ref:`<opc> <relative-time>`'),':ref:`<timeformat> <time-format-tokens>`’)
 				Relative time
 
-		An example of a URL with special tags to request data from last collection to now
+		An example URL with special tags to request data from last collection to now
 		::
 			http://data.com/?start={{STR(Source.currentTime,'YYYY.MM.DD')}}&end={{STR(TIME('NOW'),'YYYY.MM.DD')}}
 
