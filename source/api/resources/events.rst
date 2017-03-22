@@ -71,7 +71,7 @@ Arguments
                                                 Skip the first *n* records returned. Can be used with 
                                                 ``limit`` to paginate results
 
-    **sort**            createdTime(DESC)       *Optional*. 
+    **sort**            eventTime(DESC)         *Optional*. 
                                                 Comma delimited list of attributes to sort by. Optionally 
                                                 include sort direction in parentheses or default to ASC: 
                                                 *[ASC, DESC]*
