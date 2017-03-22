@@ -105,7 +105,7 @@ Transport type
 
 	*Download from FTP site*
 		
-		Connect to a specific FTP Server to collection data files. Note: FTP is supported in `passive mode <http://en.wikipedia.org/wiki/File_Transfer_Protocol>`_ only.
+		Connect to an external FTP Server to acquire data files. Note: FTP is supported in `passive mode <http://en.wikipedia.org/wiki/File_Transfer_Protocol>`_ only.
 
 		FTP host
 			Host name or IP address of the FTP Server.
@@ -157,6 +157,22 @@ Transport type
 			For added security you can filter by sender email address. Restrict to a specific email address or to a specific domain. eg. user@company.com or @company.com. Leave blank for no restriction.
 
 		**Note**: The maximum accepted size per email (including all data files) is 25MB.
+
+	*Read from Amazon S3*
+
+		Connect to an Amazon S3 bucket to acquire data files.
+
+		Bucket
+			Unique S3 bucket name. eg. my.aws.bucket
+
+		Access key Id
+			User access key Id (generated from AWS Console).
+
+		Secret
+			Secret token associated with access key.
+
+		**Note**: Matching files will be removed from S3 after acquire.
+
 
 	*Read from Dropbox*
 

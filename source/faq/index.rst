@@ -310,11 +310,13 @@ What file transports do you support for automatic collection?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 We support automatic collection via the following transports: 
 
-- Read from `Dropbox <http://www.dropbox.com>`_
-- Email to eagle.io
-- Upload to ftp.eagle.io
 - Download from FTP site
-- Download from web site
+- Download from Web site
+- Email to eagle.io
+- Read from `Amazon S3 <https://aws.amazon.com/s3>`_
+- Read from `Dropbox <http://www.dropbox.com>`_
+- Upload to ftp.eagle.io
+
 
 .. only:: not latex
 
