@@ -15,4 +15,5 @@ Refer to the :ref:`Quick Start <api-overview>` guide for instructions on using t
     nodes
     historic
     devices
+    events
     owners
