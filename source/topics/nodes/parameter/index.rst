@@ -193,10 +193,17 @@ Name
     Assign a unique name for each State. The *NORMAL* State (Range States) can not be renamed or removed.
 
 Threshold
-    States positioned above *NORMAL* will be active when the parameter value increases to this threshold. States positioned below *NORMAL* will be active when the parameter value decreases to this threshold. Applies to *Range States* only.
+    States positioned above *NORMAL* will be active when the parameter value increases to this threshold. 
+    States positioned below *NORMAL* will be active when the parameter value decreases to this threshold. 
+    Optionally use the dropdown menu to specify the minimum number of **repeat values** at or beyond threshold required to trigger this state. Default *1x*. 
+    
+    Applies to *Range States* only.
 
 Match
-    Specify the numeric value to match (*Number Parameters*) or text that is contained within the parameter value (*Text Parameters*). Applies to *Discrete States* only.
+    Specify the numeric value to match (*Number Parameters*) or text that is contained within the parameter value (*Text Parameters*). 
+    Optionally use the dropdown menu to specify the minimum number of matching **repeat values** required to trigger this state. Default *1x*. 
+    
+    Applies to *Discrete States* only.
 
 Raise alarm
     Check this option to raise an :ref:`alarm <alarms-and-notifications>` when this state becomes active. 

@@ -535,6 +535,9 @@ Refer to :ref:`Parameter states<node-configuration-parameter>` for further infor
     **threshold**                       Variable    *Required*. Unique threshold value for the state. 
                                                     Number parameters require a *Double*. 
                                                     Text parameters require a *String*.
+    **occurrences**                     Int32       *Optional - Default is 1*.
+                                                    Minimum number of repeat values equal or beyond threshold required to
+                                                    trigger state: *1-9*.
     **isAlarm**                         Boolean     *Optional - Default is FALSE*. 
                                                     Flag to indicate if this state should raise an alarm. 
                                                     Not valid for *NORMAL* RANGE state.
@@ -567,6 +570,7 @@ Example replacing DISCRETE states
             {
                 "name": "ON",
                 "threshold": 1,
+                "occurrences": 1,
                 "isAlarm": true,
                 "notify": "ALWAYS",
                 "categoryId": "52969367593a1a3a32000012"
@@ -617,6 +621,7 @@ Example replacing RANGE states
             {
                 "name": "CRITICAL",
                 "threshold": 100,
+                "occurrences": 2,
                 "isAlarm": true,
                 "notify": "ALWAYS",
                 "categoryId": "52969367593a1a3a32000012"
