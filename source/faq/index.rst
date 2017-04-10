@@ -269,8 +269,8 @@ Scout
 Meshlium
 	Meshlium devices provide efficient routing of data collected from Waspmote devices in large Libelium sensor networks.
 
-FTP & Email
-	Send your data to the cloud via FTP or Email.
+FTP, Email, MQTT
+	Send your data to the cloud via FTP, Email or MQTT.
 
 .. only:: not latex
 
@@ -313,6 +313,7 @@ We support automatic collection via the following transports:
 - Download from FTP site
 - Download from Web site
 - Email to eagle.io
+- Publish using MQTT
 - Read from `Amazon S3 <https://aws.amazon.com/s3>`_
 - Read from `Dropbox <http://www.dropbox.com>`_
 - Upload to ftp.eagle.io

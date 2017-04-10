@@ -34,31 +34,31 @@ The general section allows you to specify the type file(s) you would like to col
 
 .. only:: not latex
 
-	.. image:: datasource_file_general.jpg
-		:scale: 50 %
+    .. image:: datasource_file_general.jpg
+        :scale: 50 %
 
-	| 
+    | 
 
 .. only:: latex
 
-	| 
+    | 
 
-	.. image:: datasource_file_general.jpg
+    .. image:: datasource_file_general.jpg
 
 Source Enabled
-	Uncheck the Source Enabled checkbox to stop collection and prevent alarms and notifications from triggering.
+    Uncheck the Source Enabled checkbox to stop collection and prevent alarms and notifications from triggering.
 
 File type
-	Select the type of file(s) you would like to collect. The file type must be selected during datasource creation and can not be changed.
+    Select the type of file(s) you would like to collect. The file type must be selected during datasource creation and can not be changed.
 
-	*Delimited Text* 
+    *Delimited Text* 
 
-		Data is stored as rows of values separated with a specific :term:`delimiter` character.
+        Data is stored as rows of values separated with a specific :term:`delimiter` character.
 
-	*JSON Time Series*
+    *JSON Time Series*
 
-		Data is stored in the :ref:`JSON Time Series <historic-jts>` format. 
-		Note: JTS files to be acquired must contain a *columns* header that specifies *name* and *dataType* of each column included in the *data*.
+        Data is stored in the :ref:`JSON Time Series <historic-jts>` format. 
+        Note: JTS files to be acquired must contain a *columns* header that specifies *name* and *dataType* of each column included in the *data*.
 
 Write mode
     Select how acquired data will be written:
@@ -84,139 +84,152 @@ Configure how you would like to connect to your file(s).
     \vspace{-10pt}
 
 .. only:: not latex
-	
-	.. image:: datasource_file_connection.jpg
-		:scale: 50 %
+    
+    .. image:: datasource_file_connection.jpg
+        :scale: 50 %
 
-	| 
+    | 
 
 .. only:: latex
-	
-	| 
+    
+    | 
 
-	.. image:: datasource_file_connection.jpg
+    .. image:: datasource_file_connection.jpg
 
 Transport type
-	Select the transport used to acquire files:
+    Select the transport used to acquire files:
 
-	*None*
+    *None*
 
-		Select this option when data will arrive exclusively via the :ref:`HTTP API <api>` or :ref:`manually imported <historic-data-import>`.
+        Select this option when data will arrive exclusively via the :ref:`HTTP API <api>` or :ref:`manually imported <historic-data-import>`.
 
-	*Download from FTP site*
-		
-		Connect to an external FTP Server to acquire data files. Note: FTP is supported in `passive mode <http://en.wikipedia.org/wiki/File_Transfer_Protocol>`_ only.
+    *Download from FTP site*
+        
+        Connect to an external FTP Server to acquire data files. Note: FTP is supported in `passive mode <http://en.wikipedia.org/wiki/File_Transfer_Protocol>`_ only.
 
-		FTP host
-			Host name or IP address of the FTP Server.
+        FTP host
+            Host name or IP address of the FTP Server.
 
-		Port
-			TCP Port to use for connection to the FTP Server. Default Port 21 for standard FTP/FTPS or 990 for FTP with Implicit SSL.
+        Port
+            TCP Port to use for connection to the FTP Server. Default Port 21 for standard FTP/FTPS or 990 for FTP with Implicit SSL.
 
-		Mode
-			FTP Secure connection options. Use *FTP* for standard connection or choose an available *FTPS* mode. Consult your network administrator to verify the settings required for connection to your FTP Server.
+        Mode
+            FTP Secure connection options. Use *FTP* for standard connection or choose an available *FTPS* mode. Consult your network administrator to verify the settings required for connection to your FTP Server.
 
-		Remote path
-			Specifiy the base remote path on the FTP Server that you have accesss to. You can retrieve files from sub-directories within this path.
+        Remote path
+            Specifiy the base remote path on the FTP Server that you have accesss to. You can retrieve files from sub-directories within this path.
 
-		User
-			Specifiy the name of the user account for the system to use when connecting to the FTP Server. Enter *anonymous* if no user account is required.
+        User
+            Specifiy the name of the user account for the system to use when connecting to the FTP Server. Enter *anonymous* if no user account is required.
 
-		Password
-			Password for the associated user account (or leave blank for none).
+        Password
+            Password for the associated user account (or leave blank for none).
 
-	*Download from Web site*
+    *Download from Web site*
 
-		No configuration required.
+        No configuration required.
 
-		The File URL (when adding file) must start with *http://* or *https://*. 
-		Optionally specify the login username and password as part of the URL if HTTP Basic authentication is required. 
-		eg. *http://user:password@company.com/file.csv*.
+        The File URL (when adding file) must start with *http://* or *https://*. 
+        Optionally specify the login username and password as part of the URL if HTTP Basic authentication is required. 
+        eg. *http://user:password@company.com/file.csv*.
 
-		Special tags can be inserted in the URL which will be replaced with dynamic values prior to acquisition. The tags are surrounded by double curly brackets.
-		We currently support the following tags:
-			STR(Source.currentTime,':ref:`<timeformat> <time-format-tokens>`')
-				Current time of the Data Source (most recent data timestamp).
-				
-			STR(TIME(':ref:`<opc> <relative-time>`'),':ref:`<timeformat> <time-format-tokens>`’)
-				Relative time
+        Special tags can be inserted in the URL which will be replaced with dynamic values prior to acquisition. The tags are surrounded by double curly brackets.
+        We currently support the following tags:
+            STR(Source.currentTime,':ref:`<timeformat> <time-format-tokens>`')
+                Current time of the Data Source (most recent data timestamp).
 
-		An example URL with special tags to request data from last collection to now
-		::
-			http://data.com/?start={{STR(Source.currentTime,'YYYY.MM.DD')}}&end={{STR(TIME('NOW'),'YYYY.MM.DD')}}
+            STR(TIME(':ref:`<opc> <relative-time>`'),':ref:`<timeformat> <time-format-tokens>`’)
+                Relative time
 
-		Outputs a URL similar to
-		::
-			http://data.com/?start=2015.01.01&end=2017.12.01
+        An example URL with special tags to request data from last collection to now
+        ::
+            http://data.com/?start={{STR(Source.currentTime,'YYYY.MM.DD')}}&end={{STR(TIME('NOW'),'YYYY.MM.DD')}}
 
-	*Email to eagle.io*
+        Outputs a URL similar to
+        ::
+            http://data.com/?start=2015.01.01&end=2017.12.01
 
-		Email data using the auto-generated email address exactly as shown.
+    *Email to eagle.io*
 
-		Sender address filter
-			For added security you can filter by sender email address. Restrict to a specific email address or to a specific domain. eg. user@company.com or @company.com. Leave blank for no restriction.
+        Email data using the auto-generated email address exactly as shown.
 
-		**Note**: The maximum accepted size per email (including all data files) is 25MB.
+        Sender address filter
+            For added security you can filter by sender email address. Restrict to a specific email address or to a specific domain. eg. user@company.com or @company.com. Leave blank for no restriction.
 
-	*Read from Amazon S3*
+        **Note**: The maximum accepted size per email (including all data files) is 25MB.
 
-		Connect to an Amazon S3 bucket to acquire data files.
+    *Public to mqtt.eagle.io*
 
-		Bucket
-			Unique S3 bucket name. eg. my.aws.bucket
+        Publish data with MQTT using the following settings:
 
-		Access key Id
-			User access key Id (generated from AWS Console).
+        Broker address
+            mqtt.eagle.io
 
-		Secret
-			Secret token associated with access key.
+        Broker port
+            Use port 1883 for standard connection or port 8883 for SSL.
 
-		**Note**: Matching files will be removed from S3 after acquire.
+        Topic
+            Use the auto-generated topic exactly as shown. eg. *io/eagle/source/fruit-honey-jacket*
+
+    *Read from Amazon S3*
+
+        Connect to an Amazon S3 bucket to acquire data files.
+
+        Bucket
+            Unique S3 bucket name. eg. my.aws.bucket
+
+        Access key Id
+            User access key Id (generated from AWS Console).
+
+        Secret
+            Secret token associated with access key.
+
+        **Note**: Matching files will be removed from S3 after acquire.
 
 
-	*Read from Dropbox*
+    *Read from Dropbox*
 
-		Dropbox is used to connect to a `Dropbox`_ account. An *eagle.io* folder will be created in your Dropbox *Apps* directory where you can place files for collection.
+        Dropbox is used to connect to a `Dropbox`_ account. An *eagle.io* folder will be created in your Dropbox *Apps* directory where you can place files for collection.
 
-		.. only:: not latex
+        .. only:: not latex
 
-			.. image:: datasource_file_connection_dropbox_auth.jpg
-				:scale: 40 %
+            .. image:: datasource_file_connection_dropbox_auth.jpg
+                :scale: 40 %
 
-		.. only:: latex
+        .. only:: latex
 
-			.. image:: datasource_file_connection_dropbox_auth.jpg
-				:scale: 50 %
+            .. image:: datasource_file_connection_dropbox_auth.jpg
+                :scale: 50 %
 
-		When changing the account, a popup window will be displayed which allows you to login to Dropbox and authorise access as shown above.
+        When changing the account, a popup window will be displayed which allows you to login to Dropbox and authorise access as shown above.
 
-	*Upload to ftp.eagle.io*
+    *Upload to ftp.eagle.io*
 
-		Ftp your files to ftp.eagle.io using the auto-generated user name exactly as shown. 
-		Password is optional. 
-		Use Tcp port 21 for standard Ftp and Tcp port 990 for Implicit SSL. 
+        Ftp your files to ftp.eagle.io using the auto-generated user name exactly as shown. 
+        Password is optional. 
+        Use Tcp port 21 for standard Ftp and Tcp port 990 for Implicit SSL. 
 
-		**Note**: Only one concurrent ftp connection is allowed per Source. The maximum accepted size per file is 100MB.
+        **Note**: Only one concurrent ftp connection is allowed per Source. The maximum accepted size per file is 100MB.
 
-	
+    
 
 Read mode
-	Select how data should be read from the file:
+    Select how data should be read from the file:
 
-	*Read all records* will read in the entire file on each acquisition.
-	
-	*Read new records* will only read new data added to the file since last acquisition.
-	
-	Optionally delete files after acquire (not supported on all transports).
+    *Read all records* will read in the entire file on each acquisition.
+    
+    *Read new records* will only read new data added to the file since last acquisition.
+    
+    Optionally delete files after acquire (not supported on all transports).
 
 Retry attempts
-	Select how many retry attempts are made during an acquisition or scheduled collection before the communications is considered failed.
+    Select how many retry attempts are made during an acquisition or scheduled collection before the communications is considered failed.
 
 Retry delay
-	Select the delay between retry attempts. The retry attempts multiplied by the retry delay should not exceed the collection interval.
+    Select the delay between retry attempts. The retry attempts multiplied by the retry delay should not exceed the collection interval.
 
 Communications Alarm
-	See :ref:`Alarms and Notifications <communications-alarm>`.
+    See :ref:`Alarms and Notifications <communications-alarm>`.
 
 .. only:: not latex
 
@@ -234,31 +247,31 @@ Collection is used to specify if and when data should be automatically collected
 
 .. only:: not latex
 
-	.. image:: datasource_file_collection.jpg
-		:scale: 50 %
+    .. image:: datasource_file_collection.jpg
+        :scale: 50 %
 
-	| 
+    | 
 
 .. only:: latex
-	
-	| 
+    
+    | 
 
-	.. image:: datasource_file_collection.jpg
+    .. image:: datasource_file_collection.jpg
 
 Scheduled
-	Enable the schedule for automatic data collection.
+    Enable the schedule for automatic data collection.
 
 Collection interval
-	Select the frequency of the collection.
+    Select the frequency of the collection.
 
 Interval offset
-	Offset the collection interval to prevent collection occuring on the interval. eg. 1 hour collection interval will occur at 9am, 10am, etc. Set an interval offset of 5 minutes and the collection times will be 9:05am, 10:05am, etc.
+    Offset the collection interval to prevent collection occuring on the interval. eg. 1 hour collection interval will occur at 9am, 10am, etc. Set an interval offset of 5 minutes and the collection times will be 9:05am, 10:05am, etc.
 
 Outdated Alarm
-	See :ref:`Alarms and Notifications <outdated-alarm>`.
+    See :ref:`Alarms and Notifications <outdated-alarm>`.
 
 Overload Alarm
-	See :ref:`Alarms and Notifications <overload-alarm>`.
+    See :ref:`Alarms and Notifications <overload-alarm>`.
 
 .. only:: not latex
 
@@ -276,45 +289,45 @@ The Series section allows you to assign Series from the Source to New or Existin
 
 .. only:: not latex
 
-	.. image:: datasource_file_series.jpg
-		:scale: 50 %
+    .. image:: datasource_file_series.jpg
+        :scale: 50 %
 
-	| 
+    | 
 
 .. only:: latex
-	
-	| 
+    
+    | 
 
-	.. image:: datasource_file_series.jpg
+    .. image:: datasource_file_series.jpg
 
 
 Add Files
-	Add new files to be acquired by the Source (10 files maximum). A list of files will be displayed which are available using the current connection options. Select the new files to be added. You will need to setup the parser configuration for each file added.
+    Add new files to be acquired by the Source (10 files maximum). A list of files will be displayed which are available using the current connection options. Select the new files to be added. You will need to setup the parser configuration for each file added.
 
 Location Coordinates
-	The Source can optionally provide Location Coordinates from a coordinate series or a pair of numeric series (lat/lng). You need to configure the Location and select this Source to be used for its coordinates. Select the file and series to use from the drop down list.
+    The Source can optionally provide Location Coordinates from a coordinate series or a pair of numeric series (lat/lng). You need to configure the Location and select this Source to be used for its coordinates. Select the file and series to use from the drop down list.
 
 Modify file match
-	|icon-file-search| Modify the file configuration and matching criteria and select a sample file to use for configuring series.
-	Some transport types such as Email or FTP Server require you to upload a local sample file or alternatively *Skip or Reset sample file and retrieve on next acquistion*. The *file name match* should uniquely match the name of uploaded file(s). For example use *.csv* to match all files with a csv extension (case-insensitive). Enable the *Match using regular expression* option for advanced matching. 
+    |icon-file-search| Modify the file configuration and matching criteria and select a sample file to use for configuring series.
+    Some transport types such as Email or FTP Server require you to upload a local sample file or alternatively *Skip or Reset sample file and retrieve on next acquistion*. The *file name match* should uniquely match the name of uploaded file(s). For example use *.csv* to match all files with a csv extension (case-insensitive). Enable the *Match using regular expression* option for advanced matching. 
 
 Configure series
-	|icon-table| Setup or Update the parser configuration for the selected file. See :ref:`Text Parser Configuration <text-parser>` for full details. If a sample data file has not been uploaded or acquired the Configure series menu item will be disabled.
+    |icon-table| Setup or Update the parser configuration for the selected file. See :ref:`Text Parser Configuration <text-parser>` for full details. If a sample data file has not been uploaded or acquired the Configure series menu item will be disabled.
 
 Set acquire time
     |icon-calendar| Set or reset the collection pointer for the corresponding table to re-collect its data from the specified date using the Write mode option selected in the General tab.
 
 Remove file
-	|icon-remove| Select this option from the drop down table menu to remove this file from the Source. All parameters associated with the series from the file will be disabled.
+    |icon-remove| Select this option from the drop down table menu to remove this file from the Source. All parameters associated with the series from the file will be disabled.
 
 Parameter Assignment
-	You must assign Series to New or Existing parameters and set the Series for collection by ensuring its checkbox is enabled.
-	Any Parameters assigned to Series will be disabled when the Series is unchecked for collection. 
+    You must assign Series to New or Existing parameters and set the Series for collection by ensuring its checkbox is enabled.
+    Any Parameters assigned to Series will be disabled when the Series is unchecked for collection. 
 
-	Parameters can be re-assigned to new Series at any time without loosing existing historic data.
+    Parameters can be re-assigned to new Series at any time without loosing existing historic data.
 
-	The series icon indicates the :ref:`type of parameter <node-types>` that will be created.
-	Rename and Delete operations should be performed from the Workspaces Tree.
+    The series icon indicates the :ref:`type of parameter <node-types>` that will be created.
+    Rename and Delete operations should be performed from the Workspaces Tree.
 
 .. only:: not latex
 
@@ -355,22 +368,22 @@ Time allows you to configure the timezone of the Source and associated options.
 
 .. only:: not latex
 
-	.. image:: datasource_file_time.jpg
-		:scale: 50 %
+    .. image:: datasource_file_time.jpg
+        :scale: 50 %
 
-	| 
+    | 
 
 .. only:: latex
-	
-	| 
+    
+    | 
 
-	.. image:: datasource_file_time.jpg
+    .. image:: datasource_file_time.jpg
 
 Timezone
-	Select the timezone the Source uses for storing historic data. Choose *(GMT+00:00) UTC* if data timestamps are in UTC.
+    Select the timezone the Source uses for storing historic data. Choose *(GMT+00:00) UTC* if data timestamps are in UTC.
 
 Ignore Daylight Savings Time
-	Check this option if the Source does not offset the data timestamps to account for DST.
+    Check this option if the Source does not offset the data timestamps to account for DST.
 
 
 .. only:: not latex
@@ -395,16 +408,16 @@ The Text Parser allows you to define how a delimited text file should be process
 
 .. only:: not latex
 
-	.. image:: parser_overview.jpg
-		:scale: 50 %
+    .. image:: parser_overview.jpg
+        :scale: 50 %
 
-	| 
+    | 
 
 .. only:: latex
-	
-	| 
+    
+    | 
 
-	.. image:: parser_overview.jpg
+    .. image:: parser_overview.jpg
 
 .. only:: not latex
 
@@ -420,42 +433,42 @@ General settings are used to specify file format and encoding options.
 
 .. only:: not latex
 
-	.. image:: parser_toolbar.jpg
-		:scale: 50 %
+    .. image:: parser_toolbar.jpg
+        :scale: 50 %
 
-	| 
+    | 
 
 .. only:: latex
-	
-	| 
+    
+    | 
 
-	.. image:: parser_toolbar.jpg
+    .. image:: parser_toolbar.jpg
 
 Column delimiter
-	Specify the :term:`delimiter` used to separate values in each line of the file. Select a delimiter from the drop down or enter a custom character to use.
+    Specify the :term:`delimiter` used to separate values in each line of the file. Select a delimiter from the drop down or enter a custom character to use.
 
 Format
-	Select the record format of the file. 
-	*Column series* should be used when each column in the file represents a single series or sensor. 
-	*Row series* should be used when each row (line) in the file represents a single series or sensor.
+    Select the record format of the file. 
+    *Column series* should be used when each column in the file represents a single series or sensor. 
+    *Row series* should be used when each row (line) in the file represents a single series or sensor.
 
 Labels row
-	If your file contains a labels header row you can specify the corresponding line number or click the row number in the Parser Preview. The corresponding row will be highlighted and the column values will be used as the column labels. Labels are shown for convenience, but you can assign any valid names to the parameters during or after creation.
+    If your file contains a labels header row you can specify the corresponding line number or click the row number in the Parser Preview. The corresponding row will be highlighted and the column values will be used as the column labels. Labels are shown for convenience, but you can assign any valid names to the parameters during or after creation.
 
 Units row
-	If your file contains a units header row (and your using *Column series* format) you can specify the corresponding line number or right-click the row number in the Parser Preview. The corresponding row will be highlighted and the associated column values will be used as the default units. You can change the units during or after parameter creation.
+    If your file contains a units header row (and your using *Column series* format) you can specify the corresponding line number or right-click the row number in the Parser Preview. The corresponding row will be highlighted and the associated column values will be used as the default units. You can change the units during or after parameter creation.
 
 Text qualifier
-	Specify the character used to surround text values. This character will be automatically stripped if it exists in a column. Select a qualifier from the drop down or enter a custom character to use.
+    Specify the character used to surround text values. This character will be automatically stripped if it exists in a column. Select a qualifier from the drop down or enter a custom character to use.
 
 Text encoding
-	The encoding format of the text file. If you notice special characters displayed incorrectly in the Parser Preview, you may need to change this setting.
+    The encoding format of the text file. If you notice special characters displayed incorrectly in the Parser Preview, you may need to change this setting.
 
 Match
-	*Smart* match will intelligently extract any values from the field that matches the column data type. *Strict* will only extract a value from the field if the entire field contents matches the column data type.
+    *Smart* match will intelligently extract any values from the field that matches the column data type. *Strict* will only extract a value from the field if the entire field contents matches the column data type.
 
 Reset to defaults
-	Resets parser configuration and joins to system defaults.
+    Resets parser configuration and joins to system defaults.
 
 .. only:: not latex
 
@@ -477,17 +490,17 @@ This format should be used when each column represents a single series or sensor
 
 .. only:: not latex
 
-	.. image:: parser_file_column.jpg
-		:scale: 50 %
+    .. image:: parser_file_column.jpg
+        :scale: 50 %
 
-	| 
+    | 
 
 .. only:: latex
-	
-	| 
+    
+    | 
 
-	.. image:: parser_file_column.jpg
-		:scale: 50 %
+    .. image:: parser_file_column.jpg
+        :scale: 50 %
 
 *Parser Preview*
 
@@ -497,16 +510,16 @@ This format should be used when each column represents a single series or sensor
 
 .. only:: not latex
 
-	.. image:: parser_preview_column.jpg
-		:scale: 50 %
+    .. image:: parser_preview_column.jpg
+        :scale: 50 %
 
-	| 
+    | 
 
 .. only:: latex
-	
-	| 
+    
+    | 
 
-	.. image:: parser_preview_column.jpg
+    .. image:: parser_preview_column.jpg
 
 .. only:: not latex
 
@@ -528,17 +541,17 @@ Ensure the correct data type is set for all series.
 
 .. only:: not latex
 
-	.. image:: parser_file_row.jpg
-		:scale: 50 %
+    .. image:: parser_file_row.jpg
+        :scale: 50 %
 
-	| 
+    | 
 
 .. only:: latex
-	
-	| 
+    
+    | 
 
-	.. image:: parser_file_row.jpg
-		:scale: 50 %
+    .. image:: parser_file_row.jpg
+        :scale: 50 %
 
 *Parser Preview*
 
@@ -548,16 +561,16 @@ Ensure the correct data type is set for all series.
 
 .. only:: not latex
 
-	.. image:: parser_preview_row.jpg
-		:scale: 50 %
+    .. image:: parser_preview_row.jpg
+        :scale: 50 %
 
-	| 
+    | 
 
 .. only:: latex
-	
-	| 
+    
+    | 
 
-	.. image:: parser_preview_row.jpg
+    .. image:: parser_preview_row.jpg
 
 .. only:: not latex
 
@@ -573,17 +586,17 @@ In *Column Series* format, columns are assigned a series data type which determi
 
 .. only:: not latex
 
-	.. image:: parser_types_column.jpg
-		:scale: 50 %
+    .. image:: parser_types_column.jpg
+        :scale: 50 %
 
-	| 
+    | 
 
 .. only:: latex
-	
-	| 
+    
+    | 
 
-	.. image:: parser_types_column.jpg
-		:scale: 35 %
+    .. image:: parser_types_column.jpg
+        :scale: 35 %
 
 In *Row Series* format, columns are assigned as *Record Time*, *Series ID*, *Value* or *Disabled*. 
 The column that is assigned as the *Value* column has individual data types assigned per row.
@@ -594,17 +607,17 @@ The column that is assigned as the *Value* column has individual data types assi
 
 .. only:: not latex
 
-	.. image:: parser_types_row.jpg
-		:scale: 50 %
+    .. image:: parser_types_row.jpg
+        :scale: 50 %
 
-	| 
+    | 
 
 .. only:: latex
-	
-	| 
+    
+    | 
 
-	.. image:: parser_types_row.jpg
-		:scale: 35 %
+    .. image:: parser_types_row.jpg
+        :scale: 35 %
 
 Use the data type drop down menu in the column/row to select a data type from the available options. 
 Individual cells that do not match the selected series data type are displayed in *RED*. 
@@ -614,26 +627,26 @@ Series Data Types
 `````````````````
 
 Number
-	Interpret data as numeric. Can be created as a Number Parameter and suitable for both analog and digital data.
+    Interpret data as numeric. Can be created as a Number Parameter and suitable for both analog and digital data.
 
 Boolean
-	Interpret data as Boolean only. Can be created as a special Number Parameter with predefined states and accepts boolean data as text (TRUE or FALSE) or numberic (0 or 1).
+    Interpret data as Boolean only. Can be created as a special Number Parameter with predefined states and accepts boolean data as text (TRUE or FALSE) or numberic (0 or 1).
 
 Text
-	Interpret data as Text. Create a Text Parameter from the column.
+    Interpret data as Text. Create a Text Parameter from the column.
 
 Time
-	Interpret data as Time. You need to specify the time format using the Joins and Parser Configuration section. You can create a Time Parameter from the column.
+    Interpret data as Time. You need to specify the time format using the Joins and Parser Configuration section. You can create a Time Parameter from the column.
 
 Disabled
-	The column will be *GREY* in the Parser Preview and will not be available for Parameter creation. Setting an unused column to Disabled is optional. It has been added for convenience when working with files with lots of columns.
+    The column will be *GREY* in the Parser Preview and will not be available for Parameter creation. Setting an unused column to Disabled is optional. It has been added for convenience when working with files with lots of columns.
 
 Record Time
-	The column to use as the Record Time (timestamp for the line values). There must always be exactly one Record Time column defined. You need to specify the time format using the Joins and Parser Configuration section.
+    The column to use as the Record Time (timestamp for the line values). There must always be exactly one Record Time column defined. You need to specify the time format using the Joins and Parser Configuration section.
 
 Coordinates
-	Interpret column data as Coordinates (Latitude and Longitude). You can only specify one Coordinates column per file (but you can join data from other columns). Use the Joins and Parser Configuration section to specify the Latitude and Longitude fields.
-	If Coordinates (latitude and longitude) are split over multiple columns, you can also just set the data type of the columns as Number and select the individual columns when configuring the Location Coordinates for the Source.
+    Interpret column data as Coordinates (Latitude and Longitude). You can only specify one Coordinates column per file (but you can join data from other columns). Use the Joins and Parser Configuration section to specify the Latitude and Longitude fields.
+    If Coordinates (latitude and longitude) are split over multiple columns, you can also just set the data type of the columns as Number and select the individual columns when configuring the Location Coordinates for the Source.
 
 .. only:: not latex
 
@@ -651,16 +664,16 @@ Data values in input files are commonly split into separate fields and therefore
 
 .. only:: not latex
 
-	.. image:: parser_join_time.jpg
-		:scale: 50 %
+    .. image:: parser_join_time.jpg
+        :scale: 50 %
 
-	| 
+    | 
 
 .. only:: latex
-	
-	| 
+    
+    | 
 
-	.. image:: parser_join_time.jpg
+    .. image:: parser_join_time.jpg
 
 You can join additional columns via the *Add join* button. Select the column to join from the Joins drop down and the Field to be assigned. Columns are joined in the order they are displayed (top to bottom) and the result is shown in the Parser Preview. 
 
@@ -672,16 +685,16 @@ Re-order any join/field by hovering over the item with a mouse to reveal the gra
 
 .. only:: not latex
 
-	.. image:: parser_join_reposition.png
-		:scale: 50 %
+    .. image:: parser_join_reposition.png
+        :scale: 50 %
 
-	| 
+    | 
 
 .. only:: latex
-	
-	| 
+    
+    | 
 
-	.. image:: parser_join_reposition.png
+    .. image:: parser_join_reposition.png
 
 .. raw:: latex
 
@@ -695,16 +708,16 @@ You may need to split or exclude data within a single column. Add a Separator fi
     
 .. only:: not latex
 
-	.. image:: parser_join_coordinates.jpg
-		:scale: 50 %
+    .. image:: parser_join_coordinates.jpg
+        :scale: 50 %
 
-	| 
+    | 
 
 .. only:: latex
-	
-	| 
+    
+    | 
 
-	.. image:: parser_join_coordinates.jpg
+    .. image:: parser_join_coordinates.jpg
 
 .. raw:: latex
 
@@ -718,16 +731,16 @@ When using *Row Series* format, column joins and data type for the *Value* colum
 
 .. only:: not latex
 
-	.. image:: parser_join_row.jpg
-		:scale: 50 %
+    .. image:: parser_join_row.jpg
+        :scale: 50 %
 
-	| 
+    | 
 
 .. only:: latex
-	
-	| 
+    
+    | 
 
-	.. image:: parser_join_row.jpg
+    .. image:: parser_join_row.jpg
 
 .. raw:: latex
 
@@ -743,16 +756,16 @@ All columns can be re-used as joins on other columns. For example you can have m
     
 .. only:: not latex
 
-	.. image:: parser_join_quality.jpg
-		:scale: 50 %
+    .. image:: parser_join_quality.jpg
+        :scale: 50 %
 
-	| 
+    | 
 
 .. only:: latex
-	
-	| 
+    
+    | 
 
-	.. image:: parser_join_quality.jpg
+    .. image:: parser_join_quality.jpg
 
 
 You can optionally specify a **format** and **format filter** to include or exclude the field or the entire record based on the data matching the specified format.
@@ -764,16 +777,16 @@ In the example below all records will be excluded where the data in *Column 6 (Q
     
 .. only:: not latex
 
-	.. image:: parser_join_filter.jpg
-		:scale: 50 %
+    .. image:: parser_join_filter.jpg
+        :scale: 50 %
 
-	| 
+    | 
 
 .. only:: latex
-	
-	| 
+    
+    | 
 
-	.. image:: parser_join_filter.jpg
+    .. image:: parser_join_filter.jpg
 
 .. raw:: latex
 
