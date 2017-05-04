@@ -3,6 +3,20 @@
 	margin-bottom: 0;
 }*/
 
+
+
+/* TEMP  DISABLE SEARCH */
+.wy-side-nav-search {
+	display: none !important;
+}
+.wy-menu-vertical {
+	margin-top: 10px !important;
+	border-top: 0 !important;
+}
+/* -------------------- */
+
+
+
 @import url(https://fonts.googleapis.com/css?family=Merriweather+Sans);
 @import url(https://fonts.googleapis.com/css?family=Oxygen);
 
