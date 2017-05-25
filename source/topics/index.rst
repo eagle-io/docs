@@ -9,6 +9,7 @@ Introductions to all the key parts of `eagle.io <https://eagle.io>`_ you’ll ne
    workspaces_tree/index
    views/index
    nodes/index
+   processing/index
    user_preferences/index
    messages/index
    alarms_and_notifications/index
