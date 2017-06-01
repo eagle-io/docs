@@ -62,7 +62,7 @@ Rename
 The Node will be selected and you can type in a new name and press enter/return or click anywhere outside the Node to apply.
 
 .. note:: 
-	Nodes must be uniquely named within the current container Node. Restricted characters include forward slash '/' and underscore '_'.
+	Nodes must be uniquely named within the current container Node. Restricted characters include forward slash '/', underscore '_' and semicoloon ';'.
 
 .. only:: not latex
 
@@ -108,7 +108,7 @@ Copy *(Ctrl+C)* and Paste *(Ctrl+V)* is the quickest and easiest way to duplicat
 
 Move
 ----
-|icon-move| Move a Node (including all Nodes it contains) within a Workspace or between Workspaces.
+|icon-move| Move a Node (including all Nodes it contains) within a Workspace or between Workspaces. You can also move Workspaces between accounts that you have permission to access.
 
 Select *Move* from the Context Menu to open the *Move dialog* and select a destination node for the move operation.
 
