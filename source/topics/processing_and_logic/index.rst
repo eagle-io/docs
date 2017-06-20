@@ -17,16 +17,21 @@ Process Nodes
 -------------
 There are two types of Nodes that can have a process defined as part of their configuration. The first is any existing Parameter; once a process is written and compiled in the configuration of a Parameter, it becomes a Process Parameter. The second is a special type of Data Source called a Processor.
 
-Process Parameter
-~~~~~~~~~~~~~~~~~
+
+.. _processing-and-logic-process-parameter:
+
+|icon-point-number-range-process| Process Parameter
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 [screenshot of code window showing single return statement]
 
 A Process Parameter can be any existing Parameter which has a process written and compiled in it's configuration. The process can refer to any other Parameters in the Workspace as inputs (even other Process Parameters). The first input that is referred to will be used to define the timestamps used by the output of the process. Each execution of the process must return a single output value. The number of new input values available since the last process execution will determine how many times the process will be executed. This cumulative output is then stored as the time-series values of the Process Parameter, and can then be viewed in the same way as any other Parameter (for example, it can be shown as a table or chart, exported, used as input for a different process, etc.). The output can also have states defined which will trigger alarms, in the same way as any regular Parameter. 
 
 
-Processor
-~~~~~~~~~
+.. _processing-and-logic-processor:
+
+|icon-datasource-processor| Processor
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 [screenshot of code window showing multiple functions and outputs]
 
