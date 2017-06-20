@@ -161,6 +161,33 @@ Data Source
 
     |
 
+.. _process-alarm:
+
+Process Alarm
+~~~~~~~~~~~~~~
+Process Alarms are specific to Processor Sources and Process Parameters. The alarm is triggered (if enabled) when execution of the user-defined process logic fails.
+
+.. raw:: latex
+
+    \vspace{-10pt}
+
+.. only:: not latex
+
+    .. image:: process_alarm.jpg
+        :scale: 50 %
+
+    | 
+
+.. only:: latex
+
+    | 
+
+    .. image:: process_alarm.jpg
+
+.. only:: not latex
+
+    |
+
 .. _quality-alarm:
 
 Quality Alarm
