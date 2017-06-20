@@ -119,6 +119,9 @@ Format
 
     *Time Parameters* use this setting to determine the formatting of the timestamp (leave empty to display timestamps in your default user time format). Select a preset format from the drop down list or specify a custom format using :ref:`time format tokens <time-format-tokens>`.
 
+Quality Alarm
+    See :ref:`Alarms and Notifications <quality-alarm>`.
+
 .. only:: not latex
 
     |
