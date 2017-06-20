@@ -45,7 +45,61 @@ If the communications attempt is not successful during a user acquisition or sch
 .. only:: not latex
 
     |
+
+.. _configuration-alarm:
+
+Configuration Alarm
+~~~~~~~~~~~~~~~~~~~
+Configuration Alarms are specific to data logger Data Sources and are triggered (if enabled) when an error is encountered when applying the user-selected :ref:`configuration <operate-manageconfiguration>` file(s).
+
+.. raw:: latex
+
+    \vspace{-10pt}
+
+.. only:: not latex
+
+    .. image:: configuration_alarm.jpg
+        :scale: 50 %
+
+    | 
+
+.. only:: latex
+
+    | 
+
+    .. image:: configuration_alarm.jpg
+
+.. only:: not latex
+
+    |
     
+.. _control-alarm:
+
+Control Alarm
+~~~~~~~~~~~~~
+Control Alarms are specific to Control Parameters and are triggered (if enabled) when a control operation has failed for any reason other than a communications failure.
+
+.. raw:: latex
+
+    \vspace{-10pt}
+
+.. only:: not latex
+
+    .. image:: control_alarm.jpg
+        :scale: 50 %
+
+    | 
+
+.. only:: latex
+
+    | 
+
+    .. image:: control_alarm.jpg
+
+.. only:: not latex
+
+    |
+
 .. _outdated-alarm:
 
 Outdated Alarm
@@ -106,39 +160,12 @@ Data Source
 .. only:: not latex
 
     |
-    
-.. _configuration-alarm:
 
-Configuration Alarm
-~~~~~~~~~~~~~~~~~~~
-Configuration Alarms are specific to data logger Data Sources and are triggered (if enabled) when an error is encountered when applying the user-selected :ref:`configuration <operate-manageconfiguration>` file(s).
+.. _quality-alarm:
 
-.. raw:: latex
-
-    \vspace{-10pt}
-
-.. only:: not latex
-
-	.. image:: configuration_alarm.jpg
-		:scale: 50 %
-
-	| 
-
-.. only:: latex
-
-	| 
-
-	.. image:: configuration_alarm.jpg
-
-.. only:: not latex
-
-    |
-    
-.. _control-alarm:
-
-Control Alarm
-~~~~~~~~~~~~~
-Control Alarms are specific to Control Parameters and are triggered (if enabled) when a control operation has failed for any reason other than a communications failure.
+Quality Alarm
+~~~~~~~~~~~~~~
+Quality Alarms are specific to Parameters and Locations and are triggered (if enabled) when an acquired data point quality code matches one of the specifed :ref:`quality types <historic-quality>`.
 
 .. raw:: latex
 
@@ -146,16 +173,16 @@ Control Alarms are specific to Control Parameters and are triggered (if enabled)
 
 .. only:: not latex
 
-	.. image:: control_alarm.jpg
-		:scale: 50 %
+    .. image:: quality_alarm.jpg
+        :scale: 50 %
 
-	| 
+    | 
 
 .. only:: latex
 
-	| 
+    | 
 
-	.. image:: control_alarm.jpg
+    .. image:: quality_alarm.jpg
 
 .. only:: not latex
 
@@ -165,7 +192,7 @@ Control Alarms are specific to Control Parameters and are triggered (if enabled)
 
 State Alarm
 ~~~~~~~~~~~
-State Alarms are defined in the state configuration for Parameter Nodes.
+State Alarms are defined in the :ref:`state configuration <node-configuration-parameter-states>` for individual Parameter Nodes.
 Each State can have individual alarm and notification criteria.
 
 .. raw:: latex

@@ -122,7 +122,9 @@ Format
 .. only:: not latex
 
     |
-    
+
+.. _node-configuration-parameter-states:
+
 States
 ~~~~~~~~
 States allow you to define unlimited numbers of *Ranges* or *Discrete* thresholds that uniquely describe the current value of the parameter. 
@@ -207,6 +209,9 @@ Match
 
 Raise alarm
     Check this option to raise an :ref:`alarm <alarms-and-notifications>` when this state becomes active. 
+
+Quality
+    Optionally select a :ref:`quality code <management-general-qualitycodes>` to be applied to newly acquired data that matches this state.
 
 Notifications
     Select when notifications should be sent.

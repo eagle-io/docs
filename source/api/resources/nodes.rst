@@ -467,6 +467,8 @@ Alarm configuration can be included in the update request for Location, Source a
                                                     *[NEVER, ALWAYS, AWAY_FROM_NORMAL, TOWARDS_NORMAL]*.
     **categoryId**                      ObjectId    Id of :ref:`owner category<api-resources-owners>` to assign to this alarm. 
                                                     Required when *notify* option is not *NEVER*
+    **qualityTypes**                    Array       Only valid for *qualityAlarm*. List of quality types that will trigger this
+                                                    alarm: *[GOOD, BAD, UNCERTAIN]*.
     ================================    =========   ===========================================================================
 
 Example::
@@ -479,6 +481,12 @@ Example::
                     "notify": "ALWAYS",
                     "categoryId": "52969367593a1a3a32000012"
                 }
+            },
+            "qualityAlarm": { 
+                "config": { 
+                    "isEnabled": true,
+                    "qualityTypes": ["BAD", "UNCERTAIN"]
+                } 
             },
             "configurationAlarm": { "config": { "isEnabled": false } }
         }
@@ -498,6 +506,8 @@ The alarm types available are specific to the type of node being updated:
     **controlAlarm**           Control parameters
     **outdatedAlarm**          Sources
     **overloadAlarm**          Sources
+    **processAlarm**           Processor Sources, Process Parameters
+    **qualityAlarm**           Locations, Parameters
     **stateAlarm** [1]_        Locations, Parameters
     ========================   ========================================================
 
@@ -554,6 +564,8 @@ Refer to :ref:`Parameter states<node-configuration-parameter>` for further infor
     **messageTowards**                  String      *Optional*.
                                                     Custom message to send when the state becomes inactive (towards normal). 
                                                     Maximum of 255 characters. Leave empty for default message.
+    **qualityCode**                     Int32       *Optional - Default is null*.
+                                                    Quality code to apply to acquired data that matches this state: *0-65535*.
     ================================    =========   ===========================================================================
 
 Example replacing DISCRETE states
@@ -573,9 +585,10 @@ Example replacing DISCRETE states
                 "occurrences": 1,
                 "isAlarm": true,
                 "notify": "ALWAYS",
-                "categoryId": "52969367593a1a3a32000012"
-                "messageAway": "PUMP IS RUNNING"
-                "messageTowards": "PUMP IS OFF"
+                "categoryId": "52969367593a1a3a32000012",
+                "messageAway": "PUMP IS RUNNING",
+                "messageTowards": "PUMP IS OFF",
+                "qualityCode": 192
             }
         ]
     }
@@ -624,7 +637,8 @@ Example replacing RANGE states
                 "occurrences": 2,
                 "isAlarm": true,
                 "notify": "ALWAYS",
-                "categoryId": "52969367593a1a3a32000012"
+                "categoryId": "52969367593a1a3a32000012",
+                "qualityCode": 192
             }
         ]
     }
@@ -654,10 +668,10 @@ Arguments
     =================   ========================    ======================================================================
     Argument            Example                     Description
     =================   ========================    ======================================================================
-    **alarmTypes**      stateAlarm,controlAlarm     *Optional - Default is ALL*. 
+    **alarmTypes**      stateAlarm,qualityAlarm     *Optional - Default is ALL*. 
                                                     Comma delimited list of specific alarms to acknowledge:
                                                     *[communicationsAlarm, configurationAlarm, controlAlarm, 
-                                                    outdatedAlarm, overloadAlarm, stateAlarm]*
+                                                    outdatedAlarm, overloadAlarm, processAlarm, qualityAlarm, stateAlarm]*
     =================   ========================    ======================================================================
 
 
@@ -717,7 +731,7 @@ Arguments
     **alarmTypes**      stateAlarm,controlAlarm     *Optional - Default is ALL*. 
                                                     Comma delimited list of specific alarms to clear:
                                                     *[communicationsAlarm, configurationAlarm, controlAlarm, 
-                                                    outdatedAlarm, overloadAlarm, stateAlarm]*
+                                                    outdatedAlarm, overloadAlarm, processAlarm, qualityAlarm, stateAlarm]*
     =================   ========================    ======================================================================
 
 
