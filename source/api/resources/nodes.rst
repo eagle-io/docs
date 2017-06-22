@@ -554,7 +554,7 @@ Refer to :ref:`Parameter states<node-configuration-parameter>` for further infor
     **notify**                          String      *Optional - Default is NEVER*. 
                                                     When notifications should be triggered:
                                                     *[NEVER, ALWAYS, AWAY_FROM_NORMAL, TOWARDS_NORMAL]*. 
-                                                    DISCRETE states and the *NORMAL* RANGE state is restricted to: 
+                                                    The *NORMAL* RANGE state is restricted to: 
                                                     *[NEVER, ALWAYS]*
     **categoryId**                      ObjectId    Id of :ref:`owner category <api-resources-owners>` to assign to this state. 
                                                     Required when *notify* option is not *NEVER*
