@@ -103,6 +103,12 @@ Exclude quality
     You can optionally choose to exclude *Bad* and *Uncertain* quality coded data from all historic data requests. 
     Excluded data points will not be visible on Charts, Tabular data and Historic API requests.
 
+Unspecified quality
+    Quality to assume when no quality code has been specified.
+
+Unknown quality
+    Quality to assume when the quality code specified does not exist.
+
 Source quality
 	Quality code(s) to match on acquired data. Separate multiple quality codes with a comma.
 
