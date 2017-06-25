@@ -11,11 +11,11 @@ Some examples include:
 - alarm based on mutiple parameter values
 - generate a series forecast to provide predictive alarming
 
-Programs are expressed as JavaScript, stored as configuration in Process Nodes, and executed on a schedule or as new data is acquired. Each program can access any Node within a Workspace and it's associated time-series data.
+Programs are expressed as JavaScript, stored as configuration in Process Nodes, and executed on a schedule or as new data is acquired. Each program can interact with all Nodes in the current Workspace and any associated time-series data.
 
 Process Nodes
 -------------
-There are two types of Nodes that can have a process defined as part of their configuration: Parameter and Data Source.
+There are two types of Nodes that can have a program defined as part of their configuration. The first is a Process Parameter; once a process is written and compiled in the configuration of a Parameter, it becomes a Process Parameter. The second is a special type of Data Source called a Processor.
 
 
 .. _processing-and-logic-process-parameter:
@@ -52,9 +52,7 @@ A Processor is a type of Data Source containing a process that generates multipl
 +-----------------------------+--------------------------------+------------------------------+
 | **Input scope**             | Any Node in the Workspace      | Any Node in the Workspace    |
 +-----------------------------+--------------------------------+------------------------------+
-| **Execution trigger**       | When any input Node is updated | Set by schedule              |
-+-----------------------------+--------------------------------+------------------------------+
-| **Contributes to billing**  | No                             | Yes                          |
+| **Execution trigger**       | On input update                | On input update or schedule  |
 +-----------------------------+--------------------------------+------------------------------+
 
 
