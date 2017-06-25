@@ -15,7 +15,7 @@ Programs are expressed as JavaScript, stored as configuration in Process Nodes, 
 
 Process Nodes
 -------------
-There are two types of Nodes that can have a process defined as part of their configuration. The first is any existing Parameter; once a process is written and compiled in the configuration of a Parameter, it becomes a Process Parameter. The second is a special type of Data Source called a Processor.
+There are two types of Nodes that can have a process defined as part of their configuration: Parameter and Data Source.
 
 
 .. _processing-and-logic-process-parameter:
