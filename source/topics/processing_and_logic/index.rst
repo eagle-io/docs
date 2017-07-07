@@ -90,11 +90,11 @@ Global functions return references to nodes or parameter values which are identi
     :class: table-fluid
 
     =============================   =============================================
-    **NODE(** *path* )              Retrieve node by path
-    **NUMBER(** *path* )            Retrieve NUMBER Parameter by path
-    **TEXT(** *path* )              Retrieve TEXT Parameter by path
-    **TIME(** *path* )              Retrieve TIME Parameter by path
-    **BOOLEAN(** *path* )           Retrieve BOOLEAN Parameter by path
+    **NODE(** *path* **)**              Retrieve node by path
+    **NUMBER(** *path* **)**            Retrieve NUMBER Parameter by path
+    **TEXT(** *path* **)**              Retrieve TEXT Parameter by path
+    **TIME(** *path* **)**              Retrieve TIME Parameter by path
+    **BOOLEAN(** *path* **)**           Retrieve BOOLEAN Parameter by path
     =============================   =============================================
 
 Paths
@@ -114,7 +114,7 @@ Paths are used as arguments in global functions to reference nodes or parameter 
     **Relative**                    ``../Location 2/Source`` 
 
                                     ``../../Workspace`` 
-                                    
+
                                     ``Parameter`` 
     =============================   ================================================================
 
