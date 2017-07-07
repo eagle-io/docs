@@ -67,6 +67,8 @@ Environment
 Global Variables
 ~~~~~~~~~~~~~~~~
 
+Global variables are references to nodes that are related to the currently executing process in some way, and can be accessed using the following built-in keywords:
+
 .. table::
     :class: table-fluid
 
@@ -82,6 +84,8 @@ Global Variables
 Global Functions
 ~~~~~~~~~~~~~~~~
 
+Global functions return references to nodes or parameter values which are identified using a (absolute or relative) path argument.
+
 .. table::
     :class: table-fluid
 
@@ -96,13 +100,22 @@ Global Functions
 Paths
 ~~~~~
 
+Paths are used as arguments in global functions to reference nodes or parameter values, and can be either absolute or relative. An absoute path is any path that starts with a foward slash. Any path that does not start with a foward slash is relative to the currently executing process. Standard UNIX style path syntax is used, so ``..`` refers to the parent in the Workspace tree.
+
 .. table::
     :class: table-fluid
 
     =============================   ================================================================
     \                               Examples
-    **Absolute**                    ``/Workspace/Location/Source/Parameter``, ``/Workspace``
-    **Relative**                    ``../Location 2/Source``, ``../../Workspace``, ``Parameter``
+    **Absolute**                    ``/Workspace/Location/Source/Parameter``
+
+                                    ``/Workspace``
+
+    **Relative**                    ``../Location 2/Source`` 
+
+                                    ``../../Workspace`` 
+                                    
+                                    ``Parameter`` 
     =============================   ================================================================
 
 .. _process-alarm:
