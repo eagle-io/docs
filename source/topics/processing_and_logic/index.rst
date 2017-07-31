@@ -42,19 +42,21 @@ A Processor is a type of Data Source containing a program that generates multipl
 .. table::
     :class: table-fluid
 
-    ======================   ==========================   ===============================
+    ======================   ==========================   ==================================
     \                        Process Parameter            Processor
-    ======================   ==========================   ===============================
+    ======================   ==========================   ==================================
     **Node Type**            Parameter                    Data Source
 
-    **Number of inputs**     3                            20
+    **Number of inputs**     3                            10
 
     **Number of outputs**    Single                       Multiple
 
     **Input scope**          Any Node in the Workspace    Any Node in the Workspace
 
     **Execution trigger**    On input update              On input update or schedule
-    ======================   ==========================   ===============================
+
+    **Output timestamps**    Defined by first input       Defined by first input or schedule
+    ======================   ==========================   ==================================
 
 .. _environment:
 
@@ -66,7 +68,7 @@ Environment
 Global Variables
 ~~~~~~~~~~~~~~~~
 
-Global variables are references to nodes that are related to the currently executing process in some way, and can be accessed using the following built-in keywords:
+Global variables are references to Nodes that are related to the currently executing process in some way, and can be accessed using the following built-in keywords:
 
 .. table::
     :class: table-fluid
@@ -83,7 +85,7 @@ Global variables are references to nodes that are related to the currently execu
 Global Functions
 ~~~~~~~~~~~~~~~~
 
-Global functions return references to nodes or parameter values which are identified using a (absolute or relative) path argument.
+Global functions return either Node references or Parameter values, and are identified using a (absolute or relative) path argument.
 
 .. table::
     :class: table-fluid
@@ -95,6 +97,8 @@ Global functions return references to nodes or parameter values which are identi
     **TIME(** *path* **)**              Retrieve TIME Parameter by path
     **BOOLEAN(** *path* **)**           Retrieve BOOLEAN Parameter by path
     =============================   =============================================
+
+.. _paths:
 
 Paths
 ~~~~~
@@ -117,23 +121,102 @@ Paths are used as arguments in global functions to reference nodes or parameter 
                                     ``Parameter`` 
     =============================   ================================================================
 
+.. _node-attributes-and-values:
+
+Node Attributes and Values
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+A Node reference can be used to access the attributes of that Node, including the data value if the Node is a Parameter. Attributes are accessed via dot notation, for example:
+
+* ``LOCATION.name`` Name of the Location
+* ``WORKSPACE.createdTime`` Creation time of the Workspace
+* ``NUMBER("param1").offset`` Numeric offset of the Number Parameter
+* ``NODE("param2").currentValue`` Current data value of the Parameter
+
+A full reference of :ref:`Node attributes <api-resources-nodes>` is documented as part of the HTTP API.
+
+.. _implicit-node-values:
+
+Implicit Node Values
+~~~~~~~~~~~~~~~~~~~~
+
+Each type of Node reference can be used as an implicit value without using dot notation. For example, the implicit value field of a Parameter is ``currentValue``, so the Node reference can be used as a direct substitue for the current data value of the Node. This means the following two statements will return the same result:
+
+Statement 1, access the current data value of a Node reference using dot notation, add 10 and return the result:
+
+``return NODE("param1").currentValue + 10;``
+
+Statement 2, access the current data value of a Node reference using the implicit Node value, add 10 and return the result:
+
+``return NODE("param1") + 10;``
+
+The above example is able to treat the Node reference for **param1** as if it were a number, because this Node is a Number Parameter. Note that the type of any specific Node is always the same regardless of how the Node is referenced. This means that using the global functions ``NUMBER("param1")`` and ``NODE("param1")`` will both return a Node reference of type Number Parameter, assuming **param1** is a Number. Use care when relying on implicit Node values, because the implicit value field and type is different for different types of Nodes. 
+
+
+.. table::
+    :class: table-fluid
+
+    =============================   ========================  ====================
+    Node Type                       Implicit value field      Implicit value type                       
+    **Number Parameter**            ``currentValue``          Number
+    **Text Parameter**              ``currentValue``          String
+    **Time Parameter**              ``currentValue``          Time
+    **Boolean Parameter**           ``currentValue``          Boolean
+    **Location**                    ``coordinates``           Array of [latitude,longitude] decimal values
+    **Source**                      ``name``                  String
+    **Folder**                      ``name``                  String
+    **Workspace**                   ``name``                  String
+    =============================   ========================  ====================
+
+
+.. _shared-code:
+
+Shared Code
+~~~~~~~~~~~
+
+Processing allows you to write shared JavaScript code functions that can be used by Processor Sources and Process Parameters within the Workspace. Any functions that you write in the Processing tab of a Workspace configuration are automatically in scope to be referenced by any other code in the workspace.
+
+[screenshot of Workspace processing tab]
+
+Function Namespace
+~~~~~~~~~~~~~~~~~~
+
+Any functions that are called in the code of a Processor Sources and Process Parameters will be checked to see if they match any of the following:
+
+1. :ref:`Global functions <global-functions>`
+2. :ref:`User-defined shared functions <shared-code>`
+3. `JavaScript build-in functions <https://www.w3schools.com/jsref/jsref_obj_global.asp>`_
+
+If the function name is not found in any of these locations, this will result in a :ref:`validation error <validation-errors>`.
+
+
 .. _process-alarm:
 
 Process Alarm
 -------------
 A Process Alarm is raised when a process encounters an error during execution. A subsequent successful compilation or execution of the process will clear the alarm.
 
+
+.. _errors:
+
 Errors
 ------
 The two general category of errors that can be encounted with Proccessing and Logic are compilation errors and runtime errors. 
+
+
+.. _validation-errors:
 
 Validation Errors
 ~~~~~~~~~~~~~~~~~~
 Validation errors are caused either by incorrect syntax or some other error condition that can be detected. These errors are experienced as immediate feedback when validating a program, and contain a specific error message which can be used to remedy the problem. A program will not be executed until it can be validated without errors.
 
+.. _runtime-errors:
+
 Runtime Errors
 ~~~~~~~~~~~~~~
 Runtime errors can occur during the execution of a program even when it validates successfully. For example, if an input node referenced by the program is deleted from the workspace, the program will no longer be able to run successfully. These types of errors will be expressed as process alarms, and will contain a specific error message to help remedy the problem. 
+
+.. _best-practices:
 
 Best Practices
 --------------
@@ -141,7 +224,9 @@ Best Practices
 - Very complex or time-consuming calculations may cause the process to exceed the allowed processing time limit. 
 - **Any** input that is referenced by a process will trigger execution of the process when that input is updated. Therefore, a large number of inputs being updated frequently or on different schedules can trigger a process to run very frequently. For example, if 9 inputs are updated every hour, but the 10th input is updated every minute, then the process will execute every minute.
 - As the first referenced input is used to determine the output timestamp for a Process Parameter, the input which updates most frequently should be the first input.
+- If the same algorithms are used repeatedly for different Process Nodes, this code should be expressed as a function and stored in the Workspace :ref:`Shared Code <shared-code>`.
 
+.. _examples:
 
 Examples
 --------
@@ -156,9 +241,9 @@ Calculate average of multiple Parameters
     :linenos:
 
     // Calculate the average currentValue of Parameters from different Locations
-    var param1 = NODE('Location 1/Source/Param').getCurrentValue();
-    var param2 = NODE('Location 2/Source/Param').getCurrentValue();
-    var param3 = NODE('Location 3/Source/Param').getCurrentValue();
+    var param1 = NODE('Location 1/Source/Param').currentValue;
+    var param2 = NODE('Location 2/Source/Param').currentValue;
+    var param3 = NODE('Location 3/Source/Param').currentValue;
 
     return (param1 + param2 + param3) / 3;
 
@@ -175,7 +260,7 @@ Transform a series using an equation
     var b = -10.004;
     var c = 4.328;
     var d = -0.4667;
-    var v = THIS.getCurrentValue();
+    var v = THIS.currentValue;
 
     return a + (b*v) + (c*v^2) + (d*v^3);
 
