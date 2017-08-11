@@ -73,6 +73,9 @@ Image zoom/pan
 		.. image:: location_general_imagepreview.png
 			:scale: 40 %
 
+Quality Alarm
+    See :ref:`Alarms and Notifications <quality-alarm>`.
+
 .. only:: not latex
 
     |

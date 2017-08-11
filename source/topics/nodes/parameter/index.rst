@@ -119,10 +119,15 @@ Format
 
     *Time Parameters* use this setting to determine the formatting of the timestamp (leave empty to display timestamps in your default user time format). Select a preset format from the drop down list or specify a custom format using :ref:`time format tokens <time-format-tokens>`.
 
+Quality Alarm
+    See :ref:`Alarms and Notifications <quality-alarm>`.
+
 .. only:: not latex
 
     |
-    
+
+.. _node-configuration-parameter-states:
+
 States
 ~~~~~~~~
 States allow you to define unlimited numbers of *Ranges* or *Discrete* thresholds that uniquely describe the current value of the parameter. 
@@ -207,6 +212,9 @@ Match
 
 Raise alarm
     Check this option to raise an :ref:`alarm <alarms-and-notifications>` when this state becomes active. 
+
+Quality
+    Optionally select a :ref:`quality code <management-general-qualitycodes>` to be applied to newly acquired data that matches this state.
 
 Notifications
     Select when notifications should be sent.
