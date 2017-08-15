@@ -180,30 +180,55 @@ Paths are used as arguments in global functions to reference nodes or parameter 
 .. table::
     :class: table-fluid
 
-    =============================   ================================================================
-    \                               Examples
-    **Absolute**                    ``/Workspace/Location/Source/Parameter``
+    =============================================   =================================
+    Examples                                      
+    ``/Workspace/Location/Source/Parameter``        Absolute reference to a Parameter
+    ``/Workspace``                                  Absolute reference to a Workspace
+    ``../Location 2/Source``                        Relative reference to a Source
+    ``../../Workspace``                             Relative reference to a Workspace
+    ``Parameter``                                   Relative reference to a Parameter
+    =============================================   =================================
 
-                                    ``/Workspace``
+.. _aggregate-expressions:
 
-    **Relative**                    ``../Location 2/Source`` 
+Aggregate Expressions
+~~~~~~~~~~~~~~~~~~~~~
 
-                                    ``../../Workspace`` 
+Aggregate Expressions provide a method of describing :ref:`historic data aggregation <historic-aggregates>` applied to input parameters, and may be optionally included as a suffix to any parameter path. 
 
-                                    ``Parameter`` 
-    =============================   ================================================================
+The three components of an aggregate expression must be expressed in order and separated by a semi-colon:
+
+* :ref:`Aggregate Type <historic-aggregates>`
+* :ref:`Base Time <relative-time>`
+* :ref:`Interval <relative-time>`
+
+.. table::
+    :class: table-fluid
+
+    =============================   ==============================================
+    Examples
+    ``Param 1;AVERAGE;D;1H``        Hourly average
+    ``Param 1;TOTAL;D+9H;1D``       Daily total calculated at 9am
+    ``Param 1;COUNT;W;1W``          Number of values since the start of the week
+    =============================   ==============================================
 
 .. _node-attributes-and-values:
 
 Node Attributes and Values
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-A Node reference can be used to access the attributes of that Node, including the data value if the Node is a Parameter. Attributes are accessed via dot notation, for example:
+A Node reference can be used to access the attributes of that Node using dot notation, including the data value if the Node is a Parameter.
 
-* ``LOCATION.name`` Name of the Location
-* ``WORKSPACE.createdTime`` Creation time of the Workspace
-* ``NUMBER("param1").offset`` Numeric offset of the Number Parameter
-* ``NODE("param2").currentValue`` Current data value of the Parameter
+.. table::
+    :class: table-fluid
+
+    ===============================   ==============================================
+    Examples
+    ``LOCATION.name``                 Name of the Location
+    ``WORKSPACE.createdTime``         Creation time of the Workspace
+    ``NUMBER("param1").offset``       Numeric offset of the Number Parameter
+    ``NODE("param2").currentValue``   Current data value of the Parameter
+    ===============================   ==============================================
 
 A full reference of :ref:`Node attributes <api-resources-nodes>` is documented as part of the HTTP API.
 
