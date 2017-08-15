@@ -46,9 +46,13 @@ The general section allows you to specify the type of data logger you would like
     .. image:: datasource_datalogger_general.jpg
 
 Source Enabled
+^^^^^^^^^^^^^^
+
     Uncheck the Source Enabled checkbox to stop collection and prevent alarms and notifications from triggering.
 
 Data logger type
+^^^^^^^^^^^^^^^^
+
     Select the type of data logger you would like to connect to:
 
     *Campbell Scientific [PakBus]*
@@ -77,6 +81,8 @@ Data logger type
             Select the model of the data logger.
 
 Write mode
+^^^^^^^^^^
+
     Select how acquired data will be written:
             
     *Merge and overwrite* will insert the acquired data into the existing historic data and overwrite the existing values when timestamps match.
@@ -113,6 +119,8 @@ Configure how you would like to connect to your data logger.
     .. image:: datasource_datalogger_connection_tcpclient.png
 
 Transport type
+^^^^^^^^^^^^^^
+
     The following transports are available for certain data loggers:
 
     *TCP Client*
@@ -165,6 +173,8 @@ Transport type
     The same *Scout* or *TCPCallback* transport can be used with multiple data sources when using *PakBus neighbour* routing (and the remote data loggers can be reached). However all Data Sources sharing the transport must be configured in the same Workspace. Moving a Data Source will also move the associated device and invalidate any other Data Sources within the origin Workspace still configured to use the device.
 
 Remote access
+^^^^^^^^^^^^^
+
     Remote access allows you to connect directly to your data logger over TCP/IP (TCP Callback and Scout transport only). An Internet address and Port will be temporarily allocated when enabling remote access. Scheduled collection, control and configuration will not be available while a remote client is connected, and the Source status will show *REMOTE*.
 
     Session timeout
@@ -193,12 +203,18 @@ Remote access
     .. image:: datasource_datalogger_connection_remoteaccess.png
 
 Retry attempts
+^^^^^^^^^^^^^^
+
     Select how many retry attempts are made during an acquisition or scheduled collection before the communications is considered failed.
 
 Retry delay
+^^^^^^^^^^^
+
     Select the delay between retry attempts. The retry attempts multiplied by the retry delay should not exceed the collection interval.
 
 Communications Alarm
+^^^^^^^^^^^^^^^^^^^^
+
     See :ref:`Alarms and Notifications <communications-alarm>`.
 
 .. only:: not latex
@@ -231,17 +247,24 @@ Collection is used to specify if and when data should be automatically collected
     .. image:: datasource_datalogger_collection.jpg
 
 Scheduled
+^^^^^^^^^
     Enable the schedule for automatic data collection. You should Disable the schedule when using the TCP Callback Transport for event based callbacks (ie. not permanently connected).
 
 Schedule type
+^^^^^^^^^^^^^
+
     *Server* is the recommended option for always connected devices and allows easy schedule configuration.
 
     *Remote* enables a *Scout modem* to maintain its own schedule allowing for low power mode and customized configuration.
 
 Collection interval
+^^^^^^^^^^^^^^^^^^^
+
     Select the frequency of the collection.
 
 Interval offset
+^^^^^^^^^^^^^^^
+
     Offset the collection interval to prevent collection occuring on the interval. eg. 1 hour collection interval will occur at 9am, 10am, etc. Set an interval offset of 5 minutes and the collection times will be 9:05am, 10:05am, etc.
 
 Outdated Alarm
@@ -324,18 +347,23 @@ A list of available tables/series is shown (when not using Automatic parameter c
 
 
 Automatic Parameter Configuration
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
     Check this option to automatically create, update and disable parameters based on the tables defined in the data logger. When checked, the Source tables will not be displayed.
 
 Location Coordinates
+^^^^^^^^^^^^^^^^^^^^
     The Source can optionally provide Location Coordinates from a coordinate series or a pair of numeric series (lat/lng). You need to configure the Location and select this Source to be used for its coordinates. Select the table and series to use from the drop down list.
 
 Configure series
+^^^^^^^^^^^^^^^^
     |icon-table| Re-configure the series/sensors for specific data loggers only.
     
 Set acquire time
+^^^^^^^^^^^^^^^^
     |icon-calendar| Set or reset the collection pointer for the corresponding table to re-collect its data from the specified date using the Write mode option selected in the General tab.
 
 Parameter Assignment
+^^^^^^^^^^^^^^^^^^^^
     You must assign Series to New or Existing parameters and set the Series for collection by ensuring its checkbox is enabled.
     Any Parameters assigned to Series will be disabled when the Series is unchecked for collection. 
 
@@ -395,12 +423,15 @@ Time allows you to configure the timezone of the Source and associated options.
     .. image:: datasource_datalogger_time.jpg
 
 Timezone
+^^^^^^^^
     Select the timezone the Source uses for storing historic data. Choose *(GMT+00:00) UTC* if data timestamps are in UTC.
 
 Automatically adjust clock for Daylight Savings Time
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
     Check this option if you would like to automatically update the data logger clock to account for DST in the selected timezone.
 
 Automatically update data logger with correct time
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
     Check this option if you would like to automatically update the data logger clock with the correct time based on the selected timezone.
 
 
