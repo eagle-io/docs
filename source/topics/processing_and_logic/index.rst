@@ -19,6 +19,11 @@ Process Nodes
 -------------
 There are two types of Nodes that can have a program defined as part of their configuration. The first is a Process Parameter that allows you to transform existing data; the second is a type of Data Source called a Processor that allows you to create new data values.
 
+A program should include three distinct stages:
+
+- Define input nodes (using the NODE, NUMBER, TEXT, TIME or BOOLEAN functions)
+- Apply processing to input nodes (or associated time-series data)
+- Output results (either by returning a value or setting an attribute of a node)
 
 
 .. table::
@@ -31,7 +36,7 @@ There are two types of Nodes that can have a program defined as part of their co
 
     **Number of inputs**     3                            10
 
-    **Number of outputs**    Single                       Multiple
+    **Number of outputs**    1                            100
 
     **Input scope**          Any Node in the Workspace    Any Node in the Workspace
 
@@ -180,21 +185,21 @@ Paths are used as arguments in global functions to reference nodes or parameter 
 .. table::
     :class: table-fluid
 
-    =============================================   =================================
+    ========================================   =================================
     Examples                                      
-    ``/Workspace/Location/Source/Parameter``        Absolute reference to a Parameter
-    ``/Workspace``                                  Absolute reference to a Workspace
-    ``../Location 2/Source``                        Relative reference to a Source
-    ``../../Workspace``                             Relative reference to a Workspace
-    ``Parameter``                                   Relative reference to a Parameter
-    =============================================   =================================
+    ``/Workspace/Location/Source/Parameter``   Absolute reference to a Parameter
+    ``/Workspace``                             Absolute reference to a Workspace
+    ``../Location 2/Source``                   Relative reference to a Source
+    ``../../Workspace``                        Relative reference to a Workspace
+    ``Parameter``                              Relative reference to a Parameter
+    ========================================   =================================
 
 .. _aggregate-expressions:
 
 Aggregate Expressions
 ~~~~~~~~~~~~~~~~~~~~~
 
-Aggregate Expressions provide a method of describing :ref:`historic data aggregation <historic-aggregates>` applied to input parameters, and may be optionally included as a suffix to any parameter path. 
+Aggregate Expressions provide a means of aggregating input data supplied to your program and may be optionally included as a suffix to any parameter path. 
 
 The three components of an aggregate expression must be expressed in order and separated by a semi-colon:
 
@@ -207,6 +212,7 @@ The three components of an aggregate expression must be expressed in order and s
 
     =============================   ==============================================
     Examples
+    ``Param 1``                     Raw data
     ``Param 1;AVERAGE;D;1H``        Hourly average
     ``Param 1;TOTAL;D+9H;1D``       Daily total calculated at 9am
     ``Param 1;COUNT;W;1W``          Number of values since the start of the week
