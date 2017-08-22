@@ -34,7 +34,7 @@ A program should include three distinct stages:
     ======================   ==========================   ==================================
     **Node Type**            Parameter                    Data Source
 
-    **Number of inputs**     3                            10
+    **Number of inputs**     3                            25
 
     **Number of outputs**    1                            100
 
@@ -180,7 +180,7 @@ Global functions can be use to obtain a reference to a Node in your Workspace an
 Paths
 ~~~~~
 
-Paths are used as arguments in global functions to reference nodes or parameter values, and can be either absolute or relative. An absoute path is any path that starts with a foward slash. Any path that does not start with a foward slash is relative to the currently executing process. Standard UNIX style path syntax is used, so ``..`` refers to the parent in the Workspace tree.
+Paths are literal strings used as arguments in global functions to reference nodes or parameter values, and can be either absolute or relative. An absoute path is any path that starts with a foward slash. Standard UNIX style path syntax is used, so ``..`` refers to the parent in the Workspace tree.
 
 .. table::
     :class: table-fluid
@@ -305,14 +305,14 @@ If the function name is not found in any of these locations, this will result in
 
 Process Alarm
 -------------
-A Process Alarm is raised when a process encounters an error during execution. A subsequent successful compilation or execution of the process will clear the alarm.
+A Process Alarm is raised when a Process Node encounters an error either during validation or execution. A subsequent successful validation or execution of the process will clear the alarm.
 
 
 .. _errors:
 
 Errors
 ------
-The two general category of errors that can be encounted with Proccessing and Logic are compilation errors and runtime errors. 
+The two general category of errors that can be encounted with Proccessing and Logic are validation errors and runtime errors. 
 
 
 .. _validation-errors:
