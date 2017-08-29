@@ -547,7 +547,7 @@ Refer to :ref:`Parameter states<node-configuration-parameter>` for further infor
                                                     Text parameters require a *String*.
     **occurrences**                     Int32       *Optional - Default is 1*.
                                                     Minimum number of repeat values equal or beyond threshold required to
-                                                    trigger state: *1-9*.
+                                                    trigger state: *1-15*.
     **isAlarm**                         Boolean     *Optional - Default is FALSE*. 
                                                     Flag to indicate if this state should raise an alarm. 
                                                     Not valid for *NORMAL* RANGE state.
