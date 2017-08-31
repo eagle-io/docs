@@ -327,6 +327,10 @@ Runtime Errors
 ~~~~~~~~~~~~~~
 Runtime errors can occur during the execution of a program even when it validates successfully. For example, if an input node referenced by the program is deleted from the workspace, the program will no longer be able to run successfully. These types of errors will be expressed as process alarms, and will contain a specific error message to help remedy the problem. 
 
+It is also possible to manually trigger a Runtime Error by using the ``throw`` keyword in conjunction with a custom error message:
+
+``throw 'custom error message';``
+
 .. _best-practices:
 
 Best Practices
