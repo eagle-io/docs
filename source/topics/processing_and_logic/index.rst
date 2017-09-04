@@ -187,11 +187,11 @@ Paths are literal strings used as arguments in global functions to reference nod
 
     ========================================   =================================
     Examples                                      
-    ``/Workspace/Location/Source/Parameter``   Absolute reference to a Parameter
-    ``/Workspace``                             Absolute reference to a Workspace
-    ``../Location 2/Source``                   Relative reference to a Source
-    ``../../Workspace``                        Relative reference to a Workspace
-    ``Parameter``                              Relative reference to a Parameter
+    ``/Workspace/Location/Source/Parameter``   Absolute path to a Parameter
+    ``/Workspace``                             Absolute path to a Workspace
+    ``../Location 2/Source``                   Relative path to a Source
+    ``../../Workspace``                        Relative path to a Workspace
+    ``Parameter``                              Relative path to a Parameter
     ========================================   =================================
 
 .. _aggregate-expressions:
