@@ -289,16 +289,28 @@ Common processing routines can be defined as Shared Functions on the Processing 
         return (5/9) * (f-32);
     }
 
-Function Namespace
-~~~~~~~~~~~~~~~~~~
+Third Party Libraries
+~~~~~~~~~~~~~~~~~~~~~
 
-Any functions that are called in the code of a Processor Sources and Process Parameters will be checked to see if they match any of the following:
+A number of useful third-party libraries have been included to simplify common processing operations. Please refer to the documentation provided by each library for specific examples.
 
-1. :ref:`Global functions <global-functions>`
-2. :ref:`User-defined shared functions <shared-code>`
-3. `JavaScript built-in functions <https://www.w3schools.com/jsref/jsref_obj_global.asp>`_
+.. table::
+    :class: table-fluid
 
-If the function name is not found in any of these locations, this will result in a :ref:`validation error <validation-errors>`.
+    =============================   ===================================================================================
+    Library                         Description
+    ``everpolate``                  `Step Function Interpolation <http://borischumichev.github.io/everpolate/#step>`_
+
+                                    `Linear Interpolation <http://borischumichev.github.io/everpolate/#linear>`_
+
+                                    `Polynomial Interpolation <http://borischumichev.github.io/everpolate/#poly>`_
+
+                                    `Linear Regression <http://borischumichev.github.io/everpolate/#regression>`_
+    =============================   ===================================================================================
+
+These libraries can be accessed by your program using the ``require`` keyword, for example:
+
+``var linear = require('everpolate').linear;``
 
 
 .. _process-alarm:
