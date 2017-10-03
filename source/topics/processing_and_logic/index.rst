@@ -315,7 +315,7 @@ These libraries can be accessed by your program using the ``require`` keyword, f
 ``var linear = require('everpolate').linear;``
 
 
-.. _process-alarm:
+.. _process-alarms:
 
 Process Alarm
 -------------

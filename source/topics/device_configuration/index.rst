@@ -18,6 +18,7 @@ The following topics will assist when configuring your device for `eagle.io <htt
    metasphere_pointorange3g/index
    scout/index
    sensorlog/index
+   sigfox/index
    waterlog_storm3/index
    ydoc/index
 
