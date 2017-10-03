@@ -11,7 +11,9 @@ Some examples include:
 - :ref:`Transform a series using an equation <example2>`
 - :ref:`Generate a series forecast to provide predictive alarming <example4>`
 
-Programs are expressed as JavaScript, stored as configuration in Process Nodes, and executed on a schedule or as new data is acquired. Each program can interact with all Nodes in the current Workspace and any associated time-series data.
+Programs are expressed as `JavaScript <http://www.ecma-international.org/ecma-262/5.1/>`_, stored as configuration in Process Nodes, and executed on a schedule or automatically as new data is acquired. Each program can interact with all Nodes in the current Workspace and any associated time-series data.
+
+
 
 .. _process-nodes:
 
@@ -347,6 +349,7 @@ It is also possible to manually trigger a Runtime Error by using the ``throw`` k
 
 Best Practices
 --------------
+- Program syntax should confirm to `ECMAScript 5.1 <http://www.ecma-international.org/ecma-262/5.1/>`_
 - Inputs should be declared before they are referenced, so that any line numbers in error messages will clearly refer to the declaration of a missing input.
 - Very complex or time-consuming calculations may cause the process to exceed the allowed processing time limit. 
 - **Any** input that is referenced by a process will trigger execution of the process when that input is updated. Therefore, a large number of inputs being updated frequently or on different schedules can trigger a process to run very frequently. For example, if 9 inputs are updated every hour, but the 10th input is updated every minute, then the process will execute every minute.
