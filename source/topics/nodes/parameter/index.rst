@@ -182,6 +182,7 @@ Drag and drop states in the list to change their display order.
 
     .. image:: parameter_states_discrete.jpg
 
+.. _node-configuration-parameter-states-config:
 
 States type
     Select the type of States most suitable for your data.

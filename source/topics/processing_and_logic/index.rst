@@ -9,7 +9,7 @@ Some examples include:
 
 - :ref:`Calculate average of multiple Parameters <example1>`
 - :ref:`Transform a series using an equation <example2>`
-- :ref:`Generate a series forecast to provide predictive alarming <example4>`
+- :ref:`Generate a series forecast to provide predictive alarming <example5>`
 
 Programs are expressed as `JavaScript <http://www.ecma-international.org/ecma-262/5.1/>`_, stored as configuration in Process Nodes, and executed on a schedule or automatically as new data is acquired. Each program can interact with all Nodes in the current Workspace and any associated time-series data.
 
@@ -54,7 +54,7 @@ A program should include three distinct stages:
 |icon-point-number-range-process| Process Parameter
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-A Process Parameter is a type of Parameter that has a program defined as part of it's configuration and can be created under any Data Source. The first input referred to by the program will be used to define the timestamps used by the output of the process. Each execution of the process must return a single output value of the expected type. This output can then be viewed in the same way as any other Parameter (for example, it can be shown as a table or chart, exported, used as input for a different process, etc.). The output can also have states defined which will trigger alarms.
+A Process Parameter is a type of Parameter that has a program defined as part of it's configuration and can be created under any Data Source. The first input referred to by the program will be used to define the timestamps used by the output of the process. Each execution of the program must return a single output value of the expected type (or an array containing the output value and quality). This output can then be viewed in the same way as any other Parameter (for example, it can be shown as a table or chart, exported, used as input for a different process, etc.). The output can also have states defined which will trigger alarms.
 
 Examples
 ________
@@ -84,6 +84,24 @@ ________
     var v = NODE('Param').currentValue;
 
     return a + (b*v) + (c*v^2) + (d*v^3);
+
+.. _example3:
+
+.. code-block:: javascript
+    :linenos:
+
+    // Assign a bad quality code to value spikes
+    var value = NODE('Param').currentValue;
+    var quality;
+
+    if( value > 999 ) {
+        quality = 156;
+    }
+
+    return [ value, quality ];
+
+.. note:: 
+    Assigning quality codes to value spikes can also be achieved by configuring the Quality of a :ref:`Parameter State <node-configuration-parameter-states-config>`.
 
 .. _processor:
 
@@ -117,7 +135,7 @@ Outputs are defined as part of your program and automatically created as Paramet
 Examples
 ________
 
-.. _example3:
+.. _example4:
 
 .. code-block:: javascript
     :linenos:
@@ -129,7 +147,7 @@ ________
     NUMBER('quotient').currentValue = quotient;
     NUMBER('remainder').currentValue = remainder;
 
-.. _example4:
+.. _example5:
 
 .. code-block:: javascript
     :linenos:
