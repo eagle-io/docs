@@ -291,6 +291,55 @@ The above example is able to treat the Node reference for **param1** as if it we
     =============================   ========================  ====================
 
 
+
+.. _historic-data:
+
+Accessing Historic Data
+~~~~~~~~~~~~~~~~~~~~~~~
+
+
+A certain amount of historic data for a Parameter can be made available for reference. The amount is specified using the base time of an aggregate type of **NONE**:
+
+``var myNode = NUMBER("param1;NONE;H-1H;");``
+
+The above Number Parameter declares an Aggregate Expression containing a **NONE** type aggregate, and a base time of **H-1H**. Note the final semicolon which is required to indicate there is no interval specified in this expression.
+
+Once a Parameter has been declared in this way, historic data can be referenced using the following arrays:
+
+.. table::
+    :class: table-fluid
+
+    =============================   ======================== 
+    **myNode.values**               ``An array with historic values``         
+    **myNode.qualities**            ``An array with historic qualities``         
+    **myNode.timestamps**           ``An array with historic timestamps``         
+    =============================   ======================== 
+
+
+In each array, the most recent data is located in the last array index. Therefore, the following code would return the sum of the three most recent values:
+
+
+.. _example6:
+
+.. code-block:: javascript
+    :linenos:
+
+    var myNode = NUMBER("param1;NONE;H-1H;");
+
+    var len = myNode.values.length; // Number of historical values available
+
+    var sum = 0;
+
+    if( len >= 3 ) // Ensure there are at least 3 historical values
+    {
+      sum += myNode.values[ len - 1]; // Most recent value prior to the current value
+      sum += myNode.values[ len - 2]; // Second most recent value prior to the current value
+      sum += myNode.values[ len - 3]; // Third most recent value prior to the current value
+    }
+
+    return sum;
+
+
 .. _shared-code:
 
 Shared Functions
@@ -298,7 +347,7 @@ Shared Functions
 
 Common processing routines can be defined as Shared Functions on the Processing tab of your Workspace configuration and accessed from any Process Node. Note that a Shared Function should not reference Global Variables or Global Functions.
 
-.. _example5:
+.. _example7:
 
 .. code-block:: javascript
     :linenos:
