@@ -292,27 +292,27 @@ The above example is able to treat the Node reference for **param1** as if it we
 
 
 
-.. _historic-data:
+.. _historical-data:
 
-Accessing Historic Data
+Accessing Historical Data
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 
-A certain amount of historic data for a Parameter can be made available for reference. The amount is specified using the base time of an aggregate type of **NONE**:
+A certain amount of historical data for a Parameter can be made available for reference. The amount is specified using the base time of an aggregate type of **NONE**:
 
 ``var myNode = NUMBER("param1;NONE;H-1H;");``
 
 The above Number Parameter declares an Aggregate Expression containing a **NONE** type aggregate, and a base time of **H-1H**. Note the final semicolon which is required to indicate there is no interval specified in this expression.
 
-Once a Parameter has been declared in this way, historic data can be referenced using the following arrays:
+Once a Parameter has been declared in this way, historical data can be referenced using the following arrays:
 
 .. table::
     :class: table-fluid
 
     =============================   ======================== 
-    **myNode.values**               ``An array with historic values``         
-    **myNode.qualities**            ``An array with historic qualities``         
-    **myNode.timestamps**           ``An array with historic timestamps``         
+    **myNode.values**               ``An array with historical values``         
+    **myNode.qualities**            ``An array with historical qualities``         
+    **myNode.timestamps**           ``An array with historical timestamps``         
     =============================   ======================== 
 
 
