@@ -238,6 +238,55 @@ The three components of an aggregate expression must be expressed in order and s
     ``Param 1;COUNT;W;1W``          Number of values since the start of the week
     =============================   ==============================================
 
+
+.. _historical-data:
+
+Accessing Historical Data
+~~~~~~~~~~~~~~~~~~~~~~~
+
+
+A specific amount of historical data for a Parameter can be made available for reference. The amount is specified using the base time, with an aggregate type of **NONE**:
+
+``var param1 = NUMBER("param1;NONE;NOW-1H;");``
+
+The above Number Parameter declares an Aggregate Expression containing a **NONE** type aggregate, and a base time of **NOW-1H**. Note the final semicolon which is required to indicate there is no interval specified in this expression. This expression will make available the most recent hour of historical data for this parameter.
+
+Once a Parameter has been declared in this way, historical data can be referenced using the following arrays:
+
+.. table::
+    :class: table-fluid
+
+    =============================   ======================== 
+    **param1.values**               ``An array with historical values``         
+    **param1.qualities**            ``An array with historical qualities``         
+    **param1.timestamps**           ``An array with historical timestamps``         
+    =============================   ======================== 
+
+
+In each array, the most recent data is located in the last array index. Therefore, the following code would return the sum of the three most recent values:
+
+
+.. _example6:
+
+.. code-block:: javascript
+    :linenos:
+
+    var param1 = NUMBER("param1;NONE;NOW-1H;");
+
+    var len = param1.values.length; // Number of historical values available
+
+    var sum = 0;
+
+    if( len >= 3 ) // Ensure there are at least 3 historical values
+    {
+      sum += param1.values[len - 1]; // Most recent value prior to the current value
+      sum += param1.values[len - 2]; // Second most recent value prior to the current value
+      sum += param1.values[len - 3]; // Third most recent value prior to the current value
+    }
+
+    return sum;
+
+
 .. _node-attributes-and-values:
 
 Node Attributes and Values
@@ -289,55 +338,6 @@ The above example is able to treat the Node reference for **param1** as if it we
     **Folder**                      ``name``                  String
     **Workspace**                   ``name``                  String
     =============================   ========================  ====================
-
-
-
-.. _historical-data:
-
-Accessing Historical Data
-~~~~~~~~~~~~~~~~~~~~~~~
-
-
-A certain amount of historical data for a Parameter can be made available for reference. The amount is specified using the base time of an aggregate type of **NONE**:
-
-``var myNode = NUMBER("param1;NONE;H-1H;");``
-
-The above Number Parameter declares an Aggregate Expression containing a **NONE** type aggregate, and a base time of **H-1H**. Note the final semicolon which is required to indicate there is no interval specified in this expression.
-
-Once a Parameter has been declared in this way, historical data can be referenced using the following arrays:
-
-.. table::
-    :class: table-fluid
-
-    =============================   ======================== 
-    **myNode.values**               ``An array with historical values``         
-    **myNode.qualities**            ``An array with historical qualities``         
-    **myNode.timestamps**           ``An array with historical timestamps``         
-    =============================   ======================== 
-
-
-In each array, the most recent data is located in the last array index. Therefore, the following code would return the sum of the three most recent values:
-
-
-.. _example6:
-
-.. code-block:: javascript
-    :linenos:
-
-    var myNode = NUMBER("param1;NONE;H-1H;");
-
-    var len = myNode.values.length; // Number of historical values available
-
-    var sum = 0;
-
-    if( len >= 3 ) // Ensure there are at least 3 historical values
-    {
-      sum += myNode.values[ len - 1]; // Most recent value prior to the current value
-      sum += myNode.values[ len - 2]; // Second most recent value prior to the current value
-      sum += myNode.values[ len - 3]; // Third most recent value prior to the current value
-    }
-
-    return sum;
 
 
 .. _shared-code:
