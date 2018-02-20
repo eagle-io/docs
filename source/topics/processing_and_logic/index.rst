@@ -83,7 +83,7 @@ ________
     var d = -0.4667;
     var v = NODE('Param').currentValue;
 
-    return a + (b*v) + (c*v*v) + (d * Math.pow(v,3));
+    return a + (b*v) + (c * Math.pow(v,2)) + (d * Math.pow(v,3));
 
 .. _example3:
 
