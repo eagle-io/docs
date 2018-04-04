@@ -18,6 +18,13 @@ Nodes are the container objects that store all data and configuration for your p
 	
 	| 
 
+|icon-template| Template
+	The :ref:`Template <node-configuration-template>` is a special Workspace that is used to define template nodes that can then be cloned as instances in other Workspaces to speed up automated configuration for large deployments. 
+
+.. only:: not latex
+	
+	| 
+
 |icon-group| Group
 	Groups are simple nodes that provide structure to your Workspaces. You may choose to group content by geography or related purpose. Groups can be created inside Workspaces, Locations and other Groups.
 
@@ -165,6 +172,7 @@ Nodes are the container objects that store all data and configuration for your p
    :hidden:
 
    workspace/index
+   template/index
    location/index
    chart/index
    dashboard/index
