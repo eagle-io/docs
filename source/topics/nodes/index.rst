@@ -34,7 +34,7 @@ Nodes are the container objects that store all data and configuration for your p
 	| 
 
 |icon-template| Template
-	A :ref:`Template <node-configuration-template>` is a Group or Location in a special "Templates" Workspace. Each Template can be cloned as instances in other Workspaces to speed up automated configuration for large deployments. 
+	:ref:`Templates <node-configuration-template>` are special container Nodes that are used to define consistent structure and configuration. They can be referenced as instances in other Workspaces to speed up automated configuration for large deployments.
 
 .. only:: not latex
 	
