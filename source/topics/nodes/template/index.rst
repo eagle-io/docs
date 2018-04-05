@@ -2,21 +2,21 @@
 
 Template
 =========
-|icon-template| A Template is a Group or Location in a special "Templates" Workspace. Each Template can be cloned as instances in other Workspaces to speed up automated configuration for large deployments.  
+|icon-template| Templates are special container Nodes that are used to define consistent structure and configuration. They can be referenced as instances in other Workspaces to speed up automated configuration for large deployments.  
 
 .. only:: not latex
 
     |
 
 
-Creating the Templates Workspace
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Create the Templates Workspace by first creating a new empty Workspace named "Templates". Then refresh your browser; the Workspace icon will have changed to a Template icon. 
+The *Templates* Node
+~~~~~~~~~~~~~~~~~~~
+The *Templates* Node always appears at the top of the Workspace tree and is identified by the puzzle icon. 
 
 
 Creating Templates
 ~~~~~~~~~~~~~~~~~~
-Once the Templates Workspace is active, you can create Template Nodes; each Template Node must be either a Group or a Location.
+You can create Group or Location Nodes within the *Templates* Node; each Group or Location you create becomes one Template which can then be referenced as an Instance in any of your Workspaces.
 
 
 .. _node-configuration-template-instances:
@@ -24,7 +24,7 @@ Once the Templates Workspace is active, you can create Template Nodes; each Temp
 Instances
 ~~~~~~~~~~
 
-Instances are any Group or Location, created in a different Workspace, that reference one of the Templates you have already created. Any changes to the Template being referenced will be duplicated by the Instance. These changes can include the addition or removal of Nodes within the Template, or any change to the configuration of any Node within the template.
+Instances can be created in your Workspaces; each Instance must reference one of the Templates you have already created. Any changes to the Template being referenced will be reflected by the Instance. These changes can include the addition or removal of Nodes within the Template, or any change to the configuration of any Node within the template.
 
 
 .. only:: not latex
