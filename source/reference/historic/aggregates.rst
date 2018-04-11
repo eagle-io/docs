@@ -59,12 +59,9 @@ No Aggregation is applied. Raw data (as collected by the Source) is returned.
 
 INTERPOLATED
 ------------
-The Interpolated algorithm calculates a value that is:
 
-	- Equal to or higher than the last raw historic value before the start of the sample. For the purposes of this section, we will refer to the last raw historic value before the start of the sample as the ‘last pre-sample’ historic value. 
-	- Equal to or lower than the next raw historic value after the ‘last pre-sample’ historic value. The ‘next’ value may be in the sample or could be after the sample. If there is no ‘next’ raw historic value, the interpolated value will be exactly the same as the ‘last pre-sample’ value.
-	- If there is no beginning bound, the aggregate quality will be *No Data*.
-	- If any non-good values are skipped in order to find the closest good value, the aggregate quality will be *Data Subnormal*.
+The Interpolated aggregate either finds or calculates a value at each interval boundary. For each interval boundary timestamp, if there is already good raw data at that timestamp, then the raw data is used. Otherwise, the two closest bounding values must be found, one each in the intervals before and after the boundary. The value at the boundary is then interpolated between these two bounding values. In either case, the raw values involved must be good values to be used. If no good value can be found in the previous or next interval, then the aggregate will have a quality of *No Data*. If any non-good values are skipped in order to find the closest good bounding values, the aggregate quality will be *Data Subnormal*.
+
 
 .. only:: not latex
 
