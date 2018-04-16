@@ -303,9 +303,10 @@ A Node reference can be used to access the attributes of that Node using dot not
     ``WORKSPACE.createdTime``         Creation time of the Workspace
     ``NUMBER("param1").offset``       Numeric offset of the Number Parameter
     ``NODE("param2").currentValue``   Current data value of the Parameter
+    ``NODE("param3").newestTime``     Newest timestamp of the Parameter
     ===============================   ==============================================
 
-A full reference of :ref:`Node attributes <api-resources-nodes>` is documented as part of the HTTP API.
+A full reference of :ref:`Node attributes <api-resources-nodes>` is documented as part of the HTTP API. Note that for calculations requiring the time of the newest value, this can be accessed via the ``newestTime`` attribute.
 
 .. _implicit-node-values:
 
