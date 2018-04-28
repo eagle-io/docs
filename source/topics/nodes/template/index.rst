@@ -34,26 +34,35 @@ The *Templates* Node always appears at the top of the Workspaces Tree and is ide
     .. image:: template-create.jpg
         :scale: 100 %
 
+.. warning:: 
+    Removing a Template will also remove all Instances refering to that Template.
+
+|
+
 .. _node-configuration-template-instances:
 
 Instances
 ~~~~~~~~~
 
-.. only:: not latex
-
-    .. image:: instance-create.jpg
-        :scale: 50 %
-    | 
-
-.. only:: latex
-    
-    | 
-
-    .. image:: instance-create.jpg
-        :scale: 100 %
-
 Instances can be created in any of your Workspaces and must refer to one of the Templates you have already created. Each Instance may be renamed but all additional configuration items will be locked to the Template.
 
+.. only:: not latex
+
+    .. image:: instance-create.jpg
+        :scale: 50 %
+    | 
+
+.. only:: latex
+    
+    | 
+
+    .. image:: instance-create.jpg
+        :scale: 100 %
+
+.. note::
+    An Instance can only be created directly under a Workspace or Group.
+
+By default, Instance configuration attributes are locked to the Template and cannot be modified. In this way, locked attributes ensure consistency across all Instances that refer to the same Template.
 
 .. only:: not latex
 
@@ -67,6 +76,8 @@ Instances can be created in any of your Workspaces and must refer to one of the 
 
     .. image:: locked-attribute.jpg
         :scale: 100 %
+
+|
 
 .. _node-configuration-template-overrides:
 
@@ -87,6 +98,8 @@ Overrides allow you to select attributes in a Template that may be individually 
 
     .. image:: overrides.jpg
         :scale: 100 %
+
+Once an override has been added in the Template configuration, the attribute will become modifiable in every Instance.
 
 .. only:: not latex
 
