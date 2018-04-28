@@ -2,36 +2,104 @@
 
 Template
 =========
-|icon-template| Templates are special container Nodes that are used to define consistent structure and configuration. They can be referenced as instances in other Workspaces to speed up automated configuration for large deployments.  
+|icon-template| Templates are special container Nodes that allow a hierarchy of configuration to be defined once and replicated to any number of :ref:`Instances <node-configuration-template-instances>`. This reduces configuration time and ensures consistency for large deployments, while allowing individual attributes to be customised.  
+
 
 .. only:: not latex
 
-    |
+    .. image:: template-instances.jpg
+        :scale: 50 %
+    | 
+
+.. only:: latex
+    
+    | 
+
+    .. image:: template-instances.jpg
+        :scale: 100 %
 
 
-The *Templates* Node
-~~~~~~~~~~~~~~~~~~~
-The *Templates* Node always appears at the top of the Workspace tree and is identified by the puzzle icon. 
+The *Templates* Node always appears at the top of the Workspaces Tree and is identified by the puzzle icon. A new Template begins as a Group or Location, and is then populated with any number of Nodes. Changes to an existing Template (or Node therein) will be immediately reflected in all Instances referring to that Template. These changes can include the addition or removal of Nodes, or any configuration change within the Template.
 
+.. only:: not latex
 
-Creating Templates
-~~~~~~~~~~~~~~~~~~
-You can create Group or Location Nodes within the *Templates* Node; each Group or Location you create becomes one Template which can then be referenced as an Instance in any of your Workspaces.
+    .. image:: template-create.jpg
+        :scale: 50 %
+    | 
 
+.. only:: latex
+    
+    | 
+
+    .. image:: template-create.jpg
+        :scale: 100 %
 
 .. _node-configuration-template-instances:
 
 Instances
 ~~~~~~~~~
 
-Instances can be created in your Workspaces; each Instance must reference one of the Templates you have already created. Any changes to the Template being referenced will be reflected by the Instance. These changes can include the addition or removal of Nodes within the Template, or any change to the configuration of any Node within the template.
+.. only:: not latex
+
+    .. image:: instance-create.jpg
+        :scale: 50 %
+    | 
+
+.. only:: latex
+    
+    | 
+
+    .. image:: instance-create.jpg
+        :scale: 100 %
+
+Instances can be created in any of your Workspaces and must refer to one of the Templates you have already created. Each Instance may be renamed but all additional configuration items will be locked to the Template.
+
+
+.. only:: not latex
+
+    .. image:: locked-attribute.jpg
+        :scale: 50 %
+    | 
+
+.. only:: latex
+    
+    | 
+
+    .. image:: locked-attribute.jpg
+        :scale: 100 %
 
 .. _node-configuration-template-overrides:
 
 Overrides
 ~~~~~~~~~
 
-Overrides allow you to select the attributes in a Template that can be individually customised in the corresponding instance Nodes. Each type of Template Node will expose a different list of available attributes. Any attributes that have **not** been selected as overrides in the Template will be shown as greyed-out in the Instance configuration, indicating that they cannot be changed.
+Overrides allow you to select attributes in a Template that may be individually customised in the corresponding instance Nodes. Each type of Template Node will expose a different list of available attributes. Any attributes that have not been selected as overrides in the Template will be shown as locked in the Instance configuration, indicating that they cannot be changed.
+
+.. only:: not latex
+
+    .. image:: overrides.jpg
+        :scale: 50 %
+    | 
+
+.. only:: latex
+    
+    | 
+
+    .. image:: overrides.jpg
+        :scale: 100 %
+
+.. only:: not latex
+
+    .. image:: unlocked-attribute.jpg
+        :scale: 50 %
+    | 
+
+.. only:: latex
+    
+    | 
+
+    .. image:: unlocked-attribute.jpg
+        :scale: 100 %
 
 .. warning:: 
     Removing an override in a Template will reset that attribute in the corresponding Instance Nodes back to the templated value.
