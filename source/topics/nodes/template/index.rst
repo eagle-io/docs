@@ -35,7 +35,7 @@ The *Templates* Node always appears at the top of the Workspaces Tree and is ide
         :scale: 100 %
 
 .. warning:: 
-    Removing a Template will also remove all Instances refering to that Template.
+    Removing a Template will also remove all Instances referring to that Template.
 
 |
 
