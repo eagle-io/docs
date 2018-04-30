@@ -182,7 +182,7 @@ Global variables are references to Nodes that are related to the currently execu
 Global Functions
 ~~~~~~~~~~~~~~~~
 
-Global functions can be use to obtain a reference to a Node in your Workspace and are identified using an absolute or relative path argument.
+Global functions can be used to obtain a reference to a Node in your Workspace and are identified using an absolute or relative path argument.
 
 .. table::
     :class: table-fluid
@@ -213,6 +213,35 @@ Paths are literal strings used as arguments in global functions to reference nod
     ``../../Workspace``                        Relative path to a Workspace
     ``Parameter``                              Relative path to a Parameter
     ========================================   =================================
+
+
+
+
+.. _workspace-authorisation:
+
+Workspace Authorisation
+~~~~~~~~~~~~~~~~~~~~~~~
+
+Node paths that reference a Workspace which is not the current Workspace (including Workspaces in other accounts) will require additional authorisation. This is done using the *AUTH* function, which must be used in your progam before specifying the Node path.
+
+
+.. table::
+    :class: table-fluid
+
+    ==================================   ======================================
+    **AUTH(** *slug*, *api-key* **)**    Authorise a Workspace using an API key
+    ==================================   ======================================
+
+
+The *slug* is a code which uniquely identifies an account, and can always be seen in the URL; for example, in the following URL, the slug is *abc123*:
+
+``https://eagle.io/ui/abc123/myWorkspace``
+
+The *api-key* must be an :ref:`API key <management-security-apikeys>` which has access to the Workspace that you intend to reference in a Node path.
+
+.. note:: 
+    If all the Node paths in your program are in the same Workspace as your program, then the *AUTH* function is not required.
+
 
 .. _aggregate-expressions:
 
