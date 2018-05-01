@@ -326,6 +326,7 @@ Example response when ``type`` argument is TREE. Descendants are wrapped in a ``
 
     |
 
+
 Retrieve a node
 ---------------
 Retrieve a node by its **id**. You can use the automatically assigned *_id* or your own *customId* prepended with '@'.
@@ -390,6 +391,62 @@ Response
     |
 
 
+Create a node
+---------------
+Create a node (currently limited to creation of *Workspace* and *Group*). 
+You must specifiy both the *_class* and a unique *name*. Creating a Group also requires a valid *parentId*.
+
+.. note:: 
+    Required API key permission: *Modify*
+
+Request
+~~~~~~~~
+
+::
+
+    POST /api/v1/nodes
+
+Example creating a Workspace 
+::
+
+    {
+        "_class": "io.eagle.models.node.Workspace",
+        "name": "New Workspace"
+    }
+
+Example creating a Group 
+::
+
+    {
+        "_class": "io.eagle.models.node.Group",
+        "name": "New Group",
+        "parentId": "5a554eed0b64aabe5738da86"
+    }
+
+
+Response
+~~~~~~~~
+
+::
+    
+    HTTP/1.1 201 Created
+    Content-Type: application/json; charset=utf-8
+
+::
+    
+    {
+        "_class": "io.eagle.models.node.Workspace",
+        "_id": "5ae7c3d03549e867c718ff97",
+        "createdTime": "2018-05-01T01:33:04.830Z",
+        "isActive": true,
+        "metadata": [],
+        "name": "New Workspace",
+        "ownerId": "56d3a61a09c7aa9a82765540"
+    }
+
+.. only:: not latex
+
+    |
 
 
 Update a node
@@ -649,6 +706,124 @@ Example replacing RANGE states
     |
 
 
+Delete a node
+--------------
+Delete a node by its **id** including all child nodes. 
+You can use the automatically assigned *_id* or your own *customId* prepended with '@'.
+
+.. note:: 
+    This will permanently delete the node including all historic data and events. 
+    Required API key permission: *Modify*
+
+Request
+~~~~~~~~
+
+::
+
+    DELETE /api/v1/nodes/:id
+
+Response
+~~~~~~~~
+
+::
+    
+    HTTP/1.1 200 OK
+    Content-Type: application/json; charset=utf-8
+
+::
+    
+    {
+        "status": {
+            "code": 200,
+            "message": "Success"
+        }
+    }
+
+.. only:: not latex
+
+    |
+
+
+
+Clone a node or create instance from template
+----------------------------------------------
+Clone a node or create an instance from a template by its *id*. You can use the automatically assigned *_id* or your own *customId* prepended with '@'. 
+You must specify a valid *parentId* as the destination for the clone/create operation. Optionally include *name* and *metadata* to be assigned to the newly created node.
+
+.. note:: 
+    Not available for TRIAL accounts. Workspace cloning not currently supported. Required API key permission: *Modify*. 
+
+Arguments
+~~~~~~~~~
+
+.. table::
+    :class: table-fluid
+
+    =================   =====================   ================================================================
+    Argument            Example                 Description
+    =================   =====================   ================================================================
+    **attr**            _id,slug                *Optional.* 
+                                                Comma delimited list of attributes to include in response
+
+    **type**            TREE                    *Optional - Default is LIST* [#f2]_
+                                                | **LIST** returns a flat list of nodes
+                                                | **TREE** returns hierarchical list of nodes
+
+    **expiry**          60                      *Optional*. 
+                                                Expiry period in minutes for any included resource links. 
+                                                ie. *fileUrl* for Attachments. Default is 0 (no expiry).
+                                                Expired resource links will return 403 Forbidden.
+    =================   =====================   ================================================================
+
+
+Request
+~~~~~~~~
+
+::
+
+    POST /api/v1/nodes/:id/clone
+
+::
+
+    {
+        "parentId": "5a554eed0b64aabe5738da86"
+        "name": "Copy of Location 1",
+        "metadata": [
+            "name": "Site ID",
+            "value": "abc123"
+        ]
+    }
+
+Response
+~~~~~~~~
+
+::
+    
+    HTTP/1.1 201 Created
+    Content-Type: application/json; charset=utf-8
+
+::
+    
+    [
+        {
+            "_id": "5ae809d73549e867c71900db",
+            "_class": "io.eagle.models.node.location.Location",
+            "parentId": "5a554eed0b64aabe5738da86",
+            "name": "Copy of Location 1",
+            "metadata": [
+                "name": "Site ID",
+                "value": "abc123"
+            ],
+            "ownerId": "56d3a61a09c7aa9a82765540",
+            "createdTime": "2018-05-01T06:31:51.907Z",
+            "workspaceId": "5a554eed0b64aabe5738da86"
+        }
+    ]
+
+.. only:: not latex
+
+    |
+
 
 Acknowledge node alarms
 ------------------------
@@ -801,6 +976,365 @@ Response
 
     |
 
+
+Retrieve user notification subscriptions
+-----------------------------------------
+Retrieve a list of all users subscribed to receieve notifications for a node by its **id**. You can use the automatically assigned *_id* or your own *customId* prepended with '@'. 
+
+Request
+~~~~~~~~
+
+::
+
+    GET /api/v1/nodes/:id/notifications
+
+Response
+~~~~~~~~
+
+::
+    
+    HTTP/1.1 200 OK
+    Content-Type: application/json; charset=utf-8
+
+::
+    
+    [
+        {
+            "name": {
+                "last": "Smith",
+                "first": "John"
+            },
+            "contact": {
+                "email": "john@company.com"
+            },
+            "account": {
+                "lastLoginTime": "2018-05-01T01:21:59.735Z"
+            }
+        },
+        {
+            "name": {
+                "last": "Jones",
+                "first": "Bob"
+            },
+            "contact": {
+                "email": "bob@company.com"
+            },
+            "account": {
+                "lastLoginTime": "2018-02-27T01:05:02.029Z"
+            }
+        }
+    ]
+
+.. only:: not latex
+
+    |
+
+
+Subscribe users to notifications
+---------------------------------
+Subscribe a list of users to receieve notifications for a node by its **id**. You can use the automatically assigned *_id* or your own *customId* prepended with '@'. 
+
+.. note:: 
+    Only available for Location, Source and Parameter nodes. The specified users (email addresses) must be valid workspace users with *SUBSCRIBE_NOTIFICATIONS* permission. 
+    Required API key permission: *Modify*
+
+Request
+~~~~~~~~
+
+::
+
+    POST /api/v1/nodes/:id/notifications/subscribe
+
+::
+
+    {
+        "users": [
+            {
+                "user": "john@company.com"
+            }, 
+            {
+                "user": "bob@company.com"
+            }
+        ]
+    }
+
+Response
+~~~~~~~~
+
+::
+    
+    HTTP/1.1 202 Accepted
+    Content-Type: application/json; charset=utf-8
+
+::
+    
+    {
+        "status": {
+            "code": 202,
+            "message": "Operation accepted but not yet complete"
+        }
+    }
+
+.. only:: not latex
+
+    |
+
+
+Unsubscribe users from notifications
+-------------------------------------
+Unsubscribe a list of users from receieving notifications for a node by its **id**. You can use the automatically assigned *_id* or your own *customId* prepended with '@'. 
+
+.. note:: 
+    Only available for Location, Source and Parameter nodes. 
+    Required API key permission: *Modify*
+
+Request
+~~~~~~~~
+
+::
+
+    POST /api/v1/nodes/:id/notifications/unsubscribe
+
+::
+
+    {
+        "users": [
+            {
+                "user": "john@company.com"
+            }, 
+            {
+                "user": "bob@company.com"
+            }
+        ]
+    }
+
+Response
+~~~~~~~~
+
+::
+    
+    HTTP/1.1 202 Accepted
+    Content-Type: application/json; charset=utf-8
+
+::
+    
+    {
+        "status": {
+            "code": 202,
+            "message": "Operation accepted but not yet complete"
+        }
+    }
+
+.. only:: not latex
+
+    |
+
+
+Retrieve workspace users and permissions
+-----------------------------------------
+Retrieve a list of all users with access to a workspace (or node) by its **id**. You can use the automatically assigned *_id* or your own *customId* prepended with '@'. 
+
+Request
+~~~~~~~~
+
+::
+
+    GET /api/v1/nodes/:id/security
+
+Response
+~~~~~~~~
+
+::
+    
+    HTTP/1.1 200 OK
+    Content-Type: application/json; charset=utf-8
+
+::
+    
+    [
+        {
+            "name": {
+                "last": "Smith",
+                "first": "John"
+            },
+            "contact": {
+                "email": "john@company.com"
+            },
+            "account": {
+                "lastLoginTime": "2018-05-01T01:21:59.735Z"
+            },
+            "role": "OWNER",
+            "permissions": [
+                "VIEW",
+                "ATTACHMENT_READ",
+                "EXPORT_DATA",
+                "SEND_MESSAGE",
+                "SUBSCRIBE_NOTIFICATIONS",
+                "MANAGE_NOTIFICATIONS",
+                "ACKNOWLEDGE_ALARMS",
+                "EDIT_ALARMS",
+                "CONTROL",
+                "CONFIGURE",
+                "SECURITY",
+                "OWNER"
+            ]
+        },
+        {
+            "name": {
+                "last": "Jones",
+                "first": "Bob"
+            },
+            "contact": {
+                "email": "bob@company.com"
+            },
+            "account": {
+                "lastLoginTime": "2018-02-27T01:05:02.029Z"
+            },
+            "role": "View",
+            "permissions": [
+                "VIEW"
+            ]
+        }
+    ]
+
+.. only:: not latex
+
+    |
+
+
+
+Add users to a Workspace and set or update security roles
+---------------------------------------------------------
+Add a list of users to a Workspace by its **id** and set or update user security roles. You can use the automatically assigned *_id* or your own *customId* prepended with '@'. 
+You must specify a valid *role* name that has been preconfigured in :ref:`account settings <management-security-userroles>`.
+
+If the user (email address) does not already exist a new user profile will be created and a *profileActivateUrl* will be returned so the user profile can be finalized by navigating to the url in a web browser. 
+When adding a new user (profile does not exist) you can optionally include attributes: *name*, *phone*, *timezone*, *timezoneAdjustForDst* and *timeFormat*.
+
+.. note:: 
+    Required API key permission: *Modify*
+
+Request
+~~~~~~~~
+
+::
+
+    POST /api/v1/nodes/:id/security/subscribe
+
+::
+
+    {
+        "users": [
+            {
+                "user": "bob@company.com",
+                "role": "View"
+            }, 
+            {
+                "user": "jane@company.com", 
+                "role": "Operate", 
+                "name": {
+                    "first": "Jane", 
+                    "last": "Smith",
+                },
+                "phone": "+61400000001", 
+                "timezone": "Australia/Sydney", 
+                "timezoneAdjustForDst": true, 
+                "timeFormat": "YYYY-MM-DD HH:mm:ss"
+            }
+        ]
+    }
+
+Response
+~~~~~~~~
+
+::
+    
+    HTTP/1.1 200 OK
+    Content-Type: application/json; charset=utf-8
+
+::
+    
+    {
+        "added": [
+            {
+                "user": "jane@company.com",
+                "role": "Operate",
+                "permissions": [
+                    "VIEW",
+                    "ATTACHMENT_READ",
+                    "EXPORT_DATA",
+                    "SEND_MESSAGE",
+                    "ACKNOWLEDGE_ALARMS",
+                    "EDIT_ALARMS",
+                    "CONTROL",
+                    "SUBSCRIBE_NOTIFICATIONS"
+                ],
+                "profileActivateUrl": "https://eagle.io/auth/setupprofile/ca4d1da0-8231-46df-af69-df1b2f1a8b5d"
+            }
+        ],
+        "updated": [
+            {
+                "user": "bob@company.com",
+                "role": "View",
+                "permissions": [
+                    "VIEW"
+                ]
+            }
+        ]
+    }
+
+.. only:: not latex
+
+    |
+
+
+
+Remove users from a Workspace
+------------------------------
+Remove a list of users from a Workspace by its **id**. You can use the automatically assigned *_id* or your own *customId* prepended with '@'. 
+
+.. note:: 
+    Owner and Administrator users can not be removed from an individual workspace. 
+    Required API key permission: *Modify*
+
+Request
+~~~~~~~~
+
+::
+
+    POST /api/v1/nodes/:id/security/unsubscribe
+
+::
+
+    {
+        "users": [
+            {
+                "user": "jane@company.com", 
+            }
+        ]
+    }
+
+Response
+~~~~~~~~
+
+::
+    
+    HTTP/1.1 200 OK
+    Content-Type: application/json; charset=utf-8
+
+::
+    
+    {
+        "removed": [
+            {
+                "user": "jane@company.com",
+            }
+        ]
+    }
+
+.. only:: not latex
+
+    |
 
 
 Retrieve node historic data
@@ -1213,4 +1747,3 @@ Response
 .. only:: not latex
 
     |
-
