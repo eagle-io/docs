@@ -33,6 +33,13 @@ Nodes are the container objects that store all data and configuration for your p
 	
 	| 
 
+|icon-template| Template
+	:ref:`Templates <node-configuration-template>` are special container Nodes that are used to define consistent structure and configuration. They can be referenced as instances in other Workspaces to speed up automated configuration for large deployments.
+
+.. only:: not latex
+	
+	| 
+	
 |icon-chart| Chart
 	Create various types of :ref:`charts <node-configuration-chart>` with customized functionality and appearance including historic charts with multiple y-axes and wind rose charts with configurable ranges.
 
@@ -166,6 +173,7 @@ Nodes are the container objects that store all data and configuration for your p
 
    workspace/index
    location/index
+   template/index
    chart/index
    dashboard/index
    attachment/index

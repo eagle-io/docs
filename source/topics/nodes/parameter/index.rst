@@ -182,6 +182,7 @@ Drag and drop states in the list to change their display order.
 
     .. image:: parameter_states_discrete.jpg
 
+.. _node-configuration-parameter-states-config:
 
 States type
     Select the type of States most suitable for your data.
@@ -289,6 +290,7 @@ Select the data and processing to be used.
     
     .. image:: parameter_chart_data.png
 
+
 Aggregation mode
     *Automatic*
 
@@ -300,6 +302,8 @@ Aggregation mode
 
         Aggregate
             Aggregates provide a method to resample raw data over a specified period. See the :ref:`list of available aggregates <historic-aggregates>` for full details. Select RAW to display the original raw data with no aggregation applied (Interval and Base time options will be hidden).
+        Aggregate display
+            Determines if aggregated data will be show only after intervals are complete, or be shown during an aggregation interval when only partial data is available.   
         Period
             *Automatic* will change the period of the aggregate calculation based on the zoom level of the chart.
             *Fixed Period* lets you define a fixed Interval and Base time that will be applied regardless of the zoom level.

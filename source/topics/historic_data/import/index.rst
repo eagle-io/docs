@@ -75,6 +75,14 @@ Write mode
 
         Insert new data only if there is no existing historic data within the range being imported.
 
+    [API: DELETE_RANGE]
+
+        Delete historic data encapsulated by the range of the imported data.
+
+    [API: DELETE]
+
+        Delete historic data that matches the timestamps of the imported data.
+
 Timezone
     Select the timezone of the data being imported. This is generally the location of the sensor or device, but can be adjusted as required.
 

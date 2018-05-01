@@ -9,9 +9,11 @@ Some examples include:
 
 - :ref:`Calculate average of multiple Parameters <example1>`
 - :ref:`Transform a series using an equation <example2>`
-- :ref:`Generate a series forecast to provide predictive alarming <example4>`
+- :ref:`Generate a series forecast to provide predictive alarming <example5>`
 
-Programs are expressed as JavaScript, stored as configuration in Process Nodes, and executed on a schedule or as new data is acquired. Each program can interact with all Nodes in the current Workspace and any associated time-series data.
+Programs are expressed as `JavaScript <http://www.ecma-international.org/ecma-262/5.1/>`_, stored as configuration in Process Nodes, and executed on a schedule or automatically as new data is acquired. Each program can interact with all Nodes in the current Workspace and any associated time-series data.
+
+
 
 .. _process-nodes:
 
@@ -52,7 +54,7 @@ A program should include three distinct stages:
 |icon-point-number-range-process| Process Parameter
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-A Process Parameter is a type of Parameter that has a program defined as part of it's configuration and can be created under any Data Source. The first input referred to by the program will be used to define the timestamps used by the output of the process. Each execution of the process must return a single output value of the expected type. This output can then be viewed in the same way as any other Parameter (for example, it can be shown as a table or chart, exported, used as input for a different process, etc.). The output can also have states defined which will trigger alarms.
+A Process Parameter is a type of Parameter that has a program defined as part of it's configuration and can be created under any Data Source. The first input referred to by the program will be used to define the timestamps used by the output of the process. Each execution of the program must return a single output value of the expected type (or an array containing the output value and quality). This output can then be viewed in the same way as any other Parameter (for example, it can be shown as a table or chart, exported, used as input for a different process, etc.). The output can also have states defined which will trigger alarms.
 
 Examples
 ________
@@ -81,7 +83,25 @@ ________
     var d = -0.4667;
     var v = NODE('Param').currentValue;
 
-    return a + (b*v) + (c*v^2) + (d*v^3);
+    return a + (b*v) + (c * Math.pow(v,2)) + (d * Math.pow(v,3));
+
+.. _example3:
+
+.. code-block:: javascript
+    :linenos:
+
+    // Assign a bad quality code to value spikes
+    var value = NODE('Param').currentValue;
+    var quality;
+
+    if( value > 999 ) {
+        quality = 156;
+    }
+
+    return [ value, quality ];
+
+.. note:: 
+    Assigning quality codes to value spikes can also be achieved by configuring the Quality of a :ref:`Parameter State <node-configuration-parameter-states-config>`.
 
 .. _processor:
 
@@ -115,7 +135,7 @@ Outputs are defined as part of your program and automatically created as Paramet
 Examples
 ________
 
-.. _example3:
+.. _example4:
 
 .. code-block:: javascript
     :linenos:
@@ -127,7 +147,7 @@ ________
     NUMBER('quotient').currentValue = quotient;
     NUMBER('remainder').currentValue = remainder;
 
-.. _example4:
+.. _example5:
 
 .. code-block:: javascript
     :linenos:
@@ -162,7 +182,7 @@ Global variables are references to Nodes that are related to the currently execu
 Global Functions
 ~~~~~~~~~~~~~~~~
 
-Global functions can be use to obtain a reference to a Node in your Workspace and are identified using an absolute or relative path argument.
+Global functions can be used to obtain a reference to a Node in your Workspace and are identified using an absolute or relative path argument.
 
 .. table::
     :class: table-fluid
@@ -194,6 +214,35 @@ Paths are literal strings used as arguments in global functions to reference nod
     ``Parameter``                              Relative path to a Parameter
     ========================================   =================================
 
+
+
+
+.. _workspace-authorisation:
+
+Workspace Authorisation
+~~~~~~~~~~~~~~~~~~~~~~~
+
+Node paths that reference a Workspace which is not the current Workspace (including Workspaces in other accounts) will require additional authorisation. This is done using the *AUTH* function, which must be used in your progam before specifying the Node path.
+
+
+.. table::
+    :class: table-fluid
+
+    ==================================   ======================================
+    **AUTH(** *slug*, *api-key* **)**    Authorise a Workspace using an API key
+    ==================================   ======================================
+
+
+The *slug* is a code which uniquely identifies an account, and can always be seen in the URL; for example, in the following URL, the slug is *abc123*:
+
+``https://eagle.io/ui/abc123/myWorkspace``
+
+The *api-key* must be an :ref:`API key <management-security-apikeys>` which has access to the Workspace that you intend to reference in a Node path.
+
+.. note:: 
+    If all the Node paths in your program are in the same Workspace as your program, then the *AUTH* function is not required.
+
+
 .. _aggregate-expressions:
 
 Aggregate Expressions
@@ -218,6 +267,55 @@ The three components of an aggregate expression must be expressed in order and s
     ``Param 1;COUNT;W;1W``          Number of values since the start of the week
     =============================   ==============================================
 
+
+.. _historical-data:
+
+Accessing Historical Data
+~~~~~~~~~~~~~~~~~~~~~~~
+
+
+A specific amount of historical data for a Parameter can be made available for reference. The amount is specified using the base time, with an aggregate type of **NONE**:
+
+``var param1 = NUMBER("param1;NONE;NOW-1H;");``
+
+The above Number Parameter declares an Aggregate Expression containing a **NONE** type aggregate, and a base time of **NOW-1H**. Note the final semicolon which is required to indicate there is no interval specified in this expression. This expression will make available the most recent hour of historical data for this parameter.
+
+Once a Parameter has been declared in this way, historical data can be referenced using the following arrays:
+
+.. table::
+    :class: table-fluid
+
+    =============================   ======================== 
+    **param1.values**               ``An array with historical values``         
+    **param1.qualities**            ``An array with historical qualities``         
+    **param1.timestamps**           ``An array with historical timestamps``         
+    =============================   ======================== 
+
+
+In each array, the most recent data is located in the last array index. Therefore, the following code would return the sum of the three most recent values:
+
+
+.. _example6:
+
+.. code-block:: javascript
+    :linenos:
+
+    var param1 = NUMBER("param1;NONE;NOW-1H;");
+
+    var len = param1.values.length; // Number of historical values available
+
+    var sum = 0;
+
+    if( len >= 3 ) // Ensure there are at least 3 historical values
+    {
+      sum += param1.values[len - 1]; // Most recent value prior to the current value
+      sum += param1.values[len - 2]; // Second most recent value prior to the current value
+      sum += param1.values[len - 3]; // Third most recent value prior to the current value
+    }
+
+    return sum;
+
+
 .. _node-attributes-and-values:
 
 Node Attributes and Values
@@ -234,9 +332,10 @@ A Node reference can be used to access the attributes of that Node using dot not
     ``WORKSPACE.createdTime``         Creation time of the Workspace
     ``NUMBER("param1").offset``       Numeric offset of the Number Parameter
     ``NODE("param2").currentValue``   Current data value of the Parameter
+    ``NODE("param3").newestTime``     Newest timestamp of the Parameter
     ===============================   ==============================================
 
-A full reference of :ref:`Node attributes <api-resources-nodes>` is documented as part of the HTTP API.
+A full reference of :ref:`Node attributes <api-resources-nodes>` is documented as part of the HTTP API. Note that for calculations requiring the time of the newest value, this can be accessed via the ``newestTime`` attribute.
 
 .. _implicit-node-values:
 
@@ -278,7 +377,7 @@ Shared Functions
 
 Common processing routines can be defined as Shared Functions on the Processing tab of your Workspace configuration and accessed from any Process Node. Note that a Shared Function should not reference Global Variables or Global Functions.
 
-.. _example5:
+.. _example7:
 
 .. code-block:: javascript
     :linenos:
@@ -347,6 +446,7 @@ It is also possible to manually trigger a Runtime Error by using the ``throw`` k
 
 Best Practices
 --------------
+- Program syntax should confirm to `ECMAScript 5.1 <http://www.ecma-international.org/ecma-262/5.1/>`_
 - Inputs should be declared before they are referenced, so that any line numbers in error messages will clearly refer to the declaration of a missing input.
 - Very complex or time-consuming calculations may cause the process to exceed the allowed processing time limit. 
 - **Any** input that is referenced by a process will trigger execution of the process when that input is updated. Therefore, a large number of inputs being updated frequently or on different schedules can trigger a process to run very frequently. For example, if 9 inputs are updated every hour, but the 10th input is updated every minute, then the process will execute every minute.

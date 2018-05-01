@@ -99,9 +99,13 @@ Configure how you would like to connect to your file(s).
 Transport type
     Select the transport used to acquire files:
 
+.. _transport-none:
+
     *None*
 
         Select this option when data will arrive exclusively via the :ref:`HTTP API <api>` or :ref:`manually imported <historic-data-import>`.
+
+.. _transport-ftp-download:
 
     *Download from FTP site*
         
@@ -124,6 +128,9 @@ Transport type
 
         Password
             Password for the associated user account (or leave blank for none).
+
+
+.. _transport-website:
 
     *Download from Web site*
 
@@ -149,6 +156,8 @@ Transport type
         ::
             http://data.com/?start=2015.01.01&end=2017.12.01
 
+.. _transport-email:
+
     *Email to eagle.io*
 
         Email data using the auto-generated email address exactly as shown.
@@ -158,7 +167,39 @@ Transport type
 
         **Note**: The maximum accepted size per email (including all data files) is 25MB.
 
-    *Public to mqtt.eagle.io*
+
+.. _transport-sms:
+
+    *Send SMS text message*
+
+        Send a text message to one of our incoming SMS phone numbers:
+
+        Australia:
+            +61 488 811 086 
+
+        United States:
+            +1 408 400 3928 
+
+        Custom phone numbers:
+            Please contact us to arrange a custom incoming SMS number to be exclusivly associated with your account. This will allow you to choose your own Source Id.
+
+
+        Text messages must be exactly 2 lines. They should contain the Source Id on the first line, and a data value (or multiple delimited values) on the second line. 
+
+        If you are sending messages to one of the numbers listed above, a Source Id will be randomly generated. If you have arranged for a number to be associated with your account, you can choose your own Source Id, which must be unique within your account.
+
+        In this example, the randomly generated Source Id is "red-green-blue" and the data value on the next line is "3.1416":
+        ::
+            red-green-blue
+            3.1416
+
+        In the next example, the randomly generated Source Id is "foo-bar-cheese", and there are 3 comma-delimited data values on the next line:
+        ::
+            foo-bar-cheese
+            2.7183,3.1416,6.2832
+
+
+    *Publish to mqtt.eagle.io*
 
         Publish data with MQTT using the following settings:
 
@@ -170,6 +211,9 @@ Transport type
 
         Topic
             Use the auto-generated topic exactly as shown. eg. *io/eagle/source/fruit-honey-jacket*
+
+
+.. _transport-s3:
 
     *Read from Amazon S3*
 
@@ -187,6 +231,8 @@ Transport type
         **Note**: Matching files will be removed from S3 after acquire.
 
 
+.. _transport-dropbox:
+
     *Read from Dropbox*
 
         Dropbox is used to connect to a `Dropbox`_ account. An *eagle.io* folder will be created in your Dropbox *Apps* directory where you can place files for collection.
@@ -202,6 +248,9 @@ Transport type
                 :scale: 50 %
 
         When changing the account, a popup window will be displayed which allows you to login to Dropbox and authorise access as shown above.
+
+
+.. _transport-ftp-upload:
 
     *Upload to ftp.eagle.io*
 
