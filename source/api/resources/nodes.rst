@@ -744,10 +744,9 @@ Response
     |
 
 
-
 Clone a node or create instance from template
 ----------------------------------------------
-Clone a node or create an instance from a template by its *id*. You can use the automatically assigned *_id* or your own *customId* prepended with '@'. 
+Clone a node or create an :ref:`instance <node-configuration-template-instances>` from a :ref:`template <node-configuration-template>` by its *id*. You can use the automatically assigned *_id* or your own *customId* prepended with '@'. 
 You must specify a valid *parentId* as the destination for the clone/create operation. Optionally include *name* and *metadata* to be assigned to the newly created node.
 
 .. note:: 
@@ -774,7 +773,6 @@ Arguments
                                                 ie. *fileUrl* for Attachments. Default is 0 (no expiry).
                                                 Expired resource links will return 403 Forbidden.
     =================   =====================   ================================================================
-
 
 Request
 ~~~~~~~~
