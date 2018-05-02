@@ -1307,7 +1307,7 @@ Request
     {
         "users": [
             {
-                "user": "jane@company.com", 
+                "user": "jane@company.com"
             }
         ]
     }
@@ -1325,7 +1325,7 @@ Response
     {
         "removed": [
             {
-                "user": "jane@company.com",
+                "user": "jane@company.com"
             }
         ]
     }
