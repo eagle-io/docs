@@ -1007,7 +1007,24 @@ Response
             },
             "account": {
                 "lastLoginTime": "2018-05-01T01:21:59.735Z"
-            }
+            },
+            "notificationCategories": [
+                {
+                    "category": "Maintenance",
+                    "email": true,
+                    "sms": true
+                },
+                {
+                    "category": "Operations",
+                    "email": true,
+                    "sms": true
+                },
+                {
+                    "category": "Critical",
+                    "email": true,
+                    "sms": true
+                }
+            ]
         },
         {
             "name": {
@@ -1019,7 +1036,24 @@ Response
             },
             "account": {
                 "lastLoginTime": "2018-02-27T01:05:02.029Z"
-            }
+            },
+            "notificationCategories": [
+                {
+                    "category": "Maintenance",
+                    "email": false,
+                    "sms": false
+                },
+                {
+                    "category": "Operations",
+                    "email": true,
+                    "sms": false
+                },
+                {
+                    "category": "Critical",
+                    "email": true,
+                    "sms": true
+                }
+            ]
         }
     ]
 
