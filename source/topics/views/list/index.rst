@@ -282,19 +282,19 @@ Toolbar controls should be used in combination with the row selection checkboxes
 
 Notifications
 ~~~~~~~~~~~~~
-|icon-notification| Subscribe or Unsubscribe from receiving notifications for the checked Nodes including all contained Nodes. See :ref:`Alarms and Notifications <alarms-and-notifications>` for full details.
+|icon-notification| Subscribe or Unsubscribe from receiving :ref:`notifications <notifications>` for the checked Nodes including all contained Nodes.
 
 | 
 
 Alarms
 ~~~~~~
-|icon-alarm| Acknowledge alarms with or without a comment, or Clear the alarms for the checked Nodes. See :ref:`Alarms and Notifications <alarms-and-notifications>` for full details.
+|icon-alarm| Acknowledge alarms with or without a comment, or Clear the alarms for the checked Nodes. Refer the section on :ref:`Alarms <alarms>` for more info.
 
 | 
 
 Operate
 ~~~~~~~
-|icon-operate| Acquire or Control the checked nodes. See :ref:`Operate and Control <operate-and-control>` for full details.
+|icon-operate| Acquire or Control the checked nodes. See :ref:`Operate and Control <operate-and-control>` for more info.
 
 | 
 

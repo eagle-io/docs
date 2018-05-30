@@ -1,10 +1,8 @@
-.. _alarms-and-notifications:
+.. _alarms:
 
-Alarms and Notifications
+Alarms
 ========================
 |icon-alarm| An alarm is an indication of an abnormal condition or problem detected by the system. Alarms are always associated with Nodes and are visually indicated throughout the interface using specific color coding. When an alarm is raised, you should typically acknowledge it so that other users do not attempt to investigate the same alarm condition. 
-
-|icon-notification| Notifications are used to inform users of an Alarm or other condition without the users needing to be logged into the system. Notifications can be sent via Email and SMS. Users must personally subscribe to specific Nodes and specify their :ref:`notification preferences <user-notification-preferences>`.
 
 .. only:: not latex
 
@@ -12,7 +10,7 @@ Alarms and Notifications
     
 Types of Alarms
 ---------------
-There are different types of alarms which apply to specific Nodes. Notifications can optionally be configured for Alarms and require a Category to be selected. The notification drop down is used to specify when notifications should be sent - when the alarm is raised and/or cleared. Learn more about :ref:`configuring nodes <nodes-and-configuration>`.
+There are different types of alarms which apply to specific Nodes. :ref:`Notifications <notifications>` can optionally be configured for Alarms and require a Category to be selected. The notification drop down is used to specify when notifications should be sent - when the alarm is raised and/or cleared. Learn more about :ref:`configuring nodes <nodes-and-configuration>`.
 
 .. only:: not latex
 
@@ -220,7 +218,7 @@ Quality Alarms are specific to Parameters and Locations and are triggered (if en
 State Alarm
 ~~~~~~~~~~~
 State Alarms are defined in the :ref:`state configuration <node-configuration-parameter-states>` for individual Parameter Nodes.
-Each State can have individual alarm and notification criteria.
+Each State can have individual alarm and :ref:`notification <notifications>` criteria.
 
 .. raw:: latex
 
@@ -444,52 +442,7 @@ Alarm History
 
 	.. image:: alarm_history.jpg
 
-.. only:: not latex
-
-    |
     
-Notifications
--------------
-There are 3 steps to configuring notifications:
-
-1. :ref:`Configure the Node <nodes-and-configuration>` and set the Notification option and Category for an Alarm type or State.
-2. Configure your user profile :ref:`notification preferences <user-notification-preferences>`.
-3. :ref:`Subscribe to the Nodes <subscribe-nodes>` you would like to receive notifications for.
-
-Account administrators can also define custom notification categories and set limits on certain types of notifications. See :ref:`managing notifications <management-notifications>` for full details.
-
-.. only:: not latex
-
-    |
-    
-.. _subscribe-nodes:
-
-Subscribe to Nodes
-~~~~~~~~~~~~~~~~~~
-|icon-subscribe| Subscribe to and Unsubscribe from Nodes via the Workspace Menu and View's context menus, List View toolbar or from the subscribe icon shown in the List View rows. 
-
-When changing subscription options from the toolbar or context menu the checked or chosen Nodes including all contained Nodes will have the new subscription options applied.
-
-Click or touch the subscribe icon in the List View to toggle your subscription to the corresponding Node(s). If the Node contains other Nodes (ie. Location Node contains Source Node), the Notification Subscription Panel will be displayed to allow you to select which types of Nodes you would like to subscribe to or unsubscribe from. A partially colored subscription icon indicates that not all child Nodes have been subscribed to.
-
-*Notification Subscription Panel accessible from List View*
-
-.. only:: not latex
-
-	.. image:: notification_panel.jpg
-		:scale: 50 %
-
-	| 
-		
-.. only:: latex
-
-	.. image:: notification_panel.jpg
-		:scale: 40 %
-		
-
-.. note::
-	Users require *subscribe notifications* permission to subscribe to Nodes. See :ref:`User roles <management-security-userroles>` for full details about configuring Workspace User roles and assigning permissions.
-
 .. raw:: latex
 
     \newpage

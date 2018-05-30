@@ -130,10 +130,10 @@ Outputs are defined as part of your program and automatically created as Paramet
     | 
 
     .. image:: processor-outputs.jpg
-        :scale: 100 %
+
 
 Examples
-________
+_________
 
 .. _example4:
 
@@ -271,7 +271,7 @@ The three components of an aggregate expression must be expressed in order and s
 .. _historical-data:
 
 Accessing Historical Data
-~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 A specific amount of historical data for a Parameter can be made available for reference. The amount is specified using the base time, with an aggregate type of **NONE**:

@@ -1,7 +1,7 @@
-The Security section displays a list of all users that have access to the Node. 
-Users with *security* permission can restrict user access to the node and its descendants by assign the **No Access** role. 
+The Security section displays a list of all users and groups that have access to the Node. 
+Users with *security* permission can restrict user and group access to the node and its descendants by assign the **No Access** role. 
 
-New users must be added via the :ref:`Workspace Security <node-configuration-workspace-security>` section.
+New users and groups must be added via the :ref:`Workspace Security <node-configuration-workspace-security>` section.
 
 .. raw:: latex
 
@@ -9,7 +9,21 @@ New users must be added via the :ref:`Workspace Security <node-configuration-wor
     
 .. only:: not latex
 
-    .. image:: ../node_security.jpg
+    .. image:: ../node_security_users.jpg
+        :scale: 50 %
+
+
+.. only:: latex
+
+    | 
+
+    .. image:: ../node_security_users.jpg
+
+
+    
+.. only:: not latex
+
+    .. image:: ../node_security_groups.jpg
         :scale: 50 %
 
     | 
@@ -18,6 +32,6 @@ New users must be added via the :ref:`Workspace Security <node-configuration-wor
 
     | 
 
-    .. image:: ../node_security.jpg
+    .. image:: ../node_security_groups.jpg
 
-.. note:: The Account Owner, Administrators or Workspace users that have been assigned a Workspace role with the *configure* permission can not be assigned the *No Access* role.
+.. note:: The Account Owner, Administrators or Workspace users/groups that have been assigned a Workspace role with the *configure* permission can not be assigned the *No Access* role.

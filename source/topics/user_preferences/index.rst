@@ -104,7 +104,36 @@ Use the SMS/Email checkboxes to set your preferences on what types of notificati
 .. only:: not latex
 
     |
-    
+
+.. _user-preferences-groups:
+
+Groups
+-----------------------
+The *Groups* section displays a list of user groups your user profile is associated with. 
+You can removed yourself from a group but you will no longer have access to Workspaces and notifications associated with the group. 
+Only account administrators can :ref:`add users to groups <management-security-groups>`.
+
+.. raw:: latex
+
+    \vspace{-10pt}
+
+.. only:: not latex
+
+    .. image:: user_profile_groups.jpg
+        :scale: 50 %
+
+    | 
+
+.. only:: latex
+
+    | 
+
+    .. image:: user_profile_groups.jpg
+
+.. only:: not latex
+
+    |
+
 .. _user-preferences-other:
 
 Other

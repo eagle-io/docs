@@ -9,13 +9,14 @@ Introductions to all the key parts of `eagle.io <https://eagle.io>`_ you’ll ne
    workspaces_tree/index
    views/index
    nodes/index
-   processing_and_logic/index
    user_preferences/index
-   messages/index
-   alarms_and_notifications/index
+   alarms/index
+   notifications/index
    operate_and_control/index
    historic_data/index
    sharing_and_security/index
+   processing_and_logic/index
    account_settings/index
+   messages/index
    device_configuration/index
    troubleshooting/index

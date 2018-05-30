@@ -7,6 +7,7 @@ Security
 
     |
 
+
 .. _management-security-administrators:
 
 Administrators
@@ -41,27 +42,64 @@ Add a new administrators by entering their email addresses and click *Add*. Sepa
 
     |
 
-.. _management-security-userroles:
 
-User roles
-----------
+.. _management-security-groups:
 
-User roles are assigned when :ref:`Sharing a Workspace <node-configuration-workspace-security>` with a user to restrict access to the Workspace.
-Create unlimited new roles, or change existing role permissions as needed. 
-Roles have permissions associated with them which restrict user functionality.
+Groups
+---------
 
-*Default User Roles*
+Groups are used to organize your users and provide a convenient way to manage :ref:`Workspace access <node-configuration-workspace-security>` and :ref:`notifications <notifications>`. 
+To use groups, simply click *Add group*, assign a unique name and enter the email address of user(s) that you want to include in the group. 
+New users will receive a welcome email with links to setup their user profile and login. A user can be assigned to more than one group. 
+
+After saving the newly created group, you can proceed to :ref:`share workspace access <node-configuration-workspace-security>` and :ref:`manage notifications <notifications-manage>`.
+
+You can now add/remove users to the group and they will automatically receive/lose Workspace access and notifications associated with the group.
+
+.. raw:: latex
+
+    \vspace{-10pt}
+    
+.. only:: not latex
+
+	.. image:: account_groups.jpg
+		:scale: 50 %
+
+	| 
+
+.. only:: latex
+
+	| 
+
+	.. image:: account_groups.jpg
+
 
 .. only:: not latex
 
-	.. image:: account_user_roles.jpg
+    |
+
+
+.. _management-security-userroles:
+
+Roles
+----------
+
+Roles are assigned when :ref:`Sharing a Workspace <node-configuration-workspace-security>` to restrict user and group access to certain feautres.
+Create unlimited new roles, or change existing role permissions as needed. 
+Removing a role that has been assigned will restrict associated users to *View only* access.
+
+*Default Roles*
+
+.. only:: not latex
+
+	.. image:: account_roles.jpg
 		:scale: 50 %
 
 	| 
 
 .. only:: latex
 	
-	.. image:: account_user_roles.jpg
+	.. image:: account_roles.jpg
 	
 
 *Permissions*
@@ -80,6 +118,9 @@ Send messages
 
 Subscribe notifications
 	Subscribe to Nodes and receive Email and SMS notifications.
+
+Manage notifications
+	Manage user notification subscriptions on behalf of other users.
 
 Acknowledge alarms
 	Acknowledge alarms with or without comment.
@@ -103,6 +144,7 @@ Security
 .. only:: not latex
 
     |
+
 
 .. _management-security-apikeys:
 
