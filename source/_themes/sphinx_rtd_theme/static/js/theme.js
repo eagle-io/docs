@@ -4,7 +4,7 @@ $( document ).ready(function() {
   $("link[href*='sphinx_rtd_theme.css']").remove();
 
   // Hide extra garbage being inserted
-  fnRemoveGarbage = function(){
+  var fnRemoveGarbage = function(){
     var garbage = [".keep-us-sustainable", ".ethical-rtd"];
     for (var i=0; i<garbage.length; i++) {
       $(garbage[i]).hide();
@@ -12,7 +12,8 @@ $( document ).ready(function() {
   }
   
   fnRemoveGarbage()
-  window.setTimeout(fnRemoveGarbage, 0)
+  window.setTimeout(fnRemoveGarbage, 101)
+  window.setTimeout(fnRemoveGarbage, 2000)
 
   // Shift nav in mobile when clicking the menu.
   $("[data-toggle='wy-nav-top']").click(function(e) {
