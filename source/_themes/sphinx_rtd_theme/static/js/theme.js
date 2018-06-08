@@ -4,8 +4,15 @@ $( document ).ready(function() {
   $("link[href*='sphinx_rtd_theme.css']").remove();
 
   // Hide extra garbage being inserted
-  $(".keep-us-sustainable").hide();
-  $(".ethical-rtd").hide();
+  fnRemoveGarbage = function(){
+    var garbage = [".keep-us-sustainable", ".ethical-rtd"];
+    for (var i=0; i<garbage.length; i++) {
+      $(garbage[i]).hide();
+    }
+  }
+  
+  fnRemoveGarbage()
+  window.setTimeout(fnRemoveGarbage, 0)
 
   // Shift nav in mobile when clicking the menu.
   $("[data-toggle='wy-nav-top']").click(function(e) {
