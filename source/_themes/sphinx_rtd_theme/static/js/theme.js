@@ -3,6 +3,10 @@ $( document ).ready(function() {
   // Remove the RTD Extra Head CSS that is injected automatically during build
   $("link[href*='sphinx_rtd_theme.css']").remove();
 
+  // Hide extra garbage being inserted
+  $(".keep-us-sustainable").hide();
+  $(".ethical-rtd").hide();
+
   // Shift nav in mobile when clicking the menu.
   $("[data-toggle='wy-nav-top']").click(function(e) {
     $("[data-toggle='wy-nav-shift']").toggleClass("shift");
