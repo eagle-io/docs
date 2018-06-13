@@ -1405,8 +1405,11 @@ Arguments
                                                             Flag to indicate if timestamps should be adjusted for DST in
                                                             selected *timezone*.
 
+    **timeFormat**              YYYY-MM-DD HH:mm:ss         *Optional*. 
+                                                            :ref:`Time format<time-format-customize>`.
+
     **limit**                   100                         *Optional*. 
-                                                            Maximum number of historic records to be returned
+                                                            Maximum number of historic records to be returned.
 
     **quality**                 FALSE                       *Optional - Default is FALSE*. 
                                                             Flag to include :ref:`quality <historic-quality>`
