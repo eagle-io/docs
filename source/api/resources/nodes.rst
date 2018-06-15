@@ -1272,8 +1272,8 @@ Response
 
 
 
-Add or Update Workspace users and groups 
--------------------------------------------
+Add or Update Workspace user and group permissions
+---------------------------------------------------
 Add a list of users and groups to a Workspace by its **id** and set or update user security roles. You can use the automatically assigned *_id* or your own *customId* prepended with '@'. 
 You must specify a valid *role* name that has been preconfigured in :ref:`account settings <management-security-userroles>`.
 
