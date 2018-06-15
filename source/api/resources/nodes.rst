@@ -997,7 +997,7 @@ Response
 ::
     
     {
-        users: [
+        "users": [
             {
                 "name": {
                     "last": "Jones",
@@ -1028,7 +1028,7 @@ Response
                 ]
             }
         ],
-        groups: [
+        "groups": [
             {
                 "group": "Engineers",
                 "users": [
