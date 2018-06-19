@@ -975,9 +975,9 @@ Response
     |
 
 
-Retrieve user notification subscriptions
------------------------------------------
-Retrieve a list of all users subscribed to receieve notifications for a node by its **id**. You can use the automatically assigned *_id* or your own *customId* prepended with '@'. 
+Retrieve user and group notification subscriptions
+---------------------------------------------------
+Retrieve a list of all users and groups subscribed to receieve notifications for a node by its **id**. You can use the automatically assigned *_id* or your own *customId* prepended with '@'. 
 
 Request
 ~~~~~~~~
@@ -996,75 +996,84 @@ Response
 
 ::
     
-    [
-        {
-            "name": {
-                "last": "Smith",
-                "first": "John"
-            },
-            "contact": {
-                "email": "john@company.com"
-            },
-            "account": {
-                "lastLoginTime": "2018-05-01T01:21:59.735Z"
-            },
-            "notificationCategories": [
-                {
-                    "category": "Maintenance",
-                    "email": true,
-                    "sms": true
+    {
+        "users": [
+            {
+                "name": {
+                    "last": "Jones",
+                    "first": "Bob"
                 },
-                {
-                    "category": "Operations",
-                    "email": true,
-                    "sms": true
+                "contact": {
+                    "email": "bob@company.com"
                 },
-                {
-                    "category": "Critical",
-                    "email": true,
-                    "sms": true
-                }
-            ]
-        },
-        {
-            "name": {
-                "last": "Jones",
-                "first": "Bob"
-            },
-            "contact": {
-                "email": "bob@company.com"
-            },
-            "account": {
-                "lastLoginTime": "2018-02-27T01:05:02.029Z"
-            },
-            "notificationCategories": [
-                {
-                    "category": "Maintenance",
-                    "email": false,
-                    "sms": false
+                "account": {
+                    "lastLoginTime": "2018-02-27T01:05:02.029Z"
                 },
-                {
-                    "category": "Operations",
-                    "email": true,
-                    "sms": false
-                },
-                {
-                    "category": "Critical",
-                    "email": true,
-                    "sms": true
-                }
-            ]
-        }
-    ]
+                "notificationCategories": [
+                    {
+                        "category": "Maintenance",
+                        "email": false,
+                        "sms": false
+                    },
+                    {
+                        "category": "Operations",
+                        "email": true,
+                        "sms": false
+                    },
+                    {
+                        "category": "Critical",
+                        "email": true,
+                        "sms": true
+                    }
+                ]
+            }
+        ],
+        "groups": [
+            {
+                "group": "Engineers",
+                "users": [
+                    {
+                        "name": {
+                            "last": "Smith",
+                            "first": "Will"
+                        },
+                        "contact": {
+                            "email": "will@company.com"
+                        },
+                        "account": {
+                            "lastLoginTime": ""
+                        },
+                        "notificationCategories": [
+                            {
+                                "category": "Maintenance",
+                                "email": true,
+                                "sms": true
+                            },
+                            {
+                                "category": "Operations",
+                                "email": true,
+                                "sms": true
+                            },
+                            {
+                                "category": "Critical",
+                                "email": true,
+                                "sms": true
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
 
 .. only:: not latex
 
     |
 
 
-Subscribe users to notifications
----------------------------------
-Subscribe a list of users to receieve notifications for a node by its **id**. You can use the automatically assigned *_id* or your own *customId* prepended with '@'. 
+Subscribe users and groups to notifications
+--------------------------------------------
+Subscribe a list of users and groups to receieve notifications for a node by its **id**. You can use the automatically assigned *_id* or your own *customId* prepended with '@'. 
 
 .. note:: 
     Only available for Location, Source and Parameter nodes. The specified users (email addresses) must be valid workspace users with *SUBSCRIBE_NOTIFICATIONS* permission. 
@@ -1087,55 +1096,10 @@ Request
             {
                 "user": "bob@company.com"
             }
-        ]
-    }
-
-Response
-~~~~~~~~
-
-::
-    
-    HTTP/1.1 202 Accepted
-    Content-Type: application/json; charset=utf-8
-
-::
-    
-    {
-        "status": {
-            "code": 202,
-            "message": "Operation accepted but not yet complete"
-        }
-    }
-
-.. only:: not latex
-
-    |
-
-
-Unsubscribe users from notifications
--------------------------------------
-Unsubscribe a list of users from receieving notifications for a node by its **id**. You can use the automatically assigned *_id* or your own *customId* prepended with '@'. 
-
-.. note:: 
-    Only available for Location, Source and Parameter nodes. 
-    Required API key permission: *Modify*
-
-Request
-~~~~~~~~
-
-::
-
-    POST /api/v1/nodes/:id/notifications/unsubscribe
-
-::
-
-    {
-        "users": [
+        ],
+        "groups": [
             {
-                "user": "john@company.com"
-            }, 
-            {
-                "user": "bob@company.com"
+                "group": "Engineers"
             }
         ]
     }
@@ -1162,9 +1126,65 @@ Response
     |
 
 
-Retrieve workspace users and permissions
------------------------------------------
-Retrieve a list of all users with access to a workspace (or node) by its **id**. You can use the automatically assigned *_id* or your own *customId* prepended with '@'. 
+Unsubscribe users and groups from notifications
+-------------------------------------------------
+Unsubscribe a list of users and groups from receieving notifications for a node by its **id**. You can use the automatically assigned *_id* or your own *customId* prepended with '@'. 
+
+.. note:: 
+    Only available for Location, Source and Parameter nodes. 
+    Required API key permission: *Modify*
+
+Request
+~~~~~~~~
+
+::
+
+    POST /api/v1/nodes/:id/notifications/unsubscribe
+
+::
+
+    {
+        "users": [
+            {
+                "user": "john@company.com"
+            }, 
+            {
+                "user": "bob@company.com"
+            }
+        ],
+        "groups": [
+            {
+                "group": "Engineers"
+            }
+        ]
+    }
+
+Response
+~~~~~~~~
+
+::
+    
+    HTTP/1.1 202 Accepted
+    Content-Type: application/json; charset=utf-8
+
+::
+    
+    {
+        "status": {
+            "code": 202,
+            "message": "Operation accepted but not yet complete"
+        }
+    }
+
+.. only:: not latex
+
+    |
+
+
+Retrieve Workspace user and group permissions
+----------------------------------------------
+Retrieve a list of all users and groups with access to a workspace (or node) by its **id**. You can use the automatically assigned *_id* or your own *customId* prepended with '@'. 
+When a user is included in a group that has been provided access, the user entry may contain an *effectivePermissions* attribute which combines individual user and group(s) permissions (where different).
 
 Request
 ~~~~~~~~
@@ -1183,51 +1203,68 @@ Response
 
 ::
     
-    [
-        {
-            "name": {
-                "last": "Smith",
-                "first": "John"
+    {
+        "users": [
+            {
+                "name": {
+                    "last": "Smith",
+                    "first": "John"
+                },
+                "contact": {
+                    "email": "john@company.com"
+                },
+                "account": {
+                    "lastLoginTime": "2018-05-01T01:21:59.735Z"
+                },
+                "role": "OWNER",
+                "permissions": [
+                    "VIEW",
+                    "ATTACHMENT_READ",
+                    "EXPORT_DATA",
+                    "SEND_MESSAGE",
+                    "SUBSCRIBE_NOTIFICATIONS",
+                    "MANAGE_NOTIFICATIONS",
+                    "ACKNOWLEDGE_ALARMS",
+                    "EDIT_ALARMS",
+                    "CONTROL",
+                    "CONFIGURE",
+                    "SECURITY",
+                    "OWNER"
+                ]
             },
-            "contact": {
-                "email": "john@company.com"
-            },
-            "account": {
-                "lastLoginTime": "2018-05-01T01:21:59.735Z"
-            },
-            "role": "OWNER",
-            "permissions": [
-                "VIEW",
-                "ATTACHMENT_READ",
-                "EXPORT_DATA",
-                "SEND_MESSAGE",
-                "SUBSCRIBE_NOTIFICATIONS",
-                "MANAGE_NOTIFICATIONS",
-                "ACKNOWLEDGE_ALARMS",
-                "EDIT_ALARMS",
-                "CONTROL",
-                "CONFIGURE",
-                "SECURITY",
-                "OWNER"
-            ]
-        },
-        {
-            "name": {
-                "last": "Jones",
-                "first": "Bob"
-            },
-            "contact": {
-                "email": "bob@company.com"
-            },
-            "account": {
-                "lastLoginTime": "2018-02-27T01:05:02.029Z"
-            },
-            "role": "View",
-            "permissions": [
-                "VIEW"
-            ]
-        }
-    ]
+            {
+                "name": {
+                    "last": "Jones",
+                    "first": "Bob"
+                },
+                "contact": {
+                    "email": "bob@company.com"
+                },
+                "account": {
+                    "lastLoginTime": "2018-02-27T01:05:02.029Z"
+                },
+                "role": "",
+                "permissions": []
+                "effectivePermissions": [
+                    "VIEW"
+                ]
+            }
+        ],
+        "groups": [
+            {
+                "group": "Engineers",
+                "role": "View",
+                "permissions": [
+                    "VIEW"
+                ],
+                "users": [
+                    {
+                        "user": "bob@company.com"
+                    }
+                ]
+            }
+        ]
+    }
 
 .. only:: not latex
 
@@ -1235,9 +1272,9 @@ Response
 
 
 
-Add users to a Workspace and set or update security roles
----------------------------------------------------------
-Add a list of users to a Workspace by its **id** and set or update user security roles. You can use the automatically assigned *_id* or your own *customId* prepended with '@'. 
+Add or Update Workspace user and group permissions
+---------------------------------------------------
+Add a list of users and groups to a Workspace by its **id** and set or update user security roles. You can use the automatically assigned *_id* or your own *customId* prepended with '@'. 
 You must specify a valid *role* name that has been preconfigured in :ref:`account settings <management-security-userroles>`.
 
 If the user (email address) does not already exist a new user profile will be created and a *profileActivateUrl* will be returned so the user profile can be finalized by navigating to the url in a web browser. 
@@ -1273,6 +1310,12 @@ Request
                 "timezoneAdjustForDst": true, 
                 "timeFormat": "YYYY-MM-DD HH:mm:ss"
             }
+        ],
+        "groups": [
+            {
+                "group": "Engineers",
+                "role": "View"
+            }
         ]
     }
 
@@ -1302,6 +1345,19 @@ Response
                     "SUBSCRIBE_NOTIFICATIONS"
                 ],
                 "profileActivateUrl": "https://eagle.io/auth/setupprofile/ca4d1da0-8231-46df-af69-df1b2f1a8b5d"
+            },
+            {
+                "group": "Engineers",
+                "role" : "View",
+                "permissions": [
+                    "VIEW"
+                ],
+                "users": [
+                    {
+                        "user": "will@company.com",
+                        "profileActivateUrl": "https://eagle.io/auth/setupprofile/bb2d3fc9-7399-26dc-ca22-ee2b6f0b6a0c"
+                    }
+                ]
             }
         ],
         "updated": [
@@ -1321,9 +1377,9 @@ Response
 
 
 
-Remove users from a Workspace
-------------------------------
-Remove a list of users from a Workspace by its **id**. You can use the automatically assigned *_id* or your own *customId* prepended with '@'. 
+Remove users and groups from a Workspace
+-----------------------------------------
+Remove a list of users and groups from a Workspace by its **id**. You can use the automatically assigned *_id* or your own *customId* prepended with '@'. 
 
 .. note:: 
     Owner and Administrator users can not be removed from an individual workspace. 
@@ -1343,6 +1399,11 @@ Request
             {
                 "user": "jane@company.com"
             }
+        ],
+        "groups": [
+            {
+                "group": "Engineers"
+            }
         ]
     }
 
@@ -1360,6 +1421,9 @@ Response
         "removed": [
             {
                 "user": "jane@company.com"
+            },
+            {
+                "group": "Engineers"
             }
         ]
     }
