@@ -46,11 +46,11 @@ Click or touch the subscribe icon in the List View to toggle your subscription t
     .. image:: notification_panel.jpg
         :scale: 40 %
         
-You may notice a *Lock* symbol next to the subscribe icon(s) if you are included in a :ref:`group <management-security-groups>` that has been subscribed to receive notifications. 
-These group notifications can not be unsubscribed from but you can manage your :ref:`notification preferences <user-notification-preferences>` or :ref:`remove yourself from a group <user-preferences-groups>` via the user preferences dialog.
+You may notice a *Lock* symbol next to the subscribe icon(s) if you do not have *subscribe notifications* permission or are included in a :ref:`group <management-security-groups>` that has been subscribed to receive notifications. 
+These locked notifications can only be unsubscribed via the :ref:`manage notifications <notifications-manage>` dialog. However you can manage your personal :ref:`notification preferences <user-notification-preferences>` or :ref:`remove yourself from a group <user-preferences-groups>` via the user preferences dialog.
 
 .. note::
-    Users require *subscribe notifications* permission to subscribe to Nodes. Refer to security :ref:`roles <management-security-userroles>` for more details.
+    Users require *subscribe notifications* permission to subscribe/unsubscribe to Nodes themselves. Refer to security :ref:`roles <management-security-userroles>` for more details.
 
 
 .. only:: not latex
@@ -63,7 +63,7 @@ These group notifications can not be unsubscribed from but you can manage your :
 Manage notifications
 ---------------------
 You can manage notification subscriptions on behalf of a user or group via the *manage notifications* dialog, accessible from the Workspace context menu. 
-Select the user or group from the dropdown menu and :ref:`subscribe <subscribe-nodes>` them to nodes. The dropdown menu only includes users and groups that have been granted *subscribe notifications* permission for the Workspace.
+Select the user or group from the dropdown menu and :ref:`subscribe <subscribe-nodes>` them to nodes. The dropdown menu only includes users and groups that have access to the Workspace.
 
 .. raw:: latex
 
