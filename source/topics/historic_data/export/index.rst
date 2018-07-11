@@ -93,9 +93,18 @@ Quality
 Quality delimiter
     Specify the :term:`delimiter` character to use for separating the value and quality code when *Include with value* is specified for the *Quality* export option.
 
+Annotations
+    Specify how annotations should be exported:
+
+    *Do not include*
+        Annotations are ignored.
+
+    *Include as separate value*
+        Annotations will be included as a separate column in the file.
+
 | 
 
-By default only the first 15 parameters will be selected for export. Use the *Parameter selection* panel accessible via the arrow on the right to refine your selection and change how the data should be exported, including any aggregate calculations to be applied.
+.. note:: By default only the first 15 parameters will be selected for export. Use the *Parameter selection* panel accessible via the arrow on the right to refine your selection and change how the data should be exported, including any aggregate calculations to be applied.
 
 .. raw:: latex
 
