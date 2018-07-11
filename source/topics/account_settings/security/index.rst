@@ -128,6 +128,9 @@ Acknowledge alarms
 Edit states & alarms
 	Configure Node states and alarms, or Clear alarms.
 
+Edit data
+	Modify timeseries data values, quality and annotations.
+
 Operate
 	User can Acquire and Control Datasources and Parameters.
 
