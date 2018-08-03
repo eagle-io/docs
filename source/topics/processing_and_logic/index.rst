@@ -90,15 +90,17 @@ ________
 .. code-block:: javascript
     :linenos:
 
-    // Assign a bad quality code to value spikes
-    var value = NODE('Param').currentValue;
-    var quality;
+    // Assign a bad quality code to value spikes and offset the timestamp by one hour
+    var param = NODE('Param');
+    var ts = T( param.currentTime ).subtract( 1, 'hours' );
+    var v = param.currentValue;
+    var q;
 
-    if( value > 999 ) {
-        quality = 156;
+    if( v > 999 ) {
+        q = 156;
     }
 
-    return [ value, quality ];
+    return { "time": ts, "value": v, "quality": q };
 
 .. note:: 
     Assigning quality codes to value spikes can also be achieved by configuring the Quality of a :ref:`Parameter State <node-configuration-parameter-states-config>`.
