@@ -26,6 +26,8 @@ Example::
 
     |
 
+.. _time-format-customize:
+
 User customizable format
 ------------------------
 Users can assign a preset or custom Time format to their User profile using the time format tokens below. All timestamps displayed to the user will be in their preferred format (where applicable).
