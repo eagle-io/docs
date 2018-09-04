@@ -90,15 +90,17 @@ ________
 .. code-block:: javascript
     :linenos:
 
-    // Assign a bad quality code to value spikes
-    var value = NODE('Param').currentValue;
-    var quality;
+    // Assign a bad quality code to value spikes and offset the timestamp by one hour
+    var param = NODE('Param');
+    var ts = T( param.currentTime ).subtract( 1, 'hours' );
+    var v = param.currentValue;
+    var q;
 
-    if( value > 999 ) {
-        quality = 156;
+    if( v > 999 ) {
+        q = 156;
     }
 
-    return [ value, quality ];
+    return { "time": ts, "value": v, "quality": q };
 
 .. note:: 
     Assigning quality codes to value spikes can also be achieved by configuring the Quality of a :ref:`Parameter State <node-configuration-parameter-states-config>`.
@@ -187,13 +189,23 @@ Global functions can be used to obtain a reference to a Node in your Workspace a
 .. table::
     :class: table-fluid
 
-    =============================   ================================================
+    =============================   ================================================================
     **NODE(** *path* **)**          Retrieve node by path
     **NUMBER(** *path* **)**        Create or retrieve NUMBER Parameter by path
     **TEXT(** *path* **)**          Create or retrieve TEXT Parameter by path
     **TIME(** *path* **)**          Create or retrieve TIME Parameter by path
     **BOOLEAN(** *path* **)**       Create or retrieve BOOLEAN Parameter by path
-    =============================   ================================================
+    **T(** *expression* **)**       Convert a time expression to a `Moment.js <https://momentjs.com>`_ timestamp
+
+                                    |
+                                    A time expression can be any of the following:
+
+                                    - ISO8601 time string, eg. '2018-08-03T16:27:58+10:00'
+
+                                    - Number of milliseconds since Unix epoch, e.g. 1533277715816
+
+                                    - Node time attribute, e.g. **NODE(** 'param' **)**.currentTime
+    =============================   ================================================================
 
 .. _paths:
 
@@ -267,53 +279,53 @@ The three components of an aggregate expression must be expressed in order and s
     ``Param 1;COUNT;W;1W``          Number of values since the start of the week
     =============================   ==============================================
 
+..
+    .. _historical-data:
 
-.. _historical-data:
-
-Accessing Historical Data
-~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-A specific amount of historical data for a Parameter can be made available for reference. The amount is specified using the base time, with an aggregate type of **NONE**:
-
-``var param1 = NUMBER("param1;NONE;NOW-1H;");``
-
-The above Number Parameter declares an Aggregate Expression containing a **NONE** type aggregate, and a base time of **NOW-1H**. Note the final semicolon which is required to indicate there is no interval specified in this expression. This expression will make available the most recent hour of historical data for this parameter.
-
-Once a Parameter has been declared in this way, historical data can be referenced using the following arrays:
-
-.. table::
-    :class: table-fluid
-
-    =============================   ======================== 
-    **param1.values**               ``An array with historical values``         
-    **param1.qualities**            ``An array with historical qualities``         
-    **param1.timestamps**           ``An array with historical timestamps``         
-    =============================   ======================== 
+    Accessing Historical Data
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-In each array, the most recent data is located in the last array index. Therefore, the following code would return the sum of the three most recent values:
+    A specific amount of historical data for a Parameter can be made available for reference. The amount is specified using the base time, with an aggregate type of **NONE**:
+
+    ``var param1 = NUMBER("param1;NONE;NOW-1H;");``
+
+    The above Number Parameter declares an Aggregate Expression containing a **NONE** type aggregate, and a base time of **NOW-1H**. Note the final semicolon which is required to indicate there is no interval specified in this expression. This expression will make available the most recent hour of historical data for this parameter.
+
+    Once a Parameter has been declared in this way, historical data can be referenced using the following arrays:
+
+    .. table::
+        :class: table-fluid
+
+        =============================   ======================== 
+        **param1.values**               ``An array with historical values``         
+        **param1.qualities**            ``An array with historical qualities``         
+        **param1.timestamps**           ``An array with historical timestamps``         
+        =============================   ======================== 
 
 
-.. _example6:
+    In each array, the most recent data is located in the last array index. Therefore, the following code would return the sum of the three most recent values:
 
-.. code-block:: javascript
-    :linenos:
 
-    var param1 = NUMBER("param1;NONE;NOW-1H;");
+    .. _example6:
 
-    var len = param1.values.length; // Number of historical values available
+    .. code-block:: javascript
+        :linenos:
 
-    var sum = 0;
+        var param1 = NUMBER("param1;NONE;NOW-1H;");
 
-    if( len >= 3 ) // Ensure there are at least 3 historical values
-    {
-      sum += param1.values[len - 1]; // Most recent value prior to the current value
-      sum += param1.values[len - 2]; // Second most recent value prior to the current value
-      sum += param1.values[len - 3]; // Third most recent value prior to the current value
-    }
+        var len = param1.values.length; // Number of historical values available
 
-    return sum;
+        var sum = 0;
+
+        if( len >= 3 ) // Ensure there are at least 3 historical values
+        {
+          sum += param1.values[len - 1]; // Most recent value prior to the current value
+          sum += param1.values[len - 2]; // Second most recent value prior to the current value
+          sum += param1.values[len - 3]; // Third most recent value prior to the current value
+        }
+
+        return sum;
 
 
 .. _node-attributes-and-values:
@@ -396,16 +408,18 @@ A number of useful third-party libraries have been included to simplify common p
 .. table::
     :class: table-fluid
 
-    =============================   ===================================================================================
-    Library                         Description
-    ``everpolate``                  `Step Function Interpolation <http://borischumichev.github.io/everpolate/#step>`_
-
-                                    `Linear Interpolation <http://borischumichev.github.io/everpolate/#linear>`_
-
-                                    `Polynomial Interpolation <http://borischumichev.github.io/everpolate/#poly>`_
-
-                                    `Linear Regression <http://borischumichev.github.io/everpolate/#regression>`_
-    =============================   ===================================================================================
+    =============================  =======  ===================================================================================
+    Library                        Version  Description
+    ``everpolate``                 0.0.3    `Step Function Interpolation <http://borischumichev.github.io/everpolate/#step>`_
+        
+                                            `Linear Interpolation <http://borischumichev.github.io/everpolate/#linear>`_
+        
+                                            `Polynomial Interpolation <http://borischumichev.github.io/everpolate/#poly>`_
+        
+                                            `Linear Regression <http://borischumichev.github.io/everpolate/#regression>`_
+        
+    ``moment``                     2.22.2   `Parse, validate, manipulate, and display dates and times <https://momentjs.com>`_
+    =============================  =======  ===================================================================================
 
 These libraries can be accessed by your program using the ``require`` keyword, for example:
 
