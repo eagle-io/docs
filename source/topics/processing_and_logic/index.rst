@@ -283,7 +283,7 @@ The following path examples show how to use both **Node Id** and **Custom Id** w
 Workspace Authorisation
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-Node paths that reference a Workspace which is not the current Workspace (including Workspaces in other accounts) will require additional authorisation. This is done using the *AUTH* function, which must be used in your progam before specifying the Node path.
+Paths that reference a Node which is not the current Workspace (including Nodes in other accounts) will require additional authorisation. This is done using the *AUTH* function, which must be used in your progam before specifying the Node path.
 
 
 .. table::
