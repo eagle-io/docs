@@ -213,13 +213,11 @@ Paths
 
 A path describes a reference to a node and can be expressed as an absolute path, or a path that is relative to the current Process Node. Standard UNIX style path syntax is used, so ``..`` refers to the parent in the Workspace tree. 
 
-Absolute paths begin by identifying either the Workspace or the account *slug* and must be prefixed with a forward-slash ``/``. The *slug* is a code that uniquely identifies an account and is always visible in your browser's address bar; for example, in the following URL the slug is **abc123**:
+Absolute paths begin by identifying either the Workspace or the account *slug* and must be prefixed with a forward-slash ``/``. The *slug* is a code that uniquely identifies an account and is always visible in your browser's address bar; for example, in the following URL the *slug* is **abc123**:
 
 ``https://eagle.io/ui/abc123/myWorkspace``
 
-Including the **slug** in an absoute path is not required unless you are referring to a Node in a foreign account.
-
-In addition to using names to identify Nodes, a path may also include either a :ref:`Node Id <api-node-id>` or :ref:`Custom Id <api-custom-id>`. Note that Node identifiers should be enclosed by curly brackets when included in a path, e.g. ``{5ae92a139097830ee5711d94}`` or ``{@customId}``.
+In addition to using names to identify Nodes, a path may also include either a :ref:`Node Id <api-node-id>` or :ref:`Custom Id <api-custom-id>`. Named elements may also be included after the Node identifier. Note that Node identifiers should be enclosed by curly brackets when included in a path, e.g. ``{5ae92a139097830ee5711d94}`` or ``{@customId}``.
 
 .. table::
     :class: table-fluid
