@@ -187,30 +187,31 @@ Global functions can be used to obtain a reference to a Node in your Workspace a
 .. table::
     :class: table-fluid
 
-    =============================   ================================================================
-    **NODE(** *path* **)**          Retrieve node by path
-    **NUMBER(** *path* **)**        Create or retrieve NUMBER Parameter by path
-    **TEXT(** *path* **)**          Create or retrieve TEXT Parameter by path
-    **TIME(** *path* **)**          Create or retrieve TIME Parameter by path
-    **BOOLEAN(** *path* **)**       Create or retrieve BOOLEAN Parameter by path
-    **T(** *expression* **)**       Convert a time expression to a `Moment.js <https://momentjs.com>`_ timestamp
+    =================================     ============================================================================
+    **NODE(** *path* **)**                Retrieve node by path
+    **NUMBER(** *path* **)**              Create or retrieve NUMBER Parameter by path
+    **TEXT(** *path* **)**                Create or retrieve TEXT Parameter by path
+    **TIME(** *path* **)**                Create or retrieve TIME Parameter by path
+    **BOOLEAN(** *path* **)**             Create or retrieve BOOLEAN Parameter by path
+    **AUTH(** *slug*, *api-key* **)**     Authorise a Workspace using an API key
+    **T(** *expression* **)**             Convert a time expression to a `Moment.js <https://momentjs.com>`_ timestamp
 
                                     |
-                                    A time expression can be any of the following:
+                                          A time expression can be any of the following:
 
-                                    - ISO8601 time string, eg. '2018-08-03T16:27:58+10:00'
+                                          - ISO8601 time string, eg. '2018-08-03T16:27:58+10:00'
 
-                                    - Number of milliseconds since Unix epoch, e.g. 1533277715816
+                                          - Number of milliseconds since Unix epoch, e.g. 1533277715816
 
-                                    - Node time attribute, e.g. **NODE(** 'param' **)**.currentTime
-    =============================   ================================================================
+                                          - Node time attribute, e.g. **NODE(** 'param' **)**.currentTime
+    =============================         ============================================================================
 
 .. _paths:
 
 Paths
 ~~~~~
 
-Paths are literal strings used as arguments in global functions to reference Nodes or Parameter values, and can be either absolute or relative. An absoute path is any path that starts with a foward slash. Standard UNIX style path syntax is used, so ``..`` refers to the parent in the Workspace tree.
+A path describes a reference to a node and can be expressed as an absolute path, or a path that is relative to the current Process Node. Standard UNIX style path syntax is used, so ``..`` refers to the parent in the Workspace tree.
 
 .. table::
     :class: table-fluid
