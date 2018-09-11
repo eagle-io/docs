@@ -21,4 +21,5 @@ Use the Account selector located in the User Menu of the Account Settings sectio
    notifications/index
    billing/index
    customize/index
+   integrations/index
    managed_accounts/index
