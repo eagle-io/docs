@@ -225,8 +225,8 @@ In addition to using names to identify Nodes, a path may also include either a :
     =========================================   =====================================================
     Examples                                      
     ``/Workspace/Location/Source/Parameter``    Absolute path to a Parameter
-    ``../Location 2/Source``                    Relative path to a Source
     ``/slug/Workspace/Location``                Absolute path to a Location, including slug prefix
+    ``../Location 2/Source/Parameter``          Path to a Parameter, relative to the Process Node
     ``{5b6a3fc24e960d0e7497b4b4}``              Path to a Parameter, identified by **Node Id**
     ``{@myParam}``                              Path to a Parameter, identified by **Custom Id**
     ``{5ae92a139097830ee5711d94}/Parameter``    Path to a Parameter, relative to Source **Node Id**
