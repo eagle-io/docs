@@ -211,13 +211,9 @@ Global functions can be used to obtain a reference to a Node in your Workspace a
 Paths
 ~~~~~
 
-A path describes a reference to a node and can be expressed as an absolute path, or a path that is relative to the current Process Node. Standard UNIX style path syntax is used, so ``..`` refers to the parent in the Workspace tree. 
+A path describes a reference to a Node and can be expressed as an absolute path, or a path that is relative to the current Process Node. Standard UNIX style path syntax is used, so ``..`` refers to the parent Node in the Workspace tree. 
 
-Absolute paths begin by identifying either the Workspace or the account *slug* and must be prefixed with a forward-slash ``/``. The *slug* is a code that uniquely identifies an account and is always visible in your browser's address bar; for example, in the following URL the *slug* is **abc123**:
-
-``https://eagle.io/ui/abc123/myWorkspace``
-
-In addition to using names to identify Nodes, a path may also include either a :ref:`Node Id <api-node-id>` or :ref:`Custom Id <api-custom-id>`. Named elements may also be included after the Node identifier. Note that Node identifiers should be enclosed by curly brackets when included in a path, e.g. ``{5ae92a139097830ee5711d94}`` or ``{@customId}``.
+In addition to using names to identify Nodes, a path may also contain either a :ref:`Node Id <api-node-id>` or :ref:`Custom Id <api-custom-id>`. Named elements may also be included after the Node identifier. Note that Node identifiers should be enclosed by braces when included in a path, e.g. ``{5ae92a139097830ee5711d94}`` or ``{@customId}``.
 
 .. table::
     :class: table-fluid
@@ -225,7 +221,6 @@ In addition to using names to identify Nodes, a path may also include either a :
     =========================================   =====================================================
     Examples                                      
     ``/Workspace/Location/Source/Parameter``    Absolute path to a Parameter
-    ``/slug/Workspace/Location``                Absolute path to a Location, including slug prefix
     ``../Location 2/Source/Parameter``          Path to a Parameter, relative to the Process Node
     ``{5b6a3fc24e960d0e7497b4b4}``              Path to a Parameter, identified by **Node Id**
     ``{@myParam}``                              Path to a Parameter, identified by **Custom Id**
@@ -242,6 +237,27 @@ Workspace Authorisation
 
 Paths that reference a Node outside the current Workspace (including Nodes in other accounts) require authorisation to verify your process has the appropriate permission. This is achieved using the *AUTH* function, which must be used in your progam before referencing any Nodes from the foreign Workspace.
 
+The *AUTH* function declares an association between an account identifier (or *slug*) and an :ref:`API key <management-security-apikeys>`. The *slug* for an account is visible in your browser address bar, immediately preceeding the Workspace name, when any Node is selected.
+
+.. raw:: latex
+
+    \vspace{-10pt}
+
+.. only:: not latex
+
+    .. image:: account-slug.jpg
+        :scale: 50 %
+
+    | 
+
+.. only:: latex
+    
+    | 
+
+    .. image:: account-slug.jpg
+
+The following code snippet demonstrates declaring authorisation to an account (with slug ``abc123``) and accessing a Node within the foreign Workspace.
+
 .. code-block:: javascript
     :linenos:
 
@@ -249,8 +265,6 @@ Paths that reference a Node outside the current Workspace (including Nodes in ot
     AUTH('abc123','eM1i7Pugp8EpSQNLAXiDT3DJJUAK2mOn17guVeTu');
 
     return NODE('/abc123/Workspace/Location/Source/Parameter').currentValue;
-
-The *slug* identifies the account and the :ref:`API key <management-security-apikeys>` should provide appropriate permission to access the desired Node.
 
 .. note:: 
     If all the Node paths in your program are in the same Workspace as your program, then the *AUTH* function is not required.
