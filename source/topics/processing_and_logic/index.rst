@@ -40,8 +40,6 @@ A program should include three distinct stages:
 
     **Number of outputs**    1                            100
 
-    **Input scope**          Any Node in the Workspace    Any Node in the Workspace
-
     **Execution trigger**    On input update              On input update or schedule
 
     **Maximum Duration**     0.2 seconds                  2 seconds
@@ -92,7 +90,7 @@ ________
 
     // Assign a bad quality code to value spikes and offset the timestamp by one hour
     var param = NODE('Param');
-    var ts = T( param.currentTime ).subtract( 1, 'hours' );
+    var ts = T(param.currentTime).subtract(1,'hours');
     var v = param.currentValue;
     var q;
 
@@ -100,7 +98,7 @@ ________
         q = 156;
     }
 
-    return { "time": ts, "value": v, "quality": q };
+    return {"time": ts,"value": v,"quality": q};
 
 .. note:: 
     Assigning quality codes to value spikes can also be achieved by configuring the Quality of a :ref:`Parameter State <node-configuration-parameter-states-config>`.
@@ -125,6 +123,7 @@ Outputs are defined as part of your program and automatically created as Paramet
 
     .. image:: processor-outputs.jpg
         :scale: 50 %
+
     | 
 
 .. only:: latex
@@ -132,7 +131,6 @@ Outputs are defined as part of your program and automatically created as Paramet
     | 
 
     .. image:: processor-outputs.jpg
-
 
 Examples
 _________
@@ -189,44 +187,47 @@ Global functions can be used to obtain a reference to a Node in your Workspace a
 .. table::
     :class: table-fluid
 
-    =============================   ================================================================
-    **NODE(** *path* **)**          Retrieve node by path
-    **NUMBER(** *path* **)**        Create or retrieve NUMBER Parameter by path
-    **TEXT(** *path* **)**          Create or retrieve TEXT Parameter by path
-    **TIME(** *path* **)**          Create or retrieve TIME Parameter by path
-    **BOOLEAN(** *path* **)**       Create or retrieve BOOLEAN Parameter by path
-    **T(** *expression* **)**       Convert a time expression to a `Moment.js <https://momentjs.com>`_ timestamp
+    =================================     ============================================================================
+    **NODE(** *path* **)**                Retrieve node by path
+    **NUMBER(** *path* **)**              Create or retrieve NUMBER Parameter by path
+    **TEXT(** *path* **)**                Create or retrieve TEXT Parameter by path
+    **TIME(** *path* **)**                Create or retrieve TIME Parameter by path
+    **BOOLEAN(** *path* **)**             Create or retrieve BOOLEAN Parameter by path
+    **AUTH(** *slug*, *api-key* **)**     :ref:`Authorise access to a Workspace <workspace-authorisation>` using an API key
+    **T(** *expression* **)**             Convert a time expression to a `Moment.js <https://momentjs.com>`_ timestamp
 
                                     |
-                                    A time expression can be any of the following:
+                                          A time expression can be any of the following:
 
-                                    - ISO8601 time string, eg. '2018-08-03T16:27:58+10:00'
+                                          - ISO8601 time string, eg. '2018-08-03T16:27:58+10:00'
 
-                                    - Number of milliseconds since Unix epoch, e.g. 1533277715816
+                                          - Number of milliseconds since Unix epoch, e.g. 1533277715816
 
-                                    - Node time attribute, e.g. **NODE(** 'param' **)**.currentTime
-    =============================   ================================================================
+                                          - Node time attribute, e.g. **NODE(** 'param' **)**.currentTime
+    =================================     ============================================================================
 
 .. _paths:
 
 Paths
 ~~~~~
 
-Paths are literal strings used as arguments in global functions to reference nodes or parameter values, and can be either absolute or relative. An absoute path is any path that starts with a foward slash. Standard UNIX style path syntax is used, so ``..`` refers to the parent in the Workspace tree.
+A path describes a reference to a Node and can be expressed as an absolute path, or a path that is relative to the current Process Node. Standard UNIX style path syntax is used, so ``..`` refers to the parent Node in the Workspace tree. 
+
+In addition to using names to identify Nodes, a path may also contain either a :ref:`Node Id <api-node-id>` or :ref:`Custom Id <api-custom-id>`. Named elements may also be included after the Node identifier. Note that Node identifiers should be enclosed by braces when included in a path, e.g. ``{5ae92a139097830ee5711d94}`` or ``{@customId}``.
 
 .. table::
     :class: table-fluid
 
-    ========================================   =================================
+    =========================================   =====================================================
     Examples                                      
-    ``/Workspace/Location/Source/Parameter``   Absolute path to a Parameter
-    ``/Workspace``                             Absolute path to a Workspace
-    ``../Location 2/Source``                   Relative path to a Source
-    ``../../Workspace``                        Relative path to a Workspace
-    ``Parameter``                              Relative path to a Parameter
-    ========================================   =================================
-
-
+    ``/Workspace/Location/Source/Parameter``    Absolute path to a Parameter
+    ``../Location 2/Source/Parameter``          Path to a Parameter, relative to the Process Node
+    ``{5b6a3fc24e960d0e7497b4b4}``              Path to a Parameter, identified by **Node Id**
+    ``{@myParam}``                              Path to a Parameter, identified by **Custom Id**
+    ``{5ae92a139097830ee5711d94}/Parameter``    Path to a Parameter, relative to Source **Node Id**
+    ``{@mySource}/Parameter``                   Path to a Parameter, relative to Source **Custom Id**
+    
+    =========================================   =====================================================
 
 
 .. _workspace-authorisation:
@@ -234,22 +235,36 @@ Paths are literal strings used as arguments in global functions to reference nod
 Workspace Authorisation
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-Node paths that reference a Workspace which is not the current Workspace (including Workspaces in other accounts) will require additional authorisation. This is done using the *AUTH* function, which must be used in your progam before specifying the Node path.
+Paths that reference a Node outside the current Workspace (including Nodes in other accounts) require authorisation to verify your process has the appropriate permission. This is achieved using the *AUTH* function, which must be used in your progam before referencing any Nodes from the foreign Workspace.
 
+The *AUTH* function declares an association between an account identifier (or *slug*) and an :ref:`API key <management-security-apikeys>`. The *slug* for an account is visible in your browser address bar, immediately preceeding the Workspace name, when any Node is selected.
 
-.. table::
-    :class: table-fluid
+.. raw:: latex
 
-    ==================================   ======================================
-    **AUTH(** *slug*, *api-key* **)**    Authorise a Workspace using an API key
-    ==================================   ======================================
+    \vspace{-10pt}
 
+.. only:: not latex
 
-The *slug* is a code which uniquely identifies an account, and can always be seen in the URL; for example, in the following URL, the slug is *abc123*:
+    .. image:: account-slug.jpg
+        :scale: 50 %
 
-``https://eagle.io/ui/abc123/myWorkspace``
+    | 
 
-The *api-key* must be an :ref:`API key <management-security-apikeys>` which has access to the Workspace that you intend to reference in a Node path.
+.. only:: latex
+    
+    | 
+
+    .. image:: account-slug.jpg
+
+The following code snippet demonstrates declaring authorisation to an account (with slug ``abc123``) and accessing a Node within the foreign Workspace.
+
+.. code-block:: javascript
+    :linenos:
+
+    // Authorise access to a node in a foreign Workspace
+    AUTH('abc123','eM1i7Pugp8EpSQNLAXiDT3DJJUAK2mOn17guVeTu');
+
+    return NODE('/abc123/Workspace/Location/Source/Parameter').currentValue;
 
 .. note:: 
     If all the Node paths in your program are in the same Workspace as your program, then the *AUTH* function is not required.
