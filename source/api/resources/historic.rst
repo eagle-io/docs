@@ -61,6 +61,9 @@ Arguments
     **quality**                 FALSE                       *Optional - Default is FALSE*. 
                                                             Flag to include :ref:`quality <historic-quality>`
 
+    **annotations**             FALSE                       *Optional - Default is FALSE*. 
+                                                            Flag to include :ref:`annotations <historic-annotations>`
+
     **header**                  TRUE                        *Optional - Default is TRUE*. 
                                                             Flag to include header
 
