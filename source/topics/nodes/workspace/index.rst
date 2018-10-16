@@ -42,7 +42,7 @@ Drag and drop layers in the list (or use the dropdown menu) to change their disp
 
 ::
 
-    Example URL: http://water.weather.gov/ahps/worldfiles/ahps_national_obs.kmz
+    Example URL: https://volcano.si.edu/ge/GVPWorldVolcanoes.kml
 
 
 .. raw:: latex
