@@ -46,6 +46,8 @@ Consumers of Events should tolerate the addition of new attributes and variance 
     
     **workspaceId**     ObjectId    Associated Workspace _id
 
+    **ownerId**         ObjectId    Associated Owner (account) _id
+
     **username**        String      User or process that triggered the event
     =================   =========   ========================================================================================
 
