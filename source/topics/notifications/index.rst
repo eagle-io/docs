@@ -63,7 +63,10 @@ These locked notifications can only be unsubscribed via the :ref:`manage notific
 Manage notifications
 ---------------------
 You can manage notification subscriptions on behalf of a user or group via the *manage notifications* dialog, accessible from the Workspace context menu. 
-Select the user or group from the dropdown menu and :ref:`subscribe <subscribe-nodes>` them to nodes. The dropdown menu only includes users and groups that have access to the Workspace.
+Select the user or group from the dropdown menu and :ref:`subscribe <subscribe-nodes>` them to nodes. 
+You can also also set :ref:`notification categories <user-notification-preferences>` for individual users for the currently selected Workspace. 
+
+The dropdown menu only includes users and groups that have access to the Workspace.
 
 .. raw:: latex
 
