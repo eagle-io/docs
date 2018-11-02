@@ -3,7 +3,7 @@
 Notifications
 ==================
 
-|icon-notification| Notifications are used to inform users and groups of an :ref:`alarm <alarms>` or other condition via Email and SMS. 
+|icon-notification| Notifications are used to inform users and groups of an :ref:`alarm <alarms>` or other condition via Email, SMS and Voice message. 
 Users can personally subscribe to specific Nodes and specify their :ref:`notification preferences <user-notification-preferences>` or you can :ref:`manage notifications <notifications-manage>` on behalf of a user or group if you have *manage notifications* security permission.
 
 .. only:: not latex

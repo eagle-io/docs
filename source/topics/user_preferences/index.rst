@@ -96,10 +96,10 @@ Click or touch the Workspace labels to display your preferences.
 	
 
 Within each Workspace, you will see a list of Notification Categories specific to the Workspace.
-Use the SMS/Email checkboxes to set your preferences on what types of notifications you would like to receive for each Category.
+Use the SMS, Email & Voice checkboxes to set your preferences on what types of notifications you would like to receive for each Category.
 
 .. note:: 
-	You must also be subscribed to the individual Nodes you would like to receive the notifications for. See :ref:`Subscribe to Nodes <subscribe-nodes>` for full details.
+	You must also be subscribed to the individual Nodes you would like to receive the notifications for. See :ref:`Subscribe to Nodes <subscribe-nodes>` for full details. A valid phone number must also be provided in order to receive SMS & Voice notifications.
 
 .. only:: not latex
 

@@ -1048,18 +1048,21 @@ Response
                 "notificationCategories": [
                     {
                         "category": "Maintenance",
-                        "email": false,
-                        "sms": false
+                        "email": true,
+                        "sms": false,
+                        "voice": false
                     },
                     {
                         "category": "Operations",
                         "email": true,
-                        "sms": false
+                        "sms": true,
+                        "voice": false
                     },
                     {
                         "category": "Critical",
                         "email": true,
-                        "sms": true
+                        "sms": false,
+                        "voice": true
                     }
                 ]
             }
@@ -1083,17 +1086,20 @@ Response
                             {
                                 "category": "Maintenance",
                                 "email": true,
-                                "sms": true
+                                "sms": true,
+                                "voice": false
                             },
                             {
                                 "category": "Operations",
                                 "email": true,
-                                "sms": true
+                                "sms": true,
+                                "voice": false
                             },
                             {
                                 "category": "Critical",
                                 "email": true,
-                                "sms": true
+                                "sms": true,
+                                "voice": true
                             }
                         ]
                     }
