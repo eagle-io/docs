@@ -10,6 +10,7 @@ The following topics will assist when configuring your device for `eagle.io <htt
 
    campbell_pakbus/index
    cellvisor/index
+   dataforth_maq20/index
    datataker/index
    halytech_spider/index
    libelium_waspmote/index
