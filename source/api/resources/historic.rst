@@ -61,6 +61,11 @@ Arguments
     **quality**                 FALSE                       *Optional - Default is FALSE*. 
                                                             Flag to include :ref:`quality <historic-quality>`
 
+    **qualityExcluded**         BAD,UNCERTAIN               *Optional* - Default uses account settings 
+                                                            :ref:`Exclude quality <management-general-qualitycodes>`.
+                                                            Comma separated list of data point quality types to be 
+                                                            excluded: *[GOOD, BAD, UNCERTAIN or NONE]*
+
     **annotations**             FALSE                       *Optional - Default is FALSE*. 
                                                             Flag to include :ref:`annotations <historic-annotations>`
 
