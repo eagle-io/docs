@@ -165,16 +165,17 @@ Environment
 Global Variables
 ~~~~~~~~~~~~~~~~
 
-Global variables are references to Nodes that are related to the currently executing process in some way, and can be accessed using the following built-in keywords:
+Global variables are references to Nodes and other values that are related to the currently executing process.
 
 .. table::
     :class: table-fluid
 
     ======================   ============================================================
-    **THIS**                 Currently executing :ref:`Process Node <process-nodes>`
-    **SOURCE**               Data Source of currently executing process
-    **LOCATION**             Location of currently executing process
-    **WORKSPACE**            Workspace of currently executing process
+    **NOW**                  Current timestamp being evaluated by the process
+    **THIS**                 Reference to currently executing :ref:`Process Node <process-nodes>`
+    **SOURCE**               Reference to Data Source of currently executing process
+    **LOCATION**             Reference to Location of currently executing process
+    **WORKSPACE**            Reference to Workspace of currently executing process
     ======================   ============================================================
 
 .. _global-functions:
@@ -182,7 +183,7 @@ Global variables are references to Nodes that are related to the currently execu
 Global Functions
 ~~~~~~~~~~~~~~~~
 
-Global functions can be used to obtain a reference to a Node in your Workspace and are identified using an absolute or relative path argument.
+Global functions can be used to obtain a reference to a Node, authorize access to a Workspace or convert a time expression.
 
 .. table::
     :class: table-fluid
@@ -196,14 +197,15 @@ Global functions can be used to obtain a reference to a Node in your Workspace a
     **AUTH(** *slug*, *api-key* **)**     :ref:`Authorise access to a Workspace <workspace-authorisation>` using an API key
     **T(** *expression* **)**             Convert a time expression to a `Moment.js <https://momentjs.com>`_ timestamp
 
-                                    |
                                           A time expression can be any of the following:
 
-                                          - ISO8601 time string, eg. '2018-08-03T16:27:58+10:00'
+                                          - ISO8601 time string, e.g. '2018-08-03T16:27:58+10:00'
 
                                           - Number of milliseconds since Unix epoch, e.g. 1533277715816
 
                                           - Node time attribute, e.g. **NODE(** 'param' **)**.currentTime
+
+                                          - Current timestamp, e.g. **NOW**
     =================================     ============================================================================
 
 .. _paths:
