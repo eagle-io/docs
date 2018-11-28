@@ -161,7 +161,7 @@ _________
         q = 156;
     }
 
-    // NOTE: currentTime & currentValue must be assigned prior to currentValue 
+    // NOTE: currentTime & currentQuality must be assigned prior to currentValue 
     output.currentTime = T(param.currentTime).subtract(1,'hours');
     output.currentQuality = q;
     output.currentValue = param.currentValue;
