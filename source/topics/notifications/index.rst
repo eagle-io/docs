@@ -3,7 +3,7 @@
 Notifications
 ==================
 
-|icon-notification| Notifications are used to inform users and groups of an :ref:`alarm <alarms>` or other condition via Email and SMS. 
+|icon-notification| Notifications are used to inform users and groups of an :ref:`alarm <alarms>` or other condition via Email, SMS and Voice message. 
 Users can personally subscribe to specific Nodes and specify their :ref:`notification preferences <user-notification-preferences>` or you can :ref:`manage notifications <notifications-manage>` on behalf of a user or group if you have *manage notifications* security permission.
 
 .. only:: not latex
@@ -63,7 +63,10 @@ These locked notifications can only be unsubscribed via the :ref:`manage notific
 Manage notifications
 ---------------------
 You can manage notification subscriptions on behalf of a user or group via the *manage notifications* dialog, accessible from the Workspace context menu. 
-Select the user or group from the dropdown menu and :ref:`subscribe <subscribe-nodes>` them to nodes. The dropdown menu only includes users and groups that have access to the Workspace.
+Select the user or group from the dropdown menu and :ref:`subscribe <subscribe-nodes>` them to nodes. 
+You can also also set :ref:`notification categories <user-notification-preferences>` for individual users for the currently selected Workspace. 
+
+The dropdown menu only includes users and groups that have access to the Workspace.
 
 .. raw:: latex
 
