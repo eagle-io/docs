@@ -9,7 +9,7 @@ Some examples include:
 
 - :ref:`Calculate average of multiple Parameters <example1>`
 - :ref:`Transform a series using an equation <example2>`
-- :ref:`Generate a series forecast to provide predictive alarming <example5>`
+- :ref:`Generate a series forecast to provide predictive alarming <example6>`
 
 Programs are expressed as `JavaScript <http://www.ecma-international.org/ecma-262/5.1/>`_, stored as configuration in Process Nodes, and executed on a schedule or automatically as new data is acquired. Each program can interact with all Nodes in the current Workspace and any associated time-series data.
 
@@ -148,6 +148,25 @@ _________
     NUMBER('remainder').currentValue = remainder;
 
 .. _example5:
+
+.. code-block:: javascript
+    :linenos:
+
+    // Assign a bad quality code to value spikes and offset the timestamp by one hour
+    var param = NODE('Param');
+    var output = NUMBER('Output');
+    var q;
+
+    if( v > 999 ) {
+        q = 156;
+    }
+
+    // NOTE: currentTime & currentValue must be assigned prior to currentValue 
+    output.currentTime = T(param.currentTime).subtract(1,'hours');
+    output.currentQuality = q;
+    output.currentValue = param.currentValue;
+
+.. _example6:
 
 .. code-block:: javascript
     :linenos:
