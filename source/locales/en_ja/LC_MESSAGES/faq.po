@@ -1,0 +1,453 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017 Argos.io Pty Ltd
+# This file is distributed under the same license as the eagle.io package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: eagle.io 1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-12-10 14:30+1000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../faq/index.rst:2
+msgid "Frequently Asked Questions"
+msgstr ""
+
+#: ../../faq/index.rst:9
+msgid "General"
+msgstr ""
+
+#: ../../faq/index.rst:12
+msgid "What browsers do you support and do I need any special software?"
+msgstr ""
+
+#: ../../faq/index.rst:13
+msgid ""
+"We support the latest versions of all major browsers: Chrome 16+, Firefox"
+" 16+, Internet Explorer 10+, Safari 6+ and Microsoft Edge. You do not "
+"need any special plugins or addons, just ensure you have **Cookies** and "
+"**Javascript enabled**. The interface has been designed to work "
+"seamlessly across all modern phones, tablets and other computing devices."
+msgstr ""
+
+#: ../../faq/index.rst:24
+msgid ""
+"|google-chrome-html| We recommend `Google Chrome "
+"<https://www.google.com/intl/en/chrome/browser/>`_ for the best `eagle.io"
+" <https://eagle.io>`_ experience."
+msgstr ""
+
+#: ../../faq/index.rst:30
+msgid ""
+"|google-chrome-latex| We recommend `Google Chrome "
+"<https://www.google.com/intl/en/chrome/browser/>`_ for the best `eagle.io"
+" <https://eagle.io>`_ experience."
+msgstr ""
+
+#: ../../faq/index.rst:34
+msgid "How do I access an existing users data?"
+msgstr ""
+
+#: ../../faq/index.rst:35
+msgid ""
+"Account access is managed by the owner of the account and any nominated "
+"account administrators. Please request access directly from the "
+"appropriate persons in charge of the account."
+msgstr ""
+
+#: ../../faq/index.rst:38
+msgid ""
+"New users will receive an email invitation with a link to enter their "
+"details and access the site."
+msgstr ""
+
+#: ../../faq/index.rst:45
+msgid "What languages do you support?"
+msgstr ""
+
+#: ../../faq/index.rst:46
+#, python-format
+msgid ""
+"English is currently the only supported language. We recommend you use "
+"the `Google Translate extension for Chrome "
+"<https://chrome.google.com/webstore/search/google%20translate%20extension?hl=en>`_"
+" for other languages. Users can set their own locale and timezone display"
+" preferences."
+msgstr ""
+
+#: ../../faq/index.rst:55
+msgid "What types of charts do you support?"
+msgstr ""
+
+#: ../../faq/index.rst:56
+msgid ""
+"We offer a variety of highly customizable interactive charts including "
+":ref:`Historic <node-configuration-chart-historic>`, :ref:`Windrose "
+"<node-configuration-chart-windrose>` and :ref:`Displacement <node-"
+"configuration-chart-displacement>` charts. Check out our :ref:`charts "
+"documentation <node-configuration-chart>` for full usage details."
+msgstr ""
+
+#: ../../faq/index.rst:64
+msgid "How much historic data can I store?"
+msgstr ""
+
+#: ../../faq/index.rst:65
+msgid ""
+"We support the acquisition and storage of up to **20000 records per** "
+":ref:`Data Source <node-configuration-datasource-datalogger>` **per "
+"day**. Refer to Historic Data :ref:`Limits <historic-limits>` for more "
+"information about storage limits."
+msgstr ""
+
+#: ../../faq/index.rst:73
+msgid "Where is my data stored and is it secure?"
+msgstr ""
+
+#: ../../faq/index.rst:74
+msgid ""
+"We store all customer data securely on Amazon Web Services data hosting "
+"facilities located in the USA and Australia. Data is strictly segregated "
+"so that no user may ever view, tamper with, or become aware of the data "
+"of any other user. Refer to our `Compliance "
+"<https://eagle.io/policies/compliance>`_ section for full details."
+msgstr ""
+
+#: ../../faq/index.rst:83
+msgid "Do you have a service level guarantee?"
+msgstr ""
+
+#: ../../faq/index.rst:84
+#, python-format
+msgid ""
+"We provide a full service level guarantee (99.9% up-time commitment) to "
+"clients subscribed to our Standard (or larger) pricing plans. Refer to "
+"our `SLA <https://eagle.io/policies/sla>`_ for full details."
+msgstr ""
+
+#: ../../faq/index.rst:93
+msgid "Data Loggers"
+msgstr ""
+
+#: ../../faq/index.rst:96
+msgid "What types of data loggers, PLCs and RTUs are supported?"
+msgstr ""
+
+#: ../../faq/index.rst:97
+msgid "We support the following range of data loggers:"
+msgstr ""
+
+#: ../../faq/index.rst:100
+msgid "Campbell Scientific"
+msgstr ""
+
+#: ../../faq/index.rst:100
+msgid ""
+"Campbell PakBus loggers including CR200, CR300, CR800, CR1000, CR3000 and"
+" CR6 series."
+msgstr ""
+
+#: ../../faq/index.rst:113
+msgid "CellVisor"
+msgstr ""
+
+#: ../../faq/index.rst:113
+msgid "E State Automation CellVisor 3000/6000 series."
+msgstr ""
+
+#: ../../faq/index.rst:128
+msgid "dataTaker"
+msgstr ""
+
+#: ../../faq/index.rst:128
+msgid "Thermo Fisher Scientific DT80 range."
+msgstr ""
+
+#: ../../faq/index.rst:143
+msgid "Generic"
+msgstr ""
+
+#: ../../faq/index.rst:143
+msgid "Virtually any data logger that can *Email* or *FTP* data in CSV format."
+msgstr ""
+
+#: ../../faq/index.rst:158
+msgid "Libelium"
+msgstr ""
+
+#: ../../faq/index.rst:158
+msgid ""
+"Waspmote and Plug & Sense! range with support for *Direct Connect* or "
+"*Meshlium*"
+msgstr ""
+
+#: ../../faq/index.rst:173
+msgid "OTT netDL"
+msgstr ""
+
+#: ../../faq/index.rst:173
+msgid "OTT netDL 500 and 1000."
+msgstr ""
+
+#: ../../faq/index.rst:188
+msgid "Point Orange 3G"
+msgstr ""
+
+#: ../../faq/index.rst:188
+msgid "Metasphere Point Orange 3G RTU."
+msgstr ""
+
+#: ../../faq/index.rst:203
+msgid "Spider"
+msgstr ""
+
+#: ../../faq/index.rst:203
+msgid "Halytech Spider SMS and microSpider range."
+msgstr ""
+
+#: ../../faq/index.rst:218
+msgid "YDOC"
+msgstr ""
+
+#: ../../faq/index.rst:218
+msgid "YDOC ML-315 range of data loggers."
+msgstr ""
+
+#: ../../faq/index.rst:233
+msgid "WaterLog"
+msgstr ""
+
+#: ../../faq/index.rst:233
+msgid "WaterLog Storm3 series."
+msgstr ""
+
+#: ../../faq/index.rst:247
+msgid ""
+"Support for a wide range of additional data loggers and devices is coming"
+" soon. `Contact Us <https://eagle.io/contact/>`_ to find out how to get "
+"support for your device."
+msgstr ""
+
+#: ../../faq/index.rst:254
+msgid "What connection options are supported?"
+msgstr ""
+
+#: ../../faq/index.rst:255
+msgid ""
+"You can use a variety of transport options to connect your data logger to"
+" `eagle.io <https://eagle.io>`_ including:"
+msgstr ""
+
+#: ../../faq/index.rst:258
+msgid "TCP Client"
+msgstr ""
+
+#: ../../faq/index.rst:258
+msgid ""
+"Connect to any device with a Public IP Address or Domain name (including "
+"DDNS)."
+msgstr ""
+
+#: ../../faq/index.rst:261
+msgid "TCP Server"
+msgstr ""
+
+#: ../../faq/index.rst:261
+msgid ""
+"WaterLog, SensorLog, Waspmotes and other devices can establish a direct "
+"connection to the cloud to stream data on schedule or event-based."
+msgstr ""
+
+#: ../../faq/index.rst:264
+msgid "TCP Callback"
+msgstr ""
+
+#: ../../faq/index.rst:264
+msgid ""
+"Allow any remote device to establish an IP connection to eagle.io using a"
+" special identification number. You can use your modem or data logger to "
+"send the Id on initial connection, or include a unique identifier in the "
+"data stream."
+msgstr ""
+
+#: ../../faq/index.rst:267
+msgid "Scout"
+msgstr ""
+
+#: ../../faq/index.rst:267
+msgid ""
+"The *Scout modem* is the easiest way to connect your data logger to "
+"eagle.io. The Scout takes any standard internet ready SIM Card without "
+"the need for fixed IP addresses and has a range of smart features "
+"including inbuilt GPS, signal strength monitoring, event based reporting "
+"and low power mode."
+msgstr ""
+
+#: ../../faq/index.rst:270
+msgid "Meshlium"
+msgstr ""
+
+#: ../../faq/index.rst:270
+msgid ""
+"Meshlium devices provide efficient routing of data collected from "
+"Waspmote devices in large Libelium sensor networks."
+msgstr ""
+
+#: ../../faq/index.rst:273
+msgid "FTP, Email, MQTT"
+msgstr ""
+
+#: ../../faq/index.rst:273
+msgid "Send your data to the cloud via FTP, Email or MQTT."
+msgstr ""
+
+#: ../../faq/index.rst:280
+msgid "What level of functionality do you provide for connected data loggers?"
+msgstr ""
+
+#: ../../faq/index.rst:281
+msgid "Upload programs and firmware (including network wide updates in one click)"
+msgstr ""
+
+#: ../../faq/index.rst:282
+msgid ""
+"Perform Control operations (setting of public table variables in Campbell"
+" Scientific data loggers)"
+msgstr ""
+
+#: ../../faq/index.rst:283
+msgid "Create/update/merge parameters automatically as programs change"
+msgstr ""
+
+#: ../../faq/index.rst:284
+msgid "Synchronize device clock with timezone and daylight savings support"
+msgstr ""
+
+#: ../../faq/index.rst:291
+msgid "Can I connect to my data logger using 3rd party software?"
+msgstr ""
+
+#: ../../faq/index.rst:292
+msgid ""
+"Yes! You can enable *Remote Access* to your data logger at any time. An "
+"Internet address and Port will be allocated to allow you to immediately "
+"connect via TCP/IP. You can specify a session timeout and restrict access"
+" based on IP Address or allow connections from anywhere. Want to use "
+"LoggerNet or other tools for your low level operations - no problem. See "
+":ref:`Data Source <node-configuration-datasource-datalogger>` "
+"configuration for full details."
+msgstr ""
+
+#: ../../faq/index.rst:299
+msgid "Files"
+msgstr ""
+
+#: ../../faq/index.rst:302
+msgid "What types of time series data files do you support?"
+msgstr ""
+
+#: ../../faq/index.rst:303
+msgid ""
+"We support most types of delimited text files such as csv, loggernet and "
+"other standard formats. See :ref:`Data Source <node-configuration-"
+"datasource-file>` configuration for full details."
+msgstr ""
+
+#: ../../faq/index.rst:310
+msgid "What file transports do you support for automatic collection?"
+msgstr ""
+
+#: ../../faq/index.rst:311
+msgid "We support automatic collection via the following transports:"
+msgstr ""
+
+#: ../../faq/index.rst:313
+msgid "Download from FTP site"
+msgstr ""
+
+#: ../../faq/index.rst:314
+msgid "Download from Web site"
+msgstr ""
+
+#: ../../faq/index.rst:315
+msgid "Email to eagle.io"
+msgstr ""
+
+#: ../../faq/index.rst:316
+msgid "Publish using MQTT"
+msgstr ""
+
+#: ../../faq/index.rst:317
+msgid "Read from `Amazon S3 <https://aws.amazon.com/s3>`_"
+msgstr ""
+
+#: ../../faq/index.rst:318
+msgid "Read from `Dropbox <http://www.dropbox.com>`_"
+msgstr ""
+
+#: ../../faq/index.rst:319
+msgid "Upload to ftp.eagle.io"
+msgstr ""
+
+#: ../../faq/index.rst:334
+msgid ""
+"You can also manually import and export data files directly from the user"
+" interface or use our :ref:`HTTP API <api>` for automation."
+msgstr ""
+
+#: ../../faq/index.rst:341
+msgid "Can I upload other types of files?"
+msgstr ""
+
+#: ../../faq/index.rst:342
+msgid ""
+"Files of any type can be uploaded through the interface as an "
+":ref:`Attachment <node-configuration-attachment>` or use an "
+":ref:`Attachment Source <node-configuration-attachmentsource>` for "
+"automated uploads. All content and files uploaded must comply with our "
+"`Terms of Use <https://eagle.io/policies/terms>`_."
+msgstr ""
+
+#: ../../faq/index.rst:349
+msgid "Cameras"
+msgstr ""
+
+#: ../../faq/index.rst:352
+msgid "Do you support cameras sending images or video files to eagle.io?"
+msgstr ""
+
+#: ../../faq/index.rst:353
+msgid ""
+"Yes, you can create an :ref:`Attachment Source <node-configuration-"
+"attachmentsource>` which accepts files of any type. The files are stored "
+"as Attachments and you can set your Locations to display the most recent "
+"images uploaded. Images and video can be reviewed in the media gallery or"
+" downloaded for offline viewing."
+msgstr ""
+
+#: ../../faq/index.rst:355
+msgid ""
+"We support Email and FTP as the Attachment Source transport. To send via "
+"Email, your camera must have in-built support for emailing images/files "
+"with custom subject text. For uploads via FTP you can simply enter the "
+"credentials provided on Source creation."
+msgstr ""
+
+#: ../../faq/index.rst:364
+msgid "Do you support live streaming video?"
+msgstr ""
+
+#: ../../faq/index.rst:365
+msgid ""
+"No. However, we do intend to add support for live streaming video with "
+"optional PTZ control (Pan, Tilt, Zoom) in the future."
+msgstr ""
+

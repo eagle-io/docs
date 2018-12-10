@@ -1,0 +1,3364 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017 Argos.io Pty Ltd
+# This file is distributed under the same license as the eagle.io package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: eagle.io 1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-12-10 14:30+1000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../api/best_practices/index.rst:4
+msgid "Best Practices"
+msgstr ""
+
+#: ../../api/best_practices/index.rst:6
+msgid ""
+"As you build with the `eagle.io <https://eagle.io>`_ API, take note of "
+"the following best practices to ensure you develop safe, reliable and "
+"efficient code."
+msgstr ""
+
+#: ../../api/best_practices/index.rst:13
+msgid "Enforce Security"
+msgstr ""
+
+#: ../../api/best_practices/index.rst:14
+msgid "All requests must be made over **HTTPS**."
+msgstr ""
+
+#: ../../api/best_practices/index.rst:16
+msgid ""
+":ref:`API keys <management-security-apikeys>` should be kept secret and "
+"the *Read only* permission assigned to keys that only need to perform "
+"read operations (GET requests). For additional security, you can restrict"
+" the API key to certain Workspaces by setting the *Access level* to "
+"*Limited Workspaces*."
+msgstr ""
+
+#: ../../api/best_practices/index.rst:24
+msgid "Use Compression for large requests"
+msgstr ""
+
+#: ../../api/best_practices/index.rst:25
+msgid ""
+"Take advantage of :ref:`HTTP compression <api-overview-compression>` for "
+"sending and receiving large requests."
+msgstr ""
+
+#: ../../api/best_practices/index.rst:32
+msgid "Limit Size and Rate of requests"
+msgstr ""
+
+#: ../../api/best_practices/index.rst:33
+msgid ""
+"When working with :term:`time series` data, ensure you limit the size of "
+"the requests for both extraction and insertion. If the request or "
+"response is too large or exceeds our processing time threshold, the **413"
+" Request Too Large** error response will be returned."
+msgstr ""
+
+#: ../../api/best_practices/index.rst:35
+msgid ""
+"You should limit the rate of requests to the API to ensure you do not "
+"exceed the :ref:`usage limits <api-overview-usage-limits>`."
+msgstr ""
+
+#: ../../api/best_practices/index.rst:42
+msgid "Handle Errors and Status responses"
+msgstr ""
+
+#: ../../api/best_practices/index.rst:43
+msgid ""
+"Responses will always use :ref:`HTTP Status Codes <api-overview-http-"
+"status-codes>` to indicate the result of the request. Be prepared to "
+"handle unexpected errors which may arise from:"
+msgstr ""
+
+#: ../../api/best_practices/index.rst:45
+msgid "Large or long running requests"
+msgstr ""
+
+#: ../../api/best_practices/index.rst:46
+msgid "Moved, renamed or deleted resources"
+msgstr ""
+
+#: ../../api/best_practices/index.rst:47
+msgid "API key permission and account changes"
+msgstr ""
+
+#: ../../api/best_practices/index.rst:48
+msgid "Usage limits exceeded"
+msgstr ""
+
+#: ../../api/best_practices/index.rst:49
+msgid "Service temporarily unavailable"
+msgstr ""
+
+#: ../../api/best_practices/index.rst:56
+msgid "Discover Node Ids from the user interface"
+msgstr ""
+
+#: ../../api/best_practices/index.rst:57
+msgid ""
+"Enable the :ref:`Display Node Ids in properties dialog <user-preferences-"
+"other>` option to quickly discover Node Id's from the user interface. The"
+" Node Id will be shown in the associated Node properties dialog. You can "
+"also assign your own unique Custom Id to every node for use with the API."
+msgstr ""
+
+#: ../../api/best_practices/index.rst:65
+msgid "Use Development Tools for testing"
+msgstr ""
+
+#: ../../api/best_practices/index.rst:66
+msgid ""
+"Use development tools such as `cURL <http://curl.haxx.se>`_ or `Postman "
+"<http://www.getpostman.com>`_ to test API requests and responses. We "
+"recommend `Postman <http://www.getpostman.com>`_ for its simple to use, "
+"powerful user interface."
+msgstr ""
+
+#: ../../api/index.rst:4
+msgid "HTTP API"
+msgstr ""
+
+#: ../../api/index.rst:6
+msgid ""
+"The HTTP API has been designed to make it easy for developers to interact"
+" with `eagle.io <https://eagle.io>`_ from a 3rd party application or "
+"service."
+msgstr ""
+
+#: ../../api/index.rst:8
+msgid ""
+"Refer to the :ref:`Quick Start <api-overview>` guide to get up and "
+"running. Be sure to review our recommended :ref:`Best Practices <api-"
+"best-practices>` for working with the API."
+msgstr ""
+
+#: ../../api/index.rst:11
+msgid ""
+":ref:`API Resources <api-resources>` provides detailed descriptions and "
+"usage instructions for all API endpoints."
+msgstr ""
+
+#: ../../api/overview/index.rst:4
+msgid "Quick Start"
+msgstr ""
+
+#: ../../api/overview/index.rst:6
+msgid ""
+"The `eagle.io <https://eagle.io>`_ API conforms to the design principles "
+"of `Representational State Transfer (REST) "
+"<http://en.wikipedia.org/wiki/Representational_State_Transfer>`_."
+msgstr ""
+
+#: ../../api/overview/index.rst:8
+msgid ""
+"Our API is designed to have predictable, resource-oriented URLs and to "
+"use HTTP response codes to indicate API errors. We use built-in HTTP "
+"features which can be understood by off-the-shelf HTTP clients."
+msgstr ""
+
+#: ../../api/overview/index.rst:10
+msgid ""
+"Example code is available on `GitHub <https://github.com/eagleio/api-"
+"examples>`_."
+msgstr ""
+
+#: ../../api/overview/index.rst:19
+msgid "Authentication"
+msgstr ""
+
+#: ../../api/overview/index.rst:21
+msgid ""
+"You authenticate to the eagle.io API by providing one of your :ref:`API "
+"keys <management-security-apikeys>` in the **X-Api-Key** request header::"
+msgstr ""
+
+#: ../../api/overview/index.rst:27
+msgid ""
+"You can manage your API keys from the account settings :ref:`API keys "
+"<management-security-apikeys>` security tab. You can have multiple API "
+"keys active at one time. Your API keys carry many privileges, so be sure "
+"to keep them secret."
+msgstr ""
+
+#: ../../api/overview/index.rst:29
+msgid ""
+"All API requests must be made over **HTTPS**. Calls made over plain HTTP "
+"will fail. You must authenticate for all requests."
+msgstr ""
+
+#: ../../api/overview/index.rst:36
+msgid "HTTP Methods"
+msgstr ""
+
+#: ../../api/overview/index.rst:38
+msgid ""
+"The following HTTP methods are used to determine which action to take on "
+"a particular resource:"
+msgstr ""
+
+#: ../../api/overview/index.rst:44
+msgid "Method"
+msgstr ""
+
+#: ../../api/overview/index.rst:44
+msgid "Action"
+msgstr ""
+
+#: ../../api/overview/index.rst:46
+msgid "GET"
+msgstr ""
+
+#: ../../api/overview/index.rst:46
+msgid "Retrieve the current representation of a resource"
+msgstr ""
+
+#: ../../api/overview/index.rst:47
+msgid "POST"
+msgstr ""
+
+#: ../../api/overview/index.rst:47
+msgid "Create a new resource or action"
+msgstr ""
+
+#: ../../api/overview/index.rst:48
+msgid "PUT"
+msgstr ""
+
+#: ../../api/overview/index.rst:48
+msgid "Update a specific resource"
+msgstr ""
+
+#: ../../api/overview/index.rst:49
+msgid "DELETE"
+msgstr ""
+
+#: ../../api/overview/index.rst:49
+msgid "Delete a specific resource"
+msgstr ""
+
+#: ../../api/overview/index.rst:54
+msgid ""
+"If your client does not support the required method the **X-HTTP-Method-"
+"Override** header can be added to a POST request to inform the server of "
+"the desired method."
+msgstr ""
+
+#: ../../api/overview/index.rst:71
+msgid "HTTP Headers"
+msgstr ""
+
+#: ../../api/overview/index.rst:73
+msgid "The following HTTP headers are used by the eagle.io API:"
+msgstr ""
+
+#: ../../api/overview/index.rst:79
+msgid "Header"
+msgstr ""
+
+#: ../../api/overview/index.rst:79
+msgid "Value"
+msgstr ""
+
+#: ../../api/overview/index.rst:79
+msgid "Required"
+msgstr ""
+
+#: ../../api/overview/index.rst:79 ../../api/overview/index.rst:104
+#: ../../api/overview/index.rst:182 ../../api/overview/index.rst:248
+#: ../../api/resources/devices.rst:24 ../../api/resources/devices.rst:54
+#: ../../api/resources/devices.rst:181 ../../api/resources/events.rst:24
+#: ../../api/resources/events.rst:68 ../../api/resources/historic.rst:35
+#: ../../api/resources/historic.rst:192 ../../api/resources/historic.rst:311
+#: ../../api/resources/nodes.rst:25 ../../api/resources/nodes.rst:43
+#: ../../api/resources/nodes.rst:60 ../../api/resources/nodes.rst:99
+#: ../../api/resources/nodes.rst:143 ../../api/resources/nodes.rst:341
+#: ../../api/resources/nodes.rst:472 ../../api/resources/nodes.rst:520
+#: ../../api/resources/nodes.rst:599 ../../api/resources/nodes.rst:762
+#: ../../api/resources/nodes.rst:842 ../../api/resources/nodes.rst:902
+#: ../../api/resources/nodes.rst:1451 ../../api/resources/nodes.rst:1594
+#: ../../api/resources/nodes.rst:1703 ../../api/resources/nodes.rst:1797
+#: ../../api/resources/owners.rst:24 ../../api/resources/owners.rst:50
+msgid "Description"
+msgstr ""
+
+#: ../../api/overview/index.rst:81
+msgid "X-Api-Key"
+msgstr ""
+
+#: ../../api/overview/index.rst:81
+msgid "YOUR_API_KEY"
+msgstr ""
+
+#: ../../api/overview/index.rst:81 ../../api/overview/index.rst:83
+#: ../../api/resources/nodes.rst:29 ../../api/resources/nodes.rst:31
+#: ../../api/resources/nodes.rst:33 ../../api/resources/nodes.rst:45
+#: ../../api/resources/nodes.rst:62 ../../api/resources/nodes.rst:63
+#: ../../api/resources/nodes.rst:64 ../../api/resources/nodes.rst:65
+#: ../../api/resources/nodes.rst:72 ../../api/resources/nodes.rst:74
+#: ../../api/resources/nodes.rst:76 ../../api/resources/nodes.rst:78
+#: ../../api/resources/nodes.rst:89 ../../api/resources/nodes.rst:90
+#: ../../api/resources/nodes.rst:92 ../../api/resources/nodes.rst:107
+#: ../../api/resources/nodes.rst:114 ../../api/resources/nodes.rst:115
+#: ../../api/resources/nodes.rst:119 ../../api/resources/nodes.rst:120
+msgid "Yes"
+msgstr ""
+
+#: ../../api/overview/index.rst:81
+msgid ""
+"Unique API authentication key generated from :ref:`account settings "
+"<management-security-apikeys>`"
+msgstr ""
+
+#: ../../api/overview/index.rst:83
+msgid "Content-Type"
+msgstr ""
+
+#: ../../api/overview/index.rst:83
+msgid "application/json"
+msgstr ""
+
+#: ../../api/overview/index.rst:83
+msgid "All requests containing JSON data in the body must specify this header"
+msgstr ""
+
+#: ../../api/overview/index.rst:84
+msgid "Content-Encoding"
+msgstr ""
+
+#: ../../api/overview/index.rst:84 ../../api/overview/index.rst:85
+msgid "gzip"
+msgstr ""
+
+#: ../../api/overview/index.rst:84 ../../api/overview/index.rst:85
+#: ../../api/overview/index.rst:86
+msgid "No"
+msgstr ""
+
+#: ../../api/overview/index.rst:84
+msgid "Request body is gzip compressed"
+msgstr ""
+
+#: ../../api/overview/index.rst:85
+msgid "Accept-Encoding"
+msgstr ""
+
+#: ../../api/overview/index.rst:85
+msgid "Response will use gzip compression when content-length exceeds 1024 bytes"
+msgstr ""
+
+#: ../../api/overview/index.rst:86
+msgid "X-HTTP-Method-Override"
+msgstr ""
+
+#: ../../api/overview/index.rst:86
+msgid "PUT, DELETE"
+msgstr ""
+
+#: ../../api/overview/index.rst:86
+msgid ""
+"Clients not supporting PUT/DELETE methods can send via POST with this "
+"header"
+msgstr ""
+
+#: ../../api/overview/index.rst:96
+msgid "HTTP Status Codes"
+msgstr ""
+
+#: ../../api/overview/index.rst:98
+msgid ""
+"The eagle.io API will return appropriate `HTTP status codes "
+"<http://en.wikipedia.org/wiki/List_of_HTTP_status_codes>`_ for every "
+"request."
+msgstr ""
+
+#: ../../api/overview/index.rst:104
+msgid "Code"
+msgstr ""
+
+#: ../../api/overview/index.rst:104
+msgid "Status"
+msgstr ""
+
+#: ../../api/overview/index.rst:106
+msgid "200"
+msgstr ""
+
+#: ../../api/overview/index.rst:106
+msgid "OK"
+msgstr ""
+
+#: ../../api/overview/index.rst:106
+msgid "Completed successfully"
+msgstr ""
+
+#: ../../api/overview/index.rst:107
+msgid "201"
+msgstr ""
+
+#: ../../api/overview/index.rst:107
+msgid "Created"
+msgstr ""
+
+#: ../../api/overview/index.rst:107
+msgid "Resource created successfully"
+msgstr ""
+
+#: ../../api/overview/index.rst:108
+msgid "202"
+msgstr ""
+
+#: ../../api/overview/index.rst:108
+msgid "Operation accepted"
+msgstr ""
+
+#: ../../api/overview/index.rst:108
+msgid "Operation accepted but not yet complete"
+msgstr ""
+
+#: ../../api/overview/index.rst:109
+msgid "304"
+msgstr ""
+
+#: ../../api/overview/index.rst:109
+msgid "Not Modified"
+msgstr ""
+
+#: ../../api/overview/index.rst:109
+msgid "There was no new data to return"
+msgstr ""
+
+#: ../../api/overview/index.rst:110
+msgid "400"
+msgstr ""
+
+#: ../../api/overview/index.rst:110
+msgid "Bad Request"
+msgstr ""
+
+#: ../../api/overview/index.rst:110
+msgid "The request was invalid or cannot be otherwise served"
+msgstr ""
+
+#: ../../api/overview/index.rst:111
+msgid "401"
+msgstr ""
+
+#: ../../api/overview/index.rst:111
+msgid "Unauthorized"
+msgstr ""
+
+#: ../../api/overview/index.rst:111
+msgid "Authentication failed"
+msgstr ""
+
+#: ../../api/overview/index.rst:112
+msgid "403"
+msgstr ""
+
+#: ../../api/overview/index.rst:112
+msgid "Forbidden"
+msgstr ""
+
+#: ../../api/overview/index.rst:112
+msgid "No permission for HTTP Method or requested resource"
+msgstr ""
+
+#: ../../api/overview/index.rst:113
+msgid "404"
+msgstr ""
+
+#: ../../api/overview/index.rst:113
+msgid "Requested resource not found"
+msgstr ""
+
+#: ../../api/overview/index.rst:114
+msgid "405"
+msgstr ""
+
+#: ../../api/overview/index.rst:114
+msgid "Method Not Allowed"
+msgstr ""
+
+#: ../../api/overview/index.rst:114
+msgid "Resource does not support the requested HTTP Method"
+msgstr ""
+
+#: ../../api/overview/index.rst:115
+msgid "413"
+msgstr ""
+
+#: ../../api/overview/index.rst:115
+msgid "Request Too Large"
+msgstr ""
+
+#: ../../api/overview/index.rst:115
+msgid "Request body or response exceeds limit"
+msgstr ""
+
+#: ../../api/overview/index.rst:116
+msgid "429"
+msgstr ""
+
+#: ../../api/overview/index.rst:116
+msgid "Too Many Requests"
+msgstr ""
+
+#: ../../api/overview/index.rst:116
+msgid "Request has been rejected for exceeding usage limits"
+msgstr ""
+
+#: ../../api/overview/index.rst:117
+msgid "500"
+msgstr ""
+
+#: ../../api/overview/index.rst:117
+msgid "Internal Server Error"
+msgstr ""
+
+#: ../../api/overview/index.rst:117
+msgid "Error occurred processing the request"
+msgstr ""
+
+#: ../../api/overview/index.rst:118
+msgid "503"
+msgstr ""
+
+#: ../../api/overview/index.rst:118
+msgid "Service Unavailable"
+msgstr ""
+
+#: ../../api/overview/index.rst:118
+msgid "Service is temporarily unavailable"
+msgstr ""
+
+#: ../../api/overview/index.rst:122
+msgid "Error and Status messages"
+msgstr ""
+
+#: ../../api/overview/index.rst:123
+msgid ""
+"Error and Status messages are always returned in a standard JSON format "
+"with the status code and message in the body of the response. An example "
+"error response::"
+msgstr ""
+
+#: ../../api/overview/index.rst:128
+msgid ""
+"Status messages are returned for certain requests that have been accepted"
+" but do not return a resource in the response body::"
+msgstr ""
+
+#: ../../api/overview/index.rst:139
+msgid "HTTP Compression"
+msgstr ""
+
+#: ../../api/overview/index.rst:141
+msgid ""
+"HTTP compression is supported on both incoming and outgoing requests. "
+"Compression is highly recommended where large requests are being "
+"submitted."
+msgstr ""
+
+#: ../../api/overview/index.rst:143
+msgid ""
+"We use the standard HTTP method of specifying compression encoding, with "
+"support for the gzip compression schema."
+msgstr ""
+
+#: ../../api/overview/index.rst:147
+msgid "Incoming compression"
+msgstr ""
+
+#: ../../api/overview/index.rst:148
+msgid ""
+"In order to send compressed data to the eagle.io API it is necessary to "
+"send it with gzip encoding. Compress your data using gzip and add the "
+"**Content-Encoding** header to your request::"
+msgstr ""
+
+#: ../../api/overview/index.rst:155
+msgid "Outgoing compression"
+msgstr ""
+
+#: ../../api/overview/index.rst:156
+msgid ""
+"To receive data from the eagle.io API in gzip compressed format simply "
+"add the **Accept-Encoding** header to your request::"
+msgstr ""
+
+#: ../../api/overview/index.rst:160
+msgid ""
+"Any response exceeding 1024 bytes will be compressed and the **Content-"
+"Encoding** header added."
+msgstr ""
+
+#: ../../api/overview/index.rst:169
+msgid "Resource Attributes"
+msgstr ""
+
+#: ../../api/overview/index.rst:171
+msgid ""
+":ref:`API Resource <api-resources>` requests commonly result in a "
+"response containing the current representation of one or more resources. "
+"The representations are a combination of attributes used to describe the "
+"individual resources."
+msgstr ""
+
+#: ../../api/overview/index.rst:174
+msgid ""
+"Consumers of Resources should tolerate the addition of new attributes and"
+" variance in ordering of attributes with ease. Not all attributes appear "
+"in all contexts. It is generally safe to consider a nulled attribute, an "
+"empty set, and the absence of an attribute as the same thing."
+msgstr ""
+
+#: ../../api/overview/index.rst:176
+msgid ""
+"Attributes are assigned specific *Data types* which are enforced for all "
+"requests and include:"
+msgstr ""
+
+#: ../../api/overview/index.rst:182
+msgid "Data type"
+msgstr ""
+
+#: ../../api/overview/index.rst:182 ../../api/resources/devices.rst:54
+#: ../../api/resources/devices.rst:181 ../../api/resources/events.rst:68
+#: ../../api/resources/historic.rst:35 ../../api/resources/historic.rst:192
+#: ../../api/resources/historic.rst:311 ../../api/resources/nodes.rst:143
+#: ../../api/resources/nodes.rst:341 ../../api/resources/nodes.rst:472
+#: ../../api/resources/nodes.rst:762 ../../api/resources/nodes.rst:842
+#: ../../api/resources/nodes.rst:902 ../../api/resources/nodes.rst:1451
+#: ../../api/resources/nodes.rst:1594 ../../api/resources/nodes.rst:1703
+#: ../../api/resources/nodes.rst:1797 ../../api/resources/owners.rst:50
+msgid "Example"
+msgstr ""
+
+#: ../../api/overview/index.rst:184
+msgid "**Number**"
+msgstr ""
+
+#: ../../api/overview/index.rst:184
+msgid "12.4"
+msgstr ""
+
+#: ../../api/overview/index.rst:184
+msgid ""
+"Any number. Also expressed as **Int32** or **Int64** for integers and "
+"**Double** for double precision floating point numbers"
+msgstr ""
+
+#: ../../api/overview/index.rst:186
+msgid "**Boolean**"
+msgstr ""
+
+#: ../../api/overview/index.rst:186
+msgid "true"
+msgstr ""
+
+#: ../../api/overview/index.rst:186
+msgid "*true* or *false*"
+msgstr ""
+
+#: ../../api/overview/index.rst:187
+msgid "**String**"
+msgstr ""
+
+#: ../../api/overview/index.rst:187
+msgid "\"Valve Open\""
+msgstr ""
+
+#: ../../api/overview/index.rst:187
+msgid "Any text surrounded in quotes"
+msgstr ""
+
+#: ../../api/overview/index.rst:188
+msgid "**Time**"
+msgstr ""
+
+#: ../../api/overview/index.rst:188
+msgid "\"2014-09-24T19:48:32.000Z\""
+msgstr ""
+
+#: ../../api/overview/index.rst:188
+msgid ":ref:`ISO8601<time-format-iso8601>` timestamp surrounded in quotes"
+msgstr ""
+
+#: ../../api/overview/index.rst:189
+msgid "**ObjectId**"
+msgstr ""
+
+#: ../../api/overview/index.rst:189
+msgid "\"53ce0b6a0eba8dc46900000f\""
+msgstr ""
+
+#: ../../api/overview/index.rst:189
+msgid "Unique identifier surrounded in quotes"
+msgstr ""
+
+#: ../../api/overview/index.rst:190
+msgid "**Array**"
+msgstr ""
+
+#: ../../api/overview/index.rst:190
+msgid "[\"item1\", \"item2\"]"
+msgstr ""
+
+#: ../../api/overview/index.rst:190
+msgid "List of items. May contain any data type but generally not mixed"
+msgstr ""
+
+#: ../../api/overview/index.rst:191
+msgid "**Object**"
+msgstr ""
+
+#: ../../api/overview/index.rst:191
+msgid "{\"key\": \"value\"}"
+msgstr ""
+
+#: ../../api/overview/index.rst:191
+msgid "Nested attributes"
+msgstr ""
+
+#: ../../api/overview/index.rst:192
+msgid "**Variable**"
+msgstr ""
+
+#: ../../api/overview/index.rst:192
+msgid ""
+"May contain various data types but usually specific for each resource "
+"_class"
+msgstr ""
+
+#: ../../api/overview/index.rst:203
+msgid "Request Arguments"
+msgstr ""
+
+#: ../../api/overview/index.rst:205
+msgid ""
+"Most :ref:`API Resource <api-resources>` requests allow for arguments to "
+"be specified as part of the request URL. While some resources have "
+"*required* arguments, most are *optional* and are used to alter, refine "
+"or filter the response."
+msgstr ""
+
+#: ../../api/overview/index.rst:208
+msgid ""
+"Arguments are specified using the standard `Query string "
+"<http://en.wikipedia.org/wiki/Query_string>`_ format and should be "
+"appended to the resource endpoint, prefixed with a '?'."
+msgstr ""
+
+#: ../../api/overview/index.rst:214
+msgid ""
+"Certain resource request arguments may contain sub-arguments (denoted by "
+"indentation in arguments table). Sub-arguments should be included in "
+"parentheses with key/value separated by colons and multiple arguments "
+"semicolon delimited."
+msgstr ""
+
+#: ../../api/overview/index.rst:222
+msgid ""
+"All special characters should be `Url Encoded "
+"<http://en.wikipedia.org/wiki/Percent-encoding>`_."
+msgstr ""
+
+#: ../../api/overview/index.rst:228
+msgid "Filter Argument"
+msgstr ""
+
+#: ../../api/overview/index.rst:230
+msgid ""
+"Certain :ref:`API Resource <api-resources>` requests allow for an "
+"optional ``filter`` argument to be specified. When a filter is provided, "
+"only resources with attributes matching the filter criteria will be "
+"returned. If no criteria matches than an empty set will be returned."
+msgstr ""
+
+#: ../../api/overview/index.rst:233
+msgid ""
+"The filter argument includes the attribute name with an operator and "
+"operand colon delimited and included in parentheses directly after the "
+"attribute name::"
+msgstr ""
+
+#: ../../api/overview/index.rst:237
+msgid "An example filter request for recently created nodes::"
+msgstr ""
+
+#: ../../api/overview/index.rst:242
+msgid ""
+"The following operators can be used when specifying filter criteria. Use "
+"is limited to specific attribute data types:"
+msgstr ""
+
+#: ../../api/overview/index.rst:248
+msgid "Operator"
+msgstr ""
+
+#: ../../api/overview/index.rst:248
+msgid "Supported data types"
+msgstr ""
+
+#: ../../api/overview/index.rst:250
+msgid "**$gt**"
+msgstr ""
+
+#: ../../api/overview/index.rst:250 ../../api/overview/index.rst:252
+#: ../../api/overview/index.rst:254 ../../api/overview/index.rst:256
+msgid "Number, Time"
+msgstr ""
+
+#: ../../api/overview/index.rst:250
+msgid "Greater than"
+msgstr ""
+
+#: ../../api/overview/index.rst:252
+msgid "**$gte**"
+msgstr ""
+
+#: ../../api/overview/index.rst:252
+msgid "Greater than or equal to"
+msgstr ""
+
+#: ../../api/overview/index.rst:254
+msgid "**$lt**"
+msgstr ""
+
+#: ../../api/overview/index.rst:254
+msgid "Less than"
+msgstr ""
+
+#: ../../api/overview/index.rst:256
+msgid "**$lte**"
+msgstr ""
+
+#: ../../api/overview/index.rst:256
+msgid "Less than or equal to"
+msgstr ""
+
+#: ../../api/overview/index.rst:258
+msgid "**$eq**"
+msgstr ""
+
+#: ../../api/overview/index.rst:258 ../../api/overview/index.rst:260
+msgid "Number, Time, Boolean, String, ObjectId"
+msgstr ""
+
+#: ../../api/overview/index.rst:258
+msgid "Equal"
+msgstr ""
+
+#: ../../api/overview/index.rst:260
+msgid "**$ne**"
+msgstr ""
+
+#: ../../api/overview/index.rst:260
+msgid "Not equal"
+msgstr ""
+
+#: ../../api/overview/index.rst:262
+msgid "**$match**"
+msgstr ""
+
+#: ../../api/overview/index.rst:262 ../../api/resources/devices.rst:26
+#: ../../api/resources/devices.rst:30 ../../api/resources/devices.rst:33
+#: ../../api/resources/events.rst:26 ../../api/resources/events.rst:30
+#: ../../api/resources/events.rst:35 ../../api/resources/events.rst:38
+#: ../../api/resources/events.rst:40 ../../api/resources/events.rst:45
+#: ../../api/resources/events.rst:49 ../../api/resources/nodes.rst:27
+#: ../../api/resources/nodes.rst:31 ../../api/resources/nodes.rst:33
+#: ../../api/resources/nodes.rst:45 ../../api/resources/nodes.rst:47
+#: ../../api/resources/nodes.rst:49 ../../api/resources/nodes.rst:53
+#: ../../api/resources/nodes.rst:65 ../../api/resources/nodes.rst:72
+#: ../../api/resources/nodes.rst:74 ../../api/resources/nodes.rst:90
+#: ../../api/resources/nodes.rst:92 ../../api/resources/nodes.rst:102
+#: ../../api/resources/nodes.rst:106 ../../api/resources/nodes.rst:113
+#: ../../api/resources/nodes.rst:116 ../../api/resources/nodes.rst:117
+#: ../../api/resources/nodes.rst:119 ../../api/resources/nodes.rst:523
+#: ../../api/resources/nodes.rst:601 ../../api/resources/nodes.rst:611
+#: ../../api/resources/nodes.rst:618 ../../api/resources/nodes.rst:621
+#: ../../api/resources/owners.rst:26 ../../api/resources/owners.rst:28
+#: ../../api/resources/owners.rst:31
+msgid "String"
+msgstr ""
+
+#: ../../api/overview/index.rst:262
+msgid "Text match"
+msgstr ""
+
+#: ../../api/overview/index.rst:265
+msgid ""
+"Multiple filter criteria can be specified using logical AND, OR "
+"operators. To specify an AND between criteria, use a comma character ','."
+" To specify an OR between criteria, use a pipe character '|' `Url Encoded"
+" <http://en.wikipedia.org/wiki/Percent-encoding>`_ as '**%7C**'. The AND "
+"criteria is always evaluated before the OR criteria."
+msgstr ""
+
+#: ../../api/overview/index.rst:270
+msgid ""
+"An example of a multi-criteria filter request for retrieving nodes with "
+"(name matching Batt* AND isActive true) OR (createdTime greater than "
+"2015-01-01T00:00:00Z)::"
+msgstr ""
+
+#: ../../api/overview/index.rst:275
+msgid ""
+"If the attribute data type is **Variable** you must explicitly specify "
+"the data type of the operand."
+msgstr ""
+
+#: ../../api/overview/index.rst:277
+msgid "Example specifying currentValue operand as a Time::"
+msgstr ""
+
+#: ../../api/overview/index.rst:286
+msgid "Data Formats"
+msgstr ""
+
+#: ../../api/overview/index.rst:288
+msgid ""
+"The eagle.io API uses `JSON data format <http://json.org>`_ by default "
+"for all requests and responses. Certain resources allow for alternate "
+"data formats by specifying the **format** argument as part of the request"
+" URL::"
+msgstr ""
+
+#: ../../api/overview/index.rst:293
+msgid "**Content-Type** is always included in the header of the response::"
+msgstr ""
+
+#: ../../api/overview/index.rst:299 ../../api/resources/devices.rst:77
+#: ../../api/resources/devices.rst:188 ../../api/resources/events.rst:99
+#: ../../api/resources/historic.rst:109 ../../api/resources/historic.rst:261
+#: ../../api/resources/historic.rst:346 ../../api/resources/nodes.rst:177
+#: ../../api/resources/nodes.rst:353 ../../api/resources/nodes.rst:403
+#: ../../api/resources/nodes.rst:480 ../../api/resources/nodes.rst:719
+#: ../../api/resources/nodes.rst:778 ../../api/resources/nodes.rst:852
+#: ../../api/resources/nodes.rst:912 ../../api/resources/nodes.rst:950
+#: ../../api/resources/nodes.rst:983 ../../api/resources/nodes.rst:1083
+#: ../../api/resources/nodes.rst:1138 ../../api/resources/nodes.rst:1190
+#: ../../api/resources/nodes.rst:1287 ../../api/resources/nodes.rst:1389
+#: ../../api/resources/nodes.rst:1512 ../../api/resources/nodes.rst:1652
+#: ../../api/resources/nodes.rst:1724 ../../api/resources/nodes.rst:1814
+#: ../../api/resources/nodes.rst:1887 ../../api/resources/nodes.rst:1934
+#: ../../api/resources/owners.rst:57
+msgid "Request"
+msgstr ""
+
+#: ../../api/overview/index.rst:301
+msgid ""
+"**Content-Type** must be defined in the header of all requests that "
+"contain data::"
+msgstr ""
+
+#: ../../api/overview/index.rst:306
+msgid ""
+"The body of the request must be valid JSON or a **400 Bad Request** "
+"response will be returned. The complete HTTP request should not exceed "
+"5MB before compression. A **413 Request Too Large** response will be "
+"returned for requests exceeding the size limit."
+msgstr ""
+
+#: ../../api/overview/index.rst:308
+msgid "Example request for inserting historic data:"
+msgstr ""
+
+#: ../../api/overview/index.rst:329 ../../api/resources/devices.rst:84
+#: ../../api/resources/devices.rst:195 ../../api/resources/events.rst:106
+#: ../../api/resources/historic.rst:116 ../../api/resources/historic.rst:268
+#: ../../api/resources/historic.rst:374 ../../api/resources/nodes.rst:184
+#: ../../api/resources/nodes.rst:370 ../../api/resources/nodes.rst:428
+#: ../../api/resources/nodes.rst:493 ../../api/resources/nodes.rst:726
+#: ../../api/resources/nodes.rst:796 ../../api/resources/nodes.rst:865
+#: ../../api/resources/nodes.rst:919 ../../api/resources/nodes.rst:957
+#: ../../api/resources/nodes.rst:990 ../../api/resources/nodes.rst:1108
+#: ../../api/resources/nodes.rst:1163 ../../api/resources/nodes.rst:1197
+#: ../../api/resources/nodes.rst:1323 ../../api/resources/nodes.rst:1411
+#: ../../api/resources/nodes.rst:1519 ../../api/resources/nodes.rst:1659
+#: ../../api/resources/nodes.rst:1752 ../../api/resources/nodes.rst:1855
+#: ../../api/resources/nodes.rst:1902 ../../api/resources/nodes.rst:1941
+#: ../../api/resources/owners.rst:64
+msgid "Response"
+msgstr ""
+
+#: ../../api/overview/index.rst:331
+msgid "Example response from a Nodes GET request:"
+msgstr ""
+
+#: ../../api/overview/index.rst:381
+msgid "Resource Ids"
+msgstr ""
+
+#: ../../api/overview/index.rst:383
+msgid ""
+"Most resources must be accessed with an *id*. The automatically assigned "
+"id is stored as the *_id* attribute of the resource. Nodes can optionally"
+" be assigned a unique *customId* which can also be used to access the "
+"resource prepended with '@'. :ref:`Learn how to assign a customId <user-"
+"preferences-other>`."
+msgstr ""
+
+#: ../../api/overview/index.rst:387 ../../api/resources/nodes.rst:359
+msgid "Example accessing a node by its automatically assigned *_id* ::"
+msgstr ""
+
+#: ../../api/overview/index.rst:392 ../../api/resources/nodes.rst:364
+msgid "Example accessing a node by its *customId* ::"
+msgstr ""
+
+#: ../../api/overview/index.rst:402
+msgid "Versioning"
+msgstr ""
+
+#: ../../api/overview/index.rst:404
+msgid ""
+"The API version number is specified as part of the URL. **v1** is the "
+"currently supported version and has a base URL::"
+msgstr ""
+
+#: ../../api/overview/index.rst:409
+msgid ""
+"As we make updates and additions to the eagle.io API, we will only make "
+"changes, add new features and/or implement fixes to the current released "
+"API that do not affect backward compatibility."
+msgstr ""
+
+#: ../../api/overview/index.rst:418
+msgid "Usage Limits"
+msgstr ""
+
+#: ../../api/overview/index.rst:420
+msgid ""
+"API usage is rate limited by IP Address to prevent misuse. If you exceed "
+"more than 1000 requests per 15 minute window the request will be refused "
+"and you will recevie a **429 Too Many Requests** response."
+msgstr ""
+
+#: ../../api/resources/devices.rst:4
+msgid "Devices"
+msgstr ""
+
+#: ../../api/resources/devices.rst:6
+msgid ""
+"Devices contain details about modems and other communication hardware "
+"associated with a Source or Workspace."
+msgstr ""
+
+#: ../../api/resources/devices.rst:17
+msgid "Device Attributes"
+msgstr ""
+
+#: ../../api/resources/devices.rst:18
+msgid ""
+"Consumers of Devices should tolerate the addition of new attributes and "
+"variance in ordering of attributes with ease. Not all attributes appear "
+"in all contexts. It is generally safe to consider a nulled attribute, an "
+"empty set, and the absence of an attribute as the same thing."
+msgstr ""
+
+#: ../../api/resources/devices.rst:24 ../../api/resources/events.rst:24
+#: ../../api/resources/owners.rst:24
+msgid "Attribute"
+msgstr ""
+
+#: ../../api/resources/devices.rst:24 ../../api/resources/events.rst:24
+#: ../../api/resources/nodes.rst:25 ../../api/resources/nodes.rst:43
+#: ../../api/resources/nodes.rst:60 ../../api/resources/nodes.rst:99
+#: ../../api/resources/nodes.rst:520 ../../api/resources/nodes.rst:599
+#: ../../api/resources/owners.rst:24
+msgid "Type"
+msgstr ""
+
+#: ../../api/resources/devices.rst:26 ../../api/resources/events.rst:26
+#: ../../api/resources/nodes.rst:27 ../../api/resources/owners.rst:26
+msgid "**_class**"
+msgstr ""
+
+#: ../../api/resources/devices.rst:26
+msgid "Identifies resource type: *io.eagle.models.device.*\\*"
+msgstr ""
+
+#: ../../api/resources/devices.rst:27 ../../api/resources/events.rst:28
+#: ../../api/resources/nodes.rst:28 ../../api/resources/owners.rst:27
+msgid "**_id**"
+msgstr ""
+
+#: ../../api/resources/devices.rst:27 ../../api/resources/devices.rst:35
+#: ../../api/resources/events.rst:28 ../../api/resources/events.rst:43
+#: ../../api/resources/events.rst:47 ../../api/resources/nodes.rst:28
+#: ../../api/resources/nodes.rst:34 ../../api/resources/nodes.rst:35
+#: ../../api/resources/nodes.rst:36 ../../api/resources/nodes.rst:68
+#: ../../api/resources/nodes.rst:81 ../../api/resources/nodes.rst:85
+#: ../../api/resources/nodes.rst:101 ../../api/resources/nodes.rst:525
+#: ../../api/resources/nodes.rst:616 ../../api/resources/owners.rst:27
+msgid "ObjectId"
+msgstr ""
+
+#: ../../api/resources/devices.rst:27
+msgid "Unique identifier for this device"
+msgstr ""
+
+#: ../../api/resources/devices.rst:28
+msgid "**config**"
+msgstr ""
+
+#: ../../api/resources/devices.rst:28 ../../api/resources/devices.rst:34
+#: ../../api/resources/nodes.rst:29
+msgid "Object"
+msgstr ""
+
+#: ../../api/resources/devices.rst:28
+msgid "Object containing device specific configuration"
+msgstr ""
+
+#: ../../api/resources/devices.rst:29 ../../api/resources/nodes.rst:30
+#: ../../api/resources/owners.rst:30
+msgid "**createdTime**"
+msgstr ""
+
+#: ../../api/resources/devices.rst:29 ../../api/resources/devices.rst:32
+#: ../../api/resources/events.rst:33 ../../api/resources/nodes.rst:30
+#: ../../api/resources/nodes.rst:69 ../../api/resources/nodes.rst:82
+#: ../../api/resources/nodes.rst:86 ../../api/resources/nodes.rst:109
+#: ../../api/resources/nodes.rst:111 ../../api/resources/owners.rst:30
+msgid "Time"
+msgstr ""
+
+#: ../../api/resources/devices.rst:29
+msgid ":ref:`ISO8601<time-format-iso8601>` timestamp the device was created"
+msgstr ""
+
+#: ../../api/resources/devices.rst:30
+msgid "**deviceKey**"
+msgstr ""
+
+#: ../../api/resources/devices.rst:30
+msgid "IMEI or Unique identifier for this device"
+msgstr ""
+
+#: ../../api/resources/devices.rst:31
+msgid "**isConnected**"
+msgstr ""
+
+#: ../../api/resources/devices.rst:31 ../../api/resources/nodes.rst:32
+#: ../../api/resources/nodes.rst:105 ../../api/resources/nodes.rst:107
+#: ../../api/resources/nodes.rst:120 ../../api/resources/nodes.rst:522
+#: ../../api/resources/nodes.rst:608
+msgid "Boolean"
+msgstr ""
+
+#: ../../api/resources/devices.rst:31
+msgid "Flag to indicate if device is currently connected"
+msgstr ""
+
+#: ../../api/resources/devices.rst:32
+msgid "**lastConnected**"
+msgstr ""
+
+#: ../../api/resources/devices.rst:32
+msgid ""
+":ref:`ISO8601<time-format-iso8601>` timestamp the device last established"
+" a connection"
+msgstr ""
+
+#: ../../api/resources/devices.rst:33
+msgid "**phoneNumber**"
+msgstr ""
+
+#: ../../api/resources/devices.rst:33
+msgid "Phone number associated with the device"
+msgstr ""
+
+#: ../../api/resources/devices.rst:34
+msgid "**software**"
+msgstr ""
+
+#: ../../api/resources/devices.rst:34
+msgid "Object containing info about the current device software"
+msgstr ""
+
+#: ../../api/resources/devices.rst:35 ../../api/resources/events.rst:47
+#: ../../api/resources/nodes.rst:36
+msgid "**workspaceId**"
+msgstr ""
+
+#: ../../api/resources/devices.rst:35 ../../api/resources/events.rst:47
+msgid "Associated Workspace _id"
+msgstr ""
+
+#: ../../api/resources/devices.rst:43
+msgid "Retrieve all devices"
+msgstr ""
+
+#: ../../api/resources/devices.rst:44
+msgid ""
+"Retrieve a list of all devices available to the authenticated API key. "
+"Optionally *filter* by attribute values."
+msgstr ""
+
+#: ../../api/resources/devices.rst:48 ../../api/resources/devices.rst:175
+#: ../../api/resources/events.rst:62 ../../api/resources/historic.rst:29
+#: ../../api/resources/historic.rst:186 ../../api/resources/historic.rst:305
+#: ../../api/resources/nodes.rst:137 ../../api/resources/nodes.rst:335
+#: ../../api/resources/nodes.rst:466 ../../api/resources/nodes.rst:756
+#: ../../api/resources/nodes.rst:836 ../../api/resources/nodes.rst:896
+#: ../../api/resources/nodes.rst:1445 ../../api/resources/nodes.rst:1588
+#: ../../api/resources/nodes.rst:1697 ../../api/resources/nodes.rst:1791
+#: ../../api/resources/owners.rst:44
+msgid "Arguments"
+msgstr ""
+
+#: ../../api/resources/devices.rst:54 ../../api/resources/devices.rst:181
+#: ../../api/resources/events.rst:68 ../../api/resources/historic.rst:35
+#: ../../api/resources/historic.rst:192 ../../api/resources/historic.rst:311
+#: ../../api/resources/nodes.rst:143 ../../api/resources/nodes.rst:341
+#: ../../api/resources/nodes.rst:472 ../../api/resources/nodes.rst:762
+#: ../../api/resources/nodes.rst:842 ../../api/resources/nodes.rst:902
+#: ../../api/resources/nodes.rst:1451 ../../api/resources/nodes.rst:1594
+#: ../../api/resources/nodes.rst:1703 ../../api/resources/nodes.rst:1797
+#: ../../api/resources/owners.rst:50
+msgid "Argument"
+msgstr ""
+
+#: ../../api/resources/devices.rst:56 ../../api/resources/devices.rst:183
+#: ../../api/resources/events.rst:76 ../../api/resources/nodes.rst:145
+#: ../../api/resources/nodes.rst:343 ../../api/resources/nodes.rst:474
+#: ../../api/resources/nodes.rst:764 ../../api/resources/owners.rst:52
+msgid "**attr**"
+msgstr ""
+
+#: ../../api/resources/devices.rst:56
+msgid "_id,phoneNumber"
+msgstr ""
+
+#: ../../api/resources/devices.rst:56 ../../api/resources/events.rst:76
+msgid "*Optional*. Comma delimited list of attributes to include in response"
+msgstr ""
+
+#: ../../api/resources/devices.rst:59 ../../api/resources/events.rst:79
+#: ../../api/resources/nodes.rst:152
+msgid "**filter**"
+msgstr ""
+
+#: ../../api/resources/devices.rst:59
+msgid "isConnected($eq:true)"
+msgstr ""
+
+#: ../../api/resources/devices.rst:59 ../../api/resources/nodes.rst:152
+msgid ""
+"*Optional*. :ref:`Filter <api-overview-request-arguments-filter>` the "
+"records based on attribute value(s)"
+msgstr ""
+
+#: ../../api/resources/devices.rst:63 ../../api/resources/events.rst:84
+#: ../../api/resources/historic.rst:58 ../../api/resources/nodes.rst:156
+#: ../../api/resources/nodes.rst:1474
+msgid "**limit**"
+msgstr ""
+
+#: ../../api/resources/devices.rst:63 ../../api/resources/events.rst:84
+#: ../../api/resources/historic.rst:58 ../../api/resources/nodes.rst:156
+#: ../../api/resources/nodes.rst:1474
+msgid "100"
+msgstr ""
+
+#: ../../api/resources/devices.rst:63 ../../api/resources/nodes.rst:156
+msgid "*Optional*. Maximum number of records to be returned"
+msgstr ""
+
+#: ../../api/resources/devices.rst:66 ../../api/resources/events.rst:87
+#: ../../api/resources/nodes.rst:159
+msgid "**skip**"
+msgstr ""
+
+#: ../../api/resources/devices.rst:66 ../../api/resources/events.rst:87
+#: ../../api/resources/nodes.rst:159
+msgid "50"
+msgstr ""
+
+#: ../../api/resources/devices.rst:66 ../../api/resources/events.rst:87
+#: ../../api/resources/nodes.rst:159
+msgid ""
+"*Optional*. Skip the first *n* records returned. Can be used with "
+"``limit`` to paginate results"
+msgstr ""
+
+#: ../../api/resources/devices.rst:70 ../../api/resources/events.rst:91
+#: ../../api/resources/nodes.rst:163
+msgid "**sort**"
+msgstr ""
+
+#: ../../api/resources/devices.rst:70 ../../api/resources/nodes.rst:163
+msgid "createdTime(DESC)"
+msgstr ""
+
+#: ../../api/resources/devices.rst:70 ../../api/resources/nodes.rst:163
+msgid ""
+"*Optional*. Comma delimited list of attributes to sort by. Optionally "
+"include sort direction in parentheses or default to ASC: *[ASC, DESC]*"
+msgstr ""
+
+#: ../../api/resources/devices.rst:171
+msgid "Retrieve a device"
+msgstr ""
+
+#: ../../api/resources/devices.rst:172
+msgid "Retrieve a device by its **id**."
+msgstr ""
+
+#: ../../api/resources/devices.rst:183 ../../api/resources/nodes.rst:343
+#: ../../api/resources/nodes.rst:474
+msgid "_id,_class"
+msgstr ""
+
+#: ../../api/resources/devices.rst:183 ../../api/resources/nodes.rst:145
+#: ../../api/resources/nodes.rst:343 ../../api/resources/nodes.rst:764
+#: ../../api/resources/owners.rst:52
+msgid "*Optional.* Comma delimited list of attributes to include in response"
+msgstr ""
+
+#: ../../api/resources/events.rst:4
+msgid "Events"
+msgstr ""
+
+#: ../../api/resources/events.rst:6
+msgid ""
+"Events contain details about user interactions, alarm history and system "
+"generated notices."
+msgstr ""
+
+#: ../../api/resources/events.rst:17
+msgid "Event Attributes"
+msgstr ""
+
+#: ../../api/resources/events.rst:18
+msgid ""
+"Consumers of Events should tolerate the addition of new attributes and "
+"variance in ordering of attributes with ease. Not all attributes appear "
+"in all contexts. It is generally safe to consider a nulled attribute, an "
+"empty set, and the absence of an attribute as the same thing."
+msgstr ""
+
+#: ../../api/resources/events.rst:26
+msgid "Identifies resource type: *io.eagle.models.event.*\\*"
+msgstr ""
+
+#: ../../api/resources/events.rst:28
+msgid "Unique identifier for this event"
+msgstr ""
+
+#: ../../api/resources/events.rst:30
+msgid "**level**"
+msgstr ""
+
+#: ../../api/resources/events.rst:30
+msgid "Detail level of event: *[DEBUG, INFO, WARNING, ERROR]*"
+msgstr ""
+
+#: ../../api/resources/events.rst:33
+msgid "**eventTime**"
+msgstr ""
+
+#: ../../api/resources/events.rst:33
+msgid ":ref:`ISO8601<time-format-iso8601>` timestamp associated with the event"
+msgstr ""
+
+#: ../../api/resources/events.rst:35
+msgid "**eventType**"
+msgstr ""
+
+#: ../../api/resources/events.rst:35
+msgid ""
+"Type of event: *[ACQUISITION, CONFIGURATION, STATE, NOTIFICATION, "
+"CONTROL, SECURITY]*"
+msgstr ""
+
+#: ../../api/resources/events.rst:38
+msgid "**message**"
+msgstr ""
+
+#: ../../api/resources/events.rst:38
+msgid "Event description"
+msgstr ""
+
+#: ../../api/resources/events.rst:40
+msgid "**alarmState**"
+msgstr ""
+
+#: ../../api/resources/events.rst:40
+msgid ""
+"Indicate if event is associated with an alarm: *[NONE, ACTIVE, "
+"ACKNOWLEDGED, CLEARED]*"
+msgstr ""
+
+#: ../../api/resources/events.rst:43
+msgid "**nodeId**"
+msgstr ""
+
+#: ../../api/resources/events.rst:43
+msgid "Id of node associated with the event (where applicable)"
+msgstr ""
+
+#: ../../api/resources/events.rst:45
+msgid "**nodeType**"
+msgstr ""
+
+#: ../../api/resources/events.rst:45
+msgid "_class of node associated with the event (where applicable)"
+msgstr ""
+
+#: ../../api/resources/events.rst:49
+msgid "**username**"
+msgstr ""
+
+#: ../../api/resources/events.rst:49
+msgid "User or process that triggered the event"
+msgstr ""
+
+#: ../../api/resources/events.rst:57
+msgid "Retrieve events"
+msgstr ""
+
+#: ../../api/resources/events.rst:58
+msgid ""
+"Retrieve a list of events available to the authenticated API key. "
+"Optionally *filter* by attribute values."
+msgstr ""
+
+#: ../../api/resources/events.rst:70 ../../api/resources/historic.rst:40
+#: ../../api/resources/historic.rst:212 ../../api/resources/nodes.rst:1456
+#: ../../api/resources/nodes.rst:1614
+msgid "**startTime**"
+msgstr ""
+
+#: ../../api/resources/events.rst:70
+msgid "2017-08-16T02:00:00Z"
+msgstr ""
+
+#: ../../api/resources/events.rst:70 ../../api/resources/events.rst:73
+#: ../../api/resources/historic.rst:212 ../../api/resources/historic.rst:215
+msgid "*Optional*. :ref:`ISO8601<time-format-iso8601>` timestamp"
+msgstr ""
+
+#: ../../api/resources/events.rst:73 ../../api/resources/historic.rst:43
+#: ../../api/resources/historic.rst:215 ../../api/resources/nodes.rst:1459
+#: ../../api/resources/nodes.rst:1617
+msgid "**endTime**"
+msgstr ""
+
+#: ../../api/resources/events.rst:73
+msgid "2017-08-16T02:20:43Z"
+msgstr ""
+
+#: ../../api/resources/events.rst:76
+msgid "eventTime,message"
+msgstr ""
+
+#: ../../api/resources/events.rst:79
+msgid "level($eq:DEBUG)"
+msgstr ""
+
+#: ../../api/resources/events.rst:79
+msgid ""
+"*Optional*. :ref:`Filter <api-overview-request-arguments-filter>` the "
+"records based on attribute value(s). *Note: eventTime can not be used as "
+"a filter*"
+msgstr ""
+
+#: ../../api/resources/events.rst:84
+msgid ""
+"*Optional - Default is 1000 if both startTime & endTime are not "
+"specified*. Maximum number of records to be returned."
+msgstr ""
+
+#: ../../api/resources/events.rst:91
+msgid "eventTime(DESC)"
+msgstr ""
+
+#: ../../api/resources/events.rst:91
+msgid ""
+"*Optional - Default is eventTime(ASC)*. Comma delimited list of "
+"attributes to sort by. Optionally include sort direction in parentheses "
+"or default to ASC: *[ASC, DESC]*"
+msgstr ""
+
+#: ../../api/resources/historic.rst:4
+msgid "Historic"
+msgstr ""
+
+#: ../../api/resources/historic.rst:6
+msgid ""
+"Historic data can be extracted or inserted into one or more nodes in a "
+"single request. You can also use the :ref:`Nodes resource <api-resources-"
+"nodes>` to extract or insert data for a single node. Data can be "
+"extracted or inserted in JSON (:ref:`JTS <historic-jts>`) format."
+msgstr ""
+
+#: ../../api/resources/historic.rst:8
+msgid ""
+"We recommend you ``limit`` the size of requests to 1000 records or less "
+"and use :ref:`HTTP compression <api-overview-compression>` whenever "
+"possible. If the request or response is too large or exceeds our "
+"processing time threshold, the **413 Request Too Large** error response "
+"will be returned."
+msgstr ""
+
+#: ../../api/resources/historic.rst:10
+msgid ""
+"Successful extraction requests will result in a **200 OK** response with "
+"the data returned in the body of the response. Successful insertion "
+"requests always result in a **202 Accepted** response."
+msgstr ""
+
+#: ../../api/resources/historic.rst:21
+msgid "Retrieve historic data from multiple nodes"
+msgstr ""
+
+#: ../../api/resources/historic.rst:22
+msgid ""
+"Retrieve historic data from multiple nodes in a single request using "
+"**node id's**. You can use the automatically assigned *_id's* or your own"
+" *customId's* prepended with '@'."
+msgstr ""
+
+#: ../../api/resources/historic.rst:25 ../../api/resources/nodes.rst:1442
+msgid "Only available for Location and Parameter nodes."
+msgstr ""
+
+#: ../../api/resources/historic.rst:37 ../../api/resources/historic.rst:194
+#: ../../api/resources/historic.rst:313 ../../api/resources/nodes.rst:74
+#: ../../api/resources/nodes.rst:1453 ../../api/resources/nodes.rst:1596
+#: ../../api/resources/nodes.rst:1705 ../../api/resources/nodes.rst:1799
+msgid "**format**"
+msgstr ""
+
+#: ../../api/resources/historic.rst:37 ../../api/resources/historic.rst:313
+#: ../../api/resources/nodes.rst:1453 ../../api/resources/nodes.rst:1705
+#: ../../api/resources/nodes.rst:1799
+msgid "JSON"
+msgstr ""
+
+#: ../../api/resources/historic.rst:37 ../../api/resources/nodes.rst:1453
+msgid "*Optional - Default is JSON*. Data format to return: *[JSON, CSV]*"
+msgstr ""
+
+#: ../../api/resources/historic.rst:40 ../../api/resources/historic.rst:212
+#: ../../api/resources/nodes.rst:1456 ../../api/resources/nodes.rst:1614
+msgid "2014-08-16T02:00:00Z"
+msgstr ""
+
+#: ../../api/resources/historic.rst:40 ../../api/resources/historic.rst:43
+msgid "*Required*. [#f1]_ :ref:`ISO8601<time-format-iso8601>` timestamp"
+msgstr ""
+
+#: ../../api/resources/historic.rst:43 ../../api/resources/historic.rst:215
+#: ../../api/resources/nodes.rst:1459 ../../api/resources/nodes.rst:1617
+msgid "2014-08-16T02:20:43Z"
+msgstr ""
+
+#: ../../api/resources/historic.rst:46 ../../api/resources/historic.rst:218
+#: ../../api/resources/nodes.rst:119 ../../api/resources/nodes.rst:1462
+#: ../../api/resources/nodes.rst:1620
+msgid "**timezone**"
+msgstr ""
+
+#: ../../api/resources/historic.rst:46 ../../api/resources/historic.rst:218
+#: ../../api/resources/nodes.rst:1462 ../../api/resources/nodes.rst:1620
+msgid "Etc/UTC"
+msgstr ""
+
+#: ../../api/resources/historic.rst:46 ../../api/resources/nodes.rst:1462
+msgid ""
+"*Optional - Default is Etc/UTC*. :ref:`Timezone <timezone>` applied to "
+"timestamps. Aggregate *interval* and *baseTime* calculations will also "
+"use this zone."
+msgstr ""
+
+#: ../../api/resources/historic.rst:51 ../../api/resources/historic.rst:223
+#: ../../api/resources/nodes.rst:120 ../../api/resources/nodes.rst:1467
+#: ../../api/resources/nodes.rst:1625
+msgid "**timezoneAdjustForDst**"
+msgstr ""
+
+#: ../../api/resources/historic.rst:51 ../../api/resources/historic.rst:61
+#: ../../api/resources/historic.rst:209 ../../api/resources/historic.rst:223
+#: ../../api/resources/nodes.rst:1467 ../../api/resources/nodes.rst:1477
+#: ../../api/resources/nodes.rst:1611 ../../api/resources/nodes.rst:1625
+msgid "FALSE"
+msgstr ""
+
+#: ../../api/resources/historic.rst:51 ../../api/resources/nodes.rst:1467
+msgid ""
+"*Optional - Default is FALSE*. Flag to indicate if timestamps should be "
+"adjusted for DST in selected *timezone*."
+msgstr ""
+
+#: ../../api/resources/historic.rst:55 ../../api/resources/nodes.rst:1471
+msgid "**timeFormat**"
+msgstr ""
+
+#: ../../api/resources/historic.rst:55 ../../api/resources/nodes.rst:1471
+msgid "YYYY-MM-DD HH:mm:ss"
+msgstr ""
+
+#: ../../api/resources/historic.rst:55 ../../api/resources/nodes.rst:1471
+msgid "*Optional*. :ref:`Time format<time-format-customize>`."
+msgstr ""
+
+#: ../../api/resources/historic.rst:58
+msgid "*Optional*. Maximum number of historic records to be returned"
+msgstr ""
+
+#: ../../api/resources/historic.rst:61 ../../api/resources/nodes.rst:1477
+msgid "**quality**"
+msgstr ""
+
+#: ../../api/resources/historic.rst:61 ../../api/resources/nodes.rst:1477
+msgid ""
+"*Optional - Default is FALSE*. Flag to include :ref:`quality <historic-"
+"quality>`"
+msgstr ""
+
+#: ../../api/resources/historic.rst:64 ../../api/resources/nodes.rst:1480
+msgid "**header**"
+msgstr ""
+
+#: ../../api/resources/historic.rst:64 ../../api/resources/nodes.rst:1480
+msgid "TRUE"
+msgstr ""
+
+#: ../../api/resources/historic.rst:64 ../../api/resources/nodes.rst:1480
+msgid "*Optional - Default is TRUE*. Flag to include header"
+msgstr ""
+
+#: ../../api/resources/historic.rst:67 ../../api/resources/historic.rst:227
+#: ../../api/resources/historic.rst:326
+msgid "**params**"
+msgstr ""
+
+#: ../../api/resources/historic.rst:67 ../../api/resources/historic.rst:227
+#: ../../api/resources/historic.rst:326
+msgid "541a5a129bc9b4035f906d70 @sensor_254"
+msgstr ""
+
+#: ../../api/resources/historic.rst:67
+msgid ""
+"*Required*. Comma delimited list of parameter id's to include in "
+"extraction. Individual parameter options are specified in parentheses."
+msgstr ""
+
+#: ../../api/resources/historic.rst ../../api/resources/nodes.rst:1483
+msgid "**renderType**"
+msgstr ""
+
+#: ../../api/resources/historic.rst:71 ../../api/resources/historic.rst:231
+#: ../../api/resources/nodes.rst:1483 ../../api/resources/nodes.rst:1629
+msgid "VALUE"
+msgstr ""
+
+#: ../../api/resources/historic.rst:71 ../../api/resources/historic.rst:231
+msgid ""
+"*Optional - Default is parameter displayType*. Rendering of value: "
+"*[VALUE, STATE]*"
+msgstr ""
+
+#: ../../api/resources/historic.rst ../../api/resources/nodes.rst:1486
+msgid "**renderFormat**"
+msgstr ""
+
+#: ../../api/resources/historic.rst:74 ../../api/resources/nodes.rst:1486
+msgid "0.000"
+msgstr ""
+
+#: ../../api/resources/historic.rst:74
+msgid ""
+"*Optional - Default is node format*. :ref:`Format <node-configuration-"
+"parameter-general>` to apply when renderType is VALUE. '#' must be `Url "
+"Encoded <http://en.wikipedia.org/wiki/Percent-encoding>`_ as '%23'."
+msgstr ""
+
+#: ../../api/resources/historic.rst ../../api/resources/nodes.rst:1492
+msgid "**aggregate**"
+msgstr ""
+
+#: ../../api/resources/historic.rst:80 ../../api/resources/historic.rst:234
+#: ../../api/resources/nodes.rst:1492 ../../api/resources/nodes.rst:1632
+msgid "AVERAGE"
+msgstr ""
+
+#: ../../api/resources/historic.rst:80 ../../api/resources/nodes.rst:1492
+msgid ""
+"*Optional - Default is NONE (raw)*. Historic :ref:`aggregate <historic-"
+"aggregates>` to apply to extracted data."
+msgstr ""
+
+#: ../../api/resources/historic.rst ../../api/resources/nodes.rst:1496
+msgid "**baseTime**"
+msgstr ""
+
+#: ../../api/resources/historic.rst:84 ../../api/resources/historic.rst:238
+#: ../../api/resources/nodes.rst:1496 ../../api/resources/nodes.rst:1636
+msgid "D"
+msgstr ""
+
+#: ../../api/resources/historic.rst:84 ../../api/resources/nodes.rst:1496
+msgid "*Optional*. :ref:`OPC Base Time <relative-time>` required for aggregation."
+msgstr ""
+
+#: ../../api/resources/historic.rst ../../api/resources/nodes.rst:1499
+msgid "**interval**"
+msgstr ""
+
+#: ../../api/resources/historic.rst:87 ../../api/resources/historic.rst:241
+#: ../../api/resources/nodes.rst:1499 ../../api/resources/nodes.rst:1639
+msgid "3H"
+msgstr ""
+
+#: ../../api/resources/historic.rst:87 ../../api/resources/nodes.rst:1499
+msgid "*Optional*. :ref:`OPC Interval <relative-time>` required for aggregation."
+msgstr ""
+
+#: ../../api/resources/historic.rst ../../api/resources/nodes.rst:1502
+msgid "**baselineType**"
+msgstr ""
+
+#: ../../api/resources/historic.rst:90 ../../api/resources/historic.rst:244
+#: ../../api/resources/nodes.rst:1502 ../../api/resources/nodes.rst:1642
+msgid "RELATIVE"
+msgstr ""
+
+#: ../../api/resources/historic.rst:90 ../../api/resources/nodes.rst:1502
+#: ../../api/resources/nodes.rst:1642
+msgid ""
+"*Optional - Default is ABSOLUTE*. Absolute will return data point values "
+"unmodified. Relative will subtract the first data point value from all "
+"subsequent data point values: *[ABSOLUTE, RELATIVE]*"
+msgstr ""
+
+#: ../../api/resources/historic.rst:96 ../../api/resources/nodes.rst:1508
+msgid "startTime or endTime can be omitted when ``limit`` is specified."
+msgstr ""
+
+#: ../../api/resources/historic.rst:99 ../../api/resources/historic.rst:251
+#: ../../api/resources/historic.rst:336
+msgid ""
+"Include individual parameter arguments in parentheses with key/value "
+"separated by colons and multiple arguments semicolon delimited::"
+msgstr ""
+
+#: ../../api/resources/historic.rst:103 ../../api/resources/historic.rst:255
+msgid "Example with optional parameter arguments::"
+msgstr ""
+
+#: ../../api/resources/historic.rst:173
+msgid "Retrieve historic chart with multiple nodes"
+msgstr ""
+
+#: ../../api/resources/historic.rst:174
+msgid ""
+"Retrieve historic chart image with multiple nodes in a single request "
+"using **node id's**. You can use the automatically assigned *_id's* or "
+"your own *customId's* prepended with '@'. Chart images can be returned in"
+" PNG, JPG, SVG and PDF format."
+msgstr ""
+
+#: ../../api/resources/historic.rst:177
+msgid ""
+"The node's pre-configured (or default) chart settings will be used but "
+"you can optionally specify any of the arguments below."
+msgstr ""
+
+#: ../../api/resources/historic.rst:179
+msgid ""
+"Alternatively use the :ref:`Nodes resource<api-resources-nodes>` historic"
+" chart endpoint for generating an image from a :ref:`chart node<node-"
+"configuration-chart>`."
+msgstr ""
+
+#: ../../api/resources/historic.rst:182
+msgid "Only available for Parameter nodes."
+msgstr ""
+
+#: ../../api/resources/historic.rst:194 ../../api/resources/nodes.rst:1596
+msgid "PNG"
+msgstr ""
+
+#: ../../api/resources/historic.rst:194 ../../api/resources/nodes.rst:1596
+msgid ""
+"*Optional - Default is PNG*. Image format to return: *[PNG, JPG, SVG, "
+"PDF]*"
+msgstr ""
+
+#: ../../api/resources/historic.rst:197 ../../api/resources/nodes.rst:1599
+msgid "**width**"
+msgstr ""
+
+#: ../../api/resources/historic.rst:197 ../../api/resources/nodes.rst:1599
+msgid "1200"
+msgstr ""
+
+#: ../../api/resources/historic.rst:197 ../../api/resources/nodes.rst:1599
+msgid "*Optional - Default is 1200*. Width of image (png, jpg) in pixels"
+msgstr ""
+
+#: ../../api/resources/historic.rst:200 ../../api/resources/nodes.rst:1602
+msgid "**height**"
+msgstr ""
+
+#: ../../api/resources/historic.rst:200 ../../api/resources/nodes.rst:1602
+msgid "800"
+msgstr ""
+
+#: ../../api/resources/historic.rst:200 ../../api/resources/nodes.rst:1602
+msgid "*Optional - Default is 800*. Height of image (png, jpg) in pixels"
+msgstr ""
+
+#: ../../api/resources/historic.rst:203 ../../api/resources/nodes.rst:1605
+msgid "**title**"
+msgstr ""
+
+#: ../../api/resources/historic.rst:203 ../../api/resources/nodes.rst:1605
+msgid "My Chart"
+msgstr ""
+
+#: ../../api/resources/historic.rst:203 ../../api/resources/nodes.rst:1605
+msgid "*Optional*. Title to display on chart"
+msgstr ""
+
+#: ../../api/resources/historic.rst:206 ../../api/resources/nodes.rst:1608
+msgid "**subtitle**"
+msgstr ""
+
+#: ../../api/resources/historic.rst:206 ../../api/resources/nodes.rst:1608
+msgid "Generated by eagle.io"
+msgstr ""
+
+#: ../../api/resources/historic.rst:206 ../../api/resources/nodes.rst:1608
+msgid "*Optional*. Subtitle to display on chart"
+msgstr ""
+
+#: ../../api/resources/historic.rst:209 ../../api/resources/nodes.rst:1611
+msgid "**watermark**"
+msgstr ""
+
+#: ../../api/resources/historic.rst:209 ../../api/resources/nodes.rst:1611
+msgid "*Optional - Default is TRUE*. Flag to display watermark on chart"
+msgstr ""
+
+#: ../../api/resources/historic.rst:218 ../../api/resources/nodes.rst:1620
+msgid ""
+"*Optional - Default is Etc/UTC*. :ref:`Timezone <timezone>` applied to "
+"timestamps. Aggregate *interval* and *baseTime* calculations will also "
+"use this zone"
+msgstr ""
+
+#: ../../api/resources/historic.rst:223 ../../api/resources/nodes.rst:1625
+msgid ""
+"*Optional - Default is FALSE*. Flag to indicate if timestamps should be "
+"adjusted for DST in selected *timezone*"
+msgstr ""
+
+#: ../../api/resources/historic.rst:227
+msgid ""
+"*Required*. Comma delimited list of parameter id's to include in "
+"extraction. Individual parameter options are specified in parentheses"
+msgstr ""
+
+#: ../../api/resources/historic.rst:234
+msgid ""
+"*Optional*. Historic :ref:`aggregate <historic-aggregates>` to apply to "
+"extracted data"
+msgstr ""
+
+#: ../../api/resources/historic.rst:238 ../../api/resources/nodes.rst:1636
+msgid "*Optional*. :ref:`OPC Base Time <relative-time>` required for aggregation"
+msgstr ""
+
+#: ../../api/resources/historic.rst:241 ../../api/resources/nodes.rst:1639
+msgid "*Optional*. :ref:`OPC Interval <relative-time>` required for aggregation"
+msgstr ""
+
+#: ../../api/resources/historic.rst:244
+msgid ""
+"*Optional*. Absolute will return data point values unmodified. Relative "
+"will subtract the first data point value from all subsequent data point "
+"values: *[ABSOLUTE, RELATIVE]*"
+msgstr ""
+
+#: ../../api/resources/historic.rst:296
+msgid "Update historic data for multiple nodes"
+msgstr ""
+
+#: ../../api/resources/historic.rst:297
+msgid ""
+"Update historic data for one or more nodes by **id's**. You can use the "
+"automatically assigned *_id's* or your own *customId's* prepended with "
+"'@'."
+msgstr ""
+
+#: ../../api/resources/historic.rst:300 ../../api/resources/nodes.rst:1692
+#: ../../api/resources/nodes.rst:1882 ../../api/resources/nodes.rst:1929
+msgid ""
+"Only available for Location and Parameter nodes. Required API key "
+"permission: *Modify*"
+msgstr ""
+
+#: ../../api/resources/historic.rst:313 ../../api/resources/nodes.rst:1705
+#: ../../api/resources/nodes.rst:1799
+msgid ""
+"*Optional - Default is JSON*. Data format being inserted: *[JSON]*. (CSV "
+"support coming soon)"
+msgstr ""
+
+#: ../../api/resources/historic.rst:316 ../../api/resources/nodes.rst:1708
+#: ../../api/resources/nodes.rst:1802
+msgid "**writeMode**"
+msgstr ""
+
+#: ../../api/resources/historic.rst:316 ../../api/resources/nodes.rst:1708
+#: ../../api/resources/nodes.rst:1802
+msgid "MERGE_OVERWRITE_EXISTING"
+msgstr ""
+
+#: ../../api/resources/historic.rst:316 ../../api/resources/nodes.rst:1708
+#: ../../api/resources/nodes.rst:1802
+msgid ""
+"*Optional - Default is MERGE_OVERWRITE_EXISTING*. See all available "
+":ref:`write mode <historic-data-import-writemode>` options."
+msgstr ""
+
+#: ../../api/resources/historic.rst:320 ../../api/resources/nodes.rst:1712
+#: ../../api/resources/nodes.rst:1806
+msgid "**notifyOn**"
+msgstr ""
+
+#: ../../api/resources/historic.rst:320 ../../api/resources/nodes.rst:1712
+#: ../../api/resources/nodes.rst:1806
+msgid "LATEST_ONLY"
+msgstr ""
+
+#: ../../api/resources/historic.rst:320 ../../api/resources/nodes.rst:1712
+#: ../../api/resources/nodes.rst:1806
+msgid ""
+"*Optional - Default is LATEST_ONLY*. When to generate events, raise "
+"alarms and send notifications: *[ALL_NEWER, LATEST_ONLY, NONE]*. "
+"ALL_NEWER: All events newer than parameter current value. LATEST_ONLY: "
+"Latest event newer than parameter current value."
+msgstr ""
+
+#: ../../api/resources/historic.rst:326
+msgid ""
+"*Required*. [#f2]_ Comma delimited list of parameter _id's to include in "
+"extraction. Individual parameter options are specified in parentheses."
+msgstr ""
+
+#: ../../api/resources/historic.rst ../../api/resources/nodes.rst:1718
+msgid "**columnIndex**"
+msgstr ""
+
+#: ../../api/resources/historic.rst:330 ../../api/resources/nodes.rst:1718
+msgid "0"
+msgstr ""
+
+#: ../../api/resources/historic.rst:330
+msgid ""
+"*Required*. [#f2]_ Index of column in data to be associated with this "
+"parameter."
+msgstr ""
+
+#: ../../api/resources/historic.rst:334
+msgid "params argument can be omitted if JTS Document contains headers"
+msgstr ""
+
+#: ../../api/resources/historic.rst:340
+msgid "Example with required parameter arguments::"
+msgstr ""
+
+#: ../../api/resources/index.rst:4
+msgid "API Resources"
+msgstr ""
+
+#: ../../api/resources/index.rst:6
+msgid ""
+"API Resources are the URL endpoints for interacting with the system. "
+"Interactions may include creating, reading, updating or deleting an "
+"asset, extracting or inserting historic data, or performing operations "
+"such as triggering data acquisition, control operations or device "
+"configuration."
+msgstr ""
+
+#: ../../api/resources/index.rst:9
+msgid ""
+"Refer to the :ref:`Quick Start <api-overview>` guide for instructions on "
+"using the API."
+msgstr ""
+
+#: ../../api/resources/nodes.rst:4
+msgid "Nodes"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:6
+msgid ""
+"Nodes are the container objects that store all data and configuration for"
+" your projects. There are various :ref:`types of nodes <nodes-and-"
+"configuration>` including: Workspaces, Groups, Locations, Dashboards, "
+"Attachments, Sources and Parameters."
+msgstr ""
+
+#: ../../api/resources/nodes.rst:18
+msgid "Node Attributes"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:19
+msgid ""
+"Consumers of Nodes should tolerate the addition of new attributes and "
+"variance in ordering of attributes with ease. Not all attributes appear "
+"in all contexts. It is generally safe to consider a nulled attribute, an "
+"empty set, and the absence of an attribute as the same thing."
+msgstr ""
+
+#: ../../api/resources/nodes.rst:25
+msgid "Standard attributes"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:25 ../../api/resources/nodes.rst:43
+#: ../../api/resources/nodes.rst:60 ../../api/resources/nodes.rst:99
+msgid "Update"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:27
+msgid "Identifies resource type: *io.eagle.models.node.*\\*"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:28
+msgid "Unique identifier for this node"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:29
+msgid "**alarms**"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:29
+msgid "Alarm configuration and status"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:30
+msgid ":ref:`ISO8601<time-format-iso8601>` timestamp the node was created"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:31
+msgid "**customId**"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:31
+msgid "Optional user-assigned identifier for this node. Unique to owner (account)"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:32
+msgid "**isActive**"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:32
+msgid "Flag to indicate if node is active"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:33 ../../api/resources/nodes.rst:601
+msgid "**name**"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:33
+msgid "Name of node"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:34
+msgid "**ownerId**"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:34
+msgid "Unique owner _id"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:35
+msgid "**parentId**"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:35
+msgid "Parent node _id (not included in Workspace)"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:36
+msgid "Associated Workspace _id (not set on Workspace node)"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:43
+msgid "Attachment attributes"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:45
+msgid "**description**"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:45
+msgid "Description of attachment as set by user."
+msgstr ""
+
+#: ../../api/resources/nodes.rst:46
+msgid "**fileSize**"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:46
+msgid "Int64"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:46
+msgid "Size of attachment in bytes"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:47
+msgid "**fileUrl** [#f1]_"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:47
+msgid ""
+"Attachment URL. Requires *ATTACHMENT_READ* permission. Optionally specify"
+" an ``expiry`` period for the URL."
+msgstr ""
+
+#: ../../api/resources/nodes.rst:49
+msgid "**filePreviewUrl** [#f1]_"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:49
+msgid ""
+"Preview URL. Only included if the attachment is a valid media file. "
+"Requires *ATTACHMENT_READ* permission. Optionally specify an ``expiry`` "
+"period for the URL. Note: image dimensions may change without notice."
+msgstr ""
+
+#: ../../api/resources/nodes.rst:53
+msgid "**mimeType**"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:53
+msgid "Mime-type of the attachment"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:60
+msgid "Parameter & Location attributes"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:62
+msgid "**controlValue**"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:62 ../../api/resources/nodes.rst:70
+#: ../../api/resources/nodes.rst:83 ../../api/resources/nodes.rst:87
+#: ../../api/resources/nodes.rst:602
+msgid "Variable"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:62
+msgid "Pending control value. Type inherited from _class."
+msgstr ""
+
+#: ../../api/resources/nodes.rst:63
+msgid "**controlValueMaximum**"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:63 ../../api/resources/nodes.rst:64
+#: ../../api/resources/nodes.rst:76 ../../api/resources/nodes.rst:78
+#: ../../api/resources/nodes.rst:88
+msgid "Double"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:63
+msgid "Maximum control value when controlValueRestriction set to RANGE"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:64
+msgid "**controlValueMinimum**"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:64
+msgid "Minimum control value when controlValueRestriction set to RANGE"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:65
+msgid "**controlValueRestriction**"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:65
+msgid "Control value is restricted to: *[NONE, RANGE, STATES]*"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:67
+msgid "**currentQuality**"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:67 ../../api/resources/nodes.rst:80
+#: ../../api/resources/nodes.rst:84 ../../api/resources/nodes.rst:108
+#: ../../api/resources/nodes.rst:114 ../../api/resources/nodes.rst:115
+#: ../../api/resources/nodes.rst:121 ../../api/resources/nodes.rst:122
+#: ../../api/resources/nodes.rst:605 ../../api/resources/nodes.rst:624
+msgid "Int32"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:67
+msgid "Quality code associated with current value"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:68
+msgid "**currentStateId**"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:68
+msgid "State _id associated with current value"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:69
+msgid "**currentTime**"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:69
+msgid ":ref:`ISO8601<time-format-iso8601>` timestamp of the current value"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:70
+msgid "**currentValue**"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:70
+msgid ""
+"Latest value with multiplier and offset applied. Type inherited from "
+"_class"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:72
+msgid "**displayType**"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:72
+msgid "Default display type of parameter: *[VALUE, STATE]*"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:74
+msgid "Formatting to apply to displayed value"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:75
+msgid "**metadata**"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:75 ../../api/resources/nodes.rst:89
+#: ../../api/resources/nodes.rst:527 ../../api/resources/owners.rst:29
+msgid "Array"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:75
+msgid "Array of metadata fields and values for a location"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:76
+msgid "**multiplier**"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:76
+msgid ""
+"Value to multiply rawValue and historic data on extraction. Applies to "
+"number parameters only"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:78
+msgid "**offset**"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:78
+msgid ""
+"Value to add to rawValue and historic data on extraction. Applies to "
+"number parameters only"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:80
+msgid "**oldestQuality**"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:80 ../../api/resources/nodes.rst:84
+msgid "Quality code associated with oldest value"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:81
+msgid "**oldestStateId**"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:81
+msgid "State _id associated with oldest value"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:82
+msgid "**oldestTime**"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:82
+msgid ":ref:`ISO8601<time-format-iso8601>` timestamp of the oldest value"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:83
+msgid "**oldestValue**"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:83
+msgid "Oldest value. Type inherited from _class"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:84
+msgid "**previousQuality**"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:85
+msgid "**previousStateId**"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:85
+msgid "State _id associated with previous value"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:86
+msgid "**previousTime**"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:86
+msgid ":ref:`ISO8601<time-format-iso8601>` timestamp of the previous value"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:87
+msgid "**previousValue**"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:87
+msgid "Previous value. Type inherited from _class"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:88
+msgid "**rawValue**"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:88
+msgid "Latest raw value. Applies to number parameters only"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:89
+msgid "**states**"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:89
+msgid "Array of state configuration objects"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:90
+msgid "**statesType**"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:90
+msgid "States evaluation mode: *[RANGE, DISCRETE]*"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:92
+msgid "**units**"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:92
+msgid "Units to display with value"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:99
+msgid "Source attributes"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:101
+msgid "**currentAttachmentId**"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:101
+msgid "Current attachment _id associated with Attachment Source"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:102
+msgid "**currentStatus**"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:102
+msgid ""
+"Current status: *[DISABLED, FAILED, IDLE, SCHEDULED, QUEUED, CONNECTING, "
+"DOWNLOADING, PROCESSING, RETRYING, CONFIGURING, CONTROLLING, REMOTE]*"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:105
+msgid "**clockSync**"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:105
+msgid "Flag to indicate if data logger clock is being syncronized with server"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:106
+msgid "**firmwareVersion**"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:106
+msgid "Firmware version in-use by data logger"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:107 ../../api/resources/nodes.rst:522
+msgid "**isEnabled**"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:107
+msgid "Flag to enable or disable the Source"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:108
+msgid "**lastAcquireRecordCount**"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:108
+msgid "Number of records acquired on last acquistion"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:109
+msgid "**lastCommsAttempt**"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:109
+msgid ""
+":ref:`ISO8601<time-format-iso8601>` timestamp of the last communications "
+"attempt"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:111
+msgid "**lastCommsSuccess**"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:111
+msgid ""
+":ref:`ISO8601<time-format-iso8601>` timestamp of the last successful "
+"communication with Source"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:113
+msgid "**model**"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:113
+msgid "Model of data logger in-use"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:114
+msgid "**pakBusAddress**"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:114
+msgid "PakBus address of Campbell data logger"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:115
+msgid "**pakBusGatewayAddress**"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:115
+msgid "PakBus gateway address of Campbell data logger"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:116
+msgid "**progName**"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:116
+msgid "Name of program currently loaded in Campbell data logger"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:117
+msgid "**scheduleType**"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:117
+msgid "Type of Schedule for automatic collection: *[SERVER, REMOTE, NONE]*"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:119
+msgid ":ref:`Timezone <timezone>` of Source data."
+msgstr ""
+
+#: ../../api/resources/nodes.rst:120
+msgid "Flag to indicate if acquired data is adjusted for DST in selected timezone"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:121
+msgid "**totalCommsAttempt**"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:121
+msgid "Total count of communications attempts"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:122
+msgid "**totalCommsSuccess**"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:122
+msgid "Total count of successful communications"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:125
+msgid "Certain attributes can not be used in filter criteria."
+msgstr ""
+
+#: ../../api/resources/nodes.rst:132
+msgid "Retrieve all nodes"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:133
+msgid ""
+"Retrieve a list of all nodes available to the authenticated API key. "
+"Optionally *filter* by attribute values."
+msgstr ""
+
+#: ../../api/resources/nodes.rst:145 ../../api/resources/nodes.rst:764
+#: ../../api/resources/owners.rst:52
+msgid "_id,slug"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:148 ../../api/resources/nodes.rst:767
+msgid "**type**"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:148 ../../api/resources/nodes.rst:767
+msgid "TREE"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:148 ../../api/resources/nodes.rst:767
+msgid ""
+"*Optional - Default is LIST* [#f2]_ | **LIST** returns a flat list of "
+"nodes | **TREE** returns hierarchical list of nodes"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:152
+msgid "isActive($eq:true)"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:168 ../../api/resources/nodes.rst:346
+#: ../../api/resources/nodes.rst:771
+msgid "**expiry**"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:168 ../../api/resources/nodes.rst:346
+#: ../../api/resources/nodes.rst:771
+msgid "60"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:168 ../../api/resources/nodes.rst:346
+#: ../../api/resources/nodes.rst:771
+msgid ""
+"*Optional*. Expiry period in minutes for any included resource links. ie."
+" *fileUrl* for Attachments. Default is 0 (no expiry). Expired resource "
+"links will return 403 Forbidden."
+msgstr ""
+
+#: ../../api/resources/nodes.rst:174
+msgid ""
+"When TREE ``type`` is specified the filter, limit, skip and sort "
+"arguments are not allowed."
+msgstr ""
+
+#: ../../api/resources/nodes.rst:256
+msgid ""
+"Example response when ``type`` argument is TREE. Descendants are wrapped "
+"in a ``children`` array::"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:331
+msgid "Retrieve a node"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:332
+msgid ""
+"Retrieve a node by its **id**. You can use the automatically assigned "
+"*_id* or your own *customId* prepended with '@'."
+msgstr ""
+
+#: ../../api/resources/nodes.rst:395
+msgid "Create a node"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:396
+msgid ""
+"Create a node (currently limited to creation of *Workspace* and *Group*)."
+" You must specifiy both the *_class* and a unique *name*. Creating a "
+"Group also requires a valid *parentId*."
+msgstr ""
+
+#: ../../api/resources/nodes.rst:400 ../../api/resources/nodes.rst:463
+#: ../../api/resources/nodes.rst:1284
+msgid "Required API key permission: *Modify*"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:409
+msgid "Example creating a Workspace ::"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:417
+msgid "Example creating a Group ::"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:453
+msgid "Update a node"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:454
+msgid ""
+"Update a node by its **id**. You can use the automatically assigned *_id*"
+" or your own *customId* prepended with '@'. Updates are limited to the "
+"attributes listed with the *Update* flag. Multiple attributes can be "
+"updated in a single request."
+msgstr ""
+
+#: ../../api/resources/nodes.rst:458
+msgid ""
+"The updated node will be returned in the response if the request is "
+"successful. You can optionally limit the returned attributes by "
+"specifying the **attr** argument."
+msgstr ""
+
+#: ../../api/resources/nodes.rst:460
+msgid ""
+"Refer to the examples below when updating complex attributes such as "
+"alarms and states."
+msgstr ""
+
+#: ../../api/resources/nodes.rst:474
+msgid ""
+"*Optional*. Comma delimited list of attributes to include in successful "
+"response"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:513
+msgid "Updating alarm configuration"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:514
+msgid ""
+"Alarm configuration can be included in the update request for Location, "
+"Source and Parameter nodes. You must specify each alarm type as a nested "
+"attribute containing the *config* to be updated. Only changed attributes "
+"need to be specified."
+msgstr ""
+
+#: ../../api/resources/nodes.rst:520
+msgid "Alarm config attributes"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:522
+msgid "Enable or disable the alarm. Overload alarm can not be disabled."
+msgstr ""
+
+#: ../../api/resources/nodes.rst:523 ../../api/resources/nodes.rst:611
+msgid "**notify**"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:523
+msgid ""
+"When notifications should be triggered: *[NEVER, ALWAYS, "
+"AWAY_FROM_NORMAL, TOWARDS_NORMAL]*."
+msgstr ""
+
+#: ../../api/resources/nodes.rst:525 ../../api/resources/nodes.rst:616
+msgid "**categoryId**"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:525
+msgid ""
+"Id of :ref:`owner category<api-resources-owners>` to assign to this "
+"alarm. Required when *notify* option is not *NEVER*"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:527
+msgid "**qualityTypes**"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:527
+msgid ""
+"Only valid for *qualityAlarm*. List of quality types that will trigger "
+"this alarm: *[GOOD, BAD, UNCERTAIN]*."
+msgstr ""
+
+#: ../../api/resources/nodes.rst:531
+msgid "Example::"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:553
+msgid "The alarm types available are specific to the type of node being updated:"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:559
+msgid "Alarm types"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:559
+msgid "Supported nodes"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:561
+msgid "**communicationsAlarm**"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:561 ../../api/resources/nodes.rst:562
+#: ../../api/resources/nodes.rst:564 ../../api/resources/nodes.rst:565
+msgid "Sources"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:562
+msgid "**configurationAlarm**"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:563
+msgid "**controlAlarm**"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:563
+msgid "Control parameters"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:564
+msgid "**outdatedAlarm**"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:565
+msgid "**overloadAlarm**"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:566
+msgid "**processAlarm**"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:566
+msgid "Processor Sources, Process Parameters"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:567
+msgid "**qualityAlarm**"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:567 ../../api/resources/nodes.rst:568
+msgid "Locations, Parameters"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:568
+msgid "**stateAlarm** [1]_"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:571
+msgid ""
+"stateAlarm has no direct configuration. Modify *states* to change state "
+"alarm behaviour."
+msgstr ""
+
+#: ../../api/resources/nodes.rst:576
+msgid "Updating states configuration"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:577
+msgid ""
+"States configuration can be included in the update request for Number and"
+" Text Parameter nodes. Number parameters can use either *DISCRETE* or "
+"*RANGE* states. Text parameters are limited to *DISCRETE* states only."
+msgstr ""
+
+#: ../../api/resources/nodes.rst:580
+msgid ""
+"States can be reset to parameter defaults by updating the *states* "
+"attribute with *null*."
+msgstr ""
+
+#: ../../api/resources/nodes.rst:582
+msgid ""
+"**Update** existing states by providing the *_id* attribute for each "
+"state in the request. Any states without the *_id* attribute will be "
+"ignored. Only changed attributes need to be specified."
+msgstr ""
+
+#: ../../api/resources/nodes.rst:584
+msgid ""
+"If no states in the request contain an *_id* attribute the update will "
+"**Replace** the existing states. **RANGE** states for number parameters "
+"must always be specified in *ascending* order based on *threshold* and "
+"there must be one state with the *name* attribute set to *NORMAL*."
+msgstr ""
+
+#: ../../api/resources/nodes.rst:588
+msgid ""
+"Refer to :ref:`Parameter states<node-configuration-parameter>` for "
+"further information."
+msgstr ""
+
+#: ../../api/resources/nodes.rst:591
+msgid ""
+"State type for number parameters can be changed with the *statesType* "
+"attribute. When changing *statesType* you should specify new *states* "
+"configuration or default states will be applied."
+msgstr ""
+
+#: ../../api/resources/nodes.rst:599
+msgid "State attributes"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:601
+msgid "*Required*. Unique name assigned to the state"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:602
+msgid "**threshold**"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:602
+msgid ""
+"*Required*. Unique threshold value for the state. Number parameters "
+"require a *Double*. Text parameters require a *String*."
+msgstr ""
+
+#: ../../api/resources/nodes.rst:605
+msgid "**occurrences**"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:605
+msgid ""
+"*Optional - Default is 1*. Minimum number of repeat values equal or "
+"beyond threshold required to trigger state: *1-15*."
+msgstr ""
+
+#: ../../api/resources/nodes.rst:608
+msgid "**isAlarm**"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:608
+msgid ""
+"*Optional - Default is FALSE*. Flag to indicate if this state should "
+"raise an alarm. Not valid for *NORMAL* RANGE state."
+msgstr ""
+
+#: ../../api/resources/nodes.rst:611
+msgid ""
+"*Optional - Default is NEVER*. When notifications should be triggered: "
+"*[NEVER, ALWAYS, AWAY_FROM_NORMAL, TOWARDS_NORMAL]*. The *NORMAL* RANGE "
+"state is restricted to: *[NEVER, ALWAYS]*"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:616
+msgid ""
+"Id of :ref:`owner category <api-resources-owners>` to assign to this "
+"state. Required when *notify* option is not *NEVER*"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:618
+msgid "**messageAway**"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:618
+msgid ""
+"*Optional*. Custom message to send when the state becomes active (away "
+"from normal). Maximum of 255 characters. Leave empty for default message."
+msgstr ""
+
+#: ../../api/resources/nodes.rst:621
+msgid "**messageTowards**"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:621
+msgid ""
+"*Optional*. Custom message to send when the state becomes inactive "
+"(towards normal). Maximum of 255 characters. Leave empty for default "
+"message."
+msgstr ""
+
+#: ../../api/resources/nodes.rst:624
+msgid "**qualityCode**"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:624
+msgid ""
+"*Optional - Default is null*. Quality code to apply to acquired data that"
+" matches this state: *0-65535*."
+msgstr ""
+
+#: ../../api/resources/nodes.rst:628
+msgid "Example replacing DISCRETE states"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:653
+msgid "Example updating existing DISCRETE states"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:673
+msgid "Example replacing RANGE states"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:710
+msgid "Delete a node"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:711
+msgid ""
+"Delete a node by its **id** including all child nodes. You can use the "
+"automatically assigned *_id* or your own *customId* prepended with '@'."
+msgstr ""
+
+#: ../../api/resources/nodes.rst:715
+msgid ""
+"This will permanently delete the node including all historic data and "
+"events. Required API key permission: *Modify*"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:748
+msgid "Clone a node or create instance from template"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:749
+msgid ""
+"Clone a node or create an :ref:`instance <node-configuration-template-"
+"instances>` from a :ref:`template <node-configuration-template>` by its "
+"*id*. You can use the automatically assigned *_id* or your own *customId*"
+" prepended with '@'. You must specify a valid *parentId* as the "
+"destination for the clone/create operation. Optionally include *name* and"
+" *metadata* to be assigned to the newly created node."
+msgstr ""
+
+#: ../../api/resources/nodes.rst:753
+msgid ""
+"Not available for TRIAL accounts. Workspace cloning not currently "
+"supported. Required API key permission: *Modify*."
+msgstr ""
+
+#: ../../api/resources/nodes.rst:827
+msgid "Acknowledge node alarms"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:828
+msgid ""
+"Acknowledge active alarms for a node by its **id**. You can use the "
+"automatically assigned *_id* or your own *customId* prepended with '@'. "
+"Optionally provide a *comment* for the acknowledgement."
+msgstr ""
+
+#: ../../api/resources/nodes.rst:832 ../../api/resources/nodes.rst:892
+#: ../../api/resources/nodes.rst:1134
+msgid ""
+"Only available for Location, Source and Parameter nodes. Required API key"
+" permission: *Modify*"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:844 ../../api/resources/nodes.rst:904
+msgid "**alarmTypes**"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:844
+msgid "stateAlarm,qualityAlarm"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:844
+msgid ""
+"*Optional - Default is ALL*. Comma delimited list of specific alarms to "
+"acknowledge: *[communicationsAlarm, configurationAlarm, controlAlarm, "
+"outdatedAlarm, overloadAlarm, processAlarm, qualityAlarm, stateAlarm]*"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:888
+msgid "Clear node alarms"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:889
+msgid ""
+"Clear active and acknowledged alarms for a node by its **id**. You can "
+"use the automatically assigned *_id* or your own *customId* prepended "
+"with '@'."
+msgstr ""
+
+#: ../../api/resources/nodes.rst:904
+msgid "stateAlarm,controlAlarm"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:904
+msgid ""
+"*Optional - Default is ALL*. Comma delimited list of specific alarms to "
+"clear: *[communicationsAlarm, configurationAlarm, controlAlarm, "
+"outdatedAlarm, overloadAlarm, processAlarm, qualityAlarm, stateAlarm]*"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:942
+msgid "Trigger an acquisition"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:943
+msgid ""
+"Trigger an acquisition (*Acquire Now*) for a Source node by its **id**. "
+"You can use the automatically assigned *_id* or your own *customId* "
+"prepended with '@'."
+msgstr ""
+
+#: ../../api/resources/nodes.rst:946
+msgid ""
+"Only available for Source nodes with Transports that allow for manual "
+"collection. Required API key permission: *Modify*"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:979
+msgid "Retrieve user and group notification subscriptions"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:980
+msgid ""
+"Retrieve a list of all users and groups subscribed to receieve "
+"notifications for a node by its **id**. You can use the automatically "
+"assigned *_id* or your own *customId* prepended with '@'."
+msgstr ""
+
+#: ../../api/resources/nodes.rst:1075
+msgid "Subscribe users and groups to notifications"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:1076
+msgid ""
+"Subscribe a list of users and groups to receieve notifications for a node"
+" by its **id**. You can use the automatically assigned *_id* or your own "
+"*customId* prepended with '@'."
+msgstr ""
+
+#: ../../api/resources/nodes.rst:1079
+msgid ""
+"Only available for Location, Source and Parameter nodes. The specified "
+"users (email addresses) must be valid workspace users with "
+"*SUBSCRIBE_NOTIFICATIONS* permission. Required API key permission: "
+"*Modify*"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:1130
+msgid "Unsubscribe users and groups from notifications"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:1131
+msgid ""
+"Unsubscribe a list of users and groups from receieving notifications for "
+"a node by its **id**. You can use the automatically assigned *_id* or "
+"your own *customId* prepended with '@'."
+msgstr ""
+
+#: ../../api/resources/nodes.rst:1185
+msgid "Retrieve Workspace user and group permissions"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:1186
+msgid ""
+"Retrieve a list of all users and groups with access to a workspace (or "
+"node) by its **id**. You can use the automatically assigned *_id* or your"
+" own *customId* prepended with '@'. When a user is included in a group "
+"that has been provided access, the user entry may contain an "
+"*effectivePermissions* attribute which combines individual user and "
+"group(s) permissions (where different)."
+msgstr ""
+
+#: ../../api/resources/nodes.rst:1276
+msgid "Add or Update Workspace user and group permissions"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:1277
+msgid ""
+"Add a list of users and groups to a Workspace by its **id** and set or "
+"update user security roles. You can use the automatically assigned *_id* "
+"or your own *customId* prepended with '@'. You must specify a valid "
+"*role* name that has been preconfigured in :ref:`account settings "
+"<management-security-userroles>`."
+msgstr ""
+
+#: ../../api/resources/nodes.rst:1280
+msgid ""
+"If the user (email address) does not already exist a new user profile "
+"will be created and a *profileActivateUrl* will be returned so the user "
+"profile can be finalized by navigating to the url in a web browser. When "
+"adding a new user (profile does not exist) you can optionally include "
+"attributes: *name*, *phone*, *timezone*, *timezoneAdjustForDst* and "
+"*timeFormat*."
+msgstr ""
+
+#: ../../api/resources/nodes.rst:1381
+msgid "Remove users and groups from a Workspace"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:1382
+msgid ""
+"Remove a list of users and groups from a Workspace by its **id**. You can"
+" use the automatically assigned *_id* or your own *customId* prepended "
+"with '@'."
+msgstr ""
+
+#: ../../api/resources/nodes.rst:1385
+msgid ""
+"Owner and Administrator users can not be removed from an individual "
+"workspace. Required API key permission: *Modify*"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:1437
+msgid "Retrieve node historic data"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:1438
+msgid ""
+"Retrieve historic data from a node by its **id**. You can use the "
+"automatically assigned *_id* or your own *customId* prepended with '@'. "
+"Data can be returned in JSON (:ref:`JTS <historic-jts>`) or CSV format. "
+"Use the :ref:`Historic resource<api-resources-historic>` for extracting "
+"historic data from multiple nodes in a single request."
+msgstr ""
+
+#: ../../api/resources/nodes.rst:1456 ../../api/resources/nodes.rst:1459
+msgid "*Required*. [#f3]_ :ref:`ISO8601<time-format-iso8601>` timestamp"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:1474
+msgid "*Optional*. Maximum number of historic records to be returned."
+msgstr ""
+
+#: ../../api/resources/nodes.rst:1483 ../../api/resources/nodes.rst:1629
+msgid ""
+"*Optional - Default is node displayType*. Rendering of value: *[VALUE, "
+"STATE]*"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:1486
+msgid ""
+"*Optional - Default is node format*. :ref:`Format <node-configuration-"
+"parameter-general>` to apply when renderType is VALUE. '#' must be `URL "
+"Encoded <http://en.wikipedia.org/wiki/Percent-encoding>`_ as '%23'."
+msgstr ""
+
+#: ../../api/resources/nodes.rst:1575
+msgid "Retrieve node historic chart"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:1576
+msgid ""
+"Retrieve historic chart image from a node by its **id**. You can use the "
+"automatically assigned *_id* or your own *customId* prepended with '@'. "
+"Chart images can be returned in PNG, JPG, SVG and PDF format."
+msgstr ""
+
+#: ../../api/resources/nodes.rst:1579
+msgid ""
+"If a :ref:`chart node<node-configuration-chart>` is specified, you can "
+"optionally specify: *format, width, height, title, subtitle, startTime, "
+"endTime, timezone, timezoneAdjustForDst*."
+msgstr ""
+
+#: ../../api/resources/nodes.rst:1581
+msgid ""
+"If a :ref:`parameter node<node-configuration-parameter>` is specified, "
+"the nodes' pre-configured (or default) chart settings will be used but "
+"you can optionally specify any of the arguments below. Use the "
+":ref:`Historic resource<api-resources-historic>` chart endpoint for "
+"generating an adhoc chart using data from multiple parameters in a single"
+" request."
+msgstr ""
+
+#: ../../api/resources/nodes.rst:1585
+msgid "Only available for Parameter and Custom Chart nodes."
+msgstr ""
+
+#: ../../api/resources/nodes.rst:1614 ../../api/resources/nodes.rst:1617
+msgid "*Required*. :ref:`ISO8601<time-format-iso8601>` timestamp"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:1629
+msgid "**renderType** [#f4]_"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:1632
+msgid "**aggregate** [#f4]_"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:1632
+msgid ""
+"*Optional - Default is NONE (raw)*. Historic :ref:`aggregate <historic-"
+"aggregates>` to apply to extracted data"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:1636
+msgid "**baseTime** [#f4]_"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:1639
+msgid "**interval** [#f4]_"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:1642
+msgid "**baselineType** [#f4]_"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:1648
+msgid "Only available when specifying a *parameter* node."
+msgstr ""
+
+#: ../../api/resources/nodes.rst:1687
+msgid "Update Parameter or Location historic data"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:1688
+msgid ""
+"Update historic data for a Parameter or Location node by its **id**. You "
+"can use the automatically assigned *_id* or your own *customId* prepended"
+" with '@'. Data can be inserted in JSON (:ref:`JTS <historic-jts>`) or "
+"CSV format. Use the :ref:`Historic resource <api-resources-historic>` to "
+"update historic data for multiple nodes in a single request."
+msgstr ""
+
+#: ../../api/resources/nodes.rst:1718
+msgid ""
+"*Optional - Default is 0*. Index of column in data to be associated with "
+"this parameter. Will use index specified in JTS Doc header if available "
+"or default to 0."
+msgstr ""
+
+#: ../../api/resources/nodes.rst:1774
+msgid "Update Data Source historic data"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:1775
+msgid ""
+"Update historic data for multiple parameters via a Data Source node "
+"**id**. You can use the automatically assigned *_id* or your own "
+"*customId* prepended with '@'. Data can be inserted in JSON (:ref:`JTS "
+"<historic-jts>`) format. New parameters will be automatically created."
+msgstr ""
+
+#: ../../api/resources/nodes.rst:1778
+msgid ""
+"The JTS Document must contain header columns. Each column must either "
+"specify a **series** or parameter **id**. If **id** is provided it will "
+"be used to match to the associated parameter under the current Data "
+"Source, otherwise the associated parameter will be matched using the "
+"**series** attribute."
+msgstr ""
+
+#: ../../api/resources/nodes.rst:1782
+msgid ""
+"If a column specified in the header can not be matched to an existing "
+"parameter (and **series** was provided), a new parameter will be created "
+"automatically. Optionally specify **name**, **dataType** (NUMBER, TEXT, "
+"TIME. Default is NUMBER) and **units** in the column header which will be"
+" used when creating new parameters."
+msgstr ""
+
+#: ../../api/resources/nodes.rst:1786
+msgid "Only available for Datasource nodes. Required API key permission: *Modify*"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:1877
+msgid "Update node historic data with a single value"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:1878
+msgid ""
+"Update historic data for a node with a single *value* with optional "
+"*quality* and *timestamp*. You can use the automatically assigned *_id* "
+"or your own *customId* prepended with '@'. If *timestamp* is omitted the "
+"time the request was made will be used. Existing values with the same "
+"timestamp will be overwritten."
+msgstr ""
+
+#: ../../api/resources/nodes.rst:1925
+msgid "Delete node historic data"
+msgstr ""
+
+#: ../../api/resources/nodes.rst:1926
+msgid ""
+"Delete all historic data from a node by its **id**. You can use the "
+"automatically assigned *_id* or your own *customId* prepended with '@'."
+msgstr ""
+
+#: ../../api/resources/owners.rst:4
+msgid "Owners"
+msgstr ""
+
+#: ../../api/resources/owners.rst:6
+msgid ""
+"Owners contain details about the eagle.io account associated with a "
+"Workspace or Device."
+msgstr ""
+
+#: ../../api/resources/owners.rst:17
+msgid "Owner Attributes"
+msgstr ""
+
+#: ../../api/resources/owners.rst:18
+msgid ""
+"Consumers of Owners should tolerate the addition of new attributes and "
+"variance in ordering of attributes with ease. Not all attributes appear "
+"in all contexts. It is generally safe to consider a nulled attribute, an "
+"empty set, and the absence of an attribute as the same thing."
+msgstr ""
+
+#: ../../api/resources/owners.rst:26
+msgid "Identifies resource type: *io.eagle.models.owner.Owner*"
+msgstr ""
+
+#: ../../api/resources/owners.rst:27
+msgid "Unique identifier for this owner"
+msgstr ""
+
+#: ../../api/resources/owners.rst:28
+msgid "**accountName**"
+msgstr ""
+
+#: ../../api/resources/owners.rst:28
+msgid "Name of the account"
+msgstr ""
+
+#: ../../api/resources/owners.rst:29
+msgid "**categories**"
+msgstr ""
+
+#: ../../api/resources/owners.rst:29
+msgid "Array of notification categories configured for this owner"
+msgstr ""
+
+#: ../../api/resources/owners.rst:30
+msgid ":ref:`ISO8601<time-format-iso8601>` timestamp the account was created."
+msgstr ""
+
+#: ../../api/resources/owners.rst:31
+msgid "**slug**"
+msgstr ""
+
+#: ../../api/resources/owners.rst:31
+msgid "Used as part of Node full name path"
+msgstr ""
+
+#: ../../api/resources/owners.rst:40
+msgid "Retrieve owner"
+msgstr ""
+
+#: ../../api/resources/owners.rst:41
+msgid "Retrieve the owner associated with the API key."
+msgstr ""
+
