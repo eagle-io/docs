@@ -1,0 +1,78 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017 Argos.io Pty Ltd
+# This file is distributed under the same license as the eagle.io package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: eagle.io 1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-12-10 14:30+1000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../glossary/index.rst:2
+msgid "Glossary"
+msgstr ""
+
+#: ../../glossary/index.rst:6
+msgid "data logger"
+msgstr ""
+
+#: ../../glossary/index.rst:8
+msgid ""
+"A data logger is an electronic device that records data over time or in "
+"relation to location either with a built in instrument or sensor or via "
+"external instruments and sensors."
+msgstr ""
+
+#: ../../glossary/index.rst:9
+msgid "delimiter"
+msgstr ""
+
+#: ../../glossary/index.rst:11
+msgid ""
+"A delimiter is a sequence of one or more characters used to specify the "
+"boundary between separate, independent regions in plain text or other "
+"data streams. An example of a delimiter is the comma character, which "
+"acts as a field delimiter in a sequence of comma-separated values."
+msgstr ""
+
+#: ../../glossary/index.rst:15
+msgid "time series"
+msgstr ""
+
+#: ../../glossary/index.rst:17
+msgid ""
+"A time series is a sequence of data points, measured typically at "
+"successive points in time spaced at uniform time intervals or at "
+"irregular intervals (event based)."
+msgstr ""
+
+#: ../../glossary/index.rst:18
+msgid "timestamp"
+msgstr ""
+
+#: ../../glossary/index.rst:20
+msgid ""
+"A timestamp is a sequence of characters or encoded information "
+"identifying when a certain event occurred, usually giving date and time "
+"of day."
+msgstr ""
+
+#: ../../glossary/index.rst:12
+msgid "UTC"
+msgstr ""
+
+#: ../../glossary/index.rst:14
+msgid ""
+"Coordinated Universal Time is the primary time standard by which the "
+"world regulates clocks and time. UTC is synonymous with GMT."
+msgstr ""
+

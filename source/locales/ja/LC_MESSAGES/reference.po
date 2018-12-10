@@ -1,0 +1,1582 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017 Argos.io Pty Ltd
+# This file is distributed under the same license as the eagle.io package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: eagle.io 1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-12-10 14:30+1000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../reference/historic/aggregates.rst:4
+msgid "Aggregates"
+msgstr ""
+
+#: ../../reference/historic/aggregates.rst:6
+msgid ""
+"Historic Data Aggregates provide a method to resample raw data over a "
+"specified period into Intervals and then perform a calculation on the "
+"data in each interval."
+msgstr ""
+
+#: ../../reference/historic/aggregates.rst:10
+msgid "Advantages of aggregation:"
+msgstr ""
+
+#: ../../reference/historic/aggregates.rst:9
+msgid ""
+"Reduces the size of the dataset. Charts and tabular data can be loaded "
+"faster"
+msgstr ""
+
+#: ../../reference/historic/aggregates.rst:10
+msgid ""
+"Easy generation of advanced statistical reports and charts. eg. Daily "
+"totals"
+msgstr ""
+
+#: ../../reference/historic/aggregates.rst:12
+msgid ""
+"The following aggregates are available depending on the :ref:`Display "
+"type <node-configuration-parameter-general>` setting of the Parameter:"
+msgstr ""
+
+#: ../../reference/historic/aggregates.rst:15
+msgid "Aggregate"
+msgstr ""
+
+#: ../../reference/historic/aggregates.rst:15
+#: ../../reference/historic/jts.rst:128
+msgid "VALUE"
+msgstr ""
+
+#: ../../reference/historic/aggregates.rst:15
+msgid "STATE"
+msgstr ""
+
+#: ../../reference/historic/aggregates.rst:17
+msgid "NONE (raw)"
+msgstr ""
+
+#: ../../reference/historic/aggregates.rst:17
+#: ../../reference/historic/aggregates.rst:19
+#: ../../reference/historic/aggregates.rst:21
+#: ../../reference/historic/aggregates.rst:23
+#: ../../reference/historic/aggregates.rst:25
+#: ../../reference/historic/aggregates.rst:27
+#: ../../reference/historic/aggregates.rst:29
+#: ../../reference/historic/aggregates.rst:31
+#: ../../reference/historic/aggregates.rst:33
+#: ../../reference/historic/aggregates.rst:35
+#: ../../reference/historic/aggregates.rst:37
+#: ../../reference/historic/aggregates.rst:39
+#: ../../reference/historic/aggregates.rst:41
+msgid "x"
+msgstr ""
+
+#: ../../reference/historic/aggregates.rst:19
+#: ../../reference/historic/aggregates.rst:61
+msgid "INTERPOLATED"
+msgstr ""
+
+#: ../../reference/historic/aggregates.rst:21
+#: ../../reference/historic/aggregates.rst:71
+msgid "AVERAGE"
+msgstr ""
+
+#: ../../reference/historic/aggregates.rst:23
+#: ../../reference/historic/aggregates.rst:79
+msgid "MEDIAN"
+msgstr ""
+
+#: ../../reference/historic/aggregates.rst:25
+#: ../../reference/historic/aggregates.rst:87
+msgid "TOTAL"
+msgstr ""
+
+#: ../../reference/historic/aggregates.rst:27
+#: ../../reference/historic/aggregates.rst:95
+msgid "MINIMUM"
+msgstr ""
+
+#: ../../reference/historic/aggregates.rst:29
+#: ../../reference/historic/aggregates.rst:103
+msgid "MAXIMUM"
+msgstr ""
+
+#: ../../reference/historic/aggregates.rst:31
+#: ../../reference/historic/aggregates.rst:111
+msgid "RANGE"
+msgstr ""
+
+#: ../../reference/historic/aggregates.rst:33
+#: ../../reference/historic/aggregates.rst:119
+msgid "DELTA"
+msgstr ""
+
+#: ../../reference/historic/aggregates.rst:35
+#: ../../reference/historic/aggregates.rst:127
+msgid "CHANGE"
+msgstr ""
+
+#: ../../reference/historic/aggregates.rst:37
+#: ../../reference/historic/aggregates.rst:135
+msgid "START"
+msgstr ""
+
+#: ../../reference/historic/aggregates.rst:39
+#: ../../reference/historic/aggregates.rst:143
+msgid "END"
+msgstr ""
+
+#: ../../reference/historic/aggregates.rst:41
+#: ../../reference/historic/aggregates.rst:151
+msgid "COUNT"
+msgstr ""
+
+#: ../../reference/historic/aggregates.rst:46
+msgid "Text and Time Parameters only support *State* aggregates."
+msgstr ""
+
+#: ../../reference/historic/aggregates.rst:53
+msgid "RAW"
+msgstr ""
+
+#: ../../reference/historic/aggregates.rst:54
+msgid ""
+"No Aggregation is applied. Raw data (as collected by the Source) is "
+"returned."
+msgstr ""
+
+#: ../../reference/historic/aggregates.rst:63
+msgid ""
+"The Interpolated aggregate either finds or calculates a value at each "
+"interval boundary. For each interval boundary timestamp, if there is "
+"already good raw data at that timestamp, then the raw data is used. "
+"Otherwise, the two closest bounding values must be found, one each in the"
+" intervals before and after the boundary. The value at the boundary is "
+"then interpolated between these two bounding values. In either case, the "
+"raw values involved must be good values to be used. If no good value can "
+"be found in the previous or next interval, then the aggregate will have a"
+" quality of *No Data*. If any non-good values are skipped in order to "
+"find the closest good bounding values, the aggregate quality will be "
+"*Data Subnormal*."
+msgstr ""
+
+#: ../../reference/historic/aggregates.rst:72
+msgid ""
+"The average aggregate adds up the values of all good raw data for each "
+"interval, and divides the sum by the number of good values producing a "
+"mean average. If any non-good values are ignored in the computation, the "
+"aggregate quality will be *Data Subnormal*."
+msgstr ""
+
+#: ../../reference/historic/aggregates.rst:80
+msgid ""
+"The median aggregate sorts the good values for each interval and selects "
+"the middle value as the median. If any non-good values are ignored in the"
+" computation, the aggregate quality will be *Data Subnormal*."
+msgstr ""
+
+#: ../../reference/historic/aggregates.rst:88
+msgid ""
+"The total aggregate adds up all the values of all good raw values for "
+"each interval. If any non-good values are ignored in the computation, the"
+" aggregate quality will be *Data Subnormal*."
+msgstr ""
+
+#: ../../reference/historic/aggregates.rst:96
+msgid ""
+"The minimum aggregate retrieves the minimum good raw value within the "
+"interval."
+msgstr ""
+
+#: ../../reference/historic/aggregates.rst:104
+msgid ""
+"The maximum aggregate retrieves the maximum good raw value within the "
+"interval."
+msgstr ""
+
+#: ../../reference/historic/aggregates.rst:112
+msgid ""
+"The range aggregate finds the difference between the raw maximum and raw "
+"minimum values in the interval. If only one value exists in the interval,"
+" the range is zero. Note that the range is always zero or positive."
+msgstr ""
+
+#: ../../reference/historic/aggregates.rst:120
+msgid ""
+"The delta aggregate retrieves the difference between the earliest and "
+"latest good raw values in an interval. If the last value is less than the"
+" first value, the result will be negative. If the last value is the same "
+"as the first value, or if the last value is also the first value at the "
+"same timestamp, the result will be zero. If the last value is greater "
+"than the first value, the result will be positive. If any non-good values"
+" exist earlier or later than the earliest and latest good values, "
+"respectively, the aggregate quality is *Data Subnormal*."
+msgstr ""
+
+#: ../../reference/historic/aggregates.rst:128
+msgid ""
+"The change aggregate retrieves raw values which have been filtered to "
+"remove any duplicate sequential values."
+msgstr ""
+
+#: ../../reference/historic/aggregates.rst:136
+msgid ""
+"The start aggregate retrieves the first raw value within the interval. If"
+" the value is non-good, than the quality of the aggregate will be *Data "
+"Subnormal*."
+msgstr ""
+
+#: ../../reference/historic/aggregates.rst:144
+msgid ""
+"The end aggregate retrieves the last raw value within the interval. If "
+"the value is non-good, than the quality of the aggregate will be *Data "
+"Subnormal*."
+msgstr ""
+
+#: ../../reference/historic/aggregates.rst:152
+msgid ""
+"This aggregate retrieves a count of all the raw values within an "
+"interval. If one or more raw values are non-good, they are not included "
+"in the count and the aggregate quality will be *Data Subnormal*."
+msgstr ""
+
+#: ../../reference/historic/aggregates.rst:158
+msgid "Aggregates use the OPC-UA Historical Access v1.0 Specification"
+msgstr ""
+
+#: ../../reference/historic/index.rst:2
+msgid "Historic Data"
+msgstr ""
+
+#: ../../reference/historic/index.rst:4
+msgid ""
+"When working with :term:`time series` or historic data there are several "
+"important topics to understand:"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:4
+msgid "JSON Time Series"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:6
+msgid ""
+"`JSON <http://json.org>`_ Time Series (JTS) is a lightweight data-"
+"interchange format for :term:`time series <time series>` data. It has "
+"been designed to be highly readable, parsable and extendable."
+msgstr ""
+
+#: ../../reference/historic/jts.rst:8
+msgid ""
+"The JTS document format is natively supported by `eagle.io "
+"<https://eagle.io>`_ which can be easily imported and exported via the "
+":ref:`HTTP API <api>`."
+msgstr ""
+
+#: ../../reference/historic/jts.rst:10
+msgid "Example JTS document::"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:61
+msgid "JTS Document specification"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:67
+msgid "Attribute"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:67 ../../reference/historic/jts.rst:95
+#: ../../reference/historic/jts.rst:121 ../../reference/historic/jts.rst:162
+#: ../../reference/historic/jts.rst:209
+msgid "Example"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:67 ../../reference/historic/jts.rst:95
+#: ../../reference/historic/jts.rst:121 ../../reference/historic/jts.rst:162
+msgid "Description"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:69
+msgid "**docType**"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:69
+msgid "jts"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:69
+msgid "*Required*. Must be 'jts'"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:70
+msgid "**version**"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:70
+msgid "1.0"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:70
+msgid "*Required*. Version '1.0' supported"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:71
+msgid "**header**"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:71
+msgid "*Optional*. Object describing document data"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:72
+msgid "**data**"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:72
+msgid "*Required*. Array of historic records in chronological order"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:87
+msgid "Header"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:89
+msgid ""
+"The header is optional and is used to describe the data contained within "
+"the document."
+msgstr ""
+
+#: ../../reference/historic/jts.rst:95
+msgid "Header Attribute"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:97
+msgid "**startTime**"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:97 ../../reference/historic/jts.rst:164
+msgid "2014-08-16T02:00:00.000Z"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:97
+msgid ""
+":ref:`ISO8601<time-format-iso8601>` timestamp of earliest record in "
+"document"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:98
+msgid "**endTime**"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:98
+msgid "2014-08-16T02:20:43.000Z"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:98
+msgid ":ref:`ISO8601<time-format-iso8601>` timestamp of latest record in document"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:99
+msgid "**recordCount**"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:99
+msgid "5"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:99
+msgid "Total record count (number of array items in data)"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:100
+msgid "**columns**"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:100
+msgid "Object describing columns in document"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:114
+msgid "Header Columns"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:115
+msgid ""
+"The header *columns* object contains *column index* keys which map to the"
+" corresponding *column index* in the record fields object. Column index "
+"assignment is generally zero-based (first index is 0)."
+msgstr ""
+
+#: ../../reference/historic/jts.rst:121
+msgid "Column Attribute"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:123
+msgid "**id**"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:123
+msgid "541a5a129bc9b4035f906d70"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:123
+msgid "Unique identifier of resource (usually its _id)"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:124
+msgid "**name**"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:124
+msgid "Temperature"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:124
+msgid "Name of resource or node"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:125
+msgid "**dataType**"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:125
+msgid "NUMBER"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:125
+msgid ""
+":ref:`Data type <historic-jts-datatypes>` of associated node. *[NUMBER, "
+"TEXT, TIME, COORDINATES]* Note: if 'renderType' is STATE the data in this"
+" document will be String."
+msgstr ""
+
+#: ../../reference/historic/jts.rst:128
+msgid "**renderType**"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:128
+msgid "Rendering of 'v' attribute in records. *[VALUE, STATE]*"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:129
+msgid "**format**"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:129
+msgid "0.###"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:129
+msgid ":ref:`Format <node-configuration-parameter-general>` of the value."
+msgstr ""
+
+#: ../../reference/historic/jts.rst:130
+msgid "**aggregate**"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:130
+msgid "NONE"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:130
+msgid ""
+"Historic :ref:`aggregate <historic-aggregates>` applied to data. Default "
+"is NONE"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:132
+msgid "**baseTime**"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:132 ../../reference/time/timestamps.rst:68
+msgid "D"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:132
+msgid ":ref:`OPC Base Time <relative-time>` used for aggregation"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:133
+msgid "**interval**"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:133
+msgid "1H"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:133
+msgid ":ref:`OPC Interval <relative-time>` used for aggregation"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:154
+msgid "Data"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:156
+msgid ""
+"The data attribute contains an array of records. Each record contains a "
+"'ts' :ref:`ISO8601<time-format-iso8601>` timestamp and an 'f' fields "
+"object which can contain value and quality data for 1 or more columns "
+"(using column index as key)."
+msgstr ""
+
+#: ../../reference/historic/jts.rst:162
+msgid "Record Attribute"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:164
+msgid "**ts**"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:164
+msgid "*Required*. :ref:`ISO8601<time-format-iso8601>` timestamp of data point(s)"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:165
+msgid "**f**"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:165
+msgid ""
+"*Required*. Object containing data for 1 or more columns (using column "
+"index as key)"
+msgstr ""
+
+#: ../../reference/historic/jts.rst
+msgid "**v**"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:167
+msgid "10.4"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:167
+msgid ""
+"*Optional*. Value of column for the corresponding record timestamp "
+":ref:`Data type <historic-jts-datatypes>` should match *dataType* option "
+"in header"
+msgstr ""
+
+#: ../../reference/historic/jts.rst
+msgid "**q**"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:169
+msgid "100"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:169
+msgid "*Optional*. Quality code associated with data value for this column"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:190
+msgid ""
+"The 'f' fields object can be sparsley populated by only including columns"
+" that have data for the associated record timestamp."
+msgstr ""
+
+#: ../../reference/historic/jts.rst:196
+msgid "Data Types"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:198
+msgid ""
+"JTS supports both simple and complex data types. Complex data types are "
+"always encapsulated in a JSON object with its key prefixed with '$'."
+msgstr ""
+
+#: ../../reference/historic/jts.rst:200
+msgid ""
+"When inserting historic data, the data type *MUST* match the parameter "
+"type. For example, TIME data is only accepted on Time parameters. Data "
+"that has been exported using renderType 'STATE' will always have a "
+"*String* format."
+msgstr ""
+
+#: ../../reference/historic/jts.rst:203
+msgid ""
+"The following data types are supported in the 'v' value field of a record"
+" column:"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:209
+msgid "Data Type"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:209
+msgid "Accepted Parameter Type"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:209
+msgid "Format"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:211
+msgid "**NUMBER**"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:211
+msgid "Number parameters"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:211
+msgid "Number"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:211
+msgid "24.5"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:212
+msgid "**TEXT**"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:212
+msgid "Text parameters"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:212
+msgid "String"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:212
+msgid "\"valve open\""
+msgstr ""
+
+#: ../../reference/historic/jts.rst:213
+msgid "**TIME**"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:213
+msgid "Time parameters"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:213
+msgid "{\"$time\": :ref:`\"ISO8601<time-format-iso8601>`\"}"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:213
+msgid "{\"$time\": \"2014-08-16T02:00:00Z\"}"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:215
+msgid "**COORDINATES**"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:215
+msgid "Locations"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:215
+msgid "{\"$coords\": [<latitude>, <longitude>]}"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:215
+msgid "{\"$coords\": [-33.86785, 151.20732]}"
+msgstr ""
+
+#: ../../reference/historic/jts.rst:219
+msgid ""
+"The record 'ts' field can be expressed as a simple :ref:`ISO8601<time-"
+"format-iso8601>` timestamp instead of the complex TIME data type."
+msgstr ""
+
+#: ../../reference/historic/limits.rst:4
+msgid "Limits"
+msgstr ""
+
+#: ../../reference/historic/limits.rst:6
+msgid ""
+"Eagle.io supports the acquisition and storage of up to **20000 records "
+"per** :ref:`Data Source <node-configuration-datasource-datalogger>` **per"
+" day**. Exceeding the limit will trigger an :ref:`Overload Alarm "
+"<overload-alarm>` on the Source."
+msgstr ""
+
+#: ../../reference/historic/limits.rst:9
+msgid ""
+"If you believe your application may exceed our historic limits, please "
+"contact us to discuss your requirements."
+msgstr ""
+
+#: ../../reference/historic/limits.rst:11
+msgid ""
+"Daily intervals are defined in the UTC time zone. The acquisition limit "
+"applies to the number of records acquired in one UTC day, regardless of "
+"the record timestamps. The storage limit applies to the number of records"
+" that have timestamps occurring on the same UTC day, regardless of when "
+"they are acquired."
+msgstr ""
+
+#: ../../reference/historic/limits.rst:13
+msgid ""
+"The limit of 20000 records is sufficient for Data Sources that generate "
+"data continuously at 5-second intervals. While eagle.io supports smaller "
+"data intervals (down to 1 millisecond), such resolutions cannot be "
+"generated continuously. For example, if a Data Source generated data at "
+"1-second intervals, the limit of 20000 records would be reached in under "
+"6 hours."
+msgstr ""
+
+#: ../../reference/historic/limits.rst:15
+msgid ""
+"Under some circumstances, a Data Source will be exempt from the "
+"acquisition limit (but will always be subject to the storage limit of "
+"20000 records per day):"
+msgstr ""
+
+#: ../../reference/historic/limits.rst:17
+msgid ""
+"Data Sources that have never been acquired before (because they have just"
+" been created)"
+msgstr ""
+
+#: ../../reference/historic/limits.rst:18
+msgid ""
+"Data Sources that do not have current data (defined as a record that "
+"occurs on the current day in the UTC time zone)"
+msgstr ""
+
+#: ../../reference/historic/limits.rst:19
+msgid ""
+"Data Sources that have had all their historical records deleted since the"
+" last acquisition"
+msgstr ""
+
+#: ../../reference/historic/limits.rst:21
+msgid ""
+"This exemption from the acquisition limit allows a large number of "
+"historical records to be backfilled at one time; however, each individual"
+" day of data must still not have more than 20000 records. For example, "
+"when connecting a new data logger that has been logging data at 5-second "
+"intervals for 1 month, all the data on the device can be acquired by "
+"eagle.io in a single attempt, even though this is over 500000 records. "
+"Note that each individual day of data still does not contain more than "
+"20000 records, and so does not exceed the storage limit."
+msgstr ""
+
+#: ../../reference/historic/limits.rst:23
+msgid ""
+"The acquisition limit and storage limit have different effects, "
+"highlighted by the following examples."
+msgstr ""
+
+#: ../../reference/historic/limits.rst:26
+msgid "Acquisition limit example"
+msgstr ""
+
+#: ../../reference/historic/limits.rst:28
+msgid ""
+"Consider a data set spanning 1 week at 5-second resolution, i.e. 17280 "
+"records per day, for a total of 120960 records. If you tried to acquire "
+"all these records in one attempt, you would hit the daily limit of 20000 "
+"records acquired per day, even though each individual day of records is "
+"under the storage limit. The following day, you would be able to acquire "
+"a further 20000 records. In total, you would need to perform daily "
+"acquisitions for a week, adding only 20000 records per day, to acquire "
+"the entire data set. However, if any of the previously listed exemptions "
+"applied to the Data Source, you would be able to acquire all 120960 "
+"records in a single attempt."
+msgstr ""
+
+#: ../../reference/historic/limits.rst:32
+msgid "Storage limit example"
+msgstr ""
+
+#: ../../reference/historic/limits.rst:34
+msgid ""
+"Consider a data set spanning 1 day at 1-second resolution, i.e. a total "
+"of 86400 records with timestamps all occurring on the same day. If you "
+"only acquired 1000 of these records each day, you would not hit the daily"
+" acquisition limit. However, after 20 days, you would hit the storage "
+"limit of 20000 records with timestamps occurring on the same day. You "
+"would then be permanently restricted from storing any more records with "
+"timestamps occurring on that day. There are no exemptions to the storage "
+"limit, so the only way to store additional records on that day would be "
+"to delete some or all of the existing records."
+msgstr ""
+
+#: ../../reference/historic/quality.rst:4
+msgid "Quality"
+msgstr ""
+
+#: ../../reference/historic/quality.rst:6
+msgid ""
+"Historic data can optionally contain quality information. Each data point"
+" in the time series can store a quality code that represents the quality "
+"of the value captured. System quality codes may also be applied "
+"automatically when displaying or exporting the historic data (usually "
+"when aggregate calculations are applied)."
+msgstr ""
+
+#: ../../reference/historic/quality.rst:8
+msgid ""
+"The account settings :ref:`Quality Codes <management-general-"
+"qualitycodes>` section allows Account Owners and Administrators to add "
+"custom quality codes or modify the built-in system quality codes."
+msgstr ""
+
+#: ../../reference/historic/quality.rst:10
+msgid ""
+"Quality codes are assigned a Type which represents the validity of the "
+"data: GOOD, BAD or UNCERTAIN."
+msgstr ""
+
+#: ../../reference/historic/quality.rst:14
+msgid "System Qualities"
+msgstr ""
+
+#: ../../reference/historic/quality.rst:15
+msgid ""
+"System qualities can have their source and quality codes re-assigned but "
+"they can not be removed."
+msgstr ""
+
+#: ../../reference/historic/quality.rst:17
+msgid "Data Subnormal"
+msgstr ""
+
+#: ../../reference/historic/quality.rst:18
+msgid ""
+"Non-Good values have been excluded in the aggregate calculation so the "
+"quality of the data is uncertain."
+msgstr ""
+
+#: ../../reference/historic/quality.rst:19
+msgid "Data Unavailable"
+msgstr ""
+
+#: ../../reference/historic/quality.rst:20
+msgid ""
+"There is no data available for this period and has been specifically "
+"indicated as a gap by the user."
+msgstr ""
+
+#: ../../reference/historic/quality.rst:21
+msgid "No Bounds"
+msgstr ""
+
+#: ../../reference/historic/quality.rst:22
+msgid ""
+"Bounding values determine the start and end points when requesting raw "
+"data. If a raw data value exists at the start or end point, it is "
+"considered the bounding value. If no raw data value exists at the start "
+"or end point, the next data point outside of the range is considered the "
+"bounding value and the quality will be shown as No Bounds."
+msgstr ""
+
+#: ../../reference/historic/quality.rst:23
+msgid "No Data"
+msgstr ""
+
+#: ../../reference/historic/quality.rst:24
+msgid ""
+"There is no data available for the aggregation calculation period after "
+"non-good values have been excluded."
+msgstr ""
+
+#: ../../reference/historic/quality.rst:26
+msgid "No Good Data"
+msgstr ""
+
+#: ../../reference/historic/quality.rst:26
+msgid "There is no data available for the aggregate calculation period."
+msgstr ""
+
+#: ../../reference/index.rst:2
+msgid "Reference"
+msgstr ""
+
+#: ../../reference/time/index.rst:2
+msgid "Time"
+msgstr ""
+
+#: ../../reference/time/index.rst:4
+msgid ""
+"When working with :term:`time series` data from multiple geographic "
+"locations its important to understand how timezones and date formatting "
+"affects the display of the data."
+msgstr ""
+
+#: ../../reference/time/relativetime.rst:4
+msgid "Relative Time"
+msgstr ""
+
+#: ../../reference/time/relativetime.rst:6
+msgid ""
+"OPC Relative Time is used to represent date and time in an easy to read "
+"format that allows users to navigate or select a period of time without "
+"explicitly specifying a date. An example use is NOW-5M which simply "
+"translates to the current time minus 5 minutes. All times are relative to"
+" the user profile timezone."
+msgstr ""
+
+#: ../../reference/time/relativetime.rst:8
+msgid "OPC Relative Time syntax::"
+msgstr ""
+
+#: ../../reference/time/relativetime.rst
+#: ../../reference/time/relativetime.rst:32
+msgid "Base Time"
+msgstr ""
+
+#: ../../reference/time/relativetime.rst:13
+msgid ""
+"A time that is relative to ‘now’, the present time. You can enter a base "
+"time in either short or long format."
+msgstr ""
+
+#: ../../reference/time/relativetime.rst
+#: ../../reference/time/relativetime.rst:32
+msgid "Interval"
+msgstr ""
+
+#: ../../reference/time/relativetime.rst:15
+msgid ""
+"An optional further offset that you can either add or subtract from the "
+"base time. You specify this offset in the OPC Time Format."
+msgstr ""
+
+#: ../../reference/time/relativetime.rst:18
+msgid "Example usage::"
+msgstr ""
+
+#: ../../reference/time/relativetime.rst:29
+msgid "OPC Base Time and Interval Keywords"
+msgstr ""
+
+#: ../../reference/time/relativetime.rst:32
+msgid "Keyword Long (short)"
+msgstr ""
+
+#: ../../reference/time/relativetime.rst:34
+msgid "NOW"
+msgstr ""
+
+#: ../../reference/time/relativetime.rst:34
+msgid "The current time"
+msgstr ""
+
+#: ../../reference/time/relativetime.rst:34
+#: ../../reference/time/relativetime.rst:36
+#: ../../reference/time/relativetime.rst:38
+msgid "N/A"
+msgstr ""
+
+#: ../../reference/time/relativetime.rst:36
+msgid "FIRST"
+msgstr ""
+
+#: ../../reference/time/relativetime.rst:36
+msgid "Earliest data value time"
+msgstr ""
+
+#: ../../reference/time/relativetime.rst:38
+msgid "LAST"
+msgstr ""
+
+#: ../../reference/time/relativetime.rst:38
+msgid "Most recent data value time"
+msgstr ""
+
+#: ../../reference/time/relativetime.rst:40
+msgid "SECOND (S)"
+msgstr ""
+
+#: ../../reference/time/relativetime.rst:40
+msgid "The start of the current second"
+msgstr ""
+
+#: ../../reference/time/relativetime.rst:40
+msgid "Offset from time in seconds"
+msgstr ""
+
+#: ../../reference/time/relativetime.rst:42
+msgid "MINUTE (M)"
+msgstr ""
+
+#: ../../reference/time/relativetime.rst:42
+msgid "The start of the current minute"
+msgstr ""
+
+#: ../../reference/time/relativetime.rst:42
+msgid "Offset from time in minutes"
+msgstr ""
+
+#: ../../reference/time/relativetime.rst:44
+msgid "HOUR (H)"
+msgstr ""
+
+#: ../../reference/time/relativetime.rst:44
+msgid "The start of the current hour"
+msgstr ""
+
+#: ../../reference/time/relativetime.rst:44
+msgid "Offset from time in hours"
+msgstr ""
+
+#: ../../reference/time/relativetime.rst:46
+msgid "DAY (D)"
+msgstr ""
+
+#: ../../reference/time/relativetime.rst:46
+msgid "The start of the current day"
+msgstr ""
+
+#: ../../reference/time/relativetime.rst:46
+msgid "Offset from time in days"
+msgstr ""
+
+#: ../../reference/time/relativetime.rst:48
+msgid "WEEK (W)"
+msgstr ""
+
+#: ../../reference/time/relativetime.rst:48
+msgid "The start of the current week"
+msgstr ""
+
+#: ../../reference/time/relativetime.rst:48
+msgid "Offset from time in weeks"
+msgstr ""
+
+#: ../../reference/time/relativetime.rst:50
+msgid "MONTH (MO)"
+msgstr ""
+
+#: ../../reference/time/relativetime.rst:50
+msgid "The start of the current month"
+msgstr ""
+
+#: ../../reference/time/relativetime.rst:50
+msgid "Offset from time in months"
+msgstr ""
+
+#: ../../reference/time/relativetime.rst:52
+msgid "YEAR (Y)"
+msgstr ""
+
+#: ../../reference/time/relativetime.rst:52
+msgid "The start of the current year"
+msgstr ""
+
+#: ../../reference/time/relativetime.rst:52
+msgid "Offset from time in years"
+msgstr ""
+
+#: ../../reference/time/relativetime.rst:60
+msgid ""
+"You can specify both the <basetime> and <interval> in either short or "
+"long format."
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:2
+msgid "Timestamps"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:4
+msgid ""
+":term:`Timestamps <timestamp>` represent the date and time of an event "
+"and can be represented in different formats."
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:13
+msgid "ISO8601"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:14
+msgid ""
+"The :ref:`HTTP API <api>` requires all timestamps to use the `ISO8601 "
+"<http://en.wikipedia.org/wiki/ISO_8601>`_ standard format for date and "
+"time display. Timestamps in this format can be in UTC with the 'Z' (Zulu)"
+" zone designator applied or include a '+' offset from UTC. Timestamps can"
+" optionally specify fractional seconds using 3 decimal places."
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:17
+#: ../../reference/time/timestamps.rst:35 ../../reference/time/timezones.rst:11
+#: ../../reference/time/timezones.rst:19
+msgid "Example::"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:32
+msgid "User customizable format"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:33
+msgid ""
+"Users can assign a preset or custom Time format to their User profile "
+"using the time format tokens below. All timestamps displayed to the user "
+"will be in their preferred format (where applicable)."
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:39
+msgid ""
+"Time format may also need to be configured for some Sources. Refer to the"
+" Source configuration docs for information on specifying a time format "
+"for Sources."
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:53
+msgid "Time format tokens"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:56
+msgid "Time Unit"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:56
+msgid "Token"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:56
+msgid "Output"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:58
+msgid "**Month**"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:58
+msgid "M"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:58
+#: ../../reference/time/timestamps.rst:126
+msgid "1 2 ... 11 12"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:60
+msgid "Mo [#f1]_"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:60
+msgid "1st 2nd ... 11th 12th"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:62
+msgid "MM"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:62
+#: ../../reference/time/timestamps.rst:128
+msgid "01 02 ... 11 12"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:64
+msgid "MMM"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:64
+msgid "Jan Feb ... Nov Dec"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:66
+msgid "MMMM"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:66
+msgid "January February ... November December"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:68
+msgid "**Day of Month**"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:68
+msgid "1 2 ... 30 31"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:70
+msgid "Do [#f1]_"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:70
+msgid "1st 2nd ... 30th 31st"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:72
+msgid "DD"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:72
+msgid "01 02 ... 30 31"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:74
+msgid "**Day of Year**"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:74
+msgid "DDD"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:74
+msgid "1 2 ... 364 365"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:76
+msgid "DDDo"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:76
+msgid "1st 2nd ... 364th 365th"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:78
+msgid "DDDD"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:78
+msgid "001 002 ... 364 365"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:80
+msgid "**Day of Week**"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:80
+msgid "d [#f1]_"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:80
+#: ../../reference/time/timestamps.rst:90
+msgid "0 1 ... 5 6"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:82
+msgid "do [#f1]_"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:82
+msgid "0th 1st ... 5th 6th"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:84
+msgid "dd"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:84
+msgid "Su Mo ... Fr Sa"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:86
+msgid "ddd"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:86
+msgid "Sun Mon ... Fri Sat"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:88
+msgid "dddd"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:88
+msgid "Sunday Monday ... Friday Saturday"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:90
+msgid "**Day of Week (Locale)**"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:90
+msgid "e [#f1]_"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:92
+msgid "**Day of Week (ISO)**"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:92
+msgid "E"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:92
+msgid "1 2 ... 6 7"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:94
+msgid "**Week of Year**"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:94
+msgid "w"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:94
+msgid "12 .. 52 53"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:96
+msgid "wo [#f1]_"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:96
+#: ../../reference/time/timestamps.rst:102
+msgid "1st 2nd ... 52nd 53rd"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:98
+msgid "ww"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:98
+#: ../../reference/time/timestamps.rst:104
+msgid "01 02 ... 52 53"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:100
+msgid "**Week of Year (ISO)**"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:100
+msgid "W"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:100
+msgid "1 2 ... 52 53"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:102
+msgid "Wo [#f1]_"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:104
+msgid "WW"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:106
+msgid "**Year**"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:106
+msgid "YY"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:106
+#: ../../reference/time/timestamps.rst:110
+#: ../../reference/time/timestamps.rst:114
+msgid "70 71 ... 29 30"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:108
+msgid "YYYY"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:108
+#: ../../reference/time/timestamps.rst:112
+#: ../../reference/time/timestamps.rst:116
+msgid "1970 1971 ... 2029 2030"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:110
+msgid "**Week Year**"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:110
+msgid "gg"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:112
+msgid "gggg"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:114
+msgid "**Week Year (ISO)**"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:114
+msgid "GG"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:116
+msgid "GGGG"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:118
+msgid "**AM/PM**"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:118
+msgid "A"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:118
+msgid "AM PM"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:120
+msgid "a"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:120
+msgid "am pm"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:122
+msgid "**Hour**"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:122
+msgid "H"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:122
+msgid "0 1 ... 22 23"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:124
+msgid "HH"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:124
+msgid "00 01 ... 22 23"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:126
+msgid "h"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:128
+msgid "hh"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:130
+msgid "**Minute**"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:130
+msgid "m"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:130
+#: ../../reference/time/timestamps.rst:134
+msgid "0 1 ... 58 59"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:132
+msgid "mm"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:132
+#: ../../reference/time/timestamps.rst:136
+msgid "00 01 ... 58 59"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:134
+msgid "**Second**"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:134
+msgid "s"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:136
+msgid "ss"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:138
+msgid "**Fractional Second**"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:138
+msgid "S"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:138
+msgid "0 1 ... 8 9"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:140
+msgid "SS"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:140
+msgid "0 1 ... 98 99"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:142
+msgid "SSS"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:142
+msgid "0 1 ... 998 999"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:144
+msgid "**Timezone**"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:144
+msgid "Z"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:144
+msgid "-07:00 -06:00 ... +06:00 +07:00"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:146
+msgid "ZZ"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:146
+msgid "-0700 -0600 ... +0600 +0700"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:148
+msgid "**Unix Timestamp**"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:148
+msgid "X"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:148
+msgid "1360013296"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:151
+msgid "Footnotes"
+msgstr ""
+
+#: ../../reference/time/timestamps.rst:152
+msgid "Tokens not available for Delimited Text Source."
+msgstr ""
+
+#: ../../reference/time/timezones.rst:4
+msgid "Timezones"
+msgstr ""
+
+#: ../../reference/time/timezones.rst:6
+msgid ""
+"Timezones allow for data to be collected from various geographical "
+"locations and stored on the server in :term:`UTC`. Refer to the Source "
+"configuration docs for information on assigning a timezone."
+msgstr ""
+
+#: ../../reference/time/timezones.rst:9
+msgid ""
+"Users can assign a timezone to their User profile. All data displayed to "
+"the user including current, historic, notifications and events will be "
+"displayed in the selected timezone."
+msgstr ""
+
+#: ../../reference/time/timezones.rst:17
+msgid ""
+"The :ref:`HTTP API <api>` requires all timezones to be specified using "
+"the *TZ* naming convention as specified in `this list "
+"<http://en.wikipedia.org/wiki/List_of_tz_database_time_zones>`_. "
+"*Etc/UTC* should be used for UTC."
+msgstr ""
+

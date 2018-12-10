@@ -1,0 +1,493 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017 Argos.io Pty Ltd
+# This file is distributed under the same license as the eagle.io package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: eagle.io 1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-12-10 14:30+1000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../intro/index.rst:2
+msgid "Getting Started"
+msgstr ""
+
+#: ../../intro/index.rst:6
+msgid ""
+"New to `eagle.io <https://eagle.io>`_? Well, you came to the right place:"
+" read this material to quickly get up and running.."
+msgstr ""
+
+#: ../../intro/overview/index.rst:2
+msgid "Introducing `eagle.io <https://eagle.io>`_"
+msgstr ""
+
+#: ../../intro/overview/index.rst:7
+msgid "Connect, configure and control your monitoring fleet from the cloud"
+msgstr ""
+
+#: ../../intro/overview/index.rst:11
+msgid ""
+"Introducing `eagle.io <https://eagle.io>`_, the secure, reliable, easy to"
+" use cloud-based data monitoring service. Whether you're working with "
+"simple data files or managing a fleet of :term:`data loggers <data "
+"logger>`, eagle.io has you covered."
+msgstr ""
+
+#: ../../intro/overview/index.rst:14
+msgid ""
+"With real-time communications, collaboration and instant updates built "
+"into the core eagle.io has everything you've always wanted and more. The "
+"lightning fast interface has been designed to work across all modern "
+"phones and computing devices with no software to install and no page "
+"reloads."
+msgstr ""
+
+#: ../../intro/overview/index.rst:22
+msgid "Log in to eagle.io"
+msgstr ""
+
+#: ../../intro/overview/index.rst:23
+msgid ""
+"You will need a user profile to log in. This requires you to `sign up "
+"<https://eagle.io/trial>`_ for an account or receive a :ref:`Workspace "
+"Sharing <sharing-and-security>` invitation from a registered user."
+msgstr ""
+
+#: ../../intro/overview/index.rst:25
+msgid "*Login form*"
+msgstr ""
+
+#: ../../intro/overview/index.rst:39
+msgid ""
+"Enter your *email* address & *password* to login. If you have forgotten "
+"your password, simply click the *forgot password* link to reset it."
+msgstr ""
+
+#: ../../intro/overview/index.rst:46
+msgid "Layout and Navigation"
+msgstr ""
+
+#: ../../intro/overview/index.rst:47
+msgid ""
+"The user interface is divided into sections which group similar "
+"functionality and content. The layout of these sections will vary "
+"depending on the screen size of your device including its orientation "
+"(portrait or landscape). The figures below highlight the Main features of"
+" the interface as displayed on different devices."
+msgstr ""
+
+#: ../../intro/overview/index.rst:54
+msgid "*Desktop layout*"
+msgstr ""
+
+#: ../../intro/overview/index.rst:67
+msgid "*Phone and Tablet layout*"
+msgstr ""
+
+#: ../../intro/overview/index.rst:82
+msgid "*Main features*"
+msgstr ""
+
+#: ../../intro/overview/index.rst:84
+msgid "Create Menu"
+msgstr ""
+
+#: ../../intro/overview/index.rst:85
+msgid "Filters"
+msgstr ""
+
+#: ../../intro/overview/index.rst:86
+msgid "Status Bar"
+msgstr ""
+
+#: ../../intro/overview/index.rst:87
+msgid "User Menu, Messages, Help and Fullscreen mode"
+msgstr ""
+
+#: ../../intro/overview/index.rst:88
+msgid "View Selector"
+msgstr ""
+
+#: ../../intro/overview/index.rst:89
+msgid "Toolbar"
+msgstr ""
+
+#: ../../intro/overview/index.rst:90
+msgid "Content Area"
+msgstr ""
+
+#: ../../intro/overview/index.rst:91
+msgid "Workspaces Tree"
+msgstr ""
+
+#: ../../intro/overview/index.rst:92
+msgid "Workspaces Tree show/hide button"
+msgstr ""
+
+#: ../../intro/overview/index.rst:99
+msgid "Selecting Nodes in the Workspaces Tree"
+msgstr ""
+
+#: ../../intro/overview/index.rst:100
+msgid ""
+"The Workspaces Tree displays all the Workspaces and associated content "
+"you have access to. Each item in this menu is called a Node. The "
+"highlighted item is referred to as the Selected Node."
+msgstr ""
+
+#: ../../intro/overview/index.rst:102
+msgid ""
+"Most Nodes are hierarchical and may also contain Nodes themselves. The "
+"*Workspaces* label is the best example of this as its referred to as the "
+"Base Node and contains all the Workspace Nodes."
+msgstr ""
+
+#: ../../intro/overview/index.rst:104
+msgid ""
+"If you have access to more than one Workspace you may notice some of the "
+"Workspaces are *GRAYED* out when you first login. Select the Workspace to"
+" load its assets."
+msgstr ""
+
+#: ../../intro/overview/index.rst:106
+msgid "*Example Workspaces Tree showing hierarchy*"
+msgstr ""
+
+#: ../../intro/overview/index.rst:121
+msgid ""
+"Change the Selected Node by clicking or touching on another Node. You "
+"will notice that container Nodes will automatically expand and collapse "
+"to show and hide their contained Nodes on selection."
+msgstr ""
+
+#: ../../intro/overview/index.rst:123
+msgid ""
+"Selecting a Node focuses your View. Only the selected Node and the Nodes "
+"it contains will be available in the Content Area."
+msgstr ""
+
+#: ../../intro/overview/index.rst:125
+msgid "You can easily show all content by selecting the Base Node."
+msgstr ""
+
+#: ../../intro/overview/index.rst:128
+msgid ""
+"The Workspaces Tree will be hidden by default when displayed on small "
+"screens. You can see the Selected Node displayed in the Status Bar. "
+"Double-click or Double-tap the status bar to quickly reveal the "
+"Workspaces Tree. Alternatively you can use the Workspaces Tree show/hide "
+"button."
+msgstr ""
+
+#: ../../intro/overview/index.rst:130
+msgid "*Most common types of Nodes:*"
+msgstr ""
+
+#: ../../intro/overview/index.rst:133
+msgid "|icon-workspace| Workspace"
+msgstr ""
+
+#: ../../intro/overview/index.rst:133
+msgid ""
+"Workspaces are special container Nodes that can be shared with other "
+"users. All other Nodes are created within the Workspace. Workspaces can "
+"only be created by the Account Owner or Administrators."
+msgstr ""
+
+#: ../../intro/overview/index.rst:136
+msgid "|icon-group| Group"
+msgstr ""
+
+#: ../../intro/overview/index.rst:136
+msgid ""
+"Groups are simple Nodes that provide structure to your Workspaces. You "
+"may choose to group content by geography or related purpose. Groups can "
+"be created inside Workspaces, Locations and other Groups."
+msgstr ""
+
+#: ../../intro/overview/index.rst:140
+msgid "|icon-location| Location"
+msgstr ""
+
+#: ../../intro/overview/index.rst:139
+msgid ""
+"Locations are special containers used to associate data with a "
+"geographical location. Locations can be created inside Workspaces and "
+"Groups."
+msgstr ""
+
+#: ../../intro/overview/index.rst:143 ../../intro/overview/index.rst:175
+msgid "|icon-chart| Chart"
+msgstr ""
+
+#: ../../intro/overview/index.rst:143
+msgid ""
+"Create various types of charts with customized functionality and "
+"appearance including historic charts with multiple y-axes and wind rose "
+"charts with configurable ranges."
+msgstr ""
+
+#: ../../intro/overview/index.rst:146
+msgid "|icon-dash| Dashboard"
+msgstr ""
+
+#: ../../intro/overview/index.rst:146
+msgid ""
+"Dashboards allow users to create customized views of their data in "
+"visually appealing layouts using animated gauges, charts, lists, maps and"
+" other graphical controls."
+msgstr ""
+
+#: ../../intro/overview/index.rst:149
+msgid "|icon-datasource| Data Source"
+msgstr ""
+
+#: ../../intro/overview/index.rst:149
+msgid ""
+"Data Sources automatically acquire or receive timeseries data using a "
+"variety of different transport options. Connect to a :term:`data logger` "
+"or collect data from files. Data Sources can be created inside Locations "
+"only."
+msgstr ""
+
+#: ../../intro/overview/index.rst:153
+msgid "|icon-point-number-range| Parameter"
+msgstr ""
+
+#: ../../intro/overview/index.rst:152
+msgid ""
+"Parameters are managed by and contained within Data Sources. Parameters "
+"store the individual timeseries acquired by its Data Source. There are a "
+"few different types of parameters but essentially they support Monitoring"
+" or Controlling of values."
+msgstr ""
+
+#: ../../intro/overview/index.rst:155
+msgid "Review the full list of :ref:`Node types <node-types>`."
+msgstr ""
+
+#: ../../intro/overview/index.rst:162
+msgid "Changing the View"
+msgstr ""
+
+#: ../../intro/overview/index.rst:163
+msgid ""
+"The Selected Node (including any Nodes it contains) can be displayed in a"
+" variety of Views. Use the View Selector to change the View. You will "
+"notice the Content Area and Toolbar change."
+msgstr ""
+
+#: ../../intro/overview/index.rst:166
+msgid "*Content Views*"
+msgstr ""
+
+#: ../../intro/overview/index.rst:169
+msgid "|icon-map| Map"
+msgstr ""
+
+#: ../../intro/overview/index.rst:169
+msgid ""
+"Map provides a fully featured interactive interface for displaying "
+"location based data."
+msgstr ""
+
+#: ../../intro/overview/index.rst:172
+msgid "|icon-list| List"
+msgstr ""
+
+#: ../../intro/overview/index.rst:172
+msgid ""
+"Intuitive categorised lists provide quick access to the data for your "
+"most important Nodes: Locations, Sources, Parameters, Attachments."
+msgstr ""
+
+#: ../../intro/overview/index.rst:175
+msgid ""
+"Use the Chart View for reviewing your timeseries data in highly "
+"interactive charts. Choose to group data on charts by Location or "
+"Parameter type. You can also setup custom charts for full customization "
+"over functionality and appearance."
+msgstr ""
+
+#: ../../intro/overview/index.rst:179
+msgid "|icon-events| Events"
+msgstr ""
+
+#: ../../intro/overview/index.rst:178
+msgid ""
+"Every interaction (user and system generated) is recorded in the Events "
+"log. Use the Events View to quickly audit the system, a user or history "
+"of alarms."
+msgstr ""
+
+#: ../../intro/overview/index.rst:183
+msgid "|icon-dash| Dash"
+msgstr ""
+
+#: ../../intro/overview/index.rst:182
+msgid ""
+"The Dash is for viewing the customized graphical dashboards and also "
+"provides an overview of all dashboard nodes available based on the "
+"Selected Node in the Workspaces Tree."
+msgstr ""
+
+#: ../../intro/overview/index.rst:190
+msgid "User Menu"
+msgstr ""
+
+#: ../../intro/overview/index.rst:191
+msgid ""
+"The User Menu provides quick access to the User Profile, Account "
+"Settings, Log out and Help."
+msgstr ""
+
+#: ../../intro/overview/index.rst:198
+msgid "Context Menus"
+msgstr ""
+
+#: ../../intro/overview/index.rst:199
+msgid ""
+"Context menus are built into the interface and provide quick access to "
+"navigation, operations and configuration for their associated elements. "
+"Right-click or long-press on a Node in the Workspaces Tree or an item in "
+"the Content Area (ie. Map marker, List item, etc.) to display it's "
+"associated context menu."
+msgstr ""
+
+#: ../../intro/overview/index.rst:201
+msgid "*Example Context menu shown for Map marker*"
+msgstr ""
+
+#: ../../intro/overview/index.rst:211
+msgid ""
+"Context menus display only the items relevant to the associated Node or "
+"content the menu is displayed for. Context menu items are also dependant "
+"on User permissions. If there are no available options then no context "
+"menu will be displayed."
+msgstr ""
+
+#: ../../intro/overview/index.rst:219
+msgid "Click, Touch, Tap, What?"
+msgstr ""
+
+#: ../../intro/overview/index.rst:220
+msgid ""
+"The user interface has been designed to work seemlessly across all modern"
+" computing devices including desktop computers, tablets and phones which "
+"means it has built-in support for Touch devices."
+msgstr ""
+
+#: ../../intro/overview/index.rst:222
+msgid "*Throughout this documentation you will notice the following terms:*"
+msgstr ""
+
+#: ../../intro/overview/index.rst:225
+msgid "Click, Touch, Tap"
+msgstr ""
+
+#: ../../intro/overview/index.rst:225
+msgid ""
+"Use a mouse to select an item or touch the screen (touch device only) "
+"momentarily where the item is displayed."
+msgstr ""
+
+#: ../../intro/overview/index.rst:228
+msgid "Double-click, Double-tap"
+msgstr ""
+
+#: ../../intro/overview/index.rst:228
+msgid ""
+"Click the item twice in quick succession with a mouse, or Tap the item "
+"twice with a touch device."
+msgstr ""
+
+#: ../../intro/overview/index.rst:231
+msgid "Right-click, Long-press"
+msgstr ""
+
+#: ../../intro/overview/index.rst:231
+msgid ""
+"Using a dual button mouse, use the alternate button to Click. When using "
+"a single button mouse or touch device you need to click (or touch) and "
+"hold without releasing for a few seconds."
+msgstr ""
+
+#: ../../intro/overview/index.rst:238
+msgid "Inline help"
+msgstr ""
+
+#: ../../intro/overview/index.rst:239
+msgid ""
+"|icon-help| Help is available throughout the interface - wherever you see"
+" the help icon. You can hover, click or touch the help icon to show the "
+"help popup - many of which have quick links back to the relevant section "
+"in this documentation."
+msgstr ""
+
+#: ../../intro/overview/index.rst:242
+msgid "*Inline help example*"
+msgstr ""
+
+#: ../../intro/overview/index.rst:261
+msgid "Offline use"
+msgstr ""
+
+#: ../../intro/overview/index.rst:262
+msgid ""
+"An internet connection is required. If the connection to eagle.io has "
+"failed a disconnected notice will be displayed. Normal operation will "
+"resume once the connection has been re-established."
+msgstr ""
+
+#: ../../intro/overview/index.rst:277
+msgid ""
+"You may notice the app refresh after the connection is re-established "
+"after a long timeout or when updates have been released."
+msgstr ""
+
+#: ../../intro/tutorials/charts/index.rst:2
+msgid "Chart Customization"
+msgstr ""
+
+#: ../../intro/tutorials/charts/index.rst:10
+msgid "Watch this tutorial at: https://www.youtube.com/watch?v=Q39nSTJfcKM"
+msgstr ""
+
+#: ../../intro/tutorials/dashboard/index.rst:2
+msgid "Create a Dashboard"
+msgstr ""
+
+#: ../../intro/tutorials/dashboard/index.rst:10
+msgid "Watch this tutorial at: https://www.youtube.com/watch?v=2r6DazwRd6M"
+msgstr ""
+
+#: ../../intro/tutorials/datasource/index.rst:2
+msgid "Create a Text File Source"
+msgstr ""
+
+#: ../../intro/tutorials/datasource/index.rst:10
+msgid "Watch this tutorial at: https://www.youtube.com/watch?v=1TeD9AneNI8"
+msgstr ""
+
+#: ../../intro/tutorials/index.rst:2
+msgid "Tutorials"
+msgstr ""
+
+#: ../../intro/tutorials/navigation/index.rst:2
+msgid "Basics of Navigation"
+msgstr ""
+
+#: ../../intro/tutorials/navigation/index.rst:10
+msgid "Watch this tutorial at: https://www.youtube.com/watch?v=EiRFV6kzhSw"
+msgstr ""
+
