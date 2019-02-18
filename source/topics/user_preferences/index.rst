@@ -44,10 +44,16 @@ Time format is used to specify the default appearance of date & time information
 
     |
     
-Resetting your password
------------------------
-The User profile has a *Change Password* section for immediate password changes.
+Security
+--------
+The User profile has a *Security* section for immediate password changes and management of two-factor authentication.
 If you have forgotten your password you can use the *Forgot Password* link on the public site to send a reset link to your user profile email address.
+
+
+Two-Factor Authentication
+~~~~~~~~~~~~~~~~~~~~~~~~~
+Two-Factor authentication adds an extra layer of security to your account. This feature is optional, and can be enabled by clicking the *Enable Two-Factor Authentication* button:
+
 
 .. raw:: latex
 
@@ -55,7 +61,7 @@ If you have forgotten your password you can use the *Forgot Password* link on th
 
 .. only:: not latex
 
-    .. image:: user_profile_password.jpg
+    .. image:: user_profile_security.jpg
         :scale: 50 %
 
     | 
@@ -64,12 +70,16 @@ If you have forgotten your password you can use the *Forgot Password* link on th
 
     | 
 
-    .. image:: user_profile_password.jpg
+    .. image:: user_profile_security.jpg
 
 .. only:: not latex
 
     |
     
+
+Once enabled, you will need to provide a code along with your username and password when logging in.
+
+
 .. _user-notification-preferences:
 
 Notification preferences
@@ -99,7 +109,7 @@ Within each Workspace, you will see a list of Notification Categories specific t
 Use the SMS, Email & Voice checkboxes to set your preferences on what types of notifications you would like to receive for each Category.
 
 .. note:: 
-	You must also be subscribed to the individual Nodes you would like to receive the notifications for. See :ref:`Subscribe to Nodes <subscribe-nodes>` for full details. A valid phone number must also be provided in order to receive SMS & Voice notifications.
+	You must also be subscribed to the individual Nodes you would like to receive the notifications for. See :ref:`Subscribe to Nodes <subscribe-nodes>` for full details. A valid phone number must also be provided in order to receive SMS notifications.
 
 .. only:: not latex
 
