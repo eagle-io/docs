@@ -1,3 +1,6 @@
+.. meta::
+   :description: Map layers, map permissions, map styles, zooming and hovering, tagging map markers and repositioning environmental map markers. Learn how to use maps for iot based environmental monitoring.
+
 .. _view-map:
 
 Map

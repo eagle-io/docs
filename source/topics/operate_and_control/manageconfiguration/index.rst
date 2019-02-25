@@ -1,3 +1,6 @@
+.. meta::
+   :description: Manage the configuration for a single Data Source (data logger) or configure network-wide. Configuration support varies between data loggers, including the ability to send programs, firmware and other files to the remote logger(s). Concrete options for the configuration of an environmental data logger
+
 .. _operate-manageconfiguration:
 
 Manage configuration

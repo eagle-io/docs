@@ -1,3 +1,6 @@
+.. meta::
+   :description: Every interaction with the system is authenticated to ensure the user performing the interaction or operation has permission to do so. Eagle.io provides 3 distinct types of user security: Owner, Administrator and Workspace. Iot security and cybersecurity for environmental applications.
+
 .. _sharing-and-security:
 
 Sharing and Security

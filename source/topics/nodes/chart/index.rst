@@ -1,3 +1,6 @@
+.. meta::
+   :description: Create various types of charts with customised functionality and appearance including historic charts with multiple y-axes, displacement charts and wind rose charts with configurable ranges. You can also display pre-configured charts as a Custom chart tile on a Dashboard.
+
 .. _node-configuration-chart:
 
 Chart

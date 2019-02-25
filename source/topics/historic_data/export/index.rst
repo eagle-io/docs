@@ -1,3 +1,6 @@
+.. meta::
+   :description: Historic export is accessible from the List View toolbar and Node context menus. Exporting historic data requires the export data permission. The export process runs in the background so you can continue your work (including triggering additional exports). You will be notified via Messages upon completion. 
+
 Export
 ======
 

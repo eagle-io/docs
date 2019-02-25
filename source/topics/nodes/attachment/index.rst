@@ -1,3 +1,6 @@
+.. meta::
+   :description: Attachments include images, documents and other files stored in eagle.io. New attachments can be manually uploaded by a user or acquired via an Attachment Source. Attachments can be added inside Workspaces, Locations, Groups and Attachment Sources.
+
 .. _node-configuration-attachment:
 
 Attachment

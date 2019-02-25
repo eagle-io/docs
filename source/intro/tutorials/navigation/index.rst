@@ -1,3 +1,6 @@
+.. meta::
+   :description: A video walk-through of the main screens, views, workspaces and visualisation options for your remote environmental monitoring units, data, locations, data logger setups, user privileges management, access to data types and sources.
+
 Basics of Navigation
 =====================
 

@@ -1,3 +1,6 @@
+.. meta::
+   :description: Nodes store all the data and configuration for your environmental monitoring projects. An environmental monitoring system using IoT relies on sources, parameters, groups, locations, workspaces, dashboards, and attachments.
+
 .. _api-resources-nodes:
 
 Nodes

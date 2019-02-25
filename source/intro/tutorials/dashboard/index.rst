@@ -1,3 +1,6 @@
+.. meta::
+    :description: Bring all your monitoring data together under one dashboard. Drag and drop existing views, tiles, designs, and data configuration templates. Integrate different data sources and custom charts, water monitoring alarms along with windrose atmospheric wind direction charts. Pictures. Historical and real-time charts.
+
 Create a Dashboard
 ===================
 

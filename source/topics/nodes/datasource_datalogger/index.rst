@@ -1,3 +1,6 @@
+.. meta::
+   :description: The type of Data Source (data logger or file) is selected at creation. This section is specific to data logger Data Sources, automatically acquiring or receiving timeseries data using a variety of transport options. Connect to a data logger or collect data from files. Data Sources for remote environmental monitoring.
+
 .. _node-configuration-datasource-datalogger:
 
 Data Source (data logger)

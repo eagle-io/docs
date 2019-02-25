@@ -1,3 +1,6 @@
+.. meta::
+   :description: Templates are special container Nodes that allow a hierarchy of configuration to be defined once and replicated to any number of Instances. This reduces configuration time and ensures consistency for large deployments while allowing individual attributes to be customised.
+
 .. _node-configuration-template:
 
 Template

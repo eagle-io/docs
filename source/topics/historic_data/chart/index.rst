@@ -1,3 +1,6 @@
+.. meta::
+   :description: The Historic Chart provides the same functionality as the charts displayed in Chart View but can be displayed directly from the Workspaces Tree, Map or List View without navigating away from your current view. The historic chart is accessible from the List View toolbar and Node context menus.
+
 Chart
 ======
 

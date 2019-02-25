@@ -1,3 +1,6 @@
+.. meta::
+   :description: Use the Account selector located in the User Menu of Account Settings to switch between the Accounts you own or have Administration access to. Eagle.io settings for Security, groups, roles, administrators and API Keys. Workspaces. Notifications. Billing. Customisation. Integration. Managed accounts, discrete networks
+
 Account Settings
 =================
 

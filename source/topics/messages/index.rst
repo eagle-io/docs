@@ -1,9 +1,12 @@
+.. meta::
+   :description: Messages provide access to items for download, general communication to users of a Workspace and important system announcements. Clicking on an Export message will immediately download the associated file.
+
 .. _messages:
 
 Messages
 =========
 
-|icon-message| Messages provides access to items for download, general communication to users of a Workspace and important system announcments.
+|icon-message| Messages provides access to items for download, general communication to users of a Workspace and important system announcements.
 
 The Messages icon indicates the total number of *Unread* messages. Clicking the icon will reveal the Message Menu (Desktop layout only) which displays a preview of the most recent messages. Scroll down the menu to reveal older messages. Clicking on an Export message will immediately download the associated file.
 

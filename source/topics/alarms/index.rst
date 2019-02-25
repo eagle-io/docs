@@ -1,3 +1,6 @@
+.. meta::
+   :description: An environmental monitoring alarm is an indication of an abnormal condition detected by the system. Associated with Nodes and visually indicated using color coding. All types are covered (communications alarm, control, state, process, quality, overload, outdated etc.) Suggested alerts and alarms process.
+
 .. _alarms:
 
 Alarms

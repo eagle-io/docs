@@ -1,3 +1,6 @@
+.. meta::
+   :description: Acquire performs a one-time collection on the Source(s) chosen. View the current operation status. Acquiring from a Source that uses a Scout modem (May require SMS remote connection confirmation). How to acquire data from your remote environmental monitoring sensors, data loggers and field modems. 
+
 .. _operate-acquire:
 
 Acquire

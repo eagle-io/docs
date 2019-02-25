@@ -1,10 +1,13 @@
+.. meta::
+   :description: Control Parameters store the history of the control values set by the user, not the value of the parameter in the data logger. Control allows you to set values in a remote data logger. Can only be performed on Control Parameters and requires operate permission.
+
 .. _operate-control:
 
 Control
 =======
 |icon-control| Control allows you to update or set values in a remote data logger. Control operations can only be performed on Control Parameters and requires *operate* permission. Read more about :ref:`Node types <node-types>`.
 
-The control operation will be attempted immedietly upon applying or setting the control value. If a connection to the Source can not be established, the control value will be applied on the next successful connection. Any pending control values are indicated with an arrow.
+The control operation will be attempted immediately upon applying or setting the control value. If a connection to the Source can not be established, the control value will be applied on the next successful connection. Any pending control values are indicated with an arrow.
 
 Control Parameters store the history of the control values set by the user, not the value of the parameter in the data logger.
 

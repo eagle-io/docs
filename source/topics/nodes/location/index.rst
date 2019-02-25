@@ -1,3 +1,6 @@
+.. meta::
+   :description: On our system, locations are special containers used to associate data with a geographical location. Configure properties via the Workspaces Tree context menu or List View properties icon. Coordinates, map markers, zoom in and out, it's all here. 
+
 .. _node-configuration-location:
 
 Location

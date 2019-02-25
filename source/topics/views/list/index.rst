@@ -1,3 +1,6 @@
+.. meta::
+   :description: Intuitive categorised lists provide quick access to the data for your most important Nodes: Locations, Sources, Parameters and Attachments. Lists subviews, sources, parameters and attachements. Notifications and alarms. List view of monitoring data, deletion rules, uploads, lists thumbnails, media galleries. 
+
 .. _view-list:
 
 List

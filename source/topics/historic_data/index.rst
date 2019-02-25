@@ -1,3 +1,6 @@
+.. meta::
+   :description: Eagle.io supports the acquisition and storage of up to 20000 records per Data Source per day. Data is  stored in raw format together with optional data quality information. Display and export the data. Big data mining for the environment.
+
 .. _historic-data:
 
 Historic Data

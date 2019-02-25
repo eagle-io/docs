@@ -1,3 +1,6 @@
+.. meta::
+   :description: Processing and logic for monitoring, calculations, decision making. Some examples include: Calculate the average of multiple Parameters. Transform a series using an equation. Generate a series forecast to provide predictive alarming for any type of data set from marine to atmospheric monitoring and management.
+
 .. _processing-and-logic:
 
 Processing and Logic

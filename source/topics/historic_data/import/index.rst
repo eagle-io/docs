@@ -1,3 +1,6 @@
+.. meta::
+   :description: Historic Import is accessible from the Data Source context menu in the Workspaces Tree. You can upload/import historic data from a locally accessible file, into New or Existing Parameters, or update the historic coordinate data for Locations.
+
 .. _historic-data-import:
 
 Import

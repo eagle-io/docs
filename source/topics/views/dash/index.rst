@@ -1,3 +1,6 @@
+.. meta::
+   :description: The dashboard overview allows you to select a pre-defined environmental monitoring dashboard view. If you prefer starting anew, click dashboard and customise away your favourite dashboard view and start collecting data from iot environmental sensors. Automatic tile layout adjustment. 
+
 Dash
 =========
 

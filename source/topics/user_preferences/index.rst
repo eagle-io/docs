@@ -1,3 +1,6 @@
+.. meta::
+   :description: Set your eagle.io account preferences, see what groups and fellow users you are associated with, change login and passwords, timezone, formats and notifications preferences. 
+
 .. _user-preferences:
 
 User Preferences

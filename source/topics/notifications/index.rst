@@ -1,3 +1,6 @@
+.. meta::
+   :description: Notifications are used to inform users and groups of an environmental monitoring alarm via Email, SMS and Voice. Users can personally subscribe to specific Nodes and specify their notification preferences or you can manage notifications on behalf of a user or group, depending on privilege level.
+
 .. _notifications:
 
 Notifications

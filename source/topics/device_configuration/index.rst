@@ -1,3 +1,6 @@
+.. meta::
+   :description: The technical resources and configuration manuals for our partners' data logger hardware. Campbell Scientific, CellVisor, Dataforth, MAQ®20, dataTaker, Spider, Libelium Waspmote, Maxon Intelimax+, OTT netDL, Point Orange 3G, Scout, SensorLog, Sigfox, WaterLog, YDOC
+
 .. _device-configuration:
 
 Device Configuration

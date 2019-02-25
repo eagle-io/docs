@@ -1,3 +1,6 @@
+.. meta::
+   :description: Every interaction (user and system generated) is recorded in the Events log. Use the Events View to quickly audit the system, a user or history of alarms. Filter event types, or gravity. Navigate the environmental data log. Manage your environmental governance system.
+
 .. _view-events:
 
 Events
