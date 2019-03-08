@@ -8,7 +8,7 @@ Sharing and Security
 
 Every interaction with the system is authenticated to ensure the user performing the interaction or operation has permission to do so. 
 
-Eagle.io provides 3 distinct types of user security:
+Eagle.io provides 3 distinct types of user security in additional to anonmyous public access:
 
 | 
 
@@ -40,6 +40,14 @@ See :ref:`Workspace Security <node-configuration-workspace-security>` for full d
 You can restrict user and group access to any Node in the Workspace by opening the corresponding :ref:`Node Security <node-configuration-location-security>` dialog and assigning the *No Access* role.
 
 .. note:: The :ref:`Events View <view-events>` provides an audit trail for all user interactions and system events.
+
+| 
+
+Public Access
+~~~~~~~~~~~~~~~
+You can :ref:`enable public access <node-configuration-dashboard-public-access>` to specific nodes to provide a URL for anonymous public access to the resource. 
+Public access can be enabled on custom charts, dashboards, attachments and parameters. 
+Use the public access link for standalone viewing of the content in a web browser or embed the content in your own website.
 
 .. raw:: latex
 

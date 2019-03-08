@@ -3,6 +3,8 @@ Enabling public access allows anyone to view the node (attachment, chart, dash o
 You can also embed charts and dashboards into your own website with basic HTML. 
 Select `Copy embed HTML` from the URL dropdown menu for a default code snippet you can use (you will need to paste this in to your website).
 
+Use the available options to customize the URL based on your display preferences. These options are transient and you can use multiple variations of the URL at the same time. 
+
 .. raw:: latex
 
     \vspace{-10pt}

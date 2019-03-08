@@ -207,6 +207,8 @@ Security
 
 | 
 
+.. _node-configuration-dashboard-public-access:
+
 Public access
 ``````````````
 .. include:: ../properties_node_public_access.rstx
