@@ -75,6 +75,12 @@ Security
 ~~~~~~~~~~
 .. include:: ../properties_node_security.rstx
 
+| 
+
+Public access
+``````````````
+.. include:: ../properties_node_public_access.rstx
+
 .. raw:: latex
 
     \newpage

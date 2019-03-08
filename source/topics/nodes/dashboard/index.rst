@@ -207,6 +207,12 @@ Security
 
 | 
 
+Public access
+``````````````
+.. include:: ../properties_node_public_access.rstx
+
+| 
+
 Drag and Drop Links
 --------------------
 Nodes can be dragged with a mouse directly from the Workspaces Tree and dropped onto applicable Tiles (indicated with drop-accept and drop-blocked mouse cursor icons).
