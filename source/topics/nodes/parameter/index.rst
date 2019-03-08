@@ -1,3 +1,6 @@
+.. meta::
+   :description: Environmental data can be complex in nature. Parameters are managed by and contained within Data Sources. Parameters store the individual timeseries acquired by its Data Source. There are a few different types of parameters but they all support Monitoring or Controlling of environmental data values.
+
 .. _node-configuration-parameter:
 
 Parameter

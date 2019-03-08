@@ -1,3 +1,6 @@
+.. meta::
+   :description: This tutorial demonstrates how to customise your charts (line types, colors, fill, etc.), how to drag and drop charts overlay. Setting time series intervals, multiple axes, aggregation for real-time, historic and wind rose charts.
+
 Chart Customization
 =====================
 

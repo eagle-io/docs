@@ -1,3 +1,6 @@
+.. meta::
+   :description: As you build with the eagle.io API, take note of the following best practices to ensure you develop safe, reliable and efficient code. API for remote environmental monitoring software and sensor data acquisition.
+
 .. _api-best-practices:
 
 Best Practices

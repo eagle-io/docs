@@ -1,3 +1,7 @@
+
+.. meta::
+   :description: Create a Workspace Tree to organise, configure and manage Nodes. This section provides an overview of the common Workspaces Tree functions. Depending on the Selected Node type and your security permissions, not all options may be available. Environmental monitoring using IoT.
+
 .. _workspaces_tree:
 
 Workspaces Tree

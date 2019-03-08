@@ -1,3 +1,6 @@
+.. meta::
+   :description: Historic table is accessible from the List View toolbar and Node context menus. The most recent data is always displayed first. Scroll down to automatically load older data. The timestamps are always displayed in your preferred timezone and time format.
+
 Table
 =======
 |icon-table| Historic table is accessible from the List View toolbar and Node context menus. The most recent data is always displayed first. Scroll down to automatically load older data. 

@@ -1,3 +1,6 @@
+.. meta::
+   :description: The foundation of your iot environmental monitoring. Workspaces are special container Nodes that can be shared with other users. All other Nodes are created within the Workspace.
+
 .. _node-configuration-workspace:
 
 Workspace

@@ -1,3 +1,6 @@
+.. meta::
+   :description: Historic charts allow for more customization than default Location and Parameter charts. You can create multiple y-axes with fixed or automatic scaling, change the data aggregation and styles of individual parameters, preset the default time range. Historic environmental data, in relative and absolute time.
+
 .. _node-configuration-chart-historic:
 
 Historic

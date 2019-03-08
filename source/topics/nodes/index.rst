@@ -1,3 +1,6 @@
+.. meta::
+   :description: Nodes store all the data and configuration for your environmental monitoring projects. It is a broad term that can refer to Sources, Parameters, Groups, Locations, Workspaces, Dashboards, Attachments.
+
 .. _nodes-and-configuration:
 
 Nodes and Configuration

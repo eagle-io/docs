@@ -1,3 +1,6 @@
+.. meta::
+   :description: Chart view is for reviewing time series data as highly interactive charts. Group data on charts by Location or Parameter type. Zoom, set, toggle and control subviews, parameters, height adjustments. Iot enabled environmental monitoring system for smart cities, air or water all depend on powerful, intuitive chart making
+
 .. _view-chart:
 
 Chart

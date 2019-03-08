@@ -1,3 +1,6 @@
+.. meta::
+   :description: Wind Rose charts show how wind speed and direction are distributed at a particular location. Using a polar coordinate system of gridding, the frequency of winds over a time period is plotted by wind direction, color bands showing speed ranges, longest spoke showing greatest frequency.
+
 .. _node-configuration-chart-windrose:
 
 Wind Rose

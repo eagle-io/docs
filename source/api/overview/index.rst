@@ -1,3 +1,6 @@
+.. meta::
+   :description: Our API is designed to have predictable, resource-oriented URLs and to use HTTP response codes to indicate API errors. We use built-in HTTP features which can be understood by off-the-shelf HTTP clients.
+
 .. _api-overview:
 
 Quick Start

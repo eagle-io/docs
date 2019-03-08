@@ -1,3 +1,6 @@
+.. meta::
+   :description: You can find our latest online support and documentation here. New features, new use cases, new resources for setting up the perfect environmental monitoring system, water, air or geotechnical data mining and visualisation using Eagle.io
+
 eagle.io documentation
 ======================
 

@@ -1,3 +1,6 @@
+.. meta::
+   :description: The HTTP API has been designed to make it easy for developers to interact with eagle.io from a 3rd party application or service. Authorisations, request arguments, data formats, source ID's, HTTP methods and versioning. Restful API's for environmental iot based monitoring.
+
 .. _api:
 
 HTTP API

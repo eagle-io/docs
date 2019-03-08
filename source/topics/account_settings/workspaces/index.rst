@@ -1,3 +1,6 @@
+.. meta::
+	:description: The workspaces section displays a list of all workspaces in the account. You can add, remove or configure workspaces. The usage overview shows a current snapshot of usage for each workspace in the account. The user count does not include the account owner, administrators or account managers.
+
 Workspaces
 ==========
 

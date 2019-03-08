@@ -1,3 +1,6 @@
+.. meta::
+   :description: Attachment Sources have the ability to automatically acquire or receive attachments. Attachment Sources can be created inside Locations only. There is a maximum limit of 150 environmental data files that can be received per Attachment Source per day (1 every 10 minutes). Each file can be up to 100MB in size.
+
 .. _node-configuration-attachmentsource:
 
 Attachment Source

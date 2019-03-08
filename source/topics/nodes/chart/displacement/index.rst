@@ -1,3 +1,6 @@
+.. meta::
+   :description: Displacement charts allow you to visualize vertical or horizontal measurement displacement over time. Typically used for geotechnical monitoring applications.
+
 .. _node-configuration-chart-displacement:
 
 Displacement

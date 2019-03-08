@@ -1,3 +1,6 @@
+.. meta::
+   :description: Frequently asked questions (FAQ) What browsers we support, what charts we support, what are our usage limits. Our SLA and uptime commitments. What cybersecurity and data integrity standards and strategies we follow. We answer your questions about eagle.io and IoT environmental monitoring
+
 Frequently Asked Questions
 ==========================
 

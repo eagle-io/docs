@@ -1,3 +1,6 @@
+.. meta::
+   :description: Third party limitations, insufficient user privileges, browser issues and cache, here's a handy list of the most common troubleshooting resolutions. You can also access one-on-one support from here, links to support forum resources. New features requests, debug logging and reporting.
+
 Troubleshooting
 ===============
 

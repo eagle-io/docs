@@ -1,3 +1,6 @@
+.. meta::
+   :description: This section focuses on data source files for environmental iot monitoring. You will learn in more detail how to set up properties, file types, data sources enabled, different write or merge and overwrite options. Data types, connection and transport options. File content settings and row series formats.
+
 .. _Dropbox: http://dropbox.com
 
 .. _node-configuration-datasource-file:

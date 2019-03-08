@@ -1,3 +1,6 @@
+.. meta::
+   :description: A guided overview to get you set up and started. Start monitoring environmental data in minutes. Connect, configure and control your monitoring fleet from the cloud. Set up a beautiful, powerful, IoT mediated remote environmental monitoring system.
+
 Introducing `eagle.io <https://eagle.io>`_
 ===========================================
 

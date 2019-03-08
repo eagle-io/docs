@@ -1,3 +1,6 @@
+.. meta::
+   :description: Dashboards allow users to create customized views in visually appealing layouts using animated gauges, charts, lists, maps and other graphical controls. User configurable tiles can be linked to Nodes to display your important data in real-time with live updates. Automatically adjusted on mobile
+
 .. _node-configuration-dashboard:
 
 Dashboard

@@ -1,3 +1,6 @@
+.. meta::
+   :description: Processing and logic for monitoring, calculations, decision making. Some examples include: Calculate the average of multiple Parameters. Transform a series using an equation. Generate a series forecast to provide predictive alarming for any type of data set from marine to atmospheric monitoring and management.
+
 .. _processing-and-logic:
 
 Processing and Logic
@@ -9,7 +12,7 @@ Some examples include:
 
 - :ref:`Calculate average of multiple Parameters <example1>`
 - :ref:`Transform a series using an equation <example2>`
-- :ref:`Generate a series forecast to provide predictive alarming <example5>`
+- :ref:`Generate a series forecast to provide predictive alarming <example6>`
 
 Programs are expressed as `JavaScript <http://www.ecma-international.org/ecma-262/5.1/>`_, stored as configuration in Process Nodes, and executed on a schedule or automatically as new data is acquired. Each program can interact with all Nodes in the current Workspace and any associated time-series data.
 
@@ -152,6 +155,25 @@ _________
 .. code-block:: javascript
     :linenos:
 
+    // Assign a bad quality code to value spikes and offset the timestamp by one hour
+    var param = NODE('Param');
+    var output = NUMBER('Output');
+    var q;
+
+    if( v > 999 ) {
+        q = 156;
+    }
+
+    // NOTE: currentTime & currentQuality must be assigned prior to currentValue 
+    output.currentTime = T(param.currentTime).subtract(1,'hours');
+    output.currentQuality = q;
+    output.currentValue = param.currentValue;
+
+.. _example6:
+
+.. code-block:: javascript
+    :linenos:
+
     // Generate a series forecast to provide predictive alarming
     // Coming soon :)
 
@@ -165,16 +187,17 @@ Environment
 Global Variables
 ~~~~~~~~~~~~~~~~
 
-Global variables are references to Nodes that are related to the currently executing process in some way, and can be accessed using the following built-in keywords:
+Global variables are references to Nodes and other values that are related to the currently executing process.
 
 .. table::
     :class: table-fluid
 
     ======================   ============================================================
-    **THIS**                 Currently executing :ref:`Process Node <process-nodes>`
-    **SOURCE**               Data Source of currently executing process
-    **LOCATION**             Location of currently executing process
-    **WORKSPACE**            Workspace of currently executing process
+    **NOW**                  Current timestamp being evaluated by the process
+    **THIS**                 Reference to currently executing :ref:`Process Node <process-nodes>`
+    **SOURCE**               Reference to Data Source of currently executing process
+    **LOCATION**             Reference to Location of currently executing process
+    **WORKSPACE**            Reference to Workspace of currently executing process
     ======================   ============================================================
 
 .. _global-functions:
@@ -182,7 +205,7 @@ Global variables are references to Nodes that are related to the currently execu
 Global Functions
 ~~~~~~~~~~~~~~~~
 
-Global functions can be used to obtain a reference to a Node in your Workspace and are identified using an absolute or relative path argument.
+Global functions can be used to obtain a reference to a Node, authorize access to a Workspace or convert a time expression.
 
 .. table::
     :class: table-fluid
@@ -196,14 +219,15 @@ Global functions can be used to obtain a reference to a Node in your Workspace a
     **AUTH(** *slug*, *api-key* **)**     :ref:`Authorise access to a Workspace <workspace-authorisation>` using an API key
     **T(** *expression* **)**             Convert a time expression to a `Moment.js <https://momentjs.com>`_ timestamp
 
-                                    |
                                           A time expression can be any of the following:
 
-                                          - ISO8601 time string, eg. '2018-08-03T16:27:58+10:00'
+                                          - ISO8601 time string, e.g. '2018-08-03T16:27:58+10:00'
 
                                           - Number of milliseconds since Unix epoch, e.g. 1533277715816
 
                                           - Node time attribute, e.g. **NODE(** 'param' **)**.currentTime
+
+                                          - Current timestamp, e.g. **NOW**
     =================================     ============================================================================
 
 .. _paths:

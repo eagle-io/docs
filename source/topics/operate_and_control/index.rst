@@ -1,3 +1,6 @@
+.. meta::
+   :description: The Operate menu, available from the Node and Content context menus or List View toolbar, provides access to the Acquire, Control and Manage configuration operations. How to configure your iot environmental platform.
+
 .. _operate-and-control:
 
 Operate and Control
