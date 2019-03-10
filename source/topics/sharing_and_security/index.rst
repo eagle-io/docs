@@ -45,7 +45,7 @@ You can restrict user and group access to any Node in the Workspace by opening t
 
 Public Access
 ~~~~~~~~~~~~~~~
-You can :ref:`enable public access <node-configuration-dashboard-public-access>` to specific nodes to provide a URL for anonymous public access to the resource. 
+You can :ref:`enable public access <node-configuration-dashboard-public-access>` on specific nodes to provide a URL for anonymous public access to the resource. 
 Public access can be enabled on custom charts, dashboards, attachments and parameters. 
 Use the public access link for standalone viewing of the content in a web browser or embed the content in your own website.
 
