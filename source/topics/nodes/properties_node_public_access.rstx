@@ -22,4 +22,4 @@ Use the available options to customize the URL based on your display preferences
     .. image:: ../node_public_access.jpg
 
 
-.. note:: If you disable and re-enable the public access feature a new url will be generated and the old url will no longer work.
+.. note:: If you disable and re-enable the public access feature a new url will be generated and the old url will no longer work. This feature is NOT available on *Starter* accounts.
