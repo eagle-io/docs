@@ -1328,6 +1328,21 @@ When adding a new user (profile does not exist) you can optionally include attri
 .. note:: 
     Required API key permission: *Modify*
 
+
+Arguments
+~~~~~~~~~
+
+.. table::
+    :class: table-fluid
+
+    =================   ========================    ======================================================================
+    Argument            Example                     Description
+    =================   ========================    ======================================================================
+    **notify**          TRUE                        *Optional - Default is FALSE*. 
+                                                    Notify users they have been granted workspace access
+    =================   ========================    ======================================================================
+
+
 Request
 ~~~~~~~~
 
@@ -1429,6 +1444,21 @@ Remove a list of users and groups from a Workspace by its **id**. You can use th
 .. note:: 
     Owner and Administrator users can not be removed from an individual workspace. 
     Required API key permission: *Modify*
+
+
+Arguments
+~~~~~~~~~
+
+.. table::
+    :class: table-fluid
+
+    =================   ========================    ======================================================================
+    Argument            Example                     Description
+    =================   ========================    ======================================================================
+    **notify**          TRUE                        *Optional - Default is FALSE*. 
+                                                    Notify users they have been had their workspace access revoked
+    =================   ========================    ======================================================================
+
 
 Request
 ~~~~~~~~
