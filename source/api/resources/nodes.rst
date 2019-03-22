@@ -1456,7 +1456,7 @@ Arguments
     Argument            Example                     Description
     =================   ========================    ======================================================================
     **notify**          TRUE                        *Optional - Default is FALSE*. 
-                                                    Notify users they have been had their workspace access revoked
+                                                    Notify users they have had their workspace access revoked
     =================   ========================    ======================================================================
 
 
