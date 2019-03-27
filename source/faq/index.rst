@@ -272,8 +272,8 @@ Scout
 Meshlium
 	Meshlium devices provide efficient routing of data collected from Waspmote devices in large Libelium sensor networks.
 
-FTP, Email, MQTT
-	Send your data to the cloud via FTP, Email or MQTT.
+FTP/SFTP, Email, MQTT
+	Send your data to the cloud via FTP/SFTP, Email or MQTT.
 
 .. only:: not latex
 
@@ -320,6 +320,7 @@ We support automatic collection via the following transports:
 - Read from `Amazon S3 <https://aws.amazon.com/s3>`_
 - Read from `Dropbox <http://www.dropbox.com>`_
 - Upload to ftp.eagle.io
+- Upload to sftp.eagle.io
 
 
 .. only:: not latex
@@ -357,7 +358,7 @@ Yes, you can create an :ref:`Attachment Source <node-configuration-attachmentsou
 
 We support Email and FTP as the Attachment Source transport. 
 To send via Email, your camera must have in-built support for emailing images/files with custom subject text.
-For uploads via FTP you can simply enter the credentials provided on Source creation.
+For uploads via FTP/SFTP you can simply enter the credentials provided on Source creation.
 
 .. only:: not latex
 

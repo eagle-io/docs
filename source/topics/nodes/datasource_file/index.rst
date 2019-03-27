@@ -257,13 +257,23 @@ Transport type
 
     *Upload to ftp.eagle.io*
 
-        Ftp your files to ftp.eagle.io using the auto-generated user name exactly as shown. 
+        FTP your files to ftp.eagle.io using the auto-generated user name exactly as shown. 
         Password is optional. 
         Use Tcp port 21 for standard Ftp and Tcp port 990 for Implicit SSL. 
 
         **Note**: Only one concurrent ftp connection is allowed per Source. The maximum accepted size per file is 100MB.
 
-    
+
+.. _transport-sftp-upload:
+
+    *Upload to sftp.eagle.io*
+
+        SFTP your files to sftp.eagle.io using the auto-generated user name exactly as shown. 
+        Password is optional. 
+        Use Tcp port 22. 
+
+        **Note**: Only one concurrent sftp connection is allowed per Source. The maximum accepted size per file is 100MB.
+
 
 Read mode
     Select how data should be read from the file:
@@ -361,7 +371,7 @@ Location Coordinates
 
 Modify file match
     |icon-file-search| Modify the file configuration and matching criteria and select a sample file to use for configuring series.
-    Some transport types such as Email or FTP Server require you to upload a local sample file or alternatively *Skip or Reset sample file and retrieve on next acquistion*. The *file name match* should uniquely match the name of uploaded file(s). For example use *.csv* to match all files with a csv extension (case-insensitive). Enable the *Match using regular expression* option for advanced matching. 
+    Some transport types such as Email or FTP/SFTP Server require you to upload a local sample file or alternatively *Skip or Reset sample file and retrieve on next acquistion*. The *file name match* should uniquely match the name of uploaded file(s). For example use *.csv* to match all files with a csv extension (case-insensitive). Enable the *Match using regular expression* option for advanced matching. 
 
 Configure series
     |icon-table| Setup or Update the parser configuration for the selected file. See :ref:`Text Parser Configuration <text-parser>` for full details. If a sample data file has not been uploaded or acquired the Configure series menu item will be disabled.

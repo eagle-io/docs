@@ -89,11 +89,20 @@ Transport type
 
 	*Upload to ftp.eagle.io*
 
-		Ftp your files to ftp.eagle.io using the auto-generated user name exactly as shown. 
+		FTP your files to ftp.eagle.io using the auto-generated user name exactly as shown. 
 		Password is optional. 
 		Use Tcp port 21 for standard Ftp and Tcp port 990 for implicit SSL.
 
 		**Note**: Only one concurrent ftp connection is allowed per Source. The maximum accepted size per file is 100MB.
+
+    *Upload to sftp.eagle.io*
+
+        SFTP your files to sftp.eagle.io using the auto-generated user name exactly as shown. 
+        Password is optional. 
+        Use Tcp port 22.
+
+        **Note**: Only one concurrent sftp connection is allowed per Source. The maximum accepted size per file is 100MB.
+
 
 Email address
 	Email your attachments to this address. Click *change* to generate a new email address.
