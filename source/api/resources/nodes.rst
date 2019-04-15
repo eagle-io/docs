@@ -90,6 +90,8 @@ Consumers of Nodes should tolerate the addition of new attributes and variance i
     **statesType**                      String      Yes         States evaluation mode:
                                                                 *[RANGE, DISCRETE]*
     **units**                           String      Yes         Units to display with value
+    **updatedTime**                     Time                    :ref:`ISO8601<time-format-iso8601>` timestamp the historic data was 
+                                                                last updated.
     ================================    =========   =========   ===========================================================================
 
 .. table::
