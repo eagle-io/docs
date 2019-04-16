@@ -31,7 +31,7 @@ The following configuration options are available:
 Type
     **Local KML** allows you to upload a file from your computer.
     
-    **Remote KML** should be used when the file is located on a publically accessible web server.
+    **Remote KML** should be used when the file is located on a publically accessible web server. Remote KML files will be automatically reloaded every 5 minutes.
 
 Select file / File URL
     Select a file to upload or enter the full HTTP(S) URL to the file.
@@ -74,6 +74,7 @@ Drag and drop layers in the list (or use the dropdown menu) to change their disp
     - Maximum uncompressed KML file size: 10MB
     - Maximum number of Network Links: 10
     - Maximum number of total document-wide features: 1,000
+    - Remote layers will be automatically refreshed every 5 minutes
 
     Refer to the `google developer documentation <https://developers.google.com/maps/documentation/javascript/kmllayer?csw=1#restrictions>`_ for a complete list of restrictions and supported KML elements.
 

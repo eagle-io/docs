@@ -79,7 +79,10 @@ Example KML layer displayed on map:
 	.. image:: map_controls_layers_example.jpg
 		:scale: 100 %
 
-.. note:: A maximum of 10 unique layers can be shown on the map at any one time. Additional layers can be shown only after another layer has been hidden.
+.. note:: 
+	A maximum of 10 unique layers can be shown on the map at any one time. 
+	Additional layers can be shown only after another layer has been hidden. 
+	Remote layers are automatically refreshed every 5 minutes. 
 
 .. only:: not latex
 
