@@ -154,6 +154,7 @@ Data
 ~~~~~~~~~~~~
 
 The data attribute contains an array of records. Each record contains a 'ts' :ref:`ISO8601<time-format-iso8601>` timestamp and an 'f' fields object which can contain value and quality data for one or more columns (using column index as key).
+The records should be sorted chronologically by timestamp. 
 
 .. table::
     :class: table-fluid
@@ -169,7 +170,9 @@ The data attribute contains an array of records. Each record contains a 'ts' :re
     | **q**             100                             *Optional*. 
                                                         :ref:`Quality <historic-quality>` code associated with data value for this column
     | **a**             site maintenance                *Optional*. 
-                                                        :ref:`Annotation <historic-annotations>` text associated with data point or timestamp
+                                                        :ref:`Annotation <historic-annotations>` text associated with data point
+    | **$delete**       1                               *Optional*. 
+                                                        Special instruction to remove an existing record with matching timestamp
     =================   ============================    ======================================================================================
 
 ::
@@ -186,6 +189,10 @@ The data attribute contains an array of records. Each record contains a 'ts' :re
         {
             "ts": "<ts>",
             "f": { "0": {"v": 12, "q": 100}, "1": {"v": 55, "q": 100} }
+        },
+        {
+            "ts": "<ts>",
+            "f": { "0": {"$delete": 1} }
         }
     ]
 
