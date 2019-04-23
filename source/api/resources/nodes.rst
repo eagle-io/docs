@@ -1766,8 +1766,9 @@ Response
 
 Update node historic data with a single value
 ----------------------------------------------
-Update historic data for a node with a single *value* with optional *quality* and *timestamp*. You can use the automatically assigned *_id* or your own *customId* prepended with '@'.
-If *timestamp* is omitted the time the request was made will be used. Existing values with the same timestamp will be overwritten.
+Update historic data for a node with a single record. You can use the automatically assigned *_id* or your own *customId* prepended with '@'.
+You must specify at least one record attribute: *value*, *quality*, *annotation*. 
+If *timestamp* is omitted the time the request was made will be used. Existing records with the same timestamp will be overwritten.
 
 .. note:: 
     Only available for Location and Parameter nodes. 
@@ -1785,8 +1786,9 @@ Request
 
     {
         "value": 10,
-        "quality": 192,
-        "timestamp": "2015-01-09T23:38:00Z"
+        "quality": 156,
+        "annotation": "maintenance performed at site",
+        "timestamp": "2019-01-09T23:38:00Z"
     }
 
 Response
