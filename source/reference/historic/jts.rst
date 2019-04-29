@@ -153,7 +153,7 @@ The header *columns* object contains *column index* keys which map to the corres
 Data
 ~~~~~~~~~~~~
 
-The data attribute contains an array of records. Each record contains a 'ts' :ref:`ISO8601<time-format-iso8601>` timestamp and an 'f' fields object which can contain value and quality data for one or more columns (using column index as key).
+The data attribute contains an array of records. Each record contains a 'ts' :ref:`ISO8601<time-format-iso8601>` timestamp and an 'f' fields object which can contain value, quality and annotation attributes for one or more columns (using column index as key).
 The records should be sorted chronologically by timestamp. 
 
 .. table::
@@ -171,8 +171,6 @@ The records should be sorted chronologically by timestamp.
                                                         :ref:`Quality <historic-quality>` code associated with data value for this column
     | **a**             site maintenance                *Optional*. 
                                                         :ref:`Annotation <historic-annotations>` text associated with data point
-    | **$delete**       1                               *Optional*. 
-                                                        Special instruction to remove an existing record with matching timestamp
     =================   ============================    ======================================================================================
 
 ::
@@ -189,10 +187,6 @@ The records should be sorted chronologically by timestamp.
         {
             "ts": "<ts>",
             "f": { "0": {"v": 12, "q": 100}, "1": {"v": 55, "q": 100} }
-        },
-        {
-            "ts": "<ts>",
-            "f": { "0": {"$delete": 1} }
         }
     ]
 
