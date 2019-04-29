@@ -153,7 +153,8 @@ The header *columns* object contains *column index* keys which map to the corres
 Data
 ~~~~~~~~~~~~
 
-The data attribute contains an array of records. Each record contains a 'ts' :ref:`ISO8601<time-format-iso8601>` timestamp and an 'f' fields object which can contain value and quality data for one or more columns (using column index as key).
+The data attribute contains an array of records. Each record contains a 'ts' :ref:`ISO8601<time-format-iso8601>` timestamp and an 'f' fields object which can contain value, quality and annotation attributes for one or more columns (using column index as key).
+The records should be sorted chronologically by timestamp. 
 
 .. table::
     :class: table-fluid
@@ -169,7 +170,7 @@ The data attribute contains an array of records. Each record contains a 'ts' :re
     | **q**             100                             *Optional*. 
                                                         :ref:`Quality <historic-quality>` code associated with data value for this column
     | **a**             site maintenance                *Optional*. 
-                                                        :ref:`Annotation <historic-annotations>` text associated with data point or timestamp
+                                                        :ref:`Annotation <historic-annotations>` text associated with data point
     =================   ============================    ======================================================================================
 
 ::

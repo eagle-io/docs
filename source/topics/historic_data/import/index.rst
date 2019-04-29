@@ -70,6 +70,10 @@ Write mode
         
         Remove all existing historic data within the range of data being imported and replace with imported data.
 
+    [API: MERGE_UPDATE_EXISTING]
+    
+        Merge the imported data into the existing historic data and and update specific record attributes when timestamps match.
+
     [API: MERGE_FAIL_ON_EXISTING]
 
         Merge the imported data into the existing historic data but fail if timestamps match.
