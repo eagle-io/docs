@@ -133,9 +133,9 @@ Transport type
             Password for the associated user account (or leave blank for none).
 
 
-.. _transport-website:
+.. _transport-http-download:
 
-    *Download from Web site*
+    *Download via HTTP*
 
         No configuration required.
 
@@ -158,6 +158,34 @@ Transport type
         Outputs a URL similar to
         ::
             http://data.com/?start=2015.01.01&end=2017.12.01
+
+.. _transport-http-upload:
+
+    *Upload via HTTP*
+
+        HTTP data can be submitted to the auto-generated URL in three forms:
+
+        **URL parameters**
+        ::
+            GET https://upload.eagle.io/source/foo-bar-cheese?Param1=23.5&Param2=457.9
+
+        **CSV body**
+        ::
+            POST https://upload.eagle.io/source/foo-bar-cheese
+
+            RecvTime,Param1,Param2
+            2019-05-07 00:00:00,23.5,457.9
+
+        **JSON body**
+        ::
+            POST https://upload.eagle.io/source/foo-bar-cheese
+            Content-Type: application/json; charset=utf-8
+
+            {
+                "Param1": 23.5,
+                "Param2": 457.9
+            }
+        
 
 .. _transport-email:
 
