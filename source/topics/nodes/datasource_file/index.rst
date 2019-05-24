@@ -133,8 +133,7 @@ Transport type
             Password for the associated user account (or leave blank for none).
 
 
-.. _transport-website:
-.. _transport-download-http:
+.. _transport-http-download:
 
     *Download via HTTP*
 
@@ -160,17 +159,48 @@ Transport type
         ::
             http://data.com/?start=2015.01.01&end=2017.12.01
 
-.. _transport-upload-http:
+
+.. _transport-http-upload:
 
     *Upload via HTTP*
 
-        Upload your files via HTTP POST to the automatically generated URL. 
-        Password is optional.
+        HTTP data can be submitted to the automatically generated URL. Password is optional.
 
         IP whitelist
             You can optionally restrict incoming connections to this source to a list of approved IP addresses specified using CIDR notation. eg. 192.168.7.52/32
             Leave empty for no IP address restrictions.
 
+
+        The three supported upload formats:
+
+        **URL parameters**
+        ::
+
+            GET https://upload.eagle.io/source/foo-bar-cheese?Param1=23.5&Param2=457.9
+
+        **CSV body**
+        ::
+
+            POST https://upload.eagle.io/source/foo-bar-cheese
+
+        ::
+
+            RecvTime,Param1,Param2
+            2019-05-07 00:00:00,23.5,457.9
+
+        **JSON body**
+        ::
+
+            POST https://upload.eagle.io/source/foo-bar-cheese
+            Content-Type: application/json; charset=utf-8
+
+        ::
+        
+            {
+                "Param1": 23.5,
+                "Param2": 457.9
+            }
+        
 
 .. _transport-email:
 
