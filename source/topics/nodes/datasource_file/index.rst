@@ -134,8 +134,9 @@ Transport type
 
 
 .. _transport-website:
+.. _transport-download-http:
 
-    *Download from Web site*
+    *Download via HTTP*
 
         No configuration required.
 
@@ -158,6 +159,18 @@ Transport type
         Outputs a URL similar to
         ::
             http://data.com/?start=2015.01.01&end=2017.12.01
+
+.. _transport-upload-http:
+
+    *Upload via HTTP*
+
+        Upload your files via HTTP POST to the automatically generated URL. 
+        Password is optional.
+
+        IP whitelist
+            You can optionally restrict incoming connections to this source to a list of approved IP addresses specified using CIDR notation. eg. 192.168.7.52/32
+            Leave empty for no IP address restrictions.
+
 
 .. _transport-email:
 
@@ -202,6 +215,8 @@ Transport type
             2.7183,3.1416,6.2832
 
 
+.. _transport-mqtt:
+
     *Publish to mqtt.eagle.io*
 
         Publish data with MQTT using the following settings:
@@ -215,6 +230,12 @@ Transport type
         Topic
             Use the auto-generated topic exactly as shown. eg. *io/eagle/source/fruit-honey-jacket*
 
+        MQTT Password 
+            Optional password (leave blank for none).
+
+        IP whitelist
+            You can optionally restrict incoming connections to this source to a list of approved IP addresses specified using CIDR notation. eg. 192.168.7.52/32
+            Leave empty for no IP address restrictions.
 
 .. _transport-s3:
 
@@ -261,6 +282,10 @@ Transport type
         Password is optional. 
         Use Tcp port 21 for standard Ftp and Tcp port 990 for Implicit SSL. 
 
+        IP whitelist
+            You can optionally restrict incoming connections to this source to a list of approved IP addresses specified using CIDR notation. eg. 192.168.7.52/32
+            Leave empty for no IP address restrictions.
+
         **Note**: Only one concurrent ftp connection is allowed per Source. The maximum accepted size per file is 100MB.
 
 
@@ -271,6 +296,10 @@ Transport type
         SFTP your files to sftp.eagle.io using the auto-generated user name exactly as shown. 
         Password is optional. 
         Use Tcp port 22. 
+
+        IP whitelist
+            You can optionally restrict incoming connections to this source to a list of approved IP addresses specified using CIDR notation. eg. 192.168.7.52/32
+            Leave empty for no IP address restrictions.
 
         **Note**: Only one concurrent sftp connection is allowed per Source. The maximum accepted size per file is 100MB.
 

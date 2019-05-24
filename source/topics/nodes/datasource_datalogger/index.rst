@@ -156,6 +156,20 @@ Transport type
 
             You can also assign any valid IMEI number from a modem not already assigned to a Source.
 
+    *Upload to ftp.eagle.io*
+
+        The OTT netDL range of loggers use FTP to upload files to ftp.eagle.io. 
+        When configuring the logger use the auto-generated user name exactly as shown. 
+        Password is optional. 
+        Use Tcp port 21 for standard Ftp and Tcp port 990 for Implicit SSL. 
+
+        IP whitelist
+            You can optionally restrict incoming connections to this source to a list of approved IP addresses specified using CIDR notation. eg. 192.168.7.52/32
+            Leave empty for no IP address restrictions.
+
+        **Note**: Only one concurrent ftp connection is allowed per Source. The maximum accepted size per file is 100MB.
+
+
     *Scout*
 
         Scout should be used with a *Scout modem* to enable all the device smart features.
