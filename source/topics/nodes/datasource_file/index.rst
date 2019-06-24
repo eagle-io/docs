@@ -173,22 +173,22 @@ Transport type
 
         The three supported upload formats:
 
-        **URL parameters**
-        ::
-
-            GET https://upload.eagle.io/source/foo-bar-cheese?Param1=23.5&Param2=457.9
-
-        **CSV body**
+        **CSV body** (Multiple records)
         ::
 
             POST https://upload.eagle.io/source/foo-bar-cheese
 
         ::
 
-            RecvTime,Param1,Param2
+            Timestamp,Param1,Param2
             2019-05-07 00:00:00,23.5,457.9
 
-        **JSON body**
+        **URL parameters** (Single record only)
+        ::
+
+            GET https://upload.eagle.io/source/foo-bar-cheese?Param1=23.5&Param2=457.9
+
+        **JSON body** (Single record only)
         ::
 
             POST https://upload.eagle.io/source/foo-bar-cheese
@@ -197,10 +197,12 @@ Transport type
         ::
         
             {
+                "Timestamp" : "2019-05-01 17:55:00"
                 "Param1": 23.5,
                 "Param2": 457.9
             }
-        
+
+        **Note**: Please consider using the :ref:`API <api>` for more options uploading via HTTP.
 
 .. _transport-email:
 
