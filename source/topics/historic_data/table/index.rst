@@ -301,9 +301,9 @@ To remove an annotation clear the text in the annotation entry dialog or right-c
 
 | 
 
-Remove record
+Delete record
 ``````````````
-|icon-remove| The remove operation deletes the selected records from the historic dataset.
+|icon-remove| The delete operation permanently removes the selected records from the historic dataset.
 
 | 
 
