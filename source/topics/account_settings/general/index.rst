@@ -115,6 +115,9 @@ Source quality
 Quality code
 	Quality code to apply to the data for display and export. You can use the same Code as the Source or specify a custom code. Must be numeric.
 
+Color
+    Select a color to be assigned for this quality for display with current and historic data.
+
 Refer to the :ref:`Quality reference <historic-quality>` for further details.
 
 .. note::

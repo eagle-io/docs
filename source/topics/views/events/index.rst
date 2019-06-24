@@ -107,11 +107,15 @@ By default events will be displayed for the Selected Node and all Nodes it conta
 
 |icon-select-all| All
 
+|icon-users| Account
+
 |icon-workspace| Workspace
 
 |icon-group| Group
 
 |icon-location| Location
+
+|icon-chart| Chart
 
 |icon-dash| Dashboard
 

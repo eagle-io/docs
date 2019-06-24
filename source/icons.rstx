@@ -35,9 +35,11 @@
 
 .. |icon-dash-tile| image:: /_static/icons/dash-tile.*
 
+.. |icon-datasource| image:: /_static/icons/datasource-closed.*
+
 .. |icon-datasource-acquire| image:: /_static/icons/datasource-acquire.*
 
-.. |icon-datasource| image:: /_static/icons/datasource-closed.*
+.. |icon-datasource-processor| image:: /_static/icons/datasource-processor-closed.*
 
 .. |icon-debug| image:: /_static/icons/debug.*
 
@@ -89,6 +91,8 @@
 
 .. |icon-map| image:: /_static/icons/map.*
 
+.. |icon-menu| image:: /_static/icons/menu.*
+
 .. |icon-message| image:: /_static/icons/message.*
 
 .. |icon-move| image:: /_static/icons/move.*
@@ -96,6 +100,8 @@
 .. |icon-navigate| image:: /_static/icons/navigate.*
 
 .. |icon-notification| image:: /_static/icons/notification.*
+
+.. |icon-offset| image:: /_static/icons/offset.*
 
 .. |icon-operate| image:: /_static/icons/operate.*
 
@@ -119,13 +125,27 @@
 
 .. |icon-point-time| image:: /_static/icons/point-time.*
 
+.. |icon-point-time-process| image:: /_static/icons/point-time-process.*
+
+.. |icon-point-number-discrete-process| image:: /_static/icons/point-number-discrete-process.*
+
+.. |icon-point-number-range-process| image:: /_static/icons/point-number-range-process.*
+
+.. |icon-point-text-process| image:: /_static/icons/point-text-process.*
+
+.. |icon-print| image:: /_static/icons/print.*
+
 .. |icon-properties| image:: /_static/icons/properties.*
+
+.. |icon-quality| image:: /_static/icons/quality.*
 
 .. |icon-remove| image:: /_static/icons/remove.*
 
 .. |icon-rename| image:: /_static/icons/rename.*
 
 .. |icon-roles| image:: /_static/icons/roles.*
+
+.. |icon-selection| image:: /_static/icons/selection.*
 
 .. |icon-screen| image:: /_static/icons/screen.*
 
@@ -147,6 +167,8 @@
 
 .. |icon-template| image:: /_static/icons/template-closed.*
 
+.. |icon-undo| image:: /_static/icons/undo.*
+
 .. |icon-unlocked| image:: /_static/icons/unlocked.*
 
 .. |icon-upload| image:: /_static/icons/upload.*
@@ -161,12 +183,6 @@
 
 .. |icon-workspace-closed| image:: /_static/icons/workspace-closed.*
 
-.. |icon-point-time-process| image:: /_static/icons/point-time-process.*
+.. |icon-zoom-in| image:: /_static/icons/zoom-in.*
 
-.. |icon-datasource-processor| image:: /_static/icons/datasource-processor-closed.*
-
-.. |icon-point-number-discrete-process| image:: /_static/icons/point-number-discrete-process.*
-
-.. |icon-point-number-range-process| image:: /_static/icons/point-number-range-process.*
-
-.. |icon-point-text-process| image:: /_static/icons/point-text-process.*
+.. |icon-zoom-out| image:: /_static/icons/zoom-out.*

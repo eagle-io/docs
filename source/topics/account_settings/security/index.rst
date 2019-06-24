@@ -116,23 +116,26 @@ Export data
 Send messages
 	Send messages to users of the Workspace.
 
-Subscribe notifications
-	Subscribe to Nodes and receive Email and SMS notifications.
-
-Manage notifications
-	Manage user notification subscriptions on behalf of other users.
-
 Acknowledge alarms
 	Acknowledge alarms with or without comment.
 
 Edit states & alarms
 	Configure Node states and alarms, or Clear alarms.
 
+Edit quality & annotations
+	Assign quality and annotations to timeseries records.
+
 Edit data
-	Modify timeseries data values, quality and annotations.
+	Modify or remove timeseries record values.
 
 Operate
 	User can Acquire and Control Datasources and Parameters.
+
+Subscribe notifications
+	Subscribe to Nodes and receive Email and SMS notifications.
+
+Manage notifications
+	Manage user notification subscriptions on behalf of other users.
 
 Configure
 	Create, Modify & Delete Nodes and associated configuration or Upload Attachments.
