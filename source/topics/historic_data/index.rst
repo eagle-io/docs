@@ -20,13 +20,11 @@ Exceeding the limit will trigger an :ref:`Overload Alarm <overload-alarm>` on th
 
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
    table/index
    chart/index
    export/index
    import/index
-
-
 
 | 
