@@ -15,7 +15,7 @@ Records can be modified individually or as a selection including:
 	Record values can be adjusted to remove spikes or apply offsets. 
 
 |icon-quality| Quality 
-	:ref:`Quality codes <historic-quality>` can be assigned to verify data or :ref:`filter <historic-chart-toolbar-filters>` records from display. 
+	:ref:`Quality codes <historic-quality>` can be assigned to validate data or :ref:`filter <historic-chart-toolbar-filters>` records from display. 
 
 |icon-info| Annotation
 	:ref:`Annotations <historic-annotations>` can be added to provide context to specific events.
