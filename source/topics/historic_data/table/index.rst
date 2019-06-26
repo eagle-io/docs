@@ -247,7 +247,7 @@ You can only assign :ref:`quality codes <historic-quality>` that have been pre-c
 
 Set annotation
 ```````````````
-|icon-info| To set an annotation for a single record either change to *annotate mode* from the edit toolbar and click on a cell 
+|icon-info| To set an :ref:`annotation <historic-annotations>` for a single record either change to *annotate mode* from the edit toolbar and click on a cell 
 or right-click on a cell and select *annotate* from the context menu. 
 
 Annotations can be set on multiple cells at once by first selecting the cells then selecting *annotate* from the context menu.

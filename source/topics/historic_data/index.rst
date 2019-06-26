@@ -13,7 +13,7 @@ or use :ref:`processing and logic <processing-and-logic>` for advanced statistic
 
 Use the eagle.io :ref:`HTTP API <api>` to automate importing or extracting data.
 
-**Data editing** can be performed in both :ref:`historic table <historic-table-editing>` and :ref:`historic chart <historic-chart-editing>` formats.
+:ref:`Data editing <historic-data-editing>` can be performed in both :ref:`historic table <historic-table-editing>` and :ref:`historic chart <historic-chart-editing>` formats.
 
 Eagle.io supports the acquisition and storage of up to **20000 records per** :ref:`Data Source <node-configuration-datasource-datalogger>` **per day**. 
 Exceeding the limit will trigger an :ref:`Overload Alarm <overload-alarm>` on the Source. Refer to Historic Data :ref:`Limits <historic-limits>` for more information.
@@ -22,9 +22,11 @@ Exceeding the limit will trigger an :ref:`Overload Alarm <overload-alarm>` on th
 .. toctree::
    :maxdepth: 2
 
+   editing/index
    table/index
    chart/index
    export/index
    import/index
+   
 
 | 

@@ -317,7 +317,7 @@ You can only assign :ref:`quality codes <historic-quality>` that have been pre-c
 
 Set annotation
 ```````````````
-|icon-info| To set an annotation for a single record either change to *annotate mode* from the edit toolbar and click on a data point 
+|icon-info| To set an :ref:`annotation <historic-annotations>` for a single record either change to *annotate mode* from the edit toolbar and click on a data point 
 or right-click on a data point and select *annotate* from the context menu. 
 
 Annotations can be set on multiple data points at once by first selecting the data point then selecting *annotate* from the context menu.
