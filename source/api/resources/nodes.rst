@@ -788,10 +788,11 @@ Response
 Clone a node or create instance from template
 ----------------------------------------------
 Clone a node or create an :ref:`instance <node-configuration-template-instances>` from a :ref:`template <node-configuration-template>` by its *id*. You can use the automatically assigned *_id* or your own *customId* prepended with '@'. 
-You must specify a valid *parentId* as the destination for the clone/create operation. Optionally include *name* and *metadata* to be assigned to the newly created node.
+
+When the node being cloned is not a Workspace you must specify a valid *parentId* as the destination for the clone/create operation. Optionally include *name* and *metadata* to be assigned to the newly created node.
 
 .. note:: 
-    Not available for TRIAL accounts. Workspace cloning not currently supported. Required API key permission: *Modify*. 
+    Not available for TRIAL accounts. Required API key permission: *Modify*. Cloning a workspace requires the API key to have 'All workspaces' access level.
 
 Arguments
 ~~~~~~~~~
