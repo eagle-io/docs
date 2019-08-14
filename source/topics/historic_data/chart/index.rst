@@ -44,6 +44,9 @@ Toolbar
 |icon-point-number-range| Toggle parameter visibility
     Click the parameter icon to quickly toggle the visibility of all parameters. Click parameters in the chart legend to toggle the visibility of individual parameters.
 
+|icon-select-all| Toggle parameter editing
+    After toggling :ref:`data editing <historic-chart-editing>` mode, the toggle parameter editing button is shown. Click this button to quickly select/deselect all editable parameters for editing.
+
 .. _historic-chart-toolbar-filters: 
 
 |icon-filter| Filters
@@ -155,7 +158,7 @@ Data editing can also be performed in :ref:`tabular <historic-table-editing>` fo
     :ref:`Limits <historic-limits-editing>` apply when editing historic data. 
 
 The chart legend automatically updates with checkboxes next to parameters than can be edited. 
-Only the first parameter is initially checked for editing. Check additional parameters to edit concurrently. 
+Only the first parameter is initially checked for editing. Check additional parameters to edit concurrently or click the *Toggle parameter editing* toolbar button to quickly select/deselect all editable parameters. 
 
 .. only:: not latex
 
