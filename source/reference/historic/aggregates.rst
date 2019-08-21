@@ -24,9 +24,9 @@ The following aggregates are available depending on the :ref:`Display type <node
 +--------------+-------+-------+
 | TOTAL        | x     |       |
 +--------------+-------+-------+
-| MINIMUM      | x     |       |
+| MIN          | x     |       |
 +--------------+-------+-------+
-| MAXIMUM      | x     |       |
+| MAX          | x     |       |
 +--------------+-------+-------+
 | RANGE        | x     |       |
 +--------------+-------+-------+
@@ -91,16 +91,16 @@ The total aggregate adds up all the values of all good raw values for each inter
 
     |
 
-MINIMUM
--------
+MIN
+----
 The minimum aggregate retrieves the minimum good raw value within the interval.
 
 .. only:: not latex
 
     |
 
-MAXIMUM
--------
+MAX
+----
 The maximum aggregate retrieves the maximum good raw value within the interval.
 
 .. only:: not latex
