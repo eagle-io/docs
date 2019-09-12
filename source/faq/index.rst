@@ -360,13 +360,7 @@ We support Email and FTP as the Attachment Source transport.
 To send via Email, your camera must have in-built support for emailing images/files with custom subject text.
 For uploads via FTP/SFTP you can simply enter the credentials provided on Source creation.
 
-.. only:: not latex
-
-	| 
-
-Do you support live streaming video?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-No. However, we do intend to add support for live streaming video with optional PTZ control (Pan, Tilt, Zoom) in the future.
+Note - live streaming video is not directly supported.
 
 .. only:: not latex
 
