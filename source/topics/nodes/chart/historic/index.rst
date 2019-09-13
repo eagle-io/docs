@@ -5,7 +5,7 @@
 
 Historic
 ===============
-Historic charts allow for more customization then the default *Location* and *Parameter* charts available in :ref:`Chart View <view-chart>`.
+Historic charts allow for more customization over the default *Location* and *Parameter* charts available in :ref:`Chart View <view-chart>`.
 You can create multiple y-axes with fixed or automatic scaling, change the data aggregation and styles of individual parameters and preset the default time range.
 
 .. raw:: latex
@@ -24,11 +24,32 @@ You can create multiple y-axes with fixed or automatic scaling, change the data 
     | 
     
     .. image:: chart_historic_example.jpg
-        :scale: 80 %
+        :scale: 100 %
 
 .. only:: not latex
 
     |
+
+You can customize the chart to visually indicate assigned :ref:`quality codes <historic-quality>` via associated quality colors. Refer to *Quality style* in :ref:`Parameter chart configuration <node-configuration-parameter-chart>`.
+
+.. only:: not latex
+
+    .. image:: chart_historic_quality.jpg
+        :scale: 50 %
+
+    | 
+
+.. only:: latex
+    
+    | 
+    
+    .. image:: chart_historic_quality.jpg
+        :scale: 100 %
+
+.. only:: not latex
+
+    |
+
 
 Properties
 ----------

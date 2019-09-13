@@ -106,11 +106,14 @@ Display type
 
     *State* can be used for digital or discrete data and displays the state associated with the value (rather than the value).
 
-Multiplier
-    Multiplier is applied to raw data for state evaluation and display. Note: Multiplier changes will be applied to all stored historic data.
+Transform
+    Optionally apply a Multiplier/Offset or Equation to the stored historic data for display, notifications and alarms.
 
-Offset
-    Value added to raw data for state evaluation and display. Note: Offset changes will be applied to all stored historic data. Multiplier is always applied first.
+    *Multiplier* is applied to raw data for state evaluation and display.
+
+    *Offset* is a value applied to raw data for state evaluation and display. Note: Multiplier is always applied before offset.
+
+    *Equation* can be used to apply an advanced mathematical transformation of the value.
 
 Units
     The units (suffix) to be displayed with the value or state.
@@ -339,7 +342,7 @@ Select customization options for chart appearance.
 
 .. only:: not latex
         
-    .. image:: parameter_chart_customise.png
+    .. image:: parameter_chart_customise.jpg
         :scale: 50 %
 
     | 
@@ -348,7 +351,7 @@ Select customization options for chart appearance.
 
     | 
     
-    .. image:: parameter_chart_customise.png
+    .. image:: parameter_chart_customise.jpg
 
 *Settings of Interest*
 
@@ -366,6 +369,9 @@ Column placement
 
 Marker size
     Data point markers are hidden by default (shown on hover), but can be set to always display by specifying a size between 1-6 (small-large).
+
+Quality style
+    Select how quality colors are displayed on the chart. By default chart markers will only show quality color on hover.
 
 State thresholds
     Select which State thresholds should be displayed on the chart:

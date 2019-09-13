@@ -95,6 +95,11 @@ Arguments
     | **interval**              3H                          *Optional*. 
                                                             :ref:`OPC Interval <relative-time>` required for aggregation.
 
+    | **intervalInclude**       PARTIAL                     *Optional - Default is PARTIAL*. 
+                                                            COMPLETE will include aggregated values for complete intervals
+                                                            only. PARTIAL will also include values for non-complete 
+                                                            intervals: *[PARTIAL, COMPLETE]*
+
     | **baselineType**          RELATIVE                    *Optional - Default is ABSOLUTE*. 
                                                             Absolute will return data point values unmodified. Relative will 
                                                             subtract the first data point value from all subsequent data 
@@ -110,7 +115,7 @@ Include individual parameter arguments in parentheses with key/value separated b
 
 Example with optional parameter arguments::
 
-    params=541a5a129bc9b4035f906d71(aggregate:AVERAGE;baseTime:D;interval:3H),@sensor_254,@sensor_255
+    params=541a5a129bc9b4035f906d71(aggregate:AVERAGE;baseTime:D;interval:3H),@sensor_254
 
 
 Request

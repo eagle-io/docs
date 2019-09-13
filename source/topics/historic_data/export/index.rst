@@ -1,6 +1,8 @@
 .. meta::
    :description: Historic export is accessible from the List View toolbar and Node context menus. Exporting historic data requires the export data permission. The export process runs in the background so you can continue your work (including triggering additional exports). You will be notified via Messages upon completion. 
 
+.. _historic-export:
+
 Export
 ======
 
@@ -107,7 +109,10 @@ Annotations
 
 | 
 
-.. note:: By default only the first 15 parameters will be selected for export. Use the *Parameter selection* panel accessible via the arrow on the right to refine your selection and change how the data should be exported, including any aggregate calculations to be applied.
+Parameter selection
+--------------------
+The historic export dialog will only display the first 15 selected parameters by default. 
+Use the *Parameter selection* panel accessible via the arrow on the right to refine your selection and change how the data should be exported, including any aggregate calculations to be applied.
 
 .. raw:: latex
 
