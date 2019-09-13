@@ -228,6 +228,7 @@ Global functions can be used to obtain a reference to a Node, authorize access t
                                           - Node time attribute, e.g. **NODE(** 'param' **)**.currentTime
 
                                           - Current timestamp, e.g. **NOW**
+    **Q(** *name* **)**                   Convert a quality name to a quality code
     =================================     ============================================================================
 
 .. _paths:
