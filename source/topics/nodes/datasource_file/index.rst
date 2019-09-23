@@ -164,43 +164,11 @@ Transport type
 
     *Upload via HTTP*
 
-        HTTP data can be submitted to the automatically generated URL. Password is optional.
+        Data can be submitted as an HTTP POST body to the automatically generated URL. Password is optional.
 
         IP whitelist
             You can optionally restrict incoming connections to this source to a list of approved IP addresses specified using CIDR notation. eg. 192.168.7.52/32
             Leave empty for no IP address restrictions.
-
-
-        The three supported upload formats:
-
-        **CSV body** (Multiple records)
-        ::
-
-            POST https://upload.eagle.io/source/foo-bar-cheese
-
-        ::
-
-            Timestamp,Param1,Param2
-            2019-05-07 00:00:00,23.5,457.9
-
-        **URL parameters** (Single record only)
-        ::
-
-            GET https://upload.eagle.io/source/foo-bar-cheese?Param1=23.5&Param2=457.9
-
-        **JSON body** (Single record only)
-        ::
-
-            POST https://upload.eagle.io/source/foo-bar-cheese
-            Content-Type: application/json; charset=utf-8
-
-        ::
-        
-            {
-                "Timestamp" : "2019-05-01 17:55:00"
-                "Param1": 23.5,
-                "Param2": 457.9
-            }
 
         **Note**: Please consider using the :ref:`API <api>` for more options uploading via HTTP.
 
@@ -229,23 +197,11 @@ Transport type
             +1 408 400 3928 
 
         Custom phone numbers:
-            Please contact us to arrange a custom incoming SMS number to be exclusivly associated with your account. This will allow you to choose your own Source Id.
+            Please contact us to arrange a custom incoming SMS number to be exclusively associated with your account. This will allow you to choose your own Source Id.
 
-
-        Text messages must be exactly 2 lines. They should contain the Source Id on the first line, and a data value (or multiple delimited values) on the second line. 
-
-        If you are sending messages to one of the numbers listed above, a Source Id will be randomly generated. If you have arranged for a number to be associated with your account, you can choose your own Source Id, which must be unique within your account.
-
-        In this example, the randomly generated Source Id is "red-green-blue" and the data value on the next line is "3.1416":
-        ::
-            red-green-blue
-            3.1416
-
-        In the next example, the randomly generated Source Id is "foo-bar-cheese", and there are 3 comma-delimited data values on the next line:
-        ::
-            foo-bar-cheese
-            2.7183,3.1416,6.2832
-
+        SMS messages must contain exactly 2 lines with the following content:
+            - Source Id
+            - Data payload
 
 .. _transport-mqtt:
 
