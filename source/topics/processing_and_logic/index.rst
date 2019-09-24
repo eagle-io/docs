@@ -421,6 +421,14 @@ The above example is able to treat the Node reference for **param1** as if it we
     **Workspace**                   ``name``                  String
     =============================   ========================  ====================
 
+.. _input-quality-filter:
+
+Input Quality Filter
+~~~~~~~~~~~~~~~~~~~~
+
+Input data to your program can be filtered according to its quality type to ensure only desired values are considered.
+
+By default, your program will exclude quality types according to the :ref:`Quality Codes <management-general-qualitycodes>` configuration in your Account Settings. To ensure specific quality types are considered, a filter can be applied.
 
 .. _shared-code:
 
