@@ -428,6 +428,24 @@ Input Quality Filter
 
 Input data to your program can be filtered according to its quality type to ensure only desired values are considered.
 
+.. raw:: latex
+
+    \vspace{-10pt}
+
+.. only:: not latex
+
+    .. image:: input-quality-filter.jpg
+        :scale: 50 %
+
+    | 
+
+.. only:: latex
+    
+    | 
+
+    .. image:: input-quality-filter.jpg
+
+
 By default, your program will exclude quality types according to the :ref:`Quality Codes <management-general-qualitycodes>` configuration in your Account Settings. To ensure specific quality types are considered, a filter can be applied.
 
 .. _shared-code:
