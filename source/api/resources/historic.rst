@@ -52,6 +52,12 @@ Arguments
                                                             Flag to indicate if timestamps should be adjusted for DST in
                                                             selected *timezone*.
 
+    **timeQuery**               RECORD                      *Optional - Default is RECORD*. 
+                                                            Timestamp to query by. 
+                                                            MODIFIED will query by modified timestamp (typically used to 
+                                                            obtain records changed since a specific timestamp): 
+                                                            *[RECORD, MODIFIED]*
+
     **timeFormat**              YYYY-MM-DD HH:mm:ss         *Optional*. 
                                                             :ref:`Time format<time-format-customize>`.
 
