@@ -173,7 +173,7 @@ Position states above or below the NORMAL state to capture higher or lower than 
     
 Discrete States
 ````````````````
-Drag and drop states in the list to change their display order.
+Drag and drop states in the list to change their display/evaluation order.
 
 .. only:: not latex
 
@@ -212,7 +212,12 @@ Threshold
     Applies to *Range States* only.
 
 Match
-    Specify the numeric value to match (*Number Parameters*) or text that is contained within the parameter value (*Text Parameters*). 
+    *Number Parameters*
+        Specify the numeric value to match.
+
+    *Text Parameters*
+        Specify text contained within the value, or alternatively a `regular expression <https://en.wikipedia.org/wiki/Regular_expression>`_ which must begin and end with *forward-slash*, e.g. ``/^(?!message).*$/``
+
     Optionally use the dropdown menu to specify the minimum number of matching **repeat values** required to trigger this state. Default *1x*. 
     
     Applies to *Discrete States* only.
