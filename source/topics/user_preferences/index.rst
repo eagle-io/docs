@@ -1,5 +1,5 @@
 .. meta::
-   :description: Set your eagle.io account preferences, see what groups and fellow users you are associated with, change login and passwords, timezone, formats and notifications preferences. 
+   :description: Set your eagle.io userpreferences, see what groups and fellow users you are associated with, change login and passwords, timezone, formats and notifications preferences. 
 
 .. _user-preferences:
 
@@ -32,6 +32,18 @@ User Preferences
 Change login email
 ------------------
 Use the *Change* button to update your user profile email address. An email will be sent to the new address with a one-time verification link to confirm the change. Any re-sends or new address changes will invalidate previously generated links.
+
+.. only:: not latex
+
+    |
+
+
+Phone number
+-------------
+A valid phone number is required to receive SMS notifications. Please enter a fully qualified international phone number starting with '+'. 
+
+The account administrator(s) can optionally select to *Send SMS via email* from the :ref:`notifications <management-notifications>` section in account settings.
+When enabled, the phone number field indicates if an SMS email address is in-use for your user profile (after sending an initial SMS) and allows you to reset/retry if you change service providers.
 
 .. only:: not latex
 

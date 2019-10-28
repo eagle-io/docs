@@ -3,7 +3,7 @@
 Notifications
 ==============
 
-|icon-notification| Notifications section is used to configure the Notification Limits and Categories for the account.
+|icon-notification| Notifications section is used to configure notification preferences for the account.
 
 .. only:: not latex
 
@@ -16,7 +16,14 @@ Notification Limits
 
 Email notifications are free and unlimited.
 
-SMS notifications incur charges on the account. You can restrict the total number of SMS allowed to be sent from the account per billing period. You can also choose to *Disable*  SMS or set to *Unlimited*  for no restriction.
+Most account plans are bundled with a specific number of included monthly SMS. 
+Additional SMS Packs can be purchased in quantities of 100 / month. 
+
+Managed accounts can have SMS limits specified or you can choose to *Disable* SMS for these accounts.
+
+The *Send SMS via email* option will send SMS notifications for free to phone numbers in the USA using the recipients' service provider email to SMS transport where possible. 
+This option is only visible on primary accounts and is automatically applied to all managed accounts. 
+The phone number field in :ref:`user preferences <user-preferences>` indicates if an SMS email address is in-use for your user profile (after sending an initial SMS) and allows you to reset/retry if you change service providers.
 
 .. raw:: latex
 
@@ -36,7 +43,7 @@ SMS notifications incur charges on the account. You can restrict the total numbe
 	.. image:: account_notification_limits.jpg
 
 
-The account owner will receive an email from the system when the total number of SMS sent within the current billing period gets close to the selected limit. Another email will be sent when the limit is reached and no further notification SMS will be sent until the next billing period.
+The account owner will receive an email from the system when the total number of SMS sent within the current billing period gets close to the account limit. Another email will be sent when the limit is reached and no further notification SMS will be sent until the next billing period.
 
 .. only:: not latex
 
