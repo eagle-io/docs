@@ -31,7 +31,7 @@ The phone number field in :ref:`user preferences <user-preferences>` indicates i
 
 .. only:: not latex
 
-	.. image:: account_notification_limits.jpg
+	.. image:: account_notification_limit.jpg
 		:scale: 50 %
 
 	| 
@@ -40,7 +40,7 @@ The phone number field in :ref:`user preferences <user-preferences>` indicates i
 
 	| 
 
-	.. image:: account_notification_limits.jpg
+	.. image:: account_notification_limit.jpg
 
 
 The account owner will receive an email from the system when the total number of SMS sent within the current billing period gets close to the account limit. Another email will be sent when the limit is reached and no further notification SMS will be sent until the next billing period.
