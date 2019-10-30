@@ -1537,6 +1537,7 @@ Arguments
     **endTime**                 2014-08-16T02:20:43Z        *Required*. [#f3]_
                                                             :ref:`ISO8601<time-format-iso8601>` timestamp
 
+
     **timezone**                Etc/UTC                     *Optional - Default is Etc/UTC*. 
                                                             :ref:`Timezone <timezone>` applied to timestamps. 
                                                             Aggregate *interval* and *baseTime* calculations will also use 
@@ -1545,6 +1546,12 @@ Arguments
     **timezoneAdjustForDst**    FALSE                       *Optional - Default is FALSE*. 
                                                             Flag to indicate if timestamps should be adjusted for DST in
                                                             selected *timezone*.
+
+    **timeQuery**               RECORD                      *Optional - Default is RECORD*. 
+                                                            Timestamp to query by. 
+                                                            MODIFIED will query by modified timestamp (typically used to 
+                                                            obtain records changed since a specific timestamp): 
+                                                            *[RECORD, MODIFIED]*
 
     **timeFormat**              YYYY-MM-DD HH:mm:ss         *Optional*. 
                                                             :ref:`Time format<time-format-customize>`.
