@@ -98,6 +98,7 @@ Consumers of Nodes should tolerate the addition of new attributes and variance i
     ================================    =========   =========   ===========================================================================
     Parameter & Location attributes     Type        Update      Description
     ================================    =========   =========   ===========================================================================
+    **chart**                           Object      Yes         Parameter chart configuration
     **controlValue**                    Variable    Yes         Pending control value. Type inherited from _class.
     **controlValueMaximum**             Double      Yes         Maximum control value when controlValueRestriction set to RANGE
     **controlValueMinimum**             Double      Yes         Minimum control value when controlValueRestriction set to RANGE
@@ -498,7 +499,6 @@ Multiple attributes can be updated in a single request.
 
 The updated node will be returned in the response if the request is successful. You can optionally limit the returned attributes by specifying the **attr** argument.
 
-Refer to the examples below when updating complex attributes such as alarms and states.
 
 .. note:: 
     Required API key permission: *Modify*
@@ -550,8 +550,18 @@ Response
     }
 
 
-Updating alarm configuration
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Complex attribute updates
+~~~~~~~~~~~~~~~~~~~~~~~~~
+Certain attributes such as alarms and states have specific update requirements:
+
+.. contents:: 
+    :depth: 1
+    :local:
+
+| 
+
+Alarm configuration
+````````````````````
 Alarm configuration can be included in the update request for Location, Source and Parameter nodes. You must specify each alarm type as a nested attribute containing the *config* to be updated. Only changed attributes need to be specified.
 
 .. table::
@@ -612,9 +622,8 @@ The alarm types available are specific to the type of node being updated:
 .. [1] stateAlarm has no direct configuration. Modify *states* to change state alarm behaviour.
 
 
-
-Updating states configuration
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+States configuration
+`````````````````````
 States configuration can be included in the update request for Number and Text Parameter nodes. 
 Number parameters can use either *DISCRETE* or *RANGE* states. Text parameters are limited to *DISCRETE* states only. 
 
@@ -741,6 +750,129 @@ Example replacing RANGE states
         ]
     }
 
+
+Parameter chart configuration
+``````````````````````````````
+Parameter chart configuration is used when displaying parameters as series on automatically generated charts. 
+It can be included in the update request for Parameter nodes. Only changed attributes need to be specified.
+
+.. table::
+    :class: table-fluid
+
+    =================================   =========   ============================================================================
+    Parameter chart config attributes   Type        Description
+    =================================   =========   ============================================================================
+    **_class**                          String      Determines chart series type (Line or Column): 
+                                                    *[io.eagle.models.node.point.chart.LineChart, 
+                                                    io.eagle.models.node.point.chart.ColumnChart]*
+    **stateThresholds**                 String      Threshold lines to display (when in y-axis range): 
+                                                    *[NONE, ALL, ALARM, NONALARM, USER_NOTIFICATION]*
+    **markerType**                      String      Marker type: *[AUTOMATIC, CIRCLE, SQUARE, DIAMOND, TRIANGLE, TRIANGLE-DOWN]*
+    **markerSize**                      Int32       Marker size (0 is Hidden): *0-6*.
+    **qualityStyle**                    String      Specify how quality colors are display on chart: 
+                                                    *[NONE, MARKER, MARKER_HOVER, MARKER_LINE, MARKER_FILL]*
+    **shadow**                          Boolean     *Optional - default is false*. Drop shadow effect
+    **primaryColor**                    String      *Optional - default is AUTOMATIC*. 
+                                                    Hex color code (eg. *#ff3399*) or *AUTOMATIC* used as primary color.
+    **secondaryColor**                  String      *Optional - default is AUTOMATIC*. 
+                                                    Hex color code (eg. *#ffffff*) or *AUTOMATIC* used as secondary color when
+                                                    *fillStyle* is a gradient.
+    **fillStyle**                       String      Fill style: 
+                                                    *[NONE, SOLID, LINEAR_TOP, LINEAR_BOTTOM, LINEAR_LEFT, LINEAR_RIGHT, 
+                                                    PIPE_VERTICAL, PIPE_HORIZONTAL, RADIAL_INSIDE, RADIAL_OUTSIDE]*
+    **fillOpacity**                     Int32       Fill opacity (0 is Transparent): *0-100*.
+    **lineWidth**                       Int32       Series line width (0 is Hidden): *0-6*.
+    **lineType**                        String      Line type (Line series only): 
+                                                    *[NORMAL, STEP_LEFT, STEP_CENTER, STEP_RIGHT, SPLINE]*
+    **lineStyle**                       String      Line style (Line series only): 
+                                                    *[SOLID, SHORTDASH, SHORTDOT, SHORTDASHDOT, SHORTDASHDOTDOT, DOT, DASH, 
+                                                    LONGDASH, DASHDOT, LONGDASHDOT, LONGDASHDOTDOT]*
+    **pointPlacementType**              String      Placement of datapoint on column (Column series only): 
+                                                    *[ON, BETWEEN]*
+    **groupType**                       String      Column layout (when multiple Column series used - Column series only): 
+                                                    *[NORMAL, GROUP, STACKED]*
+
+    **aggregation**                     Object      Historic data aggregation config attributes
+    | **mode**                          String      Aggregation mode: *[AUTOMATIC, RAW, CUSTOM]*
+    | **type**                          String      Historic :ref:`aggregate <historic-aggregates>` to apply when *mode* is 
+                                                    CUSTOM. Number parameters use the *displayType* attribute to determine 
+                                                    if the aggregate is restricted to VALUE or STATE types. 
+                                                    All other parameter types are restricted to STATE types. 
+                                                    VALUE Types: *[INTERPOLATED, AVERAGE, MEDIAN, TOTAL, MIN, MAX, RANGE, 
+                                                    CHANGE, COUNT, START, END, DELTA]*. 
+                                                    STATE Types: *[CHANGE, COUNT, START, END]*
+    | **period**                        String      Aggregation interval. 
+                                                    *AUTOMATIC* determines interval based on zoom level.  
+                                                    *FIXED* uses *interval* attribute.
+    | **interval**                      String      :ref:`OPC Interval <relative-time>` (eg. *1H*) required when 
+                                                    *period* is FIXED.
+    | **intervalInclude**               String      *Optional - Default is PARTIAL*. 
+                                                    COMPLETE will include aggregated values for complete intervals only. 
+                                                    PARTIAL will also include values for non-complete intervals: 
+                                                    *[PARTIAL, COMPLETE]*
+    | **baseTime**                      String      :ref:`OPC Base Time <relative-time>` (eg. *D*) required when 
+                                                    *period* is FIXED. 
+    | **baselineType**                  String      *Optional - Default is ABSOLUTE*. 
+                                                    Absolute will return data point values unmodified. Relative will subtract 
+                                                    the first data point value from all subsequent data point values: 
+                                                    *[ABSOLUTE, RELATIVE]*
+    =================================   =========   ============================================================================
+
+Example Line series::
+
+    {
+        "chart": {
+            "_class": "io.eagle.models.node.point.chart.LineChart",
+            "stateThresholds": "ALL",
+            "markerType": "AUTOMATIC",
+            "markerSize": 2,
+            "qualityStyle": "MARKER_HOVER",
+            "shadow": false,
+            "primaryColor": "AUTOMATIC",
+            "fillStyle": "NONE",
+            "fillOpacity": 75,
+            "lineWidth": 1,
+            "lineType": "NORMAL",
+            "lineStyle": "SOLID",
+            "aggregation": {
+                "mode": "AUTOMATIC"
+            }
+        }
+    }
+
+Example updating to stepped Line series with custom gradient fill::
+
+    {
+        "chart": {
+            "_class": "io.eagle.models.node.point.chart.LineChart",
+            "primaryColor": "#33ff00",
+            "secondaryColor": "#ff0000",
+            "fillStyle": "LINEAR_TOP",
+            "fillOpacity": 100,
+            "lineType": "STEP_LEFT"
+        }
+    }
+
+Example Column series with hourly totals::
+
+    {
+        "chart": {
+            "_class": "io.eagle.models.node.point.chart.ColumnChart",
+            "markerSize": 0,
+            "primaryColor": "AUTOMATIC",
+            "fillStyle": "SOLID",
+            "fillOpacity": 100,
+            "pointPlacementType": "ON",
+            "groupType": "NORMAL",
+            "aggregation": {
+                "mode": "CUSTOM",
+                "type": "TOTAL",
+                "period": "FIXED",
+                "interval": "1H",
+                "baseTime": "D"
+            }
+        }
+    }
 
 .. only:: not latex
 
