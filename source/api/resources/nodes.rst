@@ -65,7 +65,7 @@ Consumers of Nodes should tolerate the addition of new attributes and variance i
     ================================    =========   =========   ===========================================================================
     **_class**                          String                  Identifies resource type: *io.eagle.models.node.*\*
     **_id**                             ObjectId                Unique identifier for this node
-    **alarms**                          Object      Yes         Alarm configuration and status
+    **alarms**                          Object      Yes         :ref:`Alarm configuration<api-nodes-update-alarms>` and status
     **createdTime**                     Time                    :ref:`ISO8601<time-format-iso8601>` timestamp the node was created
     **customId**                        String      Yes         Optional user-assigned identifier for this node. Unique to owner (account)
     **isActive**                        Boolean                 Flag to indicate if node is active
@@ -98,7 +98,7 @@ Consumers of Nodes should tolerate the addition of new attributes and variance i
     ================================    =========   =========   ===========================================================================
     Parameter & Location attributes     Type        Update      Description
     ================================    =========   =========   ===========================================================================
-    **chart**                           Object      Yes         Parameter chart configuration
+    **chart**                           Object      Yes         :ref:`Parameter chart configuration <api-nodes-update-parameter-chart>`
     **controlValue**                    Variable    Yes         Pending control value. Type inherited from _class.
     **controlValueMaximum**             Double      Yes         Maximum control value when controlValueRestriction set to RANGE
     **controlValueMinimum**             Double      Yes         Minimum control value when controlValueRestriction set to RANGE
@@ -126,7 +126,7 @@ Consumers of Nodes should tolerate the addition of new attributes and variance i
     **previousTime**                    Time                    :ref:`ISO8601<time-format-iso8601>` timestamp of the previous value
     **previousValue**                   Variable                Previous value. Type inherited from _class
     **rawValue**                        Double                  Latest raw value. Applies to number parameters only
-    **states**                          Array       Yes         Array of state configuration objects
+    **states**                          Array       Yes         Array of :ref:`state configuration <api-nodes-update-states>` objects
     **statesType**                      String      Yes         States evaluation mode:
                                                                 *[RANGE, DISCRETE]*
     **units**                           String      Yes         Units to display with value
@@ -560,6 +560,8 @@ Certain attributes such as alarms and states have specific update requirements:
 
 | 
 
+.. _api-nodes-update-alarms:
+
 Alarm configuration
 ````````````````````
 Alarm configuration can be included in the update request for Location, Source and Parameter nodes. You must specify each alarm type as a nested attribute containing the *config* to be updated. Only changed attributes need to be specified.
@@ -621,6 +623,8 @@ The alarm types available are specific to the type of node being updated:
 
 .. [1] stateAlarm has no direct configuration. Modify *states* to change state alarm behaviour.
 
+
+.. _api-nodes-update-states:
 
 States configuration
 `````````````````````
@@ -750,6 +754,7 @@ Example replacing RANGE states
         ]
     }
 
+.. _api-nodes-update-parameter-chart:
 
 Parameter chart configuration
 ``````````````````````````````
