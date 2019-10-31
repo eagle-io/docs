@@ -84,3 +84,7 @@ Use development tools such as `cURL <http://curl.haxx.se>`_ or `Postman <http://
     | 
 
     .. image:: api_dev_postman.jpg
+
+Synchronise data efficiently
+----------------------------
+When synchronising data to an external system, ensure you only query for data that has changed since your previous request. By specifying a `timeQuery` of `MODIFIED`, only records added or changed within your query range will be returned.
