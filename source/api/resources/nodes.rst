@@ -808,7 +808,7 @@ It can be included in the update request for Parameter nodes. Only changed attri
                                                     STATE Types: *[CHANGE, COUNT, START, END]*
     | **period**                        String      Aggregation interval. 
                                                     *AUTOMATIC* determines interval based on zoom level.  
-                                                    *FIXED* uses *interval* attribute.
+                                                    *CUSTOM* uses fixed *interval* attribute.
     | **interval**                      String      :ref:`OPC Interval <relative-time>` (eg. *1H*) required when 
                                                     *period* is FIXED.
     | **intervalInclude**               String      *Optional - Default is PARTIAL*. 
