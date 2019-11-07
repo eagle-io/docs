@@ -89,8 +89,11 @@ Security
 ~~~~~~~~~
 The Security section allows a user with *security* permission to share the Workspace with other users individually or as a group.
 
-Users can be individually added to the workspace by entering the email address of the new users (separate multiple email addresses with a comma), assign a security :ref:`role <management-security-userroles>` and click *Add*. 
-You can remove or modify security roles for existing Workspace users. Click *Save* when complete.
+.. note:: 
+    Workspace permissions do not expire by default. Temporary permissions can be granted by choosing an optional expiry time (this only applies to non-administrative users and groups). 
+
+Users can be individually added to the workspace by entering the email address of the new users (separate multiple email addresses with a comma), choosing an optional expiry time, assigning a security :ref:`role <management-security-userroles>` and clicking *Add*. 
+You can remove or modify security roles for existing Workspace users. You can also modify the expiry time for existing Workspace users. Click *Save* when complete.
 
 .. raw:: latex
 
@@ -98,8 +101,8 @@ You can remove or modify security roles for existing Workspace users. Click *Sav
     
 .. only:: not latex
 
-	.. image:: workspace_security_users.jpg
-		:scale: 50 %
+	.. image:: workspace_security_users.png
+		:scale: 100 %
 
 	| 
 
@@ -107,10 +110,10 @@ You can remove or modify security roles for existing Workspace users. Click *Sav
 
 	| 
 
-	.. image:: workspace_security_users.jpg
+	.. image:: workspace_security_users.png
 
 
-You can also *Add* a pre-configured :ref:`group <management-security-groups>` of users to the Workspace and assign a security :ref:`role <management-security-userroles>` which will be applied to all users in that group. 
+You can also *Add* a pre-configured :ref:`group <management-security-groups>` of users to the Workspace, choose an optional expiry time, and assign a security :ref:`role <management-security-userroles>` which will be applied to all users in that group. 
 The *Add groups* dropdown displays a list of all groups that have been configured in the account. To add a new group or assign users to the group refer to the section on :ref:`group security <management-security-groups>`.
 
 .. raw:: latex
@@ -119,8 +122,8 @@ The *Add groups* dropdown displays a list of all groups that have been configure
     
 .. only:: not latex
 
-    .. image:: workspace_security_groups.jpg
-        :scale: 50 %
+    .. image:: workspace_security_groups.png
+        :scale: 100 %
 
     | 
 
@@ -128,7 +131,7 @@ The *Add groups* dropdown displays a list of all groups that have been configure
 
     | 
 
-    .. image:: workspace_security_groups.jpg
+    .. image:: workspace_security_groups.png
 
 An email notification will be sent to users when they are added or removed from the Workspace or when their security role is changed.
 New users will need to follow the instructions in the email to configure their user profile and log in.
