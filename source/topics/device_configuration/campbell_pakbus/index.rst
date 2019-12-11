@@ -2,7 +2,7 @@
 
 Campbell Scientific
 ====================
-`Eagle.io <https://eagle.io>`_ provides full support for `Campbell Scientific <http://www.campbellsci.com/>`_ PakBus data loggers including the **CR200**, **CR300**, **CR800**, **CR1000**, **CR3000** and **CR6** series.
+`Eagle.io <https://eagle.io>`_ provides full support for `Campbell Scientific <http://www.campbellsci.com/>`_ PakBus data loggers including the **CR200**, **CR300**, **CR800**, **CR1000**, **CR3000**, **CR9000**, **CRVW** and **CR6** series.
 
 .. only:: not latex
 
