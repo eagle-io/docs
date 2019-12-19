@@ -225,6 +225,8 @@ Transport type
             You can optionally restrict incoming connections to this source to a list of approved IP addresses specified using CIDR notation. eg. 192.168.7.52/32
             Leave empty for no IP address restrictions.
 
+        **Note**: The maximum accepted size per mqtt message is 10MB.        
+
 .. _transport-s3:
 
     *Read from Amazon S3*
