@@ -156,6 +156,8 @@ Consumers of Nodes should tolerate the addition of new attributes and variance i
     **pakBusAddress**                   Int32       Yes         PakBus address of Campbell data logger
     **pakBusGatewayAddress**            Int32       Yes         PakBus gateway address of Campbell data logger
     **progName**                        String                  Name of program currently loaded in Campbell data logger
+    **quietMaxSeconds**                 Int32       Yes         Maximum period in seconds between communication updates before triggering 
+                                                                an Outdated alarm (non-scheduled collection only). *120 - 31536000* seconds
     **scheduleType**                    String                  Type of Schedule for automatic collection:
                                                                 *[SERVER, REMOTE, NONE]*
     **timezone**                        String      Yes         :ref:`Timezone <timezone>` of Source data.
@@ -614,14 +616,15 @@ The alarm types available are specific to the type of node being updated:
     **communicationsAlarm**    Sources
     **configurationAlarm**     Sources
     **controlAlarm**           Control parameters
-    **outdatedAlarm**          Sources
+    **outdatedAlarm** [1]_     Sources
     **overloadAlarm**          Sources
     **processAlarm**           Processor Sources, Process Parameters
     **qualityAlarm**           Locations, Parameters
-    **stateAlarm** [1]_        Locations, Parameters
+    **stateAlarm** [2]_        Locations, Parameters
     ========================   ========================================================
 
-.. [1] stateAlarm has no direct configuration. Modify *states* to change state alarm behaviour.
+.. [1] outdatedAlarm *Maximum timeout* is set via the node *quietMaxSeconds* attributes.
+.. [2] stateAlarm has no direct configuration. Modify *states* to change state alarm behaviour.
 
 
 .. _api-nodes-update-states:
