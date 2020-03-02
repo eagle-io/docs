@@ -30,6 +30,10 @@ Data editing is not available on STARTER accounts. Record :ref:`limits <historic
     
 | 
 
+.. note:: 
+    :ref:`Process Parameters <process-parameter>` cannot be edited, as the data is generated dynamically whenever the process code is changed. 
+    
+| 
 
 Refer to the :ref:`historic chart <historic-chart-editing>` documentation for data editing in chart format.
 

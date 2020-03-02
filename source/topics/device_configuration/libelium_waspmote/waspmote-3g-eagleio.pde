@@ -102,7 +102,7 @@ void loop()
                 
                 // 8. sending a frame
                 answer = _3G.sendData(frame.buffer, frame.length);
-                if( answer == 1) 
+                if( answer == 1 ) 
                 {
                     USB.println(F("Done"));
                 }
@@ -130,7 +130,7 @@ void loop()
                     USB.println(F("Fail"));
                 }
             }
-            else if (answer == -4)
+            else if( answer == -4 )
             {
                 USB.print(F("Connection failed. Error code: "));
                 USB.println(answer, DEC);
@@ -143,7 +143,7 @@ void loop()
                 USB.println(answer, DEC);
             }           
         }
-        else if (answer < -10)
+        else if( answer < -10 )
         {
             USB.print(F("Configuration failed. Error code: "));
             USB.println(answer, DEC);
