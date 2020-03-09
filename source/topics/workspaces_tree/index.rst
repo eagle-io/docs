@@ -213,31 +213,6 @@ Parameters that had been created and then unchecked (or unavailable) for collect
 
     | 
 
-Demo Nodes
------------
-You may notice *PURPLE* Nodes in the Workspaces Tree and Content Views.
-
-Sample Data Source nodes are initially added to new accounts for demonstration purposes and do not incur usage charges. You can safely delete these demo nodes at any time.
-
-.. raw:: latex
-
-    \vspace{-10pt}
-
-.. only:: not latex
-
-    .. image:: workspaces_tree_demo.jpg
-        :scale: 50 %
-
-    | 
-
-.. only:: latex
-
-    | 
-
-    .. image:: workspaces_tree_demo.jpg
-        :scale: 35 %
-
-
 .. raw:: latex
 
     \newpage
