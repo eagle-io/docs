@@ -1,7 +1,8 @@
 Enabling public access allows anyone to view the node (attachment, chart, dash or historic data) using the generated `URL`.
 
 You can also embed charts and dashboards into your own website with basic HTML. 
-Select `Copy embed HTML` from the URL dropdown menu for a generic code snippet (you will need to paste this in to your website).
+Select `Copy embed HTML` from the URL dropdown menu for a generic code snippet (you will need to paste this in to your website). 
+You can also revoke and replace the automatically assigned URL by selecting the `Generate new URL` option in the menu.
 
 Use the available options to customize the URL based on your display preferences. These options are transient and you can use multiple variations of the URL at the same time. 
 
@@ -22,4 +23,4 @@ Use the available options to customize the URL based on your display preferences
     .. image:: ../node_public_access.jpg
 
 
-.. note:: If you disable and re-enable the public access feature a new url will be generated and the old url will no longer work. This feature is NOT available on *Starter* accounts.
+.. note:: This feature is not included in *Starter* accounts.

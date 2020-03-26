@@ -69,9 +69,12 @@ Consumers of Nodes should tolerate the addition of new attributes and variance i
     **createdTime**                     Time                    :ref:`ISO8601<time-format-iso8601>` timestamp the node was created
     **customId**                        String      Yes         Optional user-assigned identifier for this node. Unique to owner (account)
     **isActive**                        Boolean                 Flag to indicate if node is active
+    **isPublic**                        Boolean     Yes         Flag to indicate if :ref:`Public access<security-public-access>` is enabled
     **name**                            String      Yes         Name of node
     **ownerId**                         ObjectId                Unique owner _id
     **parentId**                        ObjectId                Parent node _id (not included in Workspace)
+    **publicId**                        String                  Unique identifier used in public URL when *isPublic* is enabled. 
+                                                                eg. *https://public.eagle.io/public/dash/w31s3dndr408wcq*
     **workspaceId**                     ObjectId                Associated Workspace _id (not set on Workspace node)
     ================================    =========   =========   ===========================================================================
 
