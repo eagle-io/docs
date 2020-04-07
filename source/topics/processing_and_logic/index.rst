@@ -174,8 +174,16 @@ _________
 .. code-block:: javascript
     :linenos:
 
-    // Generate a series forecast to provide predictive alarming
-    // Coming soon :)
+    // Calculate average currentValue of all nodes ending with Temperature in the current Workspace
+    var sum = 0;
+    var temps = NODES(WORKSPACE + '/.*Temperature');
+    var avg = NUMBER('Output');
+
+    for( var i=0; i<temps.length; i++ ) {
+        sum = sum + temps[i];
+    }
+
+    avg.currentValue = sum / nodes.length;
 
 .. _environment:
 
