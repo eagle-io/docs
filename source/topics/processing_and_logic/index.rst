@@ -212,7 +212,7 @@ Global functions can be used to obtain a reference to a Node, authorize access t
 
     ==================================    ============================================================================
     **NODE(** *path* **)**                Retrieve node by path
-    **NODES(** *path expr* **)**          Retrieve one or more nodes by path expression from the current Workspace
+    **NODES(** *path expr* **)**          Retrieve one or more nodes by path expression
 
                                           |
                                           A path expression begins with an ordinary :ref:`path <paths>` and includes a 
@@ -222,7 +222,7 @@ Global functions can be used to obtain a reference to a Node, authorize access t
                                           ``/Workspace/.*input``
 
                                           |
-                                          Retrieving nodes from outside the current Workapace is not supported
+                                          Retrieving nodes from outside the current Workspace is not supported
 
     **NUMBER(** *path* **)**              Create or retrieve NUMBER Parameter by path
     **TEXT(** *path* **)**                Create or retrieve TEXT Parameter by path
