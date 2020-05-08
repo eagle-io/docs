@@ -174,8 +174,16 @@ _________
 .. code-block:: javascript
     :linenos:
 
-    // Generate a series forecast to provide predictive alarming
-    // Coming soon :)
+    // Calculate average currentValue of all nodes ending with Temperature in the current Workspace
+    var sum = 0;
+    var temps = NODES(WORKSPACE + '/.*Temperature');
+    var avg = NUMBER('Output');
+
+    for( var i=0; i<temps.length; i++ ) {
+        sum = sum + temps[i];
+    }
+
+    avg.currentValue = sum / nodes.length;
 
 .. _environment:
 
@@ -210,26 +218,39 @@ Global functions can be used to obtain a reference to a Node, authorize access t
 .. table::
     :class: table-fluid
 
-    =================================     ============================================================================
+    ==================================    ============================================================================
     **NODE(** *path* **)**                Retrieve node by path
+    **NODES(** *path expr* **)**          Retrieve one or more nodes by path expression
+
+                                          |
+                                          A path expression begins with an ordinary :ref:`path <paths>` and includes a 
+                                          `regular expression <https://en.wikipedia.org/wiki/Regular_expression>`_ suffix
+                                          matching one or more node names, e.g. retrieve all workspace nodes ending with *input*:
+
+                                          ``/Workspace/.*input``
+
+                                          |
+                                          Retrieving nodes from outside the current Workspace is not supported
+
     **NUMBER(** *path* **)**              Create or retrieve NUMBER Parameter by path
     **TEXT(** *path* **)**                Create or retrieve TEXT Parameter by path
     **TIME(** *path* **)**                Create or retrieve TIME Parameter by path
     **BOOLEAN(** *path* **)**             Create or retrieve BOOLEAN Parameter by path
     **AUTH(** *slug*, *api-key* **)**     :ref:`Authorise access to a Workspace <workspace-authorisation>` using an API key
-    **T(** *expression* **)**             Convert a time expression to a `Moment.js <https://momentjs.com>`_ timestamp
+    **T(** *expr* **)**                   Convert a time expression to a `Moment.js <https://momentjs.com>`_ timestamp
 
+                                          | 
                                           A time expression can be any of the following:
 
-                                          - ISO8601 time string, e.g. '2018-08-03T16:27:58+10:00'
+                                          - ISO8601 time string, e.g. ``'2018-08-03T16:27:58+10:00'``
 
-                                          - Number of milliseconds since Unix epoch, e.g. 1533277715816
+                                          - Number of milliseconds since Unix epoch, e.g. ``1533277715816``
 
-                                          - Node time attribute, e.g. **NODE(** 'param' **)**.currentTime
+                                          - Node time attribute, e.g. ``NODE('param').currentTime``
 
-                                          - Current timestamp, e.g. **NOW**
+                                          - Current timestamp, e.g. ``NOW``
     **Q(** *name* **)**                   Convert a quality name to a quality code
-    =================================     ============================================================================
+    ==================================    ============================================================================
 
 .. _paths:
 
@@ -247,7 +268,7 @@ In addition to using names to identify Nodes, a path may also contain either a :
     Examples                                      
     ``/Workspace/Location/Source/Parameter``    Absolute path to a Parameter
     ``../Location 2/Source/Parameter``          Path to a Parameter, relative to the Process Node
-    ``{5b6a3fc24e960d0e7497b4b4}``              Path to a Parameter, identified by **Node Id**
+    ``{5b6a3fc24e960d0e7497b4b4}``              Path to a Node, identified by **Node Id**
     ``{@myParam}``                              Path to a Parameter, identified by **Custom Id**
     ``{5ae92a139097830ee5711d94}/Parameter``    Path to a Parameter, relative to Source **Node Id**
     ``{@mySource}/Parameter``                   Path to a Parameter, relative to Source **Custom Id**

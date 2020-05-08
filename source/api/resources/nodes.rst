@@ -70,6 +70,7 @@ Consumers of Nodes should tolerate the addition of new attributes and variance i
     **customId**                        String      Yes         Optional user-assigned identifier for this node. Unique to owner (account)
     **isActive**                        Boolean                 Flag to indicate if node is active
     **isPublic**                        Boolean     Yes         Flag to indicate if :ref:`Public access<security-public-access>` is enabled
+    **metadata**                        Array       Yes         Array of metadata fields and values for a location
     **name**                            String      Yes         Name of node
     **ownerId**                         ObjectId                Unique owner _id
     **parentId**                        ObjectId                Parent node _id (not included in Workspace)
@@ -115,7 +116,6 @@ Consumers of Nodes should tolerate the addition of new attributes and variance i
     **displayType**                     String      Yes         Default display type of parameter: 
                                                                 *[VALUE, STATE]*
     **format**                          String      Yes         Formatting to apply to displayed value
-    **metadata**                        Array                   Array of metadata fields and values for a location
     **multiplier**                      Double      Yes         Value to multiply rawValue and historic data on extraction. 
                                                                 Applies to number parameters only
     **offset**                          Double      Yes         Value to add to rawValue and historic data on extraction. 
