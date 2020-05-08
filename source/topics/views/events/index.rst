@@ -111,7 +111,7 @@ By default events will be displayed for the Selected Node and all Nodes it conta
 
 |icon-workspace| Workspace
 
-|icon-group| Group
+|icon-folder| Folder
 
 |icon-location| Location
 

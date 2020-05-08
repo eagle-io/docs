@@ -21,8 +21,8 @@ Nodes are the container objects that store all data and configuration for your p
 	
 	| 
 
-|icon-group| Group
-	Groups are simple nodes that provide structure to your Workspaces. You may choose to group content by geography or related purpose. Groups can be created inside Workspaces, Locations and other Groups.
+|icon-folder| Folder
+	Folders *(previously Groups)* are simple nodes that provide structure to your Workspaces. You may choose to group related content into folders by geography or related purpose. Folders can be created inside Workspaces, Locations and other Folders.
 
 .. only:: not latex
 	

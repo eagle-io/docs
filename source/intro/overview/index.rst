@@ -135,8 +135,8 @@ You can easily show all content by selecting the Base Node.
 |icon-workspace| Workspace
 	Workspaces are special container Nodes that can be shared with other users. All other Nodes are created within the Workspace. Workspaces can only be created by the Account Owner or Administrators.
 
-|icon-group| Group
-	Groups are simple Nodes that provide structure to your Workspaces. You may choose to group content by geography or related purpose. Groups can be created inside Workspaces, Locations and other Groups.
+|icon-folder| Folder
+	Folders *(previously Groups)* are simple nodes that provide structure to your Workspaces. You may choose to group related content into folders by geography or related purpose. Folders can be created inside Workspaces, Locations and other Folders.
 
 |icon-location| Location
 	Locations are special containers used to associate data with a geographical location.
