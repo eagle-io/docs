@@ -1682,6 +1682,8 @@ Arguments
     **endTime**                 2014-08-16T02:20:43Z        *Required*. [#f3]_
                                                             :ref:`ISO8601<time-format-iso8601>` timestamp
 
+    **limit**                   100                         *Optional*. 
+                                                            Maximum number of historic records to be returned.
 
     **timezone**                Etc/UTC                     *Optional - Default is Etc/UTC*. 
                                                             :ref:`Timezone <timezone>` applied to timestamps. 
@@ -1701,23 +1703,38 @@ Arguments
     **timeFormat**              YYYY-MM-DD HH:mm:ss         *Optional*. 
                                                             :ref:`Time format<time-format-customize>`.
 
-    **limit**                   100                         *Optional*. 
-                                                            Maximum number of historic records to be returned.
+    
+    **header**                  TRUE                        *Optional - Default is TRUE*. 
+                                                            Flag to include header  
 
-    **quality**                 FALSE                       *Optional - Default is FALSE*. 
-                                                            Flag to include :ref:`quality <historic-quality>`
+    **delimiter**               ,                           *Optional - Default is ','*. 
+                                                            Delimiter character to use (in CSV format).
+
+    **textQualifier**           "                           *Optional - Default is '"'*. 
+                                                            Text qualifier character to use (in CSV format).
+
+    **quality**                 NONE                        *Optional - Default is NONE*. 
+                                                            Specify how :ref:`quality <historic-quality>` should be output 
+                                                            (in CSV format): *[NONE, DELIMITED_WITH_VALUE, SEPARATE_VALUE]*
+
+    **qualityDelimiter**        :                           *Optional - Default is ':'*. 
+                                                            Delimiter to use when *quality* is 'DELIMITED_WITH_VALUE'.
+
 
     **qualityExcluded**         BAD,UNCERTAIN               *Optional* - Default uses account settings 
                                                             :ref:`Exclude quality <management-general-qualitycodes>`.
                                                             Comma separated list of data point quality types to be 
                                                             excluded: *[GOOD, BAD, UNCERTAIN or NONE]*
 
-    **annotations**             FALSE                       *Optional - Default is FALSE*. 
-                                                            Flag to include :ref:`annotations <historic-annotations>`                                                      
+    **annotation**              NONE                        *Optional - Default is NONE*. 
+                                                            Specify how :ref:`annotations <historic-annotations>` should be 
+                                                            output (in CSV format): 
+                                                            *[NONE, DELIMITED_WITH_VALUE, SEPARATE_VALUE]*
 
-    **header**                  TRUE                        *Optional - Default is TRUE*. 
-                                                            Flag to include header  
+    **annotationDelimiter**     ;                           *Optional - Default is ';'*. 
+                                                            Delimiter to use when *annotation* is 'DELIMITED_WITH_VALUE'.                                                
 
+    
     **renderType**              VALUE                       *Optional - Default is node displayType*. 
                                                             Rendering of value: *[VALUE, STATE]*
 
