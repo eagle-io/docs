@@ -101,6 +101,33 @@ Control Alarms are specific to Control Parameters and are triggered (if enabled)
 
     |
 
+.. _data-alarm:
+
+Data Alarm
+~~~~~~~~~~~~~~
+Data Alarms are specific to Sources and are triggered (if enabled) when an issue is detected with the historic data being ingested. 
+Optionally specify an *Exclude before* and *Exclude after* time to reject (and raise an alarm) when records outside this range are detected. 
+
+.. raw:: latex
+
+    \vspace{-10pt}
+
+.. only:: not latex
+
+    .. image:: data_alarm.jpg
+
+    | 
+
+.. only:: latex
+
+    | 
+
+    .. image:: data_alarm.jpg
+
+.. only:: not latex
+
+    |
+
 .. _outdated-alarm:
 
 Outdated Alarm

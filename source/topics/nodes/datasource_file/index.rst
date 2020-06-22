@@ -548,6 +548,9 @@ Text encoding
 Match
     *Smart* match will intelligently extract any values from the field that matches the column data type. *Strict* will only extract a value from the field if the entire field contents matches the column data type.
 
+Parser success %
+    When parsing a file via its configured transport, a Data alarm will be raised on the Source (when enabled) if the number of records successfully parsed do not reach this percentage threshold. Defaults to 0% (ie. do not raise any alarm.
+
 Reset to defaults
     Resets parser configuration and joins to system defaults.
 
