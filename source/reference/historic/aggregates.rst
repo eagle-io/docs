@@ -49,7 +49,7 @@ The following aggregates are available depending on the :ref:`Display type <node
 
     |
 
-RAW
+NONE
 ---
 No Aggregation is applied. Raw data (as collected by the Source) is returned.
 
