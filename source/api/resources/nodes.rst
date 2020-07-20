@@ -584,6 +584,12 @@ Alarm configuration can be included in the update request for Location, Source a
                                                     Required when *notify* option is not *NEVER*
     **qualityTypes**                    Array       Only valid for *qualityAlarm*. List of quality types that will trigger this
                                                     alarm: *[GOOD, BAD, UNCERTAIN]*.
+    **excludeBeforeSeconds**            Int32       *Optional - Default is null*. Only valid for *dataAlarm*. 
+                                                    Exclude data older than this duration and raise alarm if 
+                                                    encountered. *120 - 315360000* seconds.
+    **excludeAfterSeconds**             Int32       *Optional - Default is null*. Only valid for *dataAlarm*. 
+                                                    Exclude data newer than this duration and raise alarm if 
+                                                    encountered. *120 - 315360000* seconds.
     ================================    =========   ===========================================================================
 
 Example::
@@ -619,6 +625,7 @@ The alarm types available are specific to the type of node being updated:
     **communicationsAlarm**    Sources
     **configurationAlarm**     Sources
     **controlAlarm**           Control parameters
+    **dataAlarm**              Sources
     **outdatedAlarm** [1]_     Sources
     **overloadAlarm**          Sources
     **processAlarm**           Processor Sources, Process Parameters
