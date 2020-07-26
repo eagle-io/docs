@@ -149,7 +149,7 @@ Transport type
 
         An example URL with expressions to request the most recently acquired data through till the most recently available:
         ::
-            http://data.com/?start={{T(SOURCE.currentTime).format('YYYY.MM.DD')}}&end={{T(NOW).format('YYYY.MM.DD')}}
+            http://data.com/?start={{T(SOURCE.currentLocalTime).format('YYYY.MM.DD')}}&end={{T(NOW).format('YYYY.MM.DD')}}
 
         Outputs a URL similar to
         ::
