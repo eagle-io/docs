@@ -159,8 +159,7 @@ API keys
 
 API keys are used to authenticate eagle.io HTTP API requests. The API keys section allows you to create, delete or modify the permissions for API keys associated with your user account. You can have multiple API keys active at once.
 
-API resource requests are always restricted to Workspaces in the associated account. Individual API key’s can optionally be assigned the *Read only* permission to restrict the actions an API request can perform (GET requests only). 
-You can also set the access level to *Limited workspaces* and check all the Workspaces this API key is allowed to access. 
+API resource requests are restricted to the assets within the associated account and are assigned an *access level* and *permission* to restrict the actions an API request can perform.
 
 .. raw:: latex
 
@@ -178,6 +177,28 @@ You can also set the access level to *Limited workspaces* and check all the Work
 	| 
 
 	.. image:: account_apikeys.jpg
+
+
+*Access level*
+
+Account
+	API requests will have access to all account resources including owner and account information and all Workspaces.
+
+Workspace
+	API requests will have access to all Workpace resources.
+
+Limited Workspaces
+	API requests will be limited to a pre-selected set of Workspaces.
+
+
+*Permission*
+
+Read only
+	The API key can only be used to perform read-only (GET) requests on the resources specified by *Access level*.
+
+Modify
+	The API key can perform all requests on the resources specified by *Access level*.
+
 
 .. note:: 
 	Your API keys carry many privileges, so be sure to keep them secret!

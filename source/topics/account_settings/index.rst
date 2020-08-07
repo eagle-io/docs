@@ -4,7 +4,7 @@
 Account Settings
 =================
 
-|icon-backend| Overview and Guide to Account Settings:
+|icon-properties| Overview and Guide to Account Settings:
 
 Use the Account selector located in the User Menu of the Account Settings section to switch between all the Accounts you own or have Administration access to.
 

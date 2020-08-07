@@ -1,7 +1,7 @@
 General
 =======
 
-|icon-backend| General section provides an overview of the account and allows you to change your contact details and setup quality code information.
+|icon-properties| General section provides an overview of the account and allows you to change your contact details and setup quality code information.
 
 .. only:: not latex
 
