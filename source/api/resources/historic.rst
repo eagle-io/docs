@@ -62,7 +62,8 @@ Arguments
                                                             *[RECORD, MODIFIED]*
 
     **timeFormat**              YYYY-MM-DD HH:mm:ss         *Optional*. 
-                                                            :ref:`Time format<time-format-customize>`.
+                                                            :ref:`Time format<time-format-customize>` to use when *format*
+                                                            is 'CSV'.                                                            
 
     **header**                  TRUE                        *Optional - Default is TRUE*. 
                                                             Flag to include header
