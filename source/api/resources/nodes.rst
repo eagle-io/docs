@@ -128,6 +128,7 @@ Consumers of Nodes should tolerate the addition of new attributes and variance i
     **previousStateId**                 ObjectId                State _id associated with previous value
     **previousTime**                    Time                    :ref:`ISO8601<time-format-iso8601>` timestamp of the previous value
     **previousValue**                   Variable                Previous value. Type inherited from _class
+    **rating**                          Object      Yes         :ref:`Rating parameter configuration <api-nodes-update-parameter-rating>`
     **rawValue**                        Double                  Latest raw value. Applies to number parameters only
     **states**                          Array       Yes         Array of :ref:`state configuration <api-nodes-update-states>` objects
     **statesType**                      String      Yes         States evaluation mode:
@@ -891,6 +892,79 @@ Example Column series with hourly totals::
             }
         }
     }
+
+
+.. _api-nodes-update-parameter-rating:
+
+Rating configuration
+````````````````````
+Rating configuration can be included in the update request for :ref:`Rating Parameter <rating-parameter>` nodes. 
+An *inputNodeId* is required which specifies the Number Parameter node to use as the input for the rating calculations. 
+Multiple ratings can be defined, with the *startTime* used to determine the data range each rating will apply.
+
+.. note:: 
+    Rating configuration updates will **replace** any existing ratings and trigger historic data to be recalculated for this parameter.
+
+
+.. table::
+    :class: table-fluid
+
+    ================================    =========   ===========================================================================
+    Rating attributes                   Type        Description
+    ================================    =========   ===========================================================================
+    **inputNodeId**                     ObjectId    Node *_id* to be used as the input for the rating calculations.
+                                                    Required when *notify* option is not *NEVER*
+    **ratings**                         Array       Array of rating definitions.
+    ================================    =========   ===========================================================================
+
+
+.. table::
+    :class: table-fluid
+
+    ================================    =========   ===========================================================================
+    Rating definitions                  Type        Description
+    ================================    =========   ===========================================================================
+    **startTime**                       Time        *Required*. :ref:`ISO8601<time-format-iso8601>` timestamp of the start 
+                                                    range this rating will be applied. End range is automatically set to the 
+                                                    startTime of the next most recent rating or will continue to apply to 
+                                                    new data if no other ratings are specified.
+    **table**                           Object      Lookup table for rating calculations with each row specified in the format 
+                                                    *LOOKUP_VALUE:RESULT* where *LOOKUP_VALUE* is the numeric value of the input 
+                                                    node and *RESULT* is the numeric output value. Input values between each 
+                                                    lookup will be derived by linear interpolation. 
+    ================================    =========   ===========================================================================
+
+Example rating configuration::
+
+    {
+        "rating": {
+            "inputNodeId": "5ec206f9309acc31a896c3b9",
+            "ratings": [
+                {
+                    "startTime": "2020-01-01T00:00:00Z",
+                    "table": {
+                        "0.1": 9.8,
+                        "0.5": 40,
+                        "1.2": 120
+                    }
+                },
+                {
+                    "startTime": "2020-10-24T11:00:00Z",
+                    "table": {
+                        "0.1": 7.8,
+                        "0.2": 18.3
+                        "0.6": 44.2,
+                        "1.1": 130.4
+                    }
+                }
+            ]
+        }
+    }
+
+In this example, Discharge is calculated using 2 rating lookup tables. The *inputNodeId* is set to the *_id* of the Water Level *(Number parameter)*. 
+A water level value of **0.1** will result in an output value of **9.8** for data at the beginning of 2020. Water level **0.1** will result in an
+output value of **7.8** for data in the range starting 24th October 2020 to present.
+
 
 .. only:: not latex
 
