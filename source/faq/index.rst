@@ -74,7 +74,7 @@ Refer to Historic Data :ref:`Limits <historic-limits>` for more information abou
 
 Where is my data stored and is it secure?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-We store all customer data securely on Amazon Web Services data hosting facilities located in the USA and Australia. 
+We store all customer data securely on Amazon Web Services data hosting facilities located in Australia. 
 Data is strictly segregated so that no user may ever view, tamper with, or become aware of the data of any other user.
 Refer to our `Compliance <https://eagle.io/policies/compliance>`_ section for full details.
 

@@ -371,6 +371,12 @@ Automatic Parameter Configuration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
     Check this option to automatically create, update and disable parameters based on the tables defined in the data logger. When checked, the Source tables will not be displayed.
 
+.. note::
+    Campbell Scientific data logger program changes will trigger the following automatic parameter configuration:
+        * DataTable field names common between the old and new program will maintain existing parameter assignment
+        * DataTable field names absent from the new program will cause assigned parameters to be disabled (greyed out)
+        * DataTable field names newly defined will be associated with new parameters
+
 Location Coordinates
 ^^^^^^^^^^^^^^^^^^^^
     The Source can optionally provide Location Coordinates from a coordinate series or a pair of numeric series (lat/lng). You need to configure the Location and select this Source to be used for its coordinates. Select the table and series to use from the drop down list.
