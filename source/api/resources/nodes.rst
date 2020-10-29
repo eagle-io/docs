@@ -899,7 +899,7 @@ Example Column series with hourly totals::
 Rating configuration
 ````````````````````
 Rating configuration can be included in the update request for :ref:`Rating Parameter <rating-parameter>` nodes. 
-An *inputNodeId* is required which specifies the Number Parameter node to use as the input for the rating calculations. 
+An *inputNodeId* is required which specifies the Number Parameter to use as the input for the rating calculations. 
 Multiple ratings can be defined, with the *startTime* used to determine the data range each rating will apply.
 
 .. note:: 
@@ -912,9 +912,9 @@ Multiple ratings can be defined, with the *startTime* used to determine the data
     ================================    =========   ===========================================================================
     Rating attributes                   Type        Description
     ================================    =========   ===========================================================================
-    **inputNodeId**                     ObjectId    Node *_id* to be used as the input for the rating calculations.
-                                                    Required when *notify* option is not *NEVER*
-    **ratings**                         Array       Array of rating definitions.
+    **inputNodeId**                     ObjectId    Node *_id* to be used as the input for the rating calculations. 
+                                                    Must be a Number parameter in the same Workspace as this Rating parameter.
+    **ratings**                         Array       Rating definitions (as documented below).
     ================================    =========   ===========================================================================
 
 
