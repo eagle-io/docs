@@ -928,10 +928,13 @@ Multiple ratings can be defined, with the *startTime* used to determine the data
                                                     range this rating will be applied. End range is automatically set to the 
                                                     startTime of the next most recent rating or will continue to apply to 
                                                     new data if no other ratings are specified.
-    **table**                           Object      Lookup table for rating calculations with each row specified in the format 
-                                                    *LOOKUP_VALUE:RESULT* where *LOOKUP_VALUE* is the numeric value of the input 
-                                                    node and *RESULT* is the numeric output value. Input values between each 
-                                                    lookup will be derived by linear interpolation. 
+    
+    **table**                           Array       Lookup table for rating calculations with each row specified as an object
+                                                    with *input* and *result*. Values that fall between each lookup input will 
+                                                    be derived by linear interpolation. 
+
+    | **input**                         Double      *Required*. The numeric value of the input node to match. 
+    | **result**                        Double      *Required*. The numeric output value for the matching input. 
     ================================    =========   ===========================================================================
 
 Example rating configuration::
@@ -942,20 +945,41 @@ Example rating configuration::
             "ratings": [
                 {
                     "startTime": "2020-01-01T00:00:00Z",
-                    "table": {
-                        "0.1": 9.8,
-                        "0.5": 40,
-                        "1.2": 120
-                    }
+                    "table": [
+                        {
+                            "input": 0.1,
+                            "result": 9.8
+                        },
+                        {
+                            "input": 0.5,
+                            "result": 40
+                        },
+                        { 
+                            "input": 1.2,
+                            "result": 120
+                        }
+                    ]
                 },
                 {
                     "startTime": "2020-10-24T11:00:00Z",
-                    "table": {
-                        "0.1": 7.8,
-                        "0.2": 18.3
-                        "0.6": 44.2,
-                        "1.1": 130.4
-                    }
+                    "table": [
+                        {
+                            "input": 0.1,
+                            "result": 7.8
+                        },
+                        {
+                            "input": 0.2,
+                            "result": 18.3
+                        },
+                        {
+                            "input": 0.6,
+                            "result": 44.2
+                        },
+                        {
+                            "input": 1.1,
+                            "result": 130.4
+                        }
+                    ]
                 }
             ]
         }
