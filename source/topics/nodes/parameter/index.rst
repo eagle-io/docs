@@ -433,14 +433,50 @@ Process
 See :ref:`Processing and logic <process-parameter>`.
 
 
+.. only:: not latex
+
+    |
+
+
 
 .. _rating-parameter:
 
 Rating
 ~~~~~~~
+Rating parameters use an *Input parameter* and one or more ratings to caculate its data. 
 
-.. note:: Rating configuration via the User Interface is in active development. In the mean time you can configure a Rating Parameter via the API.
+**Rating tables** should have multiple rows specifying an input *lookup* value and corresponding *result* value. 
+Values that fall between each input lookup will be derived by linear interpolation. 
 
+Multiple ratings can be added, with the *start* time used to determine the data range each rating will apply.
+
+
+
+.. raw:: latex
+
+    \vspace{-10pt}
+    
+.. only:: not latex
+
+    .. image:: parameter_rating.jpg
+        :scale: 50 %
+
+    | 
+
+.. only:: latex
+    
+    | 
+
+    .. image:: parameter_rating.jpg
+
+
+.. note:: 
+    Only Number parameters within the same Workspace (or :ref:`Template <node-configuration-template>`) can be used as the *Input parameter*. 
+    Adding, removing or modifying ratings will trigger historic data to be recalculated.
+
+.. only:: not latex
+
+    |
 
 
 .. _node-configuration-parameter-historic:
@@ -465,6 +501,11 @@ Use the *Delete* button to permanently remove all historic data for this Paramet
     | 
 
     .. image:: parameter_historic.png
+
+
+.. only:: not latex
+
+    |
 
 
 Control

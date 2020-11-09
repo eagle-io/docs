@@ -900,7 +900,7 @@ Rating configuration
 ````````````````````
 Rating configuration can be included in the update request for :ref:`Rating Parameter <rating-parameter>` nodes. 
 An *inputNodeId* is required which specifies the Number Parameter to use as the input for the rating calculations. 
-Multiple ratings can be defined, with the *startTime* used to determine the data range each rating will apply.
+Multiple ratings can be added, with the *startTime* used to determine the data range each rating will apply.
 
 .. note:: 
     Rating configuration updates will **replace** any existing ratings and trigger historic data to be recalculated for this parameter.
@@ -930,7 +930,7 @@ Multiple ratings can be defined, with the *startTime* used to determine the data
                                                     new data if no other ratings are specified.
     
     **table**                           Array       Lookup table for rating calculations with each row specified as an object
-                                                    with *input* and *result*. Values that fall between each lookup input will 
+                                                    with *input* and *result*. Values that fall between each input lookup will 
                                                     be derived by linear interpolation. 
 
     | **input**                         Double      *Required*. The numeric value of the input node to match. 
@@ -987,7 +987,7 @@ Example rating configuration::
 
 In this example, Discharge is calculated using 2 rating lookup tables. The *inputNodeId* is set to the *_id* of the Water Level *(Number parameter)*. 
 A water level value of **0.1** will result in an output value of **9.8** for data at the beginning of 2020. Water level **0.1** will result in an
-output value of **7.8** for data in the range starting 24th October 2020 to present.
+output value of **7.8** for data in the range starting 24th October 2020 onwards.
 
 
 .. only:: not latex
