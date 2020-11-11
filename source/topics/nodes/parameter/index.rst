@@ -469,7 +469,7 @@ Multiple ratings can be added, with the *start* time used to determine the data 
     .. image:: parameter_rating.jpg
 
 
-Ratings can be imported and exported using the fixed :ref:`rating CSV <ratings-format-csv>` format.
+Ratings can be imported and exported using the fixed :ref:`ratings CSV <ratings-format-csv>` format.
 
 
 .. note:: 
