@@ -451,7 +451,6 @@ Values that fall between each input lookup will be derived by linear interpolati
 Multiple ratings can be added, with the *start* time used to determine the data range each rating will apply.
 
 
-
 .. raw:: latex
 
     \vspace{-10pt}
@@ -468,6 +467,9 @@ Multiple ratings can be added, with the *start* time used to determine the data 
     | 
 
     .. image:: parameter_rating.jpg
+
+
+Ratings can be imported and exported using the fixed :ref:`rating CSV <ratings-format-csv>` format.
 
 
 .. note:: 
