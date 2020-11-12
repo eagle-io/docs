@@ -1,12 +1,12 @@
 .. meta::
-   :description: Notifications are used to inform users and groups of an environmental monitoring alarm via Email, SMS and Voice. Users can personally subscribe to specific Nodes and specify their notification preferences or you can manage notifications on behalf of a user or group, depending on privilege level.
+   :description: Notifications are used to inform users and groups of an environmental monitoring alarm via Email and SMS. Users can personally subscribe to specific Nodes and specify their notification preferences or you can manage notifications on behalf of a user or group, depending on privilege level.
 
 .. _notifications:
 
 Notifications
 ==================
 
-|icon-notification| Notifications are used to inform users and groups of an :ref:`alarm <alarms>` or other condition via Email, SMS and Voice message. 
+|icon-notification| Notifications are used to inform users and groups of an :ref:`alarm <alarms>` or other condition via Email and SMS. 
 Users can personally subscribe to specific Nodes and specify their :ref:`notification preferences <user-notification-preferences>` or you can :ref:`manage notifications <notifications-manage>` on behalf of a user or group if you have *manage notifications* security permission.
 
 .. only:: not latex

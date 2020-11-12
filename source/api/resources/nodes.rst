@@ -1303,20 +1303,17 @@ Response
                     {
                         "category": "Maintenance",
                         "email": true,
-                        "sms": false,
-                        "voice": false
+                        "sms": false
                     },
                     {
                         "category": "Operations",
                         "email": true,
-                        "sms": true,
-                        "voice": false
+                        "sms": true
                     },
                     {
                         "category": "Critical",
                         "email": true,
-                        "sms": false,
-                        "voice": true
+                        "sms": false
                     }
                 ]
             }
@@ -1340,20 +1337,17 @@ Response
                             {
                                 "category": "Maintenance",
                                 "email": true,
-                                "sms": true,
-                                "voice": false
+                                "sms": true
                             },
                             {
                                 "category": "Operations",
                                 "email": true,
-                                "sms": true,
-                                "voice": false
+                                "sms": true
                             },
                             {
                                 "category": "Critical",
                                 "email": true,
-                                "sms": true,
-                                "voice": true
+                                "sms": true
                             }
                         ]
                     }
