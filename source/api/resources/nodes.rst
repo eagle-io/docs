@@ -929,12 +929,12 @@ Multiple ratings can be added, with the *startTime* used to determine the data r
                                                     startTime of the next most recent rating or will continue to apply to 
                                                     new data if no other ratings are specified.
     
-    **table**                           Array       Lookup table for rating calculations with each row specified as an object
-                                                    with *input* and *result*. Values that fall between each input lookup will 
-                                                    be derived by linear interpolation. 
+    **table**                           Array       Lookup table for rating calculations with each row specified as an array
+                                                    of *input* and *result*. Values that fall between each input lookup will 
+                                                    be derived by linear interpolation.
 
-    | **input**                         Double      *Required*. The numeric value of the input node to match. 
-    | **result**                        Double      *Required*. The numeric output value for the matching input. 
+    | **[<input>, <result>]**           Array       *Required*. The numeric value of the input node to match and corresponding 
+                                                    result.
     ================================    =========   ===========================================================================
 
 Example rating configuration::
@@ -946,39 +946,18 @@ Example rating configuration::
                 {
                     "startTime": "2020-01-01T00:00:00Z",
                     "table": [
-                        {
-                            "input": 0.1,
-                            "result": 9.8
-                        },
-                        {
-                            "input": 0.5,
-                            "result": 40
-                        },
-                        { 
-                            "input": 1.2,
-                            "result": 120
-                        }
+                        [0.1, 9.8],
+                        [0.5, 40],
+                        [1.2, 120]
                     ]
                 },
                 {
                     "startTime": "2020-10-24T11:00:00Z",
                     "table": [
-                        {
-                            "input": 0.1,
-                            "result": 7.8
-                        },
-                        {
-                            "input": 0.2,
-                            "result": 18.3
-                        },
-                        {
-                            "input": 0.6,
-                            "result": 44.2
-                        },
-                        {
-                            "input": 1.1,
-                            "result": 130.4
-                        }
+                        [0.1, 7.8],
+                        [0.2, 18.3],
+                        [0.6, 44.2],
+                        [1.1, 130.4]
                     ]
                 }
             ]
@@ -1265,9 +1244,11 @@ Response
     |
 
 
-Retrieve user and group notification subscriptions
----------------------------------------------------
+Retrieve user and group notification preferences
+--------------------------------------------------
 Retrieve a list of all users and groups subscribed to receieve notifications for a node by its **id**. You can use the automatically assigned *_id* or your own *customId* prepended with '@'. 
+
+When the node is a *Workspace* a list of all users and groups that are subscribed to any node within the Workspace is returned. 
 
 Request
 ~~~~~~~~
@@ -1360,6 +1341,10 @@ Response
 
     |
 
+
+
+
+.. _api-nodes-notifications-subscribe:
 
 Subscribe users and groups to notifications
 --------------------------------------------
