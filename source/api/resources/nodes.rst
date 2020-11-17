@@ -2184,7 +2184,7 @@ Arguments
     Argument            Example                     Description
     =================   ========================    ======================================================================
     **format**          JSON                        *Optional - Default is JSON*. 
-                                                    Data format being inserted: *[JSON]*. (CSV support coming soon)
+                                                    Data format being inserted: *[JSON]*.
 
     **writeMode**       MERGE_OVERWRITE_EXISTING    *Optional - Default is MERGE_OVERWRITE_EXISTING*. 
                                                     See all available :ref:`write mode <historic-data-import-writemode>` 
@@ -2278,7 +2278,7 @@ Arguments
     Argument            Example                     Description
     =================   ========================    ======================================================================
     **format**          JSON                        *Optional - Default is JSON*. 
-                                                    Data format being inserted: *[JSON]*. (CSV support coming soon)
+                                                    Data format being inserted: *[JSON]*.
 
     **writeMode**       MERGE_OVERWRITE_EXISTING    *Optional - Default is MERGE_OVERWRITE_EXISTING*. 
                                                     See all available :ref:`write mode <historic-data-import-writemode>` 

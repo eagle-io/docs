@@ -474,7 +474,6 @@ Ratings can be imported and exported using the fixed :ref:`ratings CSV <ratings-
 
 .. note:: 
     Only Number parameters within the same Workspace (or :ref:`Template <node-configuration-template>`) can be used as the *Input parameter*. 
-    Adding, removing or modifying ratings will trigger historic data to be recalculated.
 
 .. only:: not latex
 
