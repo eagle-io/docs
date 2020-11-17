@@ -1248,7 +1248,26 @@ Retrieve user and group notification preferences
 --------------------------------------------------
 Retrieve a list of all users and groups subscribed to receieve notifications for a node by its **id**. You can use the automatically assigned *_id* or your own *customId* prepended with '@'. 
 
-When the node is a *Workspace* a list of all users and groups that are subscribed to any node within the Workspace is returned. 
+Arguments
+~~~~~~~~~
+
+.. table::
+    :class: table-fluid
+
+    =================   ========    ========================================================================
+    Argument            Example                     Description
+    =================   ========    ========================================================================
+    **subscribeType**   NODE        *Optional - Default is NODE*. 
+                                    Users and Groups to return in the response: *[NODE, BRANCH, ALL]*. 
+                                    NODE includes users & groups subscribed to this node. 
+                                    BRANCH includes users & groups subscribed to this node and any 
+                                    nodes it contains. 
+                                    ALL includes all users & groups that have access to the node (and can 
+                                    be subscribed) regardless of current subscription state. This can 
+                                    used to retrieve user notification preferences for a workspace prior to 
+                                    :ref:`subscribing to notifications <api-nodes-notifications-subscribe>`.
+    =================   ========    ========================================================================
+
 
 Request
 ~~~~~~~~
@@ -1342,6 +1361,121 @@ Response
     |
 
 
+Update user notification preferences
+------------------------------------
+Update user notification preferences for a node by its **id**. You can use the automatically assigned *_id* or your own *customId* prepended with '@'. 
+
+This allows for *notificationCategories* to have *email* and *sms* enabled or disabled per *category*. 
+These preferences **apply to all node notification subscriptions within the Workspace**.
+Only categories with changed attributes need to be included in the update. If the category specified does not exist it will be ignored. 
+
+When :ref:`subscribing groups to notifications <api-nodes-notifications-subscribe>` you still need to update notification preferences for individual users of the group. 
+
+The response includes updated profiles for all *requested users*. 
+
+.. note:: 
+    The specified users (email addresses) must be valid :ref:`workspace users <api-nodes-security>`. 
+    Required API key permission: *Modify*. 
+    
+    You must also :ref:`subscribe users and groups to notifications <api-nodes-notifications-subscribe>` for the specific nodes they want to receive notifications from. 
+
+Request
+~~~~~~~~
+
+::
+
+    POST /api/v1/nodes/:id/notifications
+
+::
+    
+    {
+        "users": [
+            {
+                "user": "bob@company.com",
+                "notificationCategories": [
+                    {
+                        "category": "Critical",
+                        "email": true,
+                        "sms": true
+                    }
+                ]
+            }, 
+            {
+                "user": "will@company.com",
+                "notificationCategories": [
+                    {
+                        "category": "Operations",
+                        "sms": false
+                    },
+                    {
+                        "category": "Critical",
+                        "email": false,
+                        "sms": false
+                    }
+                ]
+            }
+        ]
+    }
+
+
+Response
+~~~~~~~~
+
+::
+    
+    HTTP/1.1 200 OK
+    Content-Type: application/json; charset=utf-8
+
+::
+    
+    {
+        "users": [
+            {
+                "user": "bob@company.com",
+                "notificationCategories": [
+                    {
+                        "category": "Maintenance",
+                        "email": false,
+                        "sms": false
+                    },
+                    {
+                        "category": "Operations",
+                        "email": false,
+                        "sms": false
+                    },
+                    {
+                        "category": "Critical",
+                        "email": true,
+                        "sms": true
+                    }
+                ]
+            }, 
+            {
+                "user": "will@company.com",
+                "notificationCategories": [
+                    {
+                        "category": "Maintenance",
+                        "email": true,
+                        "sms": true,
+                    },
+                    {
+                        "category": "Operations",
+                        "email": true,
+                        "sms": false
+                    },
+                    {
+                        "category": "Critical",
+                        "email": false,
+                        "sms": false
+                    }
+                ]
+            }
+        ]
+    }
+
+.. only:: not latex
+
+    | 
 
 
 .. _api-nodes-notifications-subscribe:
@@ -1351,7 +1485,7 @@ Subscribe users and groups to notifications
 Subscribe a list of users and groups to receieve notifications for a node by its **id**. You can use the automatically assigned *_id* or your own *customId* prepended with '@'. 
 
 .. note:: 
-    Only available for Location, Source and Parameter nodes. The specified users (email addresses) must be valid workspace users with *SUBSCRIBE_NOTIFICATIONS* permission. 
+    Only available for Location, Source and Parameter nodes. The specified users (email addresses) must be valid workspace users. 
     Required API key permission: *Modify*
 
 Request
@@ -1455,6 +1589,7 @@ Response
 
     |
 
+.. _api-nodes-security:
 
 Retrieve Workspace user and group permissions
 ----------------------------------------------
