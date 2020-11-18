@@ -1688,7 +1688,7 @@ Add a list of users and groups to a Workspace by its **id** and set or update us
 You must specify a valid *role* name that has been preconfigured in :ref:`account settings <management-security-userroles>`.
 
 If the user (email address) does not already exist a new user profile will be created and a *profileActivateUrl* will be returned so the user profile can be finalized by navigating to the url in a web browser. 
-When adding a new user (profile does not exist) you can optionally include attributes: *name*, *phone*, *timezone*, *timezoneAdjustForDst* and *timeFormat*.
+When adding a new user (profile does not exist) you can optionally include attributes: *name*, *phone*, *timezone*, *timezoneAdjustForDst*, *timeFormat* and *notificationCategories*.
 
 .. note:: 
     Required API key permission: *Modify*
@@ -1729,7 +1729,7 @@ Request
                 "expiryTime": "2019-11-05T05:24:32.000+0000" 
                 "name": {
                     "first": "Jane", 
-                    "last": "Smith",
+                    "last": "Smith"
                 },
                 "phone": "+61400000001", 
                 "timezone": "Australia/Sydney", 
