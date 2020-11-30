@@ -148,3 +148,11 @@ Response
 
     |
 
+
+Create or Delete events
+------------------------
+You can :ref:`Create events <api-resources-nodes-events-post>` or :ref:`Delete events <api-resources-nodes-events-delete>` for a specific node via the :ref:`Nodes Resource <api-resources-nodes>`.
+
+.. only:: not latex
+
+    |

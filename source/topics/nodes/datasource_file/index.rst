@@ -410,9 +410,12 @@ Parameter Assignment
 
     |
 
+.. _node-configuration-datasource-file-historic:
+
 Historic
 ~~~~~~~~
-Use the *Delete* button to permanently remove all historic data for Parameters contained with the Source. Alternatively use the :ref:`Parameter Historic <node-configuration-parameter-historic>` section to delete historic data for individual Parameters.
+Click the *Delete* buttons and save to permanently remove all *historic data* or *events* for Parameters contained within this Data Source. 
+Alternatively use the :ref:`Parameter Historic <node-configuration-parameter-historic>` section to delete historic data or events for individual Parameters.
 
 .. raw:: latex
 
@@ -420,7 +423,7 @@ Use the *Delete* button to permanently remove all historic data for Parameters c
     
 .. only:: not latex
 
-    .. image:: datasource_historic.png
+    .. image:: datasource_historic.jpg
         :scale: 50 %
 
     | 
@@ -429,7 +432,7 @@ Use the *Delete* button to permanently remove all historic data for Parameters c
     
     | 
 
-    .. image:: datasource_historic.png
+    .. image:: datasource_historic.jpg
 
 .. only:: not latex
 

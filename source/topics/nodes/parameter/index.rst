@@ -484,7 +484,7 @@ Ratings can be imported and exported using the fixed :ref:`ratings CSV <ratings-
 
 Historic
 ~~~~~~~~
-Use the *Delete* button to permanently remove all historic data for this Parameter.
+Click the *Delete* buttons and save to permanently remove all *historic data* or *events* for this Parameter.
 
 .. raw:: latex
 
@@ -492,7 +492,7 @@ Use the *Delete* button to permanently remove all historic data for this Paramet
     
 .. only:: not latex
 
-    .. image:: parameter_historic.png
+    .. image:: parameter_historic.jpg
         :scale: 50 %
 
     | 
@@ -501,7 +501,7 @@ Use the *Delete* button to permanently remove all historic data for this Paramet
     
     | 
 
-    .. image:: parameter_historic.png
+    .. image:: parameter_historic.jpg
 
 
 .. only:: not latex

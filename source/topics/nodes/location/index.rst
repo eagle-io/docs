@@ -110,7 +110,8 @@ Metadata provides a simple key/value data structure that can be used to store st
 
 Historic
 ~~~~~~~~
-Use the *Delete* button to permanently remove all historic coordinate data for this Location.
+Click the *Delete* buttons and save to permanently remove all *historic coordinate data* or *events* for this Location node. 
+Alternatively use the :ref:`Source Historic <node-configuration-datasource-file-historic>` section to delete historic data or events for a Data Source and its Parameters.
 
 .. raw:: latex
 
@@ -118,7 +119,7 @@ Use the *Delete* button to permanently remove all historic coordinate data for t
     
 .. only:: not latex
 
-    .. image:: location_historic.png
+    .. image:: location_historic.jpg
         :scale: 50 %
 
     | 
@@ -127,7 +128,7 @@ Use the *Delete* button to permanently remove all historic coordinate data for t
     
     | 
 
-    .. image:: location_historic.png
+    .. image:: location_historic.jpg
 
 
 .. only:: not latex

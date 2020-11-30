@@ -2440,3 +2440,208 @@ Response
 .. only:: not latex
 
     |
+
+
+
+Retrieve node events
+----------------------
+Retrieve events related to a node by its **id**. You can use the automatically assigned *_id* or your own *customId* prepended with '@'. 
+Use the :ref:`Events resource <api-resources-events>` for retrieving events related to multiple nodes in a single request.
+
+
+Arguments
+~~~~~~~~~
+
+.. table::
+    :class: table-fluid
+
+    =================   =====================   ================================================================
+    Argument            Example                 Description
+    =================   =====================   ================================================================
+    **startTime**       2017-08-16T02:00:00Z    *Optional*. 
+                                                :ref:`ISO8601<time-format-iso8601>` timestamp
+
+    **endTime**         2017-08-16T02:20:43Z    *Optional*. 
+                                                :ref:`ISO8601<time-format-iso8601>` timestamp
+
+    **attr**            eventTime,message       *Optional*. 
+                                                Comma delimited list of attributes to include in response
+
+    **filter**          level($eq:DEBUG)        *Optional*. 
+                                                :ref:`Filter <api-overview-request-arguments-filter>` the 
+                                                records based on attribute value(s). 
+                                                *Note: eventTime can not be used as a filter*
+
+    **limit**           100                     *Optional - Default is 1000 if both startTime & endTime are not 
+                                                specified*. Maximum number of records to be returned.
+
+    **skip**            50                      *Optional*. 
+                                                Skip the first *n* records returned. Can be used with 
+                                                ``limit`` to paginate results
+
+    **sort**            eventTime(DESC)         *Optional - Default is eventTime(ASC)*. 
+                                                Comma delimited list of attributes to sort by. Optionally 
+                                                include sort direction in parentheses or default to ASC: 
+                                                *[ASC, DESC]*
+    =================   =====================   ================================================================
+
+
+Request
+~~~~~~~~
+
+::
+
+    GET /api/v1/nodes/:id/events
+
+Response
+~~~~~~~~
+
+::
+    
+    HTTP/1.1 200 OK
+    Content-Type: application/json; charset=utf-8
+
+::
+    
+    [
+        {
+            "_class": "io.eagle.models.event.Event",
+            "_id": "58d3508c8d6a80f2bd7eaf2e",
+            "alarmState": "NONE",
+            "message": "Processed 60 records from sensors.dat [4 parameters updated]",
+            "eventType": "ACQUISITION",
+            "eventTime": "2017-03-23T04:35:24.000Z",
+            "nodeId": "57d799d86a559fb79215b5c1",
+            "nodeType": "io.eagle.models.node.source.data.TextParser",
+            "level": "DEBUG",
+            "workspaceId": "57e0a4d8a19b65042ad079c2",
+            "username": "System"
+        },
+        {
+            "_class": "io.eagle.models.event.Event",
+            "_id": "58d0b9df0bb36d2965e5b745",
+            "alarmState": "NONE",
+            "message": "Rename node 'Cond' to 'Conductivity'",
+            "eventType": "CONFIGURATION",
+            "eventTime": "2017-03-21T05:27:59.000Z",
+            "nodeId": "58bf63d57426a2b19ea63f54",
+            "nodeType": "io.eagle.models.node.point.NumberPoint",
+            "level": "INFO",
+            "workspaceId": "577b5a821f704bb5a3f1411b",
+            "username": "user@company.com"
+        }
+    ]
+
+.. only:: not latex
+
+    |
+
+
+.. _api-resources-nodes-events-post:
+
+Create node events
+-------------------
+Create new event(s) for a node by its **id**. You can use the automatically assigned *_id* or your own *customId* prepended with '@'. 
+Multiple events can be created for the node in a single request by providing an Array of Events in the request body. The event requires 
+a **message** and optional **eventTime**. Events created via the API are assigned *level: INFO*, *eventType: CONFIGURATION*, *alarmState: NONE*. 
+
+.. note:: 
+    Required API key permission: *Modify*
+
+
+Attributes
+~~~~~~~~~~~
+
+.. table::
+    :class: table-fluid
+
+    =================   =========   ========================================================================================
+    Attribute           Type        Description
+    =================   =========   ========================================================================================
+    **message**         String      *Required*. Event description. 1-500 characters.
+
+    **eventTime**       Time        *Optional*. :ref:`ISO8601<time-format-iso8601>` timestamp associated with the event. If
+                                    not specified the time the request was made will be used.
+    =================   =========   ========================================================================================
+
+
+Request
+~~~~~~~~
+
+::
+
+    POST /api/v1/nodes/:id/events
+
+::
+
+    [
+        {
+            "message": "Configuration and Site Acceptance Test complete"
+        },
+        {
+            "message": "New event created via API with optional timestamp",
+            "eventTime": "2019-10-20T02:32:55.000Z"
+        }
+    ]
+
+
+Response
+~~~~~~~~
+
+::
+    
+    HTTP/1.1 202 Accepted
+    Content-Type: application/json; charset=utf-8
+
+::
+    
+    {
+        "status": {
+            "code": 202,
+            "message": "Operation accepted but not yet complete"
+        }
+    }
+
+.. only:: not latex
+
+    |
+
+
+.. _api-resources-nodes-events-delete:
+
+Delete node events
+-------------------
+Delete all events related to a node by its **id**. You can use the automatically assigned *_id* or your own *customId* prepended with '@'.
+A new event *"Cleared events"* will be created to indicate this action occurred.
+
+.. note:: 
+    Required API key permission: *Modify*
+
+
+Request
+~~~~~~~~
+
+::
+
+    DELETE /api/v1/nodes/:id/events
+
+Response
+~~~~~~~~
+
+::
+    
+    HTTP/1.1 202 Accepted
+    Content-Type: application/json; charset=utf-8
+
+::
+    
+    {
+        "status": {
+            "code": 202,
+            "message": "Operation accepted but not yet complete"
+        }
+    }
+
+.. only:: not latex
+
+    |
