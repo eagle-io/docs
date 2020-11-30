@@ -16,10 +16,8 @@ Notification Limits
 
 Email notifications are free and unlimited.
 
-Most account plans are bundled with a specific number of included monthly SMS. 
+All account plans are bundled with a specific number of included monthly SMS. 
 Additional SMS Packs can be purchased in quantities of 100 / month. 
-
-Managed accounts can have SMS limits specified or you can choose to *Disable* SMS for these accounts.
 
 The *Send SMS via email* option will send SMS notifications for free to phone numbers in the USA using the recipients' service provider email to SMS transport where possible. 
 This option is only visible on primary accounts and is automatically applied to all managed accounts. 
@@ -31,7 +29,7 @@ The phone number field in :ref:`user preferences <user-preferences>` indicates i
 
 .. only:: not latex
 
-	.. image:: account_notification_limit.jpg
+	.. image:: account_notification_plan.jpg
 		:scale: 50 %
 
 	| 
@@ -40,10 +38,28 @@ The phone number field in :ref:`user preferences <user-preferences>` indicates i
 
 	| 
 
-	.. image:: account_notification_limit.jpg
+	.. image:: account_notification_plan.jpg
 
 
-The account owner will receive an email from the system when the total number of SMS sent within the current billing period gets close to the account limit. Another email will be sent when the limit is reached and no further notification SMS will be sent until the next billing period.
+You can optionally set a monthly *SMS limit* or disable SMS completely. The SMS limit is applied to assets configured directly within the account only. 
+Managed accounts have an SMS Limit setting independent of the primary account.
+
+.. only:: not latex
+
+    .. image:: account_notification_limit.jpg
+        :scale: 50 %
+
+    | 
+
+.. only:: latex
+
+    | 
+
+    .. image:: account_notification_limit.jpg
+
+
+
+.. note:: The account owner will receive an email from the system when the total number of SMS sent within the current billing period gets close to the account limit. Another email will be sent when the limit is reached and no further notification SMS will be sent until the next billing period.
 
 .. only:: not latex
 
