@@ -448,7 +448,7 @@ Rating parameters use an *Input parameter* and one or more ratings to caculate i
 **Rating tables** should have multiple rows specifying an input *lookup* value and corresponding *result* value. 
 Values that fall between each input lookup will be derived by linear interpolation. 
 
-**Rating polynomials** allow multiple coefficients to be defined which are used to calculate a value using a polynomial regression. 
+**Rating equations** allow multiple coefficients to be defined which are used to calculate a value using a polynomial equation. 
 
 Multiple ratings can be added, with the *start* time used to determine the data range each rating will apply.
 

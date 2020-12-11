@@ -46,10 +46,10 @@ Columns (separated by comma ',') must use this strict format.
                                                 lookup value and *15* is the result.
 
     |         a:1.1                             **Polynomial**: Columns 3 onwards specifies
-                                                the coefficients. Each column must use the 
-                                                format **<coefficient>:<value>**. The 
-                                                coefficient must be a single letter, ordered
-                                                alphabetically. 
+                                                the coefficients of a polynomial equation. 
+                                                Each column must use the format 
+                                                **<coefficient>:<value>**. The coefficient must 
+                                                be a single letter, ordered alphabetically. 
                                                 In the example shown *a* is the coefficient  
                                                 and *1.1* is its value. 
     ======    ==============================    ===============================================

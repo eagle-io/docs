@@ -914,7 +914,7 @@ Multiple ratings can be added, with the *startTime* used to determine the data r
     ================================    =========   ===========================================================================
     **inputNodeId**                     ObjectId    Node *_id* to be used as the input for the rating calculations. 
                                                     Must be a Number parameter in the same Workspace as this Rating parameter.
-    **ratings**                         Array       Rating table and rating polynomial objects (as documented below).
+    **ratings**                         Array       Rating table and rating equation objects (as documented below).
     ================================    =========   ===========================================================================
 
 
@@ -942,14 +942,16 @@ Multiple ratings can be added, with the *startTime* used to determine the data r
     :class: table-fluid
 
     ================================    =========   ===========================================================================
-    Rating polynomial                   Type        Description
+    Rating equation                     Type        Description
     ================================    =========   ===========================================================================
     **startTime**                       Time        *Required*. :ref:`ISO8601<time-format-iso8601>` timestamp of the start 
                                                     range this rating will be applied. End range is automatically set to the 
                                                     startTime of the next most recent rating or will continue to apply to 
                                                     new data if no other ratings are specified.
+
+    **equationType**                    String      *POLYNOMIAL* is currently the only supported rating equation.
     
-    **coefficients**                    Object      Map of *coefficient* key and corresponding *value*. 
+    **coefficients**                    Object      Map of *coefficient* key and corresponding *value*.
                                                     The coefficient keys must be single letters, ordered alphabetically. 
     ================================    =========   ===========================================================================
 
@@ -978,6 +980,7 @@ Example rating configuration::
                 },
                 {
                     "startTime": "2020-11-01T11:00:00Z",
+                    "equationType": "POLYNOMIAL",
                     "coefficients": {
                         "a": 1.1,
                         "b": 2.5,
@@ -992,7 +995,7 @@ Example rating configuration::
 
 In this example, Discharge is calculated using 2 rating lookup tables and 1 rating polynomial. The *inputNodeId* is set to the *_id* of the *Water Level* parameter. 
 A water level value of **0.1** will result in an output value of **9.8** for data at the beginning of 2020. Water level **0.1** will result in an
-output value of **7.8** for data in the range starting 24th October. From 1st November onwards, a polynomial regression will be applied using the coefficients **a, b, c, d, e**.
+output value of **7.8** for data in the range starting 24th October. From 1st November onwards, a polynomial equation will be applied using the coefficients **a, b, c, d, e**.
 
 .. only:: not latex
 
