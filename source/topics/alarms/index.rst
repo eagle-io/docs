@@ -220,7 +220,7 @@ Process Alarms are specific to Processor Sources and Process Parameters. The ala
 
 Quality Alarm
 ~~~~~~~~~~~~~~
-Quality Alarms are specific to Parameters and Locations and are triggered (if enabled) when an acquired data point quality code matches one of the specifed :ref:`quality types <historic-quality>`.
+Quality Alarms are specific to Parameters and Locations and are triggered (if enabled) when an acquired data point quality code matches one of the specified :ref:`quality types <historic-quality>`.
 
 .. raw:: latex
 
