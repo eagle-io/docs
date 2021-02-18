@@ -299,9 +299,6 @@ In-Sequence Collection
 ~~~~~~~~~~~~~~~~~~~~~~
 For *Campbell Scientific [PakBus]* dataloggers that share the same connection, data collection will automatically occur in sequence. The sequence is ordered from oldest to newest (the date the datalogger was created in eagle.io).
 
-In-Sequence Collection for TCP Client
-     When using the *TCP Client* transport, all dataloggers which have the same internet address and port number share the same connection. If one datalogger is configured for scheduled collection, then on completion it will trigger collection of the next datalogger which shares the same connection. Dataloggers which have their own schedule will not be triggered by in-sequence collection. Therefore, best practice is to configure a schedule on only one of the dataloggers that share the same connection, and allow the others to be automatically collected in sequence. 
-
 In-Sequence Collection for TCP Callback
      When using the *TCP Callback* transport, all dataloggers which have the same device id share the same connection, and these will also be collected in sequence whenever the device connects to eagle.io.
 
