@@ -1,5 +1,5 @@
 .. meta::
-   :description: The technical resources and configuration manuals for our partners' data logger hardware. Campbell Scientific, CellVisor, Dataforth, MAQ®20, dataTaker, Spider, Libelium Waspmote, Maxon Intelimax+, OTT netDL, Point Orange 3G, Scout, SensorLog, Sigfox, WaterLog, YDOC
+   :description: The technical resources and configuration manuals for our partners' data logger hardware. Campbell Scientific, CellVisor, Dataforth, MAQ®20, dataTaker, Spider, Libelium Waspmote, Maxon Intelimax+, NNNco, OTT netDL, Point Orange 3G, Scout, SensorLog, Sigfox, WaterLog, YDOC
 
 .. _device-configuration:
 
@@ -18,6 +18,7 @@ The following topics will assist when configuring your device for `eagle.io <htt
    halytech_spider/index
    libelium_waspmote/index
    maxon_intelimax/index
+   nnnco/index
    ott_netdl/index
    metasphere_pointorange3g/index
    scout/index
