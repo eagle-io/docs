@@ -151,7 +151,7 @@ Consumers of Nodes should tolerate the addition of new attributes and variance i
     **clockSync**                       Boolean                 Flag to indicate if data logger clock is being syncronized with server
     **firmwareVersion**                 String                  Firmware version in-use by data logger
     **isEnabled**                       Boolean     Yes         Flag to enable or disable the Source
-    **lastAcquireRecordCount**          Int32                   Number of records acquired on last acquistion
+    **lastAcquireRecordCount**          Int32                   Number of records acquired on last acquisition
     **lastCommsAttempt**                Time                    :ref:`ISO8601<time-format-iso8601>` timestamp of the 
                                                                 last communications attempt
     **lastCommsSuccess**                Time                    :ref:`ISO8601<time-format-iso8601>` timestamp of the 
