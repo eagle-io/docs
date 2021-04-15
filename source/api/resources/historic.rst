@@ -238,7 +238,7 @@ Arguments
 
     **scale**                   2                           *Optional - Default is 1*. 
                                                             Multiplier to adjust image dimensions (png, jpg) for  
-                                                            higher resolution output: *1 - 4*.
+                                                            higher resolution output: *1-4*.
 
     **title**                   My Chart                    *Optional*. 
                                                             Title to display on chart
