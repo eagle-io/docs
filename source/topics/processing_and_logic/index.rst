@@ -222,14 +222,16 @@ Global functions can be used to obtain a reference to a Node, authorize access t
     **NODE(** *path* **)**                Retrieve node by path
     **NODES(** *path expr* **)**          Retrieve one or more nodes by path expression
 
-                                          |
+                                          | 
+
                                           A path expression begins with an ordinary :ref:`path <paths>` and includes a 
-                                          `regular expression <https://en.wikipedia.org/wiki/Regular_expression>`_ suffix
+                                          `regular expression <https://en.wikipedia.org/wiki/Regular_expression>`_ suffix 
                                           matching one or more node names, e.g. retrieve all workspace nodes ending with *input*:
 
                                           ``/Workspace/.*input``
 
-                                          |
+                                          | 
+
                                           Retrieving nodes from outside the current Workspace is not supported
 
     **NUMBER(** *path* **)**              Create or retrieve NUMBER Parameter by path
@@ -240,6 +242,7 @@ Global functions can be used to obtain a reference to a Node, authorize access t
     **T(** *expr* **)**                   Convert a time expression to a `Moment.js <https://momentjs.com>`_ timestamp
 
                                           | 
+                                          
                                           A time expression can be any of the following:
 
                                           - ISO8601 time string, e.g. ``'2018-08-03T16:27:58+10:00'``
@@ -445,7 +448,7 @@ The above example is able to treat the Node reference for **param1** as if it we
 .. _process-trigger:
 
 Process Trigger
-~~~~~~~~
+~~~~~~~~~~~~~~~~
 
 A process can be triggered to run in a number of ways:
 
