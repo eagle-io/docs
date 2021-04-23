@@ -48,7 +48,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'eagle.io'
-copyright = u'2019 Argos.io Pty Ltd'
+copyright = u'2021 Argos.io Pty Ltd'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -224,8 +224,8 @@ latex_logo = '_static/logo_latex.png'
 # If true, show page references after internal links.
 latex_show_pagerefs = True
 
-# show URL addresses after external links: no, footnote, inline*.
-latex_show_urls = 'inline'
+# show URL addresses after external links. note: new sphinx version uses string: no, footnote, inline*.
+latex_show_urls = True  #'inline'
 
 # Documents to append as an appendix to all manuals.
 #latex_appendices = []
