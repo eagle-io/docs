@@ -55,7 +55,7 @@ A program should include three distinct stages:
 |icon-point-number-range-process| Process Parameter
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-A Process Parameter is a type of Parameter that has a program defined as part of it's configuration and can be created under any Data Source. The first input referred to by the program will be used to define the timestamps used by the output of the process. Each execution of the program must return a single output value of the expected type (or an array containing the output value and quality). This output can then be viewed in the same way as any other Parameter (for example, it can be shown as a table or chart, exported, used as input for a different process, etc.). The output can also have states defined which will trigger alarms.
+A Process Parameter is a type of Parameter that has a program defined as part of it's configuration and can be created under any Data Source. The first input referred to by the program (known as the primary input) will be used to define the timestamps used by the output of the process. Each execution of the program must return a single output value of the expected type. This output can then be viewed in the same way as any other Parameter (for example, it can be shown as a table or chart, exported, used as input for a different process etc.). The output can also have states defined which will trigger alarms.
 
 Examples
 ________
@@ -442,6 +442,26 @@ The above example is able to treat the Node reference for **param1** as if it we
     **Workspace**                   ``name``                  String
     =============================   ========================  ====================
 
+.. _process-trigger:
+
+Process Trigger
+~~~~~~~~
+
+A process can be triggered to run in a number of ways:
+
+.. table::
+    :class: table-fluid
+
+    =============================   ==============================================================================
+    Schedule                        At a configurable interval (Processor only)
+    Any input updated               When any input advances beyond the current time of the process
+    All inputs updated              When all inputs have advanced beyond the current time of the process
+    Acquire Now                     User action (causes Process Parameters to recalculate entire series)
+    =============================   ==============================================================================
+
+.. note:: 
+    Each process timestamp is evaluated exactly once and only considers input data available at that time. Input data arriving after a process has advanced (e.g. Any input updated) may yield unexpected results.
+
 .. _input-quality-filter:
 
 Input Quality Filter
@@ -468,6 +488,39 @@ Input data to your program can be filtered according to its quality type to ensu
 
 
 By default, your program will exclude quality types according to the :ref:`Quality Codes <management-general-qualitycodes>` configuration in your Account Settings. To ensure specific quality types are considered, a filter can be applied.
+
+.. _linked-inputs:
+
+Linked inputs
+~~~~~~~~~~~~~~~~
+
+.. raw:: latex
+
+    \vspace{-10pt}
+
+.. only:: not latex
+
+    .. image:: linked-inputs.jpg
+        :scale: 50 %
+
+    | 
+
+.. only:: latex
+    
+    | 
+
+    .. image:: linked-inputs.jpg
+
+Process inputs may have records that occur at different times, e.g. parameters from different data sources. Input data not aligned with the current execution timestamp can be interpreted by a process in two ways:
+
+.. table::
+    :class: table-fluid
+
+    ===============   =================================================================
+    Linked            Values interpolated to align with the current execution timestamp
+    Unlinked          Values prior to the current execution timestamp are retained
+    ===============   =================================================================
+
 
 .. _shared-code:
 
