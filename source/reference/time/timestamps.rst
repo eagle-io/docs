@@ -14,7 +14,9 @@ ISO8601
 The :ref:`HTTP API <api>` requires all timestamps to use the `ISO8601 <http://en.wikipedia.org/wiki/ISO_8601>`_ standard format for date and time display. 
 Timestamps in this format can be in UTC with the 'Z' (Zulu) zone designator applied or include a '+' offset from UTC. Timestamps can optionally specify fractional seconds using 3 decimal places.
 
-Example::
+Example
+
+.. code:: text
     
     2014-10-09T22:38:10Z
     2014-10-09T22:38:10.000Z
@@ -22,21 +24,42 @@ Example::
     2014-10-09T20:38:10+0200
     2014-10-09T20:38:10+02:00
 
+
 .. only:: not latex
 
     |
 
 .. _time-format-customize:
 
-User customizable format
+Customize time format
 ------------------------
 Users can assign a preset or custom Time format to their User profile using the time format tokens below. All timestamps displayed to the user will be in their preferred format (where applicable).
 
-Example::
+Default format
+
+.. code:: text
 	
 	YYYY-MM-DD HH:mm:ss
 
-Time format may also need to be configured for some Sources. Refer to the Source configuration docs for information on specifying a time format for Sources.
+Example output
+
+.. code:: text
+
+    2021-06-01 22:38:00
+
+
+ISO8601 timestamp format
+
+.. code:: text
+    
+    YYYY-MM-DDTHH:mm:ssZ
+
+Example output
+
+.. code:: text
+    
+    2021-06-01T22:38:00+1000
+
 
 .. only:: not latex
 

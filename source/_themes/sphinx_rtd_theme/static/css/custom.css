@@ -46,6 +46,16 @@ a.image-reference {
 	cursor: default;
 }
 
+@media screen and (min-width: 1400px) {
+	.wy-nav-content-wrap {
+	    background: none;
+	}
+
+	.wy-nav-content {
+		max-width: 1000px;
+	}
+}
+
 /* menu overrides */
 .wy-side-logo {
 	padding: 0;
@@ -158,3 +168,27 @@ table.table-col1-nowrap td:first-child, table.table-col1-nowrap th:first-child {
 	white-space: nowrap !important;
 }
 
+/* print styles */
+@media print {    
+	/* hide elements */
+    .rst-versions, .rst-footer-buttons {
+        display: none !important;
+    }
+
+    /* ensure tables wrap */
+    .wy-table-responsive {
+    	overflow: visible !important;
+    	max-width: 100%;
+    }
+    .wy-table-responsive table td, .wy-table-responsive table th {
+    	white-space: normal !important;
+    	
+    }
+    .wy-table-responsive table td p, .wy-table-responsive table th p {
+    	text-align: left !important;
+    }
+
+    footer p {
+    	font-size: 12px;
+    }
+}
