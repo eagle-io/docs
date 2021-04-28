@@ -104,4 +104,4 @@ Output
 | 
 
 .. note:: 
-    **Report Sources** always use the *Timezone* and *DST* options configured in its properties as the default. 
+    :ref:`Report Source <nodes-and-configuration>` will default to the *Timezone* and *DST* specified in its properties dialog. 

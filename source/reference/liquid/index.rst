@@ -129,11 +129,7 @@ Precedence
 1. Comparison operators. All comparison operations have the same
    precedence and higher than logic operators.
 2. Logic operators. All logic operators have the same precedence.
-
-Associativity
-``````````````
-
-Logic operators are evaluated from right to left, see `shopify docs <https://help.shopify.com/en/themes/liquid/basics/operators#order-of-operations>`_.
+3. Logic operators are evaluated from right to left, see `shopify docs <https://help.shopify.com/en/themes/liquid/basics/operators#order-of-operations>`_.
 
 | 
 
