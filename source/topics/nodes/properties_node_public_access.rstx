@@ -1,4 +1,4 @@
-Enabling public access allows anyone to view the node (attachment, chart, dash or historic data) using the generated `URL`.
+Enabling public access allows anyone to view the node (attachment, chart, dash, report source or historic data) using the generated `URL`.
 
 You can also embed charts and dashboards into your own website with basic HTML. 
 Select `Copy embed HTML` from the URL dropdown menu for a generic code snippet (you will need to paste this in to your website). 

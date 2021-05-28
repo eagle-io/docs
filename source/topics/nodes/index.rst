@@ -86,6 +86,13 @@ Nodes are the container objects that store all data and configuration for your p
 	
 	| 
 
+|icon-reportsource| Report Source
+	:ref:`Report Sources <node-configuration-reportsource>` generate PDF reports and can be scheduled for delivery to subscribed users and groups via email.
+
+.. only:: not latex
+	
+	| 
+
 |icon-point-number-range| Number Parameter
 	Number :ref:`Parameters <node-configuration-parameter>` store historic time series data in numeric format. By default they display the current or historic value(s).
 	Parameters are managed by and are always contained in Data Sources.
@@ -198,3 +205,4 @@ Nodes are the container objects that store all data and configuration for your p
    datasource_file/index
    datasource_datalogger/index
    parameter/index
+   reportsource/index
