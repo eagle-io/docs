@@ -1,9 +1,9 @@
 Tags
 ======
 
-Liquid implements business-logic independent tags that are typically
+Liquid expressions implement business-logic independent tags that are typically
 implemented in `shopify/liquid <https://shopify.github.io/liquid/>`_. 
-This section contains the specification and demos for all the tags implemented by Liquid.
+This section contains the specification and examples for all the tags implemented by Liquid.
 
 There’re a dozen of tags supported by LiquidJS, with all tags in 
 `shopify/liquid <https://shopify.github.io/liquid/>`_. 

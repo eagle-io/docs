@@ -1,9 +1,12 @@
-Liquid
-=======
+Expressions
+============
 
-`Liquid <https://shopify.github.io/liquid/>`_ is a modern open-source template language that makes it easy for users to produce dynamic content.
+Expressions make it easy for users to produce dynamic content. 
 
-Liquid code can be categorized into :ref:`objects <liquid-overview-objects>`, :ref:`filters <liquid-overview-filters>` and :ref:`tags <liquid-overview-tags>`.
+Our expresssions are based on the open-source `Liquid <https://shopify.github.io/liquid/>`_ template language with 
+some custom filter additions. 
+
+Liquid expressions code can be categorized into :ref:`objects <liquid-overview-objects>`, :ref:`filters <liquid-overview-filters>` and :ref:`tags <liquid-overview-tags>`.
 
 | 
 
@@ -27,6 +30,7 @@ Objects
 ~~~~~~~~
 
 Objects tell Liquid where to insert dynamic content. 
+
 Objects and variable names are denoted by double curly braces: ``{{`` and ``}}``.
 
 Input
