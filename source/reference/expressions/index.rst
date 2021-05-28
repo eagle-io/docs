@@ -1,3 +1,5 @@
+.. _expressions:
+
 Expressions
 ============
 
@@ -6,7 +8,7 @@ Expressions make it easy for users to produce dynamic content.
 Our expresssions are based on the open-source `Liquid <https://shopify.github.io/liquid/>`_ template language with 
 some custom filter additions. 
 
-Liquid expressions code can be categorized into :ref:`objects <liquid-overview-objects>`, :ref:`filters <liquid-overview-filters>` and :ref:`tags <liquid-overview-tags>`.
+Liquid expressions code can be categorized into :ref:`objects <expressions-overview-objects>`, :ref:`filters <expressions-overview-filters>` and :ref:`tags <liquid-overview-tags>`.
 
 | 
 
@@ -24,7 +26,7 @@ Overview
 |  
 
 
-.. _liquid-overview-objects:
+.. _expressions-overview-objects:
 
 Objects
 ~~~~~~~~
@@ -50,7 +52,7 @@ In this case, Liquid is rendering the content of an object called ``input.name``
 | 
 
 
-.. _liquid-overview-filters:
+.. _expressions-overview-filters:
 
 Filters
 ~~~~~~~~
@@ -87,7 +89,7 @@ Output
 | 
 
 
-.. _liquid-overview-tags:
+.. _expressions-overview-tags:
 
 Tags
 ~~~~~
@@ -113,7 +115,7 @@ Output
 | 
 
 
-.. _liquid-overview-operators:
+.. _expressions-overview-operators:
 
 Operators
 ~~~~~~~~~~
@@ -138,7 +140,7 @@ Precedence
 | 
 
 
-.. _liquid-overview-truthy_falsy:
+.. _expressions-overview-truthy_falsy:
 
 Truthy and Falsy
 ~~~~~~~~~~~~~~~~~
