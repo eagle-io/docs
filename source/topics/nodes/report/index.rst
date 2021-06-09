@@ -1,11 +1,11 @@
 .. meta::
-   :description: Report Sources have the ability to generate PDF reports and schedule for delivery via email
+   :description: Reports have the ability to generate PDFs and schedule for delivery via email
 
-.. _node-configuration-reportsource:
+.. _node-configuration-report:
 
-Report Source
+Report
 =================
-|icon-reportsource| Report Sources generate PDF reports and can be scheduled for delivery to subscribed users and groups via email.
+|icon-report| Reports generate PDFs and can be scheduled for delivery to subscribed users and groups via email.
 
 .. note:: 
     The reporting feature is currently a **pre-release** version that is subject to change without notice and is only available to limited accounts. 
@@ -21,9 +21,9 @@ Quick start
 ------------
 This documentation is intended as a quick introduction to the reporting feature but will be replaced with comprehensive documentation prior to final release.
 
-Creating a report source
+Creating a report
 ~~~~~~~~~~~~~~~~~~~~~~~~
-1. Using the ``Create`` menu in the workspaces tree, select ``Source > Report``. The Report Source will be selected and the report editor will open with a blank report document.
+1. Using the ``Create`` menu in the workspaces tree, select ``Report``. The Report will be selected and the report editor will open with a blank report document.
 2. Click (or drag) a report element from the editor toolbar to insert it.
 3. Drag nodes from the Workspaces tree to quickly insert them into the report template. eg. Drag an image attachment node or chart node to insert as an image in the report.
 4. Remove an element by clicking the ``x`` next to the item in the ``Content`` menu or selecting the element(s) in the editor and pressing the ``delete`` key.
@@ -40,7 +40,7 @@ Creating a report source
 
 .. only:: not latex
 
-    .. image:: reportsource_editor.jpg
+    .. image:: report_editor.jpg
         :scale: 50 %
 
     | 
@@ -49,7 +49,7 @@ Creating a report source
     
     | 
     
-    .. image:: reportsource_editor.jpg
+    .. image:: report_editor.jpg
 
 | 
 
@@ -57,7 +57,7 @@ Creating a report source
 
 .. only:: not latex
 
-    .. image:: reportsource_preview.jpg
+    .. image:: report_preview.jpg
         :scale: 50 %
 
     | 
@@ -66,7 +66,7 @@ Creating a report source
     
     | 
     
-    .. image:: reportsource_preview.jpg
+    .. image:: report_preview.jpg
 
 
 
@@ -74,7 +74,7 @@ Creating a report source
 
 Downloading or editing a report
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-1. Locate the Report Source node in the Workspaces tree or from the `Source` List content view. 
+1. Locate the Report node in the Workspaces tree or from the `Source` List content view. 
 2. To edit an existing report, select ``Edit`` from the context menu.
 3. Alternatively select ``Download`` to generate a PDF report using the latest data. 
 4. Enable ``Public access`` to get a public URL to a report that will be generated on demand.
@@ -86,7 +86,7 @@ Scheduling a report
 1. Open the report properties from the Workspaces tree context menu.
 2. From the ``Schedule`` section, click the checkbox to enable a schedule and select either `Daily`, `Weekly` or `Monthly`.
 3. The report will be generated at the scheduled time (check *debug* level Events).
-4. Users must be subscribed to the Report Source node to receive the report at the scheduled time (the same way users and groups are subscribed to receive sms/email notifications). See :ref:`notification subscriptions <subscribe-nodes>` for details.
+4. Users must be subscribed to the Report node to receive the report at the scheduled time (the same way users and groups are subscribed to receive sms/email notifications). See :ref:`notification subscriptions <subscribe-nodes>` for details.
 
 | 
 
@@ -108,7 +108,7 @@ Links assign Nodes in the Workspaces Tree to the report. They will appear under 
 
 Click the *Edit* button to show and modify the configuration for each link. Use the *Add link* button to display the Workspaces Tree and select a new Node to link. Links can be removed via the dropdown menu (accessible by clicking the menu button on the top-right corner of the link item). 
 
-Report Sources can not have links to Nodes in different Workspace.
+Reports can not have links to Nodes in different Workspace.
 
 .. raw:: latex
 
@@ -116,7 +116,7 @@ Report Sources can not have links to Nodes in different Workspace.
 
 .. only:: not latex
 
-    .. image:: reportsource_links.jpg
+    .. image:: report_links.jpg
         :scale: 50 %
 
     | 
@@ -125,7 +125,7 @@ Report Sources can not have links to Nodes in different Workspace.
     
     | 
     
-    .. image:: reportsource_links.jpg
+    .. image:: report_links.jpg
 
 .. only:: not latex
 
@@ -142,7 +142,7 @@ Enable a daily, weekly or monthly schedule for the report to be generated and de
 
 .. only:: not latex
 
-    .. image:: reportsource_schedule.jpg
+    .. image:: report_schedule.jpg
         :scale: 50 %
 
     | 
@@ -151,7 +151,7 @@ Enable a daily, weekly or monthly schedule for the report to be generated and de
     
     | 
     
-    .. image:: reportsource_schedule.jpg
+    .. image:: report_schedule.jpg
 
 .. only:: not latex
 
@@ -168,7 +168,7 @@ Time allows you to configure the timezone the Source should use for rendering ti
 
 .. only:: not latex
 
-    .. image:: reportsource_time.jpg
+    .. image:: report_time.jpg
         :scale: 50 %
 
     | 
@@ -177,7 +177,7 @@ Time allows you to configure the timezone the Source should use for rendering ti
     
     | 
 
-    .. image:: reportsource_time.jpg
+    .. image:: report_time.jpg
 
 Timezone
     Select the default timezone the Source should use for rendering timestamps. 
@@ -198,7 +198,7 @@ Metadata provides a simple key/value data structure that can be used to store st
     
 .. only:: not latex
 
-    .. image:: reportsource_metadata.jpg
+    .. image:: report_metadata.jpg
         :scale: 50 %
 
     | 
@@ -207,7 +207,7 @@ Metadata provides a simple key/value data structure that can be used to store st
 
     | 
 
-    .. image:: reportsource_metadata.jpg
+    .. image:: report_metadata.jpg
 
 
 .. only:: not latex

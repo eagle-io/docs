@@ -86,8 +86,8 @@ Nodes are the container objects that store all data and configuration for your p
 	
 	| 
 
-|icon-reportsource| Report Source
-	:ref:`Report Sources <node-configuration-reportsource>` generate PDF reports and can be scheduled for delivery to subscribed users and groups via email.
+|icon-report| Report
+	:ref:`Reports <node-configuration-report>` generate PDFs and can be scheduled for delivery to subscribed users and groups via email.
 
 .. only:: not latex
 	
@@ -205,4 +205,4 @@ Nodes are the container objects that store all data and configuration for your p
    datasource_file/index
    datasource_datalogger/index
    parameter/index
-   reportsource/index
+   report/index

@@ -104,4 +104,4 @@ Output
 | 
 
 .. note:: 
-    :ref:`Report Source <nodes-and-configuration>` will default to the *Timezone* and *DST* specified in its properties dialog. 
+    :ref:`Reports <nodes-and-configuration-report>` will default to the *Timezone* and *DST* specified in its properties dialog. 
