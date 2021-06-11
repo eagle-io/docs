@@ -5,7 +5,8 @@
 
 Report
 =================
-|icon-report| Reports generate PDFs and can be scheduled for delivery to subscribed users and groups via email.
+|icon-report| Report nodes generate PDFs and can be scheduled for delivery to subscribed users and groups via email. 
+Please refer to the :ref:`Reports <reports>` documentation for a quick start guide on using the reporting feature.
 
 .. note:: 
     The reporting feature is currently a **pre-release** version that is subject to change without notice and is only available to limited accounts. 
@@ -16,81 +17,6 @@ Report
 
     |
 
-
-Quick start
-------------
-This documentation is intended as a quick introduction to the reporting feature but will be replaced with comprehensive documentation prior to final release.
-
-Creating a report
-~~~~~~~~~~~~~~~~~~~~~~~~
-1. Using the ``Create`` menu in the workspaces tree, select ``Report``. The Report will be selected and the report editor will open with a blank report document.
-2. Click (or drag) a report element from the editor toolbar to insert it.
-3. Drag nodes from the Workspaces tree to quickly insert them into the report template. eg. Drag an image attachment node or chart node to insert as an image in the report.
-4. Remove an element by clicking the ``x`` next to the item in the ``Content`` menu or selecting the element(s) in the editor and pressing the ``delete`` key.
-5. Insert page break elements to split content over multiple pages.
-6. To increase the height of the template page area (for editing only), select the ``Document Properties`` menu and enter a value in the ``Content height`` field. eg. ``1000``.
-7. Click on the name of a linked node (automatically added after drag-drop from Workspaces tree) in the ``Tags`` menu to display all of its available attributes.
-8. Use :ref:`expressions <expressions>` directly inside report element content to control the output of the content and its formatting. A common scenario is to apply the :ref:`time <liquid-filters-time>` expression filter to format the display of timestamps. eg. ``{{report_time | time}}``
-9. Select `Preview` from the editor toolbar to generate a preview of the PDF report using the latest data. 
-
-.. note:: The report editor will automatically save changes made to the template.
-
-
-**Report editor**
-
-.. only:: not latex
-
-    .. image:: report_editor.jpg
-        :scale: 50 %
-
-    | 
-
-.. only:: latex
-    
-    | 
-    
-    .. image:: report_editor.jpg
-
-| 
-
-**Report preview**
-
-.. only:: not latex
-
-    .. image:: report_preview.jpg
-        :scale: 50 %
-
-    | 
-
-.. only:: latex
-    
-    | 
-    
-    .. image:: report_preview.jpg
-
-
-
-| 
-
-Downloading or editing a report
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-1. Locate the Report node in the Workspaces tree or from the `Source` List content view. 
-2. To edit an existing report, select ``Edit`` from the context menu.
-3. Alternatively select ``Download`` to generate a PDF report using the latest data. 
-4. Enable ``Public access`` to get a public URL to a report that will be generated on demand.
-
-| 
-
-Scheduling a report
-~~~~~~~~~~~~~~~~~~~~
-1. Open the report properties from the Workspaces tree context menu.
-2. From the ``Schedule`` section, click the checkbox to enable a schedule and select either `Daily`, `Weekly` or `Monthly`.
-3. The report will be generated at the scheduled time (check *debug* level Events).
-4. Users must be subscribed to the Report node to receive the report at the scheduled time (the same way users and groups are subscribed to receive sms/email notifications). See :ref:`notification subscriptions <subscribe-nodes>` for details.
-
-| 
-
-.. note:: Dashboards currently can not be displayed as images on the report. Historic table data display will be available at a later time. 
 
 
 Properties
@@ -116,7 +42,7 @@ Reports can not have links to Nodes in different Workspace.
 
 .. only:: not latex
 
-    .. image:: report_links.jpg
+    .. image:: node_report_links.jpg
         :scale: 50 %
 
     | 
@@ -125,7 +51,7 @@ Reports can not have links to Nodes in different Workspace.
     
     | 
     
-    .. image:: report_links.jpg
+    .. image:: node_report_links.jpg
 
 .. only:: not latex
 
@@ -142,7 +68,7 @@ Enable a daily, weekly or monthly schedule for the report to be generated and de
 
 .. only:: not latex
 
-    .. image:: report_schedule.jpg
+    .. image:: node_report_schedule.jpg
         :scale: 50 %
 
     | 
@@ -151,7 +77,7 @@ Enable a daily, weekly or monthly schedule for the report to be generated and de
     
     | 
     
-    .. image:: report_schedule.jpg
+    .. image:: node_report_schedule.jpg
 
 .. only:: not latex
 
@@ -168,7 +94,7 @@ Time allows you to configure the timezone the Source should use for rendering ti
 
 .. only:: not latex
 
-    .. image:: report_time.jpg
+    .. image:: node_report_time.jpg
         :scale: 50 %
 
     | 
@@ -177,7 +103,7 @@ Time allows you to configure the timezone the Source should use for rendering ti
     
     | 
 
-    .. image:: report_time.jpg
+    .. image:: node_report_time.jpg
 
 Timezone
     Select the default timezone the Source should use for rendering timestamps. 
@@ -198,7 +124,7 @@ Metadata provides a simple key/value data structure that can be used to store st
     
 .. only:: not latex
 
-    .. image:: report_metadata.jpg
+    .. image:: node_report_metadata.jpg
         :scale: 50 %
 
     | 
@@ -207,7 +133,7 @@ Metadata provides a simple key/value data structure that can be used to store st
 
     | 
 
-    .. image:: report_metadata.jpg
+    .. image:: node_report_metadata.jpg
 
 
 .. only:: not latex

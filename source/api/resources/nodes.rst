@@ -2196,6 +2196,75 @@ Response
 
 
 
+.. _api-nodes-report:
+
+Retrieve node report
+-----------------------------
+Generate and retrieve a PDF file from a :ref:`report node <node-configuration-report>` by its **id**. You can use the automatically assigned *_id* or your own *customId* prepended with '@'. 
+
+.. note:: 
+    The reporting feature is currently a **pre-release** version that is subject to change without notice and is only available to limited accounts.
+
+Arguments
+~~~~~~~~~
+
+.. table::
+    :class: table-fluid
+
+    ============================    ========================    =================================================================
+    Argument                        Example                     Description
+    ============================    ========================    =================================================================
+    **nowTime**                     2021-06-01T00:00:00Z        *Optional*. Default is null (current time). 
+                                                                :ref:`ISO8601<time-format-iso8601>` timestamp to use for report 
+                                                                generation. All current values and historic records are relative 
+                                                                to this timestamp. 
+
+    **timezone**                    Etc/UTC                     *Optional - Default is report timezone*. 
+                                                                :ref:`Timezone <timezone>` applied to timestamps. Only specify
+                                                                to override the default report timezone.
+
+    **timezoneAdjustForDst**        FALSE                       *Optional - Default is report timezone adjust for dst*. 
+                                                                Flag to indicate if timestamps should be adjusted for DST in
+                                                                selected *timezone* Only specify to override the default report 
+                                                                timezone.
+    ============================    ========================    =================================================================
+
+
+Request
+~~~~~~~~
+
+::
+
+    GET /api/v1/nodes/:id/report
+
+Response
+~~~~~~~~
+
+::
+    
+    HTTP/1.1 200 OK
+    Content-Type: application/pdf;
+
+.. only:: not latex
+
+    .. image:: api_resources_nodes_report.jpg
+        :scale: 50 %
+
+    | 
+
+.. only:: latex
+    
+    | 
+    
+    .. image:: api_resources_nodes_report.jpg
+
+
+.. only:: not latex
+
+    |
+
+
+
 Update Parameter or Location historic data
 -------------------------------------------
 Update historic data for a Parameter or Location node by its **id**. You can use the automatically assigned *_id* or your own *customId* prepended with '@'. 

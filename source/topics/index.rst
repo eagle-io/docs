@@ -16,6 +16,7 @@ Introductions to all the key parts of `eagle.io <https://eagle.io>`_ you’ll ne
    historic_data/index
    sharing_and_security/index
    processing_and_logic/index
+   reports/index
    account_settings/index
    messages/index
    device_configuration/index
