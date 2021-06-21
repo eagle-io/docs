@@ -32,7 +32,6 @@ Input
 
 .. code:: liquid
 
-   <!-- If customer.name = "anonymous" -->
    {% if customer.name == "kevin" %}
      Hey Kevin!
    {% elsif customer.name == "anonymous" %}

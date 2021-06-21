@@ -147,6 +147,8 @@ Security
 
 | 
 
+.. _node-configuration-report-publicaccess:
+
 Public access
 ``````````````
 .. include:: ../properties_node_public_access.rstx
