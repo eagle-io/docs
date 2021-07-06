@@ -83,19 +83,32 @@ Event Type
 ~~~~~~~~~~
 Filter events by Event type. Use this drop down to quickly find events related to a certain type of action. For example you can quickly display all Notifications that have been sent for the Selected Node. The available event types include:
 
-|icon-select-all| All
+.. table::
+    :class: table-fluid
 
-|icon-datasource-acquire| Acquisition
+    =======================================   ==========================   ==================================
+    \                                         Event Node Type              Event Trigger Action
+    =======================================   ==========================   ==================================
+    |icon-datasource-acquire| Acquisition     Source                       - User operate action
+                                                                           - Scheduled collection
+                                                                           - Device connection
+                                                                           - File received
+                                                                           - API
 
-|icon-properties| Configuration
+    |icon-properties| Configuration           All                          - User configuration change
+                                                                           - API
 
-|icon-state| State
-
-|icon-notification| Notification
-
-|icon-control| Control
-
-|icon-security| Security
+    |icon-state| State Change                 Parameter                    - Data acquisition
+    
+    |icon-notification| Notification          Source, Parameter, Report    - Alarm raised/cleared
+                                                                           - Report generated on schedule
+    
+    |icon-control| Control                    Control Parameter            - User operate action
+                                                                           - API
+    
+    |icon-security| Security                  All                          - User security change
+                                                                           - API
+    =======================================   ==========================   ==================================
 
 .. only:: not latex
 
