@@ -202,6 +202,21 @@ Point Orange 3G
 
 | 
 
+Senquip
+	ORB-X1.
+
+.. only:: not latex
+
+	.. image:: datalogger_senquip_orbx1.png
+		:scale: 8 %
+
+.. only:: latex
+
+	.. image:: datalogger_senquip_orbx1.png
+		:scale: 8 %
+
+| 
+
 Spider
 	Halytech Spider SMS and microSpider range.
 
