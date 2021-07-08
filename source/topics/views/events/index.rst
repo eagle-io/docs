@@ -96,6 +96,8 @@ Filter events by Event type. Use this drop down to quickly find events related t
                                                                            - API
 
     |icon-properties| Configuration           All                          - User configuration change
+                                                                           - User or Group subscription 
+                                                                             change
                                                                            - API
 
     |icon-state| State Change                 Parameter                    - Data acquisition
@@ -107,6 +109,7 @@ Filter events by Event type. Use this drop down to quickly find events related t
                                                                            - API
     
     |icon-security| Security                  All                          - User security change
+                                                                           - User login/logout
                                                                            - API
     =======================================   ==========================   ==================================
 
