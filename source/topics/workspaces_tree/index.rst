@@ -56,6 +56,8 @@ The Context Menu has a Create submenu which offers the same options as the Creat
 
     |
 
+.. _workspaces_tree_rename:
+
 Rename
 ------
 |icon-rename| Rename a Node from the context menu or press the *F2* key after selecting a Node. 

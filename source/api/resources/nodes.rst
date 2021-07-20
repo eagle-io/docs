@@ -71,7 +71,7 @@ Consumers of Nodes should tolerate the addition of new attributes and variance i
     **isActive**                        Boolean                 Flag to indicate if node is active
     **isPublic**                        Boolean     Yes         Flag to indicate if :ref:`Public access<security-public-access>` is enabled
     **metadata**                        Array       Yes         Array of metadata fields and values for a location
-    **name**                            String      Yes         Name of node
+    **name**                            String      Yes         Name of node. :ref:`Restrictions apply<workspaces_tree_rename>`.
     **ownerId**                         ObjectId                Unique owner _id
     **parentId**                        ObjectId                Parent node _id (not included in Workspace)
     **publicId**                        String                  Unique identifier used in public URL when *isPublic* is enabled. 
