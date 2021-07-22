@@ -78,7 +78,7 @@ Input
 
 .. code:: liquid
 
-    {{ "2021-01-01T01:50:00.000Z" | time: "YYYY-MM-DD HH:mm:ss", "Australia/Sydney" }}
+    {{ "2021-06-01T01:50:00.000Z" | time: "YYYY-MM-DD HH:mm:ss", "Australia/Sydney" }}
 
 Output
 
@@ -93,7 +93,7 @@ Input
 
 .. code:: liquid
 
-    {{ "2021-01-01T01:50:00.000Z" | time: "YYYY-MM-DD HH:mm:ss", "Australia/Sydney", false }}
+    {{ "2021-06-01T01:50:00.000Z" | time: "YYYY-MM-DD HH:mm:ss", "Australia/Sydney", false }}
 
 Output
 
