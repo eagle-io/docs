@@ -61,6 +61,7 @@ categorized into these groups:
    join
    json
    last
+   link_to
    lstrip
    map
    minus
