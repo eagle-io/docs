@@ -84,7 +84,7 @@ Output
 
 .. code:: text
     
-    2021-06-01 12:50:00
+    2021-01-01 12:50:00
 
 
 The timezone will always be adjusted to DST (Daylight Savings Time) but this can be disabled to ensure a fixed UTC offset by including ``false`` as an additional option.
@@ -99,7 +99,7 @@ Output
 
 .. code:: text
     
-    2021-06-01 11:50:00
+    2021-01-01 11:50:00
 
 | 
 
