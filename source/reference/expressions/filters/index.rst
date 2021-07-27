@@ -24,7 +24,7 @@ categorized into these groups:
 +-----------------------------------+-----------------------------------+
 | HTML/URI                          | escape, escape_once, url_encode,  |
 |                                   | url_decode, strip_html,           |
-|                                   | newline_to_br                     |
+|                                   | newline_to_br, link_to            |
 +-----------------------------------+-----------------------------------+
 | Array                             | slice, map, sort, sort_natural,   |
 |                                   | uniq, where, first, last, join,   |

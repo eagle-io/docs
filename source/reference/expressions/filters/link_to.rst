@@ -1,9 +1,9 @@
 .. _liquid-filters-link_to:
 
 link_to
-======
+=======
 
-Generates an HTML link.
+Generates an HTML link for HTML content.
 
 Input
 
@@ -16,4 +16,3 @@ Output
 .. code:: text
 
    <a href="http://majortom.com">Ground control to Major Tom.</a>
-
