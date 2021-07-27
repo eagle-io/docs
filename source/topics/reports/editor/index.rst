@@ -107,7 +107,7 @@ The available elements are covered in detail :ref:`below <reports-editor-element
     .. image:: reports_editor_toolbar_buttons.jpg
 
 
-``Preview`` will build the report and display the PDF. Click the ``x`` close button in the ``Report preview`` window to return to the :ref:`page designer <reports-editor-pagedesigner>`.
+``Preview`` will build the report and display the PDF. Click the ``x`` close button in the ``Report preview`` window to return to the :ref:`page designer <reports-editor-designer>`.
 
 Reports are ``automatically saved`` as changes are made. 
 
@@ -121,7 +121,7 @@ Use the ``Undo`` and ``Redo`` buttons to revert changes during the editing sessi
 
 Page designer
 ~~~~~~~~~~~~~~~
-The page designer is where the report content is assembled by adding :ref:`content elements <reports-editor-elements>` to the content, :ref:`header <_reports-editor-document-header-footer>` and :ref:`footer <_reports-editor-document-header-footer>` sections.
+The page designer is where the report content is assembled by adding :ref:`content elements <reports-editor-elements>` to the content, :ref:`header <reports-editor-document-header-footer>` and :ref:`footer <reports-editor-document-header-footer>` sections.
 
 .. only:: not latex
 
@@ -226,12 +226,24 @@ These sections are automatically included on every page by default.
 Use the ``Header`` and ``Footer`` toggle switches to enable or disable these sections. 
 The ``Display`` option can be set to *Always* or *Do not display on first page*.
 
-The most common use for headers and footers is to include a company logo, *Page number* and *Page count* :ref:`tags <reports-editor-tags>`.
+To include the **Page number** and **Page count** at the top of every page, create a new ``Text`` element and drag it into the document ``Header``. 
+Set the text of the element to use the ``page_number`` and ``page_count`` :ref:`tags <reports-editor-tags>` as required. 
+The text ``Page {{page_number}} of {{page_count}}`` will output similar to ``Page 1 of 5``.
+
+.. only:: not latex
+
+    .. image:: reports_editor_designer_page_number.jpg
+        :scale: 50 %
+
+    | 
+
+.. only:: latex
+    
+    | 
+    
+    .. image:: reports_editor_designer_page_number.jpg
 
 | 
-
-
-
 
 
 .. _reports-editor-elements:
