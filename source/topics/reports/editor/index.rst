@@ -270,8 +270,9 @@ Click or drag-drop an element icon from the :ref:`editor toolbar <reports-editor
 
 Types of elements
 ~~~~~~~~~~~~~~~~~
-Elements include :ref:`text <reports-editor-elements-text>`, :ref:`horizontal line <reports-editor-elements-line>`, :ref:`image <reports-editor-elements-image>`, :ref:`bar code <reports-editor-elements-barcode>`, :ref:`table <reports-editor-elements-table>`, :ref:`frame <reports-editor-elements-frame>`, :ref:`section <reports-editor-elements-section>` and :ref:`page break <reports-editor-elements-pagebreak>`.
+Elements include :ref:`text <reports-editor-elements-text>`, :ref:`horizontal line <reports-editor-elements-line>`, :ref:`image <reports-editor-elements-image>`, :ref:`bar code <reports-editor-elements-barcode>`, :ref:`table <reports-editor-elements-table>`, :ref:`frame <reports-editor-elements-frame>` and :ref:`page break <reports-editor-elements-pagebreak>`.
 
+| 
 
 .. _reports-editor-elements-text:
 
@@ -279,6 +280,20 @@ Text
 ````````
 Text elements are used to add text to your report. This includes headings, labels and paragraphs.
 
+.. only:: not latex
+
+    .. image:: reports_editor_element_text.jpg
+        :scale: 50 %
+
+    | 
+
+.. only:: latex
+    
+    | 
+    
+    .. image:: reports_editor_element_text.jpg
+
+| 
 
 .. _reports-editor-elements-line:
 
@@ -286,6 +301,20 @@ Horizontal line
 ````````````````
 Insert a horizontal line and adjust width and height as required.
 
+.. only:: not latex
+
+    .. image:: reports_editor_element_line.jpg
+        :scale: 50 %
+
+    | 
+
+.. only:: latex
+    
+    | 
+    
+    .. image:: reports_editor_element_line.jpg
+
+| 
 
 .. _reports-editor-elements-image:
 
@@ -297,6 +326,20 @@ Select ``Choose file`` from the :ref:`detail panel <reports-editor-detailpanel>`
 Alternatively specify a **URL** or :ref:`tag <reports-editor-tags>` as the image ``Source``. 
 **Charts** and **attachments** from the workspaces tree can be added to the report via :ref:`tags <reports-editor-tags>`.
 
+.. only:: not latex
+
+    .. image:: reports_editor_element_image.jpg
+        :scale: 50 %
+
+    | 
+
+.. only:: latex
+    
+    | 
+    
+    .. image:: reports_editor_element_image.jpg
+
+| 
 
 .. _reports-editor-elements-barcode:
 
@@ -304,40 +347,143 @@ Bar code
 ``````````
 Insert **CODE 128** bar codes into your report. Use the ``Text`` field to enter the alphanumeric characters for the bar code or use :ref:`tags <reports-editor-tags>` for dynamic content.
 
+.. only:: not latex
+
+    .. image:: reports_editor_element_barcode.jpg
+        :scale: 50 %
+
+    | 
+
+.. only:: latex
+    
+    | 
+    
+    .. image:: reports_editor_element_barcode.jpg
+
+
+| 
 
 .. _reports-editor-elements-table:
 
 Table
 ````````
 Tables make it easy to align related content. 
-Insert a table and select the element from the :ref:`main panel <reports-editor-mainpanel>` to access and edit the content of individual cells. 
 
-**Note:** you can add current parameter data values to individual cells using :ref:`tags <reports-editor-tags>` however historic data in a table is not yet supported. 
+.. only:: not latex
 
+    .. image:: reports_editor_element_table_selected.jpg
+        :scale: 50 %
+
+    | 
+
+.. only:: latex
+    
+    | 
+    
+    .. image:: reports_editor_element_table_selected.jpg
+
+Drag the table around to position it within the report. 
+To resize or configure the table you must select it and edit its settings from the :ref:`main panel <reports-editor-mainpanel>`. 
+Set the required number of ``columns``, ``content rows`` and toggle header and footer rows as required.
+
+.. only:: not latex
+
+    .. image:: reports_editor_element_table_details.jpg
+        :scale: 50 %
+
+    | 
+
+.. only:: latex
+    
+    | 
+    
+    .. image:: reports_editor_element_table_details.jpg
+
+| 
+
+Clicking the `Table` item from the :ref:`main panel <reports-editor-mainpanel>` will expand to show individual cells grouped by header, content and footer.
+Select an individual cell from this panel to set its ``Text`` or column ``Width`` in pixels.
+
+.. only:: not latex
+
+    .. image:: reports_editor_element_table_cell_details.jpg
+        :scale: 50 %
+
+    | 
+
+.. only:: latex
+    
+    | 
+    
+    .. image:: reports_editor_element_table_cell_details.jpg
+
+
+As you make changes from the :ref:`main panel <reports-editor-mainpanel>`, the designer will update the table accordingly.
+
+.. only:: not latex
+
+    .. image:: reports_editor_element_table_cell_selected.jpg
+        :scale: 50 %
+
+    | 
+
+.. only:: latex
+    
+    | 
+    
+    .. image:: reports_editor_element_table_cell_selected.jpg
+
+| 
+
+
+
+.. note:: You can add current parameter data values to individual cells using :ref:`tags <reports-editor-tags>` however historic data in a table is not yet supported. 
+
+
+
+| 
 
 .. _reports-editor-elements-frame:
 
 Frame
 ````````
 Use frames to group other content elements or add backgrounds and borders to sections of your report. 
-Drag elements into the frame to group them, then simply position the frame on the page as necessary.
+Drag elements into the frame to group them, then simply position the frame on the page as necessary. 
+Select the Frame from the :ref:`main panel <reports-editor-mainpanel>` to modify its settings or select its grouped elements.
 
+.. only:: not latex
 
-.. _reports-editor-elements-section:
+    .. image:: reports_editor_element_frame.jpg
+        :scale: 50 %
 
-Section
-````````
-Sections are used to group similar content and can be used to include a special header and footer that will appear on every page the content spans over.
+    | 
 
-**Note:** the use of sections is currently very limited.
+.. only:: latex
+    
+    | 
+    
+    .. image:: reports_editor_element_frame.jpg
 
+| 
 
 .. _reports-editor-elements-pagebreak:
 
 Page break
 ```````````
-Insert a page break to force content appearing below the break to flow to a new page.
+Use page breaks to force content appearing below the break to flow to a new page. 
 
+.. only:: not latex
+
+    .. image:: reports_editor_element_page_break.jpg
+        :scale: 50 %
+
+    | 
+
+.. only:: latex
+    
+    | 
+    
+    .. image:: reports_editor_element_page_break.jpg
 
 | 
 
