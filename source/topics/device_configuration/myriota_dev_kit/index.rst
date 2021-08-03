@@ -137,7 +137,7 @@ This should be appended with **/myriota?format=<data format>** to complete the U
 
 **https://upload.eagle.io/source/jam-door-vise/myriota?format=vllVV**
 
-Note that this specific example uses a server key of **soap-laugh-corn**, and a data format of **vllVV**
+Note that this specific example uses a server key of **jam-door-vise**, and a data format of **vllVV**
 
 |
 
