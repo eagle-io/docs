@@ -36,7 +36,7 @@ There are 5 main tasks required when setting up the Myriota Developer Toolkit to
 1. Configure an eagle.io data source
 ------------------------------------
 
-1. Create a :ref:`Data Source<node-configuration-datasource-file>` and select *File* as the Source Type. Choose *Delimited Text* from the list and click Next.
+1. Create a :ref:`Data Source<node-configuration-datasource-file>` (note that a Data Source node can only be created within a :ref:`Location<node-configuration-location>` node) and select *File* as the Source Type. Choose *Delimited Text* from the list and click Next.
 
 .. only:: not latex
 
@@ -373,6 +373,9 @@ Click Finish to complete the setup.
 
 .. note:: 
     You can reconfigure the parser configuration and parameter assignment from the :ref:`Data Source<node-configuration-datasource-file>` properties dialog after creation.
+
+.. note:: 
+    If the Myriota data payload includes latitude and longitude, this can be configured to update a location map marker within eagle.io by using this `process <https://help.eagle.io/en/articles/5466055-using-coordinates-from-a-data-source-in-a-location>`_.
 
 .. only:: not latex
 
