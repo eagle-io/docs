@@ -135,9 +135,9 @@ The first portion of this URL is displayed in the data source creation wizard, w
 This should be appended with **/myriota?format=<data format>** to complete the URL, for example:
 
 
-**https://upload.eagle.io/source/jam-door-vise/myriota?format=vllVV**
+**https://upload.eagle.io/source/soap-laugh-corn/myriota?format=vllVV**
 
-Note that this specific example uses a server key of **jam-door-vise**, and a data format of **vllVV**
+Note that this specific example uses a server key of **soap-laugh-corn**, and a data format of **vllVV**
 
 |
 
