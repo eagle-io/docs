@@ -107,7 +107,21 @@ The available elements are covered in detail :ref:`below <reports-editor-element
     .. image:: reports_editor_toolbar_buttons.jpg
 
 
-``Preview`` will build the report and display the PDF. Click the ``x`` close button in the ``Report preview`` window to return to the :ref:`page designer <reports-editor-designer>`.
+``Preview`` will build the report and display the PDF. Click the ``Design`` button to close the preview and return to the :ref:`page designer <reports-editor-designer>`.
+
+.. only:: not latex
+
+    .. image:: reports_editor_toolbar_buttons_design.jpg
+        :scale: 50 %
+
+    | 
+
+.. only:: latex
+    
+    | 
+    
+    .. image:: reports_editor_toolbar_buttons_design.jpg
+
 
 Reports are ``automatically saved`` as changes are made. 
 
@@ -122,6 +136,8 @@ Use the ``Undo`` and ``Redo`` buttons to revert changes during the editing sessi
 Page designer
 ~~~~~~~~~~~~~~~
 The page designer is where the report content is assembled by adding :ref:`content elements <reports-editor-elements>` to the content, :ref:`header <reports-editor-document-header-footer>` and :ref:`footer <reports-editor-document-header-footer>` sections.
+
+Click and drag the resize handle at the bottom of the page to adjust the content height so that more elements can be added to the report.
 
 .. only:: not latex
 
@@ -211,7 +227,7 @@ Page size and document height
 The ``Page format`` and ``Orientation`` options specify the output page settings for PDF documents. Typically a report would use *DIN A4*. 
 Select *Own dimensions* to specify a custom *width* and *height*.
 
-Increasing the ``Content height`` value will adjust the available vertical space in the report layout so that more elements can be added. 
+Click and drag the resize handle at the bottom of the page designer to adjust the content height so that more elements can be added to the report.
 
 Content will automatically span over multiple pages as necessary. Alternatively insert a :ref:`page break <reports-editor-elements-pagebreak>` element to force content to flow to a new page. 
 
