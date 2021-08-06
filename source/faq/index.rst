@@ -172,6 +172,21 @@ Libelium
 
 | 
 
+Worldsensing
+	Loadsensing
+	
+.. only:: not latex
+
+	.. image:: worldsensing_loadsensing.jpg
+		:scale: 50 %
+
+.. only:: latex
+
+	.. image:: worldsensing_loadsensing.jpg
+		:scale: 55 %
+
+| 
+
 OTT netDL
 	OTT netDL 500 and 1000.
 

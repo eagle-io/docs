@@ -17,7 +17,9 @@ The following topics will assist when configuring your device for `eagle.io <htt
    datataker/index
    halytech_spider/index
    libelium_waspmote/index
+   worldsensing_loadsensing/index
    maxon_intelimax/index
+   myriota_dev_kit/index
    nnnco/index
    ott_netdl/index
    metasphere_pointorange3g/index
