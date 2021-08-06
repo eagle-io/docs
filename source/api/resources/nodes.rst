@@ -102,6 +102,7 @@ Consumers of Nodes should tolerate the addition of new attributes and variance i
     ================================    =========   =========   ===========================================================================
     Parameter & Location attributes     Type        Update      Description
     ================================    =========   =========   ===========================================================================
+    **coordinateSourceId**              ObjectId                Data Source _id used to set location coordinates. Applies to Locations only.
     **chart**                           Object      Yes         :ref:`Parameter chart configuration <api-nodes-update-parameter-chart>`
     **controlValue**                    Variable    Yes         Pending control value. Type inherited from _class.
     **controlValueMaximum**             Double      Yes         Maximum control value when controlValueRestriction set to RANGE
@@ -116,6 +117,7 @@ Consumers of Nodes should tolerate the addition of new attributes and variance i
     **displayType**                     String      Yes         Default display type of parameter: 
                                                                 *[VALUE, STATE]*
     **format**                          String      Yes         Formatting to apply to displayed value
+    **imageSourceId**                   ObjectId                Attachment Source _id used to set location image. Applies to Locations only.
     **multiplier**                      Double      Yes         Value to multiply rawValue and historic data on extraction. 
                                                                 Applies to number parameters only
     **offset**                          Double      Yes         Value to add to rawValue and historic data on extraction. 
