@@ -16,7 +16,7 @@ Creating a report
 3. Drag nodes from the Workspaces tree to quickly insert them into the report template. eg. Drag an image attachment node or chart node to insert as an image in the report.
 4. Remove an element by clicking the ``x`` next to the item in the ``CONTENT`` menu (on the right-hand side of the screen) or selecting the element(s) in the editor and pressing the ``delete`` key.
 5. Insert page break elements to split content over multiple pages.
-6. To increase the height of the template page area (for editing only), select the ``DOCUMENT PROPERTIES`` menu and enter a value in the ``Content height`` field. eg. ``1000``.
+6. Click and drag the resize handle at the bottom of the page to adjust the content height so that more elements can be added to the report.
 7. Click on the name of a linked node (automatically added after drag-drop from Workspaces tree) in the ``TAGS`` menu to display all of its available attributes.
 8. Use :ref:`expressions <expressions>` directly inside report element content to control the output of the content and its formatting. A common scenario is to apply the :ref:`time <liquid-filters-time>` expression filter to format the display of timestamps. 
    eg. ``{{report_time | time}}`` or ``{{report_time | time: "DD MMMM YYYY"}}``
