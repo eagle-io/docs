@@ -22,7 +22,10 @@ Template
         :scale: 100 %
 
 
-The *Templates* Node always appears at the top of the Workspaces Tree and is identified by the puzzle icon. A new Template begins as a Group or Location, and is then populated with any number of Nodes. Changes to an existing Template (or Node therein) will be immediately reflected in all Instances referring to that Template. These changes can include the addition or removal of Nodes, or any configuration change within the Template.
+The *Templates* Node always appears at the top of the Workspaces Tree and is identified by the puzzle icon. 
+A new Template begins as a Group or Location, and is then populated with any number of Nodes. 
+Changes to an existing Template (or Node therein) will be immediately reflected in all Instances referring to that Template. 
+These changes can include the addition or removal of Nodes, or any configuration change within the Template.
 
 .. only:: not latex
 
@@ -38,7 +41,7 @@ The *Templates* Node always appears at the top of the Workspaces Tree and is ide
         :scale: 100 %
 
 .. warning:: 
-    Removing a Template will also remove all Instances referring to that Template.
+    Removing a Template will also remove all Instances linked to the Template.
 
 |
 
@@ -47,7 +50,8 @@ The *Templates* Node always appears at the top of the Workspaces Tree and is ide
 Instances
 ~~~~~~~~~
 
-Instances can be created in any of your Workspaces and must refer to one of the Templates you have already created. Each Instance may be renamed but all additional configuration items will be locked to the Template.
+Instances can be created in any of your Workspaces and must refer to one of the Templates you have already created. 
+Each Instance may be renamed but all additional configuration items will be locked to the Template.
 
 .. only:: not latex
 
@@ -63,9 +67,10 @@ Instances can be created in any of your Workspaces and must refer to one of the 
         :scale: 100 %
 
 .. note::
-    An Instance can only be created directly under a Workspace or Group.
+    An Instance can only be created directly under a Workspace or Folder.
 
-By default, Instance configuration attributes are locked to the Template and cannot be modified. In this way, locked attributes ensure consistency across all Instances that refer to the same Template.
+By default, Instance configuration attributes are locked to the Template and cannot be modified. 
+In this way, locked attributes ensure consistency across all Instances that refer to the same Template.
 
 .. only:: not latex
 
@@ -100,7 +105,7 @@ Overrides allow you to select attributes in a Template that may be individually 
     | 
 
     .. image:: overrides.jpg
-        :scale: 100 %
+
 
 Once an override has been added in the Template configuration, the attribute will become modifiable in every Instance.
 
@@ -108,6 +113,7 @@ Once an override has been added in the Template configuration, the attribute wil
 
     .. image:: unlocked-attribute.jpg
         :scale: 50 %
+
     | 
 
 .. only:: latex
@@ -115,14 +121,38 @@ Once an override has been added in the Template configuration, the attribute wil
     | 
 
     .. image:: unlocked-attribute.jpg
-        :scale: 100 %
 
 .. warning:: 
     Removing an override in a Template will reset that attribute in the corresponding Instance Nodes back to the templated value.
 
 
+| 
+
+.. _node-configuration-template-instance-operations:
+
+Instance operations
+~~~~~~~~~~~~~~~~~~~~
+
+The Instance context-menu accessible via the Workspaces Tree contains instance operations.
+
+.. only:: not latex
+
+    .. image:: nodes-template-instance-operations.jpg
+        :scale: 50 %
+
+    | 
+
+.. only:: latex
+    
+    | 
+
+    .. image:: nodes-template-instance-operations.jpg
 
 
+Unlink from Template
+`````````````````````
+Unlinking an Instance will permanently disassociate it from the Template. 
+The instance (and its decendants) will be converted to standard nodes. Configuration, events and historic data will remain intact.
 
 
 .. only:: not latex
