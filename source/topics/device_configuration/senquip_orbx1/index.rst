@@ -85,7 +85,10 @@ Source configuration
 
 
 
-4. Complete the Data Source wizard by clicking *Next*, *Next* and *Finish*. Final configuration requires the device to send some sample data, so now configure the device with the following settings:
+4. Complete the Data Source wizard by clicking *Next*, *Next* and *Finish*. 
+
+
+5. Final configuration requires the device to send some sample data. Follow these `detailed device configuration steps <http://docs.senquip.com/app_notes/APN0014%20Rev%201.0%20-%20Integrating%20ORB%20Data%20with%20Eagle.io.pdf>`_, and then check the following settings:
 
 MQTT
     Check the *Enabled* box
@@ -99,9 +102,6 @@ Username
     Use the 3-word code generated in step 2, e.g. ``tail-chill-nic``
 Password
     Use the password you entered in step 2
-
-.. note:: 
-    Read further `documentation <https://docs.senquip.com/orbug/chapters/endpoint.html#mqtt>`_ for device MQTT configuration.
 
 
 .. only:: not latex
@@ -119,7 +119,7 @@ Password
 
 
 
-5. Once sample data has been sent, final configuration of data series can be performed by right-clicking the Data Source in the eagle.io Workspace tree, and choosing *Properties*. Then click the *Series* tab, where data series' can be associated with Parameters.
+6. Once sample data has been sent, final configuration of data series can be performed by right-clicking the Data Source in the eagle.io Workspace tree, and choosing *Properties*. Then click the *Series* tab, where data series' can be associated with Parameters.
 
 
 .. only:: not latex
