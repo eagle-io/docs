@@ -68,7 +68,9 @@ Rename
 The Node will be selected and you can type in a new name and press enter/return or click anywhere outside the Node to apply.
 
 .. note:: 
-	Nodes must be uniquely named within the current container Node. Restricted characters include forward slash '/', underscore '_', semicolon ';' and curly braces '{' and '}'.
+    Nodes must be uniquely named within the current container Node and must not exceed 120 characters in length. 
+    Restricted characters include forward slash '/', underscore '_', semicolon ';' and curly braces '{' and '}'. 
+
 
 .. only:: not latex
 
