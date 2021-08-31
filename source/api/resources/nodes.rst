@@ -1626,6 +1626,7 @@ Retrieve Workspace user and group permissions
 Retrieve a list of all users and groups with access to a workspace (or node) by its **id**. You can use the automatically assigned *_id* or your own *customId* prepended with '@'. 
 When a user is included in a group that has been provided access, the user entry may contain an *effectivePermissions* attribute which combines individual user and group(s) permissions (where different).
 
+
 Request
 ~~~~~~~~
 
@@ -1705,6 +1706,11 @@ Response
             }
         ]
     }
+
+
+.. note:: 
+    When retrieving permissions for a node it will return permissions that have been directly set on this node (or the Workspace) and not inherited node permissions.
+
 
 .. only:: not latex
 
