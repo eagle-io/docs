@@ -61,7 +61,7 @@ Loadsensing `CMT (Connectivity Management Tool) Cloud <https://www.worldsensing.
 | 
 | 
 
-2. Select *Upload data to ftp.eagle.io* as the transport type. A unique *Ftp user* account will be automatically generated per data source. A password should also be specified for additional security. Select the desired timezone (in this example it is **UTC** to match the timezone of the data file) and click **Next**.
+2. Select *Upload to ftp.eagle.io* as the transport type. A unique *Username* will be automatically generated per data source; for this example, it is ``spoon-table-node``. A password should also be entered for additional security. Select the desired timezone (in this example it is **UTC** to match the timezone of the data file) and click **Next**.
 
 .. only:: not latex
 
@@ -79,7 +79,7 @@ Loadsensing `CMT (Connectivity Management Tool) Cloud <https://www.worldsensing.
 | 
 | 
 
-3. Check the box labled "Skip or Reset sample file and retrieve on next acquisition". Enter a file match of ``.csv`` and click **Apply**.
+3. Check the box labled **Skip or Reset sample file and retrieve on next acquisition**. Enter a file match of ``.csv`` and click **Apply**.
 
 .. only:: not latex
 
@@ -233,7 +233,7 @@ Output
 3. Finalize configuration of the data source parser
 ---------------------------------------------------
 
-Now that a file has been sent from the CMT Cloud software to eagle.io via FTP, this file can be used to finalize configuration of the data source that was created preiouvsly.
+Once a file has been sent from the CMT Cloud software to eagle.io via FTP, this file can be used to finalize configuration of the data source that was created previously.
 
 1. In eagle.io, check the debug :ref:`Events <view-events>` view of the data source to ensure that at least one file has been received. The event will look like this:
 
