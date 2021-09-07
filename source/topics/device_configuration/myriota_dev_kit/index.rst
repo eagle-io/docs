@@ -2,7 +2,7 @@
 
 Myriota Developers Kit
 ======================
-The `Myriota Network <http://myriota.com>`_ is a next generation, direct-to-staellite IoT technology platform that offers data transfer at mass scale.
+The `Myriota Network <http://myriota.com>`_ is a next generation, direct-to-satellite IoT technology platform that offers data transfer at mass scale.
 
 The `Myriota Developer Toolkit <http://myriota.com/developers>`_ gives you all the tools you need to add affordable, long battery life IoT connectivity to your product. This unique direct-to-satellite technology offers the lowest cost of data transfer and the longest battery life for applications, and can be configured to send data to `eagle.io <https://eagle.io>`_ in a few easy steps.
 
