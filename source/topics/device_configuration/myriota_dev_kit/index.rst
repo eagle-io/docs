@@ -156,7 +156,7 @@ Using the URL determined in the previous step, the Myriota device can now be con
 .. only:: not latex
 
     .. image:: myriota_config_1.png
-        :scale: 100 %
+        :scale: 50 %
 
     | 
 
@@ -174,7 +174,7 @@ Using the URL determined in the previous step, the Myriota device can now be con
 .. only:: not latex
 
     .. image:: myriota_config_2.png
-        :scale: 100 %
+        :scale: 50 %
 
     | 
 
@@ -186,22 +186,8 @@ Using the URL determined in the previous step, the Myriota device can now be con
 
 |
 
-3. Send a sample message from Myriota by clicking the configured device, and then clicking the **Send message** button:
+3. Send a sample message from Myriota by clicking the configured device, and then clicking the **Send message** button.
 
-
-
-.. only:: not latex
-
-    .. image:: myriota_config_3.png
-        :scale: 100 %
-
-    | 
-
-.. only:: latex
-    
-    | 
-
-    .. image:: myriota_config_3.png
 
 |
 
@@ -211,7 +197,7 @@ Using the URL determined in the previous step, the Myriota device can now be con
 .. only:: not latex
 
     .. image:: myriota_config_4.png
-        :scale: 100 %
+        :scale: 50 %
 
     | 
 
