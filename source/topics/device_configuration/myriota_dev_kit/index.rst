@@ -1,8 +1,8 @@
 .. _device-myriota-dev-kit:
 
-Myriota Developers Kit
-======================
-The `Myriota Network <http://myriota.com>`_ is a next generation, direct-to-satellite IoT technology platform that offers data transfer at mass scale.
+Myriota Developer Toolkit
+=========================
+The `Myriota Network <http://myriota.com>`_ is a next generation, direct-to-orbit IoT technology platform that offers data transfer at mass scale.
 
 The `Myriota Developer Toolkit <http://myriota.com/developers>`_ gives you all the tools you need to add affordable, long battery life IoT connectivity to your product. This unique direct-to-satellite technology offers the lowest cost of data transfer and the longest battery life for applications, and can be configured to send data to `eagle.io <https://eagle.io>`_ in a few easy steps.
 
@@ -26,10 +26,10 @@ Introduction
 There are 5 main tasks required when setting up the Myriota Developer Toolkit to work with eagle.io
 
 1. Configure an eagle.io data source with the **Upload via HTTP** transport
-2. Define Myriota payload format using Ruby unpack syntax
-3. Determine the destination URL (defined by the data source and the payload format)
-4. Send a sample payload to the destination URL with the send message function
-5. Use the sample payload to configure the eagle.io parser, and map/name your variables
+2. Define Myriota message format using Ruby unpack syntax
+3. Determine the destination URL (defined by the data source and the message format)
+4. Send a sample message to the destination URL with the send message function
+5. Use the sample message to configure the eagle.io parser, and map/name your variables
 
 |
 
@@ -86,10 +86,10 @@ The data source is now ready to receive sample data.
 
 |
 
-2. Define Myriota payload format
+2. Define Myriota message format
 --------------------------------
 
-In order to send data from the Myriota device to eagle.io, the data format must first be defined. This will describe how to decode the payload, which comprises a 40-character hexadecimal string. `Ruby unpack syntax <https://apidock.com/ruby/String/unpack>`_ is used to define the format.
+In order to send data from the Myriota device to eagle.io, the data format must first be defined. This will describe how to decode the message, which comprises a 40-character hexadecimal string. `Ruby unpack syntax <https://apidock.com/ruby/String/unpack>`_ is used to define the format.
 
 
 This is an example of the packed Myriota string, and the data format which defines how to unpack it:
@@ -111,7 +111,7 @@ This is an example of the packed Myriota string, and the data format which defin
 
 Note that each of the 5 elements packed into this particular hexadecimal string has a data type which maps to a letter code. These letter codes are an example of the `Ruby unpack syntax <https://apidock.com/ruby/String/unpack>`_, a shorthand way of defining data types.
 
-The 5 elements of this example are defined by the 5 code letters, **v** **l** **l** **V** **V**. Although all payloads will be 40-character hex strings, other payloads may be defined by different combinations of data types, which will result in different combinations of the `unpack <https://apidock.com/ruby/String/unpack>`_ letter codes.
+The 5 elements of this example are defined by the 5 code letters, **v** **l** **l** **V** **V**. Although all messages will be 40-character hex strings, other messages may be defined by different combinations of data types, which will result in different combinations of the `unpack <https://apidock.com/ruby/String/unpack>`_ letter codes.
 
 The combination of letter codes that define the data format will play an important role in the following step.
 
@@ -128,7 +128,7 @@ The destination URL that Myriota will send data to takes the following format:
 Where:
 
 * **<server key>** is the unique three-word key that is generated as part of the URL during the data source wizard in step 1
-* **<data format>** is the combination of letter codes that define the specific data format used to unpack the 40-character hexadecimal payload
+* **<data format>** is the combination of letter codes that define the specific data format used to unpack the 40-character hexadecimal message
 
 The first portion of this URL is displayed in the data source creation wizard, which at the end of step 1 was left waiting for data.
 
@@ -141,7 +141,7 @@ Note that this specific example uses a server key of **soap-laugh-corn**, and a 
 
 |
 
-4. Send a sample payload to the destination URL
+4. Send a sample message to the destination URL
 -----------------------------------------------
 
 Using the URL determined in the previous step, the Myriota device can now be configured.
@@ -186,7 +186,7 @@ Using the URL determined in the previous step, the Myriota device can now be con
 
 |
 
-3. Send a sample data payload from Myriota by clicking the configured device, and then clicking the **Send message** button:
+3. Send a sample message from Myriota by clicking the configured device, and then clicking the **Send message** button:
 
 
 
@@ -223,7 +223,7 @@ Using the URL determined in the previous step, the Myriota device can now be con
 
 |
 
-5. Use the sample payload to configure the eagle.io parser
+5. Use the sample message to configure the eagle.io parser
 ----------------------------------------------------------
 
 
@@ -253,9 +253,9 @@ Returning to the eagle.io data source wizard, you should now see that data has b
 Click the **Apply** button to move to the next step of the data source wizard.
 
 
-The Parser configuration screen allows the user to describe the structure and format of the data payload so it can be correctly interpreted by the system in subsequent uploads. Refer to :ref:`Text Parser Configuration <text-parser>` for full details.
+The Parser configuration screen allows the user to describe the structure and format of the message so it can be correctly interpreted by the system in subsequent uploads. Refer to :ref:`Text Parser Configuration <text-parser>` for full details.
 
-The Myriota data payload will be received as a header row and a data row. The header row (which is called a **Labels row** in the parser configuration) will comprise each letter code used in the format portion of the URL. The number of columns defined will be the same as the number of letters in the format code. In the current example the format is **vllVV**, therefore 5 columns will be defined with header values of **v**, **l**, **l**, **V**, **V** 
+The Myriota message will be received as a header row and a data row. The header row (which is called a **Labels row** in the parser configuration) will comprise each letter code used in the format portion of the URL. The number of columns defined will be the same as the number of letters in the format code. In the current example the format is **vllVV**, therefore 5 columns will be defined with header values of **v**, **l**, **l**, **V**, **V** 
 
 
 .. only:: not latex
@@ -276,7 +276,7 @@ The Myriota data payload will be received as a header row and a data row. The he
 Configure the **Labels row** to be row 1. 
 
 
-The data in each column will be different when different formats are defined. The parser must be configured so that each portion of the payload matches the expected column data type and format. Validation errors are shown in red. Any columns not required for collection can optionally be *Disabled*. The specific payload in this example defines a record timestamp in column 4, with all other values being numbers. Thefore in the parser configuration, the column data type of column 1 should be changed to **Number**, and the column data type of column 4 should be changed to **Record Time**. The parser configuration should now look like this:
+The data in each column will be different when different formats are defined. The parser must be configured so that each portion of the message matches the expected column data type and format. Validation errors are shown in red. Any columns not required for collection can optionally be *Disabled*. The specific message in this example defines a record timestamp in column 4, with all other values being numbers. Thefore in the parser configuration, the column data type of column 1 should be changed to **Number**, and the column data type of column 4 should be changed to **Record Time**. The parser configuration should now look like this:
 
 
 .. only:: not latex
@@ -375,7 +375,7 @@ Click Finish to complete the setup.
     You can reconfigure the parser configuration and parameter assignment from the :ref:`Data Source<node-configuration-datasource-file>` properties dialog after creation.
 
 .. note:: 
-    If the Myriota data payload includes latitude and longitude, this can be configured to update a location map marker within eagle.io by using this `process <https://help.eagle.io/en/articles/5466055-using-coordinates-from-a-data-source-in-a-location>`_.
+    If the Myriota message includes latitude and longitude, this can be configured to update a location map marker within eagle.io by using this `process <https://help.eagle.io/en/articles/5466055-using-coordinates-from-a-data-source-in-a-location>`_.
 
 .. only:: not latex
 
