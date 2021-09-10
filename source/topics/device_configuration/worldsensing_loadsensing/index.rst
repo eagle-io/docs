@@ -12,7 +12,7 @@ The `Loadsensing <https://www.worldsensing.com/loadsensing/>`_ system from `Worl
 .. only:: latex
 
     .. image:: worldsensing_logo_small.png
-        :scale: 50 %
+        :scale: 80 %
 
 .. only:: not latex
 
@@ -22,19 +22,33 @@ The `Loadsensing <https://www.worldsensing.com/loadsensing/>`_ system from `Worl
 .. only:: latex
 
     .. image:: loadsensing_device.jpg
-        :scale: 50 %
+        :scale: 80 %
 
 | 
+| 
+| 
 
-Source configuration
---------------------
+Introduction
+------------
 
-1. Create a :ref:`Data Source<node-configuration-datasource-file>` and select *File* as the Source Type. Choose *Delimited Text* from the list and click Next.
+Loadsensing `CMT (Connectivity Management Tool) Cloud <https://www.worldsensing.com/product/connectivity-connectivity-management-cmt-cloud/>`_ is part of the Loadsensing connectivity portfolio. One of it's features allows for an FTP push of data to 3rd party systems, such as eagle.io. There are 3 main tasks required when setting up the Loadsensing CMT Cloud to send data to an eagle.io data source:
+
+1. Configure a new eagle.io data source with the **Upload data to ftp.eagle.io** transport
+2. Configure the Loadsensing CMT Cloud with FTP client details
+3. Use the first file sent as sample data to finalize configuration of the data source parser and create parameters
+
+| 
+| 
+
+1. Configure an eagle.io data source
+------------------------------------
+
+1. Create a :ref:`data source<node-configuration-datasource-file>` and select *File* as the Source Type. Choose *Delimited Text* from the list and click **Next**.
 
 .. only:: not latex
 
-    .. image:: loadsensing_wizard_1.jpg
-        :scale: 50 %
+    .. image:: loadsensing_wizard_1.png
+        :scale: 80 %
 
     | 
 
@@ -42,14 +56,17 @@ Source configuration
     
     | 
 
-    .. image:: loadsensing_wizard_1.jpg
+    .. image:: loadsensing_wizard_1.png
 
-2. Select *Upload data to ftp.eagle.io* as the transport type. A unique *Ftp user* account will be automatically generated per Data Source. You can optionally specify a password to be used for additional security. Select the desired timezone and click Next.
+| 
+| 
+
+2. Select *Upload to ftp.eagle.io* as the transport type. A unique *Username* will be automatically generated per data source; for this example, it is ``spoon-table-node``. A password should also be entered for additional security. Select the desired timezone (in this example it is **UTC** to match the timezone of the data file) and click **Next**.
 
 .. only:: not latex
 
-    .. image:: loadsensing_wizard_2.jpg
-        :scale: 50 %
+    .. image:: loadsensing_wizard_2.png
+        :scale: 80 %
 
     | 
 
@@ -57,14 +74,17 @@ Source configuration
     
     | 
 
-    .. image:: loadsensing_wizard_2.jpg
+    .. image:: loadsensing_wizard_2.png
 
-3. Specify *CSV* as the *File name match*. This will match all incoming files for this Source containing 'CSV' in the filename. To continue the setup you will need a sample copy of the data file(s). 
+| 
+| 
+
+3. Check the box labled **Skip or Reset sample file and retrieve on next acquisition**. Enter a file match of ``.csv`` and click **Apply**.
 
 .. only:: not latex
 
-    .. image:: loadsensing_wizard_3.jpg
-        :scale: 50 %
+    .. image:: loadsensing_wizard_3.png
+        :scale: 80 %
 
     | 
 
@@ -72,70 +92,266 @@ Source configuration
     
     | 
 
-    .. image:: loadsensing_wizard_3.jpg
+    .. image:: loadsensing_wizard_3.png
+
+| 
+| 
+
+3. Click **Next**. 
+
+.. only:: not latex
+
+    .. image:: loadsensing_wizard_4.png
+        :scale: 80 %
+
+    | 
+
+.. only:: latex
+    
+    | 
+
+    .. image:: loadsensing_wizard_4.png
+
+| 
+| 
+
+4. Click **Finish**.
+
+.. only:: not latex
+
+    .. image:: loadsensing_wizard_5.png
+        :scale: 80 %
+
+    | 
+
+.. only:: latex
+    
+    | 
+
+    .. image:: loadsensing_wizard_5.png
+
+| 
+| 
+
+2. Configure Loadsensing CMT Cloud
+----------------------------------
+
+
+1. After logging into the CMT Cloud dashboard, select *System Configuration*, then *FTP Client*:
+
+.. only:: not latex
+
+    .. image:: loadsensing_client_1.jpg
+        :scale: 80 %
+
+    | 
+
+.. only:: latex
+    
+    | 
+
+    .. image:: loadsensing_client_1.jpg
+
+| 
+| 
+
+2. Check the **Enable FTP** box and enter the following FTP client details:
+
+
+Hostname
+    ``ftp.eagle.io``
+Port number
+    ``21``
+Username
+    Use the unique FTP username generated during creation of the data source. In this example, it is ``spoon-table-node``. Every data source will have a different unique username.
+Password
+    Use the password you entered during creation of the data source.
+Protocol
+    **FTP**
+FTP mode
+    **Passive**
+Output
+    **Create unique file name at every upload**
+
+| 
+| 
+
+
+.. only:: not latex
+
+    .. image:: loadsensing_client_2.jpg
+        :scale: 80 %
+
+    | 
+
+.. only:: latex
+    
+    | 
+
+    .. image:: loadsensing_client_2.jpg
+
+| 
+| 
+
+3. Click a single box corresponding to the data you want to send, for example **LS-G6-INC15 data**, and enter a relative path of ``./``:
+
+.. only:: not latex
+
+    .. image:: loadsensing_client_3.jpg
+        :scale: 80 %
+
+    | 
+
+.. only:: latex
+    
+    | 
+
+    .. image:: loadsensing_client_3.jpg
+
+| 
+| 
+
+4. Click **Save and test**
+
+.. only:: not latex
+
+    .. image:: loadsensing_client_4.jpg
+        :scale: 80 %
+
+    | 
+
+.. only:: latex
+    
+    | 
+
+    .. image:: loadsensing_client_4.jpg
+
+
+| 
+| 
+
+3. Finalize configuration of the data source parser
+---------------------------------------------------
+
+Once a file has been sent from the CMT Cloud software to eagle.io via FTP, this file can be used to finalize configuration of the data source that was created previously.
+
+1. In eagle.io, check the debug :ref:`Events <view-events>` view of the data source to ensure that at least one file has been received. The event will look like this:
+
+.. only:: not latex
+
+    .. image:: loadsensing_config_1.png
+        :scale: 80 %
+
+    | 
+
+.. only:: latex
+    
+    | 
+
+    .. image:: loadsensing_config_1.png
+
+| 
+| 
+
+2. In the :ref:`data source<node-configuration-datasource-file>` properties dialog, go to the **Series** tab and choose the **Configure series** option for the **.csv** data file. If this option is greyed-out, that means a file has not yet been received (refer to the previous step):
+
+.. only:: not latex
+
+    .. image:: loadsensing_config_2.png
+        :scale: 80 %
+
+    | 
+
+.. only:: latex
+    
+    | 
+
+    .. image:: loadsensing_config_2.png
+
+| 
+| 
+
+3. Once a file has been received, the **Configure series** option for the **.csv** data file will be avilable:
+
+.. only:: not latex
+
+    .. image:: loadsensing_config_3.png
+        :scale: 80 %
+
+    | 
+
+.. only:: latex
+    
+    | 
+
+    .. image:: loadsensing_config_3.png
+
+| 
+| 
+
+4. The Parser configuration screen allows the user to describe the structure and format of the data file so it can be correctly interpreted by the system in subsequent uploads. Refer to :ref:`Text Parser Configuration <text-parser>` for full details. The data file contains a header row, so set the *Labels row* control to row 10 which will assign default labels for parameter creation (that is the purple line in the example below). Ensure the data in each column matches the expected column data type and format. Validation errors are shown in red. Any columns not required for collection can optionally be *Disabled*. The default time format for the *Record Time* column is already set to **YYYY-MM-DD HH:mm:ss** and should not need to change. After appropriate configuration, the parser should look now look like this; click **Apply** to continue:
+
+
+.. only:: not latex
+
+    .. image:: loadsensing_config_4.png
+        :scale: 80 %
+
+    | 
+
+.. only:: latex
+    
+    | 
+
+    .. image:: loadsensing_config_4.png
+
+| 
+| 
+
+5. Specify the parameter names (and optionally units) for each series/column defined in the Parser configuration. Uncheck any series you do not want to create as parameters. Click **Save** to complete the configuration and create the parameters.
+
+.. only:: not latex
+
+    .. image:: loadsensing_config_5.png
+        :scale: 80 %
+
+    | 
+
+.. only:: latex
+    
+    | 
+
+    .. image:: loadsensing_config_5.png
+
+| 
+| 
+
+6. The parameters have now been created; when data is next sent via FTP, the values will appear in the Parameters view:
+
+.. only:: not latex
+
+    .. image:: loadsensing_config_6.png
+        :scale: 80 %
+
+    | 
+
+.. only:: latex
+    
+    | 
+
+    .. image:: loadsensing_config_6.png
+
+
+| 
+| 
 
 .. note:: 
-    If you do not have a sample available, click the *Skip* checkbox and click finish on the next screen. A sample will be saved automatically during the initial upload, and you will need to open the :ref:`Data Source <node-configuration-datasource-datalogger>` properties dialog and :ref:`configure the series <node-configuration-datasource-file-series>` to create parameters.
-
-4. The Parser configuration screen allows the user to describe the structure and format of the data file so it can be correctly interpretted by the system in subsequent uploads. Refer to :ref:`Text Parser Configuration <text-parser>` for full details.
-
-.. only:: not latex
-
-    .. image:: loadsensing_wizard_4a.jpg
-        :scale: 50 %
-
-    | 
-
-.. only:: latex
-    
-    | 
-
-    .. image:: loadsensing_wizard_4a.jpg
-
-If the file contains a header row, set the *Labels row* control to the corresponding row number which will assign default labels for parameter creation.
-
-Ensure the data in each column matches the expected column data type and format. Validation errors are shown in red. Any columns not required for collection can optionally be *Disabled*.
-
-You will need to change the default time format for the *Record Time* column. Click the configure button above the column and change the *Format* field to use the :ref:`time format<time-format-tokens>` **YYYY/MM/DD HH:mm:ss.SSS**. Click Apply and Next.
-
-.. only:: not latex
-
-    .. image:: loadsensing_wizard_4b.jpg
-        :scale: 50 %
-
-    | 
-
-.. only:: latex
-    
-    | 
-
-    .. image:: loadsensing_wizard_4b.jpg
-
-5. Specify the parameter names (and optionally units) for each series/column defined in the Parser configuration. Uncheck any series you do not want to create as parameters. Click Finish to complete the setup. 
-
-.. only:: not latex
-
-    .. image:: loadsensing_wizard_5.jpg
-        :scale: 50 %
-
-    | 
-
-.. only:: latex
-    
-    | 
-
-    .. image:: loadsensing_wizard_5.jpg
-
-.. note:: 
-    You can reconfigure the file name match/sample file, parser configuration and parameter assignment from the :ref:`Data Source<node-configuration-datasource-file>` properties dialog after creation.
+    You can reconfigure the file name match/sample file, parser configuration and parameter assignment from the :ref:`data source<node-configuration-datasource-file>` properties dialog after creation.
 
 .. only:: not latex
 
     |
 
-Loadsensing settings
---------------------
-Refer to your loadsensing `user manual <http://www.loadsensing.com>`_ for connection instructions.
 
 
 .. note:: 
