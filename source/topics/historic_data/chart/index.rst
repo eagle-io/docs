@@ -261,7 +261,11 @@ Set value
 |icon-pencil| Enter a new value to be assigned to the selected data point(s) and press enter or click the *set value* icon.
 Change the functionality of the value input by selecting a value operation from the dropdown menu.
 
-Use *set value* to change all selected records to a specific value or *offset by value* to offset each record by a specific amount.
+``Set value`` assigns a specific value to selected records.
+
+``Offset by value`` adds a value to to selected records.
+
+``Scale by value`` multiplies selected records by a specific value.
 
 .. only:: not latex
 
