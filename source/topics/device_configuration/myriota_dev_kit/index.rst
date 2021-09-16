@@ -361,7 +361,7 @@ Click Finish to complete the setup.
     You can reconfigure the parser configuration and parameter assignment from the :ref:`Data Source<node-configuration-datasource-file>` properties dialog after creation.
 
 .. note:: 
-    If the Myriota message includes latitude and longitude, this can be configured to update a location map marker within eagle.io by using this `process <https://help.eagle.io/en/articles/5466055-using-coordinates-from-a-data-source-in-a-location>`_.
+    If the Myriota message includes latitude and longitude, this can be configured to update a location map marker within eagle.io by using this `process <https://help.eagle.io/hc/en-au/articles/4404653973273-Using-coordinates-from-a-data-source-in-a-location>`_.
 
 .. only:: not latex
 
