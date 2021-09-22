@@ -224,6 +224,7 @@ Sub-arguments should be included in parentheses with key/value separated by colo
 
 All special characters should be `Url Encoded <http://en.wikipedia.org/wiki/Percent-encoding>`_.
 
+The query string should not exceed 4096 bytes. A **413 Request Too Large** response will be returned for requests exceeding the size limit.
 
 .. _api-overview-request-arguments-filter:
 
