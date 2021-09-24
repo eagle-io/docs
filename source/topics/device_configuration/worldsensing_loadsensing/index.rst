@@ -1,41 +1,38 @@
 .. _worldsensing-loadsensing:
 
-Loadsensing
-===========
-The `Loadsensing <https://www.worldsensing.com/loadsensing/>`_ system from `Worldsensing <https://www.worldsensing.com>`_ is a global leader in IoT-based monitoring, and can be connected with `eagle.io <https://eagle.io>`_ in a few easy steps.
+Worldsensing
+============
+`Loadsensing <https://www.worldsensing.com/loadsensing/>`_ is the IoT remote monitoring solution by `Worldsensing <https://www.worldsensing.com>`_, a global industrial IoT leader and expert in monitoring the geotechnical, geospatial and structural performance of civil infrastructures. The monitoring solution can be connected with `eagle.io <https://eagle.io>`_ through the Wolrdsensing software called `Connectivity Management Tool (CMT) <https://www.worldsensing.com/connectivity-connectivitymanagement/>`_ in a few easy steps.
 
 .. only:: not latex
 
-    .. image:: worldsensing_logo_small.png
-        :scale: 100 %
+    .. image:: worldsensing_header.png
+        :scale: 25 %
 
 .. only:: latex
 
-    .. image:: worldsensing_logo_small.png
-        :scale: 80 %
+    .. image:: worldsensing_header.png
+        :scale: 50 %
 
-.. only:: not latex
-
-    .. image:: loadsensing_device.jpg
-        :scale: 100 %
-
-.. only:: latex
-
-    .. image:: loadsensing_device.jpg
-        :scale: 80 %
-
-| 
-| 
-| 
 
 Introduction
 ------------
 
-Loadsensing `CMT (Connectivity Management Tool) Cloud <https://www.worldsensing.com/product/connectivity-connectivity-management-cmt-cloud/>`_ is part of the Loadsensing connectivity portfolio. One of it's features allows for an FTP push of data to 3rd party systems, such as eagle.io. There are 3 main tasks required when setting up the Loadsensing CMT Cloud to send data to an eagle.io data source:
+`CMT (Connectivity Management Tool) <https://www.worldsensing.com/connectivity-connectivitymanagement/>`_  is part of the Worldsensing connectivity portfolio. It allows integrating data collected through Worldsensing monitoring networks with 3rd party systems. The CMT software features FTP push of data to 3rd party systems, such as eagle.io.
+
+
+Setting up CMT with eagle.io
+++++++++++++++++++++++++++++
+
+Follow the steps below to configure CMT to send data to an eagle.io data source. Use a similar process to connect CMT Edge to eagle.io.
+
+
+3 Steps for an easy setup:
+++++++++++++++++++++++++++
 
 1. Configure a new eagle.io data source with the **Upload data to ftp.eagle.io** transport
-2. Configure the Loadsensing CMT Cloud with FTP client details
-3. Use the first file sent as sample data to finalize configuration of the data source parser and create parameters
+2. Configure the CMT with FTP client details
+3. Use the first file sent as sample data to finalize configuring the data source parser, and create parameters
 
 | 
 | 
@@ -133,11 +130,14 @@ Loadsensing `CMT (Connectivity Management Tool) Cloud <https://www.worldsensing.
 | 
 | 
 
-2. Configure Loadsensing CMT Cloud
-----------------------------------
+2. Configure CMT
+----------------
 
 
-1. After logging into the CMT Cloud dashboard, select *System Configuration*, then *FTP Client*:
+1. After logging into the CMT, select *System Configuration/Configuration*, then *FTP Client*.
+
+
+CMT Cloud:
 
 .. only:: not latex
 
@@ -151,6 +151,23 @@ Loadsensing `CMT (Connectivity Management Tool) Cloud <https://www.worldsensing.
     | 
 
     .. image:: loadsensing_client_1.jpg
+
+
+CMT Edge:
+
+.. only:: not latex
+
+    .. image:: loadsensing_client_1a.png
+        :scale: 80 %
+
+    | 
+
+.. only:: latex
+    
+    | 
+
+    .. image:: loadsensing_client_1a.png
+
 
 | 
 | 
@@ -230,10 +247,10 @@ Output
 | 
 | 
 
-3. Finalize configuration of the data source parser
----------------------------------------------------
+3. Finalize the configuration of the data source parser
+-------------------------------------------------------
 
-Once a file has been sent from the CMT Cloud software to eagle.io via FTP, this file can be used to finalize configuration of the data source that was created previously.
+Once a file has been sent from the CMT software to eagle.io via FTP, this file can be used to finalize the configuration of the data source that was created previously.
 
 1. In eagle.io, check the debug :ref:`Events <view-events>` view of the data source to ensure that at least one file has been received. The event will look like this:
 
