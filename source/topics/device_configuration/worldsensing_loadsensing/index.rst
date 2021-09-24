@@ -31,7 +31,7 @@ Follow the steps below to configure CMT to send data to an eagle.io data source.
 ++++++++++++++++++++++++++
 
 1. Configure a new eagle.io data source with the **Upload data to ftp.eagle.io** transport
-2. Configure the CMT with FTP client details
+2. Configure CMT with FTP client details
 3. Use the first file sent as sample data to finalize configuring the data source parser, and create parameters
 
 | 
