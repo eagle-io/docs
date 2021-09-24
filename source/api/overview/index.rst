@@ -224,6 +224,7 @@ Sub-arguments should be included in parentheses with key/value separated by colo
 
 All special characters should be `Url Encoded <http://en.wikipedia.org/wiki/Percent-encoding>`_.
 
+The query string should not exceed 4096 bytes. A **413 Request Too Large** response will be returned for requests exceeding the size limit.
 
 .. _api-overview-request-arguments-filter:
 
@@ -421,7 +422,7 @@ Usage Limits
 -------------
 
 API usage is rate limited by IP Address to prevent misuse.
-If you exceed more than 1000 requests per 15 minute window the request will be refused and you will recevie a **429 Too Many Requests** response.
+If you exceed more than 350 requests per 5 minute window the request will be refused and you will receive a **429 Too Many Requests** response.
 
 .. only:: not latex
 

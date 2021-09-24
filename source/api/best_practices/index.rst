@@ -35,6 +35,8 @@ Limit Size and Rate of requests
 ---------------------------------
 When working with :term:`time series` data, ensure you limit the size of the requests for both extraction and insertion. If the request or response is too large or exceeds our processing time threshold, the **413 Request Too Large** error response will be returned.
 
+The body of the request should not exceed 5MB before compression. The query string should not exceed 4096 bytes. A **413 Request Too Large** response will be returned for requests exceeding the size limit.
+
 You should limit the rate of requests to the API to ensure you do not exceed the :ref:`usage limits <api-overview-usage-limits>`.
 
 .. only:: not latex
