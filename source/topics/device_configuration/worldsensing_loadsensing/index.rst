@@ -2,7 +2,7 @@
 
 Worldsensing
 ============
-`Loadsensing <https://www.worldsensing.com/loadsensing/>`_ is the IoT remote monitoring solution by `Worldsensing <https://www.worldsensing.com>`_, a global industrial IoT leader and expert in monitoring the geotechnical, geospatial and structural performance of civil infrastructures. The monitoring solution can be connected with `eagle.io <https://eagle.io>`_ through the Wolrdsensing software called `Connectivity Management Tool (CMT) <https://www.worldsensing.com/connectivity-connectivitymanagement/>`_ in a few easy steps.
+`Loadsensing <https://www.worldsensing.com/loadsensing/>`_ is the IoT remote monitoring solution by `Worldsensing <https://www.worldsensing.com>`_, a global industrial IoT leader and expert in monitoring the geotechnical, geospatial and structural performance of civil infrastructures. The monitoring solution can be connected with `eagle.io <https://eagle.io>`_ through the Worldsensing software called `Connectivity Management Tool (CMT) <https://www.worldsensing.com/connectivity-connectivitymanagement/>`_ in a few easy steps.
 
 .. only:: not latex
 
