@@ -33,6 +33,8 @@ Change login email
 ------------------
 Use the *Change* button to update your user profile email address. An email will be sent to the new address with a one-time verification link to confirm the change. Any re-sends or new address changes will invalidate previously generated links.
 
+Users with :ref:`Single Sign-On <management-security-sso>` configured for their domain can not change their email address.
+
 .. only:: not latex
 
     |
@@ -63,6 +65,8 @@ Security
 --------
 The User profile has a *Security* section for immediate password changes and management of two-factor authentication.
 If you have forgotten your password you can use the *Forgot Password* link on the public site to send a reset link to your user profile email address.
+
+.. note:: Users with :ref:`Single Sign-On <management-security-sso>` configured for their domain will not have access to the security tab.
 
 
 Two-Factor Authentication
