@@ -203,6 +203,57 @@ Modify
 .. note:: 
 	Your API keys carry many privileges, so be sure to keep them secret!
 
+| 
+
+.. _management-security-sso:
+
+Single Sign-On
+---------------
+Single Sign-On (SSO) enables users from nominated domains to login via an enterprise authentication service. 
+
+We support a range of SSO identity providers including: 
+
+- Auth0 SAML
+- AzureAD
+- CyberArk SAML
+- Generic SAML
+- Google SAML
+- JumpCloud SAML
+- Microsoft AD FS
+- Okta
+- OneLogin
+- OpenID Connect
+- PingFederate
+- PingOne
+- Salesforce
+- VMware Workspace One
+
+.. note::
+    This is an enterprise level feature. Please contact support for more information.
+
+.. raw:: latex
+
+    \vspace{-10pt}
+    
+.. only:: not latex
+
+	.. image:: account_sso.jpg
+		:scale: 50 %
+
+	| 
+
+.. only:: latex
+
+	| 
+
+	.. image:: account_sso.jpg
+
+Active domains
+    Users that login with an email address from an active domain are automatically redirected to a pre-configured Single Sign-On identify provider.
+
+Session time
+    Set the number of minutes after login before the user is automatically re-authenticated against the identity provider. Enter a value between 5 and 50000 minutes. The default is 720 minutes.
+
 .. raw:: latex
 
     \newpage
