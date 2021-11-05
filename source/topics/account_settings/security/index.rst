@@ -84,7 +84,7 @@ You can now add/remove users to the group and they will automatically receive/lo
 Roles
 ----------
 
-Roles are assigned when :ref:`Sharing a Workspace <node-configuration-workspace-security>` to restrict user and group access to certain feautres.
+Roles are assigned when :ref:`Sharing a Workspace <node-configuration-workspace-security>` to restrict user and group access to certain features.
 Create unlimited new roles, or change existing role permissions as needed. 
 Removing a role that has been assigned will restrict associated users to *View only* access.
 
