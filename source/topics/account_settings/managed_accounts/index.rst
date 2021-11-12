@@ -25,6 +25,10 @@ Use the dropdown menu to *Switch to account*, *Request extension*, *Upgrade to p
 
 Disabled trial accounts will be automatically removed 3 months after expiry.
 
+Usage Limits
+`````````````
+During the trial, users can create unlimited Sources, but the account is restricted to 10 free SMS.
+
 .. raw:: latex
 
     \vspace{-10pt}
@@ -44,7 +48,6 @@ Disabled trial accounts will be automatically removed 3 months after expiry.
 
 .. note::
     When a trial account is disabled, users will not have access to workspaces, historic data or events until the account has been *extended* or *upgraded to paid*.
-
 
 Click the *New trial* button to create a new trial account. 
 Specify the *account name* and *account owner email* address. 
@@ -83,11 +86,23 @@ Sample workspace content can also be added when the account is created. You shou
 
 Accounts
 ---------
-
-Create managed accounts to provide your clients with their own domain and logo customization. You will be responsible for all charges incurred by the managed accounts while they are active.
+Create managed accounts to provide your clients with their own rebranded account. 
+Source and SMS usage will contribute to your overall account usage while the account is active.
 
 Managed accounts are displayed in the list with their status initially set to *ACTIVE*. 
 Use the dropdown menu to *Switch to account*, *Disable*, *Enable* or *Close account*. You can disable an account and re-enable it at any time. You will not be charged usage fees for the duration the account is disabled but new data will not be collected until the account has been re-enabled.
+
+Usage Limits
+`````````````
+You can optionally configure SMS and Source usage limits for individual accounts.
+
+**SMS** limit restricts the number of SMS that can be sent from the account per monthly billing period.
+
+**Source** limit restricts the number of Sources that can be created within the account. 
+The usage per source may vary depending on type, size and account plan.
+
+Applying a limit that is below :ref:`current usage <management-general-overview>` will just prevent new SMS being sent or new Sources from being created. 
+Limits are always capped by the primary account plan capacity.
 
 .. raw:: latex
 

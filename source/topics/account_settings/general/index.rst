@@ -7,11 +7,12 @@ General
 
     |
 
+.. _management-general-overview:
 
 Overview
 --------
 
-The account owner or manager can change the account name or view a summary of current usage and billing charges for non-managed accounts.
+The account owner or manager can change the account name or view a summary of current usage.
 
 .. raw:: latex
 
