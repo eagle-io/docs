@@ -197,7 +197,8 @@ Arguments
 
     **type**            TREE                    *Optional - Default is LIST* [#f2]_
                                                 | **LIST** returns a flat list of nodes
-                                                | **TREE** returns hierarchical list of nodes
+                                                | **TREE** returns hierarchical list of nodes (only available for
+                                                requests that return less than 1000 nodes)
 
     **filter**          isActive($eq:true)      *Optional*. 
                                                 :ref:`Filter <api-overview-request-arguments-filter>` the 
@@ -221,7 +222,7 @@ Arguments
                                                 Expired resource links will return 403 Forbidden.
     =================   =====================   ================================================================
 
-.. [#f2] When TREE ``type`` is specified the filter, limit, skip and sort arguments are not allowed.
+.. [#f2] When TREE ``type`` is specified the filter, limit, skip and sort arguments are not allowed. A 413 'request too large` response will be returned if there are more than 1000 nodes in tree.
 
 Request
 ~~~~~~~~
