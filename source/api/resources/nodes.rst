@@ -204,8 +204,8 @@ Arguments
                                                 :ref:`Filter <api-overview-request-arguments-filter>` the 
                                                 records based on attribute value(s)
 
-    **limit**           100                     *Optional*. 
-                                                Maximum number of records to be returned
+    **limit**           100                     *Optional - Default is 50000*
+                                                Maximum number of records to be returned. 0-50000
 
     **skip**            50                      *Optional*. 
                                                 Skip the first *n* records returned. Can be used with 
@@ -222,7 +222,7 @@ Arguments
                                                 Expired resource links will return 403 Forbidden.
     =================   =====================   ================================================================
 
-.. [#f2] When TREE ``type`` is specified the filter, limit, skip and sort arguments are not allowed. A 413 'request too large` response will be returned if there are more than 5000 nodes in tree.
+.. [#f2] When TREE ``type`` is specified the filter, limit, skip and sort arguments are not allowed. A 413 'request too large` response will be returned if there are more than 5000 nodes when using type TREE.
 
 Request
 ~~~~~~~~

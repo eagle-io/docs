@@ -83,8 +83,9 @@ Arguments
                                                 records based on attribute value(s). 
                                                 *Note: eventTime can not be used as a filter*
 
-    **limit**           100                     *Optional - Default is 1000 if both startTime & endTime are not 
-                                                specified*. Maximum number of records to be returned.
+    **limit**           100                     *Optional - Default is 10000 when both startTime & 
+                                                endTime are specified. 1000 when startTime or endTime is 
+                                                omitted*. Maximum number of records to be returned. *1-10000*
 
     **skip**            50                      *Optional*. 
                                                 Skip the first *n* records returned. Can be used with 
