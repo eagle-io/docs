@@ -1808,7 +1808,7 @@ Response
                     "SUBSCRIBE_NOTIFICATIONS"
                 ],
                 "expiryTime": "2019-11-05T05:24:32.000+0000",
-                "profileActivateUrl": "https://eagle.io/auth/setupprofile/ca4d1da0-8231-46df-af69-df1b2f1a8b5d"
+                "profileActivateUrl": "https://app.eagle.io/auth/setupprofile/ca4d1da0-8231-46df-af69-df1b2f1a8b5d"
             },
             {
                 "group": "Engineers",
@@ -1819,7 +1819,7 @@ Response
                 "users": [
                     {
                         "user": "will@company.com",
-                        "profileActivateUrl": "https://eagle.io/auth/setupprofile/bb2d3fc9-7399-26dc-ca22-ee2b6f0b6a0c"
+                        "profileActivateUrl": "https://app.eagle.io/auth/setupprofile/bb2d3fc9-7399-26dc-ca22-ee2b6f0b6a0c"
                     }
                 ]
             }
