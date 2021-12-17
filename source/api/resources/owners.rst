@@ -252,7 +252,6 @@ When adding a new user (profile does not exist) you can optionally include attri
         ]
     }
 
-
 **Response**
 ::
 
