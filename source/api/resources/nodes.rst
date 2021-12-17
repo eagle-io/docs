@@ -465,12 +465,12 @@ Example creating a Workspace
         "name": "New Workspace"
     }
 
-Example creating a Group 
+Example creating a Folder 
 ::
 
     {
         "_class": "io.eagle.models.node.Group",
-        "name": "New Group",
+        "name": "New Folder",
         "parentId": "5a554eed0b64aabe5738da86"
     }
 
@@ -548,7 +548,7 @@ Response
     Content-Type: application/json; charset=utf-8
 
 ::
-    
+
     {
         "_class": "io.eagle.models.node.Workspace",
         "_id": "536884ecb5a76fd5d3000014",
@@ -1513,7 +1513,7 @@ Response
 
 Subscribe users and groups to notifications
 --------------------------------------------
-Subscribe a list of users and groups to receieve notifications for a node by its **id**. You can use the automatically assigned *_id* or your own *customId* prepended with '@'. 
+Subscribe a list of users and groups to receive notifications for a node by its **id**. You can use the automatically assigned *_id* or your own *customId* prepended with '@'. 
 
 .. note:: 
     Only available for Location, Source and Parameter nodes. The specified users (email addresses) must be valid workspace users. 
