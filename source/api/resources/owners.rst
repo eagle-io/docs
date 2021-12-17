@@ -401,7 +401,7 @@ Create owner groups
 Create new owner group(s). 
 The complete array of groups will be returned in the response if the request is successful.
 
-Alternatively :ref:`create, update and delete multiple groups <api-owners-update-groups>` via owner update.
+Alternatively :ref:`update or replace multiple groups <api-owners-update-groups>` via owner update.
 
 .. table::
     :class: table-fluid
