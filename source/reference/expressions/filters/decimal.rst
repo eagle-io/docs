@@ -33,6 +33,7 @@ Output
 
    1,000,000
 
+
 Input
 
 .. code:: liquid
