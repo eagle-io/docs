@@ -20,6 +20,19 @@ Output
 
    1.2
 
+
+Input
+
+.. code:: liquid
+
+   {{ 1000000 | decimal: "#,###.#" }}
+
+Output
+
+.. code:: text
+
+   1,000,000
+
 Input
 
 .. code:: liquid
