@@ -38,10 +38,10 @@ Arguments
                                                             Data format to return: *[JSON, CSV]*
 
     **startTime**               2014-08-16T02:00:00Z        *Required*. [#f1]_
-                                                            :ref:`ISO8601<time-format-iso8601>` timestamp
+                                                            :ref:`ISO8601<time-format-iso8601>` url encoded timestamp
 
     **endTime**                 2014-08-16T02:20:43Z        *Required*. [#f1]_
-                                                            :ref:`ISO8601<time-format-iso8601>` timestamp
+                                                            :ref:`ISO8601<time-format-iso8601>` url encoded timestamp
 
     **limit**                   100                         *Optional*. 
                                                             Maximum number of historic records to be returned
@@ -247,10 +247,10 @@ Arguments
                                                             Subtitle to display on chart
 
     **startTime**               2014-08-16T02:00:00Z        *Optional*.
-                                                            :ref:`ISO8601<time-format-iso8601>` timestamp
+                                                            :ref:`ISO8601<time-format-iso8601>` url encoded timestamp
 
     **endTime**                 2014-08-16T02:20:43Z        *Optional*.
-                                                            :ref:`ISO8601<time-format-iso8601>` timestamp
+                                                            :ref:`ISO8601<time-format-iso8601>` url encoded timestamp
 
     **timezone**                Etc/UTC                     *Optional - Default is Etc/UTC*. 
                                                             :ref:`Timezone <timezone>` applied to timestamps. 

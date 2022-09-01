@@ -70,10 +70,10 @@ Arguments
     Argument            Example                 Description
     =================   =====================   ================================================================
     **startTime**       2017-08-16T02:00:00Z    *Optional*. 
-                                                :ref:`ISO8601<time-format-iso8601>` timestamp
+                                                :ref:`ISO8601<time-format-iso8601>` url encoded timestamp
 
     **endTime**         2017-08-16T02:20:43Z    *Optional*. 
-                                                :ref:`ISO8601<time-format-iso8601>` timestamp
+                                                :ref:`ISO8601<time-format-iso8601>` url encoded timestamp
 
     **attr**            eventTime,message       *Optional*. 
                                                 Comma delimited list of attributes to include in response
