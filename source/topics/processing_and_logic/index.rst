@@ -564,7 +564,7 @@ Aggregate inputs
 
     .. image:: aggregate-inputs.jpg
 
-Process aggregate inputs will have values that occur at a defined interval. Process execution can be delayed until the latest aggrgate interval is complete:
+Process aggregate inputs will have values that occur at a defined interval. Process execution can be delayed until the latest aggregate interval is complete:
 
 .. table::
     :class: table-fluid
