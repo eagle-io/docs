@@ -582,10 +582,17 @@ Alarm configuration can be included in the update request for Location, Source a
     Alarm config attributes             Type        Description
     ================================    =========   ===========================================================================
     **isEnabled**                       Boolean     Enable or disable the alarm. Overload alarm can not be disabled.
-    **notify**                          String      When notifications should be triggered:
-                                                    *[NEVER, ALWAYS, AWAY_FROM_NORMAL, TOWARDS_NORMAL]*.
+
     **categoryId**                      ObjectId    Id of :ref:`owner category<api-resources-owners>` to assign to this alarm. 
                                                     Required when *notify* option is not *NEVER*
+    **notify**                          String      When notifications should be triggered:
+                                                    *[NEVER, ALWAYS, AWAY_FROM_NORMAL, TOWARDS_NORMAL]*.
+    **messageAway**                     String      *Optional - Only valid for outdatedAlarm*.
+                                                    Custom message to send when the alarm becomes active.
+                                                    Maximum of 255 characters. Leave empty for default message.
+    **messageTowards**                  String      *Optional - Only valid for outdatedAlarm*.
+                                                    Custom message to send when the alarm becomes inactive.
+                                                    Maximum of 255 characters. Leave empty for default message.
     **qualityTypes**                    Array       Only valid for *qualityAlarm*. List of quality types that will trigger this
                                                     alarm: *[GOOD, BAD, UNCERTAIN]*.
     **excludeBeforeSeconds**            Int32       *Optional - Default is null*. Only valid for *dataAlarm*. 

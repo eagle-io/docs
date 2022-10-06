@@ -115,6 +115,7 @@ Optionally specify an *Exclude before* and *Exclude after* time to reject (and r
 .. only:: not latex
 
     .. image:: data_alarm.jpg
+        :scale: 50 %
 
     | 
 
