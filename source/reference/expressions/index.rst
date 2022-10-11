@@ -61,7 +61,7 @@ Output
    Workspace 01
 
 .. note::
-   A full list of available object attributes are described in our :ref:`HTTP API<api-node-attributes>`.
+   A full list of available object attributes are described :ref:`here<api-node-attributes>`.
 
 |
 
@@ -101,6 +101,9 @@ Output
 
 |
 
+.. note::
+    A full list of available filters are described :ref:`here<expressions-filters>`
+
 
 .. _expressions-overview-tags:
 
@@ -127,6 +130,8 @@ Output
 
 |
 
+.. note::
+    A full list of available tags are described :ref:`here<expressions-tags>`
 
 .. _expressions-overview-operators:
 
