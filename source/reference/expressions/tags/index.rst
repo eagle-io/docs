@@ -1,12 +1,14 @@
+.. _expressions-tags:
+
 Tags
 ======
 
 Liquid expressions implement business-logic independent tags that are typically
-implemented in `shopify/liquid <https://shopify.github.io/liquid/>`_. 
+implemented in `shopify/liquid <https://shopify.github.io/liquid/>`_.
 This section contains the specification and examples for all the tags implemented by Liquid.
 
-There’re a dozen of tags supported by LiquidJS, with all tags in 
-`shopify/liquid <https://shopify.github.io/liquid/>`_. 
+There’re are dozens of tags supported by Liquid, with all tags described at
+`shopify/liquid <https://shopify.github.io/liquid/>`_.
 These tags can be categorized into these groups:
 
 +-----------------------+-----------------------+-----------------------+
