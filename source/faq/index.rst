@@ -11,9 +11,11 @@ Frequently Asked Questions
 General
 -------
 
-What browsers do you support and do I need any special software?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-We support the latest versions of all major browsers: Chrome 16+, Firefox 16+, Internet Explorer 10+, Safari 6+ and Microsoft Edge. You do not need any special plugins or addons, just ensure you have **Cookies** and **Javascript enabled**. The interface has been designed to work seamlessly across all modern phones, tablets and other computing devices.
+What browsers do you support?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+We support all modern browsers: Chrome, Edge, Safari, Firefox and Opera.
+
+Please ensure you have both **Cookies** and **Javascript enabled** and are using the **latest version** of your preferred browser.
 
 .. |google-chrome-html| image:: chrome.jpg
 	:scale: 50%

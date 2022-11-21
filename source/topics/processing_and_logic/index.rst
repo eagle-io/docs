@@ -450,6 +450,23 @@ The above example is able to treat the Node reference for **param1** as if it we
 Process Trigger
 ~~~~~~~~~~~~~~~~
 
+.. raw:: latex
+
+    \vspace{-10pt}
+
+.. only:: not latex
+
+    .. image:: run-mode.jpg
+        :scale: 50 %
+
+    | 
+
+.. only:: latex
+    
+    | 
+
+    .. image:: run-mode.jpg
+
 A process can be triggered to run in a number of ways:
 
 .. table::
@@ -492,9 +509,9 @@ Input data to your program can be filtered according to its quality type to ensu
 
 By default, your program will exclude quality types according to the :ref:`Quality Codes <management-general-qualitycodes>` configuration in your Account Settings. To ensure specific quality types are considered, a filter can be applied.
 
-.. _linked-inputs:
+.. _secondary-inputs:
 
-Linked inputs
+Secondary inputs
 ~~~~~~~~~~~~~~~~
 
 .. raw:: latex
@@ -503,7 +520,7 @@ Linked inputs
 
 .. only:: not latex
 
-    .. image:: linked-inputs.jpg
+    .. image:: secondary-inputs.jpg
         :scale: 50 %
 
     | 
@@ -512,17 +529,51 @@ Linked inputs
     
     | 
 
-    .. image:: linked-inputs.jpg
+    .. image:: secondary-inputs.jpg
 
-Process inputs may have records that occur at different times, e.g. parameters from different data sources. Input data not aligned with the current execution timestamp can be interpreted by a process in two ways:
+Secondary inputs may have records that occur at different times than the primary input, e.g. parameters from different data sources. Input data not aligned with the current execution timestamp can be interpreted by a process in two ways:
 
 .. table::
     :class: table-fluid
 
-    ===============   =================================================================
-    Linked            Values interpolated to align with the current execution timestamp
-    Unlinked          Values prior to the current execution timestamp are retained
-    ===============   =================================================================
+    =================================   ===========================================================================
+    Align input values (interpolated)   Secondary values interpolated to align with the current execution timestamp
+    Retain most recent input values     Secondary values prior to the current execution timestamp are retained
+    =================================   ===========================================================================
+
+
+.. _aggregate-inputs:
+
+Aggregate inputs
+~~~~~~~~~~~~~~~~
+
+.. raw:: latex
+
+    \vspace{-10pt}
+
+.. only:: not latex
+
+    .. image:: aggregate-inputs.jpg
+        :scale: 50 %
+
+    | 
+
+.. only:: latex
+    
+    | 
+
+    .. image:: aggregate-inputs.jpg
+
+Process aggregate inputs will have values that occur at a defined interval. Process execution can be delayed until the latest aggregate interval is complete:
+
+.. table::
+    :class: table-fluid
+
+    ============================   =================================================================
+    Complete & partial intervals   Process will execute even during a partial aggregate interval
+    Complete intervals only        Process will only execute when the aggregate interval is complete
+    ============================   =================================================================
+
 
 
 .. _shared-code:

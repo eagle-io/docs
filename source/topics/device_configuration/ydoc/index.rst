@@ -172,7 +172,7 @@ The following FTP settings should be assigned:
 [6] FTP port
     21
 [7] FTP mode
-    Active
+    Passive
 [8] Username
     Use the unique *FTP user* generated during Data Source creation. eg. cap-golf-wasp
 [9] Password

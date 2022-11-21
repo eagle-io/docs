@@ -1,8 +1,10 @@
+.. _expressions-filters:
+
 Filters
 ==============
 
-Liquid expressions implement business-logic independent filters that are 
-typically implemented in `shopify/liquid <https://shopify.github.io/liquid/>`_. 
+Liquid expressions implement business-logic independent filters that are
+typically implemented in `shopify/liquid <https://shopify.github.io/liquid/>`_.
 This section contains the specification and examples for all the filters implemented by Liquid.
 
 There’s 40+ filters supported by Liquid. These filters can be
