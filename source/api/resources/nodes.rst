@@ -1285,7 +1285,7 @@ Response
 
 Retrieve user and group notification preferences
 --------------------------------------------------
-Retrieve a list of all users and groups subscribed to receieve notifications for a node by its **id**. You can use the automatically assigned *_id* or your own *customId* prepended with '@'.
+Retrieve a list of all users and groups subscribed to receive notifications for a node by its **id**. You can use the automatically assigned *_id* or your own *customId* prepended with '@'.
 
 Arguments
 ~~~~~~~~~

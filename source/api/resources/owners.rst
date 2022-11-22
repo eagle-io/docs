@@ -515,7 +515,7 @@ Request
 ~~~~~~~~
 ::
 
-    PUT /api/v1/owners/account/groups/:id
+    DELETE /api/v1/owners/account/groups/:id
 
 Response
 ~~~~~~~~
