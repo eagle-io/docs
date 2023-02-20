@@ -3,9 +3,12 @@
 JSON Time Series
 ================
 
-`JSON <http://json.org>`_ Time Series (JTS) is a lightweight data-interchange format for :term:`time series <time series>` data. It has been designed to be highly readable, parsable and extendable.
+`JSON <http://json.org>`_ Time Series (JTS) is a lightweight data-interchange format for :term:`time series <time series>` data.
+The specification is provided with an **MIT license** for free use. It has been designed to be highly readable, parsable and extendable.
 
 The JTS document format is natively supported by `eagle.io <https://eagle.io>`_ which can be easily imported and exported via the :ref:`HTTP API <api>`.
+
+.. note:: The `Time Series <https://github.com/eagle-io/timeseries>`_ JavaScript library is provided for free and can easily output time series data in JTS format.
 
 Example JTS document::
 

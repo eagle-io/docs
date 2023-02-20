@@ -30,11 +30,11 @@ A Node can be referenced programmatically using either a **Node Id** (globally u
     .. image:: api_resources_node_id.jpg
         :scale: 50 %
 
-    | 
+    |
 
 .. only:: latex
-    
-    | 
+
+    |
 
     .. image:: api_resources_node_id.jpg
 
@@ -52,6 +52,7 @@ Custom Id
 
 A **Custom Id** is a 255-character user-defined string that uniquely identifies a Node in your account. A **Custom Id** is prefixed with the ``@`` symbol and must not contain the following special characters: dot ``.``, underscore ``_`` and hyphen ``-``. In the example above, the **Custom Id** has been set to ``sensor_254``.
 
+.. _api-node-attributes:
 
 Node Attributes
 -----------------
@@ -74,7 +75,7 @@ Consumers of Nodes should tolerate the addition of new attributes and variance i
     **name**                            String      Yes         Name of node. :ref:`Restrictions apply<workspaces_tree_rename>`.
     **ownerId**                         ObjectId                Unique owner _id
     **parentId**                        ObjectId                Parent node _id (not included in Workspace)
-    **publicId**                        String                  Unique identifier used in public URL when *isPublic* is enabled. 
+    **publicId**                        String                  Unique identifier used in public URL when *isPublic* is enabled.
                                                                 eg. *https://public.eagle.io/public/dash/w31s3dndr408wcq*
     **workspaceId**                     ObjectId                Associated Workspace _id (not set on Workspace node)
     ================================    =========   =========   ===========================================================================
@@ -112,15 +113,15 @@ Consumers of Nodes should tolerate the addition of new attributes and variance i
     **currentQuality**                  Int32                   Quality code associated with current value
     **currentStateId**                  ObjectId                State _id associated with current value
     **currentTime**                     Time                    :ref:`ISO8601<time-format-iso8601>` timestamp of the current value
-    **currentValue**                    Variable                Latest value with multiplier and offset applied. 
+    **currentValue**                    Variable                Latest value with multiplier and offset applied.
                                                                 Type inherited from _class
-    **displayType**                     String      Yes         Default display type of parameter: 
+    **displayType**                     String      Yes         Default display type of parameter:
                                                                 *[VALUE, STATE]*
     **format**                          String      Yes         Formatting to apply to displayed value
     **imageSourceId**                   ObjectId                Attachment Source _id used to set location image. Applies to Locations only.
-    **multiplier**                      Double      Yes         Value to multiply rawValue and historic data on extraction. 
+    **multiplier**                      Double      Yes         Value to multiply rawValue and historic data on extraction.
                                                                 Applies to number parameters only
-    **offset**                          Double      Yes         Value to add to rawValue and historic data on extraction. 
+    **offset**                          Double      Yes         Value to add to rawValue and historic data on extraction.
                                                                 Applies to number parameters only
     **oldestQuality**                   Int32                   Quality code associated with oldest value
     **oldestStateId**                   ObjectId                State _id associated with oldest value
@@ -136,7 +137,7 @@ Consumers of Nodes should tolerate the addition of new attributes and variance i
     **statesType**                      String      Yes         States evaluation mode:
                                                                 *[RANGE, DISCRETE]*
     **units**                           String      Yes         Units to display with value
-    **updatedTime**                     Time                    :ref:`ISO8601<time-format-iso8601>` timestamp the historic data was 
+    **updatedTime**                     Time                    :ref:`ISO8601<time-format-iso8601>` timestamp the historic data was
                                                                 last updated.
     ================================    =========   =========   ===========================================================================
 
@@ -147,22 +148,22 @@ Consumers of Nodes should tolerate the addition of new attributes and variance i
     Source attributes                   Type        Update      Description
     ================================    =========   =========   ===========================================================================
     **currentAttachmentId**             ObjectId                Current attachment _id associated with Attachment Source
-    **currentStatus**                   String                  Current status: 
-                                                                *[DISABLED, FAILED, IDLE, SCHEDULED, QUEUED, CONNECTING, 
+    **currentStatus**                   String                  Current status:
+                                                                *[DISABLED, FAILED, IDLE, SCHEDULED, QUEUED, CONNECTING,
                                                                 DOWNLOADING, PROCESSING, RETRYING, CONFIGURING, CONTROLLING, REMOTE]*
     **clockSync**                       Boolean                 Flag to indicate if data logger clock is being syncronized with server
     **firmwareVersion**                 String                  Firmware version in-use by data logger
     **isEnabled**                       Boolean     Yes         Flag to enable or disable the Source
     **lastAcquireRecordCount**          Int32                   Number of records acquired on last acquisition
-    **lastCommsAttempt**                Time                    :ref:`ISO8601<time-format-iso8601>` timestamp of the 
+    **lastCommsAttempt**                Time                    :ref:`ISO8601<time-format-iso8601>` timestamp of the
                                                                 last communications attempt
-    **lastCommsSuccess**                Time                    :ref:`ISO8601<time-format-iso8601>` timestamp of the 
+    **lastCommsSuccess**                Time                    :ref:`ISO8601<time-format-iso8601>` timestamp of the
                                                                 last successful communication with Source
     **model**                           String                  Model of data logger in-use
     **pakBusAddress**                   Int32       Yes         PakBus address of Campbell data logger
     **pakBusGatewayAddress**            Int32       Yes         PakBus gateway address of Campbell data logger
     **progName**                        String                  Name of program currently loaded in Campbell data logger
-    **quietMaxSeconds**                 Int32       Yes         Maximum period in seconds between communication updates before triggering 
+    **quietMaxSeconds**                 Int32       Yes         Maximum period in seconds between communication updates before triggering
                                                                 an Outdated alarm (non-scheduled collection only). *120 - 31536000* seconds
     **scheduleType**                    String                  Type of Schedule for automatic collection:
                                                                 *[SERVER, REMOTE, NONE]*
@@ -192,7 +193,7 @@ Arguments
     =================   =====================   ================================================================
     Argument            Example                 Description
     =================   =====================   ================================================================
-    **attr**            _id,slug                *Optional.* 
+    **attr**            _id,slug                *Optional.*
                                                 Comma delimited list of attributes to include in response
 
     **type**            TREE                    *Optional - Default is LIST* [#f2]_
@@ -200,24 +201,24 @@ Arguments
                                                 | **TREE** returns hierarchical list of nodes (only available for
                                                 requests that return less than 5000 nodes)
 
-    **filter**          isActive($eq:true)      *Optional*. 
-                                                :ref:`Filter <api-overview-request-arguments-filter>` the 
+    **filter**          isActive($eq:true)      *Optional*.
+                                                :ref:`Filter <api-overview-request-arguments-filter>` the
                                                 records based on attribute value(s)
 
     **limit**           100                     *Optional - Default is 50000*
                                                 Maximum number of records to be returned. 0-50000
 
-    **skip**            50                      *Optional*. 
-                                                Skip the first *n* records returned. Can be used with 
+    **skip**            50                      *Optional*.
+                                                Skip the first *n* records returned. Can be used with
                                                 ``limit`` to paginate results
 
-    **sort**            createdTime(DESC)       *Optional*. 
-                                                Comma delimited list of attributes to sort by. Optionally 
-                                                include sort direction in parentheses or default to ASC: 
+    **sort**            createdTime(DESC)       *Optional*.
+                                                Comma delimited list of attributes to sort by. Optionally
+                                                include sort direction in parentheses or default to ASC:
                                                 *[ASC, DESC]*
 
-    **expiry**          60                      *Optional*. 
-                                                Expiry period in minutes for any included resource links. 
+    **expiry**          60                      *Optional*.
+                                                Expiry period in minutes for any included resource links.
                                                 ie. *fileUrl* for Attachments. Default is 0 (no expiry).
                                                 Expired resource links will return 403 Forbidden.
     =================   =====================   ================================================================
@@ -235,13 +236,13 @@ Response
 ~~~~~~~~
 
 ::
-    
+
     HTTP/1.1 200 OK
     Content-Type: application/json; charset=utf-8
 
 
 ::
-    
+
     [
         {
             "_class": "io.eagle.models.node.Workspace",
@@ -305,7 +306,7 @@ Response
     ]
 
 Example response when ``type`` argument is TREE. Descendants are wrapped in a ``children`` array::
-    
+
     [
         {
             "_class": "io.eagle.models.node.Workspace",
@@ -391,11 +392,11 @@ Arguments
     =================   =================   ================================================================
     Argument            Example             Description
     =================   =================   ================================================================
-    **attr**            _id,_class          *Optional.* 
+    **attr**            _id,_class          *Optional.*
                                             Comma delimited list of attributes to include in response
 
-    **expiry**          60                  *Optional*. 
-                                            Expiry period in minutes for any included resource links. 
+    **expiry**          60                  *Optional*.
+                                            Expiry period in minutes for any included resource links.
                                             ie. *fileUrl* for Attachments. Default is 0 (no expiry).
                                             Expired resource links will return 403 Forbidden.
     =================   =================   ================================================================
@@ -421,12 +422,12 @@ Response
 ~~~~~~~~
 
 ::
-    
+
     HTTP/1.1 200 OK
     Content-Type: application/json; charset=utf-8
 
 ::
-    
+
     {
         "_class": "io.eagle.models.node.Workspace",
         "_id": "536884ecb5a76fd5d3000014",
@@ -444,10 +445,10 @@ Response
 
 Create a node
 ---------------
-Create a node (currently limited to creation of *Workspace* and *Group*). 
+Create a node (currently limited to creation of *Workspace* and *Group*).
 You must specifiy both the *_class* and a unique *name*. Creating a Group also requires a valid *parentId*.
 
-.. note:: 
+.. note::
     Required API key permission: *Modify*
 
 Request
@@ -457,7 +458,7 @@ Request
 
     POST /api/v1/nodes
 
-Example creating a Workspace 
+Example creating a Workspace
 ::
 
     {
@@ -465,12 +466,12 @@ Example creating a Workspace
         "name": "New Workspace"
     }
 
-Example creating a Group 
+Example creating a Folder
 ::
 
     {
         "_class": "io.eagle.models.node.Group",
-        "name": "New Group",
+        "name": "New Folder",
         "parentId": "5a554eed0b64aabe5738da86"
     }
 
@@ -479,12 +480,12 @@ Response
 ~~~~~~~~
 
 ::
-    
+
     HTTP/1.1 201 Created
     Content-Type: application/json; charset=utf-8
 
 ::
-    
+
     {
         "_class": "io.eagle.models.node.Workspace",
         "_id": "5ae7c3d03549e867c718ff97",
@@ -503,13 +504,13 @@ Response
 Update a node
 ---------------
 Update a node by its **id**. You can use the automatically assigned *_id* or your own *customId* prepended with '@'.
-Updates are limited to the attributes listed with the *Update* flag. 
+Updates are limited to the attributes listed with the *Update* flag.
 Multiple attributes can be updated in a single request.
 
 The updated node will be returned in the response if the request is successful. You can optionally limit the returned attributes by specifying the **attr** argument.
 
 
-.. note:: 
+.. note::
     Required API key permission: *Modify*
 
 Arguments
@@ -521,8 +522,8 @@ Arguments
     =================   =================   ================================================================
     Argument            Example             Description
     =================   =================   ================================================================
-    **attr**            _id,_class          *Optional*. 
-                                            Comma delimited list of attributes to include in successful 
+    **attr**            _id,_class          *Optional*.
+                                            Comma delimited list of attributes to include in successful
                                             response
     =================   =================   ================================================================
 
@@ -543,12 +544,12 @@ Response
 ~~~~~~~~
 
 ::
-    
+
     HTTP/1.1 200 OK
     Content-Type: application/json; charset=utf-8
 
 ::
-    
+
     {
         "_class": "io.eagle.models.node.Workspace",
         "_id": "536884ecb5a76fd5d3000014",
@@ -563,11 +564,11 @@ Complex attribute updates
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 Certain attributes such as alarms and states have specific update requirements:
 
-.. contents:: 
+.. contents::
     :depth: 1
     :local:
 
-| 
+|
 
 .. _api-nodes-update-alarms:
 
@@ -582,17 +583,24 @@ Alarm configuration can be included in the update request for Location, Source a
     Alarm config attributes             Type        Description
     ================================    =========   ===========================================================================
     **isEnabled**                       Boolean     Enable or disable the alarm. Overload alarm can not be disabled.
+
+    **categoryId**                      ObjectId    Id of :ref:`owner category<api-resources-owners>` to assign to this alarm.
+                                                    Required when *notify* option is not *NEVER*
     **notify**                          String      When notifications should be triggered:
                                                     *[NEVER, ALWAYS, AWAY_FROM_NORMAL, TOWARDS_NORMAL]*.
-    **categoryId**                      ObjectId    Id of :ref:`owner category<api-resources-owners>` to assign to this alarm. 
-                                                    Required when *notify* option is not *NEVER*
+    **messageAway**                     String      *Optional - Only valid for outdatedAlarm*.
+                                                    Custom message to send when the alarm becomes active.
+                                                    Maximum of 255 characters. Leave empty for default message.
+    **messageTowards**                  String      *Optional - Only valid for outdatedAlarm*.
+                                                    Custom message to send when the alarm becomes inactive.
+                                                    Maximum of 255 characters. Leave empty for default message.
     **qualityTypes**                    Array       Only valid for *qualityAlarm*. List of quality types that will trigger this
                                                     alarm: *[GOOD, BAD, UNCERTAIN]*.
-    **excludeBeforeSeconds**            Int32       *Optional - Default is null*. Only valid for *dataAlarm*. 
-                                                    Exclude data older than this duration and raise alarm if 
+    **excludeBeforeSeconds**            Int32       *Optional - Default is null*. Only valid for *dataAlarm*.
+                                                    Exclude data older than this duration and raise alarm if
                                                     encountered. *120 - 315360000* seconds.
-    **excludeAfterSeconds**             Int32       *Optional - Default is null*. Only valid for *dataAlarm*. 
-                                                    Exclude data newer than this duration and raise alarm if 
+    **excludeAfterSeconds**             Int32       *Optional - Default is null*. Only valid for *dataAlarm*.
+                                                    Exclude data newer than this duration and raise alarm if
                                                     encountered. *120 - 315360000* seconds.
     ================================    =========   ===========================================================================
 
@@ -607,11 +615,11 @@ Example::
                     "categoryId": "52969367593a1a3a32000012"
                 }
             },
-            "qualityAlarm": { 
-                "config": { 
+            "qualityAlarm": {
+                "config": {
                     "isEnabled": true,
                     "qualityTypes": ["BAD", "UNCERTAIN"]
-                } 
+                }
             },
             "configurationAlarm": { "config": { "isEnabled": false } }
         }
@@ -645,21 +653,21 @@ The alarm types available are specific to the type of node being updated:
 
 States configuration
 `````````````````````
-States configuration can be included in the update request for Number and Text Parameter nodes. 
-Number parameters can use either *DISCRETE* or *RANGE* states. Text parameters are limited to *DISCRETE* states only. 
+States configuration can be included in the update request for Number and Text Parameter nodes.
+Number parameters can use either *DISCRETE* or *RANGE* states. Text parameters are limited to *DISCRETE* states only.
 
 States can be reset to parameter defaults by updating the *states* attribute with *null*.
 
 **Update** existing states by providing the *_id* attribute for each state in the request. Any states without the *_id* attribute will be ignored. Only changed attributes need to be specified.
 
 If no states in the request contain an *_id* attribute the update will **Replace** the existing states.
-**RANGE** states for number parameters must always be specified in *ascending* order based on *threshold* and 
+**RANGE** states for number parameters must always be specified in *ascending* order based on *threshold* and
 there must be one state with the *name* attribute set to *NORMAL*.
 
 Refer to :ref:`Parameter states<node-configuration-parameter>` for further information.
 
 .. note::
-    State type for number parameters can be changed with the *statesType* attribute. When changing *statesType* 
+    State type for number parameters can be changed with the *statesType* attribute. When changing *statesType*
     you should specify new *states* configuration or default states will be applied.
 
 
@@ -670,27 +678,27 @@ Refer to :ref:`Parameter states<node-configuration-parameter>` for further infor
     State attributes                    Type        Description
     ================================    =========   ===========================================================================
     **name**                            String      *Required*. Unique name assigned to the state
-    **threshold**                       Variable    *Required*. Unique threshold value for the state. 
-                                                    Number parameters require a *Double*. 
+    **threshold**                       Variable    *Required*. Unique threshold value for the state.
+                                                    Number parameters require a *Double*.
                                                     Text parameters require a *String*.
     **occurrences**                     Int32       *Optional - Default is 1*.
                                                     Minimum number of repeat values equal or beyond threshold required to
                                                     trigger state: *1-15*.
-    **isAlarm**                         Boolean     *Optional - Default is FALSE*. 
-                                                    Flag to indicate if this state should raise an alarm. 
+    **isAlarm**                         Boolean     *Optional - Default is FALSE*.
+                                                    Flag to indicate if this state should raise an alarm.
                                                     Not valid for *NORMAL* RANGE state.
-    **notify**                          String      *Optional - Default is NEVER*. 
+    **notify**                          String      *Optional - Default is NEVER*.
                                                     When notifications should be triggered:
-                                                    *[NEVER, ALWAYS, AWAY_FROM_NORMAL, TOWARDS_NORMAL]*. 
-                                                    The *NORMAL* RANGE state is restricted to: 
+                                                    *[NEVER, ALWAYS, AWAY_FROM_NORMAL, TOWARDS_NORMAL]*.
+                                                    The *NORMAL* RANGE state is restricted to:
                                                     *[NEVER, ALWAYS]*
-    **categoryId**                      ObjectId    Id of :ref:`owner category <api-resources-owners>` to assign to this state. 
+    **categoryId**                      ObjectId    Id of :ref:`owner category <api-resources-owners>` to assign to this state.
                                                     Required when *notify* option is not *NEVER*
     **messageAway**                     String      *Optional*.
-                                                    Custom message to send when the state becomes active (away from normal). 
+                                                    Custom message to send when the state becomes active (away from normal).
                                                     Maximum of 255 characters. Leave empty for default message.
     **messageTowards**                  String      *Optional*.
-                                                    Custom message to send when the state becomes inactive (towards normal). 
+                                                    Custom message to send when the state becomes inactive (towards normal).
                                                     Maximum of 255 characters. Leave empty for default message.
     **qualityCode**                     Int32       *Optional - Default is null*.
                                                     Quality code to apply to acquired data that matches this state: *0-65535*.
@@ -702,7 +710,7 @@ Example replacing DISCRETE states
 
     {
         "statesType": "DISCRETE",
-        "states": [        
+        "states": [
             {
                 "name": "OFF",
                 "threshold": 0
@@ -727,7 +735,7 @@ Example updating existing DISCRETE states
 
     {
         "statesType": "DISCRETE",
-        "states": [        
+        "states": [
             {
                 "_id": "52969367593a1a3a32000091",
                 "name": "SIREN OFF"
@@ -747,7 +755,7 @@ Example replacing RANGE states
 
     {
         "statesType": "RANGE",
-        "states": [        
+        "states": [
             {
                 "name": "LOW",
                 "threshold": 20
@@ -775,7 +783,7 @@ Example replacing RANGE states
 
 Parameter chart configuration
 ``````````````````````````````
-Parameter chart configuration is used when displaying parameters as series on automatically generated charts. 
+Parameter chart configuration is used when displaying parameters as series on automatically generated charts.
 It can be included in the update request for Parameter nodes. Only changed attributes need to be specified.
 
 .. table::
@@ -784,59 +792,59 @@ It can be included in the update request for Parameter nodes. Only changed attri
     =================================   =========   ============================================================================
     Parameter chart config attributes   Type        Description
     =================================   =========   ============================================================================
-    **_class**                          String      Determines chart series type (Line or Column): 
-                                                    *[io.eagle.models.node.point.chart.LineChart, 
+    **_class**                          String      Determines chart series type (Line or Column):
+                                                    *[io.eagle.models.node.point.chart.LineChart,
                                                     io.eagle.models.node.point.chart.ColumnChart]*
-    **stateThresholds**                 String      Threshold lines to display (when in y-axis range): 
+    **stateThresholds**                 String      Threshold lines to display (when in y-axis range):
                                                     *[NONE, ALL, ALARM, NONALARM, USER_NOTIFICATION]*
     **markerType**                      String      Marker type: *[AUTOMATIC, CIRCLE, SQUARE, DIAMOND, TRIANGLE, TRIANGLE-DOWN]*
     **markerSize**                      Int32       Marker size (0 is Hidden): *0-6*.
-    **qualityStyle**                    String      Specify how quality colors are display on chart: 
+    **qualityStyle**                    String      Specify how quality colors are display on chart:
                                                     *[NONE, MARKER, MARKER_HOVER, MARKER_LINE, MARKER_FILL]*
     **shadow**                          Boolean     *Optional - default is false*. Drop shadow effect
-    **primaryColor**                    String      *Optional - default is AUTOMATIC*. 
+    **primaryColor**                    String      *Optional - default is AUTOMATIC*.
                                                     Hex color code (eg. *#ff3399*) or *AUTOMATIC* used as primary color.
-    **secondaryColor**                  String      *Optional - default is AUTOMATIC*. 
+    **secondaryColor**                  String      *Optional - default is AUTOMATIC*.
                                                     Hex color code (eg. *#ffffff*) or *AUTOMATIC* used as secondary color when
                                                     *fillStyle* is a gradient.
-    **fillStyle**                       String      Fill style: 
-                                                    *[NONE, SOLID, LINEAR_TOP, LINEAR_BOTTOM, LINEAR_LEFT, LINEAR_RIGHT, 
+    **fillStyle**                       String      Fill style:
+                                                    *[NONE, SOLID, LINEAR_TOP, LINEAR_BOTTOM, LINEAR_LEFT, LINEAR_RIGHT,
                                                     PIPE_VERTICAL, PIPE_HORIZONTAL, RADIAL_INSIDE, RADIAL_OUTSIDE]*
     **fillOpacity**                     Int32       Fill opacity (0 is Transparent): *0-100*.
     **lineWidth**                       Int32       Series line width (0 is Hidden): *0-6*.
-    **lineType**                        String      Line type (Line series only): 
+    **lineType**                        String      Line type (Line series only):
                                                     *[NORMAL, STEP_LEFT, STEP_CENTER, STEP_RIGHT, SPLINE]*
-    **lineStyle**                       String      Line style (Line series only): 
-                                                    *[SOLID, SHORTDASH, SHORTDOT, SHORTDASHDOT, SHORTDASHDOTDOT, DOT, DASH, 
+    **lineStyle**                       String      Line style (Line series only):
+                                                    *[SOLID, SHORTDASH, SHORTDOT, SHORTDASHDOT, SHORTDASHDOTDOT, DOT, DASH,
                                                     LONGDASH, DASHDOT, LONGDASHDOT, LONGDASHDOTDOT]*
-    **pointPlacementType**              String      Placement of datapoint on column (Column series only): 
+    **pointPlacementType**              String      Placement of datapoint on column (Column series only):
                                                     *[ON, BETWEEN]*
-    **groupType**                       String      Column layout (when multiple Column series used - Column series only): 
+    **groupType**                       String      Column layout (when multiple Column series used - Column series only):
                                                     *[NORMAL, GROUP, STACKED]*
 
     **aggregation**                     Object      Historic data aggregation config attributes
     | **mode**                          String      Aggregation mode: *[AUTOMATIC, RAW, CUSTOM]*
-    | **type**                          String      Historic :ref:`aggregate <historic-aggregates>` to apply when *mode* is 
-                                                    CUSTOM. Number parameters use the *displayType* attribute to determine 
-                                                    if the aggregate is restricted to VALUE or STATE types. 
-                                                    All other parameter types are restricted to STATE types. 
-                                                    VALUE Types: *[INTERPOLATED, AVERAGE, MEDIAN, TOTAL, MIN, MAX, RANGE, 
-                                                    CHANGE, COUNT, START, END, DELTA]*. 
+    | **type**                          String      Historic :ref:`aggregate <historic-aggregates>` to apply when *mode* is
+                                                    CUSTOM. Number parameters use the *displayType* attribute to determine
+                                                    if the aggregate is restricted to VALUE or STATE types.
+                                                    All other parameter types are restricted to STATE types.
+                                                    VALUE Types: *[INTERPOLATED, AVERAGE, MEDIAN, TOTAL, MIN, MAX, RANGE,
+                                                    CHANGE, COUNT, START, END, DELTA]*.
                                                     STATE Types: *[CHANGE, COUNT, START, END]*
-    | **period**                        String      Aggregation interval. 
-                                                    *AUTOMATIC* determines interval based on zoom level.  
+    | **period**                        String      Aggregation interval.
+                                                    *AUTOMATIC* determines interval based on zoom level.
                                                     *CUSTOM* uses fixed *interval* attribute.
-    | **interval**                      String      :ref:`OPC Interval <relative-time>` (eg. *1H*) required when 
+    | **interval**                      String      :ref:`OPC Interval <relative-time>` (eg. *1H*) required when
                                                     *period* is FIXED.
-    | **intervalInclude**               String      *Optional - Default is PARTIAL*. 
-                                                    COMPLETE will include aggregated values for complete intervals only. 
-                                                    PARTIAL will also include values for non-complete intervals: 
+    | **intervalInclude**               String      *Optional - Default is PARTIAL*.
+                                                    COMPLETE will include aggregated values for complete intervals only.
+                                                    PARTIAL will also include values for non-complete intervals:
                                                     *[PARTIAL, COMPLETE]*
-    | **baseTime**                      String      :ref:`OPC Base Time <relative-time>` (eg. *D*) required when 
-                                                    *period* is FIXED. 
-    | **baselineType**                  String      *Optional - Default is ABSOLUTE*. 
-                                                    Absolute will return data point values unmodified. Relative will subtract 
-                                                    the first data point value from all subsequent data point values: 
+    | **baseTime**                      String      :ref:`OPC Base Time <relative-time>` (eg. *D*) required when
+                                                    *period* is FIXED.
+    | **baselineType**                  String      *Optional - Default is ABSOLUTE*.
+                                                    Absolute will return data point values unmodified. Relative will subtract
+                                                    the first data point value from all subsequent data point values:
                                                     *[ABSOLUTE, RELATIVE]*
     =================================   =========   ============================================================================
 
@@ -901,11 +909,11 @@ Example Column series with hourly totals::
 
 Rating configuration
 ````````````````````
-Rating configuration can be included in the update request for :ref:`Rating Parameter <rating-parameter>` nodes. 
-An *inputNodeId* is required which specifies the Number Parameter to use as the input for the rating calculations. 
+Rating configuration can be included in the update request for :ref:`Rating Parameter <rating-parameter>` nodes.
+An *inputNodeId* is required which specifies the Number Parameter to use as the input for the rating calculations.
 Multiple ratings can be added, with the *startTime* used to determine the data range each rating will apply.
 
-.. note:: 
+.. note::
     Rating configuration updates will **replace** any existing ratings and trigger historic data to be recalculated for this parameter.
 
 
@@ -915,7 +923,7 @@ Multiple ratings can be added, with the *startTime* used to determine the data r
     ================================    =========   ===========================================================================
     Rating attributes                   Type        Description
     ================================    =========   ===========================================================================
-    **inputNodeId**                     ObjectId    Node *_id* to be used as the input for the rating calculations. 
+    **inputNodeId**                     ObjectId    Node *_id* to be used as the input for the rating calculations.
                                                     Must be a Number parameter in the same Workspace as this Rating parameter.
     **ratings**                         Array       Rating table and rating equation objects (as documented below).
     ================================    =========   ===========================================================================
@@ -927,16 +935,16 @@ Multiple ratings can be added, with the *startTime* used to determine the data r
     ================================    =========   ===========================================================================
     Rating table                        Type        Description
     ================================    =========   ===========================================================================
-    **startTime**                       Time        *Required*. :ref:`ISO8601<time-format-iso8601>` timestamp of the start 
-                                                    range this rating will be applied. End range is automatically set to the 
-                                                    startTime of the next most recent rating or will continue to apply to 
+    **startTime**                       Time        *Required*. :ref:`ISO8601<time-format-iso8601>` timestamp of the start
+                                                    range this rating will be applied. End range is automatically set to the
+                                                    startTime of the next most recent rating or will continue to apply to
                                                     new data if no other ratings are specified.
-    
+
     **table**                           Array       Lookup table for rating calculations with each row specified as an array
-                                                    of *input* and *result*. Values that fall between each input lookup will 
+                                                    of *input* and *result*. Values that fall between each input lookup will
                                                     be derived by linear interpolation.
 
-    | **[<input>, <result>]**           Array       *Required*. The numeric value of the input node to match and corresponding 
+    | **[<input>, <result>]**           Array       *Required*. The numeric value of the input node to match and corresponding
                                                     result.
     ================================    =========   ===========================================================================
 
@@ -947,15 +955,15 @@ Multiple ratings can be added, with the *startTime* used to determine the data r
     ================================    =========   ===========================================================================
     Rating equation                     Type        Description
     ================================    =========   ===========================================================================
-    **startTime**                       Time        *Required*. :ref:`ISO8601<time-format-iso8601>` timestamp of the start 
-                                                    range this rating will be applied. End range is automatically set to the 
-                                                    startTime of the next most recent rating or will continue to apply to 
+    **startTime**                       Time        *Required*. :ref:`ISO8601<time-format-iso8601>` timestamp of the start
+                                                    range this rating will be applied. End range is automatically set to the
+                                                    startTime of the next most recent rating or will continue to apply to
                                                     new data if no other ratings are specified.
 
     **equationType**                    String      *POLYNOMIAL* is currently the only supported rating equation.
-    
+
     **coefficients**                    Object      Map of *coefficient* key and corresponding *value*.
-                                                    The coefficient keys must be single letters, ordered alphabetically. 
+                                                    The coefficient keys must be single letters, ordered alphabetically.
     ================================    =========   ===========================================================================
 
 Example rating configuration::
@@ -996,7 +1004,7 @@ Example rating configuration::
         }
     }
 
-In this example, Discharge is calculated using 2 rating lookup tables and 1 rating polynomial. The *inputNodeId* is set to the *_id* of the *Water Level* parameter. 
+In this example, Discharge is calculated using 2 rating lookup tables and 1 rating polynomial. The *inputNodeId* is set to the *_id* of the *Water Level* parameter.
 A water level value of **0.1** will result in an output value of **9.8** for data at the beginning of 2020. Water level **0.1** will result in an
 output value of **7.8** for data in the range starting 24th October. From 1st November onwards, a polynomial equation will be applied using the coefficients **a, b, c, d, e**.
 
@@ -1007,11 +1015,11 @@ output value of **7.8** for data in the range starting 24th October. From 1st No
 
 Delete a node
 --------------
-Delete a node by its **id** including all child nodes. 
+Delete a node by its **id** including all child nodes.
 You can use the automatically assigned *_id* or your own *customId* prepended with '@'.
 
-.. note:: 
-    This will permanently delete the node including all historic data and events. 
+.. note::
+    This will permanently delete the node including all historic data and events.
     Required API key permission: *Modify*
 
 Request
@@ -1025,12 +1033,12 @@ Response
 ~~~~~~~~
 
 ::
-    
+
     HTTP/1.1 200 OK
     Content-Type: application/json; charset=utf-8
 
 ::
-    
+
     {
         "status": {
             "code": 200,
@@ -1045,11 +1053,11 @@ Response
 
 Clone a node or create instance from template
 ----------------------------------------------
-Clone a node or create an :ref:`instance <node-configuration-template-instances>` from a :ref:`template <node-configuration-template>` by its *id*. You can use the automatically assigned *_id* or your own *customId* prepended with '@'. 
+Clone a node or create an :ref:`instance <node-configuration-template-instances>` from a :ref:`template <node-configuration-template>` by its *id*. You can use the automatically assigned *_id* or your own *customId* prepended with '@'.
 
 When the node being cloned is not a Workspace you must specify a valid *parentId* as the destination for the clone/create operation. Optionally include *name* and *metadata* to be assigned to the newly created node.
 
-.. note:: 
+.. note::
     Not available for TRIAL accounts. Required API key permission: *Modify*. Cloning a workspace requires the API key to have 'All workspaces' access level.
 
 Arguments
@@ -1061,15 +1069,15 @@ Arguments
     =================   =====================   ================================================================
     Argument            Example                 Description
     =================   =====================   ================================================================
-    **attr**            _id,slug                *Optional.* 
+    **attr**            _id,slug                *Optional.*
                                                 Comma delimited list of attributes to include in response
 
     **type**            TREE                    *Optional - Default is LIST* [#f2]_
                                                 | **LIST** returns a flat list of nodes
                                                 | **TREE** returns hierarchical list of nodes
 
-    **expiry**          60                      *Optional*. 
-                                                Expiry period in minutes for any included resource links. 
+    **expiry**          60                      *Optional*.
+                                                Expiry period in minutes for any included resource links.
                                                 ie. *fileUrl* for Attachments. Default is 0 (no expiry).
                                                 Expired resource links will return 403 Forbidden.
     =================   =====================   ================================================================
@@ -1096,12 +1104,12 @@ Response
 ~~~~~~~~
 
 ::
-    
+
     HTTP/1.1 201 Created
     Content-Type: application/json; charset=utf-8
 
 ::
-    
+
     [
         {
             "_id": "5ae809d73549e867c71900db",
@@ -1125,11 +1133,11 @@ Response
 
 Acknowledge node alarms
 ------------------------
-Acknowledge active alarms for a node by its **id**. You can use the automatically assigned *_id* or your own *customId* prepended with '@'. 
+Acknowledge active alarms for a node by its **id**. You can use the automatically assigned *_id* or your own *customId* prepended with '@'.
 Optionally provide a *comment* for the acknowledgement.
 
-.. note:: 
-    Only available for Location, Source and Parameter nodes. 
+.. note::
+    Only available for Location, Source and Parameter nodes.
     Required API key permission: *Modify*
 
 Arguments
@@ -1141,9 +1149,9 @@ Arguments
     =================   ========================    ======================================================================
     Argument            Example                     Description
     =================   ========================    ======================================================================
-    **alarmTypes**      stateAlarm,qualityAlarm     *Optional - Default is ALL*. 
+    **alarmTypes**      stateAlarm,qualityAlarm     *Optional - Default is ALL*.
                                                     Comma delimited list of specific alarms to acknowledge:
-                                                    *[communicationsAlarm, configurationAlarm, controlAlarm, 
+                                                    *[communicationsAlarm, configurationAlarm, controlAlarm,
                                                     outdatedAlarm, overloadAlarm, processAlarm, qualityAlarm, stateAlarm]*
     =================   ========================    ======================================================================
 
@@ -1165,12 +1173,12 @@ Response
 ~~~~~~~~
 
 ::
-    
+
     HTTP/1.1 202 Accepted
     Content-Type: application/json; charset=utf-8
 
 ::
-    
+
     {
         "status": {
             "code": 202,
@@ -1188,8 +1196,8 @@ Clear node alarms
 ------------------
 Clear active and acknowledged alarms for a node by its **id**. You can use the automatically assigned *_id* or your own *customId* prepended with '@'.
 
-.. note:: 
-    Only available for Location, Source and Parameter nodes. 
+.. note::
+    Only available for Location, Source and Parameter nodes.
     Required API key permission: *Modify*
 
 Arguments
@@ -1201,9 +1209,9 @@ Arguments
     =================   ========================    ======================================================================
     Argument            Example                     Description
     =================   ========================    ======================================================================
-    **alarmTypes**      stateAlarm,controlAlarm     *Optional - Default is ALL*. 
+    **alarmTypes**      stateAlarm,controlAlarm     *Optional - Default is ALL*.
                                                     Comma delimited list of specific alarms to clear:
-                                                    *[communicationsAlarm, configurationAlarm, controlAlarm, 
+                                                    *[communicationsAlarm, configurationAlarm, controlAlarm,
                                                     outdatedAlarm, overloadAlarm, processAlarm, qualityAlarm, stateAlarm]*
     =================   ========================    ======================================================================
 
@@ -1219,12 +1227,12 @@ Response
 ~~~~~~~~
 
 ::
-    
+
     HTTP/1.1 202 Accepted
     Content-Type: application/json; charset=utf-8
 
 ::
-    
+
     {
         "status": {
             "code": 202,
@@ -1242,8 +1250,8 @@ Trigger an acquisition
 -----------------------
 Trigger an acquisition (*Acquire Now*) for a Source node by its **id**. You can use the automatically assigned *_id* or your own *customId* prepended with '@'.
 
-.. note:: 
-    Only available for Source nodes with Transports that allow for manual collection. 
+.. note::
+    Only available for Source nodes with Transports that allow for manual collection.
     Required API key permission: *Modify*
 
 Request
@@ -1257,12 +1265,12 @@ Response
 ~~~~~~~~
 
 ::
-    
+
     HTTP/1.1 202 Accepted
     Content-Type: application/json; charset=utf-8
 
 ::
-    
+
     {
         "status": {
             "code": 202,
@@ -1277,7 +1285,7 @@ Response
 
 Retrieve user and group notification preferences
 --------------------------------------------------
-Retrieve a list of all users and groups subscribed to receieve notifications for a node by its **id**. You can use the automatically assigned *_id* or your own *customId* prepended with '@'. 
+Retrieve a list of all users and groups subscribed to receive notifications for a node by its **id**. You can use the automatically assigned *_id* or your own *customId* prepended with '@'.
 
 Arguments
 ~~~~~~~~~
@@ -1288,14 +1296,14 @@ Arguments
     =================   ========    ========================================================================
     Argument            Example                     Description
     =================   ========    ========================================================================
-    **subscribeType**   NODE        *Optional - Default is NODE*. 
-                                    Users and Groups to return in the response: *[NODE, BRANCH, ALL]*. 
-                                    NODE includes users & groups subscribed to this node. 
-                                    BRANCH includes users & groups subscribed to this node and any 
-                                    nodes it contains. 
-                                    ALL includes all users & groups that have access to the node (and can 
-                                    be subscribed) regardless of current subscription state. This can 
-                                    used to retrieve user notification preferences for a workspace prior to 
+    **subscribeType**   NODE        *Optional - Default is NODE*.
+                                    Users and Groups to return in the response: *[NODE, BRANCH, ALL]*.
+                                    NODE includes users & groups subscribed to this node.
+                                    BRANCH includes users & groups subscribed to this node and any
+                                    nodes it contains.
+                                    ALL includes all users & groups that have access to the node (and can
+                                    be subscribed) regardless of current subscription state. This can
+                                    used to retrieve user notification preferences for a workspace prior to
                                     :ref:`subscribing to notifications <api-nodes-notifications-subscribe>`.
     =================   ========    ========================================================================
 
@@ -1311,12 +1319,12 @@ Response
 ~~~~~~~~
 
 ::
-    
+
     HTTP/1.1 200 OK
     Content-Type: application/json; charset=utf-8
 
 ::
-    
+
     {
         "users": [
             {
@@ -1394,21 +1402,21 @@ Response
 
 Update user notification preferences
 ------------------------------------
-Update user notification preferences for a node by its **id**. You can use the automatically assigned *_id* or your own *customId* prepended with '@'. 
+Update user notification preferences for a node by its **id**. You can use the automatically assigned *_id* or your own *customId* prepended with '@'.
 
-This allows for *notificationCategories* to have *email* and *sms* enabled or disabled per *category*. 
+This allows for *notificationCategories* to have *email* and *sms* enabled or disabled per *category*.
 These preferences **apply to all node notification subscriptions within the Workspace**.
-Only categories with changed attributes need to be included in the update. If the category specified does not exist it will be ignored. 
+Only categories with changed attributes need to be included in the update. If the category specified does not exist it will be ignored.
 
-When :ref:`subscribing groups to notifications <api-nodes-notifications-subscribe>` you still need to update notification preferences for individual users of the group. 
+When :ref:`subscribing groups to notifications <api-nodes-notifications-subscribe>` you still need to update notification preferences for individual users of the group.
 
-The response includes updated profiles for all *requested users*. 
+The response includes updated profiles for all *requested users*.
 
-.. note:: 
-    The specified users (email addresses) must be valid :ref:`workspace users <api-nodes-security>`. 
-    Required API key permission: *Modify*. 
-    
-    You must also :ref:`subscribe users and groups to notifications <api-nodes-notifications-subscribe>` for the specific nodes they want to receive notifications from. 
+.. note::
+    The specified users (email addresses) must be valid :ref:`workspace users <api-nodes-security>`.
+    Required API key permission: *Modify*.
+
+    You must also :ref:`subscribe users and groups to notifications <api-nodes-notifications-subscribe>` for the specific nodes they want to receive notifications from.
 
 Request
 ~~~~~~~~
@@ -1418,7 +1426,7 @@ Request
     POST /api/v1/nodes/:id/notifications
 
 ::
-    
+
     {
         "users": [
             {
@@ -1430,7 +1438,7 @@ Request
                         "sms": true
                     }
                 ]
-            }, 
+            },
             {
                 "user": "will@company.com",
                 "notificationCategories": [
@@ -1453,12 +1461,12 @@ Response
 ~~~~~~~~
 
 ::
-    
+
     HTTP/1.1 200 OK
     Content-Type: application/json; charset=utf-8
 
 ::
-    
+
     {
         "users": [
             {
@@ -1480,7 +1488,7 @@ Response
                         "sms": true
                     }
                 ]
-            }, 
+            },
             {
                 "user": "will@company.com",
                 "notificationCategories": [
@@ -1506,17 +1514,17 @@ Response
 
 .. only:: not latex
 
-    | 
+    |
 
 
 .. _api-nodes-notifications-subscribe:
 
 Subscribe users and groups to notifications
 --------------------------------------------
-Subscribe a list of users and groups to receieve notifications for a node by its **id**. You can use the automatically assigned *_id* or your own *customId* prepended with '@'. 
+Subscribe a list of users and groups to receive notifications for a node by its **id**. You can use the automatically assigned *_id* or your own *customId* prepended with '@'.
 
-.. note:: 
-    Only available for Location, Source and Parameter nodes. The specified users (email addresses) must be valid workspace users. 
+.. note::
+    Only available for Location, Source and Parameter nodes. The specified users (email addresses) must be valid workspace users.
     Required API key permission: *Modify*
 
 Request
@@ -1532,7 +1540,7 @@ Request
         "users": [
             {
                 "user": "john@company.com"
-            }, 
+            },
             {
                 "user": "bob@company.com"
             }
@@ -1548,12 +1556,12 @@ Response
 ~~~~~~~~
 
 ::
-    
+
     HTTP/1.1 202 Accepted
     Content-Type: application/json; charset=utf-8
 
 ::
-    
+
     {
         "status": {
             "code": 202,
@@ -1568,10 +1576,10 @@ Response
 
 Unsubscribe users and groups from notifications
 -------------------------------------------------
-Unsubscribe a list of users and groups from receieving notifications for a node by its **id**. You can use the automatically assigned *_id* or your own *customId* prepended with '@'. 
+Unsubscribe a list of users and groups from receieving notifications for a node by its **id**. You can use the automatically assigned *_id* or your own *customId* prepended with '@'.
 
-.. note:: 
-    Only available for Location, Source and Parameter nodes. 
+.. note::
+    Only available for Location, Source and Parameter nodes.
     Required API key permission: *Modify*
 
 Request
@@ -1587,7 +1595,7 @@ Request
         "users": [
             {
                 "user": "john@company.com"
-            }, 
+            },
             {
                 "user": "bob@company.com"
             }
@@ -1603,12 +1611,12 @@ Response
 ~~~~~~~~
 
 ::
-    
+
     HTTP/1.1 202 Accepted
     Content-Type: application/json; charset=utf-8
 
 ::
-    
+
     {
         "status": {
             "code": 202,
@@ -1624,7 +1632,7 @@ Response
 
 Retrieve Workspace user and group permissions
 ----------------------------------------------
-Retrieve a list of all users and groups with access to a workspace (or node) by its **id**. You can use the automatically assigned *_id* or your own *customId* prepended with '@'. 
+Retrieve a list of all users and groups with access to a workspace (or node) by its **id**. You can use the automatically assigned *_id* or your own *customId* prepended with '@'.
 When a user is included in a group that has been provided access, the user entry may contain an *effectivePermissions* attribute which combines individual user and group(s) permissions (where different).
 
 
@@ -1639,12 +1647,12 @@ Response
 ~~~~~~~~
 
 ::
-    
+
     HTTP/1.1 200 OK
     Content-Type: application/json; charset=utf-8
 
 ::
-    
+
     {
         "users": [
             {
@@ -1709,7 +1717,7 @@ Response
     }
 
 
-.. note:: 
+.. note::
     When retrieving permissions for a node it will return permissions that have been directly set on this node (or the Workspace) and not inherited node permissions.
 
 
@@ -1721,13 +1729,13 @@ Response
 
 Add or Update Workspace user and group permissions
 ---------------------------------------------------
-Add a list of users and groups to a Workspace by its **id** and set or update user security roles. You can use the automatically assigned *_id* or your own *customId* prepended with '@'. 
+Add a list of users and groups to a Workspace by its **id** and set or update user security roles. You can use the automatically assigned *_id* or your own *customId* prepended with '@'.
 You must specify a valid *role* name that has been preconfigured in :ref:`account settings <management-security-userroles>`.
 
-If the user (email address) does not already exist a new user profile will be created and a *profileActivateUrl* will be returned so the user profile can be finalized by navigating to the url in a web browser. 
+If the user (email address) does not already exist a new user profile will be created and a *profileActivateUrl* will be returned so the user profile can be finalized by navigating to the url in a web browser.
 When adding a new user (profile does not exist) you can optionally include attributes: *name*, *phone*, *timezone*, *timezoneAdjustForDst*, *timeFormat* and *notificationCategories*.
 
-.. note:: 
+.. note::
     Required API key permission: *Modify*
 
 
@@ -1740,7 +1748,7 @@ Arguments
     =================   ========================    ======================================================================
     Argument            Example                     Description
     =================   ========================    ======================================================================
-    **notify**          TRUE                        *Optional - Default is FALSE*. 
+    **notify**          TRUE                        *Optional - Default is FALSE*.
                                                     Notify users they have been granted workspace access
     =================   ========================    ======================================================================
 
@@ -1759,18 +1767,18 @@ Request
             {
                 "user": "bob@company.com",
                 "role": "View"
-            }, 
+            },
             {
-                "user": "jane@company.com", 
+                "user": "jane@company.com",
                 "role": "Operate",
-                "expiryTime": "2019-11-05T05:24:32.000+0000" 
+                "expiryTime": "2019-11-05T05:24:32.000+0000"
                 "name": {
-                    "first": "Jane", 
+                    "first": "Jane",
                     "last": "Smith"
                 },
-                "phone": "+61400000001", 
-                "timezone": "Australia/Sydney", 
-                "timezoneAdjustForDst": true, 
+                "phone": "+61400000001",
+                "timezone": "Australia/Sydney",
+                "timezoneAdjustForDst": true,
                 "timeFormat": "YYYY-MM-DD HH:mm:ss"
             }
         ],
@@ -1786,12 +1794,12 @@ Response
 ~~~~~~~~
 
 ::
-    
+
     HTTP/1.1 200 OK
     Content-Type: application/json; charset=utf-8
 
 ::
-    
+
     {
         "added": [
             {
@@ -1843,10 +1851,10 @@ Response
 
 Remove users and groups from a Workspace
 -----------------------------------------
-Remove a list of users and groups from a Workspace by its **id**. You can use the automatically assigned *_id* or your own *customId* prepended with '@'. 
+Remove a list of users and groups from a Workspace by its **id**. You can use the automatically assigned *_id* or your own *customId* prepended with '@'.
 
-.. note:: 
-    Owner and Administrator users can not be removed from an individual workspace. 
+.. note::
+    Owner and Administrator users can not be removed from an individual workspace.
     Required API key permission: *Modify*
 
 
@@ -1859,7 +1867,7 @@ Arguments
     =================   ========================    ======================================================================
     Argument            Example                     Description
     =================   ========================    ======================================================================
-    **notify**          TRUE                        *Optional - Default is FALSE*. 
+    **notify**          TRUE                        *Optional - Default is FALSE*.
                                                     Notify users they have had their workspace access revoked
     =================   ========================    ======================================================================
 
@@ -1890,12 +1898,12 @@ Response
 ~~~~~~~~
 
 ::
-    
+
     HTTP/1.1 200 OK
     Content-Type: application/json; charset=utf-8
 
 ::
-    
+
     {
         "removed": [
             {
@@ -1914,11 +1922,11 @@ Response
 
 Retrieve node historic data
 ---------------------------
-Retrieve historic data from a node by its **id**. You can use the automatically assigned *_id* or your own *customId* prepended with '@'. 
+Retrieve historic data from a node by its **id**. You can use the automatically assigned *_id* or your own *customId* prepended with '@'.
 Data can be returned in JSON (:ref:`JTS <historic-jts>`) or CSV format. Use the :ref:`Historic resource<api-resources-historic>` for extracting historic data from multiple nodes in a single request.
 
-.. note:: 
-    Only available for Location and Parameter nodes. 
+.. note::
+    Only available for Location and Parameter nodes.
 
 Arguments
 ~~~~~~~~~
@@ -1929,7 +1937,7 @@ Arguments
     ========================    ========================    =================================================================
     Argument                    Example                     Description
     ========================    ========================    =================================================================
-    **format**                  JSON                        *Optional - Default is JSON*. 
+    **format**                  JSON                        *Optional - Default is JSON*.
                                                             Data format to return: *[JSON, CSV]*
 
     **startTime**               2014-08-16T02:00:00Z        *Required*. [#f3]_
@@ -1938,86 +1946,86 @@ Arguments
     **endTime**                 2014-08-16T02:20:43Z        *Required*. [#f3]_
                                                             :ref:`ISO8601<time-format-iso8601>` url encoded timestamp
 
-    **limit**                   100                         *Optional*. 
+    **limit**                   100                         *Optional*.
                                                             Maximum number of historic records to be returned.
 
-    **timezone**                Etc/UTC                     *Optional - Default is Etc/UTC*. 
-                                                            :ref:`Timezone <timezone>` applied to timestamps. 
-                                                            Aggregate *interval* and *baseTime* calculations will also use 
+    **timezone**                Etc/UTC                     *Optional - Default is Etc/UTC*.
+                                                            :ref:`Timezone <timezone>` applied to timestamps.
+                                                            Aggregate *interval* and *baseTime* calculations will also use
                                                             this zone.
 
-    **timezoneAdjustForDst**    FALSE                       *Optional - Default is FALSE*. 
+    **timezoneAdjustForDst**    FALSE                       *Optional - Default is FALSE*.
                                                             Flag to indicate if timestamps should be adjusted for DST in
                                                             selected *timezone*.
 
-    **timeQuery**               RECORD                      *Optional - Default is RECORD*. 
-                                                            Timestamp to query by. 
-                                                            MODIFIED will query by modified timestamp (typically used to 
-                                                            obtain records changed since a specific timestamp): 
+    **timeQuery**               RECORD                      *Optional - Default is RECORD*.
+                                                            Timestamp to query by.
+                                                            MODIFIED will query by modified timestamp (typically used to
+                                                            obtain records changed since a specific timestamp):
                                                             *[RECORD, MODIFIED]*
 
-    **timeFormat**              YYYY-MM-DD HH:mm:ss         *Optional*. 
+    **timeFormat**              YYYY-MM-DD HH:mm:ss         *Optional*.
                                                             :ref:`Time format<time-format-customize>` to use when *format*
                                                             is 'CSV'.
-    
-    **header**                  TRUE                        *Optional - Default is TRUE*. 
-                                                            Flag to include header  
 
-    **delimiter**               ,                           *Optional - Default is ','*. 
+    **header**                  TRUE                        *Optional - Default is TRUE*.
+                                                            Flag to include header
+
+    **delimiter**               ,                           *Optional - Default is ','*.
                                                             Delimiter character to use (in CSV format).
 
-    **textQualifier**           "                           *Optional - Default is '"'*. 
+    **textQualifier**           "                           *Optional - Default is '"'*.
                                                             Text qualifier character to use (in CSV format).
 
-    **quality**                 NONE                        *Optional - Default is NONE*. 
-                                                            Specify how :ref:`quality <historic-quality>` should be output 
+    **quality**                 NONE                        *Optional - Default is NONE*.
+                                                            Specify how :ref:`quality <historic-quality>` should be output
                                                             (in CSV format): *[NONE, DELIMITED_WITH_VALUE, SEPARATE_VALUE]*
 
-    **qualityDelimiter**        :                           *Optional - Default is ':'*. 
+    **qualityDelimiter**        :                           *Optional - Default is ':'*.
                                                             Delimiter to use when *quality* is 'DELIMITED_WITH_VALUE'.
 
 
-    **qualityExcluded**         BAD,UNCERTAIN               *Optional* - Default uses account settings 
+    **qualityExcluded**         BAD,UNCERTAIN               *Optional* - Default uses account settings
                                                             :ref:`Exclude quality <management-general-qualitycodes>`.
-                                                            Comma separated list of data point quality types to be 
+                                                            Comma separated list of data point quality types to be
                                                             excluded: *[GOOD, BAD, UNCERTAIN or NONE]*
 
-    **annotation**              NONE                        *Optional - Default is NONE*. 
-                                                            Specify how :ref:`annotations <historic-annotations>` should be 
-                                                            output (in CSV format): 
+    **annotation**              NONE                        *Optional - Default is NONE*.
+                                                            Specify how :ref:`annotations <historic-annotations>` should be
+                                                            output (in CSV format):
                                                             *[NONE, DELIMITED_WITH_VALUE, SEPARATE_VALUE]*
 
-    **annotationDelimiter**     ;                           *Optional - Default is ';'*. 
-                                                            Delimiter to use when *annotation* is 'DELIMITED_WITH_VALUE'.                                                
+    **annotationDelimiter**     ;                           *Optional - Default is ';'*.
+                                                            Delimiter to use when *annotation* is 'DELIMITED_WITH_VALUE'.
 
-    
-    **renderType**              VALUE                       *Optional - Default is node displayType*. 
+
+    **renderType**              VALUE                       *Optional - Default is node displayType*.
                                                             Rendering of value: *[VALUE, STATE]*
 
     **renderFormat**            0.000                       *Optional - Default is node format*.
                                                             :ref:`Format <node-configuration-parameter-general>` to apply
-                                                            when renderType is VALUE. '#' must be  
-                                                            `URL Encoded <http://en.wikipedia.org/wiki/Percent-encoding>`_ 
+                                                            when renderType is VALUE. '#' must be
+                                                            `URL Encoded <http://en.wikipedia.org/wiki/Percent-encoding>`_
                                                             as '%23'.
 
-    **aggregate**               AVERAGE                     *Optional - Default is NONE (raw)*. 
-                                                            Historic :ref:`aggregate <historic-aggregates>` to apply to 
+    **aggregate**               AVERAGE                     *Optional - Default is NONE (raw)*.
+                                                            Historic :ref:`aggregate <historic-aggregates>` to apply to
                                                             extracted data.
 
-    **baseTime**                D                           *Optional*. 
+    **baseTime**                D                           *Optional*.
                                                             :ref:`OPC Base Time <relative-time>` required for aggregation.
 
-    **interval**                3H                          *Optional*. 
+    **interval**                3H                          *Optional*.
                                                             :ref:`OPC Interval <relative-time>` required for aggregation.
 
-    **intervalInclude**         PARTIAL                     *Optional - Default is PARTIAL*. 
+    **intervalInclude**         PARTIAL                     *Optional - Default is PARTIAL*.
                                                             COMPLETE will include aggregated values for complete intervals
-                                                            only. PARTIAL will also include values for non-complete 
+                                                            only. PARTIAL will also include values for non-complete
                                                             intervals: *[PARTIAL, COMPLETE]*
 
-    **baselineType**            RELATIVE                    *Optional - Default is ABSOLUTE*. 
-                                                            Absolute will return data point values unmodified. Relative will 
-                                                            subtract the first data point value from all subsequent data 
+    **baselineType**            RELATIVE                    *Optional - Default is ABSOLUTE*.
+                                                            Absolute will return data point values unmodified. Relative will
+                                                            subtract the first data point value from all subsequent data
                                                             point values: *[ABSOLUTE, RELATIVE]*
     ========================    ========================    =================================================================
 
@@ -2035,12 +2043,12 @@ Response
 ~~~~~~~~
 
 ::
-    
+
     HTTP/1.1 200 OK
     Content-Type: application/json; charset=utf-8
 
 ::
-    
+
     {
         "docType": "jts",
         "version": "1.0",
@@ -2058,23 +2066,23 @@ Response
             }
         },
         "data": [
-            { 
+            {
                 "ts": "2014-08-16T02:00:39.000Z",
                 "f": { "0": {"v": 28.21 } }
             },
-            { 
+            {
                 "ts": "2014-08-16T02:05:40.000Z",
                 "f": { "0": {"v": 28.22 } }
             },
-            { 
+            {
                 "ts": "2014-08-16T02:10:41.000Z",
                 "f": { "0": {"v": 28.7 } }
             },
-            { 
+            {
                 "ts": "2014-08-16T02:15:42.000Z",
                 "f": { "0": {"v": 29.2 } }
             },
-            { 
+            {
                 "ts": "2014-08-16T02:20:43.000Z",
                 "f": { "0": {"v": 29.18 } }
             }
@@ -2089,16 +2097,16 @@ Response
 
 Retrieve node historic chart
 -----------------------------
-Retrieve historic chart image from a node by its **id**. You can use the automatically assigned *_id* or your own *customId* prepended with '@'. 
+Retrieve historic chart image from a node by its **id**. You can use the automatically assigned *_id* or your own *customId* prepended with '@'.
 Chart images can be returned in PNG, JPG, SVG and PDF format.
 
 If a :ref:`chart node<node-configuration-chart>` is specified, you can optionally specify: *format, width, height, title, subtitle, startTime, endTime, timezone, timezoneAdjustForDst*.
 
-If a :ref:`parameter node<node-configuration-parameter>` is specified, the nodes' pre-configured (or default) chart settings will be used but you can optionally specify any of the arguments below. 
-Use the :ref:`Historic resource<api-resources-historic>` chart endpoint for generating an adhoc chart using data from multiple parameters in a single request. 
+If a :ref:`parameter node<node-configuration-parameter>` is specified, the nodes' pre-configured (or default) chart settings will be used but you can optionally specify any of the arguments below.
+Use the :ref:`Historic resource<api-resources-historic>` chart endpoint for generating an adhoc chart using data from multiple parameters in a single request.
 
-.. note:: 
-    Only available for Parameter and Custom Chart nodes. 
+.. note::
+    Only available for Parameter and Custom Chart nodes.
 
 Arguments
 ~~~~~~~~~
@@ -2109,61 +2117,61 @@ Arguments
     ============================    ========================    =================================================================
     Argument                        Example                     Description
     ============================    ========================    =================================================================
-    **format**                      PNG                         *Optional - Default is PNG*. 
+    **format**                      PNG                         *Optional - Default is PNG*.
                                                                 Image format to return: *[PNG, JPG, SVG, PDF]*
 
-    **width**                       1200                        *Optional - Default is 1200*. 
+    **width**                       1200                        *Optional - Default is 1200*.
                                                                 Width of image (png, jpg) in pixels
 
-    **height**                      800                         *Optional - Default is 800*. 
+    **height**                      800                         *Optional - Default is 800*.
                                                                 Height of image (png, jpg) in pixels
 
-    **scale**                       2                           *Optional - Default is 1*. 
-                                                                Multiplier to adjust image dimensions (png, jpg) for  
+    **scale**                       2                           *Optional - Default is 1*.
+                                                                Multiplier to adjust image dimensions (png, jpg) for
                                                                 higher resolution output: *1-4*.
 
-    **title**                       My Chart                    *Optional*. 
+    **title**                       My Chart                    *Optional*.
                                                                 Title to display on chart
 
     **subtitle**                    Generated by eagle.io       *Optional*.
                                                                 Subtitle to display on chart
 
-    **startTime**                   2014-08-16T02:00:00Z        *Required*. 
+    **startTime**                   2014-08-16T02:00:00Z        *Required*.
                                                                 :ref:`ISO8601<time-format-iso8601>` url encoded timestamp
 
-    **endTime**                     2014-08-16T02:20:43Z        *Required*. 
+    **endTime**                     2014-08-16T02:20:43Z        *Required*.
                                                                 :ref:`ISO8601<time-format-iso8601>` url encoded timestamp
 
-    **timezone**                    Etc/UTC                     *Optional - Default is Etc/UTC*. 
-                                                                :ref:`Timezone <timezone>` applied to timestamps. 
-                                                                Aggregate *interval* and *baseTime* calculations will also use 
+    **timezone**                    Etc/UTC                     *Optional - Default is Etc/UTC*.
+                                                                :ref:`Timezone <timezone>` applied to timestamps.
+                                                                Aggregate *interval* and *baseTime* calculations will also use
                                                                 this zone
 
-    **timezoneAdjustForDst**        FALSE                       *Optional - Default is FALSE*. 
+    **timezoneAdjustForDst**        FALSE                       *Optional - Default is FALSE*.
                                                                 Flag to indicate if timestamps should be adjusted for DST in
                                                                 selected *timezone*
 
-    **renderType** [#f4]_           VALUE                       *Optional - Default is node displayType*. 
+    **renderType** [#f4]_           VALUE                       *Optional - Default is node displayType*.
                                                                 Rendering of value: *[VALUE, STATE]*
 
-    **aggregate** [#f4]_            AVERAGE                     *Optional - Default is NONE (raw)*. 
-                                                                Historic :ref:`aggregate <historic-aggregates>` to apply to 
+    **aggregate** [#f4]_            AVERAGE                     *Optional - Default is NONE (raw)*.
+                                                                Historic :ref:`aggregate <historic-aggregates>` to apply to
                                                                 extracted data
 
-    **baseTime** [#f4]_             D                           *Optional*. 
+    **baseTime** [#f4]_             D                           *Optional*.
                                                                 :ref:`OPC Base Time <relative-time>` required for aggregation
 
-    **interval** [#f4]_             3H                          *Optional*. 
+    **interval** [#f4]_             3H                          *Optional*.
                                                                 :ref:`OPC Interval <relative-time>` required for aggregation
 
-    **intervalInclude** [#f4]_      PARTIAL                     *Optional - Default is PARTIAL*. 
+    **intervalInclude** [#f4]_      PARTIAL                     *Optional - Default is PARTIAL*.
                                                                 COMPLETE will include aggregated values for complete intervals
-                                                                only. PARTIAL will also include values for non-complete 
+                                                                only. PARTIAL will also include values for non-complete
                                                                 intervals: *[PARTIAL, COMPLETE]*
 
-    **baselineType** [#f4]_         RELATIVE                    *Optional - Default is ABSOLUTE*. 
-                                                                Absolute will return data point values unmodified. Relative will 
-                                                                subtract the first data point value from all subsequent data 
+    **baselineType** [#f4]_         RELATIVE                    *Optional - Default is ABSOLUTE*.
+                                                                Absolute will return data point values unmodified. Relative will
+                                                                subtract the first data point value from all subsequent data
                                                                 point values: *[ABSOLUTE, RELATIVE]*
     ============================    ========================    =================================================================
 
@@ -2181,7 +2189,7 @@ Response
 ~~~~~~~~
 
 ::
-    
+
     HTTP/1.1 200 OK
     Content-Type: image/png;
 
@@ -2190,12 +2198,12 @@ Response
     .. image:: api_resources_nodes_historic_chart.jpg
         :scale: 50 %
 
-    | 
+    |
 
 .. only:: latex
-    
-    | 
-    
+
+    |
+
     .. image:: api_resources_nodes_historic_chart.jpg
 
 
@@ -2209,9 +2217,9 @@ Response
 
 Retrieve node report
 -----------------------------
-Generate and retrieve a PDF file from a :ref:`report node <node-configuration-report>` by its **id**. You can use the automatically assigned *_id* or your own *customId* prepended with '@'. 
+Generate and retrieve a PDF file from a :ref:`report node <node-configuration-report>` by its **id**. You can use the automatically assigned *_id* or your own *customId* prepended with '@'.
 
-.. note:: 
+.. note::
     The reporting feature is currently a **pre-release** version that is subject to change without notice and is only available to limited accounts.
 
 Arguments
@@ -2223,18 +2231,18 @@ Arguments
     ============================    ========================    =================================================================
     Argument                        Example                     Description
     ============================    ========================    =================================================================
-    **nowTime**                     2021-06-01T00:00:00Z        *Optional*. Default is null (current time). 
+    **nowTime**                     2021-06-01T00:00:00Z        *Optional*. Default is null (current time).
                                                                 :ref:`ISO8601<time-format-iso8601>` url encoded timestamp to use
                                                                 for report generation. All current values and historic records
                                                                 are relative to this timestamp.
 
-    **timezone**                    Etc/UTC                     *Optional - Default is report timezone*. 
+    **timezone**                    Etc/UTC                     *Optional - Default is report timezone*.
                                                                 :ref:`Timezone <timezone>` applied to timestamps. Only specify
                                                                 to override the default report timezone.
 
-    **timezoneAdjustForDst**        FALSE                       *Optional - Default is report timezone adjust for dst*. 
+    **timezoneAdjustForDst**        FALSE                       *Optional - Default is report timezone adjust for dst*.
                                                                 Flag to indicate if timestamps should be adjusted for DST in
-                                                                selected *timezone* Only specify to override the default report 
+                                                                selected *timezone* Only specify to override the default report
                                                                 timezone.
     ============================    ========================    =================================================================
 
@@ -2250,7 +2258,7 @@ Response
 ~~~~~~~~
 
 ::
-    
+
     HTTP/1.1 200 OK
     Content-Type: application/pdf;
 
@@ -2259,12 +2267,12 @@ Response
     .. image:: api_resources_nodes_report.jpg
         :scale: 50 %
 
-    | 
+    |
 
 .. only:: latex
-    
-    | 
-    
+
+    |
+
     .. image:: api_resources_nodes_report.jpg
 
 
@@ -2276,11 +2284,11 @@ Response
 
 Update Parameter or Location historic data
 -------------------------------------------
-Update historic data for a Parameter or Location node by its **id**. You can use the automatically assigned *_id* or your own *customId* prepended with '@'. 
+Update historic data for a Parameter or Location node by its **id**. You can use the automatically assigned *_id* or your own *customId* prepended with '@'.
 Data can be inserted in JSON (:ref:`JTS <historic-jts>`) or CSV format. Use the :ref:`Historic resource <api-resources-historic>` to update historic data for multiple nodes in a single request.
 
-.. note:: 
-    Only available for Location and Parameter nodes. 
+.. note::
+    Only available for Location and Parameter nodes.
     Required API key permission: *Modify*
 
 
@@ -2293,20 +2301,20 @@ Arguments
     =================   ========================    ======================================================================
     Argument            Example                     Description
     =================   ========================    ======================================================================
-    **format**          JSON                        *Optional - Default is JSON*. 
+    **format**          JSON                        *Optional - Default is JSON*.
                                                     Data format being inserted: *[JSON]*.
 
-    **writeMode**       MERGE_OVERWRITE_EXISTING    *Optional - Default is MERGE_OVERWRITE_EXISTING*. 
-                                                    See all available :ref:`write mode <historic-data-import-writemode>` 
+    **writeMode**       MERGE_OVERWRITE_EXISTING    *Optional - Default is MERGE_OVERWRITE_EXISTING*.
+                                                    See all available :ref:`write mode <historic-data-import-writemode>`
                                                     options.
 
     **notifyOn**        LATEST_ONLY                 *Optional - Default is LATEST_ONLY*.
-                                                    When to generate events, raise alarms and send notifications: 
+                                                    When to generate events, raise alarms and send notifications:
                                                     *[ALL_NEWER, LATEST_ONLY, NONE]*.
-                                                    ALL_NEWER: All events newer than parameter current value. 
+                                                    ALL_NEWER: All events newer than parameter current value.
                                                     LATEST_ONLY: Latest event newer than parameter current value.
 
-    **columnIndex**     0                           *Optional - Default is 0*. 
+    **columnIndex**     0                           *Optional - Default is 0*.
                                                     Index of column in data to be associated with this parameter. Will use
                                                     index specified in JTS Doc header if available or default to 0.
     =================   ========================    ======================================================================
@@ -2324,15 +2332,15 @@ Request
         "docType": "jts",
         "version": "1.0",
         "data": [
-            { 
+            {
                 "ts": "2014-09-17T07:30:00Z",
                 "f": { "0": {"v": 25.05 } }
             },
-            { 
+            {
                 "ts": "2014-09-17T07:40:00Z",
                 "f": { "0": {"v": 25.20 } }
             },
-            { 
+            {
                 "ts": "2014-09-17T07:50:00Z",
                 "f": { "0": {"v": 25.14 } }
             }
@@ -2343,12 +2351,12 @@ Response
 ~~~~~~~~
 
 ::
-    
+
     HTTP/1.1 202 Accepted
     Content-Type: application/json; charset=utf-8
 
 ::
-    
+
     {
         "status": {
             "code": 202,
@@ -2363,18 +2371,18 @@ Response
 
 Update Data Source historic data
 ---------------------------------
-Update historic data for multiple parameters via a Data Source node **id**. You can use the automatically assigned *_id* or your own *customId* prepended with '@'. 
+Update historic data for multiple parameters via a Data Source node **id**. You can use the automatically assigned *_id* or your own *customId* prepended with '@'.
 Data can be inserted in JSON (:ref:`JTS <historic-jts>`) format. New parameters will be automatically created.
 
-The JTS Document must contain header columns. Each column must either specify a **series** or parameter **id**. 
-If **id** is provided it will be used to match to the associated parameter under the current Data Source, otherwise 
+The JTS Document must contain header columns. Each column must either specify a **series** or parameter **id**.
+If **id** is provided it will be used to match to the associated parameter under the current Data Source, otherwise
 the associated parameter will be matched using the **series** attribute.
 
-If a column specified in the header can not be matched to an existing parameter (and **series** was provided), a new parameter will be created automatically. 
+If a column specified in the header can not be matched to an existing parameter (and **series** was provided), a new parameter will be created automatically.
 Optionally specify **name**, **dataType** (NUMBER, TEXT, TIME. Default is NUMBER) and **units** in the column header which will be used when creating new parameters.
 
-.. note:: 
-    Only available for Datasource nodes. 
+.. note::
+    Only available for Datasource nodes.
     Required API key permission: *Modify*
 
 
@@ -2387,17 +2395,17 @@ Arguments
     =================   ========================    ======================================================================
     Argument            Example                     Description
     =================   ========================    ======================================================================
-    **format**          JSON                        *Optional - Default is JSON*. 
+    **format**          JSON                        *Optional - Default is JSON*.
                                                     Data format being inserted: *[JSON]*.
 
-    **writeMode**       MERGE_OVERWRITE_EXISTING    *Optional - Default is MERGE_OVERWRITE_EXISTING*. 
-                                                    See all available :ref:`write mode <historic-data-import-writemode>` 
+    **writeMode**       MERGE_OVERWRITE_EXISTING    *Optional - Default is MERGE_OVERWRITE_EXISTING*.
+                                                    See all available :ref:`write mode <historic-data-import-writemode>`
                                                     options.
 
     **notifyOn**        LATEST_ONLY                 *Optional - Default is LATEST_ONLY*.
-                                                    When to generate events, raise alarms and send notifications: 
+                                                    When to generate events, raise alarms and send notifications:
                                                     *[ALL_NEWER, LATEST_ONLY, NONE]*.
-                                                    ALL_NEWER: All events newer than parameter current value. 
+                                                    ALL_NEWER: All events newer than parameter current value.
                                                     LATEST_ONLY: Latest event newer than parameter current value.
     =================   ========================    ======================================================================
 
@@ -2427,15 +2435,15 @@ Request
             }
         },
         "data": [
-            { 
+            {
                 "ts": "2014-09-17T07:30:00Z",
                 "f": { "0": { "v": 25.05 } }
             },
-            { 
+            {
                 "ts": "2014-09-17T07:40:00Z",
                 "f": { "0": { "v": 25.20 } }
             },
-            { 
+            {
                 "ts": "2014-09-17T07:50:00Z",
                 "f": { "0": { "v": 25.14 }, "1": { "v": "text data here" } }
             }
@@ -2446,12 +2454,12 @@ Response
 ~~~~~~~~
 
 ::
-    
+
     HTTP/1.1 202 Accepted
     Content-Type: application/json; charset=utf-8
 
 ::
-    
+
     {
         "status": {
             "code": 202,
@@ -2467,11 +2475,11 @@ Response
 Update node historic data with a single value
 ----------------------------------------------
 Update historic data for a node with a single record. You can use the automatically assigned *_id* or your own *customId* prepended with '@'.
-You must specify at least one record attribute: *value*, *quality*, *annotation*. 
+You must specify at least one record attribute: *value*, *quality*, *annotation*.
 If *timestamp* is omitted the time the request was made will be used. Existing records with the same timestamp will be overwritten.
 
-.. note:: 
-    Only available for Location and Parameter nodes. 
+.. note::
+    Only available for Location and Parameter nodes.
     Required API key permission: *Modify*
 
 
@@ -2495,12 +2503,12 @@ Response
 ~~~~~~~~
 
 ::
-    
+
     HTTP/1.1 202 Accepted
     Content-Type: application/json; charset=utf-8
 
 ::
-    
+
     {
         "status": {
             "code": 202,
@@ -2518,8 +2526,8 @@ Delete node historic data
 --------------------------
 Delete all historic data from a node by its **id**. You can use the automatically assigned *_id* or your own *customId* prepended with '@'.
 
-.. note:: 
-    Only available for Location and Parameter nodes. 
+.. note::
+    Only available for Location and Parameter nodes.
     Required API key permission: *Modify*
 
 
@@ -2534,12 +2542,12 @@ Response
 ~~~~~~~~
 
 ::
-    
+
     HTTP/1.1 202 Accepted
     Content-Type: application/json; charset=utf-8
 
 ::
-    
+
     {
         "status": {
             "code": 202,
@@ -2555,7 +2563,7 @@ Response
 
 Retrieve node events
 ----------------------
-Retrieve events related to a node by its **id**. You can use the automatically assigned *_id* or your own *customId* prepended with '@'. 
+Retrieve events related to a node by its **id**. You can use the automatically assigned *_id* or your own *customId* prepended with '@'.
 Use the :ref:`Events resource <api-resources-events>` for retrieving events related to multiple nodes in a single request.
 
 
@@ -2568,30 +2576,30 @@ Arguments
     =================   =====================   ================================================================
     Argument            Example                 Description
     =================   =====================   ================================================================
-    **startTime**       2017-08-16T02:00:00Z    *Optional*. 
+    **startTime**       2017-08-16T02:00:00Z    *Optional*.
                                                 :ref:`ISO8601<time-format-iso8601>` url encoded timestamp
 
-    **endTime**         2017-08-16T02:20:43Z    *Optional*. 
+    **endTime**         2017-08-16T02:20:43Z    *Optional*.
                                                 :ref:`ISO8601<time-format-iso8601>` url encoded timestamp
 
-    **attr**            eventTime,message       *Optional*. 
+    **attr**            eventTime,message       *Optional*.
                                                 Comma delimited list of attributes to include in response
 
-    **filter**          level($eq:DEBUG)        *Optional*. 
-                                                :ref:`Filter <api-overview-request-arguments-filter>` the 
-                                                records based on attribute value(s). 
+    **filter**          level($eq:DEBUG)        *Optional*.
+                                                :ref:`Filter <api-overview-request-arguments-filter>` the
+                                                records based on attribute value(s).
                                                 *Note: eventTime can not be used as a filter*
 
-    **limit**           100                     *Optional - Default is 1000 if both startTime & endTime are not 
+    **limit**           100                     *Optional - Default is 1000 if both startTime & endTime are not
                                                 specified*. Maximum number of records to be returned.
 
-    **skip**            50                      *Optional*. 
-                                                Skip the first *n* records returned. Can be used with 
+    **skip**            50                      *Optional*.
+                                                Skip the first *n* records returned. Can be used with
                                                 ``limit`` to paginate results
 
-    **sort**            eventTime(DESC)         *Optional - Default is eventTime(ASC)*. 
-                                                Comma delimited list of attributes to sort by. Optionally 
-                                                include sort direction in parentheses or default to ASC: 
+    **sort**            eventTime(DESC)         *Optional - Default is eventTime(ASC)*.
+                                                Comma delimited list of attributes to sort by. Optionally
+                                                include sort direction in parentheses or default to ASC:
                                                 *[ASC, DESC]*
     =================   =====================   ================================================================
 
@@ -2607,12 +2615,12 @@ Response
 ~~~~~~~~
 
 ::
-    
+
     HTTP/1.1 200 OK
     Content-Type: application/json; charset=utf-8
 
 ::
-    
+
     [
         {
             "_class": "io.eagle.models.event.Event",
@@ -2651,11 +2659,11 @@ Response
 
 Create node events
 -------------------
-Create new event(s) for a node by its **id**. You can use the automatically assigned *_id* or your own *customId* prepended with '@'. 
-Multiple events can be created for the node in a single request by providing an Array of Events in the request body. The event requires 
-a **message** and optional **eventTime**. Events created via the API are assigned *level: INFO*, *eventType: CONFIGURATION*, *alarmState: NONE*. 
+Create new event(s) for a node by its **id**. You can use the automatically assigned *_id* or your own *customId* prepended with '@'.
+Multiple events can be created for the node in a single request by providing an Array of Events in the request body. The event requires
+a **message** and optional **eventTime**. Events created via the API are assigned *level: INFO*, *eventType: CONFIGURATION*, *alarmState: NONE*.
 
-.. note:: 
+.. note::
     Required API key permission: *Modify*
 
 
@@ -2699,12 +2707,12 @@ Response
 ~~~~~~~~
 
 ::
-    
+
     HTTP/1.1 202 Accepted
     Content-Type: application/json; charset=utf-8
 
 ::
-    
+
     {
         "status": {
             "code": 202,
@@ -2724,7 +2732,7 @@ Delete node events
 Delete all events related to a node by its **id**. You can use the automatically assigned *_id* or your own *customId* prepended with '@'.
 A new event *"Cleared events"* will be created to indicate this action occurred.
 
-.. note:: 
+.. note::
     Required API key permission: *Modify*
 
 
@@ -2739,12 +2747,12 @@ Response
 ~~~~~~~~
 
 ::
-    
+
     HTTP/1.1 202 Accepted
     Content-Type: application/json; charset=utf-8
 
 ::
-    
+
     {
         "status": {
             "code": 202,
