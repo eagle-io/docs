@@ -29,6 +29,7 @@ The following topics will assist when configuring your device for `eagle.io <htt
    sigfox/index
    waterlog_storm3/index
    ydoc/index
+   yudash/index
 
 .. note:: 
     We are continually adding support for new devices. 
