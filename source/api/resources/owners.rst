@@ -296,9 +296,10 @@ Groups and associated users can be included in the update request. This will mer
 For each group in the request, if an *_id* attribute is provided it will be used to update an existing group (which allows the group name to be changed as part of the update).
 If the *_id* attribute is not provided or does not match an existing group, the *name* attribute will be used to find an existing group to update.
 
-If an existing group is not found, a new group entity will be created. Any groups previously configured that do not match will be permanently removed.
+.. note::
+    If an existing group is not found, a new group entity will be created. Any groups previously configured that do not match will be permanently removed.
 
-.. note:: Removing a group will also remove its :ref:`group notification subscriptions <api-nodes-notifications-subscribe>`.
+    Removing a group will also remove its :ref:`group notification subscriptions <api-nodes-notifications-subscribe>`.
 
 When specifying the users associated with a group, if the user (email address) does not already exist a new user profile will be created and a *profileActivateUrl* will be returned so the user profile can be finalized by navigating to the url in a web browser. 
 When adding a new user (profile does not exist) you can optionally include attributes: *name*, *phone*, *timezone*, *timezoneAdjustForDst* and *timeFormat*.
