@@ -6,7 +6,7 @@
 ### Getting started
 ```
 pip3 install -r requirements.txt
-pip3 install -U Sphinx
+pip3 install Sphinx==5.2.0
 ```
 
 ### Building locally
