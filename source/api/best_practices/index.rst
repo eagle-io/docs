@@ -59,8 +59,7 @@ Responses will always use :ref:`HTTP Status Codes <api-overview-http-status-code
 
 Discover Node Ids from the user interface
 -----------------------------------------
-Enable the :ref:`Display Node Ids in properties dialog <user-preferences-other>` option to quickly discover Node Id's from the user interface.
-The Node Id will be shown in the associated Node properties dialog. You can also assign your own unique Custom Id to every node for use with the API.
+Node Ids are shown in the associated Node properties dialog. You can also assign your own unique Custom Id to every node for use with the API.
 
 .. only:: not latex
 
