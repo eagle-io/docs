@@ -51,9 +51,10 @@ Source configuration
 
 3. Click the *Browse* button and select a text file that contains a sample data format consistent with the data which will be sent by the device. An example data format would be:
 
-    .. code-block::
+::
 
-        2023-02-19 21:20:00,234.5,50.5,3456
+    2023-02-19 21:20:00,234.5,50.5,3456
+
 
 
 .. only:: not latex
