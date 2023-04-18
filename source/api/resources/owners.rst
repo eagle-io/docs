@@ -153,6 +153,8 @@ The updated owner will be returned in the response if the request is successful.
 .. note:: 
     Required API key permission: *Modify*. Required API key level: *Account*.
 
+.. _api-owners-update-args:
+
 Arguments
 ~~~~~~~~~
 
@@ -168,7 +170,8 @@ Arguments
 
     **notify**          TRUE                *Optional - Default is FALSE*.
                                             Notify users when they have been granted/revoked administrator
-                                            access or a new user profile (as a result of this request)
+                                            access or a new user profile created
+                                            (as a result of this request)
     =================   =================   ================================================================
 
 Request
@@ -218,7 +221,9 @@ Administrators
 `````````````````
 Administrators can be included in the update request. This will replace existing administrators.
 
-If the user (email address) does not already exist a new user profile will be created and a *profileActivateUrl* will be returned so the user profile can be finalized by navigating to the url in a web browser. 
+If the user email address does not already exist in the system, a new user profile will be created and *profileActivateUrl* will be returned in the response.
+Use the *notify=TRUE* :ref:`argument <api-owners-update-args>` to automatically send a welcome email to newly created users (or use the `profileActivateUrl` to manually complete the user profile setup).
+
 When adding a new user (profile does not exist) you can optionally include attributes: *name*, *phone*, *timezone*, *timezoneAdjustForDst* and *timeFormat*.
 
 .. note::
@@ -301,7 +306,10 @@ If the *_id* attribute is not provided or does not match an existing group, the 
 
     Removing a group will also remove its :ref:`group notification subscriptions <api-nodes-notifications-subscribe>`.
 
-When specifying the users associated with a group, if the user (email address) does not already exist a new user profile will be created and a *profileActivateUrl* will be returned so the user profile can be finalized by navigating to the url in a web browser. 
+
+When specifying the users associated with a group, if the user email address does not already exist in the system, a new user profile will be created and *profileActivateUrl* will be returned in the response.
+Use the *notify=TRUE* :ref:`argument <api-owners-update-args>` to automatically send a welcome email to newly created users (or use the `profileActivateUrl` to manually complete the user profile setup).
+
 When adding a new user (profile does not exist) you can optionally include attributes: *name*, *phone*, *timezone*, *timezoneAdjustForDst* and *timeFormat*.
 
 .. table::
@@ -607,5 +615,4 @@ Response
             }
         ]
     }
-
 
