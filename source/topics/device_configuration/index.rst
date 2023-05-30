@@ -26,6 +26,7 @@ The following topics will assist when configuring your device for `eagle.io <htt
    scout/index
    senquip_orbx1/index
    sensorlog/index
+   smithtek_mako/index
    sigfox/index
    waterlog_storm3/index
    ydoc/index
