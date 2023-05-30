@@ -12,7 +12,6 @@
 }*/
 /* -------------------- */
 
-
 /* scafolding */
 body {
   font-family: "Oxygen";
@@ -191,4 +190,19 @@ table.table-col1-nowrap td:first-child, table.table-col1-nowrap th:first-child {
     footer p {
     	font-size: 12px;
     }
+}
+
+p.footer-text {
+	color: #888e99 !important;
+	font-family: 'IBM Plex Sans',Helvetica,Arial,Lucida,sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 20px;
+	-webkit-font-smoothing: antialiased;
+}
+
+p.footer-text a {
+	text-decoration: underline;
+	color: #888e99 !important;
+	font-weight: 400;
 }

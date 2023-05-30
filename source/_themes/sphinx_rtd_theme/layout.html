@@ -25,7 +25,8 @@
 
   {# CSS #}
   <!-- <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'> -->
-  
+  <link href='https://fonts.googleapis.com/css?family=IBM Plex Sans' rel='stylesheet'>
+
   {# JS #}
   {% if not embedded %}
 
@@ -108,7 +109,6 @@
         <!-- <a href="{{ pathto(master_doc) }}" class="icon icon-book"> {{ project }} docs</a> -->
         {% include "searchbox.html" %}
       </div>
-      <br><h3>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://eagle.io/schedule">Schedule a sales demo</a></h3>
       <div class="wy-menu wy-menu-vertical" data-spy="affix">
         {% set toctree = toctree(maxdepth=4, collapse=False, includehidden=True) %}
         {% if toctree %}
