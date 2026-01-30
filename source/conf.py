@@ -48,7 +48,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'eagle.io'
-copyright = u'2023 Bentley Systems, Incorporated. All rights reserved'
+copyright = u'2026 Bentley Systems, Incorporated. All rights reserved'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -195,7 +195,7 @@ latex_elements = {
 #'papersize': 'letterpaper',
 
 # remove release label from doc.
-'releasename': '2023',
+'releasename': '2026',
 
 # The font size ('10pt', '11pt' or '12pt').
 'pointsize': '11pt',
