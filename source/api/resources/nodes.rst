@@ -171,7 +171,7 @@ Consumers of Nodes should tolerate the addition of new attributes and variance i
     **timezoneAdjustForDst**            Boolean     Yes         Flag to indicate if acquired data is adjusted for DST in selected timezone
     **totalCommsAttempt**               Int32                   Total count of communications attempts
     **totalCommsSuccess**               Int32                   Total count of successful communications
-    **transport**                       Object                  Transport configuration
+    **transport**                       Object                  Source Transport configuration
     ================================    =========   =========   ===========================================================================
 
 .. [#f1] Certain attributes can not be used in filter criteria.
